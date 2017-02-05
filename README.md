@@ -1,6 +1,6 @@
 # Dissertation
 
-This repository tracks the official dissertation. The goal is to provide a fully reproducible and digitally-born dissertation, which I can easily export to paper format to fullfill my university's requirements.
+This repository tracks the official dissertation. The goal is to provide a fully reproducible and digitally-born dissertation, which I can easily export to paper format to fullfill my university's requirements. The goal is to make the dissertation with [`bookdown`](https://bookdown.org/home/) and finally create a static webpage for the dissertation to live on with hosting in this repository.
 
 ## Outline
 
