@@ -48,5 +48,17 @@ This repository tracks the official dissertation. The goal is to provide a fully
   - [ ] Bookdown-ready
   
 1. A qualitative study of how researchers fabricate data
+  - [ ] Preprint: 
+  - [ ] Status: preparatory phase
+  - [ ] Data: 
+  - [ ] Reproducibility packet: 
+  - [ ] Bookdown-ready
+  
+1. TBD
+  - [ ] Preprint: 
+  - [ ] Status: preparatory phase
+  - [ ] Data: 
+  - [ ] Reproducibility packet: 
+  - [ ] Bookdown-ready
 
 1. Discussion chapter
