@@ -15,29 +15,29 @@ This repository tracks the official dissertation. The goal is to provide a fully
 2. [Reanalyzing Head et al. (2015): Investigating the robustness of widespread p-hacking](https://doi.org/10.7287/peerj.preprints.2439v1)
   - [x] Preprint: [PeerJ preprints](https://doi.org/10.7287/peerj.preprints.2439v1)
   - [ ] Status: accepted for publication in PeerJ
-  - [ ] Data: 
-  - [ ] Reproducibility packet: 
+  - [x] Data: data from original Head et al. paper, available on [Dryad](http://dx.doi.org/10.5061/dryad.79d43/1)
+  - [x] Reproducibility packet: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.259624.svg)](https://doi.org/10.5281/zenodo.259624)
   - [ ] Bookdown-ready
 
 3. [Distributions of p-values between .01-.05 in psychology: what is really going on?](https://doi.org/10.7717/peerj.1935)
   - [x] Preprint: [PeerJ preprints](https://peerj.com/preprints/1642/)
   - [x] Status: published in PeerJ (license: CC-BY 4.0)
   - [x] Data: [https://osf.io/gdr4q/](https://osf.io/gdr4q/)
-  - [ ] Reproducibility packet: 
+  - [x] Reproducibility packet: [https://osf.io/4d2g9/](https://osf.io/4d2g9/)
   - [ ] Bookdown-ready
 
 4. [Too good to be false: Nonsignificant results revisited](https://osf.io/preprints/rkumy)
   - [x] Preprint: [PsyArxiv](https://osf.io/preprints/rkumy)
   - [ ] Status: accepted for publication in Collabra
-  - [ ] Data: 
-  - [ ] Reproducibility packet: 
+  - [x] Data: direct downloads linked in [Sweave file](https://github.com/chartgerink/2014tgtbf/blob/master/submission%2Fmanuscript.Rnw)
+  - [x] Reproducibility packet: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.250492.svg)](https://doi.org/10.5281/zenodo.250492)
   - [ ] Bookdown-ready
 
 5. [688,112 Statistical Results: Content Mining Psychology Articles for Statistical Test Results](http://dx.doi.org/10.3390/data1030014)
   - [x] Preprint: [MDPI preprints](https://doi.org/10.20944/preprints201608.0191.v1)
   - [x] Status: published in Data (license: CC-BY 4.0)
-  - [ ] Data: 
-  - [ ] Reproducibility packet:
+  - [x] Data: [EASY-DANS](http://dx.doi.org/10.17026/dans-2cm-v9j9)
+  - [x] Reproducibility packet: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.59818.svg)](https://doi.org/10.5281/zenodo.59818)
   - [ ] Bookdown-ready
 
 1. [Ecological validity of detecting data fabrication in experimental studies](https://github.com/chartgerink/2015ori-1)
