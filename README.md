@@ -16,7 +16,7 @@ This repository tracks the official dissertation. The goal is to provide a fully
   - [x] Preprint: [PeerJ preprints](https://doi.org/10.7287/peerj.preprints.2439v1)
   - [ ] Status: accepted for publication in PeerJ
   - [x] Data: data from original Head et al. paper, available on [Dryad](http://dx.doi.org/10.5061/dryad.79d43/1)
-  - [x] Reproducibility packet: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.259624.svg)](https://doi.org/10.5281/zenodo.259624)
+  - [x] Reproducibility packet: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.269668.svg)](https://doi.org/10.5281/zenodo.269668)
   - [ ] Bookdown-ready
 
 3. [Distributions of p-values between .01-.05 in psychology: what is really going on?](https://doi.org/10.7717/peerj.1935)
