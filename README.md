@@ -9,7 +9,7 @@ This repository tracks the official dissertation. The goal is to provide a fully
   - [x] Preprint: NA
   - [x] Status: published in ScienceOpen (license: CC-BY 4.0)
   - [x] Data: NA
-  - [ ] Reproducibility packet: 
+  - [x] Reproducibility packet: [![DOI](https://zenodo.org/badge/DOI/10.14293/S2199-1006.1.SOR-SOCSCI.ARYSBI.v1.svg)](https://doi.org/10.14293/S2199-1006.1.SOR-SOCSCI.ARYSBI.v1)
   - [ ] Bookdown-ready
 
 2. [Reanalyzing Head et al. (2015): Investigating the robustness of widespread p-hacking](https://doi.org/10.7287/peerj.preprints.2439v1)
