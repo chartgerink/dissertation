@@ -1,6 +1,6 @@
 # Dissertation
 
-This repository tracks the official dissertation. The goal is to provide a fully reproducible and digitally-born dissertation, which I can easily export to paper format to fullfill my university's requirements. The goal is to make the dissertation with [`bookdown`](https://bookdown.org/home/) and finally create a static webpage for the dissertation to live on with hosting in this repository.
+This repository tracks the official dissertation. The goal is to provide a fully reproducible and digitally-born dissertation, which I can easily export to paper format to fullfill my university's requirements. The [`bookdown`](https://bookdown.org/home/)-borne dissertation is a *work in progress* but already available at the static webpage for [this repository](https://chartgerink.github.io/dissertation/).
 
 ## Outline
 
