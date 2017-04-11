@@ -1,5 +1,9 @@
 # Research practices and assessment of research misconduct
 
+This chapter was originally published under a CC BY 4.0 license.
+
+[Hartgerink, C.H.J. & Wicherts, J.M. (2016). Research practices and assessment of research misconduct. _ScienceOpen Research_. doi:10.14293/s2199-1006.1.sor-socsci.arysbi.v1](https://doi.org/10.14293/s2199-1006.1.sor-socsci.arysbi.v1)
+
 ## Abstract
 
 This article discusses the responsible conduct of research, questionable
@@ -7,9 +11,9 @@ research practices, and research misconduct. Responsible conduct of
 research is often defined in terms of a set of abstract, normative
 principles, professional standards, and ethics in doing research. In
 order to accommodate the normative principles of scientific research,
-the professional standards, and a researcher’s moral principles,
+the professional standards, and a researcher's moral principles,
 transparent research practices can serve as a framework for responsible
-conduct of research. We suggest a ’prune-and-add’ project structure to
+conduct of research. We suggest a 'prune-and-add' project structure to
 enhance transparency and by extension, responsible conduct of research.
 Questionable research practices are defined as practices that are
 detrimental to the research process. The prevalence of questionable
@@ -24,8 +28,8 @@ falsification, and plagiarism (FFP), which is clearly the worst type of
 research practice. Despite it being clearly wrong, it can be approached
 from a scientific and legal perspective. The legal perspective sees
 research misconduct as a form of white-collar crime. The scientific
-perspective seeks to answer the question “were results invalidated
-because of the misconduct?” We review how misconduct is typically
+perspective seeks to answer the question "were results invalidated
+because of the misconduct?" We review how misconduct is typically
 detected, how its detection can be improved, and how prevalent it might
 be. Institutions could facilitate detection of data fabrication and
 falsification by implementing data auditing. Nonetheless, the effect of
@@ -34,23 +38,23 @@ the retraction has been issued.
 
 ## Main points
 
-1.  <span>Researchers systematically evaluate their own conduct as more
-    responsible than colleagues, but not as responsible as they
-    would like.</span>
+1.  Researchers systematically evaluate their own conduct as more
+responsible than colleagues, but not as responsible as they
+would like.
 
-2.  <span>Transparent practices, facilitated by the Open Science
-    Framework, help embody scientific norms that promote
-    responsible conduct.</span>
+2.  Transparent practices, facilitated by the Open Science
+Framework, help embody scientific norms that promote
+responsible conduct.
 
-3.  <span>Questionable research practices harm the research process and
-    work counter to the generally accepted scientific norms, but are
-    hard to detect.</span>
+3.  Questionable research practices harm the research process and
+work counter to the generally accepted scientific norms, but are
+hard to detect.
 
-4.  <span>Research misconduct requires active scrutiny of the research
-    community, because editors and peer reviewers do not pay adequate
-    attention to detecting this. Tips are given on how to improve your
-    detection of potential problems.</span>
-    
+4.  Research misconduct requires active scrutiny of the research
+community, because editors and peer reviewers do not pay adequate
+attention to detecting this. Tips are given on how to improve your
+detection of potential problems.
+
 ## Introduction
 
 Research practices directly affect the epistemological pursuit of
@@ -60,25 +64,24 @@ objective, meticulous, skeptical, rational, and not subject to external
 incentives such as prestige or social pressure. Research misconduct, on
 the other hand, is formally defined (e.g., in regulatory documents) as
 three types of condemned, intentional behaviors: fabrication,
-falsification, and plagiarism @ostp2000. Research practices that are
+falsification, and plagiarism [@ostp2000]. Research practices that are
 neither conceptualized as responsible nor defined as research misconduct
 could be considered questionable research practices, which are practices
-that are detrimental to the research process @panel1992 [@steneck2006].
+that are detrimental to the research process [@panel1992;@10.1007/pl00022268].
 For example, the misapplication of statistical methods can increase the
 number of false results and is therefore not responsible. At the same
 time, such misapplication can also not be deemed research misconduct
 because it falls outside the defined scope of FFP. Such undefined and
 potentially questionable research practices have been widely discussed
-in the field of psychology in recent years @john2012
-[@nosek2012a; @nosek2012b; @osc2015; @simmons2011].
+in the field of psychology in recent years [@10.1177/0956797611430953;@nosek2012a; @nosek2012b; @osc2015; @simmons2011].
 
-This article discusses the responsible conduct of research, questionable
-research practices, and research misconduct. For each of these three, we
+This article discusses the [responsible conduct of research](#responsible-conduct-of-research), [questionable
+research practices](#questionable-research-practices), and [research misconduct](#research-misconduct). For each of these three, we
 extend on what it means, what researchers currently do, and how it can
 be facilitated (i.e., responsible conduct) or prevented (i.e.,
 questionable practices and research misconduct). These research
 practices encompass the entire research practice spectrum proposed by
-@steneck2006, where responsible conduct of research is the ideal
+@10.1007/pl00022268, where responsible conduct of research is the ideal
 behavior at one end, FFP the worst behavior on the other end, with
 (potentially) questionable practices in between.
 
@@ -91,29 +94,26 @@ abstract, normative principles. One such set of norms of good science
 [@anderson2010; @merton1942] is accompanied by a set of counternorms
 [@anderson2010; @mitroff1974] that promulgate irresponsible research.
 These six norms and counternorms can serve as a valuable framework to
-reflect on the behavior of a researcher and are included in Table 1.
+reflect on the behavior of a researcher and are included in Table \@ref(tab:norm-table).
 
-  ------------------- --------------------------------------------------------------------- ---------------------
-  **Norm**            **Description norm**                                                  **Counternorm**
-  Universalism        Evaluate results based on pre-established and non-personal criteria   Particularism
-  Communality         Freely and widely share findings                                      Secrecy
-  Disinterestedness   Results not corrupted by personal gains                               Self-interestedness
-  Skepticism          Scrutinize all findings, including own                                Dogmatism
-  Governance          Decision-making in science is done by researchers                     Administration
-  Quality             Evaluate researchers based on the quality of their work               Quantity
-  ------------------- --------------------------------------------------------------------- ---------------------
+```{r norm-table, echo=FALSE, results='asis'}
+norms <- read.csv('tables/norm-table.csv', header = TRUE)
+names(norms)[2] <- 'Description norm'
 
-  : Six norms of responsible conduct of research and their respective
-  counternorms [@anderson2010; @merton1942; @mitroff1974].<span
-  data-label="table1_1"></span>
-  
+knitr::kable(norms,
+             caption = "Six norms of responsible conduct of research and their respective
+  counternorms [@anderson2010; @merton1942; @mitroff1974].",
+  booktabs=TRUE)
+```
+
+
 Besides abiding by these norms, responsible conduct of research consists
 of both research integrity and research ethics [@shamoo2009]. Research
 integrity is the adherence to professional standards and rules that are
 well defined and uniform, such as the standards outlined by the
-@apa2010. Research ethics, on the other hand, is “the critical study of
+@apa2010. Research ethics, on the other hand, is "the critical study of
 the moral problems associated with or that arise in the course of
-pursuing research” @steneck2006, which is abstract and pluralistic. As
+pursuing research" [@10.1007/pl00022268], which is abstract and pluralistic. As
 such, research ethics is more fluid than research integrity and is
 supposed to fill in the gaps left by research integrity
 [@koppelman2006]. For example, not fabricating data is the professional
@@ -136,12 +136,12 @@ to sharing his or her data (the norm of communality), but might shy away
 from actually sharing data at an early stage out of a fear that of being
 scooped by other researchers. This result aligns with surveys showing
 that many researchers express a willingness to share data, but often
-fail to do so when asked [@krawczyk2012; @savage2009]. Moreover,
+fail to do so when asked [@krawczyk2012;@savage2009]. Moreover,
 although researchers admit they do not adhere to the norms as much as
 they subscribe to them, they still regard themselves as adhering to the
 norms more so than their peers. For counternorms, this pattern reversed.
 These results indicate that researchers systematically evaluate their
-own conduct as more responsible than other researchers’ conduct.
+own conduct as more responsible than other researchers' conduct.
 
 This gap between subscription and actual adherence to the normative
 principles is called normative dissonance and could potentially be due
@@ -174,10 +174,10 @@ implications of the decision at hand, instead of in hindsight
 guidelines should be efficacious in producing behavioral change
 [@kornfeld2012], considering that participants rarely learn about useful
 skills or experience a change in attitudes as a consequence of such
-passive education [@plemmons2006]
+passive education [@plemmons2006].
 
 Moreover, in order to accommodate the normative principles of scientific
-research, the professional standards, and a researcher’s moral
+research, the professional standards, and a researcher's moral
 principles, transparent research practices can serve as a framework for
 responsible conduct of research. Transparency in research embodies the
 normative principles of scientific research: universalism is promoted by
@@ -201,7 +201,7 @@ In the remainder of this section we outline a type of project
 management, founded on transparency, which seems apt to be the new
 standard within psychology [@nosek2012a; @nosek2012b]. Transparency
 guidelines for journals have also been proposed [@top2015] and the
-outlined project management adheres to these guidelines from an author’s
+outlined project management adheres to these guidelines from an author's
 perspective. The provided format focuses on empirical research and is
 certainly not the only way to apply transparency to adhere to
 responsible conduct of research principles.
@@ -209,11 +209,11 @@ responsible conduct of research principles.
 #### Transparent project management
 
 Research files can be easily managed by creating an online project at
-the Open Science Framework (OSF; [osf.io](osf.io)). The OSF is free to
+the Open Science Framework (OSF; [osf.io](https://osf.io)). The OSF is free to
 use and provides extensive project management facilities to encourage
 transparent research. Project management via this tool has been tried
-and tested in, for example, the Many Labs project @ml1 and the
-Reproducibility project @osc2015. Research files can be manually
+and tested in, for example, the Many Labs project [@ml1] and the
+Reproducibility project [@osc2015]. Research files can be manually
 uploaded by the researcher or automatically synchronized (e.g., via
 Dropbox or Github). Using the OSF is easy and explained in-depth at
 [osf.io/getting-started](osf.io/getting-started).
@@ -222,39 +222,31 @@ The OSF provides the tools to manage a research project, but how to
 apply these tools still remains a question. Such online management of
 materials, information, and data, is preferred above a more informal
 system lacking in transparency that often strongly rests on particular
-contributor’s implicit knowledge.
+contributor's implicit knowledge.
 
 As a way to organize a version-controlled project, we suggest a
-’prune-and-add’ template, where the major elements of most research
+'prune-and-add' template, where the major elements of most research
 projects are included but which can be specified and extended for
-specific projects. This template includes folders as specified in Table 2, which covers many of the research stages. The template
+specific projects. This template includes folders as specified in Table \@ref(tab:prune-and-add), which covers many of the research stages. The template
 can be readily duplicated and adjusted on the OSF for practical use in
 similar projects (like replication studies;
 [osf.io/4sdn3](osf.io/4sdn3)).
 
-  -------------- --------------------------------------------------------------------------
-  **Folder**     **Summary of contents**
-  analyses       Analyses scripts (e.g., as reported in the paper, exploratory files)
-  archive        Outdated files or files not of direct value (e.g., unused code)
-  bibliography   Reference library or related articles (e.g., Endnote library, PDF files)
-  data           All data files used (e.g., raw data, processed data)
-  figures        Figures included in the manuscript and code for figures
-  functions      Custom functions used (e.g., SPSS macro, R scripts)
-  materials      Research materials specified per study (e.g., survey questions, stimuli)
-  preregister    Preregistered hypotheses, analysis plans, research designs
-  submission     Manuscript, submissions per journal, and review rounds
-  supplement     Files that supplement the research project (e.g., notes, codebooks)
-  -------------- --------------------------------------------------------------------------
+```{r prune-and-add, echo=FALSE, results='asis'}
+prune <- read.csv('tables/prune-and-add.csv', header = TRUE)
+names(prune)[2] <- 'Summary of contents'
 
-  : Project management folder structure, which can be pruned and added
-  to in order to meet specific research needs. This folder structure can
-  be duplicated as an OSF project at [osf.io/4sdn3](osf.io/4sdn3)<span
-  data-label="table1_2"></span>
-  
+knitr::kable(prune,
+             caption = "Project management folder structure, which can be pruned and added
+to in order to meet specific research needs. This folder structure can
+be duplicated as an OSF project at [osf.io/4sdn3](https://osf.io/4sdn3).",
+  booktabs=TRUE)
+```
+
 This suggested project structure also includes a folder to include
 preregistration files of hypotheses, analyses, and research design. The
 preregistration of these ensures that the researcher does not
-hypothesize after the results are known (Kerr, 1998), but also ensures
+hypothesize after the results are known [@10.1207/s15327957pspr0203_4], but also ensures
 readers that the results presented as confirmatory were actually
 confirmatory [@chambers2015; @wagenmakers2012]. The preregistration of
 analyses also ensures that the statistical analysis chosen to test the
@@ -280,8 +272,8 @@ to reduce particularism. A co-pilot model has been introduced previously
 independently run all analyses based on the raw data. Such verification
 of research results enables streamline reproduction of the results by
 outsiders (e.g., are all files readily available? are the files properly
-documented? do the analyses work on someone else’s computer?), helps
-find out potential errors @bakker2011 [@nuijten2015], and increases
+documented? do the analyses work on someone else's computer?), helps
+find out potential errors [@bakker2011;@nuijten2015], and increases
 confidence in the results. We therefore encourage researchers to
 incorporate such a co-pilot model into all empirical research projects.
 
@@ -298,7 +290,7 @@ be confounded with questionable academic practices, such as academic
 power play, sexism, and scooping.
 
 Attention for questionable practices in psychology has (re-)arisen in
-recent years, in light of the so-called “replication crisis” @makel2012.
+recent years, in light of the so-called "replication crisis" [@makel2012].
 Pinpointing which factors initiated doubts about the reproducibility of
 findings is difficult, but most notable seems an increased awareness of
 widely accepted practices as statistically and methodologically
@@ -383,8 +375,7 @@ Most effective might be preregistrations of research design, hypotheses,
 and analyses, which reduce particularism of results by providing an a
 priori research scheme. It also outs behaviors such as the
 aforementioned optional stopping, where extra participants are sampled
-until statistical significance is reached [@armitage1969](Armitage et
-al., 1969) or the dropping of conditions or outcome variables
+until statistical significance is reached [@armitage1969] or the dropping of conditions or outcome variables
 [@franco2016]. Knowing that researchers outlined their research process
 and seeing it adhered to helps ensure readers that results are
 confirmatory – rather than exploratory of nature, when results are
@@ -405,13 +396,13 @@ through repositories similar to the OSF (e.g., figshare, Dryad, arXiv).
 
 ### What is it?
 
-As mentioned at the beginning of the article, research misconduct has
+[As mentioned at the beginning of the article](#introduction), research misconduct has
 been defined as fabrication, falsification, and plagiarism (FFP).
-However, it does not include “honest error or differences of opinion”
+However, it does not include "honest error or differences of opinion"
 [@ostp2000; @resnik2012]. Fabrication is the making up of datasets
 entirely. Falsification is the adjustment of a set of data points to
 ensure the wanted results. Plagiarism is the direct reproduction of
-other’s creative work without properly attributing it. These behaviors
+other's creative work without properly attributing it. These behaviors
 are condemned by many institutions and organizations, including the
 @apa2010.
 
@@ -433,11 +424,11 @@ but rather to administrative or labor law. The legal perspective
 requires intention to commit research misconduct, whereas the scientific
 perspective requires data to be collected as described in a research
 report, regardless of intent. In other words, the legal perspective
-seeks to answer the question “was misconduct committed with intent and
-by whom?”
+seeks to answer the question "was misconduct committed with intent and
+by whom?"
 
-The scientific perspective seeks to answer the question “were results
-invalidated because of the misconduct?” For instance, a paper reporting
+The scientific perspective seeks to answer the question "were results
+invalidated because of the misconduct?" For instance, a paper reporting
 data that could not have been collected with the materials used in the
 study (e.g., the reported means lie outside the possible values on the
 psychometric scale) is invalid scientifically. The impossible results
@@ -467,7 +458,7 @@ to having fabricated or falsified data during their career
 risen in the last decades, both across the sciences in general
 [@fang2012] and in psychology in particular [@margraf2015], this number
 still represents a fairly low number in comparison to the total number
-of articles in the literature @wicherts2016. Similarly, the number of
+of articles in the literature [@wicherts2016]. Similarly, the number of
 researchers found guilty of research misconduct is relatively low,
 suggesting that many cases of misconduct go undetected; the actual rate
 of research misconduct is unknown. Little research has addressed why
@@ -481,7 +472,7 @@ Humans, including researchers, are quite bad in recognizing and
 fabricating probabilistic processes [@mosimann2002; @mosimann1995]. For
 instance, humans frequently think that, after five coin flips that
 result in heads, the probability of the next coin flip is more likely to
-be tails than heads; the gambler’s fallacy [@tversky1974]. Inferential
+be tails than heads; the gambler's fallacy [@tversky1974]. Inferential
 testing is based on sampling; by extension variables should be of
 probabilistic origin and have certain stochastic properties. Because
 humans have problems adhering to these probabilistic principles,
@@ -491,13 +482,16 @@ to the probabilistic origins at some level of the data [@haldane1948].
 Exemplary of this lack of fabricating probabilistic processes is a table
 in a now retracted paper from the Stapel case
 [@retractruys2008; @ruys2008]. In the original Table 1, reproduced here
-as Table 4, 32 means and standard deviations are presented.
-*Fifteen* of these cells are duplicates of another cell (e.g., “0.87
-(0.74)” occurs three times). Finding exact duplicates is extremely rare
+as Figure \@ref(fig:ruys), 32 means and standard deviations are presented.
+*Fifteen* of these cells are duplicates of another cell (e.g., "0.87
+(0.74)" occurs three times). Finding exact duplicates is extremely rare
 for even one case, if the variables are a result of probabilistic
 processes as in sampling theory.
 
-<!-- Table needs to be included still -->
+```{r ruys, fig.cap="Reproduction of Table 1 from the retracted Ruys and Stapel (2008) paper. The table shows 32 cells with 'M (SD)', of which 15 are direct duplicates of one of the other cells. The original version with highlighted duplicates can be found at [osf.io/89mcn](https://osf.io/89mcn).", out.width="100%", fig.align="center", echo=FALSE}
+par(mar = c(0, 0, 0, 0))
+knitr::include_graphics('figs/scienceopen-table3.png', auto_pdf = TRUE)
+```
 
 Why reviewers and editors did not detect this remains a mystery, but it
 seems that they simply do not pay attention to potential indicators of
@@ -506,8 +500,8 @@ with blatantly problematic results in papers that were later found to be
 due to misconduct have been noted in the medical sciences
 [@stewart1987]. Science has been regarded as a self-correcting system
 based on trust. This aligns with the idea that misconduct occurs because
-of “bad apples” (i.e., individual factors) and not because of a “bad
-barrel” (i.e., systemic factors), increasing trust in the scientific
+of "bad apples" (i.e., individual factors) and not because of a "bad
+barrel" (i.e., systemic factors), increasing trust in the scientific
 enterprise. However, the self-correcting system has been called a myth
 [@stroebe2012] and an assumption that instigates complacency
 [@hettinger2010]; if reviewers and editors have no criteria that pertain
@@ -519,7 +513,7 @@ in the research process.
 
 The most frequent way data fabrication is detected is by those
 researchers who are scrutinous, which ultimately results in
-whistleblowing. For example, Stapel’s misdeeds were detected by young
+whistleblowing. For example, Stapel's misdeeds were detected by young
 researchers who were brave enough to blow the whistle. Although many
 regulations include clauses that help protect the whistleblowers,
 whistleblowing is known to represent a risk [@lubalin1995], not only
@@ -549,7 +543,7 @@ papers contain data that have been fabricated or falsified. Systematic
 data on this are unavailable, because papers are not evaluated to this
 end in an active manner [@bornmann2008]. Only one case study exists: the
 Journal of Cell Biology evaluates all research papers for cell image
-manipulation @rossner2004 [@bik2016], a form of data
+manipulation [@rossner2004;@bik2016], a form of data
 fabrication/falsification. They have found that approximately 1% of all
 research papers that passed peer review (out of total of over 3000
 submissions) were not published because of the detection of image
@@ -652,11 +646,11 @@ reducing the costs of committing misconduct.
 ## Conclusion
 
 This article provides an overview of the research practice spectrum,
-where on the one end there is responsible conduct of research and with
-research misconduct on the other end. In sum, transparent research
+where on the one end there is [responsible conduct of research](#responsible-conduct-of-research) and with
+[research misconduct](#research-misconduct) on the other end. In sum, transparent research
 practices are proposed to embody scientific norms and a way to deal with
-both questionable research practices and research misconduct, inducing
-better research practices. This would improve not only the documentation
+both questionable research practices and research misconduct, [inducing
+better research practices](#improving-responsible-conduct). This would improve not only the documentation
 and verification of research results; it also helps create a more open
 environment for researchers to actively discuss ethical problems and
 handle problems in a responsible manner, promoting good research
