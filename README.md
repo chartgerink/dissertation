@@ -11,19 +11,19 @@ This repository tracks the official dissertation. The goal is to provide a fully
   - [x] Data: NA
   - [x] Reproducibility packet: [![DOI](https://zenodo.org/badge/DOI/10.14293/S2199-1006.1.SOR-SOCSCI.ARYSBI.v1.svg)](https://zenodo.org/record/276035)
   - [x] License: [CC BY 4.0](http://creativecommons.org/licenses/by/4.0) 
-  - [ ] Bookdown-ready
+  - [x] Bookdown-ready
 
 2. [Reanalyzing Head et al. (2015): Investigating the robustness of widespread p-hacking](https://doi.org/10.7717/peerj.3068)
   - [x] Preprint: [PeerJ preprints](https://doi.org/10.7287/peerj.preprints.2439v1)
-  - [x] Status: (published in PeerJ](https://doi.org/10.7717/peerj.3068)
+  - [x] Status: [published in PeerJ](https://doi.org/10.7717/peerj.3068)
   - [x] Data: data from original Head et al. paper, available on [Dryad](http://dx.doi.org/10.5061/dryad.79d43/1)
   - [x] Reproducibility packet: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.269668.svg)](https://doi.org/10.5281/zenodo.269668)
   - [x] License: [CC 0 rights waiver](http://creativecommons.org/publicdomain/zero/1.0/)
-  - [ ] Bookdown-ready
+  - [x] Bookdown-ready
 
 3. [Distributions of p-values between .01-.05 in psychology: what is really going on?](https://doi.org/10.7717/peerj.1935)
   - [x] Preprint: [PeerJ preprints](https://peerj.com/preprints/1642/)
-  - [x] Status: published in PeerJ (license: CC-BY 4.0)
+  - [x] Status: [published in PeerJ](https://doi.org/10.7717/peerj.1935)
   - [x] Data: [https://osf.io/gdr4q/](https://osf.io/gdr4q/)
   - [x] Reproducibility packet: [https://osf.io/4d2g9/](https://osf.io/4d2g9/)
   - [x] License: [CC BY 4.0](http://creativecommons.org/licenses/by/4.0)
