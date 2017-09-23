@@ -37,3 +37,5 @@ _book
 _bookdown_files
 rsconnect
 .Rproj.user
+
+tmp/

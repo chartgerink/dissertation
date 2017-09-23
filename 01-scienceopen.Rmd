@@ -4,6 +4,10 @@ This chapter was originally published under a CC BY 4.0 license.
 
 [Hartgerink, C.H.J. & Wicherts, J.M. (2016). Research practices and assessment of research misconduct. _ScienceOpen Research_. doi:10.14293/s2199-1006.1.sor-socsci.arysbi.v1](https://doi.org/10.14293/s2199-1006.1.sor-socsci.arysbi.v1)
 
+Reproducibility packet preserved at
+
+[![DOI](https://zenodo.org/badge/DOI/10.14293/S2199-1006.1.SOR-SOCSCI.ARYSBI.v1.svg)](https://zenodo.org/record/276035)
+
 ## Abstract
 
 This article discusses the responsible conduct of research, questionable
@@ -273,7 +277,7 @@ independently run all analyses based on the raw data. Such verification
 of research results enables streamline reproduction of the results by
 outsiders (e.g., are all files readily available? are the files properly
 documented? do the analyses work on someone else's computer?), helps
-find out potential errors [@bakker2011;@nuijten2015], and increases
+find out potential errors [@bakker2011;@10.3758/s13428-015-0664-2], and increases
 confidence in the results. We therefore encourage researchers to
 incorporate such a co-pilot model into all empirical research projects.
 
@@ -343,7 +347,7 @@ gross errors, which indicates that the decision error had substantive
 effects. Large scale research in psychology has indicated that 12.5-20%
 of sampled articles include at least one such gross error, with
 approximately 1% of all reported test results being affected by such
-gross errors [@bakker2011; @nuijten2015; @veldkamp2014].
+gross errors [@bakker2011; @10.3758/s13428-015-0664-2; @veldkamp2014].
 
 Nonetheless, the prevalence of questionable research practices remains
 largely unknown and reproducibility of findings has been shown to be
