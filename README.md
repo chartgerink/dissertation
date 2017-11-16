@@ -64,6 +64,7 @@ This repository tracks the official dissertation. The goal is to provide a fully
   - [ ] Status: preprint undergoing open peer review
   - [x] Data: https://osf.io/aykeh
   - [x] Reproducibility packet: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.845355.svg)](https://doi.org/10.5281/zenodo.845355)
+  - [x] License: [CC 0 rights waiver](http://creativecommons.org/publicdomain/zero/1.0/)
   - [ ] Bookdown-ready
 
 9. Discussion chapter
