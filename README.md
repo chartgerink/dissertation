@@ -45,25 +45,25 @@ This repository tracks the official dissertation. The goal is to provide a fully
   - [x] License: [CC BY 4.0](http://creativecommons.org/licenses/by/4.0)
   - [ ] Bookdown-ready
 
-1. [Ecological validity of detecting data fabrication in experimental studies](https://github.com/chartgerink/2015ori-1)
+6. [Ecological validity of detecting data fabrication in experimental studies](https://github.com/chartgerink/2015ori-1)
   - [ ] Preprint: [working manuscript](https://github.com/chartgerink/2015ori-1/blob/master/submission/manuscript.pdf)
   - [ ] Status: work in progress
   - [ ] Data: 
   - [ ] Reproducibility packet: 
   - [ ] Bookdown-ready
   
-1. A qualitative study of how researchers fabricate data
+7. A qualitative study of how researchers fabricate data
   - [ ] Preprint: 
   - [ ] Status: preparatory phase
   - [ ] Data: 
   - [ ] Reproducibility packet: 
   - [ ] Bookdown-ready
   
-1. TBD
-  - [ ] Preprint: 
-  - [ ] Status: preparatory phase
-  - [ ] Data: 
-  - [ ] Reproducibility packet: 
+8. Analyzing DECREASE trials to estimate evidence of data manipulation
+  - [x] Preprint: [10.12688/f1000research.12584.1](https://doi.org/10.12688/f1000research.12584.1)
+  - [ ] Status: preprint undergoing open peer review
+  - [x] Data: https://osf.io/aykeh
+  - [x] Reproducibility packet: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.845355.svg)](https://doi.org/10.5281/zenodo.845355)
   - [ ] Bookdown-ready
 
-1. Discussion chapter
+9. Discussion chapter
