@@ -66,5 +66,13 @@ This repository tracks the official dissertation. The goal is to provide a fully
   - [x] Reproducibility packet: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.845355.svg)](https://doi.org/10.5281/zenodo.845355)
   - [x] License: [CC 0 rights waiver](http://creativecommons.org/publicdomain/zero/1.0/)
   - [ ] Bookdown-ready
+  
+9. Extracting data from vector figures in scholarly articles
+  - [x] Preprint: [https://arxiv.org/abs/1709.02261](https://arxiv.org/abs/1709.02261)
+  - [x] Status: manuscript that underwent public feedback
+  - [x] Data: see reproducibility packet
+  - [x] Reproducibility packet: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1010360.svg)](https://doi.org/10.5281/zenodo.1010360)
+  - [x] License: [CC 0 rights waiver](http://creativecommons.org/publicdomain/zero/1.0/)
+  - [ ] Bookdown-ready
 
-9. Discussion chapter
+10. Discussion chapter
