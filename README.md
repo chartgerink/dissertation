@@ -30,7 +30,7 @@ This repository tracks the official dissertation. The goal is to provide a fully
   - [x] License: [CC BY 4.0](http://creativecommons.org/licenses/by/4.0)
   - [ ] Bookdown-readyflkdsajflkdsajflkdsajflkdsaf
 
-4. [Too good to be false: Nonsignificant results revisited](http://doi.org/10.1525/collabra.71)
+4. [Too good to be false: Nonsignificlkdjflaskjflsakfjdslant results revisited](http://doi.org/10.1525/collabra.71)
   - [x] Preprint: [PsyArxiv](https://osf.io/preprints/rkumy)
   daskjfsajflkdsjaflkdsjflkdsajfds
   - [x] Status: [published in Collabra](http://doi.org/10.1525/collabra.71)
