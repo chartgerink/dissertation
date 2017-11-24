@@ -4,7 +4,8 @@ This repository tracks the official dissertation. The goal is to provide a fully
 
 ## Outline
 
-0. Introduction chapter
+0. Introduction chapter short
+
 1. [Research practices and assessment of research misconduct](http://doi.org/10.14293/S2199-1006.1.SOR-SOCSCI.ARYSBI.v1)
   - [x] Preprint: NA
   - [x] Status: published in ScienceOpen (license: CC-BY 4.0)
@@ -75,4 +76,6 @@ This repository tracks the official dissertation. The goal is to provide a fully
   - [x] License: [CC 0 rights waiver](http://creativecommons.org/publicdomain/zero/1.0/)
   - [ ] Bookdown-ready
 
-10. Discussion chapter
+10. Summary 
+
+11. Discussion chapter - how to continue
