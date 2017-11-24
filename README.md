@@ -28,10 +28,11 @@ This repository tracks the official dissertation. The goal is to provide a fully
   - [x] Data: [https://osf.io/gdr4q/](https://osf.io/gdr4q/)
   - [x] Reproducibility packet: [https://osf.io/4d2g9/](https://osf.io/4d2g9/)
   - [x] License: [CC BY 4.0](http://creativecommons.org/licenses/by/4.0)
-  - [ ] Bookdown-ready
+  - [ ] Bookdown-readyflkdsajflkdsajflkdsajflkdsaf
 
 4. [Too good to be false: Nonsignificant results revisited](http://doi.org/10.1525/collabra.71)
   - [x] Preprint: [PsyArxiv](https://osf.io/preprints/rkumy)
+  daskjfsajflkdsjaflkdsjflkdsajfds
   - [x] Status: [published in Collabra](http://doi.org/10.1525/collabra.71)
   - [x] Data: direct downloads linked in [Sweave file](https://github.com/chartgerink/2014tgtbf/blob/master/submission%2Fmanuscript.Rnw)
   - [x] Reproducibility packet: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.250492.svg)](https://doi.org/10.5281/zenodo.250492)
