@@ -4,6 +4,8 @@ This repository tracks the official dissertation. The goal is to provide a fully
 
 ## Outline
 
+__WORKING TITLE: Exploring thought styles in scientific (mis)conduct__
+
 0. Introduction chapter short
   - [ ] [Being drafted on Etherpad](https://public.etherpad-mozilla.org/p/chjh-ch0) (contributions welcome in Markdown only!)
 
