@@ -5,6 +5,7 @@ This repository tracks the official dissertation. The goal is to provide a fully
 ## Outline
 
 0. Introduction chapter short
+  - [ ] [Being drafted on Etherpad](https://public.etherpad-mozilla.org/p/chjh-ch0) (contributions welcome in Markdown only!)
 
 1. [Research practices and assessment of research misconduct](http://doi.org/10.14293/S2199-1006.1.SOR-SOCSCI.ARYSBI.v1)
   - [x] Preprint: NA
@@ -92,6 +93,11 @@ This repository tracks the official dissertation. The goal is to provide a fully
   - [x] License: [CC 0 rights waiver](http://creativecommons.org/publicdomain/zero/1.0/)
   - [x] Bookdown-ready
 
-12. Summary 
+12. Summary
+- [ ] [Being drafted on Etherpad](https://public.etherpad-mozilla.org/p/chjh-summary) (contributions welcome in Markdown only!)
 
 13. Discussion chapter - how to continue
+- [ ] [Being drafted on Etherpad](https://public.etherpad-mozilla.org/p/chjh-discussion) (contributions welcome in Markdown only!)
+
+14. Acknowledgements
+- [ ] [Being drafted on Etherpad](https://public.etherpad-mozilla.org/p/chjh-acknowledgements) (contributions welcome in Markdown only!)
