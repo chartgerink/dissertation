@@ -75,7 +75,23 @@ This repository tracks the official dissertation. The goal is to provide a fully
   - [x] Reproducibility packet: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1010360.svg)](https://doi.org/10.5281/zenodo.1010360)
   - [x] License: [CC 0 rights waiver](http://creativecommons.org/publicdomain/zero/1.0/)
   - [ ] Bookdown-ready
+  
+10. "As-you-go" instead of "after-the-fact": A network approach to scholarly communication and evaluation
+  - [x] Preprint: [https://doi.org/10.7287/peerj.preprints.26462v1](https://doi.org/10.7287/peerj.preprints.26462v1)
+  - [ ] Status: preprint undergoing peer review
+  - [x] Data: NO DATA
+  - [x] Reproducibility packet: [GitHub for manuscript files](https://github.com/chartgerink/2017network-rankings)
+  - [x] License: [CC 0 rights waiver](http://creativecommons.org/publicdomain/zero/1.0/)
+  - [x] Bookdown-ready
+  
+11. Verified, shared, modular research communication with the Dat protocol
+  - [x] Preprint: [https://dat-com-chris.hashbase.io/](https://dat-com-chris.hashbase.io/)
+  - [ ] Status: work in progress
+  - [x] Data: NO DATA
+  - [x] Reproducibility packet: dat://dat-com-chris.hashbase.io
+  - [x] License: [CC 0 rights waiver](http://creativecommons.org/publicdomain/zero/1.0/)
+  - [x] Bookdown-ready
 
-10. Summary 
+12. Summary 
 
-11. Discussion chapter - how to continue
+13. Discussion chapter - how to continue
