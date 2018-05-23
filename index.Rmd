@@ -5,8 +5,7 @@ site: bookdown::bookdown_site
 documentclass: book
 bibliography: [library.bib]
 output:
-  bookdown::gitbook: default
-  bookdown::pdf_book: default
+  bookdown::tufte_html_book: default
 ---
 
 # Introduction
