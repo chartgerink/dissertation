@@ -4,10 +4,10 @@ This repository tracks the official dissertation. The goal is to provide a fully
 
 ## Outline
 
-__WORKING TITLE: Exploring thought styles in scientific (mis)conduct__
+__WORKING TITLE: TBD__
 
 0. Introduction chapter short
-  - [ ] [Being drafted on Etherpad](https://public.etherpad-mozilla.org/p/chjh-ch0) (contributions welcome in Markdown)
+  - [ ] Currently writing
 
 1. [Research practices and assessment of research misconduct](http://doi.org/10.14293/S2199-1006.1.SOR-SOCSCI.ARYSBI.v1)
   - [x] Preprint: NA
@@ -56,13 +56,6 @@ __WORKING TITLE: Exploring thought styles in scientific (mis)conduct__
   - [ ] Reproducibility packet: 
   - [ ] Bookdown-ready
   
-7. A qualitative study of how researchers fabricate data
-  - [ ] Preprint: 
-  - [ ] Status: preparatory phase
-  - [ ] Data: 
-  - [ ] Reproducibility packet: 
-  - [ ] Bookdown-ready
-  
 8. Analyzing DECREASE trials to estimate evidence of data manipulation
   - [x] Preprint: [10.12688/f1000research.12584.1](https://doi.org/10.12688/f1000research.12584.1)
   - [ ] Status: preprint undergoing open peer review
@@ -81,7 +74,7 @@ __WORKING TITLE: Exploring thought styles in scientific (mis)conduct__
   
 10. "As-you-go" instead of "after-the-fact": A network approach to scholarly communication and evaluation
   - [x] Preprint: [https://doi.org/10.7287/peerj.preprints.26462v1](https://doi.org/10.7287/peerj.preprints.26462v1)
-  - [ ] Status: preprint undergoing peer review
+  - [x] Status: [published in Publications](https://doi.org/10.3390/publications6020021)
   - [x] Data: NO DATA
   - [x] Reproducibility packet: [GitHub for manuscript files](https://github.com/chartgerink/2017network-rankings)
   - [x] License: [CC 0 rights waiver](http://creativecommons.org/publicdomain/zero/1.0/)
@@ -95,11 +88,5 @@ __WORKING TITLE: Exploring thought styles in scientific (mis)conduct__
   - [x] License: [CC 0 rights waiver](http://creativecommons.org/publicdomain/zero/1.0/)
   - [x] Bookdown-ready
 
-12. Summary
-- [ ] [Being drafted on Etherpad](https://public.etherpad-mozilla.org/p/chjh-summary) (contributions welcome in Markdown)
-
-13. Discussion chapter - how to continue
-- [ ] [Being drafted on Etherpad](https://public.etherpad-mozilla.org/p/chjh-discussion) (contributions welcome in Markdown)
-
-14. Acknowledgements
-- [ ] [Being drafted on Etherpad](https://public.etherpad-mozilla.org/p/chjh-acknowledgements) (contributions welcome in Markdown)
+12. Discussion chapter - how to continue
+- [ ] Being drafted

@@ -10,6 +10,7 @@ output:
   bookdown::pdf_book: default
 ---
 
+<!-- https://bookdown.org/yihui/bookdown/citations.html -->
 # Introduction
 
 * What is science often taught like?
