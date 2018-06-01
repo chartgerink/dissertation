@@ -6,7 +6,7 @@ This chapter was originally published under a CC BY 4.0 license.
 
 Reproducibility packet preserved at
 
-[![DOI](https://zenodo.org/badge/DOI/10.14293/S2199-1006.1.SOR-SOCSCI.ARYSBI.v1.svg)](https://zenodo.org/record/276035)
+<!-- [![DOI](https://zenodo.org/badge/DOI/10.14293/S2199-1006.1.SOR-SOCSCI.ARYSBI.v1.svg)](https://zenodo.org/record/276035) -->
 
 ## Abstract
 
