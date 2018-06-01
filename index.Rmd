@@ -1,13 +1,46 @@
 ---
-title: "Statistics, methods, and the future of science"
+title: "Progressing science"
 author: "Chris HJ Hartgerink"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [library.bib]
+link-citations: true
 output:
-  bookdown::tufte_html_book: default
+  bookdown::gitbook: default
+  bookdown::pdf_book: default
 ---
 
 # Introduction
 
-This is a placeholder
+* What is science often taught like?
+  * Empirical research cycle (De Groot)
+  * Vademecum/handbook science (Fleck 1974)
+  * Peer reviewed journal articles
+  * The idealized scientist
+* Questioning science
+  * How was science conducted around me and by me?
+    * Stapel
+    * Experiences with research/scientists
+      * Recollecting ppo, thesis
+      * First year paper
+    * QRP research
+    * Motivation for project
+* Progressing science
+  * Understanding the issues
+    * Ch1
+    * Ch2
+    * Ch3
+    * Ch4
+  * Improving the situation practically
+
+
+===
+
+The history of science is convoluted [see also @isbn:9781846142109], but as a student it is seemingly uncomplicated: Science is about truth finding. 
+<!-- context 2009 -->
+<!-- [@doi:10.1080/08989621.2016.1268922]. -->
+
+
+
+
+This dissertation showcases work I did together with many other people  towards progressing science to be more resilient to t
