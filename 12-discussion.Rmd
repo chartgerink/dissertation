@@ -1,5 +1,23 @@
-# Discussion
+# Epilogue
+
+## Summary of work
+
+## Backstories
+
+
+
+## Applications
+
+## Vision
 
 * Science populism
 * Solutionism
-* 
+* even those who try hard fail
+  * broken links (eg in data paper to github page)
+
+## Reading list
+
+- [ ] https://scholar.google.nl/scholar?cites=16149438710536643567&as_sdt=2005&sciodt=0,5&hl=en
+- [ ] reproducibility manifesto
+- [ ] TOP guidelines
+- [ ] preregistration revolution

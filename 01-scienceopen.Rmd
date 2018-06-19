@@ -1,12 +1,8 @@
 # Research practices and assessment of research misconduct
 
-This chapter was originally published under a CC BY 4.0 license.
+Originally published as [Hartgerink, C.H.J. & Wicherts, J.M. (2016). Research practices and assessment of research misconduct. _ScienceOpen Research_. doi:10.14293/s2199-1006.1.sor-socsci.arysbi.v1](https://doi.org/10.14293/s2199-1006.1.sor-socsci.arysbi.v1)
 
-[Hartgerink, C.H.J. & Wicherts, J.M. (2016). Research practices and assessment of research misconduct. _ScienceOpen Research_. doi:10.14293/s2199-1006.1.sor-socsci.arysbi.v1](https://doi.org/10.14293/s2199-1006.1.sor-socsci.arysbi.v1)
-
-Reproducibility packet preserved at
-
-<!-- [![DOI](https://zenodo.org/badge/DOI/10.14293/S2199-1006.1.SOR-SOCSCI.ARYSBI.v1.svg)](https://zenodo.org/record/276035) -->
+Reproducibility packet: [Zenodo](https://zenodo.org/record/276035)
 
 ## Abstract
 

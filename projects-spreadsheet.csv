@@ -1,0 +1,12 @@
+Chapter,Section,Title,Preprint,Publication,Data,Reproducibility packet,License,HTML-ready,PDF-ready,Marcel-verified,Jelte-verified
+0,,Introduction,,,,,http://creativecommons.org/publicdomain/zero/1.0/,,,,
+1,Understanding,Research practices and assessment of research misconduct,-,https://doi.org/10.14293/S2199-1006.1.SOR-SOCSCI.ARYSBI.v1,-,https://zenodo.org/record/276035,http://creativecommons.org/licenses/by/4.0,x,,x,x
+2,Understanding,Reanalyzing Head et al. (2015): Investigating the robustness of widespread p-hacking,https://doi.org/10.7287/peerj.preprints.2439v1,https://doi.org/10.7717/peerj.3068,https://doi.org/10.5061/dryad.79d43/1,https://doi.org/10.5281/zenodo.269668,http://creativecommons.org/publicdomain/zero/1.0/,,,x,x
+3,Understanding,Distributions of p-values between .01-.05 in psychology: what is really going on?,https://doi.org/10.7287/peerj.preprints.1642v2,https://doi.org/10.7717/peerj.1935,,,http://creativecommons.org/licenses/by/4.0,,,x,x
+4,Understanding,Too good to be false: Nonsignificant results revisited,https://doi.org/10.17605/OSF.IO/RKUMY,https://doi.org/10.1525/collabra.71/,,,http://creativecommons.org/licenses/by/4.0,,,x,x
+5,Understanding,"688,112 Statistical Results: Content Mining Psychology Articles for Statistical Test Results",https://doi.org/10.20944/preprints201608.0191.v1,https://doi.org/10.3390/data1030014,http://dx.doi.org/10.17026/dans-2cm-v9j9,http://dx.doi.org/10.5281/zenodo.59818,http://creativecommons.org/licenses/by/4.0,,,x,x
+6,Understanding,2015ori-1,,,,,,,,,
+7,Progressing,Extracting data from vector figures in scholarly articles,https://arxiv.org/abs/1709.02261,-,,,http://creativecommons.org/publicdomain/zero/1.0/,,,x,
+8,Progressing,"""As-you-go"" instead of ""after-the-fact"": A network approach to scholarly communication and evaluation",https://doi.org/10.7287/peerj.preprints.26462v2,https://doi.org/10.3390/publications6020021,-,,http://creativecommons.org/publicdomain/zero/1.0/,,,x,
+9,Progressing,"Verified, shared, modular research communication with the Dat protocol",https://dat-com-chris.hashbase.io,,,,http://creativecommons.org/publicdomain/zero/1.0/,,,,
+10,,Discussion,,,,,http://creativecommons.org/publicdomain/zero/1.0/,,,,
