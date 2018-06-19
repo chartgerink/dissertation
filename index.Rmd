@@ -11,21 +11,40 @@ output:
 ---
 
 <!-- https://bookdown.org/yihui/bookdown/citations.html -->
+<!-- http://xisbn.worldcat.org/webservices/xid/isbn/9780446310789?method=getMetadata&fl=*&format=json -->
+<!-- http://xisbn.worldcat.org/webservices/xid/isbn/902322891X?method=getMetadata&format=json&fl=* -->
+```{r echo = FALSE}
+chapters <- 10
+tabnr <- 1
+fignr <- 1
+```
+
 # Introduction
 
-* What is science often taught like?
-  * Empirical research cycle (De Groot)
-  * Vademecum/handbook science (Fleck 1974)
-  * Peer reviewed journal articles
-  * The idealized scientist
+The history- and practice of science is convoluted [@isbn:9781846142109], but as a student it was taught to me in an uncomplicated manner. Some of the things I knew from high school lessons about science were how to convert a metric distance into Astronomical Units (AUs) and that there was something called the research cycle (I always forgot the separate steps and their order, which will ironically be a large part of this thesis). Those lessons presented things as truths, but in hindsight it is difficult to imagine these truths being unambiguous all along. For example, I was taught the AU as simple arithmetic while that calculation accepts a historically complex process full of debate where the AU is defined [@doi:10.1017/S1743921305001365]. 
+
+Scientific textbooks understandably present a distillation of the scientific process because not everyone needs the (full) history of conclusions after consensus is reached. This is a useful heuristic for progress, but it also minimizes (maybe even belittles) the importance of the process [@isbn:0692094187]. As such, textbook science [or vademecum science;@isbn:9780226253251], with which science teaching starts, provides high certainty and little detail and might provide the breeding ground for a view of highly certain science built on few details, through which storybook images of scientists and science arise [@doi:10.1080/08989621.2016.1268922]. 
+
+Scientific articles provide more details and less certainty than scientific textbooks, but still present storified findings that arise from a deeply complicated process [particularly salient in  @doi:10.1017/cbo9780511807862.002]. Compared to scientific textbooks, which present a narrative across many studies, scientific articles provide a narrative across relatively few studies (reviews excluded). However, the linear narrative tries to distill a complicated and non-linear research process, which easily causes misrepresentation of event chronology to present a more comprehensible narrative. Such misrepresentation becomes particularly problematic if the validity of the claims rest on the true order of events [@].
+
+When I started as a psychology student in 2009, I perceived science and scientists in the storybook way: Objective, disinterested, skeptical, rigorous, ethical. This storybook image of the empirical scientist is warranted by the empirical research cycle [@isbn:90-232-2891-X], which ironically peer-reviewed journal articles certified the presented findings. In lectures I learnt about how 
+<!-- Examples of findings? -->
+
+As I progressed, it became apparent how naive that storybook image actually was. 
+  * first scientific existential crisis
+  * second scientific existential crisis
+
+It struck me as particularly odd that the scientific system was rewarding behaviors that directly undermined its own epistemology.
+
 * Questioning science
   * How was science conducted around me and by me?
+    * Recollecting ppo, thesis
     * Stapel
-    * Experiences with research/scientists
-      * Recollecting ppo, thesis
-      * First year paper
     * QRP research
+    * First year paper
     * Motivation for project
+
+
 * Progressing science
   * Understanding the issues
     * Ch1
@@ -34,14 +53,11 @@ output:
     * Ch4
   * Improving the situation practically
 
+The dissertation is subdivided into two main parts: (1) Understanding the issues and (2) Practical ways to progress science. Part 1 (chapters 1-6) pertains to research into understanding the XXX. Chapter 1 reviews research misconduct, questionable research practices, and what is considered responsible conduct of research. This set the scene for further research into these topics in the remaining chapters. In Chapter 2, . Part 2 (chapters 7-9) pertains to practical 
 
-===
+The order of the chapters in this dissertation is not the chronological order of events. Therefore, incongruities throughout various chapters may arise. For example, in Chapter 1 transparent research practices are mentioned in the same vein as open practices. However, in the Epilogue of this dissertation, I disambiguate the two as being substantively different. As a mental aid, the chronological order of the chapters is as depicted in Table `r tabnr`.
 
-The history of science is convoluted [see also @isbn:9781846142109], but as a student it is seemingly uncomplicated: Science is about truth finding. 
-<!-- context 2009 -->
-<!-- [@doi:10.1080/08989621.2016.1268922]. -->
-
-
-
-
-This dissertation showcases work I did together with many other people  towards progressing science to be more resilient to t
+```{r echo = FALSE}
+df <- data.frame(chapter = seq(1, chapters, 1),
+                 ordering = c())
+```
