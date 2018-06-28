@@ -14,6 +14,13 @@
 * Solutionism
 * even those who try hard fail
   * broken links (eg in data paper to github page)
+* Sustainability
+* Governance structures
+* Open Science
+  * Copyright
+  * Elsevier's monitoring?
+
+## Hurdles
 
 ## Reading list
 

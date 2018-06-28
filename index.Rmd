@@ -8,6 +8,7 @@ link-citations: true
 output:
   bookdown::gitbook: default
   bookdown::pdf_book: default
+  keep-tex: true
 ---
 
 <!-- https://bookdown.org/yihui/bookdown/citations.html -->
@@ -21,43 +22,47 @@ fignr <- 1
 
 # Introduction
 
-The history- and practice of science is convoluted [@isbn:9781846142109], but as a student it was taught to me in an uncomplicated manner. Some of the things I knew from high school lessons about science were how to convert a metric distance into Astronomical Units (AUs) and that there was something called the research cycle (I always forgot the separate steps and their order, which will ironically be a large part of this thesis). Those lessons presented things as truths, but in hindsight it is difficult to imagine these truths being unambiguous all along. For example, I was taught the AU as simple arithmetic while that calculation accepts a historically complex process full of debate where the AU is defined [@doi:10.1017/S1743921305001365]. 
+The history- and practice of science is convoluted [@isbn:9781846142109], but as a student it was taught to me in an uncomplicated manner. Some of the things I learnt in high school lessons about science were how to convert a metric distance into Astronomical Units (AUs) and that there was something called the research cycle (I always forgot the separate steps and their order, which will ironically be a large part of this thesis). Those lessons presented things such as the AU and the empirical cycle as unambiguous truths. In hindsight it is difficult to imagine these things being constructed as unambiguous from the start. For example, I was taught the AU as simple arithmetic while that calculation requires accepting a historically complex process full of debate where the AU is defined [@doi:10.1017/S1743921305001365]. 
 
-Scientific textbooks understandably present a distillation of the scientific process because not everyone needs the (full) history of conclusions after consensus is reached. This is a useful heuristic for progress, but it also minimizes (maybe even belittles) the importance of the process [@isbn:0692094187]. As such, textbook science [or vademecum science;@isbn:9780226253251], with which science teaching starts, provides high certainty and little detail and might provide the breeding ground for a view of highly certain science built on few details, through which storybook images of scientists and science arise [@doi:10.1080/08989621.2016.1268922]. 
+Scientific textbooks, used for teaching, understandably present a distillation of the scientific process. Not everyone needs the (full) history of conclusions after consensus is reached, which is a useful heuristic for progress but also minimizes (maybe even belittles) the importance of the process [@isbn:0692094187]. As such, textbook science [or vademecum science; @isbn:9780226253251], with which science teaching starts, provides high certainty and little detail and might provide the breeding ground for a view of highly certain science built on few details through which storybook images of scientists and science arise. Such storybook images ascribe substantively higher ratings for scientists than non-scientists with respect to objectivity, rationality, skepticism, rigour, and ethics [@doi:10.1080/08989621.2016.1268922].
 
-Scientific articles provide more details and less certainty than scientific textbooks, but still present storified findings that arise from a deeply complicated process [particularly salient in  @doi:10.1017/cbo9780511807862.002]. Compared to scientific textbooks, which present a narrative across many studies, scientific articles provide a narrative across relatively few studies (reviews excluded). However, the linear narrative tries to distill a complicated and non-linear research process, which easily causes misrepresentation of event chronology to present a more comprehensible narrative. Such misrepresentation becomes particularly problematic if the validity of the claims rest on the true order of events [@].
+Scientific articles provide more details and less certainty than scientific textbooks, but still present storified findings that simplify a complicated process [particularly salient in  @doi:10.1017/cbo9780511807862.002]. Compared to scientific textbooks, which present a narrative across many studies, scientific articles provide a narrative across relatively few studies (reviews excluded). Hence, scientific articles are better than scientific textbooks for understanding the validity of findings because they provide relatively more detail. However, the linear narrative of the scientific article distills and distorts a complicated non-linear research process and in that way provides little detail in an absolute sense. This lack of detail and (excessive) storification can cause misrepresentation of event chronology to present a more comprehensible narrative. Such misrepresentation becomes particularly problematic if the validity of the presented findings rest on the true order of events --- as it does in the prevalent epistemological model based on the empirical research cycle [@isbn:90-232-2891-X].
 
-When I started as a psychology student in 2009, I perceived science and scientists in the storybook way: Objective, disinterested, skeptical, rigorous, ethical. This storybook image of the empirical scientist is warranted by the empirical research cycle [@isbn:90-232-2891-X], which ironically peer-reviewed journal articles certified the presented findings. In lectures I learnt about how 
-<!-- Examples of findings? -->
+When I started as a psychology student in 2009, I implicitly perceived science and scientists in the storybook way: Objective, disinterested, skeptical, rigorous, ethical. I was the first in my immediate family to go to university, so I had no previous informal education about what a 'true' scientist or 'true' science was like --- I was only influenced by the depictions in the media and popular culture (e.g., the genius individual). The textbook- and article based education I received at the university did not disconfirm the storybook image and might have only reinforced it (e.g., history surrounding 'rockstar' professors and the gold-standard of certification in the form of peer review). It seemed like the empirical scientist was warranted the storybook qualities *because* the empirical research cycle provided a way to (supposedly) overcome human biases and that the search for 'the truth' was more important than individual gain. Skepticism was a part of the education, but initially more so at the level of study methodology and not the larger system it was produced in.
+<!-- The certification and validity of the empirical research cycle appeared to have been outsourced to the peer-review process, which was deemed the golden standardAs will appear ironic later on, peer-reviewed journal articles supposedly certified the presented findings as being true to the empirical cycle and hence epistemologically valid. -->
 
-As I progressed, it became apparent how naive that storybook image actually was. 
-  * first scientific existential crisis
-  * second scientific existential crisis
+<!-- The empirical research cycle supposedly helps validate science and the scientists' work; in cases where it appeared to not do this it was argued that science would be self-correcting. The counterintuitiveness of social psychology research made it odd but seemingly valid and highly appealing to me as a person. Not only did it interest me from a perspective of trying to understand the world around 
+ -->
+As I progressed throughout my science education, it became apparent how naive the storybook image of science and the scientist was through two personal crises of epistemological faith in science. These crises strongly correlated with several major events within the psychology research community and severely made me doubt what the value of the research I was learning and conducting was.
 
-It struck me as particularly odd that the scientific system was rewarding behaviors that directly undermined its own epistemology.
+The first crisis of epistemological faith was caused when the professor who got me interested in research confessed to having fabricated data throughout almost his entire academic career, spanning two decades [@]. Having worked as a research assistant for him for a short period of time, I doubted whether I was critical enough to conduct and detect valid research. Moreover, I wondered what to make of research given that the person who got me inspired appeared to be a bad example and what I was actually interested in. Ultimately I considered it unlikely that the majority of researchers would be frauds (hopefully) and that it was an insight into how certification of research could fail at various stages (e.g., peer review, data sharing). Given what I hoped to be a low prevalence of data fabrication [I later learned that was seemingly corroborated; @doi:fanelli-plos-prevalence] it would not necessarily undermine the epistemological effort of the scientific collective. As a result, I regained sufficient faith in the science I was conducting to continue. 
+
+A second epistemological crisis showed how the collective scientific effort was undermined in a more encompassing and problematic way through behaviors that undermined the core empirical research cycle. More specifically, it made clear how the loose application of statistical procedures could be used to produce statistically significant results from pretty much anything [@], how biased publication of results distorted the work that was being done [@], and ultimately how the combination of those two led to a vicious cycle of underpowered research that further exacerbated these behaviors if left unattended. These were not necessarily new findings, having been discussed over 40 years before already [@gigerenzer;rosenthal]. As such, it seemed that progress on these issues would be unlikely now, given that the awareness had been raised way before. Ultimately, only the fact that science was still making some progress in advancing knowledge facilitated further faith in the scientific effort. 
+
+Epistemological faith did not seem like a domain where progress would come easily --- I became increasingly interested in various initiatives to improve rigour and accessibility of science. 
+* Open Access
+* Open Data
+* Open Science
+Throughout these efforts, improving science became the main motivation for my own research and for a PhD project. 
 
 * Questioning science
-  * How was science conducted around me and by me?
     * Recollecting ppo, thesis
     * Stapel
     * QRP research
     * First year paper
     * Motivation for project
 
-
-* Progressing science
-  * Understanding the issues
-    * Ch1
-    * Ch2
-    * Ch3
-    * Ch4
-  * Improving the situation practically
-
-The dissertation is subdivided into two main parts: (1) Understanding the issues and (2) Practical ways to progress science. Part 1 (chapters 1-6) pertains to research into understanding the XXX. Chapter 1 reviews research misconduct, questionable research practices, and what is considered responsible conduct of research. This set the scene for further research into these topics in the remaining chapters. In Chapter 2, . Part 2 (chapters 7-9) pertains to practical 
+This dissertation is subdivided into two main parts on improving science: (1) Understanding and detecting issues in the organization and conduct of research and (2) Practical ways to progress science to become XXX. Part 1 (chapters 1-6) pertains to research into understanding some of the relevant issues. Chapter 1 reviews literature on research misconduct, questionable research practices, and what is considered responsible conduct of research. It also extends a framework for more transparent practices to promote responsible conduct of research. This chapter sets the scene for further research into these topics in the remaining chapters. In Chapter 2, . Part 2 (chapters 7-9) pertains to practical 
 
 The order of the chapters in this dissertation is not the chronological order of events. Therefore, incongruities throughout various chapters may arise. For example, in Chapter 1 transparent research practices are mentioned in the same vein as open practices. However, in the Epilogue of this dissertation, I disambiguate the two as being substantively different. As a mental aid, the chronological order of the chapters is as depicted in Table `r tabnr`.
 
 ```{r echo = FALSE}
-df <- data.frame(chapter = seq(1, chapters, 1),
-                 ordering = c())
+# df <- data.frame(chapter = seq(1, chapters, 1),
+                 # ordering = c())
+
+tabnr <- tabnr + 1
 ```
+
+In order to promote the reproducibility and openness of this dissertation, Table XXX provides an overview of the chapters on various aspects. More specifically, it includes the reproducibility packet, the copyright license, whether it was shared as a preprint, 
+
+In the Epilogue of this dissertation, I will provide a summary of the individual chapters, provide background on the relevant events involved in the research process but not captured in the individual chapters, and attempt to provide a coherent vision for Open Scholarship [@knowledge exchange].
