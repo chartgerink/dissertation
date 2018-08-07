@@ -1,13 +1,13 @@
 # Dissertation
 
-This repository tracks the official dissertation. The goal is to provide a fully reproducible and digitally-born dissertation, which I can easily export to paper format to fullfill my university's requirements. The [`bookdown`](https://bookdown.org/home/)-borne dissertation is a *work in progress* but already available at the static webpage for [this repository](https://chartgerink.github.io/dissertation/).
+This repository tracks the official dissertation. The goal is to provide a fully reproducible and digitally-born dissertation, which I can easily export to paper format to fullfill my university's requirements. The [`bookdown`](https://bookdown.org/home/)-borne dissertation is a *work in progress* but already available at the static webpage for [this repository](https://chartgerink.github.io/dissertation/). Find the latest PDF version
 
 ## Outline
 
-__WORKING TITLE: TBD__
+__WORKING TITLE: Contributions towards understanding and building sustainable science__
 
 0. Introduction chapter short
-  - [ ] Currently writing
+  - [x] First draft
 
 1. [Research practices and assessment of research misconduct](http://doi.org/10.14293/S2199-1006.1.SOR-SOCSCI.ARYSBI.v1)
   - [x] Preprint: NA
@@ -56,15 +56,7 @@ __WORKING TITLE: TBD__
   - [ ] Reproducibility packet: 
   - [ ] Bookdown-ready
   
-8. Analyzing DECREASE trials to estimate evidence of data manipulation
-  - [x] Preprint: [10.12688/f1000research.12584.1](https://doi.org/10.12688/f1000research.12584.1)
-  - [ ] Status: preprint undergoing open peer review
-  - [x] Data: https://osf.io/aykeh
-  - [x] Reproducibility packet: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.845355.svg)](https://doi.org/10.5281/zenodo.845355)
-  - [x] License: [CC 0 rights waiver](http://creativecommons.org/publicdomain/zero/1.0/)
-  - [ ] Bookdown-ready
-  
-9. Extracting data from vector figures in scholarly articles
+7. Extracting data from vector figures in scholarly articles
   - [x] Preprint: [https://arxiv.org/abs/1709.02261](https://arxiv.org/abs/1709.02261)
   - [x] Status: manuscript that underwent public feedback
   - [x] Data: see reproducibility packet
@@ -72,7 +64,7 @@ __WORKING TITLE: TBD__
   - [x] License: [CC 0 rights waiver](http://creativecommons.org/publicdomain/zero/1.0/)
   - [ ] Bookdown-ready
   
-10. "As-you-go" instead of "after-the-fact": A network approach to scholarly communication and evaluation
+8. "As-you-go" instead of "after-the-fact": A network approach to scholarly communication and evaluation
   - [x] Preprint: [https://doi.org/10.7287/peerj.preprints.26462v1](https://doi.org/10.7287/peerj.preprints.26462v1)
   - [x] Status: [published in Publications](https://doi.org/10.3390/publications6020021)
   - [x] Data: NO DATA
@@ -80,7 +72,7 @@ __WORKING TITLE: TBD__
   - [x] License: [CC 0 rights waiver](http://creativecommons.org/publicdomain/zero/1.0/)
   - [x] Bookdown-ready
   
-11. Verified, shared, modular research communication with the Dat protocol
+9. Verified, shared, modular research communication with the Dat protocol
   - [x] Preprint: [https://dat-com-chris.hashbase.io/](https://dat-com-chris.hashbase.io/)
   - [ ] Status: work in progress
   - [x] Data: NO DATA
@@ -88,5 +80,5 @@ __WORKING TITLE: TBD__
   - [x] License: [CC 0 rights waiver](http://creativecommons.org/publicdomain/zero/1.0/)
   - [x] Bookdown-ready
 
-12. Discussion chapter - how to continue
+10. Discussion chapter - how to continue
 - [ ] Being drafted
