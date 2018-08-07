@@ -1,12 +1,21 @@
+---
+bibliography: [library.bib]
+link-citations: true
+output:
+  keep-tex: true
+documentclass: article
+classoption: a5paper
+---
+
+```{r echo = FALSE}
+fignr <-tabnr <- 1
+```
+
 # Reanalyzing Head et al. (2015): investigating the robustness of widespread _p_-hacking
-
-This chapter was originally published under a CC 0 rights waiver (Public Domain dedication).
-
-[Hartgerink, C.H.J. (2017). Reanalyzing Head et al. (2015): investigating the robustness of widespread _p_-hacking. _PeerJ_. doi:10.7717/peerj.3068](https://doi.org/10.7717/peerj.3068)
 
 ## Abstract
 
-@10.1371/journal.pbio.1002106 provided a large collection of $p$-values that, from their perspective, indicates widespread statistical significance seeking (i.e., $p$-hacking). This paper inspects this result for robustness. Theoretically, the $p$-value distribution should be a smooth, decreasing function, but the distribution of reported $p$-values shows systematically more reported $p$-values for .01, .02, .03, .04, and .05 than $p$-values reported to three decimal places, due to apparent tendencies to round $p$-values to two decimal places. @10.1371/journal.pbio.1002106 correctly argue that an aggregate $p$-value distribution could show a bump below .05 when left-skew $p$-hacking occurs frequently. Moreover, the elimination of $p=.045$ and $p=.05$, as done in the original paper, is debatable. Given that eliminating $p=.045$ is a result of the need for symmetric bins and systematically more $p$-values are reported to two decimal places than to three decimal places, I did not exclude $p=.045$ and $p=.05$. I applied Fisher's method on $.04<p<.05$ and reanalyzed the data by adjusting the bin selection to $.03875<p\leq.04$ versus $.04875<p\leq.05$. Results of the reanalysis indicate that no evidence for left-skew $p$-hacking remains when I look at the entire range between $.04<p<.05$ or when I inspect the second-decimal. Taking into account reporting tendencies when selecting the bins to compare is especially important because this dataset does not allow for the recalculation of the $p$-values. Moreover, inspecting the bins that include two-decimal reported $p$-values potentially increases sensitivity if strategic rounding down of $p$-values as a form of $p$-hacking is widespread. Given the far-reaching implications of supposed widespread $p$-hacking throughout the sciences @10.1371/journal.pbio.1002106, it is important that these findings are robust to data analysis choices if the conclusion is to be considered unequivocal. Although no evidence of widespread left-skew $p$-hacking is found in this reanalysis, this does not mean that there is no $p$-hacking at all. These results nuance the conclusion by @10.1371/journal.pbio.1002106, indicating that the results are not robust and that the evidence for widespread left-skew $p$-hacking is ambiguous at best.
+@doi:10.1371/journal.pbio.1002106 provided a large collection of $p$-values that, from their perspective, indicates widespread statistical significance seeking (i.e., $p$-hacking). This paper inspects this result for robustness. Theoretically, the $p$-value distribution should be a smooth, decreasing function, but the distribution of reported $p$-values shows systematically more reported $p$-values for .01, .02, .03, .04, and .05 than $p$-values reported to three decimal places, due to apparent tendencies to round $p$-values to two decimal places. @10.1371/journal.pbio.1002106 correctly argue that an aggregate $p$-value distribution could show a bump below .05 when left-skew $p$-hacking occurs frequently. Moreover, the elimination of $p=.045$ and $p=.05$, as done in the original paper, is debatable. Given that eliminating $p=.045$ is a result of the need for symmetric bins and systematically more $p$-values are reported to two decimal places than to three decimal places, I did not exclude $p=.045$ and $p=.05$. I applied Fisher's method on $.04<p<.05$ and reanalyzed the data by adjusting the bin selection to $.03875<p\leq.04$ versus $.04875<p\leq.05$. Results of the reanalysis indicate that no evidence for left-skew $p$-hacking remains when I look at the entire range between $.04<p<.05$ or when I inspect the second-decimal. Taking into account reporting tendencies when selecting the bins to compare is especially important because this dataset does not allow for the recalculation of the $p$-values. Moreover, inspecting the bins that include two-decimal reported $p$-values potentially increases sensitivity if strategic rounding down of $p$-values as a form of $p$-hacking is widespread. Given the far-reaching implications of supposed widespread $p$-hacking throughout the sciences @10.1371/journal.pbio.1002106, it is important that these findings are robust to data analysis choices if the conclusion is to be considered unequivocal. Although no evidence of widespread left-skew $p$-hacking is found in this reanalysis, this does not mean that there is no $p$-hacking at all. These results nuance the conclusion by @10.1371/journal.pbio.1002106, indicating that the results are not robust and that the evidence for widespread left-skew $p$-hacking is ambiguous at best.
 
 ## Introduction
 
