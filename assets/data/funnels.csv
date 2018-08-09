@@ -1,0 +1,28 @@
+istf,nr,nr_paper,data_extracted,x_ax_lb,x_ax_ub,y_ax_lb,y_ax_ub,datapoints_extracted,datapoints_manual,x_ax_mapped,y_ax_mapped,note
+10.1186/s12885-016-2685-3,1,4,1,0,0.8,-1,2,24,24,yes,no,Y-axis off by +.5 approximately for extracted data
+10.1186/s12889-016-3083-0,1,3,1,-3,2,1.08,0,5,5,no,no,"totally misses the data, potentially due to background"
+10.1186/s12891-016-1231-4,1,4,1,0,6,-30,10,6,6,yes,no,
+10.1186/s13027-016-0058-9,1,3,1,-2,4,1.5,0,24,22,yes,yes,
+10.1186/s13054-016-1298-1,1,4,0,0.1,5,1,0,NA,NA,NA,NA,"doesn’t extract anything, potentially due to weird lines in plot"
+10.1186/s40064-016-3064-x,1,6a,0,0,0.8,-1,2,NA,NA,NA,NA,"variable point size, don't know why it failed"
+10.1186/s40064-016-3064-x,2,6b,1,0,1,-1,3,21,8,no,no,variable point size
+10.1186/s40064-016-3064-x,3,6c,1,0,1.5,-2,4,19,6,no,no,variable point size
+10.1515/med-2016-0052,1,2,1,-2,2,0.8,0,23,23,yes,yes,
+10.1515/med-2016-0052,2,4,1,-2,2,0.8,0,23,23,yes,yes,
+10.1515/med-2016-0052,3,6,1,-1,1,0.5,0,23,23,yes,yes,
+10.1515/med-2016-0099,1,7a,1,2,12,0.8,0,7,7,yes,yes,
+10.1515/med-2016-0099,2,7b,1,-3,0,0.4,0,11,11,yes,yes,
+10.1515/med-2016-0099,3,7c,1,-1.5,0.5,0.3,0,10,10,yes,yes,
+10.1515/med-2016-0099,4,7d,1,0,20,2,0,7,7,yes,yes,one point barely eligible by eye but is there (the two ones just below 5 on x-axis). Here the manual observation is supplanted by the extraction
+10.1590/S1518-8787.2016050006236,1,3,0,0,0.25,0.02,0,NA,NA,NA,NA,probably due to arrow in funnel
+10.21053/ceo.2016.9.1.1,1,3,1,-20,20,8,0,18,18,yes,no,
+10.21053/ceo.2016.9.1.1,2,3,1,-10,15,6,0,13,13,yes,no,
+10.21053/ceo.2016.9.1.1,3,3,1,-40,40,20,0,14,14,yes,yes,
+10.21053/ceo.2016.9.1.1,4,3,1,-0.2,0.2,0.1,0,9,9,yes,yes,
+10.2147/BCTT.S94617,1,7,1,0.01,100,1,0,7,7,no,yes,".01, .1, 1, 10, 100 scale"
+10.3349/ymj.2016.57.5.1260,1,7,1,-2,2,0.8,0,24,24,yes,yes,
+10.3349/ymj.2016.57.5.1260,2,8,1,-2,2,0.8,0,12,12,yes,yes,
+10.3390/ijerph13050458,1,24,1,0,1,-2,2,15,15,yes,no,"it flipped the y-axis (positive should be negative and vice versa), so in essence correct but being strict here"
+10.5114/aoms.2016.61916,1,4,1,0,0.6,-1,1,5,5,yes,no,"it flipped the y-axis (positive should be negative and vice versa), so in essence correct but being strict here"
+10.5114/aoms.2016.61916,2,4,1,0,0.6,-1,2,4,4,yes,no,don’t know what’s going on here
+10.5812/ircmj.40061,1,11,1,0,0.5,0.05,0,30,30,yes,yes,

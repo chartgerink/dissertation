@@ -1,0 +1,10 @@
+,module01,module02,module03,module04,module05,module06,module07,module08,module09
+module01,-,1,0,1,0,0,0,0,0
+module02,-,-,1,0,0,0,1,0,0
+module03,-,-,-,0,0,0,0,0,0
+module04,-,-,-,-,1,1,0,0,1
+module05,-,-,-,-,-,0,0,1,1
+module06,-,-,-,-,-,-,1,0,0
+module07,-,-,-,-,-,-,-,1,0
+module08,-,-,-,-,-,-,-,-,0
+module09,-,-,-,-,-,-,-,-,-
