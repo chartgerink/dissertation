@@ -1,0 +1,6 @@
+,,Population,
+,,$H_0$,$H_1$
+Decision,'$H_0$',$1-\alpha$,$\beta$
+,,True negative,False negative {[}Type II error{]}
+,'$H_1$',$\alpha$,$1-\beta$
+,,False positive {[}Type I error{]},True positive
