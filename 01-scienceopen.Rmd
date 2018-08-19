@@ -1,11 +1,4 @@
----
-bibliography: [library.bib]
-link-citations: true
-output:
-  keep-tex: true
-documentclass: article
-classoption: a5paper
----
+\newpage
 
 # Research practices and assessment of research misconduct
 
@@ -13,6 +6,8 @@ classoption: a5paper
 tabnr <- 1
 fignr <- 1
 ```
+
+\newpage
 
 ## Abstract
 
@@ -65,6 +60,7 @@ community, because editors and peer reviewers do not pay adequate
 attention to detecting this. Tips are given on how to improve your
 detection of potential problems.
 
+
 ## Introduction
 
 Research practices directly affect the epistemological pursuit of
@@ -97,7 +93,7 @@ behavior at one end, FFP the worst behavior on the other end, with
 
 ## Responsible conduct of research
 
-## What is it?
+### What is it?
 
 Responsible conduct of research is often defined in terms of a set of
 abstract, normative principles. One such set of norms of good science
@@ -107,13 +103,13 @@ These six norms and counternorms can serve as a valuable framework to
 reflect on the behavior of a researcher and are included in Table `r tabnr`.
 
 ```{r norm-table, echo=FALSE, results='asis'}
-norms <- read.csv('tables/norm-table.csv', header = TRUE)
+norms <- read.csv('assets/tables/norm-table.csv', header = TRUE)
 names(norms)[2] <- 'Description norm'
 
 knitr::kable(norms,
              caption = "Six norms of responsible conduct of research and their respective
-  counternorms [@doi:10.1353/jhe.0.0095;@merton1942;@doi:10.2307/2094423].",
-  booktabs=TRUE)
+  counternorms.", booktabs = TRUE) %>%
+ kable_styling(latex_options = c('striped', 'scale_down', 'hold_position'))
 
 tabnr <- tabnr + 1
 ```
@@ -136,7 +132,7 @@ therefore not only reiterate the professional standards, but also
 include training on developing ethical and moral principles that can
 guide researchers in their decision-making.
 
-## What do researchers do?
+### What do researchers do?
 
 Even though most researchers subscribe to the aforementioned normative
 principles, fewer researchers actually adhere to them in practice and
@@ -171,7 +167,7 @@ self-reflection, whereas survival mentoring focuses on how to thrive in
 academia and focuses on building relationships and specific skills to
 increase the odds of being successful.
 
-## Improving responsible conduct
+### Improving responsible conduct
 
 Increasing exposure to ethics education throughout the research career
 might improve responsible research conduct. Research indicated that
@@ -218,7 +214,7 @@ perspective. The provided format focuses on empirical research and is
 certainly not the only way to apply transparency to adhere to
 responsible conduct of research principles.
 
-### Transparent project management
+#### Transparent project management
 
 Research files can be easily managed by creating an online project at
 the Open Science Framework (OSF; [osf.io](https://osf.io)). The OSF is free to
@@ -245,14 +241,16 @@ similar projects (like replication studies;
 [osf.io/4sdn3](osf.io/4sdn3)).
 
 ```{r prune-and-add, echo=FALSE, results='asis'}
-prune <- read.csv('tables/prune-and-add.csv', header = TRUE)
+prune <- read.csv('assets/tables/prune-and-add.csv', header = TRUE)
 names(prune)[2] <- 'Summary of contents'
 
 knitr::kable(prune,
              caption = "Project management folder structure, which can be pruned and added
 to in order to meet specific research needs. This folder structure can
-be duplicated as an OSF project at [osf.io/4sdn3](https://osf.io/4sdn3).",
-  booktabs=TRUE)
+be duplicated as an OSF project at osf.io/4sdn3.",
+  booktabs=TRUE) %>%
+ kable_styling(latex_options = c('striped', 'hold_position'))
+
 
 tabnr <- tabnr + 1
 ```
@@ -293,7 +291,7 @@ incorporate such a co-pilot model into all empirical research projects.
 
 ## Questionable research practices 
 
-## What is it?
+### What is it?
 
 Questionable research practices are defined as practices that are
 detrimental to the research process [@doi:10.17226/1864]. Examples include
@@ -346,7 +344,7 @@ publication [@doi:10.1126/science.1255484]. This enforces the counternorm of sec
 keeping nonsignificant results in the file-drawer [@doi:10.1037/0033-2909.86.3.638],
 which in turn greatly biases the picture emerging from the literature.
 
-## What do researchers do?
+### What do researchers do?
 
 Most questionable research practices are hard to retrospectively detect,
 but one questionable research practice, the misreporting of statistical
@@ -369,7 +367,7 @@ low replication rate and decrease in effect sizes are mostly due to
 publication bias and the use of questionable research practices in the
 original studies.
 
-## How can it be prevented?
+### How can it be prevented?
 
 Counternorms such as self-interestedness, dogmatism, and particularism
 are discouraged by transparent practices because practices that arise
@@ -408,7 +406,7 @@ through repositories similar to the OSF (e.g., figshare, Dryad, arXiv).
 
 ## Research misconduct
 
-## What is it?
+### What is it?
 
 [As mentioned at the beginning of the article](#introduction), research misconduct has
 been defined as fabrication, falsification, and plagiarism (FFP).
@@ -461,7 +459,7 @@ Stapel case — a case we are deeply familiar with. His fraudulent
 activities resulted in 58 retractions (as of May, 2016), making this the
 largest known research misconduct case in the social sciences.
 
-## What do researchers do?
+### What do researchers do?
 
 Given that research misconduct represents such a clear violation of the
 normative structure of science, it is difficult to study how many
@@ -502,9 +500,9 @@ as Figure `r fignr`, 32 means and standard deviations are presented.
 for even one case, if the variables are a result of probabilistic
 processes as in sampling theory.
 
-```{r ruys, fig.cap="Reproduction of Table 1 from the retracted Ruys and Stapel (2008) paper. The table shows 32 cells with 'M (SD)', of which 15 are direct duplicates of one of the other cells. The original version with highlighted duplicates can be found at [osf.io/89mcn](https://osf.io/89mcn).", out.width="100%", fig.align="center", echo=FALSE}
+```{r ruys, fig.cap="Reproduction of Table 1 from the retracted Ruys and Stapel (2008) paper. The table shows 32 cells with 'M (SD)', of which 15 are direct duplicates of one of the other cells. The original version with highlighted duplicates can be found at osf.io/89mcn.", out.width="100%", fig.align="center", echo=FALSE}
 par(mar = c(0, 0, 0, 0))
-knitr::include_graphics('figs/scienceopen-table3.png', auto_pdf = TRUE)
+knitr::include_graphics('assets/figures/scienceopen-table3.png', auto_pdf = TRUE)
 
 fignr <- fignr + 1
 ```
@@ -565,7 +563,7 @@ research papers that passed peer review (out of total of over 3000
 submissions) were not published because of the detection of image
 manipulation [@cellbio2015].
 
-## How can it be prevented?
+### How can it be prevented?
 
 Notwithstanding discussion about reconciliation of researchers who have
 been found guilty of research misconduct [@doi:10.1038/493147a], these
@@ -654,7 +652,7 @@ Many retracted articles are still cited after the retraction has been
 issued [@doi:10.1007/s11948-015-9680-y;@doi:10.1001/jama.1990.03440100140020]. Additionally, retractions might
 be issued following a misconduct investigation, but not completed by
 journals, that the original content is simply deleted, or that legal
-threats resulted in not retracting the work [@doi:10.1371/journal.pone.0085846"]. If retractions
+threats resulted in not retracting the work [@doi:10.1371/journal.pone.0085846]. If retractions
 do not occur even though they have been issued, their negative effect,
 for instance decreased author citations [@doi:10.1038/srep03146], are nullified,
 reducing the costs of committing misconduct.
@@ -672,5 +670,3 @@ environment for researchers to actively discuss ethical problems and
 handle problems in a responsible manner, promoting good research
 practices. This might help reduce both questionable research practices
 and research misconduct.
-
-## References

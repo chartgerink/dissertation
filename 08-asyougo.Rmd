@@ -1,17 +1,12 @@
----
-bibliography: [library.bib]
-link-citations: true
-output:
-  keep-tex: true
-documentclass: article
-classoption: a5paper
----
+\newpage
 
 # As-you-go instead of after-the-fact: A network approach to scholarly communication and evaluation
 
 ```{r echo = FALSE}
 fignr <- tabnr <- 1
 ```
+
+\newpage
 
 ## Abstract
 
@@ -54,7 +49,8 @@ With a chronological ordering of various modular research outputs and their pare
 ```{r echo = FALSE}
 df <- read.csv('assets/tables/as-you-go-modules.csv')
 names(df)[1] <- ''
-knitr::kable(df, caption = 'Directional adjacency matrix for Figure 1. modules are ordered according to time (top-bottom in Figure 1). Rows indicate the source module, columns indicate the target module.')
+knitr::kable(df, caption = 'Directional adjacency matrix for Figure 1. modules are ordered according to time (top-bottom in Figure 1). Rows indicate the source module, columns indicate the target module.', booktabs = TRUE) %>%
+  kable_styling(latex_options = c('striped', 'scale_down'))
 
 fignr <- fignr + 1
 ```
@@ -132,5 +128,3 @@ Finally, we would like to note that communication was not instantly revolutioniz
 ## Conclusion
 
 The current scholarly communication system based on research papers is "after-the-fact" and can be supplemented by a modular "as-you-go" based communication system. By doing so, the functions of a scholarly communication system can be interpreted more widely, making registration complete, certification part of the process instead of just the judgment of peers, access to everything for everyone based on peer-to-peer protocols, simplify archival, and facilitate incentive structures that could align researcher’s interests with that of scholarly research.
-
-# References
