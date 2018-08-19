@@ -1,0 +1,11 @@
+Folder,Summary of contents
+analyses,"Analyses scripts (e.g., as reported in the paper, exploratory files)"
+archive,"Outdated files or files not of direct value (e.g., unused code)"
+bibliography,"Reference library or related articles (e.g., Endnote library, PDF files)"
+data        ,"All data files used (e.g., raw data, processed data)"
+figures     ,Figures included in the manuscript and code for figures
+functions   ,"Custom functions used (e.g., SPSS macro, R scripts)"
+materials   ,"Research materials specified per study (e.g., survey questions, stimuli)"
+preregister ,"Preregistered hypotheses, analysis plans, research designs"
+submission  ,"Manuscript, submissions per journal, and review rounds"
+supplement  ,"Files that supplement the research project (e.g., notes, codebooks)"
