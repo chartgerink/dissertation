@@ -10,12 +10,12 @@ tabnr <- fignr <- 1
 
 \newpage
 
-## Abstract
+<!-- ## Abstract
 
 In this data deposit, I describe a dataset that is the result of content mining 167,318 published articles for statistical test results reported according to the standards prescribed by the American Psychological Association (APA). Articles published by the APA, Springer, Sage, and Taylor & Francis were included (mining from Wiley and Elsevier was actively blocked). As a result of this content mining, 688,112 results from 50,845 articles were extracted. In order to provide a comprehensive set of data, the statistical results are supplemented with metadata from the article they originate from. The dataset is provided in a comma separated file (CSV) in long-format. For each of the 688,112 results, 20 variables are included, of which seven are article metadata and 13 pertain to the individual statistical results (e.g., reported and recalculated $p$-value). A five-pronged approach was taken to generate the dataset: (i) collect journal lists; (ii) spider journal pages for articles; (iii) download articles; (iv) add article metadata; and (v) mine articles for statistical results. All materials, scripts, etc. are available at [https://github.com/chartgerink/2016statcheck_data](https://github.com/chartgerink/2016statcheck_data)^[This GitHub repository has been deleted since this chapter was previously published. The links are included to remain consistent with the published version.] and preserved at [http://dx.doi.org/10.5281/zenodo.59818](http://doi.org/10.5281/zenodo.59818).
 
 ## Introduction
-
+ -->
 In this data deposit, I describe a dataset that is the result of content mining 167,318 published psychology articles for statistical test results. I tried to mine the content of HTML articles in all psychology journals published by the six major publishers in psychology, and succeeded in doing so for four major publishers (see Table `r tabnr` for descriptives per publisher). This content mining was done with the `R` package `statcheck` [@doi:10.3758/s13428-015-0664-2;@statcheck], which extracts statistical results from research articles in an automated fashion, given that they are reported in the format prescribed by the American Psychological Association (APA). I only inspected psychology journals, because this is a standard within the field of psychology and not necessarily outside of this field.
 
 ```{r echo = FALSE, results="asis"}

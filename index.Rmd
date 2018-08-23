@@ -17,8 +17,17 @@ header-includes:
   - \setcounter{secnumdepth}{1}
   - \setcounter{tocdepth}{1}
   - \usepackage[giveninits=false,hyperref]{biblatex}
-title: "Contributions towards understanding and building sustainable science"
-author: "CHJ Hartgerink"
+  - \usepackage[utf8]{inputenc}
+  - \usepackage[english]{babel}
+  - \usepackage{nameref,hyperref}
+  - \usepackage[right]{lineno}
+  - \usepackage{multirow}
+  - \usepackage{adjustbox}
+  - \usepackage[toc,page]{appendix}
+  - \usepackage[table]{xcolor} 
+  - \usepackage{pbox}
+# title: "Contributions towards understanding and building sustainable science"
+# author: "CHJ Hartgerink"
 bibliography: [library.bib]
 biblio-style: apalike
 link-citations: true
@@ -124,9 +133,9 @@ df <- data.frame(date = as.Date(c(final_date,
                   '-',
                   '-',
                   '-',
-                  'TBD',
-                  'TBD',
-                  'TBD',
+                  'https://osf.io/fc35g/',
+                  '-',
+                  '-',
                   '-',
                   '-'),
                  preprint = c('-',

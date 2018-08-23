@@ -9,7 +9,7 @@ fignr <- 1
 
 \newpage
 
-## Abstract
+<!-- ## Abstract
 
 This article discusses the responsible conduct of research, questionable
 research practices, and research misconduct. Responsible conduct of
@@ -62,7 +62,7 @@ detection of potential problems.
 
 
 ## Introduction
-
+ -->
 Research practices directly affect the epistemological pursuit of
 science: Responsible conduct of research affirms it; research misconduct
 undermines it. Typically, a responsible scientist is conceptualized as
