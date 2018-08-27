@@ -1,0 +1,381 @@
+"type","analysis","measure","digit","prop"
+"Expected","benford","Mean congruent","1",0.301029995663981
+"Expected","benford","Mean congruent","2",0.176091259055681
+"Expected","benford","Mean congruent","3",0.1249387366083
+"Expected","benford","Mean congruent","4",0.0969100130080564
+"Expected","benford","Mean congruent","5",0.0791812460476248
+"Expected","benford","Mean congruent","6",0.0669467896306132
+"Expected","benford","Mean congruent","7",0.0579919469776867
+"Expected","benford","Mean congruent","8",0.0511525224473813
+"Expected","benford","Mean congruent","9",0.0457574905606751
+"Expected","benford","Mean incongruent","1",0.301029995663981
+"Expected","benford","Mean incongruent","2",0.176091259055681
+"Expected","benford","Mean incongruent","3",0.1249387366083
+"Expected","benford","Mean incongruent","4",0.0969100130080564
+"Expected","benford","Mean incongruent","5",0.0791812460476248
+"Expected","benford","Mean incongruent","6",0.0669467896306132
+"Expected","benford","Mean incongruent","7",0.0579919469776867
+"Expected","benford","Mean incongruent","8",0.0511525224473813
+"Expected","benford","Mean incongruent","9",0.0457574905606751
+"Expected","benford","SD congruent","1",0.301029995663981
+"Expected","benford","SD congruent","2",0.176091259055681
+"Expected","benford","SD congruent","3",0.1249387366083
+"Expected","benford","SD congruent","4",0.0969100130080564
+"Expected","benford","SD congruent","5",0.0791812460476248
+"Expected","benford","SD congruent","6",0.0669467896306132
+"Expected","benford","SD congruent","7",0.0579919469776867
+"Expected","benford","SD congruent","8",0.0511525224473813
+"Expected","benford","SD congruent","9",0.0457574905606751
+"Expected","benford","SD incongruent","1",0.301029995663981
+"Expected","benford","SD incongruent","2",0.176091259055681
+"Expected","benford","SD incongruent","3",0.1249387366083
+"Expected","benford","SD incongruent","4",0.0969100130080564
+"Expected","benford","SD incongruent","5",0.0791812460476248
+"Expected","benford","SD incongruent","6",0.0669467896306132
+"Expected","benford","SD incongruent","7",0.0579919469776867
+"Expected","benford","SD incongruent","8",0.0511525224473813
+"Expected","benford","SD incongruent","9",0.0457574905606751
+"Expected","terminal","Mean congruent","0",0.1
+"Expected","terminal","Mean congruent","1",0.1
+"Expected","terminal","Mean congruent","2",0.1
+"Expected","terminal","Mean congruent","3",0.1
+"Expected","terminal","Mean congruent","4",0.1
+"Expected","terminal","Mean congruent","5",0.1
+"Expected","terminal","Mean congruent","6",0.1
+"Expected","terminal","Mean congruent","7",0.1
+"Expected","terminal","Mean congruent","8",0.1
+"Expected","terminal","Mean congruent","9",0.1
+"Expected","terminal","Mean incongruent","0",0.1
+"Expected","terminal","Mean incongruent","1",0.1
+"Expected","terminal","Mean incongruent","2",0.1
+"Expected","terminal","Mean incongruent","3",0.1
+"Expected","terminal","Mean incongruent","4",0.1
+"Expected","terminal","Mean incongruent","5",0.1
+"Expected","terminal","Mean incongruent","6",0.1
+"Expected","terminal","Mean incongruent","7",0.1
+"Expected","terminal","Mean incongruent","8",0.1
+"Expected","terminal","Mean incongruent","9",0.1
+"Expected","terminal","SD congruent","0",0.1
+"Expected","terminal","SD congruent","1",0.1
+"Expected","terminal","SD congruent","2",0.1
+"Expected","terminal","SD congruent","3",0.1
+"Expected","terminal","SD congruent","4",0.1
+"Expected","terminal","SD congruent","5",0.1
+"Expected","terminal","SD congruent","6",0.1
+"Expected","terminal","SD congruent","7",0.1
+"Expected","terminal","SD congruent","8",0.1
+"Expected","terminal","SD congruent","9",0.1
+"Expected","terminal","SD incongruent","0",0.1
+"Expected","terminal","SD incongruent","1",0.1
+"Expected","terminal","SD incongruent","2",0.1
+"Expected","terminal","SD incongruent","3",0.1
+"Expected","terminal","SD incongruent","4",0.1
+"Expected","terminal","SD incongruent","5",0.1
+"Expected","terminal","SD incongruent","6",0.1
+"Expected","terminal","SD incongruent","7",0.1
+"Expected","terminal","SD incongruent","8",0.1
+"Expected","terminal","SD incongruent","9",0.1
+"Fabricated","benford","Mean congruent","1",0.0814285714285714
+"Fabricated","benford","Mean congruent","2",0.00428571428571429
+"Fabricated","benford","Mean congruent","3",0.00857142857142857
+"Fabricated","benford","Mean congruent","4",0.108571428571429
+"Fabricated","benford","Mean congruent","5",0.218571428571429
+"Fabricated","benford","Mean congruent","6",0.331428571428571
+"Fabricated","benford","Mean congruent","7",0.141428571428571
+"Fabricated","benford","Mean congruent","8",0.0814285714285714
+"Fabricated","benford","Mean congruent","9",0.0242857142857143
+"Fabricated","benford","Mean incongruent","1",0.155714285714286
+"Fabricated","benford","Mean incongruent","2",0.0157142857142857
+"Fabricated","benford","Mean incongruent","3",0.0242857142857143
+"Fabricated","benford","Mean incongruent","4",0.0185714285714286
+"Fabricated","benford","Mean incongruent","5",0.125714285714286
+"Fabricated","benford","Mean incongruent","6",0.208571428571429
+"Fabricated","benford","Mean incongruent","7",0.247142857142857
+"Fabricated","benford","Mean incongruent","8",0.138571428571429
+"Fabricated","benford","Mean incongruent","9",0.0657142857142857
+"Fabricated","benford","SD congruent","1",0.384285714285714
+"Fabricated","benford","SD congruent","2",0.198571428571429
+"Fabricated","benford","SD congruent","3",0.1
+"Fabricated","benford","SD congruent","4",0.0585714285714286
+"Fabricated","benford","SD congruent","5",0.0571428571428571
+"Fabricated","benford","SD congruent","6",0.0657142857142857
+"Fabricated","benford","SD congruent","7",0.0542857142857143
+"Fabricated","benford","SD congruent","8",0.0385714285714286
+"Fabricated","benford","SD congruent","9",0.0428571428571429
+"Fabricated","benford","SD incongruent","1",0.347142857142857
+"Fabricated","benford","SD incongruent","2",0.218571428571429
+"Fabricated","benford","SD incongruent","3",0.13
+"Fabricated","benford","SD incongruent","4",0.0428571428571429
+"Fabricated","benford","SD incongruent","5",0.0514285714285714
+"Fabricated","benford","SD incongruent","6",0.0442857142857143
+"Fabricated","benford","SD incongruent","7",0.0614285714285714
+"Fabricated","benford","SD incongruent","8",0.0442857142857143
+"Fabricated","benford","SD incongruent","9",0.06
+"Fabricated","terminal","Mean congruent","0",0.1
+"Fabricated","terminal","Mean congruent","1",0.102857142857143
+"Fabricated","terminal","Mean congruent","2",0.114285714285714
+"Fabricated","terminal","Mean congruent","3",0.107142857142857
+"Fabricated","terminal","Mean congruent","4",0.1
+"Fabricated","terminal","Mean congruent","5",0.09
+"Fabricated","terminal","Mean congruent","6",0.104285714285714
+"Fabricated","terminal","Mean congruent","7",0.0842857142857143
+"Fabricated","terminal","Mean congruent","8",0.101428571428571
+"Fabricated","terminal","Mean congruent","9",0.0957142857142857
+"Fabricated","terminal","Mean incongruent","0",0.0914285714285714
+"Fabricated","terminal","Mean incongruent","1",0.101428571428571
+"Fabricated","terminal","Mean incongruent","2",0.112857142857143
+"Fabricated","terminal","Mean incongruent","3",0.0885714285714286
+"Fabricated","terminal","Mean incongruent","4",0.112857142857143
+"Fabricated","terminal","Mean incongruent","5",0.0928571428571429
+"Fabricated","terminal","Mean incongruent","6",0.0957142857142857
+"Fabricated","terminal","Mean incongruent","7",0.0871428571428571
+"Fabricated","terminal","Mean incongruent","8",0.111428571428571
+"Fabricated","terminal","Mean incongruent","9",0.105714285714286
+"Fabricated","terminal","SD congruent","0",0.0957142857142857
+"Fabricated","terminal","SD congruent","1",0.115714285714286
+"Fabricated","terminal","SD congruent","2",0.112857142857143
+"Fabricated","terminal","SD congruent","3",0.0971428571428571
+"Fabricated","terminal","SD congruent","4",0.0928571428571429
+"Fabricated","terminal","SD congruent","5",0.107142857142857
+"Fabricated","terminal","SD congruent","6",0.107142857142857
+"Fabricated","terminal","SD congruent","7",0.0757142857142857
+"Fabricated","terminal","SD congruent","8",0.102857142857143
+"Fabricated","terminal","SD congruent","9",0.0928571428571429
+"Fabricated","terminal","SD incongruent","0",0.08
+"Fabricated","terminal","SD incongruent","1",0.104285714285714
+"Fabricated","terminal","SD incongruent","2",0.105714285714286
+"Fabricated","terminal","SD incongruent","3",0.0942857142857143
+"Fabricated","terminal","SD incongruent","4",0.105714285714286
+"Fabricated","terminal","SD incongruent","5",0.07
+"Fabricated","terminal","SD incongruent","6",0.111428571428571
+"Fabricated","terminal","SD incongruent","7",0.125714285714286
+"Fabricated","terminal","SD incongruent","8",0.104285714285714
+"Fabricated","terminal","SD incongruent","9",0.0985714285714286
+"Fabricated w RNG","benford","Mean congruent","1",0.00631578947368421
+"Fabricated w RNG","benford","Mean congruent","2",0
+"Fabricated w RNG","benford","Mean congruent","3",0.0105263157894737
+"Fabricated w RNG","benford","Mean congruent","4",0.115789473684211
+"Fabricated w RNG","benford","Mean congruent","5",0.267368421052632
+"Fabricated w RNG","benford","Mean congruent","6",0.345263157894737
+"Fabricated w RNG","benford","Mean congruent","7",0.157894736842105
+"Fabricated w RNG","benford","Mean congruent","8",0.0736842105263158
+"Fabricated w RNG","benford","Mean congruent","9",0.0231578947368421
+"Fabricated w RNG","benford","Mean incongruent","1",0.103157894736842
+"Fabricated w RNG","benford","Mean incongruent","2",0.00421052631578947
+"Fabricated w RNG","benford","Mean incongruent","3",0
+"Fabricated w RNG","benford","Mean incongruent","4",0.0189473684210526
+"Fabricated w RNG","benford","Mean incongruent","5",0.147368421052632
+"Fabricated w RNG","benford","Mean incongruent","6",0.250526315789474
+"Fabricated w RNG","benford","Mean incongruent","7",0.252631578947368
+"Fabricated w RNG","benford","Mean incongruent","8",0.164210526315789
+"Fabricated w RNG","benford","Mean incongruent","9",0.0589473684210526
+"Fabricated w RNG","benford","SD congruent","1",0.425263157894737
+"Fabricated w RNG","benford","SD congruent","2",0.187368421052632
+"Fabricated w RNG","benford","SD congruent","3",0.0631578947368421
+"Fabricated w RNG","benford","SD congruent","4",0.0442105263157895
+"Fabricated w RNG","benford","SD congruent","5",0.0442105263157895
+"Fabricated w RNG","benford","SD congruent","6",0.071578947368421
+"Fabricated w RNG","benford","SD congruent","7",0.071578947368421
+"Fabricated w RNG","benford","SD congruent","8",0.0442105263157895
+"Fabricated w RNG","benford","SD congruent","9",0.0484210526315789
+"Fabricated w RNG","benford","SD incongruent","1",0.402105263157895
+"Fabricated w RNG","benford","SD incongruent","2",0.212631578947368
+"Fabricated w RNG","benford","SD incongruent","3",0.124210526315789
+"Fabricated w RNG","benford","SD incongruent","4",0.0378947368421053
+"Fabricated w RNG","benford","SD incongruent","5",0.0505263157894737
+"Fabricated w RNG","benford","SD incongruent","6",0.0378947368421053
+"Fabricated w RNG","benford","SD incongruent","7",0.0568421052631579
+"Fabricated w RNG","benford","SD incongruent","8",0.0315789473684211
+"Fabricated w RNG","benford","SD incongruent","9",0.0463157894736842
+"Fabricated w RNG","terminal","Mean congruent","0",0.113684210526316
+"Fabricated w RNG","terminal","Mean congruent","1",0.0947368421052632
+"Fabricated w RNG","terminal","Mean congruent","2",0.107368421052632
+"Fabricated w RNG","terminal","Mean congruent","3",0.115789473684211
+"Fabricated w RNG","terminal","Mean congruent","4",0.103157894736842
+"Fabricated w RNG","terminal","Mean congruent","5",0.0884210526315789
+"Fabricated w RNG","terminal","Mean congruent","6",0.103157894736842
+"Fabricated w RNG","terminal","Mean congruent","7",0.0821052631578947
+"Fabricated w RNG","terminal","Mean congruent","8",0.0989473684210526
+"Fabricated w RNG","terminal","Mean congruent","9",0.0926315789473684
+"Fabricated w RNG","terminal","Mean incongruent","0",0.0757894736842105
+"Fabricated w RNG","terminal","Mean incongruent","1",0.101052631578947
+"Fabricated w RNG","terminal","Mean incongruent","2",0.111578947368421
+"Fabricated w RNG","terminal","Mean incongruent","3",0.0863157894736842
+"Fabricated w RNG","terminal","Mean incongruent","4",0.111578947368421
+"Fabricated w RNG","terminal","Mean incongruent","5",0.0821052631578947
+"Fabricated w RNG","terminal","Mean incongruent","6",0.105263157894737
+"Fabricated w RNG","terminal","Mean incongruent","7",0.0947368421052632
+"Fabricated w RNG","terminal","Mean incongruent","8",0.111578947368421
+"Fabricated w RNG","terminal","Mean incongruent","9",0.12
+"Fabricated w RNG","terminal","SD congruent","0",0.107368421052632
+"Fabricated w RNG","terminal","SD congruent","1",0.111578947368421
+"Fabricated w RNG","terminal","SD congruent","2",0.113684210526316
+"Fabricated w RNG","terminal","SD congruent","3",0.0863157894736842
+"Fabricated w RNG","terminal","SD congruent","4",0.103157894736842
+"Fabricated w RNG","terminal","SD congruent","5",0.0968421052631579
+"Fabricated w RNG","terminal","SD congruent","6",0.103157894736842
+"Fabricated w RNG","terminal","SD congruent","7",0.0757894736842105
+"Fabricated w RNG","terminal","SD congruent","8",0.0989473684210526
+"Fabricated w RNG","terminal","SD congruent","9",0.103157894736842
+"Fabricated w RNG","terminal","SD incongruent","0",0.0694736842105263
+"Fabricated w RNG","terminal","SD incongruent","1",0.0989473684210526
+"Fabricated w RNG","terminal","SD incongruent","2",0.111578947368421
+"Fabricated w RNG","terminal","SD incongruent","3",0.0884210526315789
+"Fabricated w RNG","terminal","SD incongruent","4",0.105263157894737
+"Fabricated w RNG","terminal","SD incongruent","5",0.0778947368421053
+"Fabricated w RNG","terminal","SD incongruent","6",0.113684210526316
+"Fabricated w RNG","terminal","SD incongruent","7",0.124210526315789
+"Fabricated w RNG","terminal","SD incongruent","8",0.107368421052632
+"Fabricated w RNG","terminal","SD incongruent","9",0.103157894736842
+"Fabricated w/o RNG","benford","Mean congruent","1",0.24
+"Fabricated w/o RNG","benford","Mean congruent","2",0.0133333333333333
+"Fabricated w/o RNG","benford","Mean congruent","3",0.00444444444444444
+"Fabricated w/o RNG","benford","Mean congruent","4",0.0933333333333333
+"Fabricated w/o RNG","benford","Mean congruent","5",0.115555555555556
+"Fabricated w/o RNG","benford","Mean congruent","6",0.302222222222222
+"Fabricated w/o RNG","benford","Mean congruent","7",0.106666666666667
+"Fabricated w/o RNG","benford","Mean congruent","8",0.0977777777777778
+"Fabricated w/o RNG","benford","Mean congruent","9",0.0266666666666667
+"Fabricated w/o RNG","benford","Mean incongruent","1",0.266666666666667
+"Fabricated w/o RNG","benford","Mean incongruent","2",0.04
+"Fabricated w/o RNG","benford","Mean incongruent","3",0.0755555555555556
+"Fabricated w/o RNG","benford","Mean incongruent","4",0.0177777777777778
+"Fabricated w/o RNG","benford","Mean incongruent","5",0.08
+"Fabricated w/o RNG","benford","Mean incongruent","6",0.12
+"Fabricated w/o RNG","benford","Mean incongruent","7",0.235555555555556
+"Fabricated w/o RNG","benford","Mean incongruent","8",0.0844444444444444
+"Fabricated w/o RNG","benford","Mean incongruent","9",0.08
+"Fabricated w/o RNG","benford","SD congruent","1",0.297777777777778
+"Fabricated w/o RNG","benford","SD congruent","2",0.222222222222222
+"Fabricated w/o RNG","benford","SD congruent","3",0.177777777777778
+"Fabricated w/o RNG","benford","SD congruent","4",0.0888888888888889
+"Fabricated w/o RNG","benford","SD congruent","5",0.0844444444444444
+"Fabricated w/o RNG","benford","SD congruent","6",0.0533333333333333
+"Fabricated w/o RNG","benford","SD congruent","7",0.0177777777777778
+"Fabricated w/o RNG","benford","SD congruent","8",0.0266666666666667
+"Fabricated w/o RNG","benford","SD congruent","9",0.0311111111111111
+"Fabricated w/o RNG","benford","SD incongruent","1",0.231111111111111
+"Fabricated w/o RNG","benford","SD incongruent","2",0.231111111111111
+"Fabricated w/o RNG","benford","SD incongruent","3",0.142222222222222
+"Fabricated w/o RNG","benford","SD incongruent","4",0.0533333333333333
+"Fabricated w/o RNG","benford","SD incongruent","5",0.0533333333333333
+"Fabricated w/o RNG","benford","SD incongruent","6",0.0577777777777778
+"Fabricated w/o RNG","benford","SD incongruent","7",0.0711111111111111
+"Fabricated w/o RNG","benford","SD incongruent","8",0.0711111111111111
+"Fabricated w/o RNG","benford","SD incongruent","9",0.0888888888888889
+"Fabricated w/o RNG","terminal","Mean congruent","0",0.0711111111111111
+"Fabricated w/o RNG","terminal","Mean congruent","1",0.12
+"Fabricated w/o RNG","terminal","Mean congruent","2",0.128888888888889
+"Fabricated w/o RNG","terminal","Mean congruent","3",0.0888888888888889
+"Fabricated w/o RNG","terminal","Mean congruent","4",0.0933333333333333
+"Fabricated w/o RNG","terminal","Mean congruent","5",0.0933333333333333
+"Fabricated w/o RNG","terminal","Mean congruent","6",0.106666666666667
+"Fabricated w/o RNG","terminal","Mean congruent","7",0.0888888888888889
+"Fabricated w/o RNG","terminal","Mean congruent","8",0.106666666666667
+"Fabricated w/o RNG","terminal","Mean congruent","9",0.102222222222222
+"Fabricated w/o RNG","terminal","Mean incongruent","0",0.124444444444444
+"Fabricated w/o RNG","terminal","Mean incongruent","1",0.102222222222222
+"Fabricated w/o RNG","terminal","Mean incongruent","2",0.115555555555556
+"Fabricated w/o RNG","terminal","Mean incongruent","3",0.0933333333333333
+"Fabricated w/o RNG","terminal","Mean incongruent","4",0.115555555555556
+"Fabricated w/o RNG","terminal","Mean incongruent","5",0.115555555555556
+"Fabricated w/o RNG","terminal","Mean incongruent","6",0.0755555555555556
+"Fabricated w/o RNG","terminal","Mean incongruent","7",0.0711111111111111
+"Fabricated w/o RNG","terminal","Mean incongruent","8",0.111111111111111
+"Fabricated w/o RNG","terminal","Mean incongruent","9",0.0755555555555556
+"Fabricated w/o RNG","terminal","SD congruent","0",0.0711111111111111
+"Fabricated w/o RNG","terminal","SD congruent","1",0.124444444444444
+"Fabricated w/o RNG","terminal","SD congruent","2",0.111111111111111
+"Fabricated w/o RNG","terminal","SD congruent","3",0.12
+"Fabricated w/o RNG","terminal","SD congruent","4",0.0711111111111111
+"Fabricated w/o RNG","terminal","SD congruent","5",0.128888888888889
+"Fabricated w/o RNG","terminal","SD congruent","6",0.115555555555556
+"Fabricated w/o RNG","terminal","SD congruent","7",0.0755555555555556
+"Fabricated w/o RNG","terminal","SD congruent","8",0.111111111111111
+"Fabricated w/o RNG","terminal","SD congruent","9",0.0711111111111111
+"Fabricated w/o RNG","terminal","SD incongruent","0",0.102222222222222
+"Fabricated w/o RNG","terminal","SD incongruent","1",0.115555555555556
+"Fabricated w/o RNG","terminal","SD incongruent","2",0.0933333333333333
+"Fabricated w/o RNG","terminal","SD incongruent","3",0.106666666666667
+"Fabricated w/o RNG","terminal","SD incongruent","4",0.106666666666667
+"Fabricated w/o RNG","terminal","SD incongruent","5",0.0533333333333333
+"Fabricated w/o RNG","terminal","SD incongruent","6",0.106666666666667
+"Fabricated w/o RNG","terminal","SD incongruent","7",0.128888888888889
+"Fabricated w/o RNG","terminal","SD incongruent","8",0.0977777777777778
+"Fabricated w/o RNG","terminal","SD incongruent","9",0.0888888888888889
+"Genuine","benford","Mean congruent","1",0.028169014084507
+"Genuine","benford","Mean congruent","2",0.000599340725202278
+"Genuine","benford","Mean congruent","3",0.000299670362601139
+"Genuine","benford","Mean congruent","4",0.0830086904405154
+"Genuine","benford","Mean congruent","5",0.406952352412346
+"Genuine","benford","Mean congruent","6",0.296973329337729
+"Genuine","benford","Mean congruent","7",0.118070122864849
+"Genuine","benford","Mean congruent","8",0.0464489062031765
+"Genuine","benford","Mean congruent","9",0.019478573569074
+"Genuine","benford","Mean incongruent","1",0.0506442912795924
+"Genuine","benford","Mean incongruent","2",0.00119868145040456
+"Genuine","benford","Mean incongruent","3",0.000299670362601139
+"Genuine","benford","Mean incongruent","4",0.0218759364698831
+"Genuine","benford","Mean incongruent","5",0.255019478573569
+"Genuine","benford","Mean incongruent","6",0.338627509739287
+"Genuine","benford","Mean incongruent","7",0.196284087503746
+"Genuine","benford","Mean incongruent","8",0.0913994605933473
+"Genuine","benford","Mean incongruent","9",0.0446508840275697
+"Genuine","benford","SD congruent","1",0.403955648786335
+"Genuine","benford","SD congruent","2",0.249325741684147
+"Genuine","benford","SD congruent","3",0.0899011087803416
+"Genuine","benford","SD congruent","4",0.038957147138148
+"Genuine","benford","SD congruent","5",0.0332634102487264
+"Genuine","benford","SD congruent","6",0.041054839676356
+"Genuine","benford","SD congruent","7",0.0473479172909799
+"Genuine","benford","SD congruent","8",0.0512436320047947
+"Genuine","benford","SD congruent","9",0.0449505543901708
+"Genuine","benford","SD incongruent","1",0.311956847467785
+"Genuine","benford","SD incongruent","2",0.390770152831885
+"Genuine","benford","SD incongruent","3",0.160922984716812
+"Genuine","benford","SD incongruent","4",0.0581360503446209
+"Genuine","benford","SD incongruent","5",0.0290680251723105
+"Genuine","benford","SD incongruent","6",0.0149835181300569
+"Genuine","benford","SD incongruent","7",0.0119868145040456
+"Genuine","benford","SD incongruent","8",0.00958945160323644
+"Genuine","benford","SD incongruent","9",0.0125861552292478
+"Genuine","terminal","Mean congruent","0",0.105184297273
+"Genuine","terminal","Mean congruent","1",0.0982918789331735
+"Genuine","terminal","Mean congruent","2",0.0976925382079712
+"Genuine","terminal","Mean congruent","3",0.0958945160323644
+"Genuine","terminal","Mean congruent","4",0.10788133053641
+"Genuine","terminal","Mean congruent","5",0.0961941863949655
+"Genuine","terminal","Mean congruent","6",0.100389571471381
+"Genuine","terminal","Mean congruent","7",0.0890020976925382
+"Genuine","terminal","Mean congruent","8",0.104584956547797
+"Genuine","terminal","Mean congruent","9",0.104884626910399
+"Genuine","terminal","Mean incongruent","0",0.100389571471381
+"Genuine","terminal","Mean incongruent","1",0.0973928678453701
+"Genuine","terminal","Mean incongruent","2",0.097093197482769
+"Genuine","terminal","Mean incongruent","3",0.100689241833983
+"Genuine","terminal","Mean incongruent","4",0.106083308360803
+"Genuine","terminal","Mean incongruent","5",0.0952951753071621
+"Genuine","terminal","Mean incongruent","6",0.109679352712017
+"Genuine","terminal","Mean incongruent","7",0.101588252921786
+"Genuine","terminal","Mean incongruent","8",0.0973928678453701
+"Genuine","terminal","Mean incongruent","9",0.0943961642193587
+"Genuine","terminal","SD congruent","0",0.108181000899011
+"Genuine","terminal","SD congruent","1",0.100689241833983
+"Genuine","terminal","SD congruent","2",0.0946958345819598
+"Genuine","terminal","SD congruent","3",0.102487264009589
+"Genuine","terminal","SD congruent","4",0.0985915492957746
+"Genuine","terminal","SD congruent","5",0.0955948456697633
+"Genuine","terminal","SD congruent","6",0.112975726700629
+"Genuine","terminal","SD congruent","7",0.0857057237039257
+"Genuine","terminal","SD congruent","8",0.0973928678453701
+"Genuine","terminal","SD congruent","9",0.103685945459994
+"Genuine","terminal","SD incongruent","0",0.0973928678453701
+"Genuine","terminal","SD incongruent","1",0.0925981420437519
+"Genuine","terminal","SD incongruent","2",0.0955948456697633
+"Genuine","terminal","SD incongruent","3",0.0991908900209769
+"Genuine","terminal","SD incongruent","4",0.110878034162421
+"Genuine","terminal","SD incongruent","5",0.105783637998202
+"Genuine","terminal","SD incongruent","6",0.090800119868145
+"Genuine","terminal","SD incongruent","7",0.100689241833983
+"Genuine","terminal","SD incongruent","8",0.103086604734792
+"Genuine","terminal","SD incongruent","9",0.103985615822595

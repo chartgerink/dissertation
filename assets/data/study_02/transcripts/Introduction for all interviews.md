@@ -1,0 +1,5 @@
+## Introduction for all Interviews
+
+Every interview began with the following introduction (except for some potential minor differences):
+
+I: So, in this interview, I will ask you a set of questions. Please feel free to elaborate on your answers as much as you want. I     may take some notes while you speak to make sure that all parts of the fabrication process are addressed. These notes will be destroyed immediately after the interview is over. And you are free to look at your fabricated data to remind you of any specifics or at possible notes or so but you don’t have to, of course. The interview will consist of 5 different blocks of questions. Some of the questions may be a bit repetitive. So, please feel free to say that you have already answered a question. Even if I as the interviewer feel that a question is repetitive, I would like you to make the decision whether we should go on with the next question as I may think that you have like already answered this question but you could think of additional, valuable information so I will just ask you all of the questions anyway and then you can decide whether we want to move on or not.

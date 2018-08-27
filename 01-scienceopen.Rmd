@@ -2,12 +2,7 @@
 
 # Research practices and assessment of research misconduct
 
-```{r echo = FALSE}
-tabnr <- 1
-fignr <- 1
-```
-
-\newpage
+\newpage 
 
 <!-- ## Abstract
 
@@ -81,7 +76,7 @@ because it falls outside the defined scope of FFP. Such undefined and
 potentially questionable research practices have been widely discussed
 in the field of psychology in recent years [@doi:10.1177/0956797611430953;@doi:10.1080/1047840X.2012.692215;@doi:10.1177/1745691612459058;@doi:10.1126/science.aac4716;@doi:10.1177/0956797611417632].
 
-This article discusses the [responsible conduct of research](#responsible-conduct-of-research), [questionable
+This chapter discusses the [responsible conduct of research](#responsible-conduct-of-research), [questionable
 research practices](#questionable-research-practices), and [research misconduct](#research-misconduct). For each of these three, we
 extend on what it means, what researchers currently do, and how it can
 be facilitated (i.e., responsible conduct) or prevented (i.e.,
@@ -100,9 +95,9 @@ abstract, normative principles. One such set of norms of good science
 [@doi:10.1353/jhe.0.0095;@merton1942] is accompanied by a set of counternorms
 [@doi:10.1353/jhe.0.0095;@doi:10.2307/2094423] that promulgate irresponsible research.
 These six norms and counternorms can serve as a valuable framework to
-reflect on the behavior of a researcher and are included in Table `r tabnr`.
+reflect on the behavior of a researcher and are included in Table \@ref(tab:normtable).
 
-```{r norm-table, echo=FALSE, results='asis'}
+```{r normtable, echo=FALSE, results='asis'}
 norms <- read.csv('assets/tables/norm-table.csv', header = TRUE)
 names(norms)[2] <- 'Description norm'
 
@@ -110,8 +105,6 @@ knitr::kable(norms,
              caption = "Six norms of responsible conduct of research and their respective
   counternorms.", booktabs = TRUE) %>%
  kable_styling(latex_options = c('striped', 'scale_down', 'hold_position'))
-
-tabnr <- tabnr + 1
 ```
 
 
@@ -198,7 +191,7 @@ other norms. Professional standards also require transparency. For
 instance, the APA and publication contracts require researchers to share
 their data with other researchers [@apa2010]. Even though authors often
 make their data available upon request, such requests frequently fail
-[@doi:10.1080/08989621.2012.678688;@doi:10.1037/0003-066X.61.7.726], which results in a failure to adhere to
+[@doi:10.1080/08989621.2012.678688;@doi:10.1037/0003-066x.61.7.726], which results in a failure to adhere to
 professional standards. Openness regarding the choices made (e.g., on
 how to analyze the data) during the research process will promote active
 discussion of prospective ethics, increasing self-reflective capacities
@@ -235,7 +228,7 @@ contributor's implicit knowledge.
 As a way to organize a version-controlled project, we suggest a
 'prune-and-add' template, where the major elements of most research
 projects are included but which can be specified and extended for
-specific projects. This template includes folders as specified in Table `r tabnr`, which covers many of the research stages. The template
+specific projects. This template includes folders as specified in Table \@ref(tab:prune-and-add), which covers many of the research stages. The template
 can be readily duplicated and adjusted on the OSF for practical use in
 similar projects (like replication studies;
 [osf.io/4sdn3](osf.io/4sdn3)).
@@ -250,9 +243,6 @@ to in order to meet specific research needs. This folder structure can
 be duplicated as an OSF project at osf.io/4sdn3.",
   booktabs=TRUE) %>%
  kable_styling(latex_options = c('striped', 'hold_position'))
-
-
-tabnr <- tabnr + 1
 ```
 
 This suggested project structure also includes a folder to include
@@ -489,12 +479,12 @@ testing is based on sampling; by extension variables should be of
 probabilistic origin and have certain stochastic properties. Because
 humans have problems adhering to these probabilistic principles,
 fabricated data is likely to lead to data that does not properly adhere
-to the probabilistic origins at some level of the data [@haldane1948].
+to the probabilistic origins at some level of the data [@Haldane1948-nm].
 
 Exemplary of this lack of fabricating probabilistic processes is a table
 in a now retracted paper from the Stapel case
 [@doi:10.1177/0956797612453137;@doi:10.1111/j.1467-9280.2008.02128.x]. In the original Table 1, reproduced here
-as Figure `r fignr`, 32 means and standard deviations are presented.
+as Figure \@ref(fig:ruys), 32 means and standard deviations are presented.
 *Fifteen* of these cells are duplicates of another cell (e.g., "0.87
 (0.74)" occurs three times). Finding exact duplicates is extremely rare
 for even one case, if the variables are a result of probabilistic
@@ -503,8 +493,6 @@ processes as in sampling theory.
 ```{r ruys, fig.cap="Reproduction of Table 1 from the retracted Ruys and Stapel (2008) paper. The table shows 32 cells with 'M (SD)', of which 15 are direct duplicates of one of the other cells. The original version with highlighted duplicates can be found at osf.io/89mcn.", out.width="100%", fig.align="center", echo=FALSE}
 par(mar = c(0, 0, 0, 0))
 knitr::include_graphics('assets/figures/scienceopen-table3.png', auto_pdf = TRUE)
-
-fignr <- fignr + 1
 ```
 
 Why reviewers and editors did not detect this remains a mystery, but it
@@ -557,7 +545,7 @@ papers contain data that have been fabricated or falsified. Systematic
 data on this are unavailable, because papers are not evaluated to this
 end in an active manner [@doi:10.1007/s11192-007-1950-2]. Only one case study exists: the
 Journal of Cell Biology evaluates all research papers for cell image
-manipulation [@doi:10.1083/jcb.200406019;@doi:10.1101/049452], a form of data
+manipulation [@doi:10.1083/jcb.200406019;@doi:10.1128/mbio.00809-16], a form of data
 fabrication/falsification. They have found that approximately 1% of all
 research papers that passed peer review (out of total of over 3000
 submissions) were not published because of the detection of image
@@ -659,7 +647,7 @@ reducing the costs of committing misconduct.
 
 ## Conclusion
 
-This article provides an overview of the research practice spectrum,
+This chapter provides an overview of the research practice spectrum,
 where on the one end there is [responsible conduct of research](#responsible-conduct-of-research) and with
 [research misconduct](#research-misconduct) on the other end. In sum, transparent research
 practices are proposed to embody scientific norms and a way to deal with

@@ -1,0 +1,981 @@
+"id","type","test","result","n","rng"
+"cebersole.ashland","Genuine","Benford, congruent means",7.30996707505193e-55,84,NA
+"cebersole.ashland","Genuine","Benford, congruent sds",0.0182354607099887,84,NA
+"cebersole.ashland","Genuine","Benford, incongruent means",1.10045467691886e-47,84,NA
+"cebersole.ashland","Genuine","Benford, incongruent sds",2.71001194552714e-08,84,NA
+"cebersole.ashland","Genuine","Terminal digits, congruent means",0.739918292094654,84,NA
+"cebersole.ashland","Genuine","Terminal digits, congruent sds",0.592591157329298,84,NA
+"cebersole.ashland","Genuine","Terminal digits, incongruent means",0.42852976687912,84,NA
+"cebersole.ashland","Genuine","Terminal digits, incongruent sds",0.49625740258401,84,NA
+"cebersole.ashland","Genuine","Variance analysis, congruent sds (maxmin)",0.00084,84,NA
+"cebersole.ashland","Genuine","Variance analysis, incongruent sds (maxmin)",0.00084,84,NA
+"cebersole.ashland","Genuine","Multivariate association, M-SD congruent",0.758229834962399,84,NA
+"cebersole.ashland","Genuine","Multivariate association, M-SD incongruent",0.869855320789749,84,NA
+"cebersole.ashland","Genuine","Multivariate association, M-M across",0.889740173021211,84,NA
+"cebersole.ashland","Genuine","Multivariate association, SD-SD across",0.480088616361218,84,NA
+"cebersole.ashland","Genuine","Effect size (r)",0.316471426276681,84,NA
+"cebersole.bradley","Genuine","Benford, congruent means",2.20834908683544e-72,119,NA
+"cebersole.bradley","Genuine","Benford, congruent sds",0.000145223856527497,119,NA
+"cebersole.bradley","Genuine","Benford, incongruent means",1.20141505860677e-65,119,NA
+"cebersole.bradley","Genuine","Benford, incongruent sds",1.1703950202772e-06,119,NA
+"cebersole.bradley","Genuine","Terminal digits, congruent means",0.423430404075228,119,NA
+"cebersole.bradley","Genuine","Terminal digits, congruent sds",0.710158950012935,119,NA
+"cebersole.bradley","Genuine","Terminal digits, incongruent means",0.553735308413286,119,NA
+"cebersole.bradley","Genuine","Terminal digits, incongruent sds",0.0626219965004746,119,NA
+"cebersole.bradley","Genuine","Variance analysis, congruent sds (maxmin)",0.00119,119,NA
+"cebersole.bradley","Genuine","Variance analysis, incongruent sds (maxmin)",0.00119,119,NA
+"cebersole.bradley","Genuine","Multivariate association, M-SD congruent",0.618001573760102,119,NA
+"cebersole.bradley","Genuine","Multivariate association, M-SD incongruent",0.733663553980277,119,NA
+"cebersole.bradley","Genuine","Multivariate association, M-M across",0.825334176893258,119,NA
+"cebersole.bradley","Genuine","Multivariate association, SD-SD across",0.164271545999296,119,NA
+"cebersole.bradley","Genuine","Effect size (r)",0.276190077249622,119,NA
+"cebersole.carleton","Genuine","Benford, congruent means",1.03963929261234e-20,51,NA
+"cebersole.carleton","Genuine","Benford, congruent sds",0.0930790558365922,51,NA
+"cebersole.carleton","Genuine","Benford, incongruent means",4.45651156678278e-19,51,NA
+"cebersole.carleton","Genuine","Benford, incongruent sds",0.000794071245597559,51,NA
+"cebersole.carleton","Genuine","Terminal digits, congruent means",0.809752080352711,51,NA
+"cebersole.carleton","Genuine","Terminal digits, congruent sds",0.321175383172861,51,NA
+"cebersole.carleton","Genuine","Terminal digits, incongruent means",0.419374988860189,51,NA
+"cebersole.carleton","Genuine","Terminal digits, incongruent sds",0.9296830820479,51,NA
+"cebersole.carleton","Genuine","Variance analysis, congruent sds (maxmin)",0.00051,51,NA
+"cebersole.carleton","Genuine","Variance analysis, incongruent sds (maxmin)",0.00051,51,NA
+"cebersole.carleton","Genuine","Multivariate association, M-SD congruent",0.703969319059415,51,NA
+"cebersole.carleton","Genuine","Multivariate association, M-SD incongruent",0.71488186879818,51,NA
+"cebersole.carleton","Genuine","Multivariate association, M-M across",0.820002330386573,51,NA
+"cebersole.carleton","Genuine","Multivariate association, SD-SD across",0.626447835034877,51,NA
+"cebersole.carleton","Genuine","Effect size (r)",0.303901498679447,51,NA
+"cebersole.davis","Genuine","Benford, congruent means",1.10658461558968e-65,120,NA
+"cebersole.davis","Genuine","Benford, congruent sds",9.38992624671636e-05,120,NA
+"cebersole.davis","Genuine","Benford, incongruent means",6.94274035524942e-65,120,NA
+"cebersole.davis","Genuine","Benford, incongruent sds",2.03783367054365e-15,120,NA
+"cebersole.davis","Genuine","Terminal digits, congruent means",0.0909359765798052,120,NA
+"cebersole.davis","Genuine","Terminal digits, congruent sds",0.534146216909691,120,NA
+"cebersole.davis","Genuine","Terminal digits, incongruent means",0.232759871539949,120,NA
+"cebersole.davis","Genuine","Terminal digits, incongruent sds",0.90010427485924,120,NA
+"cebersole.davis","Genuine","Variance analysis, congruent sds (maxmin)",0.0012,120,NA
+"cebersole.davis","Genuine","Variance analysis, incongruent sds (maxmin)",0.0012,120,NA
+"cebersole.davis","Genuine","Multivariate association, M-SD congruent",0.684411128283403,120,NA
+"cebersole.davis","Genuine","Multivariate association, M-SD incongruent",0.649310554870867,120,NA
+"cebersole.davis","Genuine","Multivariate association, M-M across",0.7617388421795,120,NA
+"cebersole.davis","Genuine","Multivariate association, SD-SD across",0.148026593623267,120,NA
+"cebersole.davis","Genuine","Effect size (r)",0.268428205486726,120,NA
+"cebersole.florida","Genuine","Benford, congruent means",3.34170223181031e-104,138,NA
+"cebersole.florida","Genuine","Benford, congruent sds",0.000237112818127732,138,NA
+"cebersole.florida","Genuine","Benford, incongruent means",3.94222964660389e-98,138,NA
+"cebersole.florida","Genuine","Benford, incongruent sds",4.00898603558777e-12,138,NA
+"cebersole.florida","Genuine","Terminal digits, congruent means",0.584460773669587,138,NA
+"cebersole.florida","Genuine","Terminal digits, congruent sds",0.329782182495196,138,NA
+"cebersole.florida","Genuine","Terminal digits, incongruent means",0.025565129443335,138,NA
+"cebersole.florida","Genuine","Terminal digits, incongruent sds",0.986011656470818,138,NA
+"cebersole.florida","Genuine","Variance analysis, congruent sds (maxmin)",0.00138,138,NA
+"cebersole.florida","Genuine","Variance analysis, incongruent sds (maxmin)",0.00138,138,NA
+"cebersole.florida","Genuine","Multivariate association, M-SD congruent",0.701620501376316,138,NA
+"cebersole.florida","Genuine","Multivariate association, M-SD incongruent",0.714490820891811,138,NA
+"cebersole.florida","Genuine","Multivariate association, M-M across",0.767564426735152,138,NA
+"cebersole.florida","Genuine","Multivariate association, SD-SD across",0.279795870020135,138,NA
+"cebersole.florida","Genuine","Effect size (r)",0.248685015603741,138,NA
+"cebersole.ithaca","Genuine","Benford, congruent means",9.37983639850648e-222,288,NA
+"cebersole.ithaca","Genuine","Benford, congruent sds",2.62646009315312e-09,288,NA
+"cebersole.ithaca","Genuine","Benford, incongruent means",3.78378959936271e-189,288,NA
+"cebersole.ithaca","Genuine","Benford, incongruent sds",1.72658359952011e-32,288,NA
+"cebersole.ithaca","Genuine","Terminal digits, congruent means",0.246469650251917,288,NA
+"cebersole.ithaca","Genuine","Terminal digits, congruent sds",0.516058103477148,288,NA
+"cebersole.ithaca","Genuine","Terminal digits, incongruent means",0.351610770222376,288,NA
+"cebersole.ithaca","Genuine","Terminal digits, incongruent sds",0.666014482532227,288,NA
+"cebersole.ithaca","Genuine","Variance analysis, congruent sds (maxmin)",0.00288,288,NA
+"cebersole.ithaca","Genuine","Variance analysis, incongruent sds (maxmin)",0.00288,288,NA
+"cebersole.ithaca","Genuine","Multivariate association, M-SD congruent",0.700475725285262,288,NA
+"cebersole.ithaca","Genuine","Multivariate association, M-SD incongruent",0.706784107553181,288,NA
+"cebersole.ithaca","Genuine","Multivariate association, M-M across",0.771542662479859,288,NA
+"cebersole.ithaca","Genuine","Multivariate association, SD-SD across",0.223737759173652,288,NA
+"cebersole.ithaca","Genuine","Effect size (r)",0.226954596758316,288,NA
+"cebersole.miami","Genuine","Benford, congruent means",6.28851537455269e-58,101,NA
+"cebersole.miami","Genuine","Benford, congruent sds",0.00150862541216439,101,NA
+"cebersole.miami","Genuine","Benford, incongruent means",2.18407123873259e-57,101,NA
+"cebersole.miami","Genuine","Benford, incongruent sds",6.32420523422898e-12,101,NA
+"cebersole.miami","Genuine","Terminal digits, congruent means",0.53314874272258,101,NA
+"cebersole.miami","Genuine","Terminal digits, congruent sds",0.277068706463114,101,NA
+"cebersole.miami","Genuine","Terminal digits, incongruent means",0.401547890729867,101,NA
+"cebersole.miami","Genuine","Terminal digits, incongruent sds",0.290935566004716,101,NA
+"cebersole.miami","Genuine","Variance analysis, congruent sds (maxmin)",0.00101,101,NA
+"cebersole.miami","Genuine","Variance analysis, incongruent sds (maxmin)",0.00101,101,NA
+"cebersole.miami","Genuine","Multivariate association, M-SD congruent",0.688947064209998,101,NA
+"cebersole.miami","Genuine","Multivariate association, M-SD incongruent",0.742003461001985,101,NA
+"cebersole.miami","Genuine","Multivariate association, M-M across",0.755801196040734,101,NA
+"cebersole.miami","Genuine","Multivariate association, SD-SD across",0.25300476388926,101,NA
+"cebersole.miami","Genuine","Effect size (r)",0.262866599281964,101,NA
+"cebersole.michst","Genuine","Benford, congruent means",3.2206028307029e-102,127,NA
+"cebersole.michst","Genuine","Benford, congruent sds",0.000348339227476681,127,NA
+"cebersole.michst","Genuine","Benford, incongruent means",1.99143885726198e-85,127,NA
+"cebersole.michst","Genuine","Benford, incongruent sds",1.98591523975947e-15,127,NA
+"cebersole.michst","Genuine","Terminal digits, congruent means",0.498869900820086,127,NA
+"cebersole.michst","Genuine","Terminal digits, congruent sds",0.36928560097901,127,NA
+"cebersole.michst","Genuine","Terminal digits, incongruent means",0.026008401570527,127,NA
+"cebersole.michst","Genuine","Terminal digits, incongruent sds",0.424295347616981,127,NA
+"cebersole.michst","Genuine","Variance analysis, congruent sds (maxmin)",0.00127,127,NA
+"cebersole.michst","Genuine","Variance analysis, incongruent sds (maxmin)",0.00127,127,NA
+"cebersole.michst","Genuine","Multivariate association, M-SD congruent",0.656759090527107,127,NA
+"cebersole.michst","Genuine","Multivariate association, M-SD incongruent",0.641845167667704,127,NA
+"cebersole.michst","Genuine","Multivariate association, M-M across",0.705206351398987,127,NA
+"cebersole.michst","Genuine","Multivariate association, SD-SD across",0.0965530402510666,127,NA
+"cebersole.michst","Genuine","Effect size (r)",0.22269171544486,127,NA
+"cebersole.mississippi","Genuine","Benford, congruent means",2.03639092355013e-36,93,NA
+"cebersole.mississippi","Genuine","Benford, congruent sds",0.0256140602998356,93,NA
+"cebersole.mississippi","Genuine","Benford, incongruent means",3.60892703787783e-40,93,NA
+"cebersole.mississippi","Genuine","Benford, incongruent sds",1.24278647074264e-07,93,NA
+"cebersole.mississippi","Genuine","Terminal digits, congruent means",0.358376355825505,93,NA
+"cebersole.mississippi","Genuine","Terminal digits, congruent sds",0.138894325262638,93,NA
+"cebersole.mississippi","Genuine","Terminal digits, incongruent means",0.0951548541904214,93,NA
+"cebersole.mississippi","Genuine","Terminal digits, incongruent sds",0.108170402210797,93,NA
+"cebersole.mississippi","Genuine","Variance analysis, congruent sds (maxmin)",0.00093,93,NA
+"cebersole.mississippi","Genuine","Variance analysis, incongruent sds (maxmin)",0.00093,93,NA
+"cebersole.mississippi","Genuine","Multivariate association, M-SD congruent",0.560322762486094,93,NA
+"cebersole.mississippi","Genuine","Multivariate association, M-SD incongruent",0.731237156771178,93,NA
+"cebersole.mississippi","Genuine","Multivariate association, M-M across",0.75878483634985,93,NA
+"cebersole.mississippi","Genuine","Multivariate association, SD-SD across",0.0300579708123486,93,NA
+"cebersole.mississippi","Genuine","Effect size (r)",0.298094831114803,93,NA
+"cebersole.montana","Genuine","Benford, congruent means",1.72343191028977e-92,129,NA
+"cebersole.montana","Genuine","Benford, congruent sds",0.0145990884546348,129,NA
+"cebersole.montana","Genuine","Benford, incongruent means",3.51820922362128e-99,129,NA
+"cebersole.montana","Genuine","Benford, incongruent sds",2.45879427562941e-11,129,NA
+"cebersole.montana","Genuine","Terminal digits, congruent means",0.774259645504627,129,NA
+"cebersole.montana","Genuine","Terminal digits, congruent sds",0.0629432162750219,129,NA
+"cebersole.montana","Genuine","Terminal digits, incongruent means",0.904655321401765,129,NA
+"cebersole.montana","Genuine","Terminal digits, incongruent sds",0.632276751250888,129,NA
+"cebersole.montana","Genuine","Variance analysis, congruent sds (maxmin)",0.00129,129,NA
+"cebersole.montana","Genuine","Variance analysis, incongruent sds (maxmin)",0.00129,129,NA
+"cebersole.montana","Genuine","Multivariate association, M-SD congruent",0.791870701297994,129,NA
+"cebersole.montana","Genuine","Multivariate association, M-SD incongruent",0.832664283785795,129,NA
+"cebersole.montana","Genuine","Multivariate association, M-M across",0.786454191790644,129,NA
+"cebersole.montana","Genuine","Multivariate association, SD-SD across",0.408085236282225,129,NA
+"cebersole.montana","Genuine","Effect size (r)",0.283101028433085,129,NA
+"cebersole.mturk","Genuine","Benford, congruent means",1.4213456032351e-282,621,NA
+"cebersole.mturk","Genuine","Benford, congruent sds",1.9052261320447e-18,621,NA
+"cebersole.mturk","Genuine","Benford, incongruent means",6.29987759540573e-247,621,NA
+"cebersole.mturk","Genuine","Benford, incongruent sds",2.41938389163914e-36,621,NA
+"cebersole.mturk","Genuine","Terminal digits, congruent means",0.123764494204006,621,NA
+"cebersole.mturk","Genuine","Terminal digits, congruent sds",0.374592191531558,621,NA
+"cebersole.mturk","Genuine","Terminal digits, incongruent means",0.483006397855491,621,NA
+"cebersole.mturk","Genuine","Terminal digits, incongruent sds",0.620023035935617,621,NA
+"cebersole.mturk","Genuine","Variance analysis, congruent sds (maxmin)",0.00621,621,NA
+"cebersole.mturk","Genuine","Variance analysis, incongruent sds (maxmin)",0.00621,621,NA
+"cebersole.mturk","Genuine","Multivariate association, M-SD congruent",0.662880261543019,621,NA
+"cebersole.mturk","Genuine","Multivariate association, M-SD incongruent",0.743410522510476,621,NA
+"cebersole.mturk","Genuine","Multivariate association, M-M across",0.909032651230346,621,NA
+"cebersole.mturk","Genuine","Multivariate association, SD-SD across",0.478718357526743,621,NA
+"cebersole.mturk","Genuine","Effect size (r)",0.178971946892017,621,NA
+"cebersole.nova","Genuine","Benford, congruent means",7.90826907316136e-73,132,NA
+"cebersole.nova","Genuine","Benford, congruent sds",0.0428410894509655,132,NA
+"cebersole.nova","Genuine","Benford, incongruent means",4.88007937136926e-59,132,NA
+"cebersole.nova","Genuine","Benford, incongruent sds",2.94634639739584e-11,132,NA
+"cebersole.nova","Genuine","Terminal digits, congruent means",0.823616419933297,132,NA
+"cebersole.nova","Genuine","Terminal digits, congruent sds",0.751985783907772,132,NA
+"cebersole.nova","Genuine","Terminal digits, incongruent means",0.781511885404306,132,NA
+"cebersole.nova","Genuine","Terminal digits, incongruent sds",0.328861018079795,132,NA
+"cebersole.nova","Genuine","Variance analysis, congruent sds (maxmin)",0.00132,132,NA
+"cebersole.nova","Genuine","Variance analysis, incongruent sds (maxmin)",0.00132,132,NA
+"cebersole.nova","Genuine","Multivariate association, M-SD congruent",0.769796114416793,132,NA
+"cebersole.nova","Genuine","Multivariate association, M-SD incongruent",0.691741449093496,132,NA
+"cebersole.nova","Genuine","Multivariate association, M-M across",0.863300961360865,132,NA
+"cebersole.nova","Genuine","Multivariate association, SD-SD across",0.338143292676902,132,NA
+"cebersole.nova","Genuine","Effect size (r)",0.271534646774152,132,NA
+"cebersole.osu","Genuine","Benford, congruent means",6.08423402447954e-104,163,NA
+"cebersole.osu","Genuine","Benford, congruent sds",6.66627888766822e-05,163,NA
+"cebersole.osu","Genuine","Benford, incongruent means",1.83943793271832e-84,163,NA
+"cebersole.osu","Genuine","Benford, incongruent sds",1.02365173433675e-16,163,NA
+"cebersole.osu","Genuine","Terminal digits, congruent means",0.0375963529512681,163,NA
+"cebersole.osu","Genuine","Terminal digits, congruent sds",0.871954533758614,163,NA
+"cebersole.osu","Genuine","Terminal digits, incongruent means",0.598853271373954,163,NA
+"cebersole.osu","Genuine","Terminal digits, incongruent sds",0.675382298905044,163,NA
+"cebersole.osu","Genuine","Variance analysis, congruent sds (maxmin)",0.00163,163,NA
+"cebersole.osu","Genuine","Variance analysis, incongruent sds (maxmin)",0.00163,163,NA
+"cebersole.osu","Genuine","Multivariate association, M-SD congruent",0.583505798334844,163,NA
+"cebersole.osu","Genuine","Multivariate association, M-SD incongruent",0.648616156481839,163,NA
+"cebersole.osu","Genuine","Multivariate association, M-M across",0.885364729112212,163,NA
+"cebersole.osu","Genuine","Multivariate association, SD-SD across",0.364481744364577,163,NA
+"cebersole.osu","Genuine","Effect size (r)",0.268526590698335,163,NA
+"cebersole.plu","Genuine","Benford, congruent means",1.68205258080374e-58,101,NA
+"cebersole.plu","Genuine","Benford, congruent sds",0.00145003687287583,101,NA
+"cebersole.plu","Genuine","Benford, incongruent means",1.07349505336755e-47,101,NA
+"cebersole.plu","Genuine","Benford, incongruent sds",1.68085622607715e-11,101,NA
+"cebersole.plu","Genuine","Terminal digits, congruent means",0.655668302105404,101,NA
+"cebersole.plu","Genuine","Terminal digits, congruent sds",0.384335919840608,101,NA
+"cebersole.plu","Genuine","Terminal digits, incongruent means",0.47460492110432,101,NA
+"cebersole.plu","Genuine","Terminal digits, incongruent sds",0.437274188913867,101,NA
+"cebersole.plu","Genuine","Variance analysis, congruent sds (maxmin)",0.00101,101,NA
+"cebersole.plu","Genuine","Variance analysis, incongruent sds (maxmin)",0.00101,101,NA
+"cebersole.plu","Genuine","Multivariate association, M-SD congruent",0.756125035602493,101,NA
+"cebersole.plu","Genuine","Multivariate association, M-SD incongruent",0.777391105141476,101,NA
+"cebersole.plu","Genuine","Multivariate association, M-M across",0.797599301860515,101,NA
+"cebersole.plu","Genuine","Multivariate association, SD-SD across",0.42550730646174,101,NA
+"cebersole.plu","Genuine","Effect size (r)",0.309172005852907,101,NA
+"cebersole.psuabington","Genuine","Benford, congruent means",5.83175298114542e-49,117,NA
+"cebersole.psuabington","Genuine","Benford, congruent sds",0.0885586216952875,117,NA
+"cebersole.psuabington","Genuine","Benford, incongruent means",8.61834364611876e-62,117,NA
+"cebersole.psuabington","Genuine","Benford, incongruent sds",4.72563504548549e-08,117,NA
+"cebersole.psuabington","Genuine","Terminal digits, congruent means",0.879154111860708,117,NA
+"cebersole.psuabington","Genuine","Terminal digits, congruent sds",0.670892656649673,117,NA
+"cebersole.psuabington","Genuine","Terminal digits, incongruent means",0.582122082813775,117,NA
+"cebersole.psuabington","Genuine","Terminal digits, incongruent sds",0.879154111860708,117,NA
+"cebersole.psuabington","Genuine","Variance analysis, congruent sds (maxmin)",0.00117,117,NA
+"cebersole.psuabington","Genuine","Variance analysis, incongruent sds (maxmin)",0.00117,117,NA
+"cebersole.psuabington","Genuine","Multivariate association, M-SD congruent",0.771154090095629,117,NA
+"cebersole.psuabington","Genuine","Multivariate association, M-SD incongruent",0.751763469753942,117,NA
+"cebersole.psuabington","Genuine","Multivariate association, M-M across",0.908038619053847,117,NA
+"cebersole.psuabington","Genuine","Multivariate association, SD-SD across",0.388416621671579,117,NA
+"cebersole.psuabington","Genuine","Effect size (r)",0.270564937136772,117,NA
+"cebersole.riverside","Genuine","Benford, congruent means",1.82385518339866e-151,252,NA
+"cebersole.riverside","Genuine","Benford, congruent sds",1.97064334390838e-06,252,NA
+"cebersole.riverside","Genuine","Benford, incongruent means",9.31194624620423e-137,252,NA
+"cebersole.riverside","Genuine","Benford, incongruent sds",2.04624801122789e-26,252,NA
+"cebersole.riverside","Genuine","Terminal digits, congruent means",0.308584343286932,252,NA
+"cebersole.riverside","Genuine","Terminal digits, congruent sds",0.258701667996743,252,NA
+"cebersole.riverside","Genuine","Terminal digits, incongruent means",0.754126563301456,252,NA
+"cebersole.riverside","Genuine","Terminal digits, incongruent sds",0.486958698445304,252,NA
+"cebersole.riverside","Genuine","Variance analysis, congruent sds (maxmin)",0.00252,252,NA
+"cebersole.riverside","Genuine","Variance analysis, incongruent sds (maxmin)",0.00252,252,NA
+"cebersole.riverside","Genuine","Multivariate association, M-SD congruent",0.789973291452649,252,NA
+"cebersole.riverside","Genuine","Multivariate association, M-SD incongruent",0.709052702809959,252,NA
+"cebersole.riverside","Genuine","Multivariate association, M-M across",0.873728201582899,252,NA
+"cebersole.riverside","Genuine","Multivariate association, SD-SD across",0.364207355830907,252,NA
+"cebersole.riverside","Genuine","Effect size (r)",0.25835565616588,252,NA
+"cebersole.sdsu","Genuine","Benford, congruent means",9.42114977670959e-98,145,NA
+"cebersole.sdsu","Genuine","Benford, congruent sds",0.00932058123779634,145,NA
+"cebersole.sdsu","Genuine","Benford, incongruent means",6.97717701494022e-74,145,NA
+"cebersole.sdsu","Genuine","Benford, incongruent sds",8.18613108053434e-12,145,NA
+"cebersole.sdsu","Genuine","Terminal digits, congruent means",0.376188576037108,145,NA
+"cebersole.sdsu","Genuine","Terminal digits, congruent sds",0.364622688690113,145,NA
+"cebersole.sdsu","Genuine","Terminal digits, incongruent means",0.139188592539336,145,NA
+"cebersole.sdsu","Genuine","Terminal digits, incongruent sds",0.65865029181957,145,NA
+"cebersole.sdsu","Genuine","Variance analysis, congruent sds (maxmin)",0.00145,145,NA
+"cebersole.sdsu","Genuine","Variance analysis, incongruent sds (maxmin)",0.00145,145,NA
+"cebersole.sdsu","Genuine","Multivariate association, M-SD congruent",0.727879542693305,145,NA
+"cebersole.sdsu","Genuine","Multivariate association, M-SD incongruent",0.754069658806359,145,NA
+"cebersole.sdsu","Genuine","Multivariate association, M-M across",0.80636419617776,145,NA
+"cebersole.sdsu","Genuine","Multivariate association, SD-SD across",0.394882526668973,145,NA
+"cebersole.sdsu","Genuine","Effect size (r)",0.261876855876971,145,NA
+"cebersole.texasam","Genuine","Benford, congruent means",6.00323163655941e-137,181,NA
+"cebersole.texasam","Genuine","Benford, congruent sds",0.00507882293354461,181,NA
+"cebersole.texasam","Genuine","Benford, incongruent means",2.27628798888087e-103,181,NA
+"cebersole.texasam","Genuine","Benford, incongruent sds",5.78378145558497e-22,181,NA
+"cebersole.texasam","Genuine","Terminal digits, congruent means",0.624466171257306,181,NA
+"cebersole.texasam","Genuine","Terminal digits, congruent sds",0.781624060641474,181,NA
+"cebersole.texasam","Genuine","Terminal digits, incongruent means",0.108330102091741,181,NA
+"cebersole.texasam","Genuine","Terminal digits, incongruent sds",0.387912232889435,181,NA
+"cebersole.texasam","Genuine","Variance analysis, congruent sds (maxmin)",0.00181,181,NA
+"cebersole.texasam","Genuine","Variance analysis, incongruent sds (maxmin)",0.00181,181,NA
+"cebersole.texasam","Genuine","Multivariate association, M-SD congruent",0.691329325376547,181,NA
+"cebersole.texasam","Genuine","Multivariate association, M-SD incongruent",0.718804915261712,181,NA
+"cebersole.texasam","Genuine","Multivariate association, M-M across",0.816294236150898,181,NA
+"cebersole.texasam","Genuine","Multivariate association, SD-SD across",0.339118831623911,181,NA
+"cebersole.texasam","Genuine","Effect size (r)",0.250295506320996,181,NA
+"cebersole.toronto","Genuine","Benford, congruent means",4.70308201471602e-48,82,NA
+"cebersole.toronto","Genuine","Benford, congruent sds",0.0195288979399971,82,NA
+"cebersole.toronto","Genuine","Benford, incongruent means",8.88146985778754e-38,82,NA
+"cebersole.toronto","Genuine","Benford, incongruent sds",1.88061599183231e-05,82,NA
+"cebersole.toronto","Genuine","Terminal digits, congruent means",0.24835457871828,82,NA
+"cebersole.toronto","Genuine","Terminal digits, congruent sds",0.157165299754826,82,NA
+"cebersole.toronto","Genuine","Terminal digits, incongruent means",0.280757801180895,82,NA
+"cebersole.toronto","Genuine","Terminal digits, incongruent sds",0.316125801085137,82,NA
+"cebersole.toronto","Genuine","Variance analysis, congruent sds (maxmin)",0.00082,82,NA
+"cebersole.toronto","Genuine","Variance analysis, incongruent sds (maxmin)",0.00082,82,NA
+"cebersole.toronto","Genuine","Multivariate association, M-SD congruent",0.643949815457507,82,NA
+"cebersole.toronto","Genuine","Multivariate association, M-SD incongruent",0.733008654165345,82,NA
+"cebersole.toronto","Genuine","Multivariate association, M-M across",0.8791096230048,82,NA
+"cebersole.toronto","Genuine","Multivariate association, SD-SD across",0.28154615373657,82,NA
+"cebersole.toronto","Genuine","Effect size (r)",0.269566240390271,82,NA
+"cebersole.vcu","Genuine","Benford, congruent means",4.05395389413361e-55,97,NA
+"cebersole.vcu","Genuine","Benford, congruent sds",0.229672010552158,97,NA
+"cebersole.vcu","Genuine","Benford, incongruent means",1.73774600859962e-59,97,NA
+"cebersole.vcu","Genuine","Benford, incongruent sds",8.62252905466078e-09,97,NA
+"cebersole.vcu","Genuine","Terminal digits, congruent means",0.192649347311649,97,NA
+"cebersole.vcu","Genuine","Terminal digits, congruent sds",0.0253687819409496,97,NA
+"cebersole.vcu","Genuine","Terminal digits, incongruent means",0.162606262190299,97,NA
+"cebersole.vcu","Genuine","Terminal digits, incongruent sds",0.928759681734473,97,NA
+"cebersole.vcu","Genuine","Variance analysis, congruent sds (maxmin)",0.00097,97,NA
+"cebersole.vcu","Genuine","Variance analysis, incongruent sds (maxmin)",0.00097,97,NA
+"cebersole.vcu","Genuine","Multivariate association, M-SD congruent",0.829424941984711,97,NA
+"cebersole.vcu","Genuine","Multivariate association, M-SD incongruent",0.772982369667685,97,NA
+"cebersole.vcu","Genuine","Multivariate association, M-M across",0.821282110214478,97,NA
+"cebersole.vcu","Genuine","Multivariate association, SD-SD across",0.474150810230926,97,NA
+"cebersole.vcu","Genuine","Effect size (r)",0.301456073925512,97,NA
+"cebersole.virginia","Genuine","Benford, congruent means",5.79891324653934e-169,196,NA
+"cebersole.virginia","Genuine","Benford, congruent sds",1.11526113383015e-07,196,NA
+"cebersole.virginia","Genuine","Benford, incongruent means",1.12019683975088e-132,196,NA
+"cebersole.virginia","Genuine","Benford, incongruent sds",1.71670119769856e-19,196,NA
+"cebersole.virginia","Genuine","Terminal digits, congruent means",0.365558372061364,196,NA
+"cebersole.virginia","Genuine","Terminal digits, congruent sds",0.588370635144841,196,NA
+"cebersole.virginia","Genuine","Terminal digits, incongruent means",0.437274188913867,196,NA
+"cebersole.virginia","Genuine","Terminal digits, incongruent sds",0.382777817265013,196,NA
+"cebersole.virginia","Genuine","Variance analysis, congruent sds (maxmin)",0.00196,196,NA
+"cebersole.virginia","Genuine","Variance analysis, incongruent sds (maxmin)",0.00196,196,NA
+"cebersole.virginia","Genuine","Multivariate association, M-SD congruent",0.694333570040715,196,NA
+"cebersole.virginia","Genuine","Multivariate association, M-SD incongruent",0.643787765117194,196,NA
+"cebersole.virginia","Genuine","Multivariate association, M-M across",0.674825988673739,196,NA
+"cebersole.virginia","Genuine","Multivariate association, SD-SD across",0.351382069090635,196,NA
+"cebersole.virginia","Genuine","Effect size (r)",0.242920360120144,196,NA
+"0jg.txt","Fabricated","Benford, congruent means",1.3624208688137e-21,25,"1"
+"0jg.txt","Fabricated","Benford, congruent sds",1.03862680166681e-19,25,"1"
+"0jg.txt","Fabricated","Benford, incongruent means",1.61450737059242e-37,25,"1"
+"0jg.txt","Fabricated","Benford, incongruent sds",3.51295645397607e-13,25,"1"
+"0jg.txt","Fabricated","Terminal digits, congruent means",0.0126504213500156,25,"1"
+"0jg.txt","Fabricated","Terminal digits, congruent sds",0.30412581641191,25,"1"
+"0jg.txt","Fabricated","Terminal digits, incongruent means",0.437274188913867,25,"1"
+"0jg.txt","Fabricated","Terminal digits, incongruent sds",0.1626062621903,25,"1"
+"0jg.txt","Fabricated","Variance analysis, congruent sds (maxmin)",0,25,"1"
+"0jg.txt","Fabricated","Variance analysis, incongruent sds (maxmin)",0,25,"1"
+"0jg.txt","Fabricated","Multivariate association, M-SD congruent",-0.0690797063994866,25,"1"
+"0jg.txt","Fabricated","Multivariate association, M-SD incongruent",0.0327333461067343,25,"1"
+"0jg.txt","Fabricated","Multivariate association, M-M across",0.784078339337359,25,"1"
+"0jg.txt","Fabricated","Multivariate association, SD-SD across",-0.277320019876598,25,"1"
+"0jg.txt","Fabricated","Effect size (r)",0.736369267381988,25,"1"
+"19e.txt","Fabricated","Benford, congruent means",3.9885714039745e-08,25,"1"
+"19e.txt","Fabricated","Benford, congruent sds",0.0368928437780329,25,"1"
+"19e.txt","Fabricated","Benford, incongruent means",1.9207652318616e-15,25,"1"
+"19e.txt","Fabricated","Benford, incongruent sds",0.00794166417821948,25,"1"
+"19e.txt","Fabricated","Terminal digits, congruent means",0.834308260193408,25,"1"
+"19e.txt","Fabricated","Terminal digits, congruent sds",0.89776259712149,25,"1"
+"19e.txt","Fabricated","Terminal digits, incongruent means",0.834308260193408,25,"1"
+"19e.txt","Fabricated","Terminal digits, incongruent sds",0.30412581641191,25,"1"
+"19e.txt","Fabricated","Variance analysis, congruent sds (maxmin)",0.00025,25,"1"
+"19e.txt","Fabricated","Variance analysis, incongruent sds (maxmin)",8e-05,25,"1"
+"19e.txt","Fabricated","Multivariate association, M-SD congruent",0.591275253106868,25,"1"
+"19e.txt","Fabricated","Multivariate association, M-SD incongruent",0.656770815095582,25,"1"
+"19e.txt","Fabricated","Multivariate association, M-M across",0.875752398425934,25,"1"
+"19e.txt","Fabricated","Multivariate association, SD-SD across",0.531383323894617,25,"1"
+"19e.txt","Fabricated","Effect size (r)",0.405562993695248,25,"1"
+"1se.txt","Fabricated","Benford, congruent means",2.59556626772991e-12,25,"1"
+"1se.txt","Fabricated","Benford, congruent sds",0.00140322780808598,25,"1"
+"1se.txt","Fabricated","Benford, incongruent means",7.66358096241841e-07,25,"1"
+"1se.txt","Fabricated","Benford, incongruent sds",4.74521236888233e-08,25,"1"
+"1se.txt","Fabricated","Terminal digits, congruent means",0.89776259712149,25,"1"
+"1se.txt","Fabricated","Terminal digits, congruent sds",0.595548507284206,25,"1"
+"1se.txt","Fabricated","Terminal digits, incongruent means",0.514123620231075,25,"1"
+"1se.txt","Fabricated","Terminal digits, incongruent sds",0.75975627887207,25,"1"
+"1se.txt","Fabricated","Variance analysis, congruent sds (maxmin)",0.00025,25,"1"
+"1se.txt","Fabricated","Variance analysis, incongruent sds (maxmin)",0.00025,25,"1"
+"1se.txt","Fabricated","Multivariate association, M-SD congruent",0.634706503124748,25,"1"
+"1se.txt","Fabricated","Multivariate association, M-SD incongruent",0.761892691886618,25,"1"
+"1se.txt","Fabricated","Multivariate association, M-M across",0.245701436224554,25,"1"
+"1se.txt","Fabricated","Multivariate association, SD-SD across",0.531024567833434,25,"1"
+"1se.txt","Fabricated","Effect size (r)",0.604181049305861,25,"1"
+"1zm.txt","Fabricated","Benford, congruent means",1.634301427469e-08,25,"0"
+"1zm.txt","Fabricated","Benford, congruent sds",3.09122896917929e-06,25,"0"
+"1zm.txt","Fabricated","Benford, incongruent means",5.35211670226025e-11,25,"0"
+"1zm.txt","Fabricated","Benford, incongruent sds",4.6174676204496e-06,25,"0"
+"1zm.txt","Fabricated","Terminal digits, congruent means",0.978072067711645,25,"0"
+"1zm.txt","Fabricated","Terminal digits, congruent sds",0.678685785296075,25,"0"
+"1zm.txt","Fabricated","Terminal digits, incongruent means",0.0805185128187637,25,"0"
+"1zm.txt","Fabricated","Terminal digits, incongruent sds",0.366917799112752,25,"0"
+"1zm.txt","Fabricated","Variance analysis, congruent sds (maxmin)",0,25,"0"
+"1zm.txt","Fabricated","Variance analysis, incongruent sds (maxmin)",0,25,"0"
+"1zm.txt","Fabricated","Multivariate association, M-SD congruent",0.614186599168133,25,"0"
+"1zm.txt","Fabricated","Multivariate association, M-SD incongruent",0.165239625099512,25,"0"
+"1zm.txt","Fabricated","Multivariate association, M-M across",0.949933017538151,25,"0"
+"1zm.txt","Fabricated","Multivariate association, SD-SD across",-0.202693423508961,25,"0"
+"1zm.txt","Fabricated","Effect size (r)",0.294654007679583,25,"0"
+"2a9.txt","Fabricated","Benford, congruent means",1.90912355043825e-15,25,"1"
+"2a9.txt","Fabricated","Benford, congruent sds",0.38996283725303,25,"1"
+"2a9.txt","Fabricated","Benford, incongruent means",4.69336638299163e-17,25,"1"
+"2a9.txt","Fabricated","Benford, incongruent sds",0.0536487409243254,25,"1"
+"2a9.txt","Fabricated","Terminal digits, congruent means",0.595548507284206,25,"1"
+"2a9.txt","Fabricated","Terminal digits, congruent sds",0.00715997700854115,25,"1"
+"2a9.txt","Fabricated","Terminal digits, incongruent means",0.30412581641191,25,"1"
+"2a9.txt","Fabricated","Terminal digits, incongruent sds",0.129619591332762,25,"1"
+"2a9.txt","Fabricated","Variance analysis, congruent sds (maxmin)",0.00025,25,"1"
+"2a9.txt","Fabricated","Variance analysis, incongruent sds (maxmin)",0.00025,25,"1"
+"2a9.txt","Fabricated","Multivariate association, M-SD congruent",0.56176748920726,25,"1"
+"2a9.txt","Fabricated","Multivariate association, M-SD incongruent",0.306294472031801,25,"1"
+"2a9.txt","Fabricated","Multivariate association, M-M across",0.816930382323958,25,"1"
+"2a9.txt","Fabricated","Multivariate association, SD-SD across",-0.0496252133615378,25,"1"
+"2a9.txt","Fabricated","Effect size (r)",0.423348316998209,25,"1"
+"2f5.txt","Fabricated","Benford, congruent means",1.95794117206708e-70,25,"0"
+"2f5.txt","Fabricated","Benford, congruent sds",4.13707238406844e-12,25,"0"
+"2f5.txt","Fabricated","Benford, incongruent means",5.41144712595069e-57,25,"0"
+"2f5.txt","Fabricated","Benford, incongruent sds",1.35396338129287e-11,25,"0"
+"2f5.txt","Fabricated","Terminal digits, congruent means",0.437274188913867,25,"0"
+"2f5.txt","Fabricated","Terminal digits, congruent sds",0.834308260193408,25,"0"
+"2f5.txt","Fabricated","Terminal digits, incongruent means",0.994249945420295,25,"0"
+"2f5.txt","Fabricated","Terminal digits, incongruent sds",0.678685785296075,25,"0"
+"2f5.txt","Fabricated","Variance analysis, congruent sds (maxmin)",0,25,"0"
+"2f5.txt","Fabricated","Variance analysis, incongruent sds (maxmin)",0,25,"0"
+"2f5.txt","Fabricated","Multivariate association, M-SD congruent",0.542167755145262,25,"0"
+"2f5.txt","Fabricated","Multivariate association, M-SD incongruent",0.374278241968641,25,"0"
+"2f5.txt","Fabricated","Multivariate association, M-M across",0.0487871919823973,25,"0"
+"2f5.txt","Fabricated","Multivariate association, SD-SD across",-0.0177482774837786,25,"0"
+"2f5.txt","Fabricated","Effect size (r)",0.581202590602068,25,"0"
+"3pl.txt","Fabricated","Benford, congruent means",2.31423548073033e-07,25,"0"
+"3pl.txt","Fabricated","Benford, congruent sds",0.0390268139453252,25,"0"
+"3pl.txt","Fabricated","Benford, incongruent means",1.43544546502561e-08,25,"0"
+"3pl.txt","Fabricated","Benford, incongruent sds",0.49745291839295,25,"0"
+"3pl.txt","Fabricated","Terminal digits, congruent means",0.1626062621903,25,"0"
+"3pl.txt","Fabricated","Terminal digits, congruent sds",0.834308260193408,25,"0"
+"3pl.txt","Fabricated","Terminal digits, incongruent means",0.514123620231075,25,"0"
+"3pl.txt","Fabricated","Terminal digits, incongruent sds",0.514123620231075,25,"0"
+"3pl.txt","Fabricated","Variance analysis, congruent sds (maxmin)",0.00025,25,"0"
+"3pl.txt","Fabricated","Variance analysis, incongruent sds (maxmin)",0.00025,25,"0"
+"3pl.txt","Fabricated","Multivariate association, M-SD congruent",0.781920081505613,25,"0"
+"3pl.txt","Fabricated","Multivariate association, M-SD incongruent",0.603946032789946,25,"0"
+"3pl.txt","Fabricated","Multivariate association, M-M across",0.767042307728004,25,"0"
+"3pl.txt","Fabricated","Multivariate association, SD-SD across",0.736425315018058,25,"0"
+"3pl.txt","Fabricated","Effect size (r)",0.362823308627957,25,"0"
+"3wn.txt","Fabricated","Benford, congruent means",3.53968617259006e-20,25,"0"
+"3wn.txt","Fabricated","Benford, congruent sds",7.77634477689056e-05,25,"0"
+"3wn.txt","Fabricated","Benford, incongruent means",1.56868430668491e-07,25,"0"
+"3wn.txt","Fabricated","Benford, incongruent sds",3.67593683503484e-08,25,"0"
+"3wn.txt","Fabricated","Terminal digits, congruent means",0.978072067711645,25,"0"
+"3wn.txt","Fabricated","Terminal digits, congruent sds",0.514123620231075,25,"0"
+"3wn.txt","Fabricated","Terminal digits, incongruent means",0.129619591332762,25,"0"
+"3wn.txt","Fabricated","Terminal digits, incongruent sds",0.75975627887207,25,"0"
+"3wn.txt","Fabricated","Variance analysis, congruent sds (maxmin)",0,25,"0"
+"3wn.txt","Fabricated","Variance analysis, incongruent sds (maxmin)",0,25,"0"
+"3wn.txt","Fabricated","Multivariate association, M-SD congruent",0.67067642912874,25,"0"
+"3wn.txt","Fabricated","Multivariate association, M-SD incongruent",0.542168447716737,25,"0"
+"3wn.txt","Fabricated","Multivariate association, M-M across",0.783100943310084,25,"0"
+"3wn.txt","Fabricated","Multivariate association, SD-SD across",0.257960321789046,25,"0"
+"3wn.txt","Fabricated","Effect size (r)",0.636463030034984,25,"0"
+"82z.txt","Fabricated","Benford, congruent means",1.24804024336756e-16,25,"1"
+"82z.txt","Fabricated","Benford, congruent sds",0.0939494309462347,25,"1"
+"82z.txt","Fabricated","Benford, incongruent means",5.98079544955664e-11,25,"1"
+"82z.txt","Fabricated","Benford, incongruent sds",0.764752092634916,25,"1"
+"82z.txt","Fabricated","Terminal digits, congruent means",0.366917799112752,25,"1"
+"82z.txt","Fabricated","Terminal digits, congruent sds",0.678685785296075,25,"1"
+"82z.txt","Fabricated","Terminal digits, incongruent means",0.437274188913867,25,"1"
+"82z.txt","Fabricated","Terminal digits, incongruent sds",0.75975627887207,25,"1"
+"82z.txt","Fabricated","Variance analysis, congruent sds (maxmin)",0.00025,25,"1"
+"82z.txt","Fabricated","Variance analysis, incongruent sds (maxmin)",0.00025,25,"1"
+"82z.txt","Fabricated","Multivariate association, M-SD congruent",0.493408147063236,25,"1"
+"82z.txt","Fabricated","Multivariate association, M-SD incongruent",0.56550619710955,25,"1"
+"82z.txt","Fabricated","Multivariate association, M-M across",0.838991942452536,25,"1"
+"82z.txt","Fabricated","Multivariate association, SD-SD across",0.611689205088394,25,"1"
+"82z.txt","Fabricated","Effect size (r)",0.316256694363927,25,"1"
+"8nb.txt","Fabricated","Benford, congruent means",9.00946741539805e-09,25,"0"
+"8nb.txt","Fabricated","Benford, congruent sds",9.26976639023467e-05,25,"0"
+"8nb.txt","Fabricated","Benford, incongruent means",1.49136543879326e-12,25,"0"
+"8nb.txt","Fabricated","Benford, incongruent sds",2.40583485731563e-05,25,"0"
+"8nb.txt","Fabricated","Terminal digits, congruent means",0.946307673764427,25,"0"
+"8nb.txt","Fabricated","Terminal digits, congruent sds",0.0375660835425708,25,"0"
+"8nb.txt","Fabricated","Terminal digits, incongruent means",0.437274188913867,25,"0"
+"8nb.txt","Fabricated","Terminal digits, incongruent sds",0.89776259712149,25,"0"
+"8nb.txt","Fabricated","Variance analysis, congruent sds (maxmin)",0,25,"0"
+"8nb.txt","Fabricated","Variance analysis, incongruent sds (maxmin)",0,25,"0"
+"8nb.txt","Fabricated","Multivariate association, M-SD congruent",-0.122095718800081,25,"0"
+"8nb.txt","Fabricated","Multivariate association, M-SD incongruent",-0.180298936663149,25,"0"
+"8nb.txt","Fabricated","Multivariate association, M-M across",-0.387306621508954,25,"0"
+"8nb.txt","Fabricated","Multivariate association, SD-SD across",0.135318755187113,25,"0"
+"8nb.txt","Fabricated","Effect size (r)",0.334666323996264,25,"0"
+"ez8.txt","Fabricated","Benford, congruent means",2.00313999875489e-23,25,"1"
+"ez8.txt","Fabricated","Benford, congruent sds",6.27287422482004e-06,25,"1"
+"ez8.txt","Fabricated","Benford, incongruent means",6.56594058682464e-29,25,"1"
+"ez8.txt","Fabricated","Benford, incongruent sds",0.00142403298568786,25,"1"
+"ez8.txt","Fabricated","Terminal digits, congruent means",0.1626062621903,25,"1"
+"ez8.txt","Fabricated","Terminal digits, congruent sds",0.366917799112752,25,"1"
+"ez8.txt","Fabricated","Terminal digits, incongruent means",0.595548507284206,25,"1"
+"ez8.txt","Fabricated","Terminal digits, incongruent sds",0.366917799112752,25,"1"
+"ez8.txt","Fabricated","Variance analysis, congruent sds (maxmin)",0.00025,25,"1"
+"ez8.txt","Fabricated","Variance analysis, incongruent sds (maxmin)",7e-05,25,"1"
+"ez8.txt","Fabricated","Multivariate association, M-SD congruent",0.665207006581344,25,"1"
+"ez8.txt","Fabricated","Multivariate association, M-SD incongruent",0.391511563645016,25,"1"
+"ez8.txt","Fabricated","Multivariate association, M-M across",0.880800905802681,25,"1"
+"ez8.txt","Fabricated","Multivariate association, SD-SD across",0.867079923020517,25,"1"
+"ez8.txt","Fabricated","Effect size (r)",0.472232053220962,25,"1"
+"g2f.txt","Fabricated","Benford, congruent means",5.12392490036957e-13,25,"1"
+"g2f.txt","Fabricated","Benford, congruent sds",0.12666552305681,25,"1"
+"g2f.txt","Fabricated","Benford, incongruent means",4.37551887990641e-12,25,"1"
+"g2f.txt","Fabricated","Benford, incongruent sds",0.0239555848635804,25,"1"
+"g2f.txt","Fabricated","Terminal digits, congruent means",0.678685785296075,25,"1"
+"g2f.txt","Fabricated","Terminal digits, congruent sds",0.30412581641191,25,"1"
+"g2f.txt","Fabricated","Terminal digits, incongruent means",0.946307673764427,25,"1"
+"g2f.txt","Fabricated","Terminal digits, incongruent sds",0.30412581641191,25,"1"
+"g2f.txt","Fabricated","Variance analysis, congruent sds (maxmin)",0.00025,25,"1"
+"g2f.txt","Fabricated","Variance analysis, incongruent sds (maxmin)",0.00023,25,"1"
+"g2f.txt","Fabricated","Multivariate association, M-SD congruent",0.290708404784267,25,"1"
+"g2f.txt","Fabricated","Multivariate association, M-SD incongruent",-0.237622340465349,25,"1"
+"g2f.txt","Fabricated","Multivariate association, M-M across",0.132286674062941,25,"1"
+"g2f.txt","Fabricated","Multivariate association, SD-SD across",-0.205637605815977,25,"1"
+"g2f.txt","Fabricated","Effect size (r)",0.320478835228629,25,"1"
+"h5w.txt","Fabricated","Benford, congruent means",1.17371228906788e-20,25,"1"
+"h5w.txt","Fabricated","Benford, congruent sds",0.44090705275062,25,"1"
+"h5w.txt","Fabricated","Benford, incongruent means",8.21683632964447e-15,25,"1"
+"h5w.txt","Fabricated","Benford, incongruent sds",0.0736483312662799,25,"1"
+"h5w.txt","Fabricated","Terminal digits, congruent means",0.595548507284206,25,"1"
+"h5w.txt","Fabricated","Terminal digits, congruent sds",0.30412581641191,25,"1"
+"h5w.txt","Fabricated","Terminal digits, incongruent means",0.595548507284206,25,"1"
+"h5w.txt","Fabricated","Terminal digits, incongruent sds",0.202267685405825,25,"1"
+"h5w.txt","Fabricated","Variance analysis, congruent sds (maxmin)",0.00025,25,"1"
+"h5w.txt","Fabricated","Variance analysis, incongruent sds (maxmin)",0.00019,25,"1"
+"h5w.txt","Fabricated","Multivariate association, M-SD congruent",0.625404619365716,25,"1"
+"h5w.txt","Fabricated","Multivariate association, M-SD incongruent",0.829883868699378,25,"1"
+"h5w.txt","Fabricated","Multivariate association, M-M across",0.845360101132767,25,"1"
+"h5w.txt","Fabricated","Multivariate association, SD-SD across",0.461277353259444,25,"1"
+"h5w.txt","Fabricated","Effect size (r)",0.380573852907593,25,"1"
+"h65.txt","Fabricated","Benford, congruent means",9.29032342726524e-17,25,"1"
+"h65.txt","Fabricated","Benford, congruent sds",1.40164429531199e-08,25,"1"
+"h65.txt","Fabricated","Benford, incongruent means",1.56848889319657e-14,25,"1"
+"h65.txt","Fabricated","Benford, incongruent sds",7.0739974042943e-07,25,"1"
+"h65.txt","Fabricated","Terminal digits, congruent means",0.0167174592729668,25,"1"
+"h65.txt","Fabricated","Terminal digits, congruent sds",0.1626062621903,25,"1"
+"h65.txt","Fabricated","Terminal digits, incongruent means",0.366917799112752,25,"1"
+"h65.txt","Fabricated","Terminal digits, incongruent sds",0.834308260193408,25,"1"
+"h65.txt","Fabricated","Variance analysis, congruent sds (maxmin)",0,25,"1"
+"h65.txt","Fabricated","Variance analysis, incongruent sds (maxmin)",0,25,"1"
+"h65.txt","Fabricated","Multivariate association, M-SD congruent",0.0144082550410225,25,"1"
+"h65.txt","Fabricated","Multivariate association, M-SD incongruent",0.210048830618357,25,"1"
+"h65.txt","Fabricated","Multivariate association, M-M across",0.659027077927657,25,"1"
+"h65.txt","Fabricated","Multivariate association, SD-SD across",0.363872033622728,25,"1"
+"h65.txt","Fabricated","Effect size (r)",0.371676089032614,25,"1"
+"hsu.txt","Fabricated","Benford, congruent means",3.06262323950706e-14,25,"1"
+"hsu.txt","Fabricated","Benford, congruent sds",8.79082373278532e-09,25,"1"
+"hsu.txt","Fabricated","Benford, incongruent means",0.000507443568098535,25,"1"
+"hsu.txt","Fabricated","Benford, incongruent sds",0.363323818175293,25,"1"
+"hsu.txt","Fabricated","Terminal digits, congruent means",0.366917799112752,25,"1"
+"hsu.txt","Fabricated","Terminal digits, congruent sds",0.595548507284206,25,"1"
+"hsu.txt","Fabricated","Terminal digits, incongruent means",0.202267685405825,25,"1"
+"hsu.txt","Fabricated","Terminal digits, incongruent sds",0.249283893976649,25,"1"
+"hsu.txt","Fabricated","Variance analysis, congruent sds (maxmin)",0,25,"1"
+"hsu.txt","Fabricated","Variance analysis, incongruent sds (maxmin)",0.00025,25,"1"
+"hsu.txt","Fabricated","Multivariate association, M-SD congruent",-0.187140517237984,25,"1"
+"hsu.txt","Fabricated","Multivariate association, M-SD incongruent",0.542078165438492,25,"1"
+"hsu.txt","Fabricated","Multivariate association, M-M across",0.0636919964100598,25,"1"
+"hsu.txt","Fabricated","Multivariate association, SD-SD across",-0.0236134751952164,25,"1"
+"hsu.txt","Fabricated","Effect size (r)",0.487561827915054,25,"1"
+"jgg.txt","Fabricated","Benford, congruent means",3.27958584506217e-06,25,"0"
+"jgg.txt","Fabricated","Benford, congruent sds",9.65745460471163e-06,25,"0"
+"jgg.txt","Fabricated","Benford, incongruent means",0.00014078651624686,25,"0"
+"jgg.txt","Fabricated","Benford, incongruent sds",5.02803960312359e-37,25,"0"
+"jgg.txt","Fabricated","Terminal digits, congruent means",0.30412581641191,25,"0"
+"jgg.txt","Fabricated","Terminal digits, congruent sds",0.366917799112752,25,"0"
+"jgg.txt","Fabricated","Terminal digits, incongruent means",0.00953490982575017,25,"0"
+"jgg.txt","Fabricated","Terminal digits, incongruent sds",0.366917799112752,25,"0"
+"jgg.txt","Fabricated","Variance analysis, congruent sds (maxmin)",0,25,"0"
+"jgg.txt","Fabricated","Variance analysis, incongruent sds (maxmin)",0,25,"0"
+"jgg.txt","Fabricated","Multivariate association, M-SD congruent",0.533688563907125,25,"0"
+"jgg.txt","Fabricated","Multivariate association, M-SD incongruent",0.328857782230034,25,"0"
+"jgg.txt","Fabricated","Multivariate association, M-M across",0.48893982353886,25,"0"
+"jgg.txt","Fabricated","Multivariate association, SD-SD across",0.269129484916253,25,"0"
+"jgg.txt","Fabricated","Effect size (r)",0.481195672079066,25,"0"
+"jmq.txt","Fabricated","Benford, congruent means",8.81221054386685e-26,25,"1"
+"jmq.txt","Fabricated","Benford, congruent sds",0.00802570963387679,25,"1"
+"jmq.txt","Fabricated","Benford, incongruent means",2.34916077455416e-11,25,"1"
+"jmq.txt","Fabricated","Benford, incongruent sds",0.390503950129685,25,"1"
+"jmq.txt","Fabricated","Terminal digits, congruent means",0.437274188913867,25,"1"
+"jmq.txt","Fabricated","Terminal digits, congruent sds",0.595548507284206,25,"1"
+"jmq.txt","Fabricated","Terminal digits, incongruent means",0.30412581641191,25,"1"
+"jmq.txt","Fabricated","Terminal digits, incongruent sds",0.0288171732612586,25,"1"
+"jmq.txt","Fabricated","Variance analysis, congruent sds (maxmin)",0.00025,25,"1"
+"jmq.txt","Fabricated","Variance analysis, incongruent sds (maxmin)",0.00025,25,"1"
+"jmq.txt","Fabricated","Multivariate association, M-SD congruent",0.873715118841009,25,"1"
+"jmq.txt","Fabricated","Multivariate association, M-SD incongruent",0.839857215051291,25,"1"
+"jmq.txt","Fabricated","Multivariate association, M-M across",0.707515051899571,25,"1"
+"jmq.txt","Fabricated","Multivariate association, SD-SD across",0.387320345230447,25,"1"
+"jmq.txt","Fabricated","Effect size (r)",0.340899577827346,25,"1"
+"nbu.txt","Fabricated","Benford, congruent means",1.12389753256723e-09,25,"0"
+"nbu.txt","Fabricated","Benford, congruent sds",0.00603807600571772,25,"0"
+"nbu.txt","Fabricated","Benford, incongruent means",1.86893605114787e-08,25,"0"
+"nbu.txt","Fabricated","Benford, incongruent sds",0.00140322780808598,25,"0"
+"nbu.txt","Fabricated","Terminal digits, congruent means",0.437274188913867,25,"0"
+"nbu.txt","Fabricated","Terminal digits, congruent sds",0.946307673764427,25,"0"
+"nbu.txt","Fabricated","Terminal digits, incongruent means",0.437274188913867,25,"0"
+"nbu.txt","Fabricated","Terminal digits, incongruent sds",0.978072067711645,25,"0"
+"nbu.txt","Fabricated","Variance analysis, congruent sds (maxmin)",0.00025,25,"0"
+"nbu.txt","Fabricated","Variance analysis, incongruent sds (maxmin)",9e-05,25,"0"
+"nbu.txt","Fabricated","Multivariate association, M-SD congruent",0.132508183021596,25,"0"
+"nbu.txt","Fabricated","Multivariate association, M-SD incongruent",0.0264036504591064,25,"0"
+"nbu.txt","Fabricated","Multivariate association, M-M across",0.0079782528835321,25,"0"
+"nbu.txt","Fabricated","Multivariate association, SD-SD across",0.211882166366521,25,"0"
+"nbu.txt","Fabricated","Effect size (r)",0.325470969114109,25,"0"
+"o2f.txt","Fabricated","Benford, congruent means",3.7982176063894e-10,25,"1"
+"o2f.txt","Fabricated","Benford, congruent sds",0.0024053736942284,25,"1"
+"o2f.txt","Fabricated","Benford, incongruent means",1.94572504602794e-14,25,"1"
+"o2f.txt","Fabricated","Benford, incongruent sds",2.31148797069565e-05,25,"1"
+"o2f.txt","Fabricated","Terminal digits, congruent means",0.437274188913867,25,"1"
+"o2f.txt","Fabricated","Terminal digits, congruent sds",0.75975627887207,25,"1"
+"o2f.txt","Fabricated","Terminal digits, incongruent means",0.30412581641191,25,"1"
+"o2f.txt","Fabricated","Terminal digits, incongruent sds",0.75975627887207,25,"1"
+"o2f.txt","Fabricated","Variance analysis, congruent sds (maxmin)",0,25,"1"
+"o2f.txt","Fabricated","Variance analysis, incongruent sds (maxmin)",0.00025,25,"1"
+"o2f.txt","Fabricated","Multivariate association, M-SD congruent",0.79242579519103,25,"1"
+"o2f.txt","Fabricated","Multivariate association, M-SD incongruent",0.564138499531294,25,"1"
+"o2f.txt","Fabricated","Multivariate association, M-M across",0.929860522653722,25,"1"
+"o2f.txt","Fabricated","Multivariate association, SD-SD across",0.597578057054691,25,"1"
+"o2f.txt","Fabricated","Effect size (r)",0.610799633259347,25,"1"
+"ojh.txt","Fabricated","Benford, congruent means",2.44666090721901e-64,25,"1"
+"ojh.txt","Fabricated","Benford, congruent sds",4.23293589429266e-27,25,"1"
+"ojh.txt","Fabricated","Benford, incongruent means",6.47449877241503e-39,25,"1"
+"ojh.txt","Fabricated","Benford, incongruent sds",5.27776352974088e-16,25,"1"
+"ojh.txt","Fabricated","Terminal digits, congruent means",0.89776259712149,25,"1"
+"ojh.txt","Fabricated","Terminal digits, congruent sds",0.249283893976649,25,"1"
+"ojh.txt","Fabricated","Terminal digits, incongruent means",0.366917799112752,25,"1"
+"ojh.txt","Fabricated","Terminal digits, incongruent sds",0.946307673764427,25,"1"
+"ojh.txt","Fabricated","Variance analysis, congruent sds (maxmin)",0,25,"1"
+"ojh.txt","Fabricated","Variance analysis, incongruent sds (maxmin)",0,25,"1"
+"ojh.txt","Fabricated","Multivariate association, M-SD congruent",-0.176320209540282,25,"1"
+"ojh.txt","Fabricated","Multivariate association, M-SD incongruent",-0.247916518476782,25,"1"
+"ojh.txt","Fabricated","Multivariate association, M-M across",0.674052360804313,25,"1"
+"ojh.txt","Fabricated","Multivariate association, SD-SD across",0.0351789457604655,25,"1"
+"ojh.txt","Fabricated","Effect size (r)",0.564601855789482,25,"1"
+"pkl.txt","Fabricated","Benford, congruent means",8.05285959555624e-25,25,"1"
+"pkl.txt","Fabricated","Benford, congruent sds",1.37450801161368e-08,25,"1"
+"pkl.txt","Fabricated","Benford, incongruent means",1.25375227636134e-31,25,"1"
+"pkl.txt","Fabricated","Benford, incongruent sds",6.18448021795894e-08,25,"1"
+"pkl.txt","Fabricated","Terminal digits, congruent means",0.595548507284206,25,"1"
+"pkl.txt","Fabricated","Terminal digits, congruent sds",0.129619591332762,25,"1"
+"pkl.txt","Fabricated","Terminal digits, incongruent means",0.678685785296075,25,"1"
+"pkl.txt","Fabricated","Terminal digits, incongruent sds",0.978072067711645,25,"1"
+"pkl.txt","Fabricated","Variance analysis, congruent sds (maxmin)",0,25,"1"
+"pkl.txt","Fabricated","Variance analysis, incongruent sds (maxmin)",0,25,"1"
+"pkl.txt","Fabricated","Multivariate association, M-SD congruent",0.647400834494547,25,"1"
+"pkl.txt","Fabricated","Multivariate association, M-SD incongruent",0.75936310316498,25,"1"
+"pkl.txt","Fabricated","Multivariate association, M-M across",-0.0162374214912853,25,"1"
+"pkl.txt","Fabricated","Multivariate association, SD-SD across",-0.0983503354351973,25,"1"
+"pkl.txt","Fabricated","Effect size (r)",0.470887149035162,25,"1"
+"sel.txt","Fabricated","Benford, congruent means",2.76469128113581e-16,25,"1"
+"sel.txt","Fabricated","Benford, congruent sds",1.74157519552141e-16,25,"1"
+"sel.txt","Fabricated","Benford, incongruent means",1.33415009115762e-25,25,"1"
+"sel.txt","Fabricated","Benford, incongruent sds",1.5458915682067e-06,25,"1"
+"sel.txt","Fabricated","Terminal digits, congruent means",0.514123620231075,25,"1"
+"sel.txt","Fabricated","Terminal digits, congruent sds",0.595548507284206,25,"1"
+"sel.txt","Fabricated","Terminal digits, incongruent means",0.1626062621903,25,"1"
+"sel.txt","Fabricated","Terminal digits, incongruent sds",0.366917799112752,25,"1"
+"sel.txt","Fabricated","Variance analysis, congruent sds (maxmin)",0,25,"1"
+"sel.txt","Fabricated","Variance analysis, incongruent sds (maxmin)",0.00025,25,"1"
+"sel.txt","Fabricated","Multivariate association, M-SD congruent",-0.192632485202108,25,"1"
+"sel.txt","Fabricated","Multivariate association, M-SD incongruent",0.108515024559082,25,"1"
+"sel.txt","Fabricated","Multivariate association, M-M across",0.773555888155627,25,"1"
+"sel.txt","Fabricated","Multivariate association, SD-SD across",0.033520901559733,25,"1"
+"sel.txt","Fabricated","Effect size (r)",0.789082429355051,25,"1"
+"t5g.txt","Fabricated","Benford, congruent means",9.79759592174331e-13,25,"0"
+"t5g.txt","Fabricated","Benford, congruent sds",0.0181114456963237,25,"0"
+"t5g.txt","Fabricated","Benford, incongruent means",1.90740189792899e-10,25,"0"
+"t5g.txt","Fabricated","Benford, incongruent sds",0.0145021329419916,25,"0"
+"t5g.txt","Fabricated","Terminal digits, congruent means",0.678685785296075,25,"0"
+"t5g.txt","Fabricated","Terminal digits, congruent sds",0.366917799112752,25,"0"
+"t5g.txt","Fabricated","Terminal digits, incongruent means",0.834308260193408,25,"0"
+"t5g.txt","Fabricated","Terminal digits, incongruent sds",0.678685785296075,25,"0"
+"t5g.txt","Fabricated","Variance analysis, congruent sds (maxmin)",1e-04,25,"0"
+"t5g.txt","Fabricated","Variance analysis, incongruent sds (maxmin)",0.00025,25,"0"
+"t5g.txt","Fabricated","Multivariate association, M-SD congruent",0.832400282844706,25,"0"
+"t5g.txt","Fabricated","Multivariate association, M-SD incongruent",0.794168828340998,25,"0"
+"t5g.txt","Fabricated","Multivariate association, M-M across",0.635572652832046,25,"0"
+"t5g.txt","Fabricated","Multivariate association, SD-SD across",0.557739022933591,25,"0"
+"t5g.txt","Fabricated","Effect size (r)",0.370570626569516,25,"0"
+"tjv.txt","Fabricated","Benford, congruent means",1.18772543435003e-28,25,"1"
+"tjv.txt","Fabricated","Benford, congruent sds",0.00155191519918139,25,"1"
+"tjv.txt","Fabricated","Benford, incongruent means",6.21291172818495e-27,25,"1"
+"tjv.txt","Fabricated","Benford, incongruent sds",1.18554025650594e-07,25,"1"
+"tjv.txt","Fabricated","Terminal digits, congruent means",0.89776259712149,25,"1"
+"tjv.txt","Fabricated","Terminal digits, congruent sds",0.514123620231075,25,"1"
+"tjv.txt","Fabricated","Terminal digits, incongruent means",0.437274188913867,25,"1"
+"tjv.txt","Fabricated","Terminal digits, incongruent sds",0.678685785296075,25,"1"
+"tjv.txt","Fabricated","Variance analysis, congruent sds (maxmin)",0,25,"1"
+"tjv.txt","Fabricated","Variance analysis, incongruent sds (maxmin)",0,25,"1"
+"tjv.txt","Fabricated","Multivariate association, M-SD congruent",-0.063969987836229,25,"1"
+"tjv.txt","Fabricated","Multivariate association, M-SD incongruent",-0.135456912826105,25,"1"
+"tjv.txt","Fabricated","Multivariate association, M-M across",-0.376266242637871,25,"1"
+"tjv.txt","Fabricated","Multivariate association, SD-SD across",-0.0895939451488951,25,"1"
+"tjv.txt","Fabricated","Effect size (r)",0.476501412353069,25,"1"
+"tyo.txt","Fabricated","Benford, congruent means",1.04990897375316e-11,25,"1"
+"tyo.txt","Fabricated","Benford, congruent sds",0.0289169663642213,25,"1"
+"tyo.txt","Fabricated","Benford, incongruent means",3.48028757159854e-21,25,"1"
+"tyo.txt","Fabricated","Benford, incongruent sds",0.0254671006409713,25,"1"
+"tyo.txt","Fabricated","Terminal digits, congruent means",0.678685785296075,25,"1"
+"tyo.txt","Fabricated","Terminal digits, congruent sds",0.437274188913867,25,"1"
+"tyo.txt","Fabricated","Terminal digits, incongruent means",0.834308260193408,25,"1"
+"tyo.txt","Fabricated","Terminal digits, incongruent sds",0.0805185128187637,25,"1"
+"tyo.txt","Fabricated","Variance analysis, congruent sds (maxmin)",0.00025,25,"1"
+"tyo.txt","Fabricated","Variance analysis, incongruent sds (maxmin)",0,25,"1"
+"tyo.txt","Fabricated","Multivariate association, M-SD congruent",0.479067667182896,25,"1"
+"tyo.txt","Fabricated","Multivariate association, M-SD incongruent",0.645241567040147,25,"1"
+"tyo.txt","Fabricated","Multivariate association, M-M across",0.607474430074134,25,"1"
+"tyo.txt","Fabricated","Multivariate association, SD-SD across",0.838245095769341,25,"1"
+"tyo.txt","Fabricated","Effect size (r)",0.295990672451659,25,"1"
+"ulr.txt","Fabricated","Benford, congruent means",6.9695418300653e-09,25,"1"
+"ulr.txt","Fabricated","Benford, congruent sds",0.0450864014107777,25,"1"
+"ulr.txt","Fabricated","Benford, incongruent means",4.04243637670798e-14,25,"1"
+"ulr.txt","Fabricated","Benford, incongruent sds",0.02920777558264,25,"1"
+"ulr.txt","Fabricated","Terminal digits, congruent means",0.978072067711645,25,"1"
+"ulr.txt","Fabricated","Terminal digits, congruent sds",0.89776259712149,25,"1"
+"ulr.txt","Fabricated","Terminal digits, incongruent means",0.595548507284206,25,"1"
+"ulr.txt","Fabricated","Terminal digits, incongruent sds",0.89776259712149,25,"1"
+"ulr.txt","Fabricated","Variance analysis, congruent sds (maxmin)",0.00025,25,"1"
+"ulr.txt","Fabricated","Variance analysis, incongruent sds (maxmin)",0.00025,25,"1"
+"ulr.txt","Fabricated","Multivariate association, M-SD congruent",0.522787677444074,25,"1"
+"ulr.txt","Fabricated","Multivariate association, M-SD incongruent",0.296884919009673,25,"1"
+"ulr.txt","Fabricated","Multivariate association, M-M across",0.779363021390005,25,"1"
+"ulr.txt","Fabricated","Multivariate association, SD-SD across",0.661798612659713,25,"1"
+"ulr.txt","Fabricated","Effect size (r)",0.407944695015284,25,"1"
+"yty.txt","Fabricated","Benford, congruent means",8.43606052550186e-26,25,"1"
+"yty.txt","Fabricated","Benford, congruent sds",0.000630952601254209,25,"1"
+"yty.txt","Fabricated","Benford, incongruent means",4.403893734277e-26,25,"1"
+"yty.txt","Fabricated","Benford, incongruent sds",0.00378388240179038,25,"1"
+"yty.txt","Fabricated","Terminal digits, congruent means",0.437274188913867,25,"1"
+"yty.txt","Fabricated","Terminal digits, congruent sds",0.89776259712149,25,"1"
+"yty.txt","Fabricated","Terminal digits, incongruent means",0.75975627887207,25,"1"
+"yty.txt","Fabricated","Terminal digits, incongruent sds",0.437274188913867,25,"1"
+"yty.txt","Fabricated","Variance analysis, congruent sds (maxmin)",0.00025,25,"1"
+"yty.txt","Fabricated","Variance analysis, incongruent sds (maxmin)",8e-05,25,"1"
+"yty.txt","Fabricated","Multivariate association, M-SD congruent",0.0168831023409698,25,"1"
+"yty.txt","Fabricated","Multivariate association, M-SD incongruent",0.309694443401772,25,"1"
+"yty.txt","Fabricated","Multivariate association, M-M across",0.903966401713716,25,"1"
+"yty.txt","Fabricated","Multivariate association, SD-SD across",0.560694519483827,25,"1"
+"yty.txt","Fabricated","Effect size (r)",0.543209544111144,25,"1"
+"z26.txt","Fabricated","Benford, congruent means",1.12389753256723e-09,25,"0"
+"z26.txt","Fabricated","Benford, congruent sds",2.73288422200942e-06,25,"0"
+"z26.txt","Fabricated","Benford, incongruent means",1.8772181372874e-14,25,"0"
+"z26.txt","Fabricated","Benford, incongruent sds",1.20322429175187e-09,25,"0"
+"z26.txt","Fabricated","Terminal digits, congruent means",0.366917799112752,25,"0"
+"z26.txt","Fabricated","Terminal digits, congruent sds",0.75975627887207,25,"0"
+"z26.txt","Fabricated","Terminal digits, incongruent means",0.678685785296075,25,"0"
+"z26.txt","Fabricated","Terminal digits, incongruent sds",0.595548507284206,25,"0"
+"z26.txt","Fabricated","Variance analysis, congruent sds (maxmin)",0,25,"0"
+"z26.txt","Fabricated","Variance analysis, incongruent sds (maxmin)",0,25,"0"
+"z26.txt","Fabricated","Multivariate association, M-SD congruent",0.0726533030124368,25,"0"
+"z26.txt","Fabricated","Multivariate association, M-SD incongruent",-0.312863162597804,25,"0"
+"z26.txt","Fabricated","Multivariate association, M-M across",-0.289744960202658,25,"0"
+"z26.txt","Fabricated","Multivariate association, SD-SD across",0.00859595276556057,25,"0"
+"z26.txt","Fabricated","Effect size (r)",0.548513307039475,25,"0"
+"cebersole.ashland","Genuine","Parametric test of Multivariate association, M-SD congruent",0.223700522219967,84,NA
+"cebersole.ashland","Genuine","Parametric test of Multivariate association, M-SD incongruent",0.525592907211254,84,NA
+"cebersole.ashland","Genuine","Parametric test of Multivariate association, M-M across",0.14027315646413,84,NA
+"cebersole.ashland","Genuine","Parametric test of Multivariate association, SD-SD across",0.254302812778751,84,NA
+"cebersole.ashland","Genuine","Combination w Fisher method (k=10, 2x variance, 4x terminal, 4x associations)",0.0014949343721527,84,NA
+"cebersole.bradley","Genuine","Parametric test of Multivariate association, M-SD congruent",0.0110860458666292,119,NA
+"cebersole.bradley","Genuine","Parametric test of Multivariate association, M-SD incongruent",0.0344479200969781,119,NA
+"cebersole.bradley","Genuine","Parametric test of Multivariate association, M-M across",0.0693963345863579,119,NA
+"cebersole.bradley","Genuine","Parametric test of Multivariate association, SD-SD across",0.120510986211287,119,NA
+"cebersole.bradley","Genuine","Combination w Fisher method (k=10, 2x variance, 4x terminal, 4x associations)",4.36089445814937e-06,119,NA
+"cebersole.carleton","Genuine","Parametric test of Multivariate association, M-SD congruent",0.0838516456251421,51,NA
+"cebersole.carleton","Genuine","Parametric test of Multivariate association, M-SD incongruent",0.0204006754718033,51,NA
+"cebersole.carleton","Genuine","Parametric test of Multivariate association, M-M across",0.0651736543030861,51,NA
+"cebersole.carleton","Genuine","Parametric test of Multivariate association, SD-SD across",0.0169500427845484,51,NA
+"cebersole.carleton","Genuine","Combination w Fisher method (k=10, 2x variance, 4x terminal, 4x associations)",4.53759653078409e-06,51,NA
+"cebersole.davis","Genuine","Parametric test of Multivariate association, M-SD congruent",0.0557073377345444,120,NA
+"cebersole.davis","Genuine","Parametric test of Multivariate association, M-SD incongruent",0.00243356950111391,120,NA
+"cebersole.davis","Genuine","Parametric test of Multivariate association, M-M across",0.0313505859467689,120,NA
+"cebersole.davis","Genuine","Parametric test of Multivariate association, SD-SD across",0.0908112951102733,120,NA
+"cebersole.davis","Genuine","Combination w Fisher method (k=10, 2x variance, 4x terminal, 4x associations)",9.31988844422621e-07,120,NA
+"cebersole.florida","Genuine","Parametric test of Multivariate association, M-SD congruent",0.0799586031735961,138,NA
+"cebersole.florida","Genuine","Parametric test of Multivariate association, M-SD incongruent",0.0201713288394975,138,NA
+"cebersole.florida","Genuine","Parametric test of Multivariate association, M-M across",0.0338591303842299,138,NA
+"cebersole.florida","Genuine","Parametric test of Multivariate association, SD-SD across",0.570241915118396,138,NA
+"cebersole.florida","Genuine","Combination w Fisher method (k=10, 2x variance, 4x terminal, 4x associations)",1.57816578555215e-05,138,NA
+"cebersole.ithaca","Genuine","Parametric test of Multivariate association, M-SD congruent",0.0781151462933024,288,NA
+"cebersole.ithaca","Genuine","Parametric test of Multivariate association, M-SD incongruent",0.016088703030556,288,NA
+"cebersole.ithaca","Genuine","Parametric test of Multivariate association, M-M across",0.0356691600006108,288,NA
+"cebersole.ithaca","Genuine","Parametric test of Multivariate association, SD-SD across",0.295729390466111,288,NA
+"cebersole.ithaca","Genuine","Combination w Fisher method (k=10, 2x variance, 4x terminal, 4x associations)",8.43753439902931e-05,288,NA
+"cebersole.miami","Genuine","Parametric test of Multivariate association, M-SD congruent",0.0614122053181132,101,NA
+"cebersole.miami","Genuine","Parametric test of Multivariate association, M-SD incongruent",0.0429540393306213,101,NA
+"cebersole.miami","Genuine","Parametric test of Multivariate association, M-M across",0.0289595690827155,101,NA
+"cebersole.miami","Genuine","Parametric test of Multivariate association, SD-SD across",0.425967620329514,101,NA
+"cebersole.miami","Genuine","Combination w Fisher method (k=10, 2x variance, 4x terminal, 4x associations)",2.55087009276745e-05,101,NA
+"cebersole.michst","Genuine","Parametric test of Multivariate association, M-SD congruent",0.0296864052530428,127,NA
+"cebersole.michst","Genuine","Parametric test of Multivariate association, M-SD incongruent",0.0018544076243007,127,NA
+"cebersole.michst","Genuine","Parametric test of Multivariate association, M-M across",0.0142081665352797,127,NA
+"cebersole.michst","Genuine","Parametric test of Multivariate association, SD-SD across",0.0331727097911612,127,NA
+"cebersole.michst","Genuine","Combination w Fisher method (k=10, 2x variance, 4x terminal, 4x associations)",3.98716890247184e-08,127,NA
+"cebersole.mississippi","Genuine","Parametric test of Multivariate association, M-SD congruent",0.00204068751971682,93,NA
+"cebersole.mississippi","Genuine","Parametric test of Multivariate association, M-SD incongruent",0.0322613277035419,93,NA
+"cebersole.mississippi","Genuine","Parametric test of Multivariate association, M-M across",0.0301406697504603,93,NA
+"cebersole.mississippi","Genuine","Parametric test of Multivariate association, SD-SD across",0.00699861215587456,93,NA
+"cebersole.mississippi","Genuine","Combination w Fisher method (k=10, 2x variance, 4x terminal, 4x associations)",5.24312090145577e-09,93,NA
+"cebersole.montana","Genuine","Parametric test of Multivariate association, M-SD congruent",0.368490999463481,129,NA
+"cebersole.montana","Genuine","Parametric test of Multivariate association, M-SD incongruent",0.298844169550723,129,NA
+"cebersole.montana","Genuine","Parametric test of Multivariate association, M-M across",0.0432056729520414,129,NA
+"cebersole.montana","Genuine","Parametric test of Multivariate association, SD-SD across",0.598836758541533,129,NA
+"cebersole.montana","Genuine","Combination w Fisher method (k=10, 2x variance, 4x terminal, 4x associations)",0.000945342238565696,129,NA
+"cebersole.mturk","Genuine","Parametric test of Multivariate association, M-SD congruent",0.0343032727015815,621,NA
+"cebersole.mturk","Genuine","Parametric test of Multivariate association, M-SD incongruent",0.0445513874706784,621,NA
+"cebersole.mturk","Genuine","Parametric test of Multivariate association, M-M across",0.169872691168852,621,NA
+"cebersole.mturk","Genuine","Parametric test of Multivariate association, SD-SD across",0.25920260876308,621,NA
+"cebersole.mturk","Genuine","Combination w Fisher method (k=10, 2x variance, 4x terminal, 4x associations)",0.000412752226742296,621,NA
+"cebersole.nova","Genuine","Parametric test of Multivariate association, M-SD congruent",0.268032572831959,132,NA
+"cebersole.nova","Genuine","Parametric test of Multivariate association, M-SD incongruent",0.0101589750542231,132,NA
+"cebersole.nova","Genuine","Parametric test of Multivariate association, M-M across",0.106358115043795,132,NA
+"cebersole.nova","Genuine","Parametric test of Multivariate association, SD-SD across",0.9440051227498,132,NA
+"cebersole.nova","Genuine","Combination w Fisher method (k=10, 2x variance, 4x terminal, 4x associations)",0.000665291487087027,132,NA
+"cebersole.osu","Genuine","Parametric test of Multivariate association, M-SD congruent",0.00416370611731163,163,NA
+"cebersole.osu","Genuine","Parametric test of Multivariate association, M-SD incongruent",0.00237343098766981,163,NA
+"cebersole.osu","Genuine","Parametric test of Multivariate association, M-M across",0.134147708110621,163,NA
+"cebersole.osu","Genuine","Parametric test of Multivariate association, SD-SD across",0.877357856092623,163,NA
+"cebersole.osu","Genuine","Combination w Fisher method (k=10, 2x variance, 4x terminal, 4x associations)",3.94138349633662e-06,163,NA
+"cebersole.plu","Genuine","Parametric test of Multivariate association, M-SD congruent",0.216232531660078,101,NA
+"cebersole.plu","Genuine","Parametric test of Multivariate association, M-SD incongruent",0.101091008264117,101,NA
+"cebersole.plu","Genuine","Parametric test of Multivariate association, M-M across",0.0496812375760364,101,NA
+"cebersole.plu","Genuine","Parametric test of Multivariate association, SD-SD across",0.499922871834517,101,NA
+"cebersole.plu","Genuine","Combination w Fisher method (k=10, 2x variance, 4x terminal, 4x associations)",0.000358293721712609,101,NA
+"cebersole.psuabington","Genuine","Parametric test of Multivariate association, M-SD congruent",0.273608424082883,117,NA
+"cebersole.psuabington","Genuine","Parametric test of Multivariate association, M-SD incongruent",0.0550994291138378,117,NA
+"cebersole.psuabington","Genuine","Parametric test of Multivariate association, M-M across",0.168241329199623,117,NA
+"cebersole.psuabington","Genuine","Parametric test of Multivariate association, SD-SD across",0.720056411377407,117,NA
+"cebersole.psuabington","Genuine","Combination w Fisher method (k=10, 2x variance, 4x terminal, 4x associations)",0.00275767643444546,117,NA
+"cebersole.riverside","Genuine","Parametric test of Multivariate association, M-SD congruent",0.359033673968125,252,NA
+"cebersole.riverside","Genuine","Parametric test of Multivariate association, M-SD incongruent",0.0172075148713271,252,NA
+"cebersole.riverside","Genuine","Parametric test of Multivariate association, M-M across",0.118862820073042,252,NA
+"cebersole.riverside","Genuine","Parametric test of Multivariate association, SD-SD across",0.879202649925278,252,NA
+"cebersole.riverside","Genuine","Combination w Fisher method (k=10, 2x variance, 4x terminal, 4x associations)",0.000890557111217364,252,NA
+"cebersole.sdsu","Genuine","Parametric test of Multivariate association, M-SD congruent",0.1328030400845,145,NA
+"cebersole.sdsu","Genuine","Parametric test of Multivariate association, M-SD incongruent",0.0583539832060058,145,NA
+"cebersole.sdsu","Genuine","Parametric test of Multivariate association, M-M across",0.0553288782689671,145,NA
+"cebersole.sdsu","Genuine","Parametric test of Multivariate association, SD-SD across",0.679232700226922,145,NA
+"cebersole.sdsu","Genuine","Combination w Fisher method (k=10, 2x variance, 4x terminal, 4x associations)",0.000149809406171208,145,NA
+"cebersole.texasam","Genuine","Parametric test of Multivariate association, M-SD congruent",0.0645970848047664,181,NA
+"cebersole.texasam","Genuine","Parametric test of Multivariate association, M-SD incongruent",0.0228302758335416,181,NA
+"cebersole.texasam","Genuine","Parametric test of Multivariate association, M-M across",0.06236370842908,181,NA
+"cebersole.texasam","Genuine","Parametric test of Multivariate association, SD-SD across",0.950626835860385,181,NA
+"cebersole.texasam","Genuine","Combination w Fisher method (k=10, 2x variance, 4x terminal, 4x associations)",0.000125039901942289,181,NA
+"cebersole.toronto","Genuine","Parametric test of Multivariate association, M-SD congruent",0.0217261971043496,82,NA
+"cebersole.toronto","Genuine","Parametric test of Multivariate association, M-SD incongruent",0.0338456167587442,82,NA
+"cebersole.toronto","Genuine","Parametric test of Multivariate association, M-M across",0.12575265895487,82,NA
+"cebersole.toronto","Genuine","Parametric test of Multivariate association, SD-SD across",0.580419073431782,82,NA
+"cebersole.toronto","Genuine","Combination w Fisher method (k=10, 2x variance, 4x terminal, 4x associations)",8.75181844125661e-06,82,NA
+"cebersole.vcu","Genuine","Parametric test of Multivariate association, M-SD congruent",0.58579985744791,97,NA
+"cebersole.vcu","Genuine","Parametric test of Multivariate association, M-SD incongruent",0.0915075408417039,97,NA
+"cebersole.vcu","Genuine","Parametric test of Multivariate association, M-M across",0.0661673707173118,97,NA
+"cebersole.vcu","Genuine","Parametric test of Multivariate association, SD-SD across",0.276005818436454,97,NA
+"cebersole.vcu","Genuine","Combination w Fisher method (k=10, 2x variance, 4x terminal, 4x associations)",2.87303752697503e-05,97,NA
+"cebersole.virginia","Genuine","Parametric test of Multivariate association, M-SD congruent",0.0688065978148083,196,NA
+"cebersole.virginia","Genuine","Parametric test of Multivariate association, M-SD incongruent",0.00199148416334177,196,NA
+"cebersole.virginia","Genuine","Parametric test of Multivariate association, M-M across",0.00897950547974729,196,NA
+"cebersole.virginia","Genuine","Parametric test of Multivariate association, SD-SD across",0.965993081425344,196,NA
+"cebersole.virginia","Genuine","Combination w Fisher method (k=10, 2x variance, 4x terminal, 4x associations)",1.062539173358e-05,196,NA
+"0jg.txt","Fabricated","Parametric test of Multivariate association, M-SD congruent",1.82273158914556e-19,25,"1"
+"0jg.txt","Fabricated","Parametric test of Multivariate association, M-SD incongruent",2.20151476773108e-22,25,"1"
+"0jg.txt","Fabricated","Parametric test of Multivariate association, M-M across",0.0419216216414575,25,"1"
+"0jg.txt","Fabricated","Parametric test of Multivariate association, SD-SD across",1.05171972971697e-07,25,"1"
+"0jg.txt","Fabricated","Combination w Fisher method (k=10, 2x variance, 4x terminal, 4x associations)",0,25,"1"
+"19e.txt","Fabricated","Parametric test of Multivariate association, M-SD congruent",0.00523557062710414,25,"1"
+"19e.txt","Fabricated","Parametric test of Multivariate association, M-SD incongruent",0.00317354318776955,25,"1"
+"19e.txt","Fabricated","Parametric test of Multivariate association, M-M across",0.12141884232296,25,"1"
+"19e.txt","Fabricated","Parametric test of Multivariate association, SD-SD across",0.114729107828878,25,"1"
+"19e.txt","Fabricated","Combination w Fisher method (k=10, 2x variance, 4x terminal, 4x associations)",2.33888813731535e-07,25,"1"
+"1se.txt","Fabricated","Parametric test of Multivariate association, M-SD congruent",0.0172028644140141,25,"1"
+"1se.txt","Fabricated","Parametric test of Multivariate association, M-SD incongruent",0.0706043662275823,25,"1"
+"1se.txt","Fabricated","Parametric test of Multivariate association, M-M across",1.03311268331619e-06,25,"1"
+"1se.txt","Fabricated","Parametric test of Multivariate association, SD-SD across",0.115434278446517,25,"1"
+"1se.txt","Fabricated","Combination w Fisher method (k=10, 2x variance, 4x terminal, 4x associations)",2.08134784008537e-09,25,"1"
+"1zm.txt","Fabricated","Parametric test of Multivariate association, M-SD congruent",0.00999582149906337,25,"0"
+"1zm.txt","Fabricated","Parametric test of Multivariate association, M-SD incongruent",1.1132094736524e-16,25,"0"
+"1zm.txt","Fabricated","Parametric test of Multivariate association, M-M across",0.247669393997704,25,"0"
+"1zm.txt","Fabricated","Parametric test of Multivariate association, SD-SD across",2.85058902578256e-06,25,"0"
+"1zm.txt","Fabricated","Combination w Fisher method (k=10, 2x variance, 4x terminal, 4x associations)",0,25,"0"
+"2a9.txt","Fabricated","Parametric test of Multivariate association, M-SD congruent",0.00213619656416886,25,"1"
+"2a9.txt","Fabricated","Parametric test of Multivariate association, M-SD incongruent",1.38802142819662e-11,25,"1"
+"2a9.txt","Fabricated","Parametric test of Multivariate association, M-M across",0.0628385236414218,25,"1"
+"2a9.txt","Fabricated","Parametric test of Multivariate association, SD-SD across",0.000734749549008555,25,"1"
+"2a9.txt","Fabricated","Combination w Fisher method (k=10, 2x variance, 4x terminal, 4x associations)",1.14912991740463e-18,25,"1"
+"2f5.txt","Fabricated","Parametric test of Multivariate association, M-SD congruent",0.00113168546301035,25,"0"
+"2f5.txt","Fabricated","Parametric test of Multivariate association, M-SD incongruent",1.7404113208548e-09,25,"0"
+"2f5.txt","Fabricated","Parametric test of Multivariate association, M-M across",3.06710178917501e-09,25,"0"
+"2f5.txt","Fabricated","Parametric test of Multivariate association, SD-SD across",0.00190603029872966,25,"0"
+"2f5.txt","Fabricated","Combination w Fisher method (k=10, 2x variance, 4x terminal, 4x associations)",0,25,"0"
+"3pl.txt","Fabricated","Parametric test of Multivariate association, M-SD congruent",0.320612495171544,25,"0"
+"3pl.txt","Fabricated","Parametric test of Multivariate association, M-SD incongruent",0.000424326457403505,25,"0"
+"3pl.txt","Fabricated","Parametric test of Multivariate association, M-M across",0.033627507598417,25,"0"
+"3pl.txt","Fabricated","Parametric test of Multivariate association, SD-SD across",0.000882805421179366,25,"0"
+"3pl.txt","Fabricated","Combination w Fisher method (k=10, 2x variance, 4x terminal, 4x associations)",7.08072086106017e-09,25,"0"
+"3wn.txt","Fabricated","Parametric test of Multivariate association, M-SD congruent",0.0410601517287066,25,"0"
+"3wn.txt","Fabricated","Parametric test of Multivariate association, M-SD incongruent",2.71873667692767e-05,25,"0"
+"3wn.txt","Fabricated","Parametric test of Multivariate association, M-M across",0.0414028343925281,25,"0"
+"3wn.txt","Fabricated","Parametric test of Multivariate association, SD-SD across",0.450932846683073,25,"0"
+"3wn.txt","Fabricated","Combination w Fisher method (k=10, 2x variance, 4x terminal, 4x associations)",0,25,"0"
+"82z.txt","Fabricated","Parametric test of Multivariate association, M-SD congruent",0.00020266708899055,25,"1"
+"82z.txt","Fabricated","Parametric test of Multivariate association, M-SD incongruent",8.07338123809273e-05,25,"1"
+"82z.txt","Fabricated","Parametric test of Multivariate association, M-M across",0.0812450401210084,25,"1"
+"82z.txt","Fabricated","Parametric test of Multivariate association, SD-SD across",0.0236998446958521,25,"1"
+"82z.txt","Fabricated","Combination w Fisher method (k=10, 2x variance, 4x terminal, 4x associations)",2.98704367719808e-10,25,"1"
+"8nb.txt","Fabricated","Parametric test of Multivariate association, M-SD congruent",1.67100656540978e-21,25,"0"
+"8nb.txt","Fabricated","Parametric test of Multivariate association, M-SD incongruent",2.00834596982734e-33,25,"0"
+"8nb.txt","Fabricated","Parametric test of Multivariate association, M-M across",1.76196819441921e-16,25,"0"
+"8nb.txt","Fabricated","Parametric test of Multivariate association, SD-SD across",0.0719430945094761,25,"0"
+"8nb.txt","Fabricated","Combination w Fisher method (k=10, 2x variance, 4x terminal, 4x associations)",0,25,"0"
+"ez8.txt","Fabricated","Parametric test of Multivariate association, M-SD congruent",0.0362125370664561,25,"1"
+"ez8.txt","Fabricated","Parametric test of Multivariate association, M-SD incongruent",5.44170531202581e-09,25,"1"
+"ez8.txt","Fabricated","Parametric test of Multivariate association, M-M across",0.127981101338165,25,"1"
+"ez8.txt","Fabricated","Parametric test of Multivariate association, SD-SD across",9.02224588790076e-06,25,"1"
+"ez8.txt","Fabricated","Combination w Fisher method (k=10, 2x variance, 4x terminal, 4x associations)",1.29591621730689e-15,25,"1"
+"g2f.txt","Fabricated","Parametric test of Multivariate association, M-SD congruent",1.81896811738631e-08,25,"1"
+"g2f.txt","Fabricated","Parametric test of Multivariate association, M-SD incongruent",8.66293096513777e-37,25,"1"
+"g2f.txt","Fabricated","Parametric test of Multivariate association, M-M across",4.11598060853211e-08,25,"1"
+"g2f.txt","Fabricated","Parametric test of Multivariate association, SD-SD across",2.52125477839621e-06,25,"1"
+"g2f.txt","Fabricated","Combination w Fisher method (k=10, 2x variance, 4x terminal, 4x associations)",6.38657001823316e-52,25,"1"
+"h5w.txt","Fabricated","Parametric test of Multivariate association, M-SD congruent",0.0135068543292406,25,"1"
+"h5w.txt","Fabricated","Parametric test of Multivariate association, M-SD incongruent",0.285010683780629,25,"1"
+"h5w.txt","Fabricated","Parametric test of Multivariate association, M-M across",0.0873055848748225,25,"1"
+"h5w.txt","Fabricated","Parametric test of Multivariate association, SD-SD across",0.327293813653743,25,"1"
+"h5w.txt","Fabricated","Combination w Fisher method (k=10, 2x variance, 4x terminal, 4x associations)",8.19624409602801e-06,25,"1"
+"h65.txt","Fabricated","Parametric test of Multivariate association, M-SD congruent",1.78618592311215e-16,25,"1"
+"h65.txt","Fabricated","Parametric test of Multivariate association, M-SD incongruent",5.9461431446359e-15,25,"1"
+"h65.txt","Fabricated","Parametric test of Multivariate association, M-M across",0.00700734185040471,25,"1"
+"h65.txt","Fabricated","Parametric test of Multivariate association, SD-SD across",0.881458008274471,25,"1"
+"h65.txt","Fabricated","Combination w Fisher method (k=10, 2x variance, 4x terminal, 4x associations)",0,25,"1"
+"hsu.txt","Fabricated","Parametric test of Multivariate association, M-SD congruent",3.7664995109606e-24,25,"1"
+"hsu.txt","Fabricated","Parametric test of Multivariate association, M-SD incongruent",2.70699050557123e-05,25,"1"
+"hsu.txt","Fabricated","Parametric test of Multivariate association, M-M across",4.94421656291023e-09,25,"1"
+"hsu.txt","Fabricated","Parametric test of Multivariate association, SD-SD across",0.00160772148575006,25,"1"
+"hsu.txt","Fabricated","Combination w Fisher method (k=10, 2x variance, 4x terminal, 4x associations)",0,25,"1"
+"jgg.txt","Fabricated","Parametric test of Multivariate association, M-SD congruent",0.000851238633222451,25,"0"
+"jgg.txt","Fabricated","Parametric test of Multivariate association, M-SD incongruent",7.32005846638258e-11,25,"0"
+"jgg.txt","Fabricated","Parametric test of Multivariate association, M-M across",0.000321689596853028,25,"0"
+"jgg.txt","Fabricated","Parametric test of Multivariate association, SD-SD across",0.510130371478824,25,"0"
+"jgg.txt","Fabricated","Combination w Fisher method (k=10, 2x variance, 4x terminal, 4x associations)",0,25,"0"
+"jmq.txt","Fabricated","Parametric test of Multivariate association, M-SD congruent",0.8989405759898,25,"1"
+"jmq.txt","Fabricated","Parametric test of Multivariate association, M-SD incongruent",0.336679276709819,25,"1"
+"jmq.txt","Fabricated","Parametric test of Multivariate association, M-M across",0.0146981851672392,25,"1"
+"jmq.txt","Fabricated","Parametric test of Multivariate association, SD-SD across",0.727061705270808,25,"1"
+"jmq.txt","Fabricated","Combination w Fisher method (k=10, 2x variance, 4x terminal, 4x associations)",2.19393289157578e-05,25,"1"
+"nbu.txt","Fabricated","Parametric test of Multivariate association, M-SD congruent",1.06985076061743e-12,25,"0"
+"nbu.txt","Fabricated","Parametric test of Multivariate association, M-SD incongruent",1.11677009198149e-22,25,"0"
+"nbu.txt","Fabricated","Parametric test of Multivariate association, M-M across",8.04354039814319e-10,25,"0"
+"nbu.txt","Fabricated","Parametric test of Multivariate association, SD-SD across",0.251499919008836,25,"0"
+"nbu.txt","Fabricated","Combination w Fisher method (k=10, 2x variance, 4x terminal, 4x associations)",1.45357219389947e-39,25,"0"
+"o2f.txt","Fabricated","Parametric test of Multivariate association, M-SD congruent",0.371286822951677,25,"1"
+"o2f.txt","Fabricated","Parametric test of Multivariate association, M-SD incongruent",7.58732751854055e-05,25,"1"
+"o2f.txt","Fabricated","Parametric test of Multivariate association, M-M across",0.206833353438724,25,"1"
+"o2f.txt","Fabricated","Parametric test of Multivariate association, SD-SD across",0.0322215217228447,25,"1"
+"o2f.txt","Fabricated","Combination w Fisher method (k=10, 2x variance, 4x terminal, 4x associations)",0,25,"1"
+"ojh.txt","Fabricated","Parametric test of Multivariate association, M-SD congruent",1.0653998332226e-23,25,"1"
+"ojh.txt","Fabricated","Parametric test of Multivariate association, M-SD incongruent",2.06825522439435e-37,25,"1"
+"ojh.txt","Fabricated","Parametric test of Multivariate association, M-M across",0.00887245067615275,25,"1"
+"ojh.txt","Fabricated","Parametric test of Multivariate association, SD-SD across",0.00797208270741587,25,"1"
+"ojh.txt","Fabricated","Combination w Fisher method (k=10, 2x variance, 4x terminal, 4x associations)",0,25,"1"
+"pkl.txt","Fabricated","Parametric test of Multivariate association, M-SD congruent",0.0236630582941897,25,"1"
+"pkl.txt","Fabricated","Parametric test of Multivariate association, M-SD incongruent",0.0664311064300535,25,"1"
+"pkl.txt","Fabricated","Parametric test of Multivariate association, M-M across",3.55758030188781e-10,25,"1"
+"pkl.txt","Fabricated","Parametric test of Multivariate association, SD-SD across",0.00014962341121634,25,"1"
+"pkl.txt","Fabricated","Combination w Fisher method (k=10, 2x variance, 4x terminal, 4x associations)",0,25,"1"
+"sel.txt","Fabricated","Parametric test of Multivariate association, M-SD congruent",2.21319630644191e-24,25,"1"
+"sel.txt","Fabricated","Parametric test of Multivariate association, M-SD incongruent",5.17337969624433e-19,25,"1"
+"sel.txt","Fabricated","Parametric test of Multivariate association, M-M across",0.036616176080925,25,"1"
+"sel.txt","Fabricated","Parametric test of Multivariate association, SD-SD across",0.00764438088990171,25,"1"
+"sel.txt","Fabricated","Combination w Fisher method (k=10, 2x variance, 4x terminal, 4x associations)",0,25,"1"
+"t5g.txt","Fabricated","Parametric test of Multivariate association, M-SD congruent",0.605256275355209,25,"0"
+"t5g.txt","Fabricated","Parametric test of Multivariate association, M-SD incongruent",0.145045128406365,25,"0"
+"t5g.txt","Fabricated","Parametric test of Multivariate association, M-M across",0.00479195962627776,25,"0"
+"t5g.txt","Fabricated","Parametric test of Multivariate association, SD-SD across",0.0715466488568571,25,"0"
+"t5g.txt","Fabricated","Combination w Fisher method (k=10, 2x variance, 4x terminal, 4x associations)",7.78816338258934e-06,25,"0"
+"tjv.txt","Fabricated","Parametric test of Multivariate association, M-SD congruent",2.82776296053512e-19,25,"1"
+"tjv.txt","Fabricated","Parametric test of Multivariate association, M-SD incongruent",6.58533963494073e-31,25,"1"
+"tjv.txt","Fabricated","Parametric test of Multivariate association, M-M across",2.86688414810222e-16,25,"1"
+"tjv.txt","Fabricated","Parametric test of Multivariate association, SD-SD across",0.000201571790100618,25,"1"
+"tjv.txt","Fabricated","Combination w Fisher method (k=10, 2x variance, 4x terminal, 4x associations)",0,25,"1"
+"tyo.txt","Fabricated","Parametric test of Multivariate association, M-SD congruent",0.000117641868144754,25,"1"
+"tyo.txt","Fabricated","Parametric test of Multivariate association, M-SD incongruent",0.00210008746676842,25,"1"
+"tyo.txt","Fabricated","Parametric test of Multivariate association, M-M across",0.00298296866229824,25,"1"
+"tyo.txt","Fabricated","Parametric test of Multivariate association, SD-SD across",2.74646265237446e-05,25,"1"
+"tyo.txt","Fabricated","Combination w Fisher method (k=10, 2x variance, 4x terminal, 4x associations)",0,25,"1"
+"ulr.txt","Fabricated","Parametric test of Multivariate association, M-SD congruent",0.000585084378287037,25,"1"
+"ulr.txt","Fabricated","Parametric test of Multivariate association, M-SD incongruent",6.8184963867489e-12,25,"1"
+"ulr.txt","Fabricated","Parametric test of Multivariate association, M-M across",0.0394686755733481,25,"1"
+"ulr.txt","Fabricated","Parametric test of Multivariate association, SD-SD across",0.00716270969075648,25,"1"
+"ulr.txt","Fabricated","Combination w Fisher method (k=10, 2x variance, 4x terminal, 4x associations)",8.8420378538619e-16,25,"1"
+"yty.txt","Fabricated","Parametric test of Multivariate association, M-SD congruent",2.17037495504376e-16,25,"1"
+"yty.txt","Fabricated","Parametric test of Multivariate association, M-SD incongruent",1.78997413917915e-11,25,"1"
+"yty.txt","Fabricated","Parametric test of Multivariate association, M-M across",0.161680820611326,25,"1"
+"yty.txt","Fabricated","Parametric test of Multivariate association, SD-SD across",0.0676711969529166,25,"1"
+"yty.txt","Fabricated","Combination w Fisher method (k=10, 2x variance, 4x terminal, 4x associations)",7.9793510182332e-26,25,"1"
+"z26.txt","Fabricated","Parametric test of Multivariate association, M-SD congruent",1.51790721894689e-14,25,"0"
+"z26.txt","Fabricated","Parametric test of Multivariate association, M-SD incongruent",1.84664755497679e-41,25,"0"
+"z26.txt","Fabricated","Parametric test of Multivariate association, M-M across",1.15753730865913e-14,25,"0"
+"z26.txt","Fabricated","Parametric test of Multivariate association, SD-SD across",0.0039781250844692,25,"0"
+"z26.txt","Fabricated","Combination w Fisher method (k=10, 2x variance, 4x terminal, 4x associations)",0,25,"0"
