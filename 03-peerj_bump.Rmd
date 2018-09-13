@@ -176,7 +176,7 @@ Binwidth & \multicolumn{4}{c}{0.00125}   & \multicolumn{4}{c}{0.0025}    & \mult
     \end{adjustbox}
     \caption{Caliper test for exactly reported $p$-values per journal for different binwidths.  $x$ = frequency of $p$-values in $.05$ minus binwidth through .05, $N$ = total frequency of $p$-values across both intervals in the comparison, $Pr=x/N$, $p$ = $p$-value of the binomial test. Significant results ($\alpha=.05$, one-tailed) indicating excess of $p$-values just below .05 and are reported in bold.}
   \label{tab:report}
-\end{table}%
+\end{table}
 
 The Caliper test results for reported $p$-values indicate two things: (i) including inexactly reported $p$-values has a large impact on the $p$-value distribution and (ii) a bump below .05 is also found when only considering exactly reported $p$-values. Because inexact reporting of $p$-values causes excess at certain points of the $p$-value [e.g., the significance threshold .05; @doi:10.1111/j.1420-9101.2006.01291.x], we recommend only inspecting exactly reported $p$-values when examining $p$-value distributions.
 
@@ -190,8 +190,6 @@ Results for reported $p$-values remain inconclusive with regard to the distribut
 
 ```{r bump-fig3, echo = FALSE, fig.cap='Distribution of recalculated $p$-values where the $p$-value is reported as $p=.05$. 9.7% of the results fall outside the range of the plot, with 3.6% at the left tail and 6.1% at the right tail. Binwidth = .00125'}
 knitr::include_graphics('assets/figures/bump-fig3.png')
-
-fignr <- fignr + 1
 ```
 
 The discrepancy between recalculated $p$-values and $p$-values reported as equal to .05 highlights the importance of using recalculated $p$-values when underlying effect distributions are estimated as in $p$-uniform and $p$-curve [@doi:10.1037/met0000025;@doi:10.1037/a0033242]. When interested in inspecting the $p$-value distribution, reported $p$-values can substantially distort the $p$-value distribution, such that results become biased if we rely solely on the reported $p$-value. Such a discrepancy indicates potential rounding of $p$-values, erroneous reporting of $p$-values, or strategic reporting of $p$-values. The $p$-value distortions can be (partially) corrected for by recalculating $p$-values based on reported test statistics. Additionally, potential distortions to the distribution at the third decimal place due to the rounding of $p$-values to the second decimal [@doi:10.7717/peerj.3068] is also solved by recalculating $p$-values. We continue with recalculated $p$-values in our following analyses.
@@ -202,8 +200,6 @@ Figure \@ref(fig:bump-fig4) shows the distribution of all recalculated $p$-value
 
 ```{r bump-fig4, echo = FALSE, fig.cap = 'Recalculated $p$-values for exactly reported test statistics (white bars), and recalculated $p$-values for exactly reported test statistics where $p$-values are also exactly reported (blue bars). Binwidth = .00125'}
 knitr::include_graphics('assets/figures/bump-fig4.png')
-
-fignr <- fignr + 1
 ```
 
 After inspecting all recalculated $p$-values, we did not observe a bump just below .05, $N=2,808,Pr=.5,p=0.508$. When we analyzed the recalculated $p$-values per journal (Table \@ref(tab:recalculated1)), there is no evidence for a bump below .05 in any of the journals. Additionally, we inspected all recalculated $p$-values that resulted from exactly reported $p$-values. For this subset we did observe a bump below .05, $N=809,Pr=0.564,p=0.000165$ (blue histogram in Figure \@ref(fig:bump-fig4)) for the smallest binwidth (i.e., .00125), but this effect was not robust across larger binwidths, as shown in Table \@ref(tab:recalculated2). This table also specifies the results for a bump below .05 per journal, with sufficient evidence of a bump only in JPSP. This finding, however, was only observed for binwidths .00125 and .0025, not for larger binwidths. Considering the results from the recalculated $p$-values, there is sparse evidence for the  presence of a bump below .05, opposed to previously claimed widespread evidence [@doi:10.1080/17470218.2012.711335;@doi:10.1080/17470218.2013.863371;@doi:10.1371/journal.pbio.1002106]. Moreover, interpretation of the bump for JPSP is not straightforward; it may also be that authors of JPSP are more prone to report exact test statistics if the $p$-value is just below .05 than whenever $p$-values are considerably smaller than .05.
