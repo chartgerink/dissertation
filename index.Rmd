@@ -1,52 +1,47 @@
 ---
-header-includes:
-  - \usepackage{booktabs}
-  - \usepackage{longtable}
-  - \usepackage{array}
-  - \usepackage{multirow}
-  - \usepackage[table]{xcolor}
-  - \usepackage{wrapfig}
-  - \usepackage{float}
-  - \usepackage{colortbl}
-  - \usepackage{pdflscape}
-  - \usepackage{tabu}
-  - \usepackage{threeparttable}
-  - \usepackage{threeparttablex}
-  - \usepackage[normalem]{ulem}
-  - \usepackage{makecell}
-  - \setcounter{secnumdepth}{1}
-  - \setcounter{tocdepth}{1}
-  - \usepackage[giveninits=false,hyperref,doi=true,style=apa,backend=biber]{biblatex}
-  - \usepackage[utf8]{inputenc}
-  - \usepackage[english]{babel}
-  - \usepackage{nameref,hyperref}
-  - \usepackage[right]{lineno}
-  - \usepackage{multirow}
-  - \usepackage{adjustbox}
-  - \usepackage[toc,page]{appendix}
-  - \usepackage[table]{xcolor} 
-  - \usepackage{pbox}
-  - \usepackage{csquotes}
-  - \pagestyle{plain}
-# title: "Contributions towards understanding and building sustainable science"
-# author: "CHJ Hartgerink"
-bibliography: [library.bib]
+author: "Chris Hubertus Joseph Hartgerink"
 biblio-style: apalike
-link-citations: true
-classoption: a4paper
+bibliography: [library.bib]
+description: "PhD dissertation by CHJ Hartgerink, written during 2014-2019, mostly at Tilburg University."
 documentclass: book
-output:
+classoption: a5paper
+github-repo: chartgerink/dissertation
+link-citations: true
+title: "Contributions towards understanding and building sustainable science"
+always_allow_html: yes
+output: 
+  bookdown::gitbook:
+    config:
+      toc:
+        collapse: subsection
+        scroll_highlight: yes
+        before: null
+        after: null
+      toolbar:
+        position: fixed
+      edit : null
+      download: null
+      search: yes
+      fontsettings:
+        theme: white
+        family: sans
+        size: 2
+      sharing:
+        facebook: no
+        twitter: yes
+        github: yes
+        google: no
+        linkedin: no
+        weibo: no
+        instapaper: no
+        vk: no
+        all: ['facebook', 'google', 'twitter', 'github', 'linkedin', 'weibo', 'instapaper']
   bookdown::pdf_book:
+    keep_tex: yes
     includes:
-      in_header: preamble.tex
+        after_body: index.tex
+        in_header: preamble.tex
 ---
-
-\newpage
-<!-- longtable for tables? -->
-<!-- include in premable.tex \usepackage{longtable} -->
-<!-- https://stackoverflow.com/questions/32265676/longtable-in-a-knitr-pdf-document-using-xtable-or-kable#44556022 -->
-<!-- dan nog iets over  -->
-<!-- https://haozhu233.github.io/kableExtra/awesome_table_in_pdf.pdf -->
 
 # Prologue
 
@@ -54,118 +49,312 @@ output:
 suppressPackageStartupMessages(require(magrittr))
 suppressPackageStartupMessages(require(knitr))
 suppressPackageStartupMessages(require(kableExtra))
+library(magrittr)
 
-tabnr <- 1
-chapters <- 12
+df <- read.csv('assets/tables/ch1-table.csv')
 ```
 
-The history- and practice of science is convoluted [@isbn:9781846142109], but as a student it was taught to me in a relatively uncomplicated manner. Among the things I remember from my high school science classes are how to convert a metric distance into Astronomical Units (AUs) and that there was something called the research cycle (I always forgot the separate steps and their order, which will ironically be a crucial subject of this dissertation). Those classes presented things such as the AU and the empirical cycle as unambiguous truths. In hindsight, it is difficult to imagine these constructed ideas as historically unambiguous. For example, I was taught the AU as simple arithmetic while that calculation implies accepting a historically complex process full of debate on how an AU should be defined [@doi:10.1017/s1743921305001365]. As such, that calculation was path-dependent, similar to how the history and practice of science in general is also path-dependent [@isbn:0692094187;@gelman-forking]. 
+The history- and practice of science is convoluted
+[@isbn:9781846142109], but as a student it was taught to me in a
+relatively uncomplicated manner. Among the things I remember from my
+high school science classes are how to convert a metric distance into
+Astronomical Units (AUs) and that there was something called the
+research cycle (I always forgot the separate steps and their order,
+which will ironically be a crucial subject of this
+dissertation). Those classes presented things such as the AU and the
+empirical cycle as unambiguous truths. In hindsight, it is difficult
+to imagine these constructed ideas as historically unambiguous. For
+example, I was taught the AU as simple arithmetic while that
+calculation implies accepting a historically complex process full of
+debate on how an AU should be defined
+[@doi:10.1017/s1743921305001365]. As such, that calculation was
+path-dependent, similar to how the history and practice of science in
+general is also path-dependent [@isbn:0692094187;@gelman-forking].
 
-Scientific textbooks understandably present a distillation of the scientific process. Not everyone needs the (full) history of discussions after broad consensus has already been reached. This is a useful heuristic for progress but also minimizes (maybe even belittles) the importance of the process [@isbn:0692094187]. As such, textbook science [vademecum science; @isbn:9780226253251], with which science teaching starts, provides high certainty, little detail, and provides the breeding ground for a view of science as producing certain knowledge. Through this kind of teaching, storybook images of scientists and science might arise, often as the actors and process of discovering absolute truths rather than of uncertain and iterative production of coherent and consistent knowledge. Such storybook images likely result in substantively higher ratings for scientists than non-scientists with respect to objectivity, rationality, skepticism, rigor, and ethics, even after taking into account educational level [@doi:10.1080/08989621.2016.1268922].
+Scientific textbooks understandably present a distillation of the
+scientific process. Not everyone needs the (full) history of
+discussions after broad consensus has already been reached. This is a
+useful heuristic for progress but also minimizes (maybe even
+belittles) the importance of the process [@isbn:0692094187]. As such,
+textbook science [vademecum science; @isbn:9780226253251], with which
+science teaching starts, provides high certainty, little detail, and
+provides the breeding ground for a view of science as producing
+certain knowledge. Through this kind of teaching, storybook images of
+scientists and science might arise, often as the actors and process of
+discovering absolute truths rather than of uncertain and iterative
+production of coherent and consistent knowledge. Such storybook images
+likely result in substantively higher ratings for scientists than
+non-scientists with respect to objectivity, rationality, skepticism,
+rigor, and ethics, even after taking into account educational level
+[@doi:10.1080/08989621.2016.1268922].
 
-Scientific research articles tend to provide more details and less certainty than scientific textbooks, but still present storified findings that simplify a complicated process into a single, linear narrative [particularly salient in tutorials on writing journal publications; @doi:10.1017/cbo9780511807862.002]. Compared to scientific textbooks, which present a narrative across many studies, scientific articles provide a narrative across relatively few studies. Hence, scientific articles should be relatively better than scientific textbooks for understanding the validity of findings because they get more space to nuance, provide more details, and contextualize research findings. Nonetheless, the linear narrative of the scientific article distills and distorts a complicated non-linear research process and thereby provides little space to encapsulate the full nuance, detail, and context of findings. Moreover, storification of research results requires flexibility, where its manifestation in the flexibility of analyses may be one of the main culprits of false positive findings [i.e., incorrectly claiming an effect; @doi:10.1371/journal.pmed.0020124] and detracts from accurate reporting. The lack of detail and (excessive) storification go hand in hand with the misrepresentation of event chronology to present a more comprehensible narrative to the reader and researcher. For example, breaks from a main narrative (i.e., nonconfirming results) may be excluded from the reporting. Such misrepresentation becomes particularly problematic if the validity of the presented findings rests on the actual and complete order of events --- as it does in the prevalent epistemological model of based on the empirical research cycle [@isbn:9789023228912]. Moreover, the storification within scholarly articles can create highly discordant stories across scholarly articles, leading to conflicting narratives and confusion in research fields or news reports and, ultimately, less coherent understanding of science by both general- and specialized audiences. 
+Scientific research articles tend to provide more details and less
+certainty than scientific textbooks, but still present storified
+findings that simplify a complicated process into a single, linear
+narrative [particularly salient in tutorials on writing journal
+publications; @doi:10.1017/cbo9780511807862.002]. Compared to
+scientific textbooks, which present a narrative across many studies,
+scientific articles provide a narrative across relatively few
+studies. Hence, scientific articles should be relatively better than
+scientific textbooks for understanding the validity of findings
+because they get more space to nuance, provide more details, and
+contextualize research findings. Nonetheless, the linear narrative of
+the scientific article distills and distorts a complicated non-linear
+research process and thereby provides little space to encapsulate the
+full nuance, detail, and context of findings. Moreover, storification
+of research results requires flexibility, where its manifestation in
+the flexibility of analyses may be one of the main culprits of false
+positive findings [i.e., incorrectly claiming an effect;
+@doi:10.1371/journal.pmed.0020124] and detracts from accurate
+reporting. The lack of detail and (excessive) storification go hand in
+hand with the misrepresentation of event chronology to present a more
+comprehensible narrative to the reader and researcher. For example,
+breaks from a main narrative (i.e., nonconfirming results) may be
+excluded from the reporting. Such misrepresentation becomes
+particularly problematic if the validity of the presented findings
+rests on the actual and complete order of events --- as it does in the
+prevalent epistemological model based on the empirical research
+cycle [@isbn:9789023228912]. Moreover, the storification within
+scholarly articles can create highly discordant stories across
+scholarly articles, leading to conflicting narratives and confusion in
+research fields or news reports and, ultimately, less coherent
+understanding of science by both general- and specialized audiences.
 
-When I started as a psychology student in 2009, I implicitly perceived science and scientists in the storybook way. I was the first in my immediate family to go to university, so I had no previous informal education about what a 'true' scientist or 'true' science looked like --- I was only influenced by the depictions in the media and popular culture. In other words, I thought scientists were objective, disinterested, skeptical, rigorous, ethical (and predominantly male). The textbook- and article based education I received at the university did not disconfirm or recalibrate this storybook image and, in hindsight, might have served to reinforce it (e.g., textbooks provided a decontextualized history that presented the path of discovery as linear, 'the truth' as unequivocal, multiple choice exams which could only receive correct or wrong answers, and certified stories in the form of peer reviewed publications). Granted, the empirical scientist was warranted the storybook qualities exactly *because* the empirical research cycle provided a way to overcome human biases and provided grounds for the widespread belief that search for 'the truth' was more important than individual gain. 
-<!-- The certification and validity of the empirical research cycle appeared to have been outsourced to the peer-review process, which was deemed the golden standardAs will appear ironic later on, peer-reviewed journal articles supposedly certified the presented findings as being true to the empirical cycle and hence epistemologically valid. -->
+When I started as a psychology student in 2009, I implicitly perceived
+science and scientists in the storybook way. I was the first in my
+immediate family to go to university, so I had no previous informal
+education about what 'true' scientists or 'true' science looked like
+--- I was only influenced by the depictions in the media and popular
+culture. In other words, I thought scientists were objective,
+disinterested, skeptical, rigorous, ethical (and predominantly
+male). The textbook- and article based education I received at the
+university did not disconfirm or recalibrate this storybook image and,
+in hindsight, might have served to reinforce it (e.g., textbooks
+provided a decontextualized history that presented the path of
+discovery as linear, 'the truth' as unequivocal, multiple choice exams
+which could only receive correct or wrong answers, and certified
+stories in the form of peer reviewed publications). Granted, the
+empirical scientist was warranted the storybook qualities exactly
+*because* the empirical research cycle provided a way to overcome
+human biases and provided grounds for the widespread belief that
+search for 'the truth' was more important than individual gain.
 
-<!-- The empirical research cycle supposedly helps validate science and the scientists' work; in cases where it appeared to not do this it was argued that science would be self-correcting. The counterintuitiveness of social psychology research made it odd but seemingly valid and highly appealing to me as a person. Not only did it interest me from a perspective of trying to understand the world around 
- -->
-As I progressed throughout my science education, it became apparent how naive the storybook image of science and the scientist was through a series of events that undercut the very epistemological model that granted these qualities. As a result of these events, I had what I somewhat dramatically called two 'personal crises of epistemological faith in science' (or put plainly: wake up calls). These crises strongly correlated with several major events within the psychology research community and raised doubts about the value of the research I was studying and conducting. Both these crises made me consider leaving scientific research and I am sure I was not alone in experiencing this sentiment.
-<!-- Skepticism was a part of the education, but initially more so at the level of study methodology and not the larger system it was produced in. -->
+As I progressed throughout my science education, it became apparent 
+how naive the storybook image of science and the scientist was through
+a series of events that undercut the very epistemological model that
+granted these qualities. As a result of these events, I had what I
+somewhat dramatically called two 'personal crises of epistemological
+faith in science' (or put plainly: wake up calls). These crises
+strongly correlated with several major events within the psychology
+research community and raised doubts about the value of the research I
+was studying and conducting. Both these crises made me consider
+leaving scientific research and I am sure I was not alone in
+experiencing this sentiment.
 
-My first crisis of epistemological faith was when the psychology professor who got me interested in research publicly confessed to having fabricated data throughout his academic career [@isbn:9789044623123]. Having been inspired to go down the path of scholarly research by this very professor and having worked as a research assistant for him, I doubted myself and my abilities and asked whether I was critical enough to conduct and notice valid research. After all, I had not had even an inch of suspicion while working with him. Moreover, I wondered what to make of my interest in research, given that the person who got me inspired appeared to be such a bad example to model myself to. Ultimately, I considered it unlikely that the majority of researchers would be fraudsters like this professor and simply realized that research could fail at various stages (e.g., data sharing, peer review). This event also unveiled to me the politics of science and how validity, rigor, and 'truth' finding was not a given [see for example @isbn:9780671447694]. Regardless, the self-reported prevalence of fraudulent behaviors among scientists [viz. 2%; @doi:10.1371/journal.pone.0005738] was sufficiently low to not undermine the epistemological effort of the scientific collective (although it could still severely distort it). As a result, I became more skeptical of the certified stories that in peer-reviewed journals and in my own and other's research. I ultimately shifted my focus towards studying statistics to improve research.
+My first crisis of epistemological faith was when the psychology
+professor who got me interested in research publicly confessed to
+having fabricated data throughout his academic career
+[@isbn:9789044623123]. Having been inspired to go down the path of
+scholarly research by this very professor and having worked as a
+research assistant for him, I doubted myself and my abilities and
+asked whether I was critical enough to conduct and notice valid
+research. After all, I had not had even an inch of suspicion while
+working with him. Moreover, I wondered what to make of my interest in
+research, given that the person who got me inspired appeared to be
+such a bad example to model myself to. Ultimately, I considered it
+unlikely that the majority of researchers would be fraudsters like
+this professor and simply realized that research could fail at various
+stages (e.g., data sharing, peer review). This event also unveiled to
+me the politics of science and how validity, rigor, and 'truth'
+finding was not a given [see for example
+@isbn:9780671447694]. Regardless, the self-reported prevalence of
+fraudulent behaviors among scientists [viz. 2%;
+@doi:10.1371/journal.pone.0005738] was sufficiently low to not
+undermine the epistemological effort of the scientific collective
+(although it could still severely distort it). As a result, I became
+more skeptical of the certified stories in peer-reviewed journals and
+in my own and other's research. I ultimately shifted my focus towards
+studying statistics to improve research.
 
-A second epistemological crisis arose when I took a class that indicated that scientists undermine the empirical research cycle at a large scale. These behaviors were sometimes intentional, sometimes unintentional, but often the result of misconceptions and ill procedures in order to play the game of getting published [@doi:10.1177/1745691612459060]. More specifically, this epistemological crisis originated from learning about how loose application of statistical procedures could produce statistically significant results from pretty much anything [e.g., @doi:10.1177/0956797611417632]. Additionally, these behaviors result in biased publication of results [@doi:10.1007/bf01173636] through the invisible (and often unaccountable) hand of peer review [@cogprints1646] that in itself suffers from various misconceptions. This combination potentially leads to a vicious cycle of overestimated (and sometimes false positive) effects leading to underpowered research that is selectively published leading to overestimated effects and underpowered research, and so on until that cycle gets disrupted. These issues are not necessarily new and have been discussed for over 40 years in some way or form [@doi:10.1037/0033-2909.105.2.309;@doi:10.1037/h0045186;@doi:10.1037/0033-2909.86.3.638;@doi:10.2466/03.11.pms.112.2.331-348;@doi:10.1207/s15327957pspr0203_4;@doi:10.1056/nejm199310143291613]. Given this longstanding vicious cycle, it seemed unlikely the issues in empirical research would resolve themselves --- they seemed more likely to be further exacerbated if left unattended. Progress on these issues would not be trivial or self-evident, given that previous awareness subsided and attempts to improve the situation did not stick in the long run. It also indicated to me that the reforms needed had to be substantial, because the improvements made over the last decades remained insufficient [although the historical context is highly relevant, see @doi:10.1177/1745691615609918]. Because of the failed attempts in the past and the awareness of these issues throughout the last six years or so, my epistemological crisis is ongoing and oscillates between frustration and hope for improvement.
+A second epistemological crisis arose when I took a class that
+indicated that scientists undermine the empirical research cycle at a
+large scale. These behaviors were sometimes intentional, sometimes
+unintentional, but often the result of misconceptions and ill
+procedures in order to play the game of getting published
+[@doi:10.1177/1745691612459060]. More specifically, this
+epistemological crisis originated from learning about how loose
+application of statistical procedures could produce statistically
+significant results from pretty much anything [e.g.,
+@doi:10.1177/0956797611417632]. Additionally, these behaviors result
+in biased publication of results [@doi:10.1007/bf01173636] through the
+invisible (and often unaccountable) hand of peer review
+[@cogprints1646] that in itself suffers from various
+misconceptions. This combination potentially leads to a vicious cycle
+of overestimated (and sometimes false positive) effects leading to
+underpowered research that is selectively published leading to
+overestimated effects and underpowered research, and so on until that
+cycle gets disrupted. These issues are not necessarily new and have
+been discussed for over 40 years in some way or form
+[@doi:10.1037/0033-2909.105.2.309;@doi:10.1037/h0045186;@doi:10.1037/0033-2909.86.3.638;@doi:10.2466/03.11.pms.112.2.331-348;@doi:10.1207/s15327957pspr0203_4;@doi:10.1056/nejm199310143291613]. Given
+this longstanding vicious cycle, it seemed unlikely the issues in
+empirical research would resolve themselves --- they seemed more
+likely to be further exacerbated if left unattended. Progress on these
+issues would not be trivial or self-evident, given that previous
+awareness subsided and attempts to improve the situation did not stick
+in the long run. It also indicated to me that the reforms needed had
+to be substantial, because the improvements made over the last decades
+remained insufficient [although the historical context is highly
+relevant, see @doi:10.1177/1745691615609918]. Because of the failed
+attempts in the past and the awareness of these issues throughout the
+last six years or so, my epistemological crisis is ongoing and
+oscillates between frustration and hope for improvement.
 
-Nonetheless, these two epistemological crises caused me to become increasingly engaged with various initiatives and research domains to actively contribute towards improving science. This was not only my personal way of coping with these crises and more specific incidents, it also felt like an exciting space to contribute to. In late 2012, I was introduced to the concept of Open Science for my first big research project. It seemed evident to me that Open Science was a great way to improve the verifiability of research [see also @doi:10.15200/winn.144232.26366]. The Open Science Framework had launched only recently [@doi:10.31237/osf.io/t23za], which is where I started to document my work openly. I found it scary, difficult, and did not know where to start simply because I had never been taught to do science this way nor did anyone really know how. It led me to experiment with these new tools and processes, find out the practicalities of actually making my own work open, and have continued to do so ever since. It made my work more reproducible and open and also led me to become engaged in what are often called the Open Access and Open Science movements. Both these movements aim to make knowledge available to all in various ways, going beyond dumping excessive amounts of information but also making it comprehensible by providing clear documentation to for example data. Not only are the communities behind these movements supportive in educating each other in open practices, they also activated me to help others see the value of Open Science and how to implement it [it all started with @doi:10.6084/m9.figshare.928315.v2]. Through this, activism within the realm of science became part of my daily scientific practice.
+Nonetheless, these two epistemological crises caused me to become
+increasingly engaged with various initiatives and research domains to
+actively contribute towards improving science. This was not only my
+personal way of coping with these crises and more specific incidents,
+it also felt like an exciting space to contribute to. In late 2012, I
+was introduced to the concept of Open Science for my first big
+research project. It seemed evident to me that Open Science was a
+great way to improve the verifiability of research [see also
+@doi:10.15200/winn.144232.26366]. The Open Science Framework had
+launched only recently [@doi:10.31237/osf.io/t23za], which is where I
+started to document my work openly. I found it scary, difficult, and
+did not know where to start simply because I had never been taught to
+do science this way nor did anyone really know how. It led me to
+experiment with these new tools and processes, find out the
+practicalities of actually making my own work open, and have continued
+to do so ever since. It made my work in a more reproducible, open manner and
+also led me to become engaged in what are often called the Open Access
+and Open Science movements. Both these movements aim to make knowledge
+available to all in various ways, going beyond dumping excessive
+amounts of information but also making it comprehensible by providing
+clear documentation to for example data. Not only are the communities
+behind these movements supportive in educating each other in open
+practices, they also activated me to help others see the value of Open
+Science and how to implement it [it all started with
+@doi:10.6084/m9.figshare.928315.v2]. Through this, activism within the
+realm of science became part of my daily scientific practice.
 
-Actively improving science through doing research became the main motivation for me to pursue a PhD project. Initially, we set out to focus purely on statistical detection of data fabrication (linking back to the first epistemological crisis) within the PhD project. After all, the proposed methods to detect data fabrication had not been tested widely nor validated and there was a clear opportunity for a valuable contribution. Rather quickly, our attention widened towards a broader set of issues, resulting in a broad perspective on issues in science by looking at not only data fabrication, but also at questionable research practices, statistical results and the reporting thereof, complemented by thinking about incentivizing rigorous practices. This dissertation presents the results of this work in two parts.
+Actively improving science through doing research became the main
+motivation for me to pursue a PhD project. Initially, we set out to
+focus purely on statistical detection of data fabrication (linking
+back to the first epistemological crisis) within the PhD
+project. After all, the proposed methods to detect data fabrication
+had not been tested widely nor validated and there was a clear
+opportunity for a valuable contribution. Rather quickly, our attention
+widened towards a broader set of issues, resulting in a broad
+perspective on issues in science by looking at not only data
+fabrication, but also at questionable research practices, statistical
+results and the reporting thereof, complemented by thinking about
+incentivizing rigorous practices. This dissertation presents the
+results of this work in two parts.
 
-Part 1 of this dissertation (chapters 1-6) pertains to research on understanding and detecting the tripartite of research practice (the good [responsible], the bad [fraudulent], and the ugly [questionable] practices so to speak). 
-Chapter 1 reviews literature on research misconduct, questionable research practices, and responsible conduct of research. In addition to providing an introduction to these three topics in a systematic way by asking 'What is it?', 'What do researchers do?' and 'How can we improve?', the chapter also proposes a practical computer folder structure for transparent research practices in an attempt to promote responsible conduct of research.
-In Chapter 2, I report the reanalysis of data indicating widespread $p$-hacking across various scientific domains [@doi:10.1371/journal.pbio.1002106;@doi:10.5061/dryad.79d43]<!-- make sure these refs are okay -->. The original research was highly reproducible itself, but slight and justifiable changes to the analyses failed to confirm the finding of widespread $p$-hacking across scientific domains. This chapter offered an initial indication of how difficult it is to robustly detect $p$-hacking. 
-In an attempt to improve the detection and estimation of $p$-hacking, Chapter 3 replicated and extended the findings from Chapter 2. We replicated the analyses using an independent data set of statistical results in psychology [@doi:10.3758/s13428-015-0664-2] and found that $p$-value distributions are distorted through reporting habits (e.g., rounding to two decimals). Additionally, we set out to create and apply new statistical models in an attempt to improve detection of $p$-hacking.<!-- , but these models remained unsatisfactory due to extensive heterogeneity in effects and types of (potential) $p$-hacking behaviors. As such, we concluded that it is extremely difficult to detect $p$-hacking in the scholarly literature due to the variety of $p$-hacking behaviors that can occur, all with different effects on $p$-value distributions. In other words, it is difficult to differentiate the signal from the noise. We did, however, find concrete evidence for incorrect rounding down in approximately 1 out of 10 $p$-values reported as $p=.05$, which is also considered a questionable practice [@doi:10.1177/0956797611430953]. -->
-Chapter 4 focuses on the opposite of false positive results, namely false negative results. Here we argue that, based on the published statistically nonsignificant results in combination with typically small sample sizes, researchers are letting a lot of potential true effects slip off their radar if nonsignificant findings are interpreted as true zero effects. We introduce the adjusted Fisher method for testing the presence of non-zero true effects among a set of statistically nonsignificant results, and present three applications of this method.<!-- More specifically, we find that 2 out of 3 psychology papers reporting nonsignificant results misses a true effect, results of gender effects across papers contain evidential value regardless of their statistical significance, and that the nonsignificant effects in the Reproducibility Project Psychology [RPP; @doi:10.1126/science.aac4716] do not warrant conclusions about the validity of individual effects contained therein. -->
-In Chapter 5 I report on a dataset containing over half a million statistical results extracted with the tool `statcheck` from the psychology literature. This chapter, in the form of a data paper, explains the methodology underlying the data collection process, how the data can be downloaded, that there are no copyright restrictions on the data, and what the limitations of the data are. This dataset was documented and shared for further research on understanding the reporting and reported results [original research using these data has already been conducted; @doi:10.1371/journal.pone.0182651].
-Chapter 6 presents results on two studies where we tried to classify genuine- and fabricated data solely using statistical methods. In these two studies, we relied heavily on openly shared data from two Many Labs projects [@doi:10.1027/1864-9335/a000178;@doi:10.1016/j.jesp.2015.10.012] and had a total of 67 researchers fabricate data in a controlled setting to determine which statistical methods distinguish between genuine- and fabricated data the best.<!-- Our results primarily indicate that effect sizes are the easiest and best way to detect fabricated results when unbiased genuine data is available (e.g., not biased due to publication bias). -->
+Part 1 of this dissertation (chapters 1-6) pertains to research on
+understanding and detecting the tripartite of research practice (the
+good [responsible], the bad [fraudulent], and the ugly [questionable]
+practices so to speak).  Chapter 1 reviews literature on research
+misconduct, questionable research practices, and responsible conduct
+of research. In addition to providing an introduction to these three
+topics in a systematic way by asking 'What is it?', 'What do
+researchers do?' and 'How can we improve?', the chapter also proposes
+a practical computer folder structure for transparent research
+practices in an attempt to promote responsible conduct of research.
+In Chapter 2, I report the reanalysis of data indicating widespread
+$p$-hacking across various scientific domains
+[@doi:10.1371/journal.pbio.1002106;@doi:10.5061/dryad.79d43]. The
+original research was highly reproducible itself, but slight and
+justifiable changes to the analyses failed to confirm the finding of
+widespread $p$-hacking across scientific domains. This chapter offered
+an initial indication of how difficult it is to robustly detect
+$p$-hacking. In an attempt to improve the detection and estimation of
+$p$-hacking, Chapter 3 replicated and extended the findings from
+Chapter 2. We replicated the analyses using an independent data set of
+statistical results in psychology [@doi:10.3758/s13428-015-0664-2] and
+found that $p$-value distributions are distorted through reporting
+habits (e.g., rounding to two decimals). Additionally, we set out to
+create and apply new statistical models in an attempt to improve
+detection of $p$-hacking. Chapter 4 focuses on the opposite of false
+positive results, namely false negative results. Here we argue that,
+based on the published statistically nonsignificant results in
+combination with typically small sample sizes, researchers are letting
+a lot of potential true effects slip off their radar if nonsignificant
+findings are interpreted as true zero effects. We introduce the
+adjusted Fisher method for testing the presence of non-zero true
+effects among a set of statistically nonsignificant results, and
+present three applications of this method. In Chapter 5 I report on a
+dataset containing over half a million statistical results extracted
+with the tool `statcheck` from the psychology literature. This
+chapter, in the form of a data paper, explains the methodology
+underlying the data collection process, how the data can be
+downloaded, that there are no copyright restrictions on the data, and
+what the limitations of the data are. This dataset was documented and
+shared for further research on understanding the reporting and
+reported results [original research using these data has already been
+conducted; @doi:10.1371/journal.pone.0182651]. Chapter 6 presents
+results on two studies where we tried to classify genuine- and
+fabricated data solely using statistical methods. In these two
+studies, we relied heavily on openly shared data from two Many Labs
+projects
+[@doi:10.1027/1864-9335/a000178;@doi:10.1016/j.jesp.2015.10.012] and
+had a total of 67 researchers fabricate data in a controlled setting
+to determine which statistical methods distinguish between genuine-
+and fabricated data the best.
 
-Part 2 of this dissertation (chapters 7-9) pertains to practical ways to improve the epistemological sustainability of science. Epistemological sustainability of science pertains to both the reliability of the knowledge produced as the longevity of the system that produces is.
-Chapter 7 specifically focuses on data retrieval from empirical research articles presenting vector images. We developed and tested software to this end, which is a promising way to mitigate the effect of rapidly decreasing odds of data retrieval as a paper gets older [@doi:10.1016/j.cub.2013.11.014].<!-- We find that vector images are rarely reported in articles, but when they are, software to extract data from them is promising (although not yet user-friendly). -->
-In Chapter 8 I present a conceptual redesign of the scholarly communication system based on piecemeal modules, focusing on how networked scholarly communication might facilitate improved research and researcher evaluation. This conceptual redesign takes into account the issues of restricted access, researcher degrees of freedom, publication biases, perverse incentives for researchers, and other human biases in the conduct of research.<!--  As such, this proposed redesign attempts to provide a holistic approach to the various issues scholarly research is presently facing.  --> The basis of this redesign is to shift from a reconstructive and text-based research article into a decomposed set of research modules that are communicated continuously and contain information in any form (e.g., text, code, data, video). 
-Chapter 9 extends this new form of scholarly communication in its technical foundations and contextualizes it in the library- and information sciences (LIS). From LIS, five key functions of a scholarly communication system emerge: registration, certification,"" preservation, awareness, and incentives [@roosendaal1998;@doi:10.1045/september2004-vandesompel]. First, I extend how the article-based scholarly communication system takes a narrow and unsatisfactory approach to the five functions. Second, I extend how new Web protocols, when used to implement the redesign proposed in Chapter 8, could fulfill the five scholarly communication functions in a wider and more satisfactory sense. <!-- A prototype of this scholarly communication in the form of modules is made available and serves as the groundwork for further developments. --> In the Epilogue, I provide my personal perspective and a more polemical account of how to improve the sustainability of science, in order to contribute to discussions on the future developments to improve the sustainability of science.
-<!-- I summarize and discuss several implications of the presented chapters, joined by my current vision on the issues scholarly research faces and how to build progress. I try to take a wide perspective on the issues scholarly research faces and go beyond just pointing these out, but also propose a way forward in order and how the developments of the last seven years have made progress and require retracing some of our steps. I discuss how various issues have been addressed in isolation while being a collected under a common theme, how meta-research is increasingly neglecting key issues, and how practical steps should become more important in order to reduce what I have come to call scientific populism. *DEZE ALINEA KAN PAS ECHT ALS EPILOOG AF IS* -->
+Part 2 of this dissertation (chapters 7-9) pertains to practical ways
+to improve the epistemological sustainability of
+science. Epistemological sustainability of science pertains to both
+the reliability of the knowledge produced as the longevity of the
+system that produces it. Chapter 7 specifically focuses on data
+retrieval from empirical research articles presenting vector
+images. We developed and tested software to this end, which is a
+promising way to mitigate the effect of rapidly decreasing odds of
+data retrieval as a paper gets older [@doi:10.1016/j.cub.2013.11.014].
+In Chapter 8 we present a conceptual redesign of the scholarly
+communication system based on piecemeal modules, focusing on how
+networked scholarly communication might facilitate improved research
+and researcher evaluation. This conceptual redesign takes into account
+the issues of restricted access, researcher degrees of freedom,
+publication biases, perverse incentives for researchers, and other
+human biases in the conduct of research. The basis of this redesign is
+to shift from a reconstructive and text-based research article into a
+decomposed set of research modules that are communicated continuously
+and contain information in any form (e.g., text, code, data, video).
+Chapter 9 extends this new form of scholarly communication in its
+technical foundations and contextualizes it in the library- and
+information sciences (LIS). From LIS, five key functions of a
+scholarly communication system emerge: registration, certification,
+preservation, awareness, and incentives
+[@roosendaal1998;@doi:10.1045/september2004-vandesompel]. First, I
+extend how the article-based scholarly communication system takes a
+narrow and unsatisfactory approach to the five functions. Second, I
+extend how new Web protocols, when used to implement the redesign
+proposed in Chapter 8, could fulfill the five scholarly communication
+functions in a wider and more satisfactory sense. In the Epilogue, I
+provide a high level framework to inform radical change in the
+scientific system, which brings together all the lessons from this
+dissertation.
 
-<!-- In the Epilogue of this dissertation, I will outline why this dissertation has led provide a summary of the individual chapters, provide background on the relevant events involved in the research process but not captured in the individual chapters, and attempt to provide a coherent vision for Open Scholarship [@knowledge exchange]. -->
+The order of the chapters in this dissertation does not reflect the
+exact chronological order of events. Table \@ref(tab:overview)
+re-sorts the chapters in the chronological order and provides
+additional information for each chapter. More specifically, it
+includes the copyright license (all can be freely reused and
+redistributed without permission), a direct link to the collection of
+materials underlying that chapter (if relevant), whether the chapter
+was shared as a preprint, and the associated peer-reviewed publication
+(if any). If published, the chapters in this dissertation may be
+slightly different in word use or formatting, but contain
+substantively the same content. These are additional aspects to the
+chapters that attempt to improve the reproducibility of the chapters,
+in order to prevent the issues from my epistemological crises. A digital version of this dissertation is available under https://phd.chjh.nl
 
-The order of the chapters in this dissertation does not reflect the exact chronological order of events. Table \@ref(tab:intro) re-sorts the chapters in the chronological order and provides additional information for each chapter. More specifically, it includes the copyright license (all can be freely reused and redistributed without permission), a direct link to the collection of materials underlying that chapter (if relevant), the preregistration (if any), whether the chapter was shared as a preprint, and the associated peer-reviewed publication (if any). If published, the chapters in this dissertation may be slightly different on word use or formatting, but contain substantively the same content. These are additional aspects to the chapters that attempt to improve the reproducibility of the chapters, in order to prevent the issues from my epistemological crises.
-
-```{r intro, echo = FALSE}
-final_date <- "2018-08-31"
-df <- data.frame(date = as.Date(c(final_date, 
-                                   "2016-08-06",
-                                   "2017-03-02",
-                                   "2016-04-11",
-                                   "2017-03-29",
-                                   "2016-09-23",
-                                   final_date,
-                                   "2017-09-06",
-                                   "2018-04-26",
-                                   final_date, final_date, final_date)),
-                 license = c('CC0 1.0',
-                              'CC-BY 4.0',
-                              'CC0 1.0',
-                              rep('CC-BY 4.0', 3),
-                              rep('CC0 1.0', 6)
-                              ),
-                 data_pkg = c('-', '-',
-                  '10.5281/zenodo.269668',
-                  'osf.io/4d2g9/',
-                  '10.5281/zenodo.250492',
-                  '10.5281/zenodo.59818',
-                  '10.5281/zenodo.1403779',
-                  '10.5281/zenodo.1010360',
-                  '-',
-                  '10.5281/zenodo.1403781','-','-'),
-                  prereg = c('-', 
-                  '-',
-                  '-',
-                  '-',
-                  '-',
-                  'https://osf.io/fc35g/',
-                  '-',
-                  '-',
-                  '-', '-','-','-'),
-                 preprint = c('-',
-                  '-',
-                  '10.7287/peerj.preprints.2439v1',
-                  '10.7287/peerj.preprints.1642v2',
-                  '10.31219/osf.io/rkumy',
-                  '10.20944/preprints201608.0191.v1',
-                  '-',
-                  'arxiv.org/abs/1709.02261',
-                  '10.7287/peerj.preprints.26462v1',
-                  '-', '-','-'
-                  ),
-                 publication = c('-',
-                  '10.14293/S2199-1006.1.SOR-SOCSCI.ARYSBI.v1',
-                  '10.7717/peerj.3068',
-                  '10.7717/peerj.1935',
-                  '10.1525/collabra.71',
-                  '10.3390/data1030014',
-                  '-',
-                  '-',
-                  '10.3390/publications6020021',
-                  '-','-','-'),
-                   row.names = paste('Chapter ', 1:chapters)
-                 )
-
-names(df) <- c('Date', 'License', 'Data package', 'Preregistration',
-  'Preprint', 'Article')
-
-df <- df[with(df, order(Date)), ]
-df <- df[ ,2:6]
-kable(df, booktabs = TRUE, caption = 'Chapters of the dissertation, chronologically order and supplemented with information about its data package (containing all materials), a link to the preregistration, the preprint, and the peer-reviewed article.') %>%
-  kable_styling(latex_options = c('striped', 'scale_down', 'hold_position')) %>%
-  landscape()
-# tabnr <- tabnr + 1
+```{r overview, echo = FALSE}
+knitr::kable(df,
+             booktabs = TRUE,
+             caption = 'Chronologically ordered dissertation chapters, supplemented with identifiers data package, preprint, and peer-reviewed article.') %>%
+  kableExtra::scroll_box(width = "100%") %>%
+  kableExtra::kable_styling(
+                bootstrap_options = c("striped", "hover", "condensed", "responsive", full_width = F),
+                latex_options = c("striped", "scale_down", "hold_position"), position = "center")
 ```

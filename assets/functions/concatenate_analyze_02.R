@@ -482,3 +482,34 @@ df <- plyr::ddply(df, .(type, analysis, measure), function (x) {
 })
 
 write.csv(df, file = '../data/study_02/digit_counts.csv', row.names = FALSE)
+
+# make a datafile for plotting the SD distriubtions for presentation purposes
+sds <- data.frame(group = NULL, type = NULL, sd = NULL)
+
+for (response in responses) {
+  fab_dat <- read.table(sprintf('../data/study_02/responses/%s', response),
+   sep = '\t', header = TRUE)
+        # For clarity sake
+  names(fab_dat) <- c('id',
+    'mean_congruent',
+    'sd_congruent',
+    'congruent_trials',
+    'mean_incongruent',
+    'sd_incongruent',
+    'incongruent_trials')
+        # Eliminate overprecision in reporting
+        # Instructed participants to fabricate milliseconds and 123.45 is result of copy-paste
+        # Spreadsheet automatically removed this, but by copy-pasting this was undone by PP
+  fab_dat <- as.data.frame(apply(fab_dat, 2, function(x) round(x, 0)))
+  
+  sds <- rbind(sds, data.frame(group = 'Fabricated', type = 'sdc', sd = fab_dat$sd_congruent))
+  sds <- rbind(sds, data.frame(group = 'Fabricated', type = 'sdi', sd = fab_dat$sd_incongruent))
+}
+
+ml3_sds_sdc <- data.frame(group = 'Genuine', type = 'sdc', sd = ml3_dat$SDC)
+ml3_sds_sdi <- data.frame(group = 'Genuine', type = 'sdi', sd = ml3_dat$SDI)
+sds <- rbind(sds, rbind(ml3_sds_sdc, ml3_sds_sdi))
+
+write.csv(sds, file = '../data/study_02/sds-distribution.csv', row.names = FALSE)
+
+

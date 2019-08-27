@@ -1,27 +1,21 @@
-\newpage
-
 # Distributions of p-values between .01-.05 in psychology: what is going on?
-<!-- ## Abstract
 
-Previous studies provided mixed findings on pecularities in $p$-value distributions in psychology. This paper examined 258,050 test results across 30,710 articles from eight high impact journals to investigate the existence of a peculiar prevalence of $p$-values just below .05 (i.e., a bump) in the psychological literature, and a potential increase thereof over time. We indeed found evidence for a bump just below .05 in the distribution of exactly reported $p$-values in the journals Developmental Psychology, Journal of Applied Psychology, and Journal of Personality and Social Psychology, but the bump did not increase over the years and disappeared when using recalculated $p$-values. We found clear and direct evidence for the QRP  "incorrect rounding of $p$-value" [@doi:10.1177/0956797611430953] in all psychology journals. Finally, we also investigated monotonic excess of $p$-values, an effect of certain QRPs that has been neglected in previous research, and developed two measures to detect this by modeling the  distributions of statistically significant $p$-values. Using simulations and applying the two measures to the retrieved test results, we argue that, although one of the measures suggests the use of QRPs in psychology, it is difficult to draw general conclusions concerning QRPs based on modeling of $p$-value distributions.
-
-## Introduction
- -->
-
-\newpage
+```{r echo = FALSE}
+library(magrittr)
+```
 
 A set of $p$-values can be informative of the underlying effects that are investigated, but can also be indicative of potential research biases or questionable research practices (QRPs). In the absence of QRPs, the distribution of significant $p$-values can be expected to have a certain shape. Under the null-hypothesis all $p$-values are equally probable (i.e., follow a uniform distribution). If there is truly an effect, smaller $p$-values are more likely than larger $p$-values (i.e., the distribution decreases monotonically in the $p$-value). Consequently, because some hypotheses are false and some are true, the distribution of observed $p$-values arises from a mixture of uniform and right-skewed distributions and should also decrease monotonically.^[One exception to this rule is when the alternative hypothesis is wrongly specified, that is, if the true effect size is negative whereas the alternative hypothesis states that the true effect is positive. In this case the distribution of the $p$- value is left-skewed and monotonically increasing.] QRPs may have various effects on the $p$-value distribution. Figure \@ref(fig:bump-fig1) shows the $p$-value distribution of statistical tests both with data peeking (solid lines) and without data peeking. Data peeking (also known as optional stopping) refers to conducting intermediate significance testing during data collection [@doi:10.2307/2343787]. Data peeking greatly affects the $p$-value distribution in all panels, which can be seen from comparing the 'true' and 'data-peeked' $p$-value distributions. Panel A, which is obtained after data peeking of studies with standardized effect size $d=0$, shows a 'bump' in the distribution. A bump corresponds to that part of the $p$-value distribution that makes it no longer monotonically decreasing. Panel B also shows a bump for data peeking of studies with $d=0$. However, Panel C shows no bump but merely monotonic excess, i.e. an increase in the frequency of $p$-values below .05 in the absence of a bump. Consequently, data peeking may either lead to monotonic excess or a bump in the distribution of $p$-values. There are other known QRPs in the analysis of data [@doi:10.1177/0956797611430953], but these have different effects on the $p$-value distribution and do not necessarily lead to a bump, as shown in Figure \@ref(fig:bump-fig1).
 
-```{r bump-fig1, fig.cap="Distributions of 20 million $p$-values each, when Cohen's standardized effect size $d=0$ (bump; Panel A), $d=.2$ (bump; Panel B), and $d=.5$ (monotonic excess; Panel C), given data peeking (solid) or no data peeking (dashed). Simulations were run for two-sample $t$-tests with $n_k=24$. For data peeking, a maximum of three rounds of additional sampling occurred if the result was nonsignificant, with each round adding $1/3$ of the original sample size.", out.width="100%", fig.align="center", echo=FALSE, fig.pos = 'H'}
+```{r bump-fig1, fig.cap="Distributions of 20 million $p$-values each, when Cohen's standardized effect size $d=0$ (bump; Panel A), $d=.2$ (bump; Panel B), and $d=.5$ (monotonic excess; Panel C), given data peeking (solid) or no data peeking (dashed). Simulations were run for two-sample $t$-tests with $n_k=24$. For data peeking, a maximum of three rounds of additional sampling occurred if the result was nonsignificant, with each round adding $1/3$ of the original sample size.", fig.align="center", echo=FALSE, fig.align = 'center'}
 par(mar = c(0, 0, 0, 0))
-knitr::include_graphics('assets/figures/peerj-bump-fig1.png', auto_pdf = TRUE)
+knitr::include_graphics('assets/figures/bump-fig1.pdf.svg.png', auto_pdf = TRUE)
 ```
 
 In this chapter we attempt to answer two questions: (1) Does a bump or monotonic excess of $p$-values below .05 exist in psychology? and (2) Did evidence for a bump increase over time in psychology? We chose to focus on psychology because of the availability of an extensive database on statistical results in psychology [used in @doi:10.3758/s13428-015-0664-2] and because discussions on research practices are particularly salient in this discipline [@doi:10.1177/1745691612465253;@doi:10.1177/0956797611430953;@doi:10.1177/0956797611417632;@doi:10.1177/1745691612463078;@doi:10.1002/per.1919].
 
 ### How QRPs relate to distributions of _p_-values
 
-QRPs are defined as practices that are detrimental to the research process [@isbn:9780309045919], with a recent focus on those which "increase the likelihood of finding support for a false hypothesis" [p.524; @doi:10.1177/0956797611430953]. Several QRPs related to significance testing are known to affect $p$-values of statistical tests and consequently the decisions based on these tests. Specifically, particular QRPs may yield results that are just significant and can create a bump of $p$-values, such as ad hoc exclusion of outliers [@doi:10.1037/met0000014], repeatedly sampling new participants and checking the results [i.e., data peeking; @doi:10.2307/2343787], including various combinations of covariates until a significant result is reached, operationalizing a measure in different ways until significance is reached [@doi:10.1177/0956797611417632], or selective reporting of $p$-values [@doi:10.1177/1948550615598377]. These QRPs have been used by many researchers at least once in their career. For instance, data peeking and the ad hoc exclusion of outliers were admitted by 63% and 38% of psychological researchers, respectively [@doi:10.1177/0956797611430953]. On the other hand, other QRPs mainly yield very small and (clearly) significant $p$-values, such as analyzing multiple conditions or correlated variables and selecting only the smallest $p$-value out of this set of analyses [@doi:10.1177/1745691616650874;@doi:10.1037/xge0000086] and do not lead to a bump. To summarize, different QRPs may differently affect the distribution of statistically significant $p$-values.
+QRPs are defined as practices that are detrimental to the research process [@doi:10.17226/1864], with a recent focus on those which "increase the likelihood of finding support for a false hypothesis" [p.524; @doi:10.1177/0956797611430953]. Several QRPs related to significance testing are known to affect $p$-values of statistical tests and consequently the decisions based on these tests. Specifically, particular QRPs may yield results that are just significant and can create a bump of $p$-values, such as ad hoc exclusion of outliers [@doi:10.1037/met0000014], repeatedly sampling new participants and checking the results [i.e., data peeking; @doi:10.2307/2343787], including various combinations of covariates until a significant result is reached, operationalizing a measure in different ways until significance is reached [@doi:10.1177/0956797611417632], or selective reporting of $p$-values [@doi:10.1177/1948550615598377]. These QRPs have been used by many researchers at least once in their career. For instance, data peeking and the ad hoc exclusion of outliers were admitted by 63% and 38% of psychological researchers, respectively [@doi:10.1177/0956797611430953]. On the other hand, other QRPs mainly yield very small and (clearly) significant $p$-values, such as analyzing multiple conditions or correlated variables and selecting only the smallest $p$-value out of this set of analyses [@doi:10.1177/1745691616650874;@doi:10.1037/xge0000086] and do not lead to a bump. To summarize, different QRPs may differently affect the distribution of statistically significant $p$-values.
 
 However, there are at least two problems with using $p$-value distributions to examine the prevalence of QRPs. First, as we previously argued, not all QRPs lead to a bump of $p$-values just below .05. Hence, examining the distribution of $p$-values just below .05 will not inform us on the prevalence of QRPs that do not aim to obtain just significant results but yield mainly small and clearly significant $p$-values [@doi:10.1177/1745691616650874;@doi:10.1037/xge0000086]. Second, the QRPs yielding just significant results do not necessarily result in a non-monotonic $p$-value distribution, that is, a distribution with a _bump_. For instance, consider Figure \@ref(fig:bump-fig1) that shows the result of simulations done for data peeking, which is known to result in mainly just significant $p$-values [@doi:10.2307/2343787;@doi:10.1080/17470218.2014.982664;@doi:10.3758/bf03194105]. Figure \@ref(fig:bump-fig1) illustrates that data peeking may result in non-monotonic excess (i.e., bump; panel A and B), but can also cause _monotonic excess_ (panel C), even if all researchers use data peeking. Specifically, if all underlying effects are genuinely and substantially different from zero (panel C), data peeking will generally not lead to a bump below .05. In the present paper, we therefore examine the peculiar prevalence of $p$-values just below .05 by both investigating the presence of a bump or monotonic excess in distributions of statistically significant results.
 
@@ -51,31 +45,16 @@ In short, this chapter studies the distribution of significant $p$-values in fou
 
 We investigated the $p$-value distribution of research papers in eight high impact psychology journals [also used in @doi:10.3758/s13428-015-0664-2]. These eight journals were selected due to their high-impact across different subfields in psychology and their availability within the Tilburg University subscriptions. This selection also encompasses the journals covered by @doi:10.1080/17470218.2012.711335 and @doi:10.1080/17470218.2013.863371. A summary of the downloaded articles is included in Table \@ref(tab:journals). 
 
-\begin{table}[htbp]
-  \rowcolors{2}{gray!25}{white}
-\begin{adjustbox}{width=\textwidth,totalheight=\textheight,keepaspectratio,angle=0}
-  \centering
-    \begin{tabular}{lrrrrr}
-        \rowcolor{gray!50}
-    \hline
-    Journal & Acronym & Timespan & Articles downloaded & Articles with extracted results (\%) & APA results extracted \\
-    \hline
-    Developmental Psychology & DP    & 1985-2013 & 3,381  & 2,607 (77\%)  & 37,658 \\
-    Frontiers in Psychology & FP    & 2010-2013 & 2,126  & 702 (33\%)  & 10,149 \\
-    Journal of Applied Psychology & JAP   & 1985-2013 & 2,782  & 1,638 (59\%)  & 15,134 \\
-    Journal of Consulting and Clinical Psychology & JCCP  & 1985-2013 & 3,519  & 2,413 (69\%)  & 27,429 \\
-    Journal of Experimental Psychology General & JEPG  & 1985-2013 & 1,184  & 821 (69\%)   & 18,921 \\
-    Journal of Personality and Social Psychology & JPSP  & 1985-2013 & 5,108  & 4,346 (85\%)  & 101,621 \\
-    Public Library of Science & PLOS  & 2000-2013 & 10,303 & 2,487 (24\%)  & 31,539 \\
-    Psychological Science & PS    & 2003-2013 & 2,307  & 1,681 (73\%)  & 15,654 \\
-    \hline
-          &       & \textit{Total} & \textit{30,710} & \textit{16,695 (54\%)} & \textit{258,105} \\
-    \end{tabular}%
-\end{adjustbox}
-\caption{Articles downloaded, articles with extracted results in American Psychological Association (APA) style, and number of extracted APA test results per journal.}
-\label{tab:journals}%
-\end{table}
+```{r journals, echo=FALSE}
+tab1 <- read.csv('assets/tables/ch4-table1.csv', stringsAsFactors = FALSE)
 
+names(tab1)[4] <- "Articles downloaded"
+names(tab1)[5] <- "Articles with extracted results"
+names(tab1)[6] <- "APA results extracted"
+
+knitr::kable(tab1, booktabs = TRUE, caption = "Articles downloaded, articles with extracted results in American Psychological Association (APA) style, and number of extracted APA test results per journal.") %>%
+  kableExtra::kable_styling(latex_options = c('striped', 'scale_down', 'hold_position'))
+```
 
 For these journals, our sample included articles published from 1985 through 2013 that were available in HTML format. For the PLOS journals, HTML versions of articles were downloaded automatically with the `rplos` package [v0.3.8; @Chamberlain2015-tg]. This package allows an `R` user to search the PLOS database as one would search for an article on the website.^[We note there are minor differences in the number of search results from the PLOS webpage and the `rplos` package for equal searches. This is due to differences in the default search database for the webpage and the package. For technical details on this issue, see [https://github.com/ropensci/rplos/issues/75](https://github.com/ropensci/rplos/issues/75)] We used this package to retrieve search results that include the subject 'psychology' for (part of) an article. For all other journals, HTML versions of articles were downloaded manually by the first author.
 
@@ -83,22 +62,17 @@ APA test results were extracted from the downloaded articles with the R package 
 
 From the 30,710 downloaded papers, `statcheck` extracted 258,105 test results. We removed 55 results, because these were impossible test results (i.e., $F(0,55)=...$ or $r>1$). The final dataset thus included 258,050 test results. The extracted test results can have four different formats, where test results or $p$-values are reported either exactly (e.g., $p=.042$) or inexactly (e.g., $p<.05$). Table \@ref(tab:2x2) shows the composition of the dataset, when split across these (in)exactly reported $p$-values and (in)exactly reported test results.
 
-\begin{table}[htbp]
-  \rowcolors{2}{gray!25}{white}
-  \centering
-    \begin{tabular}{lrrr}
-        \rowcolor{gray!50}
-    \hline
-          & Exact test statistic & Inexact test statistic & \textit{} \\
-    \hline
-    Exact $p$-value & 68,776 & 274   & \textit{69,050 (27\%)} \\
-    Inexact $p$-value & 187,617 & 1,383  & \textit{189,000 (73\%)} \\
-    \hline
-\textit{} & \textit{256,393 (99.36\%)} & \textit{1,657 (0.64\%)}  & \textbf{258,050 (100\%)} \\
-    \end{tabular}%
-    \caption{Composition of extracted APA test results with respect to exact and inexact reporting of $p$-values or test statistics.}
-  \label{tab:2x2}%
-\end{table}
+```{r 2x2, echo=FALSE}
+tab2 <- read.csv('assets/tables/ch4-table2.csv', stringsAsFactors = FALSE)
+
+names(tab2)[1] <- ""
+names(tab2)[2] <- "Exact test statistic"
+names(tab2)[3] <- "Inexact test statistic"
+names(tab2)[4] <- ""
+
+knitr::kable(tab2, booktabs = TRUE, caption = "Composition of extracted APA test results with respect to exact and inexact reporting of $p$-values or test statistics.") %>%
+    kableExtra::kable_styling(latex_options = c('striped', 'scale_down', 'hold_position'))
+```
 
 From this dataset, we selected six subsets throughout our analyses to investigate our research questions regarding a bump below .05. We analyzed (i) all reported $p$-values ($N=258,050$) for a bump in their distribution just below .05. Subsequently we analyzed (ii) only exactly reported $p$-values ($N=69,050$). It is possible that reporting or rounding errors have occurred among the reported $p$-values. To investigate the degree to which this happens at $p=.05$, we analyzed (iii) exactly reported test statistics that are accompanied by an exactly reported $p$-value of .05 (i.e., $p=.05$). This subset contains 2,470 results. To attenuate the effect of rounding errors and other factors influencing the reporting of $p$-values [e.g., @doi:10.1111/j.1420-9101.2006.01291.x], we also investigated the recalculated $p$-value distribution with (iv) $p$-values that were accompanied by exactly reported test statistics ($N=256,393$). To investigate whether evidence for a bump differs for inexactly and exactly reported $p$-values, (v) 68,776 exactly reported test statistics with exactly reported $p$-values were analyzed. Finally, we used (vi) all recalculated $p$-values in  0-.05 for $t$, $r$, and $F(df_1=1)$ values to model the effect size distribution underlying these $p$-values to investigate evidence of both a bump and monotonic excess.
 
@@ -145,38 +119,22 @@ In this section, we report the results of our analyses in the following order fo
 
 Figure \@ref(fig:bump-fig2) shows the distribution for all reported $p$-values (i.e., 258,050; white bars) and exactly reported $p$-values (i.e., 69,050; blue bars). Results of the Caliper test indicate (i) there is a bump just below .05 when considering all reported $p$-values in bins .03875-.04 versus .04875-.05, $N=45,667, Pr=0.905,p<.001$ and (ii) there is less evidence for a bump when considering only exactly reported $p$-values, $N=4,900,Pr=0.547,p<.001$. The difference in bumps between these two subsets can be explained by the amount of $p$-values that are reported as $<.05$, which is 86\% of all $p$-values reported as exactly equal to .05 and 14\% of all reported $p$-values.
 
-```{r bump-fig2, echo = FALSE, fig.cap='Distributions of all reported $p$-values (white) and exactly reported $p$-values (blue) across eight psychology journals. Binwidth = .00125.'}
+```{r bump-fig2, fig.cap='Distributions of all reported $p$-values (white) and exactly reported $p$-values (blue) across eight psychology journals. Binwidth = .00125.', fig.align="center", echo=FALSE}
 knitr::include_graphics('assets/figures/bump-fig2.png')
 ```
 
 To investigate whether this observed bump below .05 across exactly reported $p$-values originates from one or multiple journals, we performed the Caliper test on the exactly reported $p$-values per journal. Table \@ref(tab:report) shows the results for these tests. The results indicate that there is sufficient and reliable evidence for a bump below .05 (i.e., $Pr>.5$) for the journals DP and JPSP and sufficient evidence, but debatable reliability for JAP, where the results depend on the binwidth. However, the other five journals show no evidence for a bump below .05 in exactly reported $p$-values at all. In other words, the bump below .05 in exactly reported $p$-values is mainly driven by the journals DP, JAP, and JPSP.
 
-\begin{table}[htbp]
-  \rowcolors{2}{gray!25}{white}
-  \begin{adjustbox}{width=\textwidth,totalheight=\textheight,keepaspectratio,angle=0}
-  \centering
-   \begin{tabular}{lrrrrrrrrrrrrrrrr}
-       \rowcolor{gray!50}
-    \hline
-% Start tabular data
-Binwidth & \multicolumn{4}{c}{0.00125}   & \multicolumn{4}{c}{0.0025}    & \multicolumn{4}{c}{0.005}     & \multicolumn{4}{c}{0.01} \\
-    \hline
-          & $x$     & $N$     & $Pr$ & $p$     & $x$     & $N$     & $Pr$ & $p$     & $x$     & $N$     & $Pr$ & $p$     & $x$     & $N$     & $Pr$ & $p$ \\
-    All   & \textbf{2,682} & \textbf{4,900} & \textbf{0.547} & \textbf{$<$ .001} & \textbf{2,881} & \textbf{5,309} & \textbf{0.543} & \textbf{$<$ .001} & \textbf{3,308} & \textbf{6,178} & \textbf{0.535} & \textbf{$<$ .001} & \textbf{4,218} & \textbf{8,129} & \textbf{0.519} & \textbf{$<$ .001} \\
-    DP    & \textbf{319} & \textbf{531} & \textbf{0.601} & \textbf{$<$ .001} & \textbf{336} & \textbf{567} & \textbf{0.593} & \textbf{$<$ .001} & \textbf{383} & \textbf{653} & \textbf{0.587} & \textbf{$<$ .001} & \textbf{464} & \textbf{843} & \textbf{0.55} & \textbf{0.002} \\
-    FP    & 96    & 193   & 0.497 & 0.557 & 105   & 227   & 0.463 & 0.884 & 141   & 304   & 0.464 & 0.906 & 215   & 458   & 0.469 & 0.912 \\
-    JAP   & \textbf{78} & \textbf{131} & \textbf{0.595} & \textbf{0.018} & \textbf{82} & \textbf{137} & \textbf{0.599} & \textbf{0.013} & 85    & 154   & 0.552 & 0.113 & 101   & 183   & 0.552 & 0.092 \\
-    JCCP  & 246   & 517   & 0.476 & 0.874 & 267   & 562   & 0.475 & 0.889 & 308   & 641   & 0.48  & 0.848 & 395   & 823   & 0.48  & 0.882 \\
-    JEPG  & 147   & 285   & 0.516 & 0.318 & 159   & 310   & 0.513 & 0.346 & 195   & 375   & 0.52  & 0.235 & 258   & 509   & 0.507 & 0.395 \\
-    JPSP  & \textbf{1,252} & \textbf{2,097} & \textbf{0.597} & \textbf{$<$ .001} & \textbf{1,310} & \textbf{2,207} & \textbf{0.594} & \textbf{$<$ .001} & \textbf{1,408} & \textbf{2,399} & \textbf{0.587} & \textbf{$<$ .001} & \textbf{1,623} & \textbf{2,869} & \textbf{0.566} & \textbf{$<$ .001} \\
-    PLOS  & 307   & 649   & 0.473 & 0.921 & 366   & 760   & 0.482 & 0.854 & 489   & 1,000  & 0.489 & 0.766 & 744   & 1,558  & 0.478 & 0.964 \\
-    PS    & 237   & 497   & 0.477 & 0.859 & 256   & 539   & 0.475 & 0.886 & 299   & 652   & 0.459 & 0.984 & 418   & 886   & 0.472 & 0.957 \\
-    \hline
-    \end{tabular}
-    \end{adjustbox}
-    \caption{Caliper test for exactly reported $p$-values per journal for different binwidths.  $x$ = frequency of $p$-values in $.05$ minus binwidth through .05, $N$ = total frequency of $p$-values across both intervals in the comparison, $Pr=x/N$, $p$ = $p$-value of the binomial test. Significant results ($\alpha=.05$, one-tailed) indicating excess of $p$-values just below .05 and are reported in bold.}
-  \label{tab:report}
-\end{table}
+```{r report, echo=FALSE}
+tab3 <- read.csv('assets/tables/ch4-table3.csv', stringsAsFactors = FALSE)
+
+names(tab3)[1] <- ""
+names(tab3)[2:dim(tab3)[2]] <- rep(c('**_x_**', '**_N_**', '**_Pr_**', '**_p_**'), 4)
+knitr::kable(tab3, booktabs = TRUE, caption = "Caliper test for exactly reported p-values per journal for different binwidths.") %>%
+  kableExtra::add_header_above(c("Binwidth" = 1, "0.00125" = 4, "0.0025" = 4, "0.005" = 4, "0.01" = 4)) %>%
+  kableExtra::scroll_box(width = "100%") %>%
+    kableExtra::kable_styling(latex_options = c('striped', 'scale_down', 'hold_position'))
+```
 
 The Caliper test results for reported $p$-values indicate two things: (i) including inexactly reported $p$-values has a large impact on the $p$-value distribution and (ii) a bump below .05 is also found when only considering exactly reported $p$-values. Because inexact reporting of $p$-values causes excess at certain points of the $p$-value [e.g., the significance threshold .05; @doi:10.1111/j.1420-9101.2006.01291.x], we recommend only inspecting exactly reported $p$-values when examining $p$-value distributions.
 
@@ -188,7 +146,7 @@ Considering only exactly reported $p$-values, there is sufficient evidence for a
 
 Results for reported $p$-values remain inconclusive with regard to the distribution of $p$-values, due to potential rounding or errors [@doi:10.3758/s13428-011-0089-5;@doi:10.3758/s13428-015-0664-2;@doi:10.1371/journal.pone.0114876]. Rounding and errors could result in an over-representation of $p$-values $\leq.05$. To investigate the plausibility of this notion, we inspected recalculated $p$-values when $p=.05$ was reported (i.e., 2,470 values). Figure \@ref(fig:bump-fig3) indicates that $p$-values that were reported as .05 show remarkable spread when recalculated, which indicates that the reported $p$-value might frequently be rounded or incorrect, assuming that the reported test statistics are correct. More specifically, 67.45% of $p$-values reported as .05 were larger than .05 when recalculated and 32.55% were smaller than .05. This percentage does not greatly vary across journals (range 58.8%-73.4% compared to 67.45%). Taking into account rounding possibilities (i.e., widening the range of correct $p$-values to .045-.055), these percentages become 13.81% and 7.85%, respectively, meaning incorrect reporting of at least 21.66% of the $p$-values that were reported as .05. In comparison, $p$-values reported as $p=.04, p=.03,$ or $p=.02$ show smaller proportions of downward rounding when compared to $p=.05$ (i.e., 53.33%, 54.32%, 50.38%, respectively compared to 67.45%). When taking into account potential rounding errors in the initial reporting of $p$-values, the discrepancy remains but becomes smaller (i.e., 11.74%, 9.57%, 8.03%, respectively compared to 13.81%). These results provide direct evidence for the QRP "incorrect rounding of $p$-value" [@doi:10.1177/0956797611430953], which contributes to a bump or monotonic excess just below .05.
 
-```{r bump-fig3, echo = FALSE, fig.cap='Distribution of recalculated $p$-values where the $p$-value is reported as $p=.05$. 9.7% of the results fall outside the range of the plot, with 3.6% at the left tail and 6.1% at the right tail. Binwidth = .00125'}
+```{r bump-fig3, echo = FALSE, fig.cap="Distribution of recalculated $p$-values where the $p$-value is reported as $p=.05$. 9.7 percent of the results fall outside the range of the plot, with 3.6 percent at the left tail and 6.1 percent at the right tail. Binwidth = .00125", fig.align="center"}
 knitr::include_graphics('assets/figures/bump-fig3.png')
 ```
 
@@ -198,104 +156,51 @@ The discrepancy between recalculated $p$-values and $p$-values reported as equal
 
 Figure \@ref(fig:bump-fig4) shows the distribution of all recalculated $p$-values (i.e., set of 256,393 results) and of recalculated $p$-values whenever the reported $p$-value is exact (i.e., set of 68,776 results). The recalculated $p$-value distribution is markedly smoother than the reported $p$-value distribution (see Figure \@ref(fig:bump-fig2)) due to the absence of rounded $p$-values.
 
-```{r bump-fig4, echo = FALSE, fig.cap = 'Recalculated $p$-values for exactly reported test statistics (white bars), and recalculated $p$-values for exactly reported test statistics where $p$-values are also exactly reported (blue bars). Binwidth = .00125'}
+```{r bump-fig4, echo = FALSE, fig.cap = 'Recalculated $p$-values for exactly reported test statistics (white bars), and recalculated $p$-values for exactly reported test statistics where $p$-values are also exactly reported (blue bars). Binwidth = .00125', fig.align="center"}
 knitr::include_graphics('assets/figures/bump-fig4.png')
 ```
 
 After inspecting all recalculated $p$-values, we did not observe a bump just below .05, $N=2,808,Pr=.5,p=0.508$. When we analyzed the recalculated $p$-values per journal (Table \@ref(tab:recalculated1)), there is no evidence for a bump below .05 in any of the journals. Additionally, we inspected all recalculated $p$-values that resulted from exactly reported $p$-values. For this subset we did observe a bump below .05, $N=809,Pr=0.564,p=0.000165$ (blue histogram in Figure \@ref(fig:bump-fig4)) for the smallest binwidth (i.e., .00125), but this effect was not robust across larger binwidths, as shown in Table \@ref(tab:recalculated2). This table also specifies the results for a bump below .05 per journal, with sufficient evidence of a bump only in JPSP. This finding, however, was only observed for binwidths .00125 and .0025, not for larger binwidths. Considering the results from the recalculated $p$-values, there is sparse evidence for the  presence of a bump below .05, opposed to previously claimed widespread evidence [@doi:10.1080/17470218.2012.711335;@doi:10.1080/17470218.2013.863371;@doi:10.1371/journal.pbio.1002106]. Moreover, interpretation of the bump for JPSP is not straightforward; it may also be that authors of JPSP are more prone to report exact test statistics if the $p$-value is just below .05 than whenever $p$-values are considerably smaller than .05.
 
+```{r recalculated1, echo=FALSE}
+tab4 <- read.csv('assets/tables/ch4-table4.csv', stringsAsFactors = FALSE)
 
-\begin{table}[htbp]
-  \rowcolors{2}{gray!25}{white}
-  \begin{adjustbox}{width=\textwidth,totalheight=\textheight,keepaspectratio,angle=0}
-  \centering
-   \begin{tabular}{lrrrrrrrrrrrrrrrr}
-       \rowcolor{gray!50}
-    \hline
-% Start tabular data
-Binwidth & \multicolumn{4}{c}{0.00125}   & \multicolumn{4}{c}{0.0025}    & \multicolumn{4}{c}{0.005}     & \multicolumn{4}{c}{0.01} \\
-    \hline
-          & $x$     & $N$     & $Pr$ & $p$     & $x$     & $N$     & $Pr$ & $p$     & $x$     & $N$     & $Pr$ & $p$     & $x$     & $N$     & $Pr$ & $p$ \\
-    All   & 1,404  & 2,808  & 0.5   & 0.508 & 2,808  & 5,761  & 0.487 & 0.973 & 5,761  & 11,824 & 0.487 & 0.997 & 11,824 & 25,142 & 0.47  & $>.999$ \\
-    DP    & 184   & 382   & 0.482 & 0.779 & 382   & 829   & 0.461 & 0.989 & 829   & 1,710  & 0.485 & 0.9   & 1,710  & 3,579  & 0.478 & 0.996 \\
-    FP    & 30    & 69    & 0.435 & 0.886 & 69    & 172   & 0.401 & 0.996 & 172   & 376   & 0.457 & 0.956 & 376   & 799   & 0.471 & 0.955 \\
-    JAP   & 73    & 145   & 0.503 & 0.5   & 145   & 270   & 0.537 & 0.124 & 270   & 556   & 0.486 & 0.765 & 556   & 1,168  & 0.476 & 0.952 \\
-    JCCP  & 160   & 308   & 0.519 & 0.265 & 308   & 633   & 0.487 & 0.763 & 633   & 1,267  & 0.5   & 0.522 & 1,267  & 2,706  & 0.468 & $>.999$ \\
-    JEPG  & 81    & 164   & 0.494 & 0.593 & 164   & 332   & 0.494 & 0.608 & 332   & 683   & 0.486 & 0.778 & 683   & 1,535  & 0.445 & $>.999$ \\
-    JPSP  & 640   & 1,268  & 0.505 & 0.379 & 1,268  & 2,557  & 0.496 & 0.668 & 2,557  & 5,174  & 0.494 & 0.802 & 5,174  & 10,976 & 0.471 & $>.999$ \\
-    PLOS  & 125   & 260   & 0.481 & 0.752 & 260   & 541   & 0.481 & 0.828 & 541   & 1,170  & 0.462 & 0.995 & 1,170  & 2,544  & 0.46  & $>.999$ \\
-    PS    & 111   & 212   & 0.524 & 0.268 & 212   & 427   & 0.496 & 0.577 & 427   & 888   & 0.481 & 0.88  & 888   & 1,835  & 0.484 & 0.919 \\
-    \hline
-    % End tabular data
-    \end{tabular}
-    \end{adjustbox}
-    \caption{Caliper test for exactly recalculated $p$-values per journal for different binwidths. $x$ = frequency of $p$-values in $.05$ minus binwidth through .05, $N$ = total frequency of $p$-values across both intervals in the comparison, $Pr=x/N$, $p$ = $p$-value of the binomial test. Significant results ($\alpha=.05$, one-tailed) indicating excess of $p$-values just below .05 and are reported in bold.}
-  \label{tab:recalculated1}
-\end{table}
+names(tab4)[1] <- ""
+names(tab4)[2:dim(tab4)[2]] <- rep(c('**_x_**', '**_N_**', '**_Pr_**', '**_p_**'), 4)
+knitr::kable(tab4, booktabs = TRUE, caption = "Caliper test for exactly recalculated p-values per journal for different binwidths.") %>%
+  kableExtra::add_header_above(c("Binwidth" = 1, "0.00125" = 4, "0.0025" = 4, "0.005" = 4, "0.01" = 4)) %>%
+  kableExtra::scroll_box(width = "100%") %>%
+    kableExtra::kable_styling(latex_options = c('striped', 'scale_down', 'hold_position'))
+```
 
+```{r recalculated2, echo=FALSE}
+tab5 <- read.csv('assets/tables/ch4-table5.csv', stringsAsFactors = FALSE)
 
-\begin{table}[htbp]
-  \rowcolors{2}{gray!25}{white}
-  \begin{adjustbox}{width=\textwidth,totalheight=\textheight,keepaspectratio,angle=0}
-  \centering
-   \begin{tabular}{lrrrrrrrrrrrrrrrr}
-       \rowcolor{gray!50}
-    \hline
-% Start tabular data
-Binwidth & \multicolumn{4}{c}{0.00125}   & \multicolumn{4}{c}{0.0025}    & \multicolumn{4}{c}{0.005}     & \multicolumn{4}{c}{0.01} \\
-    \hline
-          & $x$     & $N$     & $Pr$ & $p$     & $x$     & $N$     & $Pr$ & $p$     & $x$     & $N$     & $Pr$ & $p$     & $x$     & $N$     & $Pr$ & $p$ \\
-    All   & \textbf{456} & \textbf{809} & \textbf{0.564} & \textbf{$<.001$} & 809   & 1,617  & 0.5   & 0.5   & 1,617  & 3,403  & 0.475 & 0.998 & 3,403  & 7,402  & 0.46  & 1 \\
-    DP    & 46    & 87    & 0.529 & 0.334 & 87    & 185   & 0.47  & 0.811 & 185   & 358   & 0.517 & 0.281 & 358   & 756   & 0.474 & 0.932 \\
-    FP    & 15    & 27    & 0.556 & 0.351 & 27    & 87    & 0.31  & $>.999$     & 87    & 192   & 0.453 & 0.915 & 192   & 437   & 0.439 & 0.995 \\
-    JAP   & 8     & 20    & 0.4   & 0.868 & \textbf{20} & \textbf{29} & \textbf{0.69} & \textbf{0.031} & 29    & 65    & 0.446 & 0.839 & 65    & 141   & 0.461 & 0.844 \\
-    JCCP  & 43    & 78    & 0.551 & 0.214 & 78    & 161   & 0.484 & 0.682 & 161   & 364   & 0.442 & 0.988 & 364   & 780   & 0.467 & 0.971 \\
-    JEPG  & 27    & 50    & 0.54  & 0.336 & 50    & 98    & 0.51  & 0.46  & 98    & 209   & 0.469 & 0.834 & 209   & 479   & 0.436 & 0.998 \\
-    JPSP  & \textbf{184} & \textbf{305} & \textbf{0.603} & \textbf{$<$.001} & \textbf{305} & \textbf{547} & \textbf{0.558} & \textbf{0.004} & 547   & 1,117  & 0.49  & 0.764 & 1,117  & 2,451  & 0.456 & $>.999$ \\
-    PLOS  & 76    & 149   & 0.51  & 0.435 & 149   & 323   & 0.461 & 0.926 & 323   & 698   & 0.463 & 0.978 & 698   & 1,470  & 0.475 & 0.975 \\
-    PS    & 57    & 93    & 0.613 & 0.019 & 93    & 187   & 0.497 & 0.558 & 187   & 400   & 0.468 & 0.912 & 400   & 888   & 0.45  & 0.999 \\
-    \hline
-    \end{tabular}
-    \end{adjustbox}
-    \caption{Caliper tests for exactly recalculated and exactly reported $p$-values per journal, including alternative binwidths. $x$ = frequency of $p$-values in $.05$ minus binwidth through .05, $N$ = total frequency of $p$-values across both intervals in the comparison, $Pr=x/N$, $p$ = $p$-value of the binomial test. Significant results ($\alpha=.05$, one-tailed) indicating excess of $p$-values just below .05 and are reported in bold.}
-  \label{tab:recalculated2}
-\end{table}
+names(tab5)[1] <- ""
+names(tab5)[2:dim(tab5)[2]] <- rep(c('**_x_**', '**_N_**', '**_Pr_**', '**_p_**'), 4)
+knitr::kable(tab5, booktabs = TRUE, caption = "Caliper tests for exactly recalculated and exactly reported p-values per journal, including alternative binwidths.") %>%
+  kableExtra::add_header_above(c("Binwidth" = 1, "0.00125" = 4, "0.0025" = 4, "0.005" = 4, "0.01" = 4)) %>%
+  kableExtra::scroll_box(width = "100%") %>%
+    kableExtra::kable_styling(latex_options = c('striped', 'scale_down', 'hold_position'))
+```
 
 ### Excessive significance over time
 
 The regression results of the development of a bump below .05 over time, based on recalculated $p$-values, are shown in Table \@ref(tab:excess). Results indicate that there is no evidence for a linear relation between publication year and the degree to which a bump of $p$-values below .05 is present across the different binwidths (only results for binwidth .00125 are presented; results for the other binwidths available at [osf.io/96kbc/](https://osf.io/96kbc/)). Conversely, for PLOS there is some evidence for a minor increase of a bump throughout the years ($b=.072,p=.039$), but this result is not robust for binwidths .0025, .005, and .01. These results contrast with @doi:10.1080/17470218.2013.863371, who found a linear relation between time and the degree to which a bump occurred for JEPG and JPSP. Hence, based on the period 1985-2013, our findings contrast with the increase of a bump below .05 for the period 1965-2005 in psychology [@doi:10.1080/17470218.2013.863371]. In other words, our results of the Caliper test indicate that, generally speaking, there is no evidence for an increasing prevalence of $p$-values just below .05 or of QRPs causing such a bump in psychology. 
 
-\begin{table}[htbp]
-  \rowcolors{2}{gray!25}{white}
-  \centering
-   \begin{tabular}{lrrrrrr}
-       \rowcolor{gray!50}
-    \hline
- & Timespan &  Coefficient & Estimate & $SE$    & $t$     & $p$ \\
-    \hline
-    All   & 1985-2013 & Intercept & 0.007 & 0.017 & 0.392 & 0.698 \\
-    All   &       & Years (centered) & -0.001 & 0.001 & -0.492 & 0.627 \\
-    DP    & 1985-2013 & Intercept & -0.043 & 0.056 & -0.769 & 0.448 \\
-    DP    &       & Years (centered) & 0.001 & 0.003 & 0.193 & 0.849 \\
-    FP    & 2010-2013 & Intercept & -0.182 & 0.148 & -1.233 & 0.343 \\
-    FP    &       & Years (centered) & 0.055 & 0.079 & 0.694 & 0.560 \\
-    JAP   & 1985-2013 & Intercept & 0.041 & 0.081 & 0.504 & 0.619 \\
-    JAP   &       & Years (centered) & -0.001 & 0.005 & -0.208 & 0.837 \\
-    JCCP  & 1985-2013 & Intercept & 0.077 & 0.058 & 1.315 & 0.200 \\
-    JCCP  &       & Years (centered) & -0.006 & 0.004 & -1.546 & 0.134 \\
-    JEPG  & 1985-2013 & Intercept & -0.022 & 0.124 & -0.176 & 0.862 \\
-    JEPG  &       & Years (centered) & 0.001 & 0.007 & 0.097 & 0.924 \\
-    JPSP  & 1985-2013 & Intercept & -0.002 & 0.027 & -0.062 & 0.951 \\
-    JPSP  &       & Years (centered) & 0.000 & 0.002 & -0.005 & 0.996 \\
-    PLOS  & 2006-2013 & Intercept & \textbf{-0.382} & \textbf{0.114} & \textbf{-3.344} & \textbf{0.016} \\
-    PLOS  &       & Years (centered) & \textbf{0.072} & \textbf{0.027} & \textbf{2.632} & \textbf{0.039} \\
-    PS    & 2003-2013 & Intercept & 0.081 & 0.078 & 1.045 & 0.323 \\
-    PS    &       & Years (centered) & -0.009 & 0.013 & -0.669 & 0.520 \\
-    \hline
-    \end{tabular}
-    \caption{Linear regression coefficients as a test of increasing excess of $p$-values just below .05. Intercept indicates the degree of excess for the first year of the estimated timespan ($>0=$ excess). Significant results ($\alpha=.05$, two-tailed) are reported in bold.}.
-  \label{tab:excess}
-\end{table}
+```{r excess, echo=FALSE}
+tab6 <- read.csv('assets/tables/ch4-table6.csv', stringsAsFactors = FALSE)
+
+names(tab6)[1] <- ""
+names(tab6)[5] <- "*SE*"
+names(tab6)[6] <- "*t*"
+names(tab6)[7] <- "*p*"
+
+knitr::kable(tab6, booktabs = TRUE, caption = "Linear regression coefficients as a test of increasing excess of p-values just below .05.") %>%
+  kableExtra::footnote(general = "Intercept indicates the degree of excess for the first year of the estimated timespan (>0= excess).") %>%
+  kableExtra::scroll_box(width = "100%") %>%
+    kableExtra::kable_styling(latex_options = c('striped', 'scale_down', 'hold_position'))
+```
 
 ### Results of two measures based on modeling $p$-value distributions
 
@@ -303,40 +208,28 @@ The regression results of the development of a bump below .05 over time, based o
 
 Table \@ref(tab:simres) shows the results of the two measures for data simulated with and without data peeking. The column headers show the mean effect size (i.e., $\delta$) and heterogeneity (i.e., $\tau$) of the simulated conditions, with the corresponding $\rho_F$ and $\tau_{\rho_F}$ on the Fisher transformed correlation scale. The first set of rows shows the results for the data simulated without data peeking, of which we discuss the results first.
 
-\begin{table}[htbp]
-     \rowcolors{2}{gray!25}{white}
-  \begin{adjustbox}{width=\textwidth,totalheight=\textheight,keepaspectratio,angle=0}
-  \centering
-   \begin{tabular}{lllrrrrrrrr}
-    \rowcolor{gray!50}
-  \hline
-          &       &       & $\tau=0$ &       &       &       & $\tau=.15$ &       &       &  \\
-    \hline
-          &  $p$-values     &       & \pbox{20cm}{$\delta=0$\\$\rho_{F}=0$} & \pbox{20cm}{$\delta=.2$\\$\rho_{F}=.099$} & \pbox{20cm}{$\delta=.5$\\$\rho_{F}=.247$} & \pbox{20cm}{$\delta=.8$\\$\rho_{F}=.390$} & \pbox{20cm}{$\delta=0$\\$\rho_{F}=0$} & \pbox{20cm}{$\delta=.2$\\$\rho_{F}=.099$} & \pbox{20cm}{$\delta=.5$\\$\rho_{F}=.247$} & \pbox{20cm}{$\delta=.8$\\$\rho_{F}=.390$} \\
-    \pbox{20cm}{Without\\data peeking} & 0-1   & $\hat{\rho}_{F}$ & 0     & 0.103 & 0.258 & 0.413 & 0     & 0.103 & 0.258 & 0.413 \\
-          &       & $\hat{\tau}_{\rho_F}$ & 0     & 0     & 0     & 0     & 0.077 & 0.077 & 0.077 & 0.077 \\
-          & 0-.05 & $\hat{\rho}_{F}$ & 0     & 0.103 & 0.258 & 0.413 & 0     & 0.103 & 0.258 & 0.413 \\
-          &       & $\hat{\tau}_{\rho_F}$ & 0     & 0     & 0     & 0.001 & 0.077 & 0.077 & 0.077 & 0.077 \\
-          &       & Misfit $\chi^2$ & 0     & 0     & 0     & 0     & 0     & 0     & 0     & 0 \\
-          & 0-.00125 & $\hat{\rho}_{F}$ & 0     & 0.103 & 0.258 & 0.413 & 0.1   & 0.107 & 0.259 & 0.413 \\
-          &       & $\hat{\tau}_{\rho_F}$ & 0     & 0     & 0     & 0.001 & 0.025 & 0.076 & 0.077 & 0.077 \\
-          &       & Misfit $\chi^2$ & 0     & 0     & 0     & 0     & 0     & 0     & 0     & 0 \\
-          &       & $D$   & 1     & 1     & 1     & 1     & 1.205 & 1.006 & 1.003 & 1.001 \\
-    \pbox{20cm}{With\\data peeking} & 0-.05 & $\hat{\rho}_{F}$ & 0     & 0     & 0.117 & 0.345 & 0     & 0     & 0.075 & 0.360 \\
-          &       & $\hat{\tau}_{\rho_F}$ & 0     & 0     & 0     & 0.038 & 0 & 0.055 & 0.137 & 0.091 \\
-          &       & Misfit $\chi^2$ & \textbf{126,267.4} & \textbf{50,298.4} & \textbf{696.6} & \textbf{101.6} & \textbf{14,867.6} & \textbf{1,209.5} & \textbf{576.3} & \textbf{340.6} \\
-          &       & $N$   & 759,812 & 811,296 & 936,517 & 994,974 & 434,660 & 525,023 & 707,650 & 889,681 \\
-          & 0-.00125 & $\hat{\rho}_{F}$ & 0     & 0.075 & 0.218 & 0.366 & 0.066 & 0.161 & 0.283 & 0.402 \\
-          &       & $\hat{\tau}_{\rho_F}$ & 0     & 0     & 0     & 0     & 0.036 & 0     & 0     & 0.012 \\
-          &       & Misfit $\chi^2$ & 6.9   & 3.2   & 7.1 & \textbf{11.8} & 2     & 1.9   & 2.6   & 2.1 \\
-          &       & $N$   & 9,729  & 21,576 & 95,615 & 350,482 & 14,791 & 34,530 & 124,991 & 366,875 \\
-          &       & $D$   & 1.977 & 1.976 & 1.835 & 1.166 & 1.628 & 1.620 & 1.472 & 1.164 \\
-    \hline
-    \end{tabular}
-    \end{adjustbox}
-    \caption{Results of parameter estimation of the distribution of effect sizes and measures of data peeking as a function of population effect size ($\delta,\rho_F$), population heterogeneity ($\tau$), and data peeking, for the simulated data. Results are based on all $p$-values 0-1, $p$-values $\leq.05$, and $\leq.00125$. $\hat{\rho}_F=$ estimated population effect, $\hat{\tau}_{\rho_F}=$ estimated population heterogeneity, misfit 0-.05 = misfit of estimates based on $p$-values 0-.05, misfit 0-.00125 = misfit of estimates based on $p$-values 0-.00125 (bold indicates $p<.05$), $N=$ number of results included in estimation, $D=$ comparison of observed- and expected $p$-value frequencies.}
-  \label{tab:simres}
-\end{table}
+```{r simres, echo=FALSE}
+tab7 <- read.csv('assets/tables/ch4-table7.csv', stringsAsFactors = FALSE)
+
+names(tab7) <- c('',
+                 '*p*-values',
+                 '',
+                 '$\\delta=0, \\rho_{F}=0$',
+                 '$\\delta=.2, \\rho_{F}=.099$',
+                 '$\\delta=.5, \\rho_{F}=.247$',
+                 '$\\delta=.8, \\rho_{F}=.390$',
+                 '$\\delta=0, \\rho_{F}=0$',
+                 '$\\delta=.2, \\rho_{F}=.099$',
+                 '$\\delta=.5, \\rho_{F}=.247$',
+                 '$\\delta=.8, \\rho_{F}=.390$')
+
+knitr::kable(tab7, booktabs = TRUE, caption = "Results of parameter estimation of the distribution of effect sizes and measures of data peeking as a function of population effect size ($\\delta$, $\\rho_F$), population heterogeneity ($\\tau$), and data peeking, for the simulated data.") %>%
+  kableExtra::footnote(general = "Results are based on all $p$-values 0-1, p-values $\\leq.05$, and $\\leq.00125$.") %>%
+  kableExtra::add_header_above(c(" " = 3, "$\\tau=0$" = 4, "$\\tau=.15$" = 4)) %>%
+  kableExtra::scroll_box(width = "100%") %>%
+    kableExtra::kable_styling(latex_options = c('striped', 'scale_down', 'hold_position'))
+                 
+```
 
 The results for the data without data peeking inform us on (i) whether the effect size distribution parameters can accurately be recovered using only very small ($\leq.00125$) or small $p$-values ($\leq.05$), and (ii) if both measures accurately signal no data peeking. Note that $\rho_F$ is slightly overestimated due to categorizing the $p$-value distribution into 40 categories: the estimates based on all $p$-values (i.e., $\hat{\rho}_F$, first row) are slightly larger than the population parameter (i.e., $\rho_F$, column headers). 
 
@@ -358,12 +251,9 @@ To conclude, this simulation study showed that under true homogeneity both measu
 
 Figure \@ref(fig:bump-fig5) depicts the observed $p$-value distribution and the expected $p$-value distribution corresponding to the fitted effect size distribution based on $p$-values $\leq.00125$. Estimates for $p$-values $\leq.05$ were effect size $\hat{\rho}_F=0$ and heterogeneity  $\hat{\tau}_{\rho_F}=.183$, and $\hat{\rho}_F=.149$ and $\hat{\tau}_{\rho_F}=.106$ for $p$-values $\leq.00125$. Note that we only considered nonnegative values of $\delta$ in the estimation procedure. Misfit between observed and expected $p$-value distribution for $p\leq.00125$ was minor ($\chi^2=4.1$), indicating that the observed $p$-values $\leq.00125$ were well approximated by the estimated effect size distribution.
 
-\begin{figure}[H]
-  \centering
-    \includegraphics[width=0.75\textwidth]{assets/figures/bump-fig5.png}
-  \caption{Observed proportions of $p$-values (circles) and expected proportions of $p$-values based on $\hat{\rho}_F$ and $\hat{\tau}_{\rho_F}$ estimated from 0-.00125 (crosses).}
-  \label{fig:bump-fig5}
-\end{figure}
+```{r bump-fig5, echo = FALSE, fig.cap = "Observed proportions of $p$-values (circles) and expected proportions of $p$-values based on estimated $\\hat{\\rho}_F$ and estimated $\\hat{\\tau}_{\\rho_F}$ estimated from 0-.00125 (crosses).", fig.align="center"}
+knitr::include_graphics('assets/figures/bump-fig5.png')
+```
 
 Our first measure suggests practices leading to a monotonic excess of $p$-values below .05, because the estimated effect size based on all significant $p$-values (i.e., 0) is much smaller than the supposedly more accurate estimate based on only the very small $p$-values (i.e., .183). Moreover, assuming that effect sizes are normally distributed with $\rho_F=0$ and $\tau_{\rho_F}=.183$, combined with the degrees of freedom of the observed effects, implies that only 27.5% of all effects would be statistically significant. However, of all reported $p$-values, 74.7% were statistically significant, but this difference may at least partly be caused by other factors such as publication bias. It is highly unlikely that the average true effect size underlying statistically significant results in psychology is truly zero. It remains undecided, however, whether this very low estimate is mainly due to QRPs leading to a downward bias of the effect size estimate, or to a misspecification of the model, an issue we revisit later in the paper. 
     
@@ -384,3 +274,4 @@ Notwithstanding the outcome of the second measure, suggesting QRPs that cause mo
 Results of all the aforementioned models are most likely not robust to violations of their assumptions. For instance, we assume a normal distribution of true effect sizes. This assumption is surely violated, since the reported $p$-values arise from a mixture of many different types of effects, such as very large effects (manipulation checks), effects corresponding to main hypotheses, and zero effects ('control' variables). Additionally, consider the QRPs themselves; we examined the effect of only one QRP, data peeking, in one of its limited variants. Other QRPs exist that also increase the prevalence of $p$-values just below .05, such as multiple operationalizations of a measure and selecting the first one to be significant. Other QRPs even increase the frequency of very small $p$-values [@doi:10.1177/1745691616650874]. We deem it impossible to accurately model QRPs and their effects, considering the difficulties we already demonstrated for modeling the $p$-value distribution generated using a single QRP that was clearly defined. To conclude, we fear that @doi:10.1093/biostatistics/kxt034 may be right when suggesting that drawing conclusions with regard to any QRP based on modeling $p$-value distributions obtained from automatically extracted results is unfruitful.
 
 On the other hand, we do recommend modeling effect size and $p$-value distributions of results that all intend to test the same hypothesis, to prevent contamination by irrelevant test results [@doi:10.7717/peerj.1715;@doi:10.1037/xge0000104]. Examples of methods that focus on similar results are $p$-uniform [@doi:10.1037/met0000025] and $p$-curve [@doi:10.1037/a0033242], which model statistically significant statistics pertaining to one specific effect and estimate the effect size based on these statistics while correcting for publication bias. Further research should reveal if both methods can also be used to detect and correct for $p$-hacking in the context of estimating one particular effect size. Preliminary results suggest, however, that detection and correcting for $p$-hacking based on statistics alone is rather challenging [@doi:10.1177/1745691616650874].
+

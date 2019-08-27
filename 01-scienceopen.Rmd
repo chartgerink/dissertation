@@ -1,90 +1,44 @@
-\newpage
+# (PART) Understanding research practice {-} 
 
 # Research practices and assessment of research misconduct
 
-\newpage 
+```{r echo=FALSE}
+suppressPackageStartupMessages(library(magrittr))
+suppressPackageStartupMessages(library(kableExtra))
+```
 
-<!-- ## Abstract
-
-This article discusses the responsible conduct of research, questionable
-research practices, and research misconduct. Responsible conduct of
-research is often defined in terms of a set of abstract, normative
-principles, professional standards, and ethics in doing research. In
-order to accommodate the normative principles of scientific research,
-the professional standards, and a researcher's moral principles,
-transparent research practices can serve as a framework for responsible
-conduct of research. We suggest a 'prune-and-add' project structure to
-enhance transparency and by extension, responsible conduct of research.
-Questionable research practices are defined as practices that are
-detrimental to the research process. The prevalence of questionable
-research practices remains largely unknown and reproducibility of
-findings has been shown to be problematic. Questionable practices are
-discouraged by transparent practices because practices that arise from
-them will become more apparent to scientific peers. Most effective might
-be preregistrations of research design, hypotheses, and analyses, which
-reduce particularism of results by providing an a priori research
-scheme. Research misconduct has been defined as fabrication,
-falsification, and plagiarism (FFP), which is clearly the worst type of
-research practice. Despite it being clearly wrong, it can be approached
-from a scientific and legal perspective. The legal perspective sees
-research misconduct as a form of white-collar crime. The scientific
-perspective seeks to answer the question "were results invalidated
-because of the misconduct?" We review how misconduct is typically
-detected, how its detection can be improved, and how prevalent it might
-be. Institutions could facilitate detection of data fabrication and
-falsification by implementing data auditing. Nonetheless, the effect of
-misconduct is pervasive: many retracted articles are still cited after
-the retraction has been issued.
-
-## Main points
-
-1.  Researchers systematically evaluate their own conduct as more
-responsible than colleagues, but not as responsible as they
-would like.
-
-2.  Transparent practices, facilitated by the Open Science
-Framework, help embody scientific norms that promote
-responsible conduct.
-
-3.  Questionable research practices harm the research process and
-work counter to the generally accepted scientific norms, but are
-hard to detect.
-
-4.  Research misconduct requires active scrutiny of the research
-community, because editors and peer reviewers do not pay adequate
-attention to detecting this. Tips are given on how to improve your
-detection of potential problems.
-
-
-## Introduction
- -->
 Research practices directly affect the epistemological pursuit of
-science: Responsible conduct of research affirms it; research misconduct
-undermines it. Typically, a responsible scientist is conceptualized as
-objective, meticulous, skeptical, rational, and not subject to external
-incentives such as prestige or social pressure. Research misconduct, on
-the other hand, is formally defined (e.g., in regulatory documents) as
-three types of condemned, intentional behaviors: fabrication,
-falsification, and plagiarism [@ostp2000]. Research practices that are
-neither conceptualized as responsible nor defined as research misconduct
-could be considered questionable research practices, which are practices
-that are detrimental to the research process [@doi:10.17226/1864;@doi:10.1007/pl00022268].
-For example, the misapplication of statistical methods can increase the
-number of false results and is therefore not responsible. At the same
-time, such misapplication can also not be deemed research misconduct
-because it falls outside the defined scope of FFP. Such undefined and
-potentially questionable research practices have been widely discussed
-in the field of psychology in recent years [@doi:10.1177/0956797611430953;@doi:10.1080/1047840X.2012.692215;@doi:10.1177/1745691612459058;@doi:10.1126/science.aac4716;@doi:10.1177/0956797611417632].
+science: Responsible conduct of research affirms it; research
+misconduct undermines it. Typically, a responsible scientist is
+conceptualized as objective, meticulous, skeptical, rational, and not
+subject to external incentives such as prestige or social
+pressure. Research misconduct, on the other hand, is formally defined
+(e.g., in regulatory documents) as three types of condemned,
+intentional behaviors: fabrication, falsification, and plagiarism
+[@ostp2000]. Research practices that are neither conceptualized as
+responsible nor defined as research misconduct could be considered
+questionable research practices, which are practices that are
+detrimental to the research process
+[@doi:10.17226/1864;@doi:10.1007/pl00022268].  For example, the
+misapplication of statistical methods can increase the number of false
+results and is therefore not responsible. At the same time, such
+misapplication can also not be deemed research misconduct because it
+falls outside the defined scope of FFP. Such undefined and potentially
+questionable research practices have been widely discussed in the
+field of psychology in recent years
+[@doi:10.1177/0956797611430953;@doi:10.1080/1047840X.2012.692215;@doi:10.1177/1745691612459058;@doi:10.1126/science.aac4716;@doi:10.1177/0956797611417632].
 
-This chapter discusses the [responsible conduct of research](#responsible-conduct-of-research), [questionable
-research practices](#questionable-research-practices), and [research misconduct](#research-misconduct). For each of these three, we
-extend on what it means, what researchers currently do, and how it can
-be facilitated (i.e., responsible conduct) or prevented (i.e.,
+This chapter discusses the [responsible conduct of
+research](#responsible-conduct-of-research), [questionable research
+practices](#questionable-research-practices), and [research
+misconduct](#research-misconduct). For each of these three, we extend
+on what it means, what researchers currently do, and how it can be
+facilitated (i.e., responsible conduct) or prevented (i.e.,
 questionable practices and research misconduct). These research
 practices encompass the entire research practice spectrum proposed by
-@doi:10.1007/pl00022268, where responsible conduct of research is the ideal
-behavior at one end, FFP the worst behavior on the other end, with
-(potentially) questionable practices in between.
+@doi:10.1007/pl00022268, where responsible conduct of research is the
+ideal behavior at one end, FFP the worst behavior on the other end,
+with (potentially) questionable practices in between.
 
 ## Responsible conduct of research
 
@@ -98,6 +52,8 @@ These six norms and counternorms can serve as a valuable framework to
 reflect on the behavior of a researcher and are included in Table \@ref(tab:normtable).
 
 ```{r normtable, echo=FALSE, results='asis'}
+
+library(magrittr)
 norms <- read.csv('assets/tables/norm-table.csv', header = TRUE)
 names(norms)[2] <- 'Description norm'
 
@@ -217,7 +173,7 @@ and tested in, for example, the Many Labs project [@doi:10.1027/1864-9335/a00017
 Reproducibility project [@doi:10.1126/science.aac4716]. Research files can be manually
 uploaded by the researcher or automatically synchronized (e.g., via
 Dropbox or Github). Using the OSF is easy and explained in-depth at
-[osf.io/getting-started](osf.io/getting-started).
+[osf.io/getting-started](https://osf.io/getting-started).
 
 The OSF provides the tools to manage a research project, but how to
 apply these tools still remains a question. Such online management of
@@ -231,7 +187,7 @@ projects are included but which can be specified and extended for
 specific projects. This template includes folders as specified in Table \@ref(tab:prune-and-add), which covers many of the research stages. The template
 can be readily duplicated and adjusted on the OSF for practical use in
 similar projects (like replication studies;
-[osf.io/4sdn3](osf.io/4sdn3)).
+[osf.io/4sdn3](https://osf.io/4sdn3)).
 
 ```{r prune-and-add, echo=FALSE, results='asis'}
 prune <- read.csv('assets/tables/prune-and-add.csv', header = TRUE)
@@ -242,7 +198,7 @@ knitr::kable(prune,
 to in order to meet specific research needs. This folder structure can
 be duplicated as an OSF project at osf.io/4sdn3.",
   booktabs=TRUE) %>%
- kable_styling(latex_options = c('striped', 'hold_position'))
+ kable_styling(latex_options = c('striped', 'hold_position', 'scale_down'))
 ```
 
 This suggested project structure also includes a folder to include
@@ -391,7 +347,7 @@ estimated 30 times more efficient [@doi:10.1371/journal.pone.0084896]. Consideri
 unpublished research is not indexed in the familiar peer-reviewed
 databases, infrastructures to search through repositories similar to the
 OSF are needed. One such infrastructure is being built by the Center for
-Open Science (SHARE; [osf.io/share](osf.io/share)), which searches
+Open Science (SHARE; [osf.io/share](https://osf.io/share)), which searches
 through repositories similar to the OSF (e.g., figshare, Dryad, arXiv).
 
 ## Research misconduct
@@ -490,7 +446,7 @@ as Figure \@ref(fig:ruys), 32 means and standard deviations are presented.
 for even one case, if the variables are a result of probabilistic
 processes as in sampling theory.
 
-```{r ruys, fig.cap="Reproduction of Table 1 from the retracted Ruys and Stapel (2008) paper. The table shows 32 cells with 'M (SD)', of which 15 are direct duplicates of one of the other cells. The original version with highlighted duplicates can be found at osf.io/89mcn.", out.width="100%", fig.align="center", echo=FALSE}
+```{r ruys, fig.cap="Reproduction of Table 1 from the retracted Ruys and Stapel (2008) paper. The table shows 32 cells with 'M (SD)', of which 15 are direct duplicates of one of the other cells. The original version with highlighted duplicates can be found at https://osf.io/89mcn.", out.width="100%", fig.align="center", echo=FALSE}
 par(mar = c(0, 0, 0, 0))
 knitr::include_graphics('assets/figures/scienceopen-table3.png', auto_pdf = TRUE)
 ```
@@ -578,7 +534,7 @@ respondent is a member of that association. Journals are also confronted
 with complaints about specific research papers and those affiliated with
 the Committee on Publication Ethics have a protocol for dealing with
 these kinds of allegations (see
-[publicationethics.org/resources](publicationethics.org/resources) for
+[publicationethics.org/resources](https://publicationethics.org/resources) for
 details). The best way to improve detection of data fabrication directly
 is to further investigate suspicions and report them to your research
 integrity office, albeit the potential negative consequences should be
@@ -590,7 +546,7 @@ More indirectly, statistical tools can be applied to evaluate the
 veracity of research papers and raw data [@doi:10.1111/anae.13126;@peeters2015],
 which helps detect potential lapses of conduct. Statistical tools have
 been successfully applied in data fabrication cases, for instance the
-Stapel case [@levelt2012], the Fuji case [@doi:10.1111/j.1365-2044.2012.07128.x], and in the
+Stapel case [@levelt2012], the Fujii case [@doi:10.1111/j.1365-2044.2012.07128.x], and in the
 cases of Smeesters and Sanna [@doi:10.1177/0956797613480366]. Interested readers are
 referred to @buyse1999 for a review of statistical methods to detect
 potential data fabrication.

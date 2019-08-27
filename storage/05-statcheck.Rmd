@@ -1,0 +1,102 @@
+\newpage
+
+# 688,112 Statistical Results: Content Mining Psychology Articles for Statistical Test Results
+
+<!-- http://www.mdpi.com/2306-5729/1/3/14/htm -->
+
+```{r echo = FALSE}
+tabnr <- fignr <- 1
+```
+
+\newpage
+
+<!-- ## Abstract
+
+In this data deposit, I describe a dataset that is the result of content mining 167,318 published articles for statistical test results reported according to the standards prescribed by the American Psychological Association (APA). Articles published by the APA, Springer, Sage, and Taylor & Francis were included (mining from Wiley and Elsevier was actively blocked). As a result of this content mining, 688,112 results from 50,845 articles were extracted. In order to provide a comprehensive set of data, the statistical results are supplemented with metadata from the article they originate from. The dataset is provided in a comma separated file (CSV) in long-format. For each of the 688,112 results, 20 variables are included, of which seven are article metadata and 13 pertain to the individual statistical results (e.g., reported and recalculated $p$-value). A five-pronged approach was taken to generate the dataset: (i) collect journal lists; (ii) spider journal pages for articles; (iii) download articles; (iv) add article metadata; and (v) mine articles for statistical results. All materials, scripts, etc. are available at [https://github.com/chartgerink/2016statcheck_data](https://github.com/chartgerink/2016statcheck_data)^[This GitHub repository has been deleted since this chapter was previously published. The links are included to remain consistent with the published version.] and preserved at [http://dx.doi.org/10.5281/zenodo.59818](http://doi.org/10.5281/zenodo.59818).
+
+## Introduction
+ -->
+In this chapter, I describe a dataset that is the result of content mining 167,318 published psychology articles for statistical test results. I tried to mine the content of HTML articles in all psychology journals published by the six major publishers in psychology, and succeeded in doing so for four major publishers (see Table \@ref(tab:data-1) for descriptives per publisher). This content mining was done with the `R` package `statcheck` [@doi:10.3758/s13428-015-0664-2;@statcheck], which extracts statistical results from research articles in an automated fashion, given that they are reported in the format prescribed by the American Psychological Association (APA). I only inspected psychology journals, because this is a standard within the field of psychology and not necessarily outside of this field.
+
+```{r data-1, echo = FALSE, results="asis"}
+df <- read.csv('assets/tables/statcheck-1.csv', stringsAsFactors = FALSE)
+df$Publisher[1] <- 'APA'
+names(df) <- c('Publisher', 'Timespan',
+  '# articles', '# articles with results', '# results',
+  'Median # results per article', 'Mean reported p-value', 'Mean recalculated p-value')
+
+kable(df, caption = 'An overview of the publishers included accompanied by descriptive statistics per publisher regarding the extracted APA results.', booktabs = TRUE) %>%
+  kable_styling(latex_options = c('scale_down', 'striped', 'hold_position'), position = 'left')
+```
+
+The `statcheck` software extracted 688,112 results from 50,845 articles (out of 167,318 articles). The extracted statistical test results are presented in long format in this dataset (i.e., each row corresponds to one statistical result). For each extracted statistical test result, the reported statistical values are used to recalculate the $p$-value for the reported statistical result. These recalculated $p$-values are checked against the reported $p$-value for (decision) errors. A potential error has occurred when the reported $p$-value is not congruent with the recalculated $p$-value, whereas a decision error (or gross error) occurs when the recalculated $p$-value does not correspond to the reported $p$-value and alters the significance of the result, assuming $\alpha=0.05$. The results of this comparison are available in the dataset. The articles for which no results were found are not included in the dataset (filenames without results available at [https://raw.githubusercontent.com/chartgerink/2016statcheckdata/master/noresult.txt](https://raw.githubusercontent.com/chartgerink/2016statcheckdata/master/noresult.txt)).
+
+In order to provide a comprehensive dataset, the statistical results are supplemented with metadata of the original article as available in CrossRef (http://crossref.org). These metadata include the `doi`, the publisher, the publication year, the journal, the author names, the author count, and the publication title. Given that the dataset is in long format, multiple rows can contain duplicate metadata if multiple results are extracted from the same article.
+
+This dataset of statistical results and accompanying metadata can be used to inspect if specific papers include potential statistical errors or for trends in statistical results over time. Articles based on a similar dataset inspected the degree to which reporting errors occur [@doi:10.3758/s13428-015-0664-2], tried to assess whether such data could be modeled for $p$-hacking [@doi:10.7717/peerj.1935], and the degree to which sample sizes and potential false negative results developed over time [@doi:10.1525/collabra.71]. This dataset can be used to replicate these findings and correlate findings with the available metadata. These data can also be used as baseline data to identify extreme statistical results in the literature by determining their percentile score, or to replicate other meta-research. These are only a few examples, and "the best thing to do with [the] data will be thought of by someone else" (quote from Rufus Pollock).
+
+## Data description
+
+The data are provided in a comma separated file (CSV) and in long-format, where each row contains one statistical result. As such, multiple rows can pertain to the same article and include the same metadata. This information is provided in duplicate because any other file format (wide-format or separate files per article) is unfeasible without increasing the difficulty to reuse the data (e.g., in JSON format). Given the size of the full dataset (>200MB), a smaller test dataset is also included to pilot analysis scripts.
+
+For each of the 688,112 results, 20 variables are included, of which seven pertain to article metadata and 13 pertain to the individual statistical results. Table \@ref(tab:data-2) lists all variables included in the dataset. Two specific sets of variables are worth explaining further. First, only $F$-values have two degrees of freedom (i.e., $df1$ and $df2$). For $t$-values, the reported degrees of freedom are $df2$, because $t^2(df)=F(1,df)$. For all other test statistics that include degrees of freedom, they are included in $df1$ (i.e., $\chi^2$,$r$; $Z$ contains no degrees of freedom). Second, the variable `DecisionError` indicates whether an error results in wrongly concluding statistical significance (report $p<0.05$ whereas the recalculated $p$-value yields $p>0.05$, or vice versa). If the variables `OneTail` and `OneTailedInTxt` are `TRUE` (see Table \@ref(tab:data-2)), a decision error is reverted to `FALSE`.
+
+```{r data-2, echo = FALSE}
+df <- read.csv('assets/tables/statcheck-2.csv')
+kable(df, caption = 'Variables included in the dataset and a description of each variable. ', booktabs = TRUE) %>%
+  kable_styling(latex_options = c('scale_down', 'striped'), position = 'left') 
+tabnr <- tabnr + 1
+```
+
+## Methods
+
+The data were collected in five steps: (i) collect journal lists; (ii) spider journal pages for articles; (iii) download articles; (iv) add article metadata; and (v) mine articles for statistical results. These five steps are specified below. All code and version history is available at [https://github.com/chartgerink/2016statcheckdata](https://github.com/chartgerink/2016statcheckdata) (preserved at [http://doi.org/10.5281/zenodo.59818](http://doi.org/10.5281/zenodo.59818)). Figure \@ref(fig:data-fig1) gives a flowchart of the different steps in the data collection process.
+
+```{r data-fig1, echo = FALSE, fig.cap = 'Flowchart of the data collection process, specified per step in the collection process.', fig.pos = 'H'}
+include_graphics('assets/figures/statcheck-fig1.png')
+fignr <- fignr + 1
+```
+
+Lists of psychology journals from six major publishers were collected manually. Six publishers were included at the start of this project: Elsevier, Wiley, Sage, Springer, Taylor & Francis, and the APA. These six publishers cover >70% of the published psychology literature [@doi:10.1371/journal.pone.0127502]. Except for the APA, only journals included in the "Psychology" or "Behavioral Sciences" sections were included (as categorized by the publishers themselves). These journal lists were collected in October 2015 and available at [https://github.com/chartgerink/2016statcheckdata/blob/master/scraping/journal-spiders/journallistold.csv](https://github.com/chartgerink/2016statcheckdata/blob/master/scraping/journal-spiders/journallistold.csv).
+
+Journals from two of the six publishers had to be removed from the journal list, because Elsevier and Wiley prevented me from automatically downloading research articles [@ons-elsevier;@doi:10.1038/527413f;@ons-wiley]. The library at my university was prompted by these publishers that suspicious downloading activity occurred, which they thought indicated compromised user credentials and theft of copyrighted material. The Tilburg University library services requested me to halt the automated downloading, in light of potential blocks for the entire university. As a result, Elsevier and Wiley were excluded from the journal list, resulting in a remainder of 461 journals from the original 1011 (this renewed list is available at https://github.com/chartgerink/2016statcheckdata/blob/master/scraping/journal-spiders/journallist.csv).
+<!-- http://onsnetwork.org/chartgerink/2015/11/16/elsevier-stopped-me-doing-my-research/ -->
+<!-- http://onsnetwork.org/chartgerink/2016/02/23/wiley-also-stopped-my-doing-my-research/ -->
+
+Article URLs were collected with a web spider in April 2016. A web spider visits a webpage and collects all or a specific set of URLs included on that webpage. Subsequently, the web spider visits the pages that are referred to on the initial webpage and again collects URLs, which it repeats over and over. For this project, a web spider was developed to extract specific links that referred to full texts ([https://github.com/chartgerink/journal-spiders](https://github.com/chartgerink/journal-spiders)). This web spider produced a set of URLs, which provided direct links to full-text articles in HTML format (all URLs available at [https://github.com/chartgerink/2016statcheckdata/tree/master/scraping/journal-spiders/journal-links](https://github.com/chartgerink/2016statcheckdata/tree/master/scraping/journal-spiders/journal-links)). Only those HTMLs that were accessible within the Tilburg University subscription were collected (list of available journal titles within subscription available at [https://github.com/chartgerink/2016statcheckdata/blob/master/tilburgjournals.ods?raw=true](https://github.com/chartgerink/2016statcheckdata/blob/master/tilburgjournals.ods?raw=true)). The original sample, including Elsevier and Wiley, was $\sim900,000$ articles.
+
+The research articles were subsequently automatically downloaded, with the command-line utilities `wget` (i.e., APA articles) and `quickscrape` (v0.4.6 [https://github.com/contentmine/quickscrape](https://github.com/contentmine/quickscrape); i.e., Sage, Springer, Taylor & Francis). This downloading occurred in April–May 2016 and took into account potential strain on the publisher’s servers by restricting downloads to weekends or limiting the download rate to 10 per minute at most.
+
+Metadata for each article were collected with the Ruby module `terrier` ([https://github.com/thewinnower/terrier](https://github.com/thewinnower/terrier). This module queries the CrossRef database when provided with a Digital Object Identifier (DOI). If available, it returns the available metadata such as the journal name, publication year, etc. These metadata were collected in April–June 2016 for all included articles ([https://github.com/chartgerink/2016statcheckdata/blob/master/scraping/terrier.rb](https://github.com/chartgerink/2016statcheckdata/blob/master/scraping/terrier.rb). Not all articles contained a DOI and no metadata could be collected from CrossRef as a result.
+
+Finally, after all HTML files were collected and metadata were added, `statcheck` (v1.0.1 [@doi:10.3758/s13428-015-0664-2;@statcheck]) was run in August 2016 to create the final dataset. This `R` package scans the text from an article for APA style statistical results, extracts these statistical results, and checks whether the reported $p$-values are equivalent to the recalculated $p$-value (with a margin of error due to potential rounding). For example, the result $t(85)=2.86,p=0.005$
+would be automatically extracted. Version 1.0.1 of `statcheck` is able to mine $t$,$F$,$r$,$Z$, and $\chi^2$ results.
+
+## Usage notes
+
+Usage of the data requires understanding several limitations of the `statcheck` package, in order to provide context for results obtained from this dataset. A manual validity check for `statcheck` proved that the software is valid for extracting APA style reported test results [@doi:10.3758/s13428-015-0664-2]. However, it does not extract results that are not in line with what the APA prescribes. Additionally, `statcheck` only extracts results reported in the text and not those reported in tabular format or in images. As such, statistical results from tables and images are systematically excluded. As a result, any conclusions based on this dataset should not be extrapolated without caution.
+
+Additionally, it is worth mentioning that relatively few articles contained results that were extracted by `statcheck` ($\sim1/3$ downloaded articles). This could be due to at least three reasons. First, results might not be reported according to the APA format in some psychology journals/volumes, which results in fewer extracted results. Second, statistical results could be reported in APA format, but these statistical results are not $t$,$F$,$r$,$Z$, or $\chi^2$. Third, a considerable part of the literature might pertain to theoretical papers, case studies, or narrative reviews, instead of empirical research.
+
+The presented data have been deposited in the Dutch Archival Network for the Sciences (DANS) and are available under a public domain license (CC0 1.0 rights waiver). The DANS repository is a trustworthy digital repository and has received the Data Seal of Approval (DSA), the World Data System (WDS) certificate, and the NESTOR-seal. This ensures that deposited data will remain available for a substantial amount of time. All rights to this dataset are waived to the furthest extent possible, such that reuse is maximized.
+
+In addition to preserving the data in the DANS repository, individual reports have been generated for each of the 50,845 articles and posted on PubPeer (https://pubpeer.com/). Appendix 6.A shows a fictitious example of such a report. These reports were generated in order to increase the accessibility of the data for those wanting to investigate a specific paper instead of the entire dataset. Additionally, this increases the discoverability of potential errors by posting them in a central forum of post-publication peer review.
+
+\newpage
+
+## Appendix 6.A. Example of `statcheck` Report for PubPeer
+
+> The HTML version of this article was scanned on 5 August 2016 for statistical results ($t$, $r$, $F$, $\chi^2$, and $Z$ values) reported in APA format [for specifics, see @doi:10.3758/s13428-015-0664-2]. An automatically generated report follows.
+
+> The scan detected 5 statistical results in APA format, of which 3 contained potentially incorrect statistical results, of which 1 may change statistical significance ($\alpha$=0.05). Potential one-tailed results were taken into account when "one-sided", "one-tailed", or "directional" occurred in the text.
+The errors that may change statistical significance were reported as:
+
+> $t(67)=-0.436, p<0.001$ (recalculated $p$-value: 0.66424)
+
+> The errors that may affect the computed $p$-value (but not the statistical significance) were reported as:
+
+> $F(1,126)=2.1, p>0.90$ (recalculated $p$-value: 0.14978)
+
+> $t(67)=-1.02, p=0.35$ (recalculated $p$-value: 0.31140)
+
+> Note that these are not definitive results and require manual inspection to definitively assess whether results are erroneous.

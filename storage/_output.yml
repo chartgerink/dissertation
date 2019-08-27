@@ -1,0 +1,10 @@
+delete_merged_file: true
+site: bookdown::bookdown_site
+bookdown::pdf_book:
+  includes:
+    in_header: preamble.tex
+title: "Contributions towards understanding and building sustainable science"
+author: "CHJ Hartgerink"
+bibliography: [library.bib]
+link-citations: true
+classoption: a5paper

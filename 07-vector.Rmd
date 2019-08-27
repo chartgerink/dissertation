@@ -1,4 +1,6 @@
-\newpage
+# (PART) Improving science {-}
+
+# Extracting data from vector figures in scholarly articles
 
 ```{r echo=FALSE}
 dat <- read.csv('assets/data/corpus.csv', as.is = TRUE)
@@ -6,10 +8,6 @@ dois <- dat$doi[dat$true_vector == 'yes' & !is.na(dat$doi)]
 dois <- dois[!is.na(dois)]
 vec_dat <- read.csv('assets/data/funnels.csv')
 ```
-
-# Extracting data from vector figures in scholarly articles
-
-\newpage 
 
 <!-- ## Abstract
 

@@ -1,130 +1,254 @@
----
-bibliography: [library.bib]
-biblio-style: apalike
----
-
-\newpage
-
 # Epilogue
 
-Addressing (some of the) epistemological issues scholarly research faces has been the underlying focus of this dissertation, but the contributions have a larger and more important context. The last seven years, since the start of my first personal epistemological crisis, the need to address these issues has become almost unequivocal. Different kinds of evidence dripped in from various research fields [@doi:10.1371/journal.pone.0200303;@doi:10.1016/j.respol.2014.05.002;@doi:10.1097/phh.0000000000000694;@doi:10.1146/annurev-criminol-032317-091849] and new options have become available to raise the epistemological bar [e.g., Registered Reports; @doi:10.1016/j.cortex.2012.12.016]. Despite some claims of publication bias not necessarily being bad for science [@doi:10.7287/peerj.preprints.1968v4;@doi:10.1371/journal.pone.0066463;@mitchell] and that the reproducibility crisis is harmful rhetoric [@doi:10.1073/pnas.1708276114] and overblown [@doi:10.1073/pnas.1708272114], it seems that readiness for meaningful reform has spread. Hence, it surprises me that exactly such meaningful reform largely remains absent, in spite of an apparent social demand. I recognize and value the great work done in these last seven years to raise the epistemological bar, but is it enough? I think there is a case to make that we need a stronger program of reform moving forward.
+As a society, we look to science to solve pressing issues, but its
+capability to do so is affected by those same issues in science,
+society, and their interaction. Without radical and encompassing
+reform, we risk a stalemate between them, or worse, regress on
+both. In this Epilogue, I propose a high level framework for anyone to
+make radical proposals to improve the sustainability of the scientific
+system moving forward. This framework is the accumulation of the work that
+spans this book, with Chapters 8 and 9 as its direct result.
 
-Short-term progress on some epistemological issues has been made, but it begs the question whether these changes are sufficient or sustainable. Many of the suggested reforms fail the test of the five scholarly communication functions quite easily (i.e., registration, certification, awareness, archiving, incentives). 
-For example, badges labeling the sharing of data, preregistration of hypotheses, or sharing of materials may incentivize this behavior [@doi:10.1371/journal.pbio.1002456
-;@doi:10.12688/f1000research.13477.2], but hardly do these badges raise awareness of that information. The URLs linking to that information are typically only available in the (paywalled) articles and not widely indexed.
-Preregistrations, if publicly available, are not well preserved. For instance, [AsPredicted.org](https://aspredicted.org) is someone's side project that could disappear any day. Moreover, nobody knows how many preregistrations occur on this platform and how many ultimately get publicized, facilitating selective registration of preregistrations in the literature. Another preregistration service, the Open Science Framework, has a rainy-day fund that would sustain read-only access to preregistrations for fifty years ([https://perma.cc/V95F-DMB4](https://perma.cc/V95F-DMB4)), which is not long-term preservation in the grand scheme of things. 
-Registered Reports may still have selective registration through any biased acceptance of studies on topic or design in the review process, despite eliminating the selection based on results. 
-Selective publication for clinical trials is effectively eliminated by federal regulations in the United States of America through central registration yet there remains selective publication of approximately 50% of all trials in the peer-reviewed literature [@doi:10.1371/journal.pmed.1000144;@doi:10.1136/bmj.k2130]. In theory publication bias based on results is eliminated but in practice it is not.
-<!-- We may be able to detect data fabrication, but only if publication bias is eliminated (Chapter 6).  -->
-Open access publishing is facilitated by new publishing models, but the (often excessive) prices involved disincentivizes researchers<!--  with restricted financial means -->. 
-Giving access through self-archival threatens the accuracy (i.e., content integrity) of what readers view by necessitating the archival of a different version (i.e., accepted manuscript) than that which is ultimately published (i.e., typeset manuscripts). 
-Researchers voice moral support for unbiased access to knowledge but incentive systems promote publishing with journals that typically require the unnecessary transfer of all copyrights. 
-Sci-Hub provides unbiased access to research papers but this has been deemed copyright infringement and therefore illegal under some jurisdictions [@doi:10.1038/nature.2017.22971]. 
-New journals improve registration and certification when they no longer select on results and require reproducible results [e.g., @doi:10.15626/mp2017.1001], but may not create the needed momentum to change incentive systems because universities still indirectly punish those who publish in newer journals [a journal only gets a Journal Impact Factor after at least 2 years; @doi:10.1371/journal.pone.0006022]. 
-The attention on higher statistical power [e.g., @doi:10.1038/s41562-016-0021] and lower statistical significance levels [@doi:10.1038/s41562-017-0189-z] may create additional selection criteria to bias publication, instead of facilitating the registration of all results. 
-Universities claim to promote better science but are driven to achieve higher rankings in an increasingly privatized and competitive 'excellence' environment [@isbn:9781786631398;@doi:10.1057/palcomms.2016.105], which in turn is driven by the problematic incentive structures that undermine or redefine the goal of better science. 
-These are some of the main examples that may indicate how these issues affecting the epistemological value of science are networked, extensive, complex, and tied to the functions of a scholarly communication system.
+One issue, for example, is the relative budget shrinkage of scientific
+funding and the increased drive for excellence. These interact to
+intensify the competition among scientists and feeds a publication
+frenzy, which instigates a race to the bottom of validity of science
+and mental health of the scientist.
 
-The network of epistemological issues is difficult to navigate and science populism has created readiness for change but has stopped short of providing a meaningful and coherent set of reforms. Populism has a negative connotation, but simply implies that it builds broad support by highlighting issues people care about. Science populism for that reason has been a great instigator of the awareness in the last decade. However, populism is only worthwhile if it subsequently provides meaningful reform. For example, the issue of selective publication is urgent and highly wasteful [@doi:10.1371/journal.pone.0084896] but when we aim to address it by stating things equivalent to "don't do it anymore" we waive the practical considerations of people actively trying to not do it anymore [@doi:10.5281/zenodo.826643]. In other words, science populism may raise awareness but does not meaningfully deal with these issues in a way that can achieve real change. People involved in research highlighting the gravity of current practices might not feel obliged to take up the role of political persuasion [@doi:10.1177/1745691615609918] but by calling for changes they take an inherently political position to begin with. Moreover, some reforms have been proposed, but as I outlined before, these are short-term and 'fix' one thing while breaking another. As such, I consider these inherently ameliorative of the current system. It seems like even the National Academy of Sciences in the U.S.A. resorts to this. They recently released an "Open Science by Design" report [@doi:10.17226/25116], which seems to outline more what should be addressed than how to meaningfully reform. If someone is of the position that the system is too broken to be ameliorated into sustainability, the only other viable option is to reform more fundamentally [see also @doi:10.5281/zenodo.1323436].
+We cannot tackle the issues the scientific system grapples with,
+without changing the societal systems that shape it. The other way
+around, we cannot neglect the impact the scientific system has on
+societal issues. <!-- hier nog een voorbeeld --> The effect of the
+scientific system on the societal issue of global warming is one
+example. Scientists fly to conferences around the world in large
+numbers, contributing large amounts of emissions
+[@doi:10.1016/j.jclepro.2019.04.109], and labs produce large amounts
+of waste, where one lab estimates using approximately 1 ton of
+single-use plastic per researcher per year [@doi:10.1038/528479c].
 
-Transparency is often heralded as the key to making fundamental progress on raising the epistemological bar, assuming that making things more visible is sufficient to improving the situation. However, what the debate may fail to realize is that transparency is in itself a form of obfuscation [@isbn:9780262029735]. For example, legal teams may bury their opponents by being transparent, sharing troves of documents such that the information is too vast to reasonably comprehend. A simpler scenario of obfuscation is Where's Waldo: One eccentric individual in a sea of people is difficult to find. In more statistical terms, the prevalence of relevant information is likely to decrease by sole transparency. The "saturation of science" through excessive amounts of information is not new [@isbn:0231049560;@doi:10.1080/1047840X.2012.701161] and is multiplied by dumping information without making it more digestible or discoverable. As such, transparency alone might obfuscate to such an extent that science becomes less accessible instead of more accessible, potentially fueling work pressure and mental disorders already too prevalent in scholarly research [@doi:10.1038/nbt.4089] if not implemented responsibly. Additionally, transparency is a form of (counter)surveillance [@isbn:9780262029735], facilitating audit cultures to check (and reprimand lack of) adherence to new policies. Increased bureaucracy and auditing might help explain why some researchers do not feel empowered by the idea of sharing everything they do [@doi:10.1177/1745691617739421] without such practices providing valuable changes to the knowledge production process. Even in spite of the increased transparent practices, the prevailing norm remains to communicate final versions of research projects instead of continuous updates on the messy underlying process.
+<!-- ; the money needed to --> <!-- participate has led to a
+collective debt burden of over $1.5 trillion --> <!-- in the USA for
+those who cannot afford to pay it out of pocket.  --> <!--
+https://www.timeshighereducation.com/comment/the-10-commandments-for-influencing-policymakers
+--> These are only two of the many interactions between issues of
+science and society. Other issues include that access to publications
+is so limited, many people resort to illegitimate means to gain access
+for legitimate purposes [@doi:10.1126/science.352.6285.508]. [It also
+happens that governments seek university interns to get
+access](https://therostrumblog.wordpress.com/2015/01/12/why-all-phd-students-should-do-a-policy-placement/)
+to inform policy. Additionally, in an attempt to manage the risks Open
+Access poses to their subscription models, the highly centralized
+oligarchy of academic publishers are shifting to business models
+resembling the problematic and data-exploitative models of
+Facebook. But even for the researchers, the cost to play in publishing
+Open Access is substantial and rising faster than inflation,
+reaffirming structural and global inequalities. This further extends
+inequalities in participation such as participation in scientific
+education, which is increasingly difficult as collective financing
+programs are replaced with individualized debt. Moreover, these issues
+do not even begin to deal with biased publication of results based on
+their statistical results, which distorts knowledge production. If the
+studied effects are not large (the low hanging fruit) or widely
+reproduced using open data, contradicting results are not difficult to
+find and confirmation bias is easily served. Moreover, intellectual
+property laws restrict our capabilities to harness produced knowledge
+(e.g., questionnaires) or limit the utilization of computing power for
+dealing with the ever increasing information overload in science. On
+top of all of this and more, systemic factors resulting in explicit
+and implicit individual or institutionalized ableism, ageism,
+classism, homophobia, racism, sexism, and transphobia multiply these
+struggles for already underrepresented scientists, making it probable
+they become even more underrepresented as time passes.
 
-Transparency alone is insufficient because it obfuscates and ultimately does not fundamentally change the knowledge generation process. As such, transparency in itself is an ameliorative and short-term process that does not facilitate long term sustainability in the epistemological process, but simply puts it in a more public arena. Through this public nature, we might improve some facets such as detecting data fabrication or irreproducibility, but we do not change how power is distributed and how the system functions, and ultimately who governs and controls the process of knowledge production and dissemination. We currently see power shifting from the old generation towards a new generation, but we need to change power structures to prevent similar issues of inertia arising when transparency in time will be insufficient (as I argue it already is). It is extremely difficult to ameliorate issues after the fact if the power structures remain entrenched. 
+<!-- , excluding many researchers from publishing with specific -->
+<!-- brands (journals), which remains important for [career --> <!--
+opportunities](https://peerj.com/preprints/27638) and --> <!--
+misschien volgorde reflecteren aan vorige paragraaf --> How can anyone
+create or expect valid, reproducible, and applicable knowledge if we
+work in an exclusionary system that hampers diversity of backgrounds
+and ideas, which discourages us to look at all of science and society
+intersectionally, where we have inherently selective access to already
+biased publications, where research behavior is increasingly
+surveilled for commodification, we are increasingly burdened with
+individual debt, and competition forces us to publish in a way that
+causes the natural selection of bad science? Problematically so, these
+are the conditions in which we are determining (amongst others) what
+drugs to test on animals and subsequently humans, how to change our
+policies, how to plan our cities, how to manage our crops, and how to
+build our institutions.
 
-The process of working open provides an additional layer to transparency and more fundamentally changes the knowledge generation process. Working open is a process of co-creation, where the outcome is not necessarily driven individualistically and then shared publicly as in purely transparent practices, but where individuals or teams collectively work towards a common goal and the inclusion of those teams is not on an invitation only basis. These teams can converge and disperse as required, with minimal barriers to entry. Working open stems from the open source community (e.g., [https://wiki.mozilla.org/Working_open](https://wiki.mozilla.org/Working_open)), where responsibility and power to create is distributed through lowered opportunity costs, heightened empowerment of individuals in participation, and increased collective returns through diverse participants and inputs. This empowerment to participate comes from collectively making information more digestible (e.g., documentation) as opposed to having people sort out the information themselves. As a consequence (ideally), when an open source project is not to your liking you may join the co-creating process and share your (ideas for) adjustments there. Or, you may create a copy and adjust it to your liking. As such, working open is a mutualistic and process-driven endeavor, vastly different from traditional output-drive research workflows. For such co-creation to be possible, there is the need for more than sole transparency; reuse requires permissions, co-creation requires contribution guidelines, accessible documentation, community engagement, and civil conduct to allow people to feel welcome and able to participate in that process regardless of their background. These kinds of co-creative projects are spreading beyond open source into science through for example the Psychological Science Accelerator [@doi:10.1126/science.aar4464].
-The process of co-creation is not without its own faults [e.g., gender biases in accepting contributions; @doi:10.7717/peerj-cs.111] and engaging underrepresented groups is an active responsibility to make sure the pool of co-creators becomes and stays inclusive of heterogeneous perspectives. Moreover, universities' exclusive, hierarchical nature and frequent deference to authority (amongst other toxic behaviors) has bred a scholarly culture that is not welcoming to people from more diverse- and non-traditional origins, which hampers the co-creating process. For example, in the U.S.A. 58% of all female university employees are estimated to have experienced sexual harassment [@doi:10.17226/24994] and graduate students are estimated to be six times as likely to experience mental illness when compared to the general population [@doi:10.1038/nbt.4089]. Sexism, racism, and other direct or indirect behaviors that create unnecessary mental stress are intolerable by themselves and prevent an environment where diverse co-creation can take place. Hence, co-creation necessitates culture change in universities to foster an equitable environment where such behaviors are addressed in practice and not only in policies. Only with a healthy culture that actively allows anyone to participate will such co-creation become possible and meaningful.
+After five years of research on understanding and improving the
+sustainability of science, I see no way around it: We need new systems
+to address these systemic issues simultaneously for everyone instead
+of fiddling with minor knobs when we are allowed to and instigate
+unequal development. Giving virtual stickers for sharing data is just
+not going to cut it when we talk about the sustainability of science
+in an encompassing way and egalitarian way.
 
-Equitable environments and co-creating processes may (more so) be a reality outside of universities than inside, making those spaces promising for raising the epistemological bar in science while at the same time providing a healthier climate for those participating in it. After all, scientific communities outside of universities are likely to be newer than these old institutions and still in the 'building-a-culture' phase that is less infested by the already existing incentive structures of science. For example, the Safecast community [[https://blog.safecast.org/](https://blog.safecast.org/); @doi:10.1088/0952-4746/36/2/S82] provides a co-creative process for collecting and analyzing radiation data. Open hardware is built by engineers in the community (e.g., [the nano bGeigei counter](https://blog.safecast.org/bgeigie-nano/)), which is distributed/purchased by individuals who want to contribute data, who in turn collect data that is aggregated in a [public database](https://api.safecast.org/) without restrictions to reuse. Researchers can subsequently freely reuse the data for scientific purposes [@doi:10.1016/j.jenvrad.2017.01.005;@doi:10.1016/j.jenvrad.2018.04.018] and  policy makers for policy purposes [@doi:10.1088/0952-4746/36/2/S82]. The individuals involved in parts of this process need not (but can) be involved with the other parts of the process, indicating the modular nature of co-creation. Other examples of such communities include the Biohacking community [@isbn:9780745332802]. If co-creation processes prove to be epistemologically more effective, universities may (and should) lose their role as the main creator of new knowledge in the future (which they have only played for a few centuries).
+If we want substantial change in science, we need to start building
+parallel scientific systems that seek to address all of its known
+issues in the broadest sense. In order to do this we need to integrate
+the critical study of scientific practices with critical studies of
+society, economics, organisations, information technology, and other
+relevant fields. Only that way will we be able to determine the proper
+scope of the issues that we need to address.
 
-Knowledge generation processes and their sustainability are inherently driven by those who fund it. The effect of politics on the direction of public research funds is particularly clear in the history of the Human Genome Project, where public funding was being pushed against by Republicans in the U.S.A. Congress [@isbn:9781983033223]. Public funding still has some potential for intervention when there is democratic representation involved. However, with private philanthropic funding the question of how those funders influence research programs and the larger research collective is also worth asking [@isbn:9781784786236]. For example, the Bill and Melinda Gates Foundation (BMGF) has attempted to do much for open science, but the Gates legacy at Microsoft was one of anti-open and co-creation [p.72; @isbn:9781784786236]. As a more specific example, the BMGF has created (temporary) special privileges where specific journals only allow open publishing for those funded by BMGF [@doi:10.1038/nature.2017.21299;@doi:10.1126/science.aal0767;@doi:10.1038/d41586-018-05729-2], as part of a push to make all their funded research publicly available. Such inequitable consequences can occur, but for private funders there are no accountability or governance mechanisms beyond legal proceedings. Such issues may work to the detriment of progress. The lack of accountability for philanthropic funders to the scholarly community is also troubling when progressive projects rely heavily or even fully depend on private philanthropic funders for their very existence. For example, the Center for Open Science (COS) seems to heavily rely on the Laura and John Arnold Foundation (LJAF) and others for its financial existence [receiving approximately `r round(5682866/(56357+182549+31482), 0)` dollars in non-federal funding for every one dollar of revenue in 2017, up from `r round(4398022/(23557+721438+24238), 0)` in 2016; @cos-finances]. Such potential dependencies are unobjectionable so long as they do not directly or indirectly affect the mission of the COS. However, the LJAF for example also funds algorithmic assessments in legal proceedings [@ljaf-psa], where some other algorithms have been indicated to contain racial bias [@propublica-report;@propublica-analysis], and funds the development and application of drones in police surveillance projects [@ljaf-surv]. These domains may seem unrelated to scientific research, but if we consider co-creative processes to be important, people need to feel like they are actually welcome to participate. The funding of projects that exacerbate inequities in society may breed a larger environment of distrust towards projects tied to such funders. Even if this image is only created through association of the COS and LJAF, not speaking up can seem to condone this behavior and result in homogenization of groups involved in the co-creative process. This becomes especially clear if we would replace LJAF in this scenario with philanthropic funders that oppose things like abortion or gay marriage. Due to financial dependencies there may be conflicts of interest for such projects to speak out against behaviors, which in turn harms the chances of a co-creative process by providing inadequate conditions for equal participation. These examples have not been chosen to lash out at these institutions but to show the larger systemic context and indirect effects funding streams and funding bodies' choices may have.
+We can use parallel structures to do more than simply shift the power
+to a new generation; we can use it to restructure and distribute
+power. To restructure power in such a way that when we learn about the
+immanent problems of the new systems we build, they can be more easily
+addressed. To distribute power such that those traditionally
+underrepresented finally become adequately represented.
 
-All things considered, progress since the proposals for scientific utopias I and II [@doi:10.1080/1047840X.2012.692215;@doi:10.1177/1745691612459058] has been considerable but future developments and actions require additional scope. The issues highlighted in the previous paragraphs, amongst others, serve as a basis for that extended scope. Utopias I and II ameliorated to the article-based system, assimilating some of the issues they wanted to overcome. One of my main concerns is that some of the developments so obviously fail key aspects of the scholarly communication functions and as such have substantial difficulties creating a hegemony of new practices and, ultimately, the utopia that has been key to so many people's thinking beyond these two proposals. I recognize that building a new hegemony of ideas that is coherent and practical takes time (I acknowledge my impatience), but there is also ample room for more improvement. Not only does scholarly research need more reform for epistemology's sake, there are pressing issues for science to contribute more to (e.g., climate change, see also the United Nations Sustainable Development Goals) that require us to do as much as we can to improve the knowledge generation processs.
+What should we demand of a parallel scientific system to make it a
+worthwhile undertaking in the first place? These demands can help
+formulate utopian expectations to strive towards.
 
-## Scientific Utopia III
+A worthwhile alternative scientific system must be widely applicable;
+usable on its own and in parallel with the current structures people
+might already be embedded in. This would allow double participation
+for researchers in institutions and does not force (early career)
+academics into zero-sum decisions that effectively exacerbate the
+institutionalized issues they are already facing. Researchers outside
+of academic institutions should not be forced to conform to the norms
+of the institutions that they are not a part of (or may have actively
+rejected if they left academia).
 
-<!-- I would like to see a scientific utopia that goes beyond addressing key issues that threaten the epistemological value of science itself; I would like to see a scientific utopia that makes it more rewarding to contribute to in the first place. We should not only have full access to knowledge, but that knowledge should be produced in a non-toxic environment. Just in my own personal circle, I know too many cases of unnecessary emotional distress caused by a system that is on the verge of breaking or is already broken. If anything, reforms should, in my opinion, take into account more what the effects are on people and whether they empower  -->
+Beyond minimizing barriers to participation in the scientific system,
+a worthwhile alternative must facilitate everyday research practices
+in the most concrete way. Too many proposals for change in the
+scientific system simply add to the already overburdening research
+process, making it more difficult to do and participate in research
+instead of less difficult. Especially, (quick) technocratic fixes are
+a problem: technocrats formulate rules to create a veil of progress,
+telling people what to do and not how they might go about doing
+so. Additionally, technocratic measures are inherently
+institution-specific and affirm top-down control mechanisms. A
+worthwhile alternative must go beyond top-down rules and make it
+easier to organize information, retrieve it, discuss it, and use it in
+the most concrete, everyday sense.
 
-For any utopia, a set of demands are necessary as design principles. For a scientific utopia specifically, by which I mean an optimal system that is beneficial for science, wider society, and ultimately humanity, I think we can and should demand the following (not in any particular order):
+Alternatives must provide a coherent and extensive answer to the
+functions of a scholarly communication system. These functions
+encompass access, registration, certification, archival, and
+incentives. By analyzing the limitations of the current system on
+these functions, we can design an alternative that differentiates
+itself substantially and completely. By providing a more coherent
+answer to these functions, it may also prove more convincing as the
+most adequate option for a bottom-up change.  <!-- For example,
+registration is --> <!-- incomplete due to biased publication. -->
 
-  1. science may be conducted anywhere at any time by any one without any restrictions
-  <!-- inclusivity, not just profs, etc but also independent researchers -->
-  <!-- we see the exclusivity of universities rise, preferring those from higher social strata already [p.133; @isbn:speaking-of-unis] and leenstelsel => needs to be more inclusive -->
-  <!-- remove the necessity to stick in toxic cultures -->
-  2. communicating science can take place anywhere by anyone (or anything) without any restrictions to participate
-  <!-- no  delays/reformatting/lack of -->
-  3. communication is made as frictionless as possible
-  <!-- minimal systemic literacy -->
-  <!-- no mediating straining factors, eg typesetting -->
-  4. full control and responsibility of form and time of communication by the person communicating
-  <!-- eg whistleblowers, retractions, corrections, remove bottlenecks -->
-  <!-- https://twitter.com/EikoFried/status/806647708853346306 -->
-  5. communication invites and facilitates continuous, constructive discussion
-  <!-- constructive discussoin encourages more communicatoin -->
-  <!-- engagement is key -->
-  6. communicated science can be consumed anywhere, by anyone (or anything), in any way, for any purpose
-  <!-- commercial services, machines -->
-  <!-- remove availability biases -->
-  7. revenue generated on top of the scientific system must directly fund new scientific efforts
-  <!-- publishers would be less objetionable if 10% of their profit margin went to fund science? -->
-  8. recognition of all types of communicated scientific efforts, regardless of shape, form, expected impact, or size
-  <!-- credit taxonomy, non-cyclists, programmers, database builders, theorists -->
-  <!-- teaching, simplifying, reviewing -->
-  9. scientific recognition values incrementality, validity, reliability, and replications over innovativeness, invalidity, unreliability, and spontaneous discovery
-  <!-- bullied into bad science -->
-  <!-- https://www.nature.com/articles/palcomms2016105#notes -->
-  10. immediate and full registration of communicated scientific efforts
-  <!-- remove publishability -->
-  11. immediate, full, and persistent archival for all communications
-  12. immediate, full, and persistent availablity of all communications
-  <!-- not just archive, we should have them available -->
-  <!-- * distributed curation -->
-  <!-- a lot of information is removed or censored -->
-  13. equitable funding processes
-  <!-- basic funding -->
-  <!-- no matthew effect http://www.pnas.org/content/early/2018/04/18/1719557115 -->
-  <!-- * cooperative pools of required materials -->
-  14. communicating science has minimal environmental impact
-  <!-- conferences have tremendous impact -->
-  <!-- the web uses quiute some energy -->
-  15. secure communication channels
-  16. participation is not subjected to state- or commercial surveillance and censorship
-  17. no monopoly- or oligarchy formation 
+<!-- Stepwise research -->
+<!-- communication helps manage project progress and prevents fooling -->
+<!-- oneself. By preempting the traditional publication stage, the -->
+<!-- possibility arises to communicate diverse sources of content in the -->
+<!-- same place. This must include things that are vital; data, code, -->
+<!-- materials are all key and communicable steps of research. By -->
+<!-- preempting traditional publications, researchers receive full autonomy -->
+<!-- and responsibility about when and what to communicate instead of third -->
+<!-- parties. All of this makes it possible to communicate research at any -->
+<!-- time, anywhere, in more ways, removing artificial hurdles .  <\!-- not -->
+<!-- make it more subject to audits etc -\-> -->
 
-These non-exhaustive demands only begin to create a scientific utopia jointly, because in isolation they fail to recognize- and address larger issues. For example, immediate archival is already possible but requires systemic literacy on the part of the person communicating (e.g., what archival service, what format, availability^[For example, in chapter 5 many GitHub links are no longer existent. This is because I had to personally pay into perpetuity to keep those files available and it was not practical for me to keep doing so. Even those who want to do their best sometimes fail to live up to these standards because of the complexity involved.]); by linking the demand for easy communication with the demand for archival, the utopia demands a communication system that allows for automatic archival when someone chooses to communicate while at the same time keeping that process simple. Such demands implied through combinations of individual demands (i.e., super demands) run into the hundreds and become increasingly complex. Hence I will not discuss each of the possible combinations but cover some of the more important and less discussed super demands next.
+A conscious renewal of values in science must occur and must be
+actively embedded in designs of an alternative scientific
+system. Incrementality, validity, reliability, and replications must
+become preferred over innovativeness, unreliability, and spontaneous
+isolated discovery as a result. There is nothing objective about what
+we subjectively decide to value. Only deep and active value changes
+allow for science incentive superstructures that substantially
+differentiate from the current and problematic system.  <!-- hier kan nog wel
+geschrapt worden, best wat herhaling -->
 
-First and foremost, facilitating the activity of contributing to science for anyone, anywhere, at any time in any form (demand 1) requires an active effort to minimize entry costs and perceived risks to do so (demands 2, 3, 4, 5, 6, 8). This would require the disassociation of universities as *the* place of science to *a* place of science [see also @doi:10.1371/journal.pone.0202120], but also by making universities *more* accessible to those who want to enter instead of *less* [e.g., by removing government support systems or making entry dependent on grades, both of which privilege the already privileged; @isbn:9781786631398]. It also requires the unit of recognized contributions to decrease and become more diverse, because the unit of scholarly articles is homogeneous, time consuming, and not the smallest possible contributory unit. Moreover, a smaller minimum contribution also allows for more specialized contributions to occur. Conversely, as the minimum unit of communication is larger, the amount of privilege and diverse sets of skills needed to go through the steps to make a contribution increases. If contributing can occur in any shape, form, size, and has at least the potential to be recognized, individuals are able to contribute part-time or as a hobby. This would make the act of contributing accessible to a larger set of people and allow the collective effort to benefit from a wider range of specializations. This will require making communication as easy as possible (demand 3), the communicated information digestible to those who want to contribute to it (demand 6), and making sure that all contributions are registered and recognizable (demand 10). Eliminating shadow work (i.e., unrecognized contributions; demand 4) is necessary to minimize opportunity costs of contributing. However, eliminating any barriers to communication requires more active, constructive, and continuous discussion (demand 5) such that contributions are actively improved upon to raise the epistemological value. Jointly, these demands may lower opportunity costs, empower people to contribute, and increase the diversity of contributions by effectively facilitating the previously described co-creative process.
-<!-- lowered opportunity costs, heightened empowerment of individuals in participation, and increased collective returns through diverse inputs -->
-<!-- empowerment to participate comes from collectively making information more digestible -->
-<!-- reuse requires permissions, co-creation requires contribution guidelines, accessible documentation, community engagement, and civil conduct to allow people to feel welcome and able to participate i -->
+Access to- and reuse of information must be complete and unlimited,
+further removing barriers to participating in research. Unlimited
+access and reuse means that intellectual control and censorship of
+information by state, commercial, or other actors needs to be
+mitigated by design. These actors benefit from bottlenecks in
+information flow that can be tightened, controlled, and
+surveilled. This is exactly how the services we now use are (being)
+designed. Hence, current centralized and restrictive models need to be
+replaced for decentralized and permissive models.
 
-Scientists already aim for active, constructive, and continuous discussion (demand 5), but often do so at tremendous environmental cost by in-person meetings (contra demand 14). For example, one round trip flight from Amsterdam to New York city is approximately two tonnes of $CO_2$ emissions; two tonnes is the maximum amount one person should produce per year in order to halt climate change ([myclimate.org](https://myclimate.org)). Such systemic output is not something any one individual can tackle, but it does require taking responsibility and addressing it by making substantial systemic changes. Taking into account the number of people attending conferences (frequently in the hundreds and sometimes in the thousands) from varying distances, the environmental impact of just one conference is tremendous. Hence, reducing the need for in-person conferences by improving the digital discussion space could greatly reduce the environmental impact of communicating and discussing research (demand 14) with minimal loss to knowledge generation and new forms of community engagement. By not fully harnessing digital possibilities for virtual conferencing (of which there are many), in-person meetings will remain the preferred option. Such travel for in-person meetings is also expensive and requires the possibility of taking the time, which effectively raises (intangible) entry costs to participate in a valuable aspect of research, undermining efforts to increase accessibility of science (contra demand 1).
+We must demand better ways to deal with information overload. Full
+access and unlimited reuse permits us to deal with information
+overload in better ways by making it easier to commodify ways to
+consume and discover information. Creating such a market was part of
+the European Digital Single Market strategy, but it failed to do
+so. Oligarchic control over access and reuse prevents this market from
+existing today. By demanding decentralization and distribution of
+information, we may break up the oligarchic publishing structures in
+science and oligarchic control over the data on which services to deal
+with information overload can be built. With this, we may start to
+understand, evaluate, and learn about the content we cannot possibly
+read manually.
 
-Productive digital platforms to engage in continuous discussion exist, but are far from utopic because they may limit access (contra demand 1), do not substantially change the evaluation of contributions (contra demands 8, 9), surveil users for revenue (contra demand 7, 16), and may give rise to new information monopolies or oligarchies (contra demand 2, 4, 17). The most notable example of such a digital platform is the popular for-profit platform ResearchGate, which has effectively reproduced Facebook's model in a research environment. They limit access to affiliated researchers (e.g,. by requiring a `.edu` e-mail address); repackage current problematic metrics into their own score [@lse-rg]; surveil users for data to monetize in the form of advertising of scientific products, services, or job postings [@rg-job]; lock-in users to their platform and make themselves the de facto gatekeeper of scholarly communication [@rg-tos]. These are all perfectly understandable business choices in a centralized Internet run on platforms; just like Facebook's role as a publisher is contested, ResearchGate's role is too and may need to moderate- and remove content such as for example hate speech if they are deemed the legal entity responsible. However, from a research perspective, an unintended consequence is that such moderation affects the accessibility of the platform by not allowing pseudonymous or anonymous postings [which eliminates anonymous whistleblowing or contributions like Student's $t$-distribution; @doi:10.1093/biomet/6.1.1] and may ultimately restrict legitimate postings for research purposes of what ResearchGate deems inappropriate content [e.g., nudity; @rg-tos] or encourage posting of copyright infringing materials [@doi:10.1126/science.aaq1560]. Efforts to make the communicated information more digestible is not even possible because platforms severely limit what and how the content may be consumed by preventing database building or reusing posted content. These kinds of conditions effectively make these platforms a digital type of publishing house, which would explain why traditional publishers are moving to own such digital platforms (e.g., Elsevier acquiring Mendeley, Bepress, Aries systems). An additional risk of such platformization is the opaque individual level gatekeeping that occurs through algorithmic systems, which recommend content specific to the user's data profile (which itself remains unknown to the user). Similar to Facebook and Twitter, this risks creating echo chambers, which in turn decreases the common ground for discussion [i.e., intersubjectivity; @isbn:9789462403338]. Algorithmic echo chambers make it increasingly difficult to get a diversity of views, polarizes opinions and undermines constructive and cooperative discussion (contra demand 5). These are some of the reasons why the platformization of science is problematic [see also @doi:10.1177/0306312718772086].
-<!-- co creative processes require moderation but at local scale not by an institution -->
+To better deal with information overload we must also demand new
+information structures. Transparency is often proposed as the key to
+reforming science, but without any structure to what is being made
+transparent there is a risk of obfuscation through overload instead of
+clarification through understanding. I have spent many hours trying to
+understand someone else's project structure with hundreds of
+files. This does not scale for sustainable information consumption and
+production. Questions about the unit of communication and what is
+communicable seem timely. At the same time as we create new
+information structures, we must demand flexible schema's that allow
+for heterogeneous ways of conducting research and prevent rigidity
+that homogenizes and may even straitjacket research.
 
-There is a (limited) window of opportunity for researchers to cooperatively build digital infrastructures to provide meaningful reform to make science more sustainable while preventing platformization. It is timely given that the momentum for change has not culminated in a new status quo yet, considering that no one digital platform has become dominant [@doi:10.1038/512126a]. Moreover, quite some fully private startups right now already take an infrastructure approach to try and fill this void [@doi:10.1038/d41586-017-08589-4] but these are at risk of not being environmentally scalable [@digicomist], are likely to reproduce or multiply systemic inequities already present [@isbn:9781784780432], or simply have a limited scope and do not address many of the demands I previously outlined (e.g., by limiting reuse of information). Hence, these proposals are problematic by design. If researchers aim to cooperatively create a new digital infrastructure, there is the opportunity for research to coopt (part of) the commercial space and make the generated revenue serve research (demand 7). This would also allow research communities to regain some form of governance from the private sphere that has been lost in recent decades through the managerialistic approach to managing science. It may be naive of me to think researchers can coopt the commercial space for research's benefit, but considering researchers are becoming increasingly aware that they are in the ultimate position to make demands from commercial entities, it does not seem too far fetched for utopia [e.g., @doi:10.1038/d41586-018-05191-0].
+Due to the delicate balances and interests that need to be sought, we
+must demand that these systems are built in an open, dialectical, and
+actively inclusive way. It is unacceptable to create new (temporary)
+exclusionary privileges in an attempt to make progress [e.g., the
+temporary Open Access privilege the Bill and Melinda Gates Foundation
+created; @doi:10.1038/nature.2017.21486]. This means that any form of
+oligarchic control over how these demands are implemented needs to be
+actively prevented and bottom-up procedures need to actively be
+promoted.  <!-- An --> <!-- inclusive and open dialectic, if it
+results in improved participation, --> <!-- may prevent groupthink and
+centralized control in what paths --> <!-- alternative systems take.
+--> <!-- Conversely, increasing exploitation of specific groups to -->
+<!-- make progress on a domain is also unacceptable (for example, a
+shift --> <!-- towards increased usage of MTurk workers [not
+volunteers] who get paid --> <!-- below minimum wage, to increase
+statistical power).  -->
 
-In chapters 8 and 9, I proposed one approach to co-creating a scholarly infrastructure that could lower opportunity costs and facilitates accessibility, smaller contributory units, and recognition of incremental science as part of promoting a co-creating process while also facilitating a wider conceptualization of the key functions of a scholarly communication system, without necessitating a zero-sum decision between systems. Initial versions of this decentralized infrastructure could be built today given appropriate resources and can exist in parallel with the current publication system, allowing researchers to start co-creating and making these (super)demands a reality. Additionally, it builds on a new Web protocol that could make the content more accessible to that half of the world's population who don't have (continuous) Internet access [current access systematically disadvantages specific regions and has gender disparities; @moz-ihr]. Its decentralized nature would also mitigate the issue of gatekeeping and facilitate building intersubjectivity by providing portals into each other's worlds of content (for more specifics on this, see Chapter 9). Moreover, this proposed scholarly infrastructure has at least three revenue models that can be implemented to make this effort sustainable, serve the research community, and improve our capability to produce, consume, and digest information. 
-First, services can be created to produce and consume content in more intuitive and diverse ways to help co-creation. For example, many studies use protocols that are easily captured with video, but are difficult to describe in text format. The infrastructure provides recognition to videos and a service might provide ways to post videos with machine readable context and annotations (e.g., timestamps of important events). This could be a worthwhile service for both production and consumption in the research process. Additionally, easy user interfaces to produce dynamic documents that now require extensive (digital) literacy [e.g., @isbn:9781138359338] would make these kinds of tools accessible to more researchers. These services would immediately add value because the user can communicate that content without restrictions, whereas opportunity costs of doing so are high when the manuscript needs to be submitted in Microsoft Word format. 
-Second, services can be created to facilitate the discovery of available content. By having all content open by design, all kinds of algorithmic- or human-curation mechanisms can be set up. With open content, we can extend the idea of 'Papers' [Tinder for preprints; @doi:10.1126/science.aan6980] and allow users to playfully discover new content that is increasingly curated to a set of preferences. For example, we might provide users with recommender systems that they can customize by altering the proportion of highly similar and highly dissimilar content. 
-Third, services to evaluate past- and future evolution of the content can be set up. The network structure proposed in chapters 8 and 9 becomes increasingly complicated to analyze as the network grows; services can capitalize on this by creating preset analyses that users can run on demand. As the complexity of the analysis and the size of the network  increases, it becomes more costly to buy the results. Researchers can then benefit from these analyses without needing to know how to run them themselves.
-If such revenue models built on commodifying how the knowledge is used instead of how knowledge is accessed and are cooperatively implemented with researchers, there is the opportunity to build these for the benefit of research itself by reinvesting part of the revenue into cooperative funds to be redistributed.
+We must demand systems that are sustainable for both
+knowledge production and the environment. Servers provide us with all
+kinds of digital services or are used to train machine learning
+algorithms, utilized in services. These consume substantial amounts of
+energy and are still often fossil-fuel based. In order to reduce
+emissions, we must also start imagining other kinds of researcher
+interactions or change the valuation of conference participation to
+reduce the need for face-to-face conferences and the accompanying
+flights. Any radical alternatives must be evaluated on their
+sustainability given the acute urgency of global warming.
 
-The proposed scholarly infrastructure would build on simultaneous efforts to (re-)decentralize the Web, which is tackling issues such as data ownership and user privacy. The implications of these efforts go beyond what I can describe here, but it is worth noting that joint efforts would contextualize the changes in scholarly communication in other societal issues. Moreover, there is a clear need to deal with these issues as legislation that moves to regulate data ownership on the Web also affects scientist's capacity to share materials (e.g., the European Union's General Data Protection Regulation). Moreover, if we simply go the route of platformization we risk neglecting the (recent) developments in society that are taking place around us regarding online platforms, liability, and content moderation.
+These demands in their totality produce a broad framework to build
+parallel structures that may start to substantially change the
+sustainability of science. Many scientific issues intersect with the
+societal issues that we are embedded in; ignoring this
+intersection harms making sustainable change. Reformist changes often
+lack this intersectionality by being highly specific, which ultimately
+results in more effort spent to achieve the same goals. In that sense,
+this framework is also useful to evaluate potential limitations of
+(reformist) proposals.
 
-It seems daunting to me personally to take such a wide perspective on the issues that science is facing, but it also shows the opportunity to improve drastically and potentially contribute to challenges that go beyond just science for the sake of science itself (e.g., the environment). There are a lot of changes to be made to get to a more sustainable science for both the people involved, the process of it, and the contributions produced, but it seems like a considerable amount of people are either willing to change or are actively working towards this change. This dissertation presented my personal motivations to contribute to these changes, my contributions to that end, and my larger perspective on the issues at hand. I may have proposed several practical ways forward, but I recognize that my thinking is way out there and likely to end up being just another idea in our constant evolution towards something better --- and that is a good thing. Only with a diverse set of ideas and initiatives can we experiment our way forward. Systemic problems require systemic reforms, but I think we should also not fool ourselves that all innovation is progress and constantly be critical of the steps we are planning to take.
+My work in the past five years has convinced me that radical thinking
+about the totality of current issues is necessary. Reformist thinking
+is conditional on the current system, whereas radical thinking is
+unconditioned. In that sense, reformist thinking accepts the very
+system it is trying to change --- which makes perfect sense if one
+explicitly or implicitly believes the current system mostly works (for
+them). Conversely, radicalism does not condition itself on the current
+system and reimagines what is necessary where it is necessary.
 
-<!-- 
-## Utopia in practice
+The fundamental question when choosing between reformism or radicalism
+is whether one thinks the current system mostly works. I consider that
+the current system, taken to its logical conclusion, does not work,
+hence, is unsustainable. For that reason, radical thinking is the only
+viable option. Nonetheless, there is a multiplicity of ways to think
+radically and achieve these demands. With pluralism of radical ideas,
+substantial change may happen. In the end, it does not matter who
+makes the change, but that the change happens.
 
-team of engineers creates schematics for co2 measurement device
-scientists validate the device
-a third party mass produces the device and uses part of the revenue for profit, part to fund applications of the device
-a teachers discover this and conspire to apply for a national project
-devices delivered to the teachers
-call to scientists for strict measurement protocol
-children go out and produce their first scientific contribution
-researchers join the data and analyze
-a retired educational researcher  -->
-<!-- to secure communications user-side rendering => machine readability => balance between form of communication and format => accessibility of files => -->
-<!-- ==> no monopoly/oligrachy -->

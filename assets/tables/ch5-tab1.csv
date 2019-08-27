@@ -1,0 +1,3 @@
+,,$H_0$,$H_1$
+Decision,$’H_0’$,"$1-\alpha$, true negative","$\beta$, false negative [Type II error]"
+,$’H_1’$,"$\alpha$, false positive [Type I error]","$1-\beta$, true positive"
