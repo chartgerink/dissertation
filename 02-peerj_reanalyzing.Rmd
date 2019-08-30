@@ -1,7 +1,8 @@
-# Reanalyzing Head et al. (2015): investigating the robustness of widespread _p_-hacking
+# Reanalyzing Head et al. (2015): investigating the robustness of widespread $p$-hacking
 
 ```{r echo=FALSE}
 suppressPackageStartupMessages(library(magrittr))
+suppressPackageStartupMessages(library(kableExtra))
 ```
 @doi:10.1371/journal.pbio.1002106 provided a large collection of $p$-values that, from their perspective, indicates widespread statistical significance seeking (i.e., $p$-hacking) throughout the sciences. This result has been questioned from an epistemological perspective because analyzing all reported $p$-values in research articles answers the supposedly inappropriate question of evidential value across all results [@doi:10.1037/xge0000104]. Adjacent to epistemological concerns, the robustness of widespread $p$-hacking in these data can be questioned due to the large variation in a priori choices with regards to data analysis. @doi:10.1371/journal.pbio.1002106 had to make several decisions with respect to the data analysis, which might have affected the results. In this chapter I evaluate the data analysis approach with which @doi:10.1371/journal.pbio.1002106 found widespread $p$-hacking and propose that this effect is not robust to several justifiable changes. The underlying models for their findings have been discussed in several preprints [e.g., @doi:10.7287/peerj.preprints.1266v1;@doi:10.6084/m9.figshare.1500901.v1] and publications [e.g., @doi:10.1037/xge0000104;@doi:10.1371/journal.pone.0149144], but the data have not extensively been reanalyzed for robustness.
 
@@ -17,8 +18,7 @@ In the original paper, over two million reported $p$-values were mined from the 
 
 @doi:10.1371/journal.pbio.1002106 their data analysis approach focused on comparing frequencies in the last and penultimate bins from .05 at a binwidth of .005 (i.e., $.04<p< .045$ versus $.045<p<.05$). Based on the tenet that a sufficient condition for $p$-hacking is a systematic bump of $p$-values below .05 [@doi:10.1037/a0033242], sufficient evidence for $p$-hacking is present if the last bin has a significantly higher frequency than the penultimate bin in a binomial test. Applying the binomial test (i.e., Caliper test) to two frequency bins has previously been used in publication bias research [@doi:10.1177/1532673x09350979;@doi:10.1371/journal.pone.0105825], applied here specifically to test for $p$-hacking behaviors that result in a bump below .05. The binwidth of .005 and the bins $.04<p<.045$ and $.045<p<.05$ were chosen by @doi:10.1371/journal.pbio.1002106 because they expected the signal of this form of $p$-hacking to be strongest in this part of the distribution (regions of the $p$-value distribution closer to zero are more likely to contain evidence of true effects than regions close to .05). They excluded $p=.05$ "because [they] suspect[ed] that many authors do not regard $p=0.05$ as significant" (p.4). 
 
-```{r head-hist, fig.cap="Histograms of p-values as selected in Head et al. (in green; $.04 < p < .045$ versus $.045 < p < .05$), the significant $p$-value distribution as selected in Head et al. (in grey; $0<p\\leq.00125$, $.00125<p\\leq.0025$, ..., $.0475<p\\leq.04875$, $.04875<p<.05$, binwidth = .00125). The green and grey histograms exclude $p=.045$ and $p=.05$; the black histogram shows the frequencies of results that are omitted because of this ($.04375<p\\leq.045$ and $.04875<p\\leq.05$, binwidth = .00125).", out.width="100%", fig.align="center", echo=FALSE}
-par(mar = c(0, 0, 0, 0))
+```{r head-hist, fig.cap="Histograms of p-values as selected in Head et al. (in green; $.04 < p < .045$ versus $.045 < p < .05$), the significant $p$-value distribution as selected in Head et al. (in grey; $0<p\\leq.00125$, $.00125<p\\leq.0025$, ..., $.0475<p\\leq.04875$, $.04875<p<.05$, binwidth = .00125). The green and grey histograms exclude $p=.045$ and $p=.05$; the black histogram shows the frequencies of results that are omitted because of this ($.04375<p\\leq.045$ and $.04875<p\\leq.05$, binwidth = .00125).", out.width="80%", fig.align="center", echo=FALSE}
 knitr::include_graphics('assets/figures/head-fig1.png', auto_pdf = TRUE)
 ```
 
@@ -48,9 +48,18 @@ caliper <- read.csv('assets/tables/caliper-table.csv', header = TRUE)
 # caliper$X.1 <- c('')
 
 names(caliper)[1:2] <- ''
-knitr::kable(caliper,
+
+if (!knitr::is_html_output()) {
+  knitr::kable(caliper, format = 'latex',
              caption = "Results of the reanalysis across various binwidths (i.e., .00125, .005, .01) and different sections of the paper.",
-             booktabs=TRUE, escape = FALSE)
+             booktabs=TRUE, escape = FALSE) %>%
+  kableExtra::kable_styling(latex_options = c('striped', 'hold_position'), position = 'center')
+} else {
+  knitr::kable(caliper,
+             caption = "Results of the reanalysis across various binwidths (i.e., .00125, .005, .01) and different sections of the paper.",
+             booktabs=TRUE, escape = FALSE) %>%
+  kableExtra::kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive", full_width = F))
+  }
 ```
 
 ## Discussion

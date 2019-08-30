@@ -39,10 +39,18 @@ With a chronological ordering of various modular research outputs and their pare
 
 ```{r asyougo-tab1, echo = FALSE}
 df <- read.csv('assets/tables/as-you-go-modules.csv')
+df[is.na(df)] <- ''
 names(df)[1] <- ''
-knitr::kable(df, caption = 'Directional adjacency matrix for Figure 1. modules are ordered according to time (top-bottom in Figure 1). Rows indicate the source module, columns indicate the target module.', booktabs = TRUE) %>%
-  kable_styling(latex_options = c('striped', 'scale_down')) %>%
+
+if (!knitr::is_html_output()) {
+knitr::kable(df, caption = 'Directional adjacency matrix for Figure 1. modules are ordered according to time (top-bottom in Figure 1). Rows indicate the source module, columns indicate the target module.', booktabs = TRUE, format = 'latex') %>%
+  kableExtra::kable_styling(latex_options = c('striped', 'hold_position', 'scale_down'), position = 'center')
+} else {
+  knitr::kable(df, caption = 'Directional adjacency matrix for Figure 1. modules are ordered according to time (top-bottom in Figure 1). Rows indicate the source module, columns indicate the target module.', booktabs = TRUE) %>%
+  kableExtra::kable_styling(position = 'center',
+                            bootstrap_options = c("striped", "hover", "condensed", "responsive", full_width = F)) %>%
   kableExtra::scroll_box(width="100%")
+}
 ```
 
 With a directional adjacency matrix, countless network indicators can be calculated that could be useful in research evaluation depending on the questions asked. However, not all network indicators are directly applicable because a time based component is included in the network (i.e., new outputs cannot refer to even newer outputs). Below, we propose some basic network indicators for evaluating past and future research outputs.

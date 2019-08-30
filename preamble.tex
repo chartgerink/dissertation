@@ -1,5 +1,5 @@
-
-\setcounter{secnumdepth}{1}
+\usepackage{setspace}
+\setcounter{secnumdepth}{0}
 \setcounter{tocdepth}{0}
 \usepackage[english]{babel}
 \usepackage[giveninits=false,hyperref]{biblatex}
@@ -29,32 +29,16 @@
 \usepackage{wrapfig}
 \usepackage[margin=0.5in]{geometry}
 \makeindex
-\setlistdepth{20}
-
-\setlist[itemize,1]{label=\textbullet}
-\setlist[itemize,2]{label=\textbullet}
-\setlist[itemize,3]{label=\textbullet}
-\setlist[itemize,4]{label=\textbullet}
-\setlist[itemize,5]{label=\textbullet}
-\setlist[itemize,6]{label=\textbullet}
-\setlist[itemize,7]{label=\textbullet}
-\setlist[itemize,8]{label=\textbullet}
-\setlist[itemize,9]{label=\textbullet}
-\setlist[itemize,10]{label=\textbullet}
-\setlist[itemize,11]{label=\textbullet}
-\setlist[itemize,12]{label=\textbullet}
-\setlist[itemize,13]{label=\textbullet}
-\setlist[itemize,14]{label=\textbullet}
-\setlist[itemize,15]{label=\textbullet}
-\setlist[itemize,16]{label=\textbullet}
-\setlist[itemize,17]{label=\textbullet}
-\setlist[itemize,18]{label=\textbullet}
-\setlist[itemize,19]{label=\textbullet}
-\setlist[itemize,20]{label=\textbullet}
-
-\renewlist{itemize}{itemize}{20}
-
 \pagestyle{plain}
 
 \usepackage{fancyhdr}
 \setlength{\headheight}{1pt}
+\setlength{\parskip}{0mm plus 1mm minus 0mm}
+\setlength{\parindent}{8mm} % Default is 15pt.
+
+\usepackage{etoolbox}
+\AfterEndEnvironment{hangparas}{\addvspace{0.67\baselineskip}}
+\usepackage[notquote]{hanging}
+
+%% \begin{hangparas}{1cm}{1}
+%% \end{hangparas}

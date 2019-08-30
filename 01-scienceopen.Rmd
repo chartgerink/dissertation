@@ -1,4 +1,4 @@
-# (PART) Understanding research practice {-} 
+# (PART) Understanding sustainable science {-}
 
 # Research practices and assessment of research misconduct
 
@@ -57,10 +57,17 @@ library(magrittr)
 norms <- read.csv('assets/tables/norm-table.csv', header = TRUE)
 names(norms)[2] <- 'Description norm'
 
+if (!knitr::is_html_output()) {
+knitr::kable(norms, format = 'latex',
+             caption = "Six norms of responsible conduct of research and their respective
+  counternorms.", booktabs = TRUE) %>%
+  kable_styling(latex_options = c('striped', 'scale_down', 'hold_position'))
+} else {
 knitr::kable(norms,
              caption = "Six norms of responsible conduct of research and their respective
   counternorms.", booktabs = TRUE) %>%
- kable_styling(latex_options = c('striped', 'scale_down', 'hold_position'))
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive", full_width = F))
+}
 ```
 
 
@@ -193,12 +200,17 @@ similar projects (like replication studies;
 prune <- read.csv('assets/tables/prune-and-add.csv', header = TRUE)
 names(prune)[2] <- 'Summary of contents'
 
-knitr::kable(prune,
-             caption = "Project management folder structure, which can be pruned and added
-to in order to meet specific research needs. This folder structure can
-be duplicated as an OSF project at osf.io/4sdn3.",
+if (!knitr::is_html_output()) {
+knitr::kable(prune, format = 'latex',
+             caption = "Project management folder structure, which can be pruned and added to in order to meet specific research needs. This folder structure can be duplicated as an OSF project at https://osf.io/4sdn3.",
   booktabs=TRUE) %>%
- kable_styling(latex_options = c('striped', 'hold_position', 'scale_down'))
+  kableExtra::kable_styling(latex_options = c('striped', 'hold_position', 'scale_down'))
+} else {
+knitr::kable(prune,
+             caption = "Project management folder structure, which can be pruned and added to in order to meet specific research needs. This folder structure can be duplicated as an OSF project at https://osf.io/4sdn3.",
+  booktabs=TRUE) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive", full_width = F))
+}
 ```
 
 This suggested project structure also includes a folder to include

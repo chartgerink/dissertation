@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>A Examining statistical properties of the Fisher test | Contributions towards understanding and building sustainable science</title>
+  <meta name="description" content="PhD dissertation by CHJ Hartgerink, written during 2014-2019, mostly at Tilburg University." />
+  <meta name="generator" content="bookdown 0.10 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="A Examining statistical properties of the Fisher test | Contributions towards understanding and building sustainable science" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="PhD dissertation by CHJ Hartgerink, written during 2014-2019, mostly at Tilburg University." />
+  <meta name="github-repo" content="chartgerink/dissertation" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="A Examining statistical properties of the Fisher test | Contributions towards understanding and building sustainable science" />
+  
+  <meta name="twitter:description" content="PhD dissertation by CHJ Hartgerink, written during 2014-2019, mostly at Tilburg University." />
+  
+
+<meta name="author" content="Chris Hubertus Joseph Hartgerink" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="epilogue.html">
+<link rel="next" href="effect-computation.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Prologue</a></li>
+<li class="part"><span><b>I Understanding sustainable science</b></span></li>
+<li class="chapter" data-level="1" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html"><i class="fa fa-check"></i><b>1</b> Research practices and assessment of research misconduct</a><ul>
+<li class="chapter" data-level="1.1" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#responsible-conduct-of-research"><i class="fa fa-check"></i><b>1.1</b> Responsible conduct of research</a><ul>
+<li class="chapter" data-level="1.1.1" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#what-is-it"><i class="fa fa-check"></i><b>1.1.1</b> What is it?</a></li>
+<li class="chapter" data-level="1.1.2" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#what-do-researchers-do"><i class="fa fa-check"></i><b>1.1.2</b> What do researchers do?</a></li>
+<li class="chapter" data-level="1.1.3" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#improving-responsible-conduct"><i class="fa fa-check"></i><b>1.1.3</b> Improving responsible conduct</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#questionable-research-practices"><i class="fa fa-check"></i><b>1.2</b> Questionable research practices</a><ul>
+<li class="chapter" data-level="1.2.1" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#what-is-it-1"><i class="fa fa-check"></i><b>1.2.1</b> What is it?</a></li>
+<li class="chapter" data-level="1.2.2" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#what-do-researchers-do-1"><i class="fa fa-check"></i><b>1.2.2</b> What do researchers do?</a></li>
+<li class="chapter" data-level="1.2.3" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#how-can-it-be-prevented"><i class="fa fa-check"></i><b>1.2.3</b> How can it be prevented?</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#research-misconduct"><i class="fa fa-check"></i><b>1.3</b> Research misconduct</a><ul>
+<li class="chapter" data-level="1.3.1" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#what-is-it-2"><i class="fa fa-check"></i><b>1.3.1</b> What is it?</a></li>
+<li class="chapter" data-level="1.3.2" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#what-do-researchers-do-2"><i class="fa fa-check"></i><b>1.3.2</b> What do researchers do?</a></li>
+<li class="chapter" data-level="1.3.3" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#how-can-it-be-prevented-1"><i class="fa fa-check"></i><b>1.3.3</b> How can it be prevented?</a></li>
+</ul></li>
+<li class="chapter" data-level="1.4" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#conclusion"><i class="fa fa-check"></i><b>1.4</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html"><a href="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html"><i class="fa fa-check"></i><b>2</b> Reanalyzing Head et al. (2015): investigating the robustness of widespread <span class="math inline">\(p\)</span>-hacking</a><ul>
+<li class="chapter" data-level="2.1" data-path="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html"><a href="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html#data-and-methods"><i class="fa fa-check"></i><b>2.1</b> Data and methods</a></li>
+<li class="chapter" data-level="2.2" data-path="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html"><a href="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html#reanalysis-results"><i class="fa fa-check"></i><b>2.2</b> Reanalysis results</a></li>
+<li class="chapter" data-level="2.3" data-path="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html"><a href="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html#discussion"><i class="fa fa-check"></i><b>2.3</b> Discussion</a></li>
+<li class="chapter" data-level="2.4" data-path="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html"><a href="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html#limitations-and-conclusion"><i class="fa fa-check"></i><b>2.4</b> Limitations and conclusion</a></li>
+<li class="chapter" data-level="2.5" data-path="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html"><a href="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html#supporting-information"><i class="fa fa-check"></i><b>2.5</b> Supporting Information</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><i class="fa fa-check"></i><b>3</b> Distributions of p-values between .01-.05 in psychology: what is going on?</a><ul>
+<li class="chapter" data-level="3.0.1" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#how-qrps-relate-to-distributions-of-p-values"><i class="fa fa-check"></i><b>3.0.1</b> How QRPs relate to distributions of <em>p</em>-values</a></li>
+<li class="chapter" data-level="3.0.2" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#previous-findings"><i class="fa fa-check"></i><b>3.0.2</b> Previous findings</a></li>
+<li class="chapter" data-level="3.0.3" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#extensions-of-previous-studies"><i class="fa fa-check"></i><b>3.0.3</b> Extensions of previous studies</a></li>
+<li class="chapter" data-level="3.1" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#data-and-methods-1"><i class="fa fa-check"></i><b>3.1</b> Data and methods</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#data"><i class="fa fa-check"></i><b>3.1.1</b> Data</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#methods"><i class="fa fa-check"></i><b>3.2</b> Methods</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#caliper-test"><i class="fa fa-check"></i><b>3.2.1</b> Caliper test</a></li>
+<li class="chapter" data-level="3.2.2" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#measures-based-on-p-value-distributions"><i class="fa fa-check"></i><b>3.2.2</b> Measures based on <span class="math inline">\(p\)</span>-value distributions</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#results-and-discussion"><i class="fa fa-check"></i><b>3.3</b> Results and discussion</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#reported-p-values"><i class="fa fa-check"></i><b>3.3.1</b> Reported <span class="math inline">\(p\)</span>-values</a></li>
+<li class="chapter" data-level="3.3.2" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#recalculated-p-value-distributions"><i class="fa fa-check"></i><b>3.3.2</b> Recalculated <span class="math inline">\(p\)</span>-value distributions</a></li>
+<li class="chapter" data-level="3.3.3" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#excessive-significance-over-time"><i class="fa fa-check"></i><b>3.3.3</b> Excessive significance over time</a></li>
+<li class="chapter" data-level="3.3.4" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#results-of-two-measures-based-on-modeling-p-value-distributions"><i class="fa fa-check"></i><b>3.3.4</b> Results of two measures based on modeling <span class="math inline">\(p\)</span>-value distributions</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#limitations-and-conclusions"><i class="fa fa-check"></i><b>3.4</b> Limitations and conclusions</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html"><i class="fa fa-check"></i><b>4</b> Too good to be false: Nonsignificant results revisited</a><ul>
+<li class="chapter" data-level="4.1" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#theoretical-framework"><i class="fa fa-check"></i><b>4.1</b> Theoretical framework</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#distributions-of-p-values"><i class="fa fa-check"></i><b>4.1.1</b> Distributions of <em>p</em>-values</a></li>
+<li class="chapter" data-level="4.1.2" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#testing-for-false-negatives-the-fisher-test"><i class="fa fa-check"></i><b>4.1.2</b> Testing for false negatives: the Fisher test</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#application-1-evidence-of-false-negatives-in-articles-across-eight-major-psychology-journals"><i class="fa fa-check"></i><b>4.2</b> Application 1: Evidence of false negatives in articles across eight major psychology journals</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#method"><i class="fa fa-check"></i><b>4.2.1</b> Method</a></li>
+<li class="chapter" data-level="4.2.2" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#results"><i class="fa fa-check"></i><b>4.2.2</b> Results</a></li>
+<li class="chapter" data-level="4.2.3" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#expected-effect-size-distribution."><i class="fa fa-check"></i><b>4.2.3</b> Expected effect size distribution.</a></li>
+<li class="chapter" data-level="4.2.4" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#evidence-of-false-negatives-in-articles."><i class="fa fa-check"></i><b>4.2.4</b> Evidence of false negatives in articles.</a></li>
+<li class="chapter" data-level="4.2.5" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#discussion-1"><i class="fa fa-check"></i><b>4.2.5</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#application-2-evidence-of-false-negative-gender-effects-in-eight-major-psychology-journals"><i class="fa fa-check"></i><b>4.3</b> Application 2: Evidence of false negative gender effects in eight major psychology journals</a><ul>
+<li class="chapter" data-level="4.3.1" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#method-1"><i class="fa fa-check"></i><b>4.3.1</b> Method</a></li>
+<li class="chapter" data-level="4.3.2" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#results-1"><i class="fa fa-check"></i><b>4.3.2</b> Results</a></li>
+<li class="chapter" data-level="4.3.3" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#discussion-2"><i class="fa fa-check"></i><b>4.3.3</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#application-3-reproducibility-project-psychology"><i class="fa fa-check"></i><b>4.4</b> Application 3: Reproducibility Project Psychology</a><ul>
+<li class="chapter" data-level="4.4.1" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#method-2"><i class="fa fa-check"></i><b>4.4.1</b> Method</a></li>
+<li class="chapter" data-level="4.4.2" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#results-2"><i class="fa fa-check"></i><b>4.4.2</b> Results</a></li>
+<li class="chapter" data-level="4.4.3" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#discussion-3"><i class="fa fa-check"></i><b>4.4.3</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#general-discussion"><i class="fa fa-check"></i><b>4.5</b> General Discussion</a><ul>
+<li class="chapter" data-level="4.5.1" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#limitations-and-further-research"><i class="fa fa-check"></i><b>4.5.1</b> Limitations and further research</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="statistical-results-content-mining-psychology-articles-for-statistical-test-results.html"><a href="statistical-results-content-mining-psychology-articles-for-statistical-test-results.html"><i class="fa fa-check"></i><b>5</b> 688,112 Statistical Results: Content Mining Psychology Articles for Statistical Test Results</a><ul>
+<li class="chapter" data-level="5.1" data-path="statistical-results-content-mining-psychology-articles-for-statistical-test-results.html"><a href="statistical-results-content-mining-psychology-articles-for-statistical-test-results.html#data-description"><i class="fa fa-check"></i><b>5.1</b> Data description</a></li>
+<li class="chapter" data-level="5.2" data-path="statistical-results-content-mining-psychology-articles-for-statistical-test-results.html"><a href="statistical-results-content-mining-psychology-articles-for-statistical-test-results.html#methods-1"><i class="fa fa-check"></i><b>5.2</b> Methods</a></li>
+<li class="chapter" data-level="5.3" data-path="statistical-results-content-mining-psychology-articles-for-statistical-test-results.html"><a href="statistical-results-content-mining-psychology-articles-for-statistical-test-results.html#usage-notes"><i class="fa fa-check"></i><b>5.3</b> Usage notes</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html"><i class="fa fa-check"></i><b>6</b> Detection of data fabrication using statistical tools</a><ul>
+<li class="chapter" data-level="6.1" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#theoretical-framework-1"><i class="fa fa-check"></i><b>6.1</b> Theoretical framework</a><ul>
+<li class="chapter" data-level="6.1.1" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#detecting-data-fabrication-in-summary-statistics"><i class="fa fa-check"></i><b>6.1.1</b> Detecting data fabrication in summary statistics</a></li>
+<li class="chapter" data-level="6.1.2" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#detecting-data-fabrication-in-raw-data"><i class="fa fa-check"></i><b>6.1.2</b> Detecting data fabrication in raw data</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#study-1---detecting-fabricated-summary-statistics"><i class="fa fa-check"></i><b>6.2</b> Study 1 - detecting fabricated summary statistics</a><ul>
+<li class="chapter" data-level="6.2.1" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#methods-2"><i class="fa fa-check"></i><b>6.2.1</b> Methods</a></li>
+<li class="chapter" data-level="6.2.2" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#results-3"><i class="fa fa-check"></i><b>6.2.2</b> Results</a></li>
+<li class="chapter" data-level="6.2.3" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#discussion-4"><i class="fa fa-check"></i><b>6.2.3</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#study-2---detecting-fabricated-individual-level-data"><i class="fa fa-check"></i><b>6.3</b> Study 2 - detecting fabricated individual level data</a><ul>
+<li class="chapter" data-level="6.3.1" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#methods-3"><i class="fa fa-check"></i><b>6.3.1</b> Methods</a></li>
+<li class="chapter" data-level="6.3.2" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#results-4"><i class="fa fa-check"></i><b>6.3.2</b> Results</a></li>
+<li class="chapter" data-level="6.3.3" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#discussion-5"><i class="fa fa-check"></i><b>6.3.3</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#general-discussion-1"><i class="fa fa-check"></i><b>6.4</b> General discussion</a></li>
+</ul></li>
+<li class="part"><span><b>II Improving science</b></span></li>
+<li class="chapter" data-level="7" data-path="extracting-data-from-vector-figures-in-scholarly-articles.html"><a href="extracting-data-from-vector-figures-in-scholarly-articles.html"><i class="fa fa-check"></i><b>7</b> Extracting data from vector figures in scholarly articles</a><ul>
+<li class="chapter" data-level="7.1" data-path="extracting-data-from-vector-figures-in-scholarly-articles.html"><a href="extracting-data-from-vector-figures-in-scholarly-articles.html#method-3"><i class="fa fa-check"></i><b>7.1</b> Method</a><ul>
+<li class="chapter" data-level="7.1.1" data-path="extracting-data-from-vector-figures-in-scholarly-articles.html"><a href="extracting-data-from-vector-figures-in-scholarly-articles.html#extraction-procedure"><i class="fa fa-check"></i><b>7.1.1</b> Extraction procedure</a></li>
+<li class="chapter" data-level="7.1.2" data-path="extracting-data-from-vector-figures-in-scholarly-articles.html"><a href="extracting-data-from-vector-figures-in-scholarly-articles.html#corpus"><i class="fa fa-check"></i><b>7.1.2</b> Corpus</a></li>
+<li class="chapter" data-level="7.1.3" data-path="extracting-data-from-vector-figures-in-scholarly-articles.html"><a href="extracting-data-from-vector-figures-in-scholarly-articles.html#documentation"><i class="fa fa-check"></i><b>7.1.3</b> Documentation</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="extracting-data-from-vector-figures-in-scholarly-articles.html"><a href="extracting-data-from-vector-figures-in-scholarly-articles.html#results-5"><i class="fa fa-check"></i><b>7.2</b> Results</a></li>
+<li class="chapter" data-level="7.3" data-path="extracting-data-from-vector-figures-in-scholarly-articles.html"><a href="extracting-data-from-vector-figures-in-scholarly-articles.html#discussion-6"><i class="fa fa-check"></i><b>7.3</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><i class="fa fa-check"></i><b>8</b> As-you-go instead of after-the-fact: A network approach to scholarly communication and evaluation</a><ul>
+<li class="chapter" data-level="8.1" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#network-structure"><i class="fa fa-check"></i><b>8.1</b> Network structure</a></li>
+<li class="chapter" data-level="8.2" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#indicators"><i class="fa fa-check"></i><b>8.2</b> Indicators</a></li>
+<li class="chapter" data-level="8.3" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#use-cases"><i class="fa fa-check"></i><b>8.3</b> Use cases</a><ul>
+<li class="chapter" data-level="8.3.1" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#funders"><i class="fa fa-check"></i><b>8.3.1</b> Funders</a></li>
+<li class="chapter" data-level="8.3.2" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#universities"><i class="fa fa-check"></i><b>8.3.2</b> Universities</a></li>
+<li class="chapter" data-level="8.3.3" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#individuals"><i class="fa fa-check"></i><b>8.3.3</b> Individuals</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#discussion-7"><i class="fa fa-check"></i><b>8.4</b> Discussion</a></li>
+<li class="chapter" data-level="8.5" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#conclusion-1"><i class="fa fa-check"></i><b>8.5</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><i class="fa fa-check"></i><b>9</b> Verified, shared, modular, and provenance based research communication with the Dat protocol</a><ul>
+<li class="chapter" data-level="9.1" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#dat-protocol"><i class="fa fa-check"></i><b>9.1</b> Dat protocol</a></li>
+<li class="chapter" data-level="9.2" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#verified-modular-scholarly-communication"><i class="fa fa-check"></i><b>9.2</b> Verified modular scholarly communication</a><ul>
+<li class="chapter" data-level="9.2.1" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#scholarly-profiles"><i class="fa fa-check"></i><b>9.2.1</b> Scholarly profiles</a></li>
+<li class="chapter" data-level="9.2.2" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#scholarly-modules"><i class="fa fa-check"></i><b>9.2.2</b> Scholarly modules</a></li>
+<li class="chapter" data-level="9.2.3" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#verification"><i class="fa fa-check"></i><b>9.2.3</b> Verification</a></li>
+<li class="chapter" data-level="9.2.4" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#prototype"><i class="fa fa-check"></i><b>9.2.4</b> Prototype</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#discussion-8"><i class="fa fa-check"></i><b>9.3</b> Discussion</a></li>
+<li class="chapter" data-level="9.4" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#limitations"><i class="fa fa-check"></i><b>9.4</b> Limitations</a></li>
+<li class="chapter" data-level="9.5" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#supporting-information-1"><i class="fa fa-check"></i><b>9.5</b> Supporting Information</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="summary.html"><a href="summary.html"><i class="fa fa-check"></i>Summary</a></li>
+<li class="chapter" data-level="" data-path="epilogue.html"><a href="epilogue.html"><i class="fa fa-check"></i>Epilogue</a></li>
+<li class="appendix"><span><b>Appendices</b></span></li>
+<li class="chapter" data-level="A" data-path="examining-statistical-properties-of-the-fisher-test.html"><a href="examining-statistical-properties-of-the-fisher-test.html"><i class="fa fa-check"></i><b>A</b> Examining statistical properties of the Fisher test</a></li>
+<li class="chapter" data-level="B" data-path="effect-computation.html"><a href="effect-computation.html"><i class="fa fa-check"></i><b>B</b> Effect computation</a></li>
+<li class="chapter" data-level="C" data-path="example-of-statcheck-report-for-pubpeer.html"><a href="example-of-statcheck-report-for-pubpeer.html"><i class="fa fa-check"></i><b>C</b> Example of <code>statcheck</code> report for PubPeer</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Contributions towards understanding and building sustainable science</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="examining-statistical-properties-of-the-fisher-test" class="section level1">
+<h1><span class="header-section-number">A</span> Examining statistical properties of the Fisher test</h1>
+<p>The Fisher test to detect false negatives is only useful if it is powerful enough to detect evidence of at least one false negative result in papers with few nonsignificant results. Therefore we examined the specificity and sensitivity of the Fisher test to test for false negatives, with a simulation study of the one sample <span class="math inline">\(t\)</span>-test. Throughout this chapter, we apply the Fisher test with <span class="math inline">\(\alpha_{Fisher}=0.10\)</span>, because tests that inspect whether results are “too good to be true” typically also use alpha levels of 10% <span class="citation">(Sterne, Gavaghan, and Egger <a href="#ref-doi:10.1016/s0895-43560000242-0">2000</a>; Ioannidis and Trikalinos <a href="#ref-doi:10.1177/1740774507079441">2007</a>; Francis <a href="#ref-doi:10.3758/s13423-012-0227-9">2012</a>)</span>. The simulation procedure was carried out for conditions in a three-factor design, where power of the Fisher test was simulated as a function of sample size <span class="math inline">\(N\)</span>, effect size <span class="math inline">\(\eta\)</span>, and <span class="math inline">\(k\)</span> test results. The three factor design was a 3 (sample size <span class="math inline">\(N\)</span>: 33, 62, 119) by 100 (effect size <span class="math inline">\(\eta\)</span>: .00, .01, .02, …, .99) by 18 (<span class="math inline">\(k\)</span> test results: 1, 2, 3, …, 10, 15, 20, …, 50) design, resulting in 5,400 conditions. The levels for sample size were determined based on the 25th, 50th, and 75th percentile for the degrees of freedom (<span class="math inline">\(df2\)</span>) in the observed dataset for Application 1. Each condition contained 10,000 simulations. The power of the Fisher test for one condition was calculated as the proportion of significant Fisher test results given <span class="math inline">\(\alpha_{Fisher}=0.10\)</span>. If the power for a specific effect size <span class="math inline">\(\eta\)</span> was <span class="math inline">\(\geq99.5\%\)</span>, power for larger effect sizes were set to 1.</p>
+<p>We simulated false negative <span class="math inline">\(p\)</span>-values according to the following six steps (see Figure <a href="examining-statistical-properties-of-the-fisher-test.html#fig:appendix5a">A.1</a>. First, we determined the critical value under the null distribution. Second, we determined the distribution under the alternative hypothesis by computing the non-centrality parameter as <span class="math inline">\(\delta=(\eta^2/1-\eta^2)N\)</span> <span class="citation">(Steiger and Fouladi <a href="#ref-Steiger1997-qq">1997</a>; Smithson <a href="#ref-doi:10.1177/00131640121971392">2001</a>)</span>. Third, we calculated the probability that a result under the alternative hypothesis was, in fact, nonsignificant (i.e., <span class="math inline">\(\beta\)</span>). Fourth, we randomly sampled, uniformly, a value between <span class="math inline">\(0-\beta\)</span>. Fifth, with this value we determined the accompanying <span class="math inline">\(t\)</span>-value. Finally, we computed the <span class="math inline">\(p\)</span>-value for this <span class="math inline">\(t\)</span>-value under the null distribution.</p>
+<div class="figure" style="text-align: center"><span id="fig:appendix5a"></span>
+<img src="assets/figures/tgtbf-appendix_a.png" alt="Visual aid for simulating one nonsignificant test result. The critical value from $H_0$ (left distribution) was used to determine $\beta$ under $H_1$ (right distribution). A value between 0 and $\beta$ was drawn, $t$-value computed, and $p$-value under $H_0$ determined." width="100%" />
+<p class="caption">
+Figure A.1: Visual aid for simulating one nonsignificant test result. The critical value from <span class="math inline">\(H_0\)</span> (left distribution) was used to determine <span class="math inline">\(\beta\)</span> under <span class="math inline">\(H_1\)</span> (right distribution). A value between 0 and <span class="math inline">\(\beta\)</span> was drawn, <span class="math inline">\(t\)</span>-value computed, and <span class="math inline">\(p\)</span>-value under <span class="math inline">\(H_0\)</span> determined.
+</p>
+</div>
+<p>We repeated the procedure to simulate a false negative <span class="math inline">\(p\)</span>-value <span class="math inline">\(k\)</span> times and used the resulting <span class="math inline">\(p\)</span>-values to compute the Fisher test. Before computing the Fisher test statistic, the nonsignificant <span class="math inline">\(p\)</span>-values were transformed (see Equation <a href="too-good-to-be-false-nonsignificant-results-revisited.html#eq:pistar">(4.1)</a>). Subsequently, we computed the Fisher test statistic and the accompanying <span class="math inline">\(p\)</span>-value according to Equation <a href="too-good-to-be-false-nonsignificant-results-revisited.html#eq:fishertest">(4.2)</a>.</p>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-doi:10.3758/s13423-012-0227-9">
+<p>Francis, Gregory. 2012. “Too Good to Be True: Publication Bias in Two Prominent Studies from Experimental Psychology.” <em>Psychonomic Bulletin &amp; Review</em> 19 (2). Springer Nature: 151–56. doi:<a href="https://doi.org/10.3758/s13423-012-0227-9">10.3758/s13423-012-0227-9</a>.</p>
+</div>
+<div id="ref-doi:10.1177/1740774507079441">
+<p>Ioannidis, John PA, and Thomas A Trikalinos. 2007. “An Exploratory Test for an Excess of Significant Findings.” <em>Clinical Trials: Journal of the Society for Clinical Trials</em> 4 (3). SAGE Publications: 245–53. doi:<a href="https://doi.org/10.1177/1740774507079441">10.1177/1740774507079441</a>.</p>
+</div>
+<div id="ref-doi:10.1177/00131640121971392">
+<p>Smithson, Michael. 2001. “Correct Confidence Intervals for Various Regression Effect Sizes and Parameters: The Importance of Noncentral Distributions in Computing Intervals.” <em>Educational and Psychological Measurement</em> 61 (4). SAGE Publications: 605–32. doi:<a href="https://doi.org/10.1177/00131640121971392">10.1177/00131640121971392</a>.</p>
+</div>
+<div id="ref-Steiger1997-qq">
+<p>Steiger, James H, and Rachel T Fouladi. 1997. “Noncentrality interval estimation and the evaluation of statistical models.” In <em>What If There Were No Significance Tests</em>, edited by Lisa L. Harlow, Stanley A. Mulaik, and James H Steiger. New York, NY: Psychology Press.</p>
+</div>
+<div id="ref-doi:10.1016/s0895-43560000242-0">
+<p>Sterne, Jonathan A.C, David Gavaghan, and Matthias Egger. 2000. “Publication and Related Bias in Meta-Analysis.” <em>Journal of Clinical Epidemiology</em> 53 (11). Elsevier BV: 1119–29. doi:<a href="https://doi.org/10.1016/s0895-4356(00)00242-0">10.1016/s0895-4356(00)00242-0</a>.</p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="epilogue.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="effect-computation.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": true,
+"facebook": false,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "github", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": null,
+"history": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf"],
+"toc": {
+"collapse": "subsection",
+"scroll_highlight": true
+},
+"toolbar": {
+"position": "fixed"
+},
+"search": true
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

@@ -1,11 +1,5 @@
 # Too good to be false: Nonsignificant results revisited
 
-<!-- ## Abstract
-
-Due to its probabilistic nature, Null Hypothesis Significance Testing (NHST) is subject to decision errors. The concern for false positives has overshadowed the concern for false negatives in the recent debates in psychology. This might be unwarranted,  since  reported statistically nonsignificant findings may just be 'too good to be false'. We examined evidence for false negatives in nonsignificant results in three different ways. We adapted the Fisher method to detect the presence of at least one false negative in a set of statistically nonsignificant results. Simulations show that the adapted Fisher method generally is a powerful method to detect false negatives. We examined evidence for false negatives in the psychology literature in three applications of the adapted Fisher method. These applications indicate that (i) the observed effect size distribution of nonsignificant effects exceeds the expected distribution assuming a null-effect, and approximately two out of three (66.7%) psychology articles reporting nonsignificant results contain evidence for at least one false negative, (ii) nonsignificant results on gender effects contain evidence of true nonzero effects, and (iii) the statistically nonsignificant replications from the Reproducibility Project Psychology (RPP) do not warrant strong conclusions about the absence or presence of true zero effects underlying these nonsignificant results. We conclude that false negatives deserve more attention in the current debate on statistical practices in psychology. Potentially neglecting effects due to a lack of statistical power can lead to a waste of research resources and stifle the scientific discovery process.
-
-## Introduction
- -->
 ```{r echo = FALSE}
 suppressPackageStartupMessages(library(httr))
 suppressPackageStartupMessages(library(latex2exp))
@@ -14,7 +8,8 @@ suppressPackageStartupMessages(library(ggplot2))
 suppressPackageStartupMessages(library(stringr))
 suppressPackageStartupMessages(library(car))
 suppressPackageStartupMessages(library(xtable))
-
+suppressPackageStartupMessages(library(magrittr))
+suppressPackageStartupMessages(library(kableExtra))
 source('assets/functions/tgtbf-functions.R')
 ```
 
@@ -22,15 +17,23 @@ source('assets/functions/tgtbf-functions.R')
 
 Null Hypothesis Significance Testing (NHST) is the most prevalent paradigm for statistical hypothesis testing in the social sciences [@isbn:9781433805615]. In NHST the hypothesis $H_0$ is tested, where $H_0$ most often regards the absence of an effect. If deemed false, an alternative, mutually exclusive hypothesis $H_1$ is accepted. These decisions are based on the $p$-value; the probability of the sample data, or more extreme data, given $H_0$ is true. If the $p$-value is smaller than the decision criterion $\alpha$ [typically .05; @doi:10.3758/s13428-015-0664-2], $H_0$ is rejected and $H_1$ is accepted.
 
-Table \@ref(tab:tgtbf-tab1) summarizes the four possible situations that can occur in NHST. The columns indicate which hypothesis is true in the population and the rows indicate what is decided based on the sample data. When there is discordance between the true- and decided hypothesis, a decision error is made. More specifically, when $H_0$ is true in the population, but $H_1$ is accepted ('$H_1$'), a Type I error is made ($\alpha$); a false positive (lower left cell). When $H_1$ is true in the population and $H_0$ is accepted ('$H_0$'), a Type II error is made ($\beta$); a false negative (upper right cell). However, when the null hypothesis is true in the population and $H_0$ is accepted ('$H_0$'), this is a true negative (upper left cell; $1-\alpha$). The true negative rate is also called specificity of the test. Conversely, when the alternative hypothesis is true in the population and $H_1$ is accepted ('$H_1$'), this is a true positive (lower right cell). The probability of finding a statistically significant result if $H_1$ is true is the power ($1-\beta$), which is also called the sensitivity of the test. Power is a positive function of the (true) population effect size, the sample size, and the alpha of the study, such that higher power can always be achieved by altering either the sample size or the alpha level [@Aberson2010-xa]. 
+Table \@ref(tab:tgtbf-tab1) summarizes the four possible situations that can occur in NHST. The columns indicate which hypothesis is true in the population and the rows indicate what is decided based on the sample data. When there is discordance between the true- and decided hypothesis, a decision error is made. More specifically, when $H_0$ is true in the population, but $H_1$ is accepted ($'H_1'$), a Type I error is made ($\alpha$); a false positive (lower left cell). When $H_1$ is true in the population and $H_0$ is accepted ($'H_0'$), a Type II error is made ($\beta$); a false negative (upper right cell). However, when the null hypothesis is true in the population and $H_0$ is accepted ($'H_0'$), this is a true negative (upper left cell; $1-\alpha$). The true negative rate is also called specificity of the test. Conversely, when the alternative hypothesis is true in the population and $H_1$ is accepted ($'H_1'$), this is a true positive (lower right cell). The probability of finding a statistically significant result if $H_1$ is true is the power ($1-\beta$), which is also called the sensitivity of the test. Power is a positive function of the (true) population effect size, the sample size, and the alpha of the study, such that higher power can always be achieved by altering either the sample size or the alpha level [@Aberson2010-xa]. 
 
 ```{r tgtbf-tab1, echo=FALSE}
 capt <- "Summary table of possible NHST results. Columns indicate the true situation in the population, rows indicate the decision based on a statistical test. The true positive probability is also called power and sensitivity, whereas the true negative rate is also called specificity."
 tabdf <- read.csv('assets/tables/ch5-tab1.csv', stringsAsFactors = FALSE)
 
 names(tabdf) <- c('', '', '$H_0$', '$H_1$')
-knitr::kable(tabdf, caption = capt) %>%
-  kableExtra::add_header_above(c(' ' = 2, 'Population' = 2))
+if (!knitr::is_html_output()) {
+knitr::kable(tabdf, caption = capt, escape = FALSE, booktabs = TRUE, format = 'latex') %>%
+  kableExtra::add_header_above(c(' ' = 2, 'Population' = 2)) %>%
+  kableExtra::kable_styling(latex_options = c('striped', 'hold_position', 'scale_down'), position = 'center')
+} else {
+knitr::kable(tabdf, caption = capt, escape = FALSE, booktabs = TRUE) %>%
+  kableExtra::add_header_above(c(' ' = 2, 'Population' = 2)) %>%
+  kableExtra::kable_styling(position = 'center',
+                            bootstrap_options = c("striped", "hover", "condensed", "responsive", full_width = F))
+}  
 ```
 
 Unfortunately, NHST has led to many misconceptions and misinterpretations [@doi:10.1053/j.seminhematol.2008.04.003;@doi:10.1037/h0020412]. The most serious mistake relevant to our chapter is that many researchers accept the null-hypothesis and claim no effect in case of a statistically nonsignificant effect [about 60%, see @doi:10.3758/bf03213921]. Hence, most researchers overlook that the outcome of hypothesis testing is probabilistic (if the null-hypothesis is true, or the alternative hypothesis is true and power is less than 1) and interpret outcomes of hypothesis testing as reflecting the absolute truth. At least partly because of mistakes like this, many researchers ignore the possibility of false negatives and false positives and they remain pervasive in the literature.
@@ -77,8 +80,17 @@ capt <- "Power of Fisher test to detect false negatives for small- and medium ef
 tabdf <- read.csv('assets/tables/ch5-tab2.csv', stringsAsFactors = FALSE)
 names(tabdf) <- c('', '$N=33$', '$N=62$', '$N=119$', '$N=33$', '$N=62$', '$N=119$')
 
-knitr::kable(tabdf, caption = capt) %>%
-  kableExtra::add_header_above(c(" " = 1, "$\\eta=.1$" = 3, "$\\eta=.25$" = 3))
+if (!knitr::is_html_output()) {
+knitr::kable(tabdf, caption = capt, booktabs = TRUE, escape = FALSE, format = 'latex') %>%
+  kableExtra::add_header_above(c(" " = 1, "$\\\\\\eta=.1$" = 3, "$\\\\\\eta=.25$" = 3), escape = FALSE) %>%
+  kableExtra::kable_styling(latex_options = c('striped', 'hold_position'), position = 'center')
+} else {
+knitr::kable(tabdf, caption = capt, booktabs = TRUE, escape = FALSE) %>%
+  kableExtra::add_header_above(c(" " = 1, "$\\\\\\eta=.1$" = 3, "$\\\\\\eta=.25$" = 3), escape = FALSE) %>%
+  kableExtra::kable_styling(position = 'center',
+                            bootstrap_options = c("striped", "hover", "condensed", "responsive", full_width = F))
+
+}
 ```
 
 ```{r echo = FALSE}
@@ -238,17 +250,30 @@ The analyses reported in this chapter use the recalculated $p$-values to elimina
 ```{r tgtbf-tab3, echo = FALSE}
 capt <- "Summary table of articles downloaded per journal, their mean number of results, and proportion of (non)significant results. Statistical significance was determined using $\\alpha=.05$, two-tailed test."
 
-tabdf <- read.csv('assets/tables/ch5-tab3.csv', stringsAsFactors = FALSE)
+if (knitr::is_html_output()) {
+  fil <- 'assets/tables/ch5-tab3-html.csv'
+} else {
+  fil <- 'assets/tables/ch5-tab3-latex.csv'
+}
+tabdf <- read.csv(fil, stringsAsFactors = FALSE)
 
 names(tabdf) <- c('Journal Acronym',
                   'Time frame',
                   'Results',
                   'Mean results per article',
-                  'Significant (%)',
-                  'Nonsignificant (%)')
+                  'Significant (\\%)',
+                  'Nonsignificant (\\%)')
 
-knitr::kable(tabdf, caption = capt) %>%
-  kableExtra::scroll_box(width = "100%")
+if (!knitr::is_html_output()) {
+  knitr::kable(tabdf, caption = capt, booktabs = TRUE, escape = FALSE, format = 'latex') %>%
+    landscape() %>%
+   kableExtra::kable_styling(latex_options = c('striped', 'scale_down'), position = 'center')
+} else {
+  knitr::kable(tabdf, caption = capt, booktabs = TRUE, escape = FALSE) %>%
+  kableExtra::scroll_box(width = "100%") %>%
+  kableExtra::kable_styling(position = 'center',
+                            bootstrap_options = c("striped", "hover", "condensed", "responsive", full_width = F))
+}
 ```
 
 ```{r echo = FALSE}
@@ -275,7 +300,7 @@ iccSStmp <- Anova(lm(tmp ~ dat$Source[nsig & !(dat$Computed == 1)]), type="III")
 #   kable_styling(latex_options = c('scale_down'))
 ```
 
-First, we compared the observed nonsignificant effect size distribution (computed with observed test results) to the expected nonsignificant effect size distribution under $H_0$. The expected effect size distribution under $H_0$ was approximated using simulation. We first randomly drew an observed test result (with replacement) and subsequently drew a random nonsignificant $p$-value between 0.05 and 1 (i.e., under the distribution of the $H_0$). Based on the drawn $p$-value and the degrees of freedom of the drawn test result, we computed the accompanying test statistic and the corresponding effect size (for details on effect size computation see Appendix 5.B). This procedure was repeated 163,785 times, which is three times the number of observed nonsignificant test results (54,595). The collection of simulated results approximates the expected effect size distribution under $H_0$, assuming independence of test results in the same paper. We inspected this possible dependency with the intra-class correlation ($ICC$), where $ICC=1$ indicates full dependency and $ICC=0$ indicates full independence. For the set of observed results, the ICC for nonsignificant $p$-values was `r round(iccSS$Sum[2]/(iccSS$Sum[3]+iccSS$Sum[2]), 3)`, indicating independence of $p$-values within a paper (the ICC of the log odds transformed $p$-values was similar, with $ICC=`r round(iccSStmp$Sum[2]/(iccSStmp$Sum[3]+iccSStmp$Sum[2]), 5)`$ after excluding $p$-values equal to 1 for computational reasons). The resulting, expected effect size distribution was compared to the observed effect size distribution (i) across all journals and (ii) per journal. To test for differences between the expected and observed nonsignificant effect size distributions we applied the Kolmogorov-Smirnov test. This is a non-parametric goodness-of-fit test for equality of distributions, which is based on the maximum absolute deviation between the independent distributions being compared [denoted $D$; @doi:10.2307/2280095].
+First, we compared the observed nonsignificant effect size distribution (computed with observed test results) to the expected nonsignificant effect size distribution under $H_0$. The expected effect size distribution under $H_0$ was approximated using simulation. We first randomly drew an observed test result (with replacement) and subsequently drew a random nonsignificant $p$-value between 0.05 and 1 (i.e., under the distribution of the $H_0$). Based on the drawn $p$-value and the degrees of freedom of the drawn test result, we computed the accompanying test statistic and the corresponding effect size (for details on effect size computation see Appendix A). This procedure was repeated 163,785 times, which is three times the number of observed nonsignificant test results (54,595). The collection of simulated results approximates the expected effect size distribution under $H_0$, assuming independence of test results in the same paper. We inspected this possible dependency with the intra-class correlation ($ICC$), where $ICC=1$ indicates full dependency and $ICC=0$ indicates full independence. For the set of observed results, the ICC for nonsignificant $p$-values was `r round(iccSS$Sum[2]/(iccSS$Sum[3]+iccSS$Sum[2]), 3)`, indicating independence of $p$-values within a paper (the ICC of the log odds transformed $p$-values was similar, with $ICC=`r round(iccSStmp$Sum[2]/(iccSStmp$Sum[3]+iccSStmp$Sum[2]), 5)`$ after excluding $p$-values equal to 1 for computational reasons). The resulting, expected effect size distribution was compared to the observed effect size distribution (i) across all journals and (ii) per journal. To test for differences between the expected and observed nonsignificant effect size distributions we applied the Kolmogorov-Smirnov test. This is a non-parametric goodness-of-fit test for equality of distributions, which is based on the maximum absolute deviation between the independent distributions being compared [denoted $D$; @doi:10.2307/2280095].
 
 Second, we applied the Fisher test to test how many research papers show evidence of at least one false negative statistical result. To recapitulate, the Fisher test tests whether the distribution of observed nonsignificant $p$-values deviates from the uniform distribution expected under $H_0$. In order to compute the result of the Fisher test, we applied equations \@ref(eq:pistar) and \@ref(eq:fishertest) to the recalculated nonsignificant $p$-values in each paper ($\alpha=.05$).
 
@@ -294,13 +319,13 @@ fig1cap <- sprintf('Density of observed effect sizes of results reported in eigh
 
 Figure \@ref(fig:tgtbf-fig1) shows the distribution of observed effect sizes (in $|\eta|$) across all articles and indicates that, of the 223,082 observed effects, `r round(small, 0)`% were zero to small (i.e., $0\leq|\eta|<.1$), `r round(medium, 0)`% were small to medium (i.e., $.1\leq|\eta|<.25$), `r round(large, 0)`% medium to large (i.e., $.25\leq|\eta|<.4$), and `r round(larger, 0)`% large or larger [i.e., $|\eta|\geq.4$; @isbn:9780805802832]. This suggests that the majority of effects reported in psychology is medium or smaller (i.e., `r round(medium+small,0)`%), which is somewhat in line with a previous study on effect distributions [@doi:10.1016/j.paid.2016.06.069]. Of the full set of 223,082 test results, 54,595 (24.5%) were nonsiginificant, which is the dataset for our main analyses. 
 
-```{r tgtbf-fig1, fig.cap=fig1cap, echo=FALSE, fig.align = 'center'}
+```{r tgtbf-fig1, fig.cap=fig1cap, echo=FALSE, fig.align = 'center', out.width = '100%', fig.pos = 'h'}
 knitr::include_graphics('assets/figures/tgtbf-fig1.pdf.svg.png', auto_pdf = TRUE)
 ```
 
 Our dataset indicated that more nonsignificant results are reported throughout the years, strengthening the case for inspecting potential false negatives. The proportion of reported nonsignificant results showed an upward trend, as depicted in Figure \@ref(fig:tgtbf-fig2), from approximately 20% in the eighties to approximately 30% of all reported APA results in 2015.
 
-```{r tgtbf-fig2, fig.cap="Observed proportion of nonsignificant test results per year.", echo=FALSE, fig.align = 'center'}
+```{r tgtbf-fig2, fig.cap="Observed proportion of nonsignificant test results per year.", echo=FALSE, fig.align = 'center', out.width = '100%', fig.pos = 'h'}
 knitr::include_graphics('assets/figures/tgtbf-fig2.pdf.svg.png', auto_pdf = TRUE)
 ```
 
@@ -308,23 +333,40 @@ knitr::include_graphics('assets/figures/tgtbf-fig2.pdf.svg.png', auto_pdf = TRUE
 
 For the entire set of nonsignificant results across journals, Figure \@ref(fig:tgtbf-fig3) indicates that there is substantial evidence of false negatives. Under $H_0$, 46% of all observed effects is expected to be within the range $0\leq|\eta|<.1$, as can be seen in the left panel of Figure \@ref(fig:tgtbf-fig3) highlighted by the lowest grey line (dashed). However, of the observed effects, only 26% fall within this range, as highlighted by the lowest black line. Similarly, we would expect 85% of all effect sizes to be within the range $0\leq|\eta|<.25$ (middle grey line), but we observed 14 percentage points less in this range (i.e., 71%; middle black line); 96\% is expected for the range $0\leq|\eta|<.4$ (top grey line), but we observed 4 percentage points less (i.e., 92\%; top black line). These differences indicate that larger nonsignificant effects are reported in papers than expected under a null effect. This indicates the presence of false negatives, which is confirmed by the Kolmogorov-Smirnov test, $D=0.3$, $p<.000000000000001$. Results were similar when the nonsignificant effects were considered separately for the eight journals, although deviations were smaller for the Journal of Applied Psychology (see [https://osf.io/au3wv/](https://osf.io/au3wv/) for results per journal).
 
-```{r tgtbf-fig3, fig.cap="Observed and expected (adjusted and unadjusted) effect size distribution for statistically nonsignificant APA results reported in eight psychology journals. Grey lines depict expected values; black lines depict observed values. The three vertical dotted lines correspond to a small, medium, large effect, respectively. Header includes Kolmogorov-Smirnov test results.", echo=FALSE, fig.align = 'center'}
+```{r tgtbf-fig3, fig.cap="Observed and expected (adjusted and unadjusted) effect size distribution for statistically nonsignificant APA results reported in eight psychology journals. Grey lines depict expected values; black lines depict observed values. The three vertical dotted lines correspond to a small, medium, large effect, respectively. Header includes Kolmogorov-Smirnov test results.", echo=FALSE, fig.align = 'center', out.width = '100%', fig.pos = 'h'}
 knitr::include_graphics('assets/figures/tgtbf-fig3.pdf.svg.png', auto_pdf = TRUE)
 ```
 
-Because effect sizes and their distribution typically overestimate population effect size $\eta^2$, particularly when sample size is small [@doi:10.1027/1614-2241.3.1.35;@doi:10.3102/10769986006002107], we also compared the observed and expected adjusted nonsignificant effect sizes that correct for such overestimation of effect sizes (right panel of Figure \@ref(fig:tgtbf-fig3); see Appendix 5.B). Such overestimation affects all effects in a model, both focal and non-focal. The distribution of adjusted effect sizes of nonsignificant results tells the same story as the unadjusted effect sizes; observed effect sizes are larger than expected effect sizes. For instance, the distribution of adjusted reported effect size suggests 49% of effect sizes are at least small, whereas under the $H_0$ only 22% is expected.
+Because effect sizes and their distribution typically overestimate population effect size $\eta^2$, particularly when sample size is small [@doi:10.1027/1614-2241.3.1.35;@doi:10.3102/10769986006002107], we also compared the observed and expected adjusted nonsignificant effect sizes that correct for such overestimation of effect sizes (right panel of Figure \@ref(fig:tgtbf-fig3); see Appendix A). Such overestimation affects all effects in a model, both focal and non-focal. The distribution of adjusted effect sizes of nonsignificant results tells the same story as the unadjusted effect sizes; observed effect sizes are larger than expected effect sizes. For instance, the distribution of adjusted reported effect size suggests 49% of effect sizes are at least small, whereas under the $H_0$ only 22% is expected.
 
 ### Evidence of false negatives in articles.
 
-The Fisher test was applied to the nonsignificant test results of each of the 14,765 papers separately, to inspect for evidence of false negatives. More technically, we inspected whether $p$-values within a paper deviate from what can be expected under the $H_0$ (i.e., uniformity). If $H_0$ is in fact true, our results would be that there is evidence for false negatives in 10\% of the papers (a meta-false positive). Table \@ref(tab:tgtbf-tab4) shows the number of papers with evidence for false negatives, specified per journal and per $k$ number of nonsignificant test results. The first row indicates the number of papers that report no nonsignificant results. When $k=1$, the Fisher test is simply another way of testing whether the result deviates from a null effect, conditional on the result being statistically nonsignificant. Overall results (last row) indicate that 47.1% of all articles show evidence of false negatives (i.e. 6,951 articles). Of articles reporting at least one nonsignificant result, 66.7% show evidence of false negatives, which is much more than the 10% predicted by chance alone. Results did not substantially differ if nonsignificance is determined based on $\alpha=.10$ (the analyses can be rerun with any set of $p$-values larger than a certain value based on the code provided on OSF; \url{https://osf.io/qpfnw}).
+The Fisher test was applied to the nonsignificant test results of each of the 14,765 papers separately, to inspect for evidence of false negatives. More technically, we inspected whether $p$-values within a paper deviate from what can be expected under the $H_0$ (i.e., uniformity). If $H_0$ is in fact true, our results would be that there is evidence for false negatives in 10\% of the papers (a meta-false positive). Table \@ref(tab:tgtbf-tab4) shows the number of papers with evidence for false negatives, specified per journal and per $k$ number of nonsignificant test results. The first row indicates the number of papers that report no nonsignificant results. When $k=1$, the Fisher test is simply another way of testing whether the result deviates from a null effect, conditional on the result being statistically nonsignificant. Overall results (last row) indicate that 47.1% of all articles show evidence of false negatives (i.e. 6,951 articles). Of articles reporting at least one nonsignificant result, 66.7% show evidence of false negatives, which is much more than the 10% predicted by chance alone. Results did not substantially differ if nonsignificance is determined based on $\alpha=.10$ (the analyses can be rerun with any set of $p$-values larger than a certain value based on the code provided on OSF; <https://osf.io/qpfnw>.
 
 ```{r tgtbf-tab4, echo = FALSE}
 capt <- "Summary table of Fisher test results applied to the nonsignificant results ($k$) of each article separately, overall and specified per journal. A significant Fisher test result is indicative of a false negative (FN). DP = Developmental Psychology; FP = Frontiers in Psychology; JAP = Journal of Applied Psychology; JCCP = Journal of Consulting and Clinical Psychology; JEPG = Journal of Experimental Psychology: General; JPSP = Journal of Personality and Social Psychology; PLOS = Public Library of Science; PS = Psychological Science."
-tabdf <- read.csv('assets/tables/ch5-tab4.csv', stringsAsFactors = FALSE)
+
+if (knitr::is_html_output()) {
+  fil <- 'assets/tables/ch5-tab4-html.csv'
+  tabdf <- read.csv(fil, stringsAsFactors = FALSE)
+
 names(tabdf)[1:2] <- ''
 
-knitr::kable(tabdf, caption = capt) %>%
-  kableExtra::scroll_box(width = "100%")
+knitr::kable(tabdf, caption = capt, booktabs = TRUE, escape = TRUE) %>%
+  kableExtra::scroll_box(width = "100%") %>%
+  kableExtra::kable_styling(position = 'center',
+                            bootstrap_options = c("striped", "hover", "condensed", "responsive", full_width = F))
+
+} else {
+  fil <- 'assets/tables/ch5-tab4-latex.csv'
+  tabdf <- read.csv(fil, stringsAsFactors = FALSE)
+
+names(tabdf)[1:2] <- ''
+
+knitr::kable(tabdf, caption = capt, format = 'latex', booktabs = TRUE, escape = FALSE) %>%
+  kableExtra::kable_styling(latex_options = c('striped', 'hold_position', 'scale_down'), position = 'center')
+
+} 
 ```
 
 Table \@ref(tab:tgtbf-tab4) also shows evidence of false negatives for each of the eight journals. The lowest proportion of articles with evidence of at least one false negative was for the Journal of Applied Psychology (49.4\%; penultimate row). The remaining journals show higher proportions, with a maximum of 81.3\% (Journal of Personality and Social Psychology). Researchers should thus be wary to interpret negative results in journal articles as a sign that there is no effect; at least half of the papers provide evidence for at least one false negative finding.
@@ -460,12 +502,12 @@ for(y in 1985:2013){
 
 We also checked whether evidence of at least one false negative at the article level changed over time. Figure \@ref(fig:tgtbf-fig4) depicts evidence across all articles per year, as a function of year (1985-2013); point size in the figure corresponds to the mean number of nonsignificant results per article (mean $k$) in that year. Interestingly, the proportion of articles with evidence for false negatives decreased from `r round(mydf$y[1]*100, 0)`\% in 1985 to `r round(mydf$y[29]*100, 0)`\% in 2013, despite the increase in mean $k$ (from `r round(mydf$count[1], 2)` in 1985 to `r round(mydf$count[29], 2)` in 2013). This decreasing proportion of papers with evidence over time cannot be explained by a decrease in sample size over time, as sample size in psychology articles has stayed stable across time (see Figure \@ref(fig:tgtbf-fig5); degrees of freedom is a direct proxy of sample size resulting from the sample size minus the number of parameters in the model). One (at least partial) explanation of this surprising result is that in the early days researchers primarily reported fewer APA results and used to report relatively more APA results with 'marginally significant' $p$-values (i.e., $p$-values slightly larger than .05), compared to nowadays. This explanation is supported by both a smaller number of reported APA results in the past and the smaller mean reported nonsignificant $p$-value (`r round(mean(dat$Reported.P.Value[dat$Reported.Comparison == '=' & dat$years.y. == 1985 & dat$Reported.P.Value > .05]), 3)` in 1985, `r round(mean(dat$Reported.P.Value[dat$Reported.Comparison == '=' & dat$years.y. == 2013 & dat$Reported.P.Value > .05]), 3)` in 2013). We do not know whether these marginally significant $p$-values were interpreted as evidence in favor of a finding (or not) and how these interpretations changed over time. Another potential explanation is that the effect sizes being studied have become smaller over time (mean correlation effect $r=$ `r round(mean(sqrt(dat$esComp[dat$Reported.Comparison == '=' & dat$years.y. == 1985 & dat$Reported.P.Value > .05])), 3)` in 1985, `r round(mean(sqrt(dat$esComp[dat$Reported.Comparison == '=' & dat$years.y. == 2013 & dat$Reported.P.Value > .05])), 3)` in 2013), which results in both higher $p$-values over time and lower power of the Fisher test. Using the data at hand, we cannot distinguish between the two explanations.
 
-```{r tgtbf-fig4, fig.cap="Proportion of papers reporting nonsignificant results in a given year, showing evidence for false negative results. Larger point size indicates a higher mean number of nonsignificant results reported in that year.", echo=FALSE, fig.align = 'center'}
-knitr::include_graphics('assets/figures/tgtbf-fig4.pdf.svg.png', auto_pdf = TRUE)
+```{r tgtbf-fig4, fig.cap="Proportion of papers reporting nonsignificant results in a given year, showing evidence for false negative results. Larger point size indicates a higher mean number of nonsignificant results reported in that year.", echo=FALSE, fig.align = 'center', out.width = '100%', fig.pos = 'h'}
+knitr::include_graphics('assets/figures/tgtbf-fig4.pdf.svg.png')
 ```
 
-```{r tgtbf-fig5, fig.cap="Sample size development in psychology throughout 1985-2013, based on degrees of freedom across 258,050 test results. P25 = 25th percentile. P50 = 50th percentile (i.e., median). P75 = 75th percentile.", echo=FALSE, fig.align = 'center'}
-knitr::include_graphics('assets/figures/tgtbf-fig5.pdf.svg.png', auto_pdf = TRUE)
+```{r tgtbf-fig5, fig.cap="Sample size development in psychology throughout 1985-2013, based on degrees of freedom across 258,050 test results. P25 = 25th percentile. P50 = 50th percentile (i.e., median). P75 = 75th percentile.", echo=FALSE, fig.align = 'center', out.width = '100%', fig.pos = 'h'}
+knitr::include_graphics('assets/figures/tgtbf-fig5.pdf.svg.png')
 ```
 
 ### Discussion
@@ -495,15 +537,29 @@ The coding of the 178 results indicated that results rarely specify whether thes
 ```{r tgtbf-tab5, echo = FALSE}
 capt <- "Number of gender results coded per condition in a 2 (significance: significant or nonsignificant) by 3 (expectation: $H_0$ expected, $H_1$ expected, or no expectation) design. Cells printed in bold had sufficient results to inspect for evidential value."
 
-tabdf <- read.csv('assets/tables/ch5-tab5.csv', stringsAsFactors = FALSE)
-names(tabdf)[1] <- ''
+if (knitr::is_html_output()) {
+  fil <- 'assets/tables/ch5-tab5-html.csv'
+tabdf <- read.csv(fil, stringsAsFactors = FALSE)
+names(tabdf) <- c('', '$H_0$ expected', '$H_1$ expected', 'No expectation')
 
-knitr::kable(tabdf, caption = capt)
+knitr::kable(tabdf, caption = capt, booktabs = TRUE, escape = FALSE) %>%
+  kableExtra::kable_styling(position = 'center',
+                            bootstrap_options = c("striped", "hover", "condensed", "responsive", full_width = F))
+
+} else {
+  fil <- 'assets/tables/ch5-tab5-latex.csv'
+tabdf <- read.csv(fil, stringsAsFactors = FALSE)
+names(tabdf) <- c('', '$H_0$ expected', '$H_1$ expected', 'No expectation')
+
+knitr::kable(tabdf, caption = capt, format = 'latex', booktabs = TRUE, escape = FALSE) %>%
+  kableExtra::kable_styling(latex_options = c('striped', 'hold_position'), position = 'center')
+
+} 
 ```
 
 Figure \@ref(fig:tgtbf-fig6) presents the distributions of both transformed significant and non-significant $p$-values. For significant results, applying the Fisher test to the $p$-values showed evidential value for a gender effect both when an effect was expected ($\chi^2(22)=358.904$, $p<.001$) and when no expectation was presented at all ($\chi^2(15)=1094.911$, $p<.001$). Similarly, applying the Fisher test to nonsignificant gender results without stated expectation yielded evidence of at least one false negative ($\chi^2(174)=324.374$, $p<.001$). Unfortunately, we could not examine whether evidential value of gender effects is dependent on the hypothesis/expectation of the researcher, because these effects are most frequently reported without stated expectations. 
 
-```{r tgtbf-fig6, fig.cap="Probability density distributions of the $p$-values for gender effects, split for nonsignificant and significant results. A uniform density distribution indicates the absence of a true effect.", echo=FALSE, fig.align = 'center'}
+```{r tgtbf-fig6, fig.cap="Probability density distributions of the $p$-values for gender effects, split for nonsignificant and significant results. A uniform density distribution indicates the absence of a true effect.", echo=FALSE, fig.align = 'center', out.width = '100%', fig.pos = 'h'}
 knitr::include_graphics('assets/figures/tgtbf-fig6.pdf.svg.png', auto_pdf = TRUE)
 ```
 
@@ -556,43 +612,3 @@ Another potential caveat relates to the data collected with the `R` package `sta
 Given that the results indicate that false negatives are still a problem in psychology, albeit slowly on the decline in published research, further research is warranted. Further research could focus on comparing evidence for false negatives in main and peripheral results. Our results in combination with results of previous studies suggest that publication bias mainly operates on results of tests of main hypotheses, and less so on peripheral results. Another venue for future research is using the Fisher test to re-examine evidence in the literature on certain other effects or often-used covariates, such as age and race, or to see if it helps researchers prevent dichotomous thinking with individual $p$-values [@doi:10.3758/bf03213921]. Finally, the Fisher test may and is also used to meta-analyze effect sizes of different studies. Whereas Fisher used his method to test the null-hypothesis of an underlying true zero effect using several studies' $p$-values, the method has recently been extended to yield unbiased effect estimates using only statistically significant $p$-values. The principle of uniformly distributed $p$-values given the true effect size on which the Fisher method is based, also underlies newly developed methods of meta-analysis that adjust for publication bias, such as $p$-uniform [@doi:10.1037/met0000025] and $p$-curve [@doi:10.1037/a0033242]. Extensions of these methods to include nonsignificant as well as significant $p$-values and to estimate heterogeneity are still under construction.
 
 To conclude, our three applications indicate that false negatives remain a problem in the psychology literature, despite the decreased attention and that we should be wary to interpret statistically nonsignificant results as there being no effect in reality. One way to combat this interpretation of statistically nonsignificant results is to incorporate testing for potential false negatives, which the Fisher method facilitates in a highly approachable manner (a spreadsheet for carrying out such a test is available at [https://osf.io/tk57v/](https://osf.io/tk57v/)).
-
-## Appendix 5.A
-
-### Examining statistical properties of the Fisher test
-
-The Fisher test to detect false negatives is only useful if it is powerful enough to detect evidence of at least one false negative result in papers with few nonsignificant results. Therefore we examined the specificity and sensitivity of the Fisher test to test for false negatives, with a simulation study of the one sample $t$-test. Throughout this chapter, we apply the Fisher test with $\alpha_{Fisher}=0.10$, because tests that inspect whether results are "too good to be true" typically also use alpha levels of 10\% [@doi:10.1016/s0895-43560000242-0;@doi:10.1177/1740774507079441;@doi:10.3758/s13423-012-0227-9]. The simulation procedure was carried out for conditions in a three-factor design, where power of the Fisher test was simulated as a function of sample size $N$, effect size $\eta$, and $k$ test results. The three factor design was a 3 (sample size $N$: 33, 62, 119) by 100 (effect size $\eta$: .00, .01, .02, ..., .99) by 18 ($k$ test results: 1, 2, 3, ..., 10, 15, 20, ..., 50) design, resulting in 5,400 conditions. The levels for sample size were determined based on the 25th, 50th, and 75th percentile for the degrees of freedom ($df2$) in the observed dataset for Application 1. Each condition contained 10,000 simulations. The power of the Fisher test for one condition was calculated as the proportion of significant Fisher test results given $\alpha_{Fisher}=0.10$. If the power for a specific effect size $\eta$ was $\geq99.5\%$, power for larger effect sizes were set to 1.
-
-We simulated false negative $p$-values according to the following six steps (see Figure \@ref(fig:appendix5a). First, we determined the critical value under the null distribution. Second, we determined the distribution under the alternative hypothesis by computing the non-centrality parameter as $\delta=(\eta^2/1-\eta^2)N$ [@Steiger1997-qq;@doi:10.1177/00131640121971392]. Third, we calculated the probability that a result under the alternative hypothesis was, in fact, nonsignificant (i.e., $\beta$). Fourth, we randomly sampled, uniformly, a value between $0-\beta$. Fifth, with this value we determined the accompanying $t$-value. Finally, we computed the $p$-value for this $t$-value under the null distribution. 
-
-```{r appendix5a, fig.cap="Visual aid for simulating one nonsignificant test result. The critical value from $H_0$ (left distribution) was used to determine $\\beta$ under $H_1$ (right distribution). A value between 0 and $\\beta$ was drawn, $t$-value computed, and $p$-value under $H_0$ determined.", echo=FALSE, fig.align = 'center'}
-knitr::include_graphics('assets/figures/tgtbf-appendix_a.png', auto_pdf = TRUE)
-```
-
-We repeated the procedure to simulate a false negative $p$-value $k$ times and used the resulting $p$-values to compute the Fisher test. Before computing the Fisher test statistic, the nonsignificant $p$-values were transformed (see Equation \@ref(eq:pistar)). Subsequently, we computed the Fisher test statistic and the accompanying $p$-value according to Equation \@ref(eq:fishertest). 
-
-## Appendix 5.B
-
-### Effect computation
-
-The $t$, $F$, and $r$-values were all transformed into the effect size $\eta^2$, which is the explained variance for that test result and ranges between 0 and 1, for comparing observed to expected effect size distributions. For $r$-values, this only requires taking the square (i.e., $r^2$). $F$ and $t$-values were converted to effect sizes by
-\begin{equation}
-\eta^2=\frac{\frac{F\times df_1}{df_2}}{\frac{F\times df_1}{df_2}+1}
-(\#eq:b1)
-\end{equation}
-where $F=t^2$ and $df_1=1$ for $t$-values. Adjusted effect sizes, which correct for positive bias due to sample size, were computed as
-\begin{equation}
-\eta^2_{adj}=\frac{\frac{F\times df_1}{df_2}-\frac{df_1}{df_2}}{\frac{F\times df_1}{df_2}+1}
-(\#eq:b2)
-\end{equation}
-which shows that when $F=1$ the adjusted effect size is zero. For $r$-values the adjusted effect sizes were computed as [@doi:10.1016/j.psychsport.2012.07.007]
-\begin{equation}
-\eta^2_{adj}=\eta^2-([1-\eta^2]\times\frac{v}{N-v-1})
-(\#eq:b3)
-\end{equation}
-where $v$ is the number of predictors. It was assumed that reported correlations concern simple bivariate correlations and concern only one predictor (i.e., $v=1$). This reduces the previous formula to
-\begin{equation}
-\eta^2_{adj}=\eta^2-\frac{1-\eta^2}{df}
-(\#eq:b4)
-\end{equation}
-where $df=N-2$.

@@ -1,12 +1,12 @@
 ---
 author: "Chris Hubertus Joseph Hartgerink"
-biblio-style: apalike
 bibliography: [library.bib]
 description: "PhD dissertation by CHJ Hartgerink, written during 2014-2019, mostly at Tilburg University."
 documentclass: book
 classoption: a5paper
 github-repo: chartgerink/dissertation
 link-citations: true
+biblio-style: "apalike"
 title: "Contributions towards understanding and building sustainable science"
 always_allow_html: yes
 output: 
@@ -39,26 +39,20 @@ output:
   bookdown::pdf_book:
     keep_tex: yes
     includes:
-        after_body: index.tex
         in_header: preamble.tex
 ---
 
-# Prologue
+# Prologue {-}
 
 ```{r echo = FALSE}
 suppressPackageStartupMessages(require(magrittr))
-suppressPackageStartupMessages(require(knitr))
-suppressPackageStartupMessages(require(kableExtra))
-library(magrittr)
-
-df <- read.csv('assets/tables/ch1-table.csv')
 ```
 
 The history- and practice of science is convoluted
 [@isbn:9781846142109], but as a student it was taught to me in a
 relatively uncomplicated manner. Among the things I remember from my
 high school science classes are how to convert a metric distance into
-Astronomical Units (AUs) and that there was something called the
+\index{Astronomical Units} (AUs) and that there was something called the
 research cycle (I always forgot the separate steps and their order,
 which will ironically be a crucial subject of this
 dissertation). Those classes presented things such as the AU and the
@@ -347,14 +341,26 @@ was shared as a preprint, and the associated peer-reviewed publication
 slightly different in word use or formatting, but contain
 substantively the same content. These are additional aspects to the
 chapters that attempt to improve the reproducibility of the chapters,
-in order to prevent the issues from my epistemological crises. A digital version of this dissertation is available under https://phd.chjh.nl
+in order to prevent the issues from my epistemological crises. A
+digital version of this dissertation is available under
+<https://phd.chjh.nl>.
 
 ```{r overview, echo = FALSE}
-knitr::kable(df,
-             booktabs = TRUE,
-             caption = 'Chronologically ordered dissertation chapters, supplemented with identifiers data package, preprint, and peer-reviewed article.') %>%
-  kableExtra::scroll_box(width = "100%") %>%
+df <- read.csv('assets/tables/ch1-table.csv')
+names(df)[2] <- 'Data package'
+
+if (!knitr::is_html_output()) {
+     knitr::kable(df, format = 'latex',
+      booktabs = TRUE,
+      caption = 'Chronologically ordered dissertation chapters, supplemented with identifiers data package, preprint, and peer-reviewed article.') %>%
+       landscape() %>%
   kableExtra::kable_styling(
-                bootstrap_options = c("striped", "hover", "condensed", "responsive", full_width = F),
-                latex_options = c("striped", "scale_down", "hold_position"), position = "center")
+                latex_options = c("striped"), position = "center")
+} else {
+knitr::kable(df,
+      booktabs = TRUE,
+      caption = 'Chronologically ordered dissertation chapters, supplemented with identifiers data package, preprint, and peer-reviewed article.') %>%
+  kableExtra::kable_styling(
+    bootstrap_options = c("striped", "hover", "condensed", "responsive", full_width = F))
+      }
 ```

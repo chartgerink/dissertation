@@ -135,10 +135,17 @@ We also fabricated independent data for equivalent groups, where we fixed the me
 The expected value of a uniform $p$-value distribution is .5, but the fabricated data from our illustration have a mean $p$-value of `r round(mean(ex2_1tp), 3)`.
 
 ```{r ddfab-tab1, echo = FALSE}
-knitr::kable(df, digits = 3, caption = "Examples of means and standard deviations for a continuous outcome in genuine and fabricated randomized clinical trials. Set 1 is randomly generated data under the null hypothesis of random assignment (assumed to be the genuine process), whereas Set 2 is generated under excessive consistency with equal groups. Each trial condition contains 100 participants. The $p$-values are the result of independent $t$-tests comparing the experimental and control conditions within each respective set of a study.", booktabs = TRUE) %>%
-  kable_styling(latex_options = c('striped', 'scale_down', 'hold_position')) %>%
+if (!knitr::is_html_output()) {
+knitr::kable(df, format = 'latex', digits = 3, caption = "Examples of means and standard deviations for a continuous outcome in genuine and fabricated randomized clinical trials. Set 1 is randomly generated data under the null hypothesis of random assignment (assumed to be the genuine process), whereas Set 2 is generated under excessive consistency with equal groups. Each trial condition contains 100 participants. The $p$-values are the result of independent $t$-tests comparing the experimental and control conditions within each respective set of a study.", booktabs = TRUE) %>%
+  kable_styling(latex_options = c('striped', 'scale_down', 'hold_position'), position = 'center') %>%
   add_header_above(c('', rep(c('Experimental', 'Control', ''), 2))) %>%
   add_header_above(c('', 'Set 1' = 3, 'Set 2' = 3))
+} else {
+  knitr::kable(df, digits = 3, caption = "Examples of means and standard deviations for a continuous outcome in genuine and fabricated randomized clinical trials. Set 1 is randomly generated data under the null hypothesis of random assignment (assumed to be the genuine process), whereas Set 2 is generated under excessive consistency with equal groups. Each trial condition contains 100 participants. The $p$-values are the result of independent $t$-tests comparing the experimental and control conditions within each respective set of a study.", booktabs = TRUE) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive", full_width = F), position = 'center') %>%
+  add_header_above(c('', rep(c('Experimental', 'Control', ''), 2))) %>%
+    add_header_above(c('', 'Set 1' = 3, 'Set 2' = 3))
+  }
 ```
 
 In order to test whether a distribution of independent $p$-values might be fabricated, we propose using the Fisher method [@Fisher1925-jl;@doi:10.1186/s41073-016-0012-9]. 
@@ -238,7 +245,6 @@ For example, in the misconduct investigations in the Stapel case, large effect s
 Moreover, @doi:10.1186/1471-2288-3-18 asked faculty members from three universities to fabricate data sets and found that the fabricated data generally showed much larger effect sizes than the genuine data. 
 From our own anecdotal experience, we have found that large effect sizes raised initial suspicions of data fabrication (e.g., $d>20$). 
 In clinical trials, extreme effect sizes are also used to identify potentially fabricated data in multi-site trials while the study is still being conducted [@doi:10.1016/0197-24569190037-M].
-<!-- this is why meta-analysts should receive additional training for detecting -->
 
 ```{r, echo = FALSE}
 tval <- 3.55
@@ -273,8 +279,15 @@ where $d$ is the natural number of the leading digit and $P(d)$ is the probabili
 ```{r nbl, echo=FALSE}
 tab <- data.frame(digit = 1:9, prop = log10((1+1:9)/1:9))
 names(tab) <- c('Digit', 'Proportion')
-knitr::kable(tab, digits = 3, caption = 'The expected first digit distribution, based on the Newcomb-Benford Law.', booktabs = TRUE) %>%
-  kable_styling(latex_options = c('striped', 'hold_position'))
+
+if (!knitr::is_html_output()) {
+knitr::kable(tab, format = 'latex', digits = 3, caption = 'The expected first digit distribution, based on the Newcomb-Benford Law.', booktabs = TRUE) %>%
+  kableExtra::kable_styling(latex_options = c('striped', 'hold_position'), position = 'center')
+} else {
+  knitr::kable(tab, digits = 3, caption = 'The expected first digit distribution, based on the Newcomb-Benford Law.', booktabs = TRUE) %>%
+  kableExtra::kable_styling(position = 'center',
+                            bootstrap_options = c("striped", "hover", "condensed", "responsive", full_width = F))
+}
 ```
 
 However, the NBL only applies under specific conditions that are rarely fulfilled in the social sciences. Hence, its applicability for detecting data fabrication in science can be questioned. First, the NBL only applies for true ratio scale measures [@doi:10.2307/2246134;@doi:10.1214/11-ps175]. Second, sufficient range on the measure is required for the NBL to apply [i.e., range from at least $1-1000000$ or $1-10^6$;@doi:10.1198/tast.2009.0005]. Third, these measures should not be subject to digit preferences, for example due to psychological preferences for rounded numbers. Fourth, any form of truncation undermines the NBL [@doi:10.1515/9781400866595-011]. Moreover, some research has even indicated that humans might be able to fabricate data that are in line with the NBL [@doi:10.1080/02664760601004940;@Burns2009], immediately undermining the applicability of the NBL in context of detecting data fabrication.
@@ -723,9 +736,14 @@ We expected the dispersion of variances to be lower in fabricated data as oppose
 names(df) <- c('Population variance assumption',
     'Study', '$SD_z$', '$max_{z}-min_{z}$')
 
-knitr::kable(df, digits = 3, caption = "Area Under Receiving Operator Characteristic (AUROC) values of each variance analysis and operationalization, including its 95 percent Confidence Interval. 'Heterogeneity' assumes unequal population variances for the low- and high anchoring conditions, whereas 'homogeneity' assumes equal population variances across anchoring conditions in the same study. We preregistered only the analyses in the second row.", booktabs = TRUE, escape = FALSE) %>%
-  kable_styling(latex_options = c('striped', 'hold_position', 'scale_down'))
-
+if (!knitr::is_html_output()) {
+knitr::kable(df, format = 'latex', digits = 3, caption = "Area Under Receiving Operator Characteristic (AUROC) values of each variance analysis and operationalization, including its 95 percent Confidence Interval. 'Heterogeneity' assumes unequal population variances for the low- and high anchoring conditions, whereas 'homogeneity' assumes equal population variances across anchoring conditions in the same study. We preregistered only the analyses in the second row.", booktabs = TRUE, escape = FALSE) %>%
+  kableExtra::kable_styling(latex_options = c('striped', 'hold_position', 'scale_down'), position = 'center')
+} else {
+  knitr::kable(df, digits = 3, caption = "Area Under Receiving Operator Characteristic (AUROC) values of each variance analysis and operationalization, including its 95 percent Confidence Interval. 'Heterogeneity' assumes unequal population variances for the low- and high anchoring conditions, whereas 'homogeneity' assumes equal population variances across anchoring conditions in the same study. We preregistered only the analyses in the second row.", booktabs = TRUE, escape = FALSE) %>%
+  kableExtra::kable_styling(position = 'center',
+                            bootstrap_options = c("striped", "hover", "condensed", "responsive", full_width = F))
+}
 
 sel <- AUC[grepl(AUC$test, pattern = 'Variance analysis'), ]
 ```
@@ -755,14 +773,6 @@ Analyses separated per study or anchoring condition show variable $AUROC$ result
 With this statistic, we classified `r dfSDHeteroOverallFabDet` of the `r sum(grepl(x = dfSDHeteroOverall$id, 'R_'))` fabricated summary statistics as fabricated ($\alpha=.01$) and `r dfSDHeteroOverallGenDet` of the `r sum(!grepl(x = dfSDHeteroOverall$id, 'R_'))` genuine summary statistics (results per respondent available at [osf.io/srpg9](https://osf.io/srpg9)).
 Using the range of variances (i.e., $max_z-min_z$) in a heterogeneous manner across the conditions and studies, $AUROC=`r round(sel$auc[1], 3)`$, 95% CI [$`r round(sel$ci_lb[1], 3)`$-$`r round(sel$ci_ub[1], 3)`$].
 With this statistic, we classified the same `r dfmaxminHeteroOverallFabDet` of the `r sum(grepl(x = dfmaxminHeteroOverall$id, 'R_'))` fabricated summary statistics as fabricated ($\alpha=.01$) and `r dfmaxminHeteroOverallGenDet` of the `r sum(!grepl(x = dfmaxminHeteroOverall$id, 'R_'))` genuine summary statistics (results per respondent available at [osf.io/93rek](https://osf.io/93rek)).
-
-<!--Our exploratory results suggest that (1) taking into account heterogeneous population variances improves the performance of the variance analyses and (2) that the dispersion of variances measured by the range of variances is consistently more robust to violations of homogeneous population variances than the standard deviation of variances. Compared to the (below) chance level performance of the preregistered variance analyses, the variance analyses that take into account heterogeneous population variances perform much better regardless of the dispersion of variance measure used. More specifically, $AUROC=`r round(sel$auc[15], 3)`$, 95% CI [$`r round(sel$ci_lb[15], 3)`$-$`r round(sel$ci_ub[15], 3)`$] for the standard deviation of the variances (i.e., $SD_z$) and $AUROC=`r round(sel$auc[1], 3)`$, 95% CI [$`r round(sel$ci_lb[1], 3)`$-$`r round(sel$ci_ub[1], 3)`$] for the range of the variances (i.e., $max_z-min_z$).
-For the analyses assuming homogeneous population variances per study (i.e., rows 3-6 of Table \@ref(tab:auc-var1)), we see that $max_z-min_z$ is consistently more robust at detecting data fabrication when compared to $SD_z$.
-Lastly, we see that the AUROC results for variance analyses separated per study or anchoring condition within a study are quite variable (ranging from `r round(min(tmp), 3)`-`r round(max(tmp), 3)`), which suggests that a combined analysis of variances across homogeneous subsets of standard deviations is preferred.-->
-
-<!-- After all, a priori selection of one specific subset seems infeasible in practice. -->
-
-<!-- Overall, variance analyses work fairly well if the homogeneity assumption is fulfilled for subgroups and all variances available are analyzed jointly. More specifically, we see that both the $SD_z$ and $max_z-min_z$ operationalizations perform approximately the same ($AUROC=`r round(sel$auc[15], 3)`$, 95% CI [$`r round(sel$ci_lb[15], 3)`$-$`r round(sel$ci_ub[15], 3)`$] and $AUROC=`r round(sel$auc[1], 3)`$, 95% CI [$`r round(sel$ci_lb[1], 3)`$-$`r round(sel$ci_ub[1], 3)`$], respectively). Given that $max_z-min_z$ seems to be relatively more robust to violations of the assumption of equal variances, we recommend using that over the previously proposed $SD_z$ operationalization [@doi:10.1177/0956797613480366]. -->
 
 #### Combining $p$-value and variance analyses
 
@@ -817,11 +827,6 @@ statistics as fabricated ($\alpha=.01$) and `r dfCombHeteroCombGenDet`
 of the `r sum(!grepl(x = dfCombHeteroComb$id, 'R_'))` genuine summary
 statistics (results per respondent available at
 [osf.io/zt3nk](https://osf.io/zt3nk)). As the $AUROC$s of the combination method did not exceed that of the variance analyses alone, we conclude that the combination method failed to outperform the variance analyses.
-
-<!-- We combined the results from the different variance analyses with the $p$-value analyses of the nonsignificant gender- and interaction effects. Because we conducted four different sets of variance analyses, we also included four different combinations using the Fisher method. More specifically, we conducted variance analyses assuming homogeneous population variances across all studies, per study but across anchoring conditions, per anchoring condition per study. Table XXX depicts the results for each of these four combined analyses, where only the result from the third row was preregistered. 
-In the first two rows, we depict the combination of the $p$-value analyses with the reversed Fisher method of the nonsignificant gender effect and the nonsignificant interaction effect, and the overall variance analyses under heterogeneity of variances (first and second row) or homogeneity of variances (third and fourth row). The variance analyses are either combined over all studies (first and third row) or split per study/subgroup (second and fourth row, respectively). -->
-
-<!-- Results presented in Table \@ref(tab:auc-std-var) indicate that the combinations of the $p$-value analyses and variance analyses performs poorly in detecting fabricated data in our study. The $p$-value analyses of the gender- and interaction effects already performed at chance level, and the variance analyses performed reasonably poor for all but the combined method with subgroups. As such, the combinations would not be expected to work well in detecting data fabrication because little to no evidential value is added by the reversed Fisher method to the evidential value of the variance analyses. Table \@ref(tab:auc-std-var) presents the results of combining the reversed Fisher results with the dataset specific result of the variance analyses from Table \@ref(tab:auc-var). More specifically, heterogeneity overall ($k=1$) refers to the first row of Table \@ref(tab:auc-var); heterogeneity split ($k=8$) to rows 7 through 14; homogeneity overall ($k=1$) to the second row; homogeneity split ($k=4$) to rows 3 through 6. -->
 
 ```{r auc-std-var, echo = FALSE}
 df <- data.frame(comb = c('Gender, interaction, variance $SD_z$ (heterogeneity, overall, k = 1)',
@@ -1037,8 +1042,17 @@ df <- data.frame(study = AUC_rng$study[5:8],
         round(AUC_norng$ci_lb[5:8], 3), 
         round(AUC_norng$ci_ub[5:8], 3)))
 names(df) <- c("Study", sprintf("$AUROC$ RNG, $k=%s$", rng1), sprintf("$AUROC$ no RNG, $k=%s$", count1 - rng1))
-knitr::kable(df, digits = 3, 
-    caption = "AUROC values for detecting data fabrication based on effect sizes for those participants who used Random Number Generators (RNGs) and those participants who did not use RNGs, including 95 percent confidence interval. Split based on self-report data on whether RNGs were used by the participant.", booktabs = TRUE, escape = FALSE)
+
+if (!knitr::is_html_output()) {
+knitr::kable(df, format = 'latex', digits = 3, 
+    caption = "AUROC values for detecting data fabrication based on effect sizes for those participants who used Random Number Generators (RNGs) and those participants who did not use RNGs, including 95 percent confidence interval. Split based on self-report data on whether RNGs were used by the participant.", booktabs = TRUE, escape = FALSE) %>%
+  kableExtra::kable_styling(latex_options = c('striped', 'hold_position'), position = 'center')
+} else {
+  knitr::kable(df, digits = 3, 
+    caption = "AUROC values for detecting data fabrication based on effect sizes for those participants who used Random Number Generators (RNGs) and those participants who did not use RNGs, including 95 percent confidence interval. Split based on self-report data on whether RNGs were used by the participant.", booktabs = TRUE, escape = FALSE) %>%
+  kableExtra::kable_styling(position = 'center',
+                            bootstrap_options = c("striped", "hover", "condensed", "responsive", full_width = F))
+}
 
 ```
 
@@ -1301,9 +1315,6 @@ dfBenfIncongSDGenDet <- sum(!grepl(x = dfBenfIncongSD$id, '.txt') & dfBenfIncong
 ```
 
 The AUROC results indicate that using the Newcomb-Benford Law is at best on par with chance level classification of genuine and fabricated data. More specifically, for the congruent standard deviations, using the results of the NBL test are on par with chance classification ($AUROC=`r round(sel$auc[2], 3)`$, 95% CI [$`r round(sel$ci_lb[2], 3)`$-$`r round(sel$ci_ub[2], 3)`$]). Using the congruent standard deviations, we detected `r dfBenfCongSDFabDet` of the `r sum(grepl(x = dfBenfCongSD$id, '.txt'))` fabricated ones as fabricated ($\alpha=.01$) and `r dfBenfCongSDGenDet` of the `r sum(!grepl(x = dfBenfCongSD$id, '.txt'))` genuine ones as fabricated (results per respondent available at [osf.io/dsbge](https://osf.io/dsbge)).  Values from other measures showcase that the fabricated data are actually *more* in line with the NBL than the genuine data. Consequently, the genuine data and fabricated data are often wrongly classified. This is reflected by the AUROC values that are significantly smaller than .5. For congruent means, $AUROC=`r round(sel$auc[1], 3)`$, 95% CI [$`r round(sel$ci_lb[1], 3)`$-$`r round(sel$ci_ub[1], 3)`$]; Using the congruent means, we detected `r dfBenfCongMFabDet` of the `r sum(grepl(x = dfBenfCongM$id, '.txt'))` fabricated ones as fabricated ($\alpha=.01$) and `r dfBenfCongMGenDet` of the `r sum(!grepl(x = dfBenfCongM$id, '.txt'))` genuine ones as fabricated (results per respondent available at [osf.io/sgda8](https://osf.io/sgda8)).  For incongruent means, $AUROC=`r round(sel$auc[3], 3)`$, 95% CI [$`r round(sel$ci_lb[3], 3)`$-$`r round(sel$ci_ub[3], 3)`$]; Using the incongruent means, we detected `r dfBenfIncongMFabDet` of the `r sum(grepl(x = dfBenfIncongM$id, '.txt'))` fabricated ones as fabricated ($\alpha=.01$) and `r dfBenfIncongMGenDet` of the `r sum(!grepl(x = dfBenfIncongM$id, '.txt'))` genuine ones as fabricated (results per respondent available at [osf.io/xjsd6](https://osf.io/xjsd6)).  For incongruent standard deviations, $AUROC=`r round(sel$auc[4], 3)`$, 95% CI [$`r round(sel$ci_lb[4], 3)`$-$`r round(sel$ci_ub[4], 3)`$]; Using the incongruent standard deviations, we detected `r dfBenfIncongSDFabDet` of the `r sum(grepl(x = dfBenfIncongSD$id, '.txt'))` fabricated ones as fabricated ($\alpha=.01$) and `r dfBenfIncongSDGenDet` of the `r sum(!grepl(x = dfBenfIncongSD$id, '.txt'))` genuine ones as fabricated (results per respondent available at [osf.io/2sd7w](https://osf.io/2sd7w)).
-<!-- one
-might argue that changing classification direction would make it work
-but we don't know why at all -->
 
 Figure \@ref(fig:digit-term) shows the aggregated terminal digit distributions of the genuine and fabricated data side-by-side with the expected terminal digit distributions. The first row depicts the terminal digit distributions of the means, for both the congruent (left column) and incongruent (right column) conditions. The first row shows that the terminal digit distributions of the genuine and fabricated mean response times are approximately uniform with only minor differences between the genuine and fabricated data. The terminal digit distributions of the standard deviations (second row) show slightly more deviation from uniformly distributed digits, but still approximate the expected distribution of terminal digits reasonably well. Based on these aggregate digit distributions, it seems like the classification based on the terminal digit analyses will not be able to differentiate between genuine and fabricated data particularly well.
 
@@ -1382,8 +1393,7 @@ p1 <- ggplot(sds[sds$sd < 1000, ],
 p1
 ```
 
-Upon closer inspection of the individual level results of the variance analyses per data set, all $p$-values are statistically significant if compared to traditional $\alpha$ levels (i.e., .05; maximum `r round(max(selraw$result), 3)` across both the genuine- and the fabricated data). As a result, we recommend that variance analyses are only used when a reference model is available (in line with the results from Study 1).<!-- , which indicates that the variance analysis is oversensitive in the absolute sense, despite classifying so well in a relative sense. After all, if we would use the traditional notion of hypothesis testing and say $p<\alpha$ leads to the conclusion that the data are fabricated, $\alpha=.01$ would cause all included genuine and fabricated datasets to be regarded as fabricated. -->
-<!-- variance analysis seems to perform quite well but only with adequate control data -->
+Upon closer inspection of the individual level results of the variance analyses per data set, all $p$-values are statistically significant if compared to traditional $\alpha$ levels (i.e., .05; maximum `r round(max(selraw$result), 3)` across both the genuine- and the fabricated data). As a result, we recommend that variance analyses are only used when a reference model is available (in line with the results from Study 1).
 
 #### Multivariate associations
 
@@ -1465,8 +1475,6 @@ suppressWarnings(gridExtra::grid.arrange(p1, p2, p3, p4, p0,
        ncol = 2, layout_matrix = my_layout))
 ```
 
-<!-- so multivariate similar across measures -->
-
 #### Combining variance, terminal digit, and associational analyses
 
 ```{r echo = FALSE}
@@ -1491,8 +1499,7 @@ selraw <- dat_raw[grepl(dat_raw$test, pattern = 'Combination'), ]
 sel <- AUC[grepl(AUC$test, pattern = 'Combination'),]
 ```
 
-As preregistered, we combined both variance analyses, the terminal digit analyses, and the tests of the multivariate associations with the Fisher method (10 results in total). <!-- . More specifically, we combined the results of the congruent- and incongruent variance analyses (i.e., two per dataset); the terminal digit analysis of the congruent and incongruent means and standard deviations (i.e., four per dataset); the parametric tests of the relation between the (in)congruent means and standard deviations, the relation between the means across conditions, and the relation between the standard deviations across conditions (i.e., four per dataset).  -->Results of the combined analysis perform excellent at classifying fabricated and genuine data in this sample. More specifically, the results for the combination method indicate $AUROC=`r round(sel$auc[1], 3)`$ (95% CI [$`r round(sel$ci_lb[1], 3)`$-$`r round(sel$ci_ub[1], 3)`$]). This combination method is affected by the effectiveness of the individual methods involved; given that the performance of the multivariate associations and variance analyses ranged from sufficient to excellent, it makes sense that this combination method also performs quite well. The maximum $p$-value of the combination of these tests for either the genuine or fabricated data is `r round(max(selraw$result), 3)` (results per respondent available at [osf.io/rke9q](https://osf.io/rke9q)), indicating that all datasets would be classified as fabricated if we did not compare the results from the genuine and fabricated data.
-<!-- combination method does not reall add much it seems -->
+As preregistered, we combined both variance analyses, the terminal digit analyses, and the tests of the multivariate associations with the Fisher method (10 results in total). Results of the combined analysis perform excellent at classifying fabricated and genuine data in this sample. More specifically, the results for the combination method indicate $AUROC=`r round(sel$auc[1], 3)`$ (95% CI [$`r round(sel$ci_lb[1], 3)`$-$`r round(sel$ci_ub[1], 3)`$]). This combination method is affected by the effectiveness of the individual methods involved; given that the performance of the multivariate associations and variance analyses ranged from sufficient to excellent, it makes sense that this combination method also performs quite well. The maximum $p$-value of the combination of these tests for either the genuine or fabricated data is `r round(max(selraw$result), 3)` (results per respondent available at [osf.io/rke9q](https://osf.io/rke9q)), indicating that all datasets would be classified as fabricated if we did not compare the results from the genuine and fabricated data.
 
 #### Extreme effect sizes
 
@@ -1501,8 +1508,6 @@ sel <- AUC[grepl(AUC$test, pattern = 'Effect'), ]
 ```
 
 Figure \@ref(fig:dens-mult) (final row) shows the density distributions of the fabricated and genuine Stroop effect sizes, which is an excellent classifier of fabricated/genuine data in this sample. More specifically, the classification performance for detecting fabricated data in this sample is $AUROC=`r round(sel$auc[1], 3)`$, 95% CI [$`r round(sel$ci_lb[1], 3)`$-$`r round(sel$ci_ub[1], 3)`$] (the 95% CI is truncated at 1), with fabricated effect sizes generally being larger than genuine effect sizes. Upon closer inspection of the effect sizes, we note that only three (of 28) fabricated effect sizes fall within the range of genuine effect sizes (results per respondent available at [osf.io/](https://osf.io/)). As such, this is a particularly good result within this sample (we did not preregister this analysis).
-
-<!-- effect sizes good = replicated -->
 
 ```{r echo = FALSE}
 count2rng <- plyr::ddply(dat_raw, .(id), function (x) {
@@ -1530,8 +1535,15 @@ df <- data.frame(test = as.character(AUC_rng$test),
 df$test <- as.character(df$test)
 df$test[5] <- 'Combination with Fisher method'
 names(df) <- c('Test', 'With RNG (k=19)', 'Without RNG (k=9)')
-knitr::kable(df, caption = "AUROC values with 95 percent confidence intervals for each test, when split for those with Random Number Generators (RNGs) and those without.", booktabs = TRUE, longtable = FALSE) %>%
-  kable_styling(latex_options = c('striped', 'repeat_header', 'hold_position', 'scale_down'))
+
+if (!knitr::is_html_output()) {
+knitr::kable(df, format = 'latex', caption = "AUROC values with 95 percent confidence intervals for each test, when split for those with Random Number Generators (RNGs) and those without.", booktabs = TRUE, longtable = FALSE)  %>%
+  kableExtra::kable_styling(latex_options = c('striped', 'repeat_header', 'hold_position', 'scale_down'), position = 'center')
+} else {
+  knitr::kable(df, caption = "AUROC values with 95 percent confidence intervals for each test, when split for those with Random Number Generators (RNGs) and those without.", booktabs = TRUE, longtable = FALSE)  %>%
+  kableExtra::kable_styling(position = 'center',
+                            bootstrap_options = c("striped", "hover", "condensed", "responsive", full_width = F))
+}
 
 sel <- AUC[grepl(AUC$test, pattern = 'Variance analysis'), ]
 ```
@@ -1605,18 +1617,7 @@ Study 2 replicated the effectiveness of variance analyses (preregistered) and ef
 
 Study 2 substantiates two conclusions from Study 1: (1) As methods may not be robust to violations of its assumptions (e.g., NBL in Study 2), these methods should be validated with genuine reference data if available, before using these tools to flag potential problematic papers. This dependence on assumptions also questions the validity of automatic large-scale scrutiny for data fabrication. (2) Although some methods did not perform well in Study 2, these methods have shown to work well to detect data fabrication in some isolated cases of misconduct. For instance, both the NBL [@doi:10.2307/27643897] and the analysis of terminal digits [@doi:10.1080/08989629508573866] have shown their usefulness in some cases. Similarly, although some methods worked well in Study 2 (i.e. variance analyses, effect size distributions, multivariate associations), this does not mean that they always work well in detecting fabricated data, or that they could exonerate anyone when these methods fail to flag any fabrication.
 
-  
-<!-- Hier minstens 1 alinea over.
-Bijv, hoe ga je dit dan in de praktijk gebruiken?
-Kijk, je hebt hier gebruik kunnen maken van exhte data. Hoe ga je dat doen als die er niet zijn, of maar heel beperkt? Ga je dan de (supposedly fabricated) data vergelijken met de output van een model?
-Je kunt er niet onderuit om iets te zeggen over de praktijk
- -->
-
-<!-- methods don't exclude other reasons for deviation from probabilistic processes, might be incorrect random assignment or such -->
-
 ## General discussion
-
-<!-- Hoe zit het met het gebruik van effect sizes? En als je dat gebruikt, wat gebruik je dan als referentiegroep? Ik zou ook product sqrt(reliabiliy) noemen. -->
 
 We presented the first two empirical studies on detecting individual sets of fabricated data, where the fabricated data pertained to existing experiments and detection occurred purely by using statistical methods. By comparing results from genuine and fabricated data across summary statistics and individual level data from two well-known psychology research topics, it seems like classification based on statistically significant effect sizes strikes the best balance between parsimony, effectiveness, and usability. On the other hand, variance analyses are a good option that is somewhat more complex in its application because one has to identify the sets of variances that can be expected to be homogeneous. The digit analyses based on the Newcomb-Benford law and the terminal digit principle did not perform well. We bundled our functions for the variance and digit analyses and the (reversed) Fisher method in the `ddfab` (short for detecting data fabrication) package for `R`, which is available through GitHub (https://github.com/chartgerink/ddfab) for application in further research and development.
 
@@ -1624,9 +1625,6 @@ We designed the current studies to have sufficient information to detect data fa
 
 All presented results throughout the two studies pertain to relative comparisons between genuine and fabricated data. Hence, all statements about the performance of classification depends on the availability of unbiased genuine data to compare to and cannot readily be done by using generic decision criteria such as $\alpha$-levels. As we saw for example in the variance analyses for Study 2, there was excellent relative classification, but absolute classification as many researchers are used to by comparing $p<\alpha$ remained impossible or problematic at best. More specifically, we would have classified all datasets as fabricated if we had used the traditional hypothesis testing approach. Hence, we agree with the call to always include a control sample when applying these statistical tools to studies that look suspicious [@doi:10.1177/0956797613480366]. It is for exactly this reason that we refrain from formulating general decision rules for the methods presented in this paper. This might also have implications for systematic applications of statistical methods to detect potentially problematic data, such as the recent application by @doi:10.1111/anae.13938. @doi:10.1111/anae.13938 used the same method applied in the Fujii case to approximately 5,000 clinical trials without any further validation of the methods [@doi:10.1016/j.jclinepi.2019.03.001]. Our results suggest that in practice aberrant effects are best detected in relative fashion, for example in a meta-analysis (corroborating our own anecdotal experience), or to look for excessively large effect sizes (e.g., $r>.95$) as an initial screening of a set of effects (especially when that effect size is larger than the reliability of the product of the measures involved). Using absolute classification (i.e., $p<\alpha$) can be problematic, considering that many of the methods we tested (e.g., variance analyses, digit analyses) are not specific enough and rely on models with strong assumptions, potentially flagging both genuine and fabricated data as problematic.
 
-<!-- 10.1126/science.aac6184  -->
-<!-- 10.1126/science.1256151 -->
-<!-- https://wayback.archive.org/web/20180823093137/http://stanford.edu/~dbroock/broockman_kalla_aronow_lg_irregularities.pdf -->
 Because we included the Many Labs data [@doi:10.1027/1864-9335/a000178;@doi:10.1016/j.jesp.2015.10.012] we had (arguably) unbiased estimates of the effects under investigation, which is key for relative comparisons. If we had used the peer-reviewed literature on the anchoring effect (Study 1) or the Stroop effect (Study 2), we would likely have found inflated effect size estimates of the anchoring- or Stroop effects due to publication bias. These inflated effect size estimates could have resulted in worsened classification of genuine and fabricated data because publication bias results in inflated effect sizes [@doi:10.1037/gpr0000034] and our studies indicate fabricating data has a similar effect. That publication bias and fabricating data might have similar effects in turn conflates the detection of fabricated data. Collecting an unbiased genuine effect distribution thus requires careful attention; when arguably genuine effects are collected from a literature ridden with publication bias and related biases, detection of data fabrication may be undermined. We recommend retrieving unbiased effect size distributions for an effect from large-scale replication projects, such as Registered Replication Reports [e.g., @doi:10.1177/1745691616664694] and building systemic efforts to reduce publication bias [see also @doi:10.3390/publications6020021].
 
 Our results depend on the (majority of the) Many Labs data being genuine. We remain confident that (most of) the Many Labs data are genuine for a variety of reasons. First, the sheer number of people involved in these projects results in a distribution of responsibility that also limits the effect if one person were to fabricate data. Second, the number of people involved also minimizes the individual reward it would have to fabricate data given that any utility would have to be shared across all researchers involved. Third, the projects actively made all individual research files available and participating researchers in the ML were made aware of this from the very start. Fourth, the analyses of the Many Labs are not conducted by the same individuals who collected the data. We of course cannot exclude the possibility of malicious actors in the ML studies, but also have no evidence that suggests there would be.

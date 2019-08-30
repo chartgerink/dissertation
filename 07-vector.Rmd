@@ -3,15 +3,12 @@
 # Extracting data from vector figures in scholarly articles
 
 ```{r echo=FALSE}
+suppressPackageStartupMessages(library(kableExtra))
 dat <- read.csv('assets/data/corpus.csv', as.is = TRUE)
 dois <- dat$doi[dat$true_vector == 'yes' & !is.na(dat$doi)]
 dois <- dois[!is.na(dois)]
 vec_dat <- read.csv('assets/data/funnels.csv')
 ```
-
-<!-- ## Abstract
-
-It is common for authors to communicate their results in graphical figures, but those data are frequently unavailable for reanalysis. Reconstructing data points from a figure manually requires the author to measure the coordinates either on printed pages using a ruler, or from the display screen using a cursor. This is time-consuming (often hours) and error-prone, and limited by the precision of the display or ruler. What is often not realised is that the data themselves are held in the PDF document to much higher precision (usually 0.0-0.01 pixels), if the figure is stored in vector format. We developed alpha software to automatically reconstruct data from vector figures and tested it on funnel plots in the meta-analysis literature. Our results indicate that reconstructing data from vector based figures is promising, where we correctly extracted data for `r sum(complete.cases(vec_dat[vec_dat$x_ax_mapped == 'yes' & vec_dat$y_ax_mapped == 'yes' & vec_dat$datapoints_extracted == vec_dat$datapoints_manual, ]))` out of `r sum(vec_dat$data_extracted == 1)` funnel plots with extracted data (`r round((sum(complete.cases(vec_dat[vec_dat$x_ax_mapped == 'yes' & vec_dat$y_ax_mapped == 'yes' & vec_dat$datapoints_extracted == vec_dat$datapoints_manual, ])) / sum(vec_dat$data_extracted == 1)) * 100, 0)`%). However, we observed that vector based figures are relatively sparse (`r sum(dat$true_vector == 'yes', na.rm = TRUE)` out of `r sum(dat$funnel_plot == 'yes', na.rm = TRUE)` papers with funnel plots) and strongly insist publishers to provide more vector based data figures in the near future for the benefit of the scholarly community. -->
 
 It is common for authors to communicate their results in graphical figures, but what is generally not realised it that it may be possible to reconstruct the original data from a data based figure [see also the preceding "In Brief" report; @Hartgerink-dlib2017]. Figures are typically presented in order to communicate something about the underlying data, but in an inherently static way. As such, reshaping this communication is not readily possible, because the original data are not available. Examples of reuse if the data are available could be as simple as joining data across figures, standardizing axes across figures for easy comparison, changing color codings to be more colorblind friendly, or using the data to compute relative numbers instead of absolute numbers. Moreover, considering the current low rates of data sharing [@doi:10.1037/0003-066x.61.7.726;@doi:10.1525/collabra.13;@doi:10.1080/08989621.2012.678688] and rapid decrease of the odds of successfully requesting those data [@doi:10.1016/j.cub.2013.11.014], reusing data effectively becomes impossible in the long run because data simply are not available any more. Hence, we find it important to be able to have alternative ways of extracting data solely from results presented in a scholarly report.
 
@@ -29,14 +26,13 @@ At the highest level, typical figure components are the body, header, footer, an
 
 ```{r vector-fig1, echo = FALSE, out.width="40%", fig.align="center",  fig.cap="Visual representation of the typical components to a data based plot. This serves as the basis of the software to extract data from the plot body."}
 knitr::include_graphics('assets/figures/plot-components.png')
-
-
 ```
 
 Based on the plot body, absolute locations of the individual data points are extracted. Not all vector images are created in a similar way, but in the simplest scenario with data points depicted as circles, the vector gives three parameters: the $x$ coordinate of the centre, the $y$ coordinate of the centre, and the radius $r$. As such, for a simple circle the underlying vector code (in Scalable Vector Graphics, SVG)  might look as follows:
 ```html
-<circle cx="103.71" cy="121.22" r="25.234" fill-opacity="0" stroke="#cf1d35" 
-  stroke-width=".26458"/>
+<circle cx="103.71" cy="121.22" r="25.234" fill-opacity="0"
+        stroke="#cf1d35" 
+        stroke-width=".26458"/>
 ```
 This information can be readily extracted after isolating the vector figure from a PDF file. The current alpha software is primarily developed to operate on circles of similar size within one plot but can be extended for data depicted in other ways.
 
@@ -53,7 +49,7 @@ knitr::include_graphics('assets/figures/search-results.png')
 
 We manually searched through these `r dim(dat)[1]` reports for vector based funnel plots. The first author (CHJH) checked each article for (1) whether a funnel plot was present; (2) if so, how many funnels were present, and (3) whether the funnel plots were vector based. In order to determine whether a funnel plot was vector based, a heuristic was used. This heuristic was to try and select the axes (either x- or y-axis) from the plot. If we could select the labels from the tickmarks, the plot was deemed to be vector based, otherwise it was dropped. We later found out this was a liberal heuristic, considering some publishers present vector axes but incorporate a bitmap plot body (see Figure \@ref(fig:vector-fig3) for an example).
 
-```{r vector-fig3, echo = FALSE, out.width='100%', fig.cap="Example of a funnel plot with selectable axes, but including a bitmap body. This can be seen by the large difference in quality between the body and the axes, where the axes are crisp and the body is pixelated. The x-axis is selected. Funnel plot reproduced under CC BY-NC license from 10.2147/amep.s116699."}
+```{r vector-fig3, echo = FALSE, out.width='100%', fig.cap="Example of a funnel plot with selectable axes, but including a bitmap body. This can be seen by the large difference in quality between the body and the axes, where the axes are crisp and the body is pixelated. The x-axis is selected. Funnel plot reproduced under CC BY-NC license from 10.2147/amep.s116699.", fig.pos = 'h'}
 knitr::include_graphics('assets/figures/example-bitmap.png')
 ```
 
@@ -76,8 +72,10 @@ stepsnr <- 5
 
 In order to extract data from vector figures with the software `norma`, `r stepsnr` steps are taken. First, the user needs to organize all original PDFs into one folder. Second, this folder needs to be converted to a `cproject` structure. The `cproject` structure normalizes the contents for each paper into a `ctree`, such that subsequent operations are trivial to standardize (and extensions can be applied relatively easily). For example, the root folder might contain `ctree1.pdf`, but after transforming the root folder into a `cproject` it contains a folder `ctree1/` with `fulltext.pdf`. By running the command 
 ```bash
-java -jar bin/norma-0.5.0-SNAPSHOT-jar-with-dependencies.jar --project corpus-raw  
-  --fileFilter '.*/(.*).pdf' --makeProject '(\1)/fulltext.pdf'
+java -jar bin/norma-0.5.0-SNAPSHOT-jar-with-dependencies.jar \
+  --project corpus-raw \
+  --fileFilter '.*/(.*).pdf' \
+  --makeProject '(\1)/fulltext.pdf'
 ```
 the folder `corpus-raw` (`--project corpus-raw`) is restructured into a `cproject` structure, containing a folder for each PDF file (`--fileFilter '.*/(.*).pdf' --makeProject '(\1)/fulltext.pdf'`). This results in the following folder structure, where `fulltext.pdf` is the original PDF and `ctree1` (etc.) may capture the DOI or other document identifiers.:
 ```bash
@@ -93,7 +91,8 @@ cproject/
 
 After converting the folder into a `cproject`, the `norma` software is applied to convert the PDF files into separate SVGs per page. In order to convert each page of the PDF into a separate SVG file, we used the following command
 ```bash
-java -jar bin/norma-0.5.0-SNAPSHOT-jar-with-dependencies.jar --project corpus-raw 
+java -jar bin/norma-0.5.0-SNAPSHOT-jar-with-dependencies.jar \
+  --project corpus-raw \
   -i fulltext.pdf --outputDir corpus-raw --transform pdf2svg
 ```
 resulting in a `svg/` folder for each `ctree` in the structure presented above. That is, each `ctree` now contains a folder with one vector file for each page in the fulltext PDF.
@@ -111,14 +110,16 @@ cproject/
 ```
 where `figure1` contains the first funnel plot (not the figure number in the paper), `figure2/` contains the second funnel plot, etc. If a figure is contained in a box, it is important to retain only the figure and exclude the box (see Figure \@ref(fig:vector-fig4) for an example). In the Github repository, we provide a project folder that already contains all the clipped images for the corpus under investigation in this chapter.
 
-```{r vector-fig4, echo=FALSE, out.width='100%', fig.cap="The original depiction of a funnel plot [left, reproduced under CC BY license from 10.1186/s13027-016-0058-9] and the manually extracted part that is subsequently ingested into the norma software (right)."}
+```{r vector-fig4, echo=FALSE, out.width='100%', fig.cap="The original depiction of a funnel plot [left, reproduced under CC BY license from 10.1186/s13027-016-0058-9] and the manually extracted part that is subsequently ingested into the norma software (right).", fig.pos = 'h'}
 knitr::include_graphics('assets/figures/boxed-funnel.png')
 ```
 
 Finally, each figure is converted to a data file with `norma`. The following command produces an annoted SVG file showing the identified areas from Figure 1 and a CSV file containing the data based on the manually clipped figures available in the `corpus-clipped/` folder.
 ```bash
-java -jar bin/norma-0.5.0-SNAPSHOT-jar-with-dependencies.jar --project corpus-clipped 
-  --fileFilter "^.*figures/figure(\\d+)/figure(_\\d+)?\\.svg"  --outputDir corpus-clipped
+java -jar bin/norma-0.5.0-SNAPSHOT-jar-with-dependencies.jar \
+  --project corpus-clipped \
+  --fileFilter "^.*figures/figure(\\d+)/figure(_\\d+)?\\.svg" \
+  --outputDir corpus-clipped \
   --transform scatter2csv
 ```
 We provide the fully extracted data in the folder `corpus-extracted/` of the Github repository ([https://github.com/chartgerink/2015ori-3/archive/master.zip](https://github.com/chartgerink/2015ori-3/archive/master.zip)).
@@ -141,10 +142,17 @@ names(df) <- c("DOI",
                "Nr. manual data points",
                "X-axis correct",
                "Y-axis correct")
-               # "Note")
-knitr::kable(df, caption = "All meta-analytic reports with vector based funnel plots and the results of automated data extraction. The figure number depicts the funnel plot order for extraction, the paper figure number depicts the original figure number in the paper. \'Data extracted\' indicates whether any datafile was generated by the software. \'Nr. extracted data points\' indicates the number of rows in the datafile; \'Nr. manual data points\' indicates the visually discernable data points in the plot. \'X-axis correct\' and \'Y-axis correct\' depicts whether the extracted data corresponded to the data points of the funnel plot upon manual inspection.", booktabs = TRUE) %>%
-  kable_styling(latex_options = c('scale_down', 'striped'), position = 'left') %>%
-  landscape()
+                                        # "Note")
+
+if (!knitr::is_html_output()) {
+  knitr::kable(df, caption = "All meta-analytic reports with vector based funnel plots and the results of automated data extraction. The figure number depicts the funnel plot order for extraction, the paper figure number depicts the original figure number in the paper. \'Data extracted\' indicates whether any datafile was generated by the software. \'Nr. extracted data points\' indicates the number of rows in the datafile; \'Nr. manual data points\' indicates the visually discernable data points in the plot. \'X-axis correct\' and \'Y-axis correct\' depicts whether the extracted data corresponded to the data points of the funnel plot upon manual inspection.", booktabs = TRUE, format = 'latex')  %>%
+    landscape() %>%
+  kableExtra::kable_styling(latex_options = c('striped', 'scale_down'), position = 'left')
+} else {
+  knitr::kable(df, caption = "All meta-analytic reports with vector based funnel plots and the results of automated data extraction. The figure number depicts the funnel plot order for extraction, the paper figure number depicts the original figure number in the paper. \'Data extracted\' indicates whether any datafile was generated by the software. \'Nr. extracted data points\' indicates the number of rows in the datafile; \'Nr. manual data points\' indicates the visually discernable data points in the plot. \'X-axis correct\' and \'Y-axis correct\' depicts whether the extracted data corresponded to the data points of the funnel plot upon manual inspection.", booktabs = TRUE)  %>%
+  kableExtra::kable_styling(position = 'left',
+                            bootstrap_options = c("striped", "hover", "condensed", "responsive", full_width = F))
+}
 ```
 
 Of the `r sum(vec_dat$data_extracted == 1)` funnel plots with extracted data, we correctly extracted data for `r sum(complete.cases(vec_dat[vec_dat$x_ax_mapped == 'yes' & vec_dat$y_ax_mapped == 'yes' & vec_dat$datapoints_extracted == vec_dat$datapoints_manual, ]))` funnel plots (`r round((sum(complete.cases(vec_dat[vec_dat$x_ax_mapped == 'yes' & vec_dat$y_ax_mapped == 'yes' & vec_dat$datapoints_extracted == vec_dat$datapoints_manual, ])) / sum(vec_dat$data_extracted == 1)) * 100, 0)`%). That is, the data points were correctly mapped onto the x- and y-axis and the number of extracted data points corresponded to the number of visually discernable data points. For the remaining `r sum(vec_dat$data_extracted == 1) - (sum(complete.cases(vec_dat[vec_dat$x_ax_mapped == 'yes' & vec_dat$y_ax_mapped == 'yes' & vec_dat$datapoints_extracted == vec_dat$datapoints_manual, ])))` funnel plots, there `r ifelse(sum(complete.cases(vec_dat[vec_dat$x_ax_mapped == 'yes' & vec_dat$y_ax_mapped == 'yes' & vec_dat$datapoints_extracted != vec_dat$datapoints_manual, ])) > 1, "were", "was")` `r sum(complete.cases(vec_dat[vec_dat$x_ax_mapped == 'yes' & vec_dat$y_ax_mapped == 'yes' & vec_dat$datapoints_extracted != vec_dat$datapoints_manual, ]))` with correctly mapped x- and y-axes, but with an incorrect number of extracted data points. For the remaining `r sum(vec_dat$data_extracted == 1) - (sum(complete.cases(vec_dat[vec_dat$x_ax_mapped == 'yes' & vec_dat$y_ax_mapped == 'yes' & vec_dat$datapoints_extracted == vec_dat$datapoints_manual, ]))) - sum(complete.cases(vec_dat[vec_dat$x_ax_mapped == 'yes' & vec_dat$y_ax_mapped == 'yes' & vec_dat$datapoints_extracted != vec_dat$datapoints_manual, ]))` funnel plots, the software did not correctly map the axes or did not extract the correct number of data points.
@@ -156,8 +164,3 @@ As the results indicate, vector figures are a fruitful and feasible resource for
 Considering the alpha software to extract data from vectors was developed in the timespan of approximately one month, we are hopeful that future development can refine the data extraction and eliminate some flaws that exist in the alpha software, including those such as reversed axes, logarithmic axes, etc. The current software was developed specifically on funnel plots, but its use can be extended to include other types of plots, such as histograms, etc. Moreover, third-dimensions such as variable point size provide a fruitful avenue, considering the SVG also contains information on this (see [Extraction procedure](#extraction-procedure)).
 
 The main bottleneck for data extraction from vector figures is the publication of vector figures. In older publications (e.g., scanned articles) this will be impossible to reconstruct. Our results indicate that the availability of vector figures in digitally born articles is relatively sparse; only `r sum(dat$true_vector == 'yes', na.rm = TRUE)` out of `r sum(dat$funnel_plot == 'yes', na.rm = TRUE)` papers with funnel plots contained vector figures in our sample. From our own anecdotal publishing experience, vector based figures are often converted into bitmaps in the editing stage, resulting in loss of information. For publishers themselves, it is also fruitful to use vector based figures where possible, considering figure quality is no longer an issue as a result. As such, we encourage both authors and publishers to produce figures in vector format (e.g., PDF, SVG, EPS) instead of bitmap format (e.g., JPEG, PNG, GIF) when it regards figures presenting results. Not only will it benefit the quality of the publications, it will also present a new way of data preservation.
-
-<!-- # Author notes
-
-All presented materials in this report are version-controlled and freely available a CC 0 Public Domain Dedication on Github (https://github.com/chartgerink/2015ori-3), and are preserved at Zenodo ([doi.org/10.5281/zenodo.839536](https://doi.org/10.5281/zenodo.839536)). This research was funded by the Office of Research Integrity under grant ORIIR160019 (as part of the [Department of Human Health Services](http://dx.doi.org/10.13039/100000016)); software developed by ContentMine ([contentmine.org](contentmine.org)).
- -->

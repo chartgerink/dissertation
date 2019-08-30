@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>9 Verified, shared, modular, and provenance based research communication with the Dat protocol | Contributions towards understanding and building sustainable science</title>
+  <meta name="description" content="PhD dissertation by CHJ Hartgerink, written during 2014-2019, mostly at Tilburg University." />
+  <meta name="generator" content="bookdown 0.10 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="9 Verified, shared, modular, and provenance based research communication with the Dat protocol | Contributions towards understanding and building sustainable science" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="PhD dissertation by CHJ Hartgerink, written during 2014-2019, mostly at Tilburg University." />
+  <meta name="github-repo" content="chartgerink/dissertation" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="9 Verified, shared, modular, and provenance based research communication with the Dat protocol | Contributions towards understanding and building sustainable science" />
+  
+  <meta name="twitter:description" content="PhD dissertation by CHJ Hartgerink, written during 2014-2019, mostly at Tilburg University." />
+  
+
+<meta name="author" content="Chris Hubertus Joseph Hartgerink" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html">
+<link rel="next" href="summary.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Prologue</a></li>
+<li class="part"><span><b>I Understanding sustainable science</b></span></li>
+<li class="chapter" data-level="1" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html"><i class="fa fa-check"></i><b>1</b> Research practices and assessment of research misconduct</a><ul>
+<li class="chapter" data-level="1.1" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#responsible-conduct-of-research"><i class="fa fa-check"></i><b>1.1</b> Responsible conduct of research</a><ul>
+<li class="chapter" data-level="1.1.1" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#what-is-it"><i class="fa fa-check"></i><b>1.1.1</b> What is it?</a></li>
+<li class="chapter" data-level="1.1.2" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#what-do-researchers-do"><i class="fa fa-check"></i><b>1.1.2</b> What do researchers do?</a></li>
+<li class="chapter" data-level="1.1.3" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#improving-responsible-conduct"><i class="fa fa-check"></i><b>1.1.3</b> Improving responsible conduct</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#questionable-research-practices"><i class="fa fa-check"></i><b>1.2</b> Questionable research practices</a><ul>
+<li class="chapter" data-level="1.2.1" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#what-is-it-1"><i class="fa fa-check"></i><b>1.2.1</b> What is it?</a></li>
+<li class="chapter" data-level="1.2.2" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#what-do-researchers-do-1"><i class="fa fa-check"></i><b>1.2.2</b> What do researchers do?</a></li>
+<li class="chapter" data-level="1.2.3" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#how-can-it-be-prevented"><i class="fa fa-check"></i><b>1.2.3</b> How can it be prevented?</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#research-misconduct"><i class="fa fa-check"></i><b>1.3</b> Research misconduct</a><ul>
+<li class="chapter" data-level="1.3.1" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#what-is-it-2"><i class="fa fa-check"></i><b>1.3.1</b> What is it?</a></li>
+<li class="chapter" data-level="1.3.2" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#what-do-researchers-do-2"><i class="fa fa-check"></i><b>1.3.2</b> What do researchers do?</a></li>
+<li class="chapter" data-level="1.3.3" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#how-can-it-be-prevented-1"><i class="fa fa-check"></i><b>1.3.3</b> How can it be prevented?</a></li>
+</ul></li>
+<li class="chapter" data-level="1.4" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#conclusion"><i class="fa fa-check"></i><b>1.4</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html"><a href="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html"><i class="fa fa-check"></i><b>2</b> Reanalyzing Head et al. (2015): investigating the robustness of widespread <span class="math inline">\(p\)</span>-hacking</a><ul>
+<li class="chapter" data-level="2.1" data-path="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html"><a href="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html#data-and-methods"><i class="fa fa-check"></i><b>2.1</b> Data and methods</a></li>
+<li class="chapter" data-level="2.2" data-path="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html"><a href="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html#reanalysis-results"><i class="fa fa-check"></i><b>2.2</b> Reanalysis results</a></li>
+<li class="chapter" data-level="2.3" data-path="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html"><a href="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html#discussion"><i class="fa fa-check"></i><b>2.3</b> Discussion</a></li>
+<li class="chapter" data-level="2.4" data-path="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html"><a href="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html#limitations-and-conclusion"><i class="fa fa-check"></i><b>2.4</b> Limitations and conclusion</a></li>
+<li class="chapter" data-level="2.5" data-path="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html"><a href="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html#supporting-information"><i class="fa fa-check"></i><b>2.5</b> Supporting Information</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><i class="fa fa-check"></i><b>3</b> Distributions of p-values between .01-.05 in psychology: what is going on?</a><ul>
+<li class="chapter" data-level="3.0.1" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#how-qrps-relate-to-distributions-of-p-values"><i class="fa fa-check"></i><b>3.0.1</b> How QRPs relate to distributions of <em>p</em>-values</a></li>
+<li class="chapter" data-level="3.0.2" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#previous-findings"><i class="fa fa-check"></i><b>3.0.2</b> Previous findings</a></li>
+<li class="chapter" data-level="3.0.3" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#extensions-of-previous-studies"><i class="fa fa-check"></i><b>3.0.3</b> Extensions of previous studies</a></li>
+<li class="chapter" data-level="3.1" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#data-and-methods-1"><i class="fa fa-check"></i><b>3.1</b> Data and methods</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#data"><i class="fa fa-check"></i><b>3.1.1</b> Data</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#methods"><i class="fa fa-check"></i><b>3.2</b> Methods</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#caliper-test"><i class="fa fa-check"></i><b>3.2.1</b> Caliper test</a></li>
+<li class="chapter" data-level="3.2.2" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#measures-based-on-p-value-distributions"><i class="fa fa-check"></i><b>3.2.2</b> Measures based on <span class="math inline">\(p\)</span>-value distributions</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#results-and-discussion"><i class="fa fa-check"></i><b>3.3</b> Results and discussion</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#reported-p-values"><i class="fa fa-check"></i><b>3.3.1</b> Reported <span class="math inline">\(p\)</span>-values</a></li>
+<li class="chapter" data-level="3.3.2" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#recalculated-p-value-distributions"><i class="fa fa-check"></i><b>3.3.2</b> Recalculated <span class="math inline">\(p\)</span>-value distributions</a></li>
+<li class="chapter" data-level="3.3.3" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#excessive-significance-over-time"><i class="fa fa-check"></i><b>3.3.3</b> Excessive significance over time</a></li>
+<li class="chapter" data-level="3.3.4" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#results-of-two-measures-based-on-modeling-p-value-distributions"><i class="fa fa-check"></i><b>3.3.4</b> Results of two measures based on modeling <span class="math inline">\(p\)</span>-value distributions</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#limitations-and-conclusions"><i class="fa fa-check"></i><b>3.4</b> Limitations and conclusions</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html"><i class="fa fa-check"></i><b>4</b> Too good to be false: Nonsignificant results revisited</a><ul>
+<li class="chapter" data-level="4.1" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#theoretical-framework"><i class="fa fa-check"></i><b>4.1</b> Theoretical framework</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#distributions-of-p-values"><i class="fa fa-check"></i><b>4.1.1</b> Distributions of <em>p</em>-values</a></li>
+<li class="chapter" data-level="4.1.2" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#testing-for-false-negatives-the-fisher-test"><i class="fa fa-check"></i><b>4.1.2</b> Testing for false negatives: the Fisher test</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#application-1-evidence-of-false-negatives-in-articles-across-eight-major-psychology-journals"><i class="fa fa-check"></i><b>4.2</b> Application 1: Evidence of false negatives in articles across eight major psychology journals</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#method"><i class="fa fa-check"></i><b>4.2.1</b> Method</a></li>
+<li class="chapter" data-level="4.2.2" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#results"><i class="fa fa-check"></i><b>4.2.2</b> Results</a></li>
+<li class="chapter" data-level="4.2.3" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#expected-effect-size-distribution."><i class="fa fa-check"></i><b>4.2.3</b> Expected effect size distribution.</a></li>
+<li class="chapter" data-level="4.2.4" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#evidence-of-false-negatives-in-articles."><i class="fa fa-check"></i><b>4.2.4</b> Evidence of false negatives in articles.</a></li>
+<li class="chapter" data-level="4.2.5" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#discussion-1"><i class="fa fa-check"></i><b>4.2.5</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#application-2-evidence-of-false-negative-gender-effects-in-eight-major-psychology-journals"><i class="fa fa-check"></i><b>4.3</b> Application 2: Evidence of false negative gender effects in eight major psychology journals</a><ul>
+<li class="chapter" data-level="4.3.1" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#method-1"><i class="fa fa-check"></i><b>4.3.1</b> Method</a></li>
+<li class="chapter" data-level="4.3.2" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#results-1"><i class="fa fa-check"></i><b>4.3.2</b> Results</a></li>
+<li class="chapter" data-level="4.3.3" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#discussion-2"><i class="fa fa-check"></i><b>4.3.3</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#application-3-reproducibility-project-psychology"><i class="fa fa-check"></i><b>4.4</b> Application 3: Reproducibility Project Psychology</a><ul>
+<li class="chapter" data-level="4.4.1" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#method-2"><i class="fa fa-check"></i><b>4.4.1</b> Method</a></li>
+<li class="chapter" data-level="4.4.2" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#results-2"><i class="fa fa-check"></i><b>4.4.2</b> Results</a></li>
+<li class="chapter" data-level="4.4.3" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#discussion-3"><i class="fa fa-check"></i><b>4.4.3</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#general-discussion"><i class="fa fa-check"></i><b>4.5</b> General Discussion</a><ul>
+<li class="chapter" data-level="4.5.1" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#limitations-and-further-research"><i class="fa fa-check"></i><b>4.5.1</b> Limitations and further research</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="statistical-results-content-mining-psychology-articles-for-statistical-test-results.html"><a href="statistical-results-content-mining-psychology-articles-for-statistical-test-results.html"><i class="fa fa-check"></i><b>5</b> 688,112 Statistical Results: Content Mining Psychology Articles for Statistical Test Results</a><ul>
+<li class="chapter" data-level="5.1" data-path="statistical-results-content-mining-psychology-articles-for-statistical-test-results.html"><a href="statistical-results-content-mining-psychology-articles-for-statistical-test-results.html#data-description"><i class="fa fa-check"></i><b>5.1</b> Data description</a></li>
+<li class="chapter" data-level="5.2" data-path="statistical-results-content-mining-psychology-articles-for-statistical-test-results.html"><a href="statistical-results-content-mining-psychology-articles-for-statistical-test-results.html#methods-1"><i class="fa fa-check"></i><b>5.2</b> Methods</a></li>
+<li class="chapter" data-level="5.3" data-path="statistical-results-content-mining-psychology-articles-for-statistical-test-results.html"><a href="statistical-results-content-mining-psychology-articles-for-statistical-test-results.html#usage-notes"><i class="fa fa-check"></i><b>5.3</b> Usage notes</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html"><i class="fa fa-check"></i><b>6</b> Detection of data fabrication using statistical tools</a><ul>
+<li class="chapter" data-level="6.1" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#theoretical-framework-1"><i class="fa fa-check"></i><b>6.1</b> Theoretical framework</a><ul>
+<li class="chapter" data-level="6.1.1" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#detecting-data-fabrication-in-summary-statistics"><i class="fa fa-check"></i><b>6.1.1</b> Detecting data fabrication in summary statistics</a></li>
+<li class="chapter" data-level="6.1.2" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#detecting-data-fabrication-in-raw-data"><i class="fa fa-check"></i><b>6.1.2</b> Detecting data fabrication in raw data</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#study-1---detecting-fabricated-summary-statistics"><i class="fa fa-check"></i><b>6.2</b> Study 1 - detecting fabricated summary statistics</a><ul>
+<li class="chapter" data-level="6.2.1" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#methods-2"><i class="fa fa-check"></i><b>6.2.1</b> Methods</a></li>
+<li class="chapter" data-level="6.2.2" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#results-3"><i class="fa fa-check"></i><b>6.2.2</b> Results</a></li>
+<li class="chapter" data-level="6.2.3" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#discussion-4"><i class="fa fa-check"></i><b>6.2.3</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#study-2---detecting-fabricated-individual-level-data"><i class="fa fa-check"></i><b>6.3</b> Study 2 - detecting fabricated individual level data</a><ul>
+<li class="chapter" data-level="6.3.1" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#methods-3"><i class="fa fa-check"></i><b>6.3.1</b> Methods</a></li>
+<li class="chapter" data-level="6.3.2" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#results-4"><i class="fa fa-check"></i><b>6.3.2</b> Results</a></li>
+<li class="chapter" data-level="6.3.3" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#discussion-5"><i class="fa fa-check"></i><b>6.3.3</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#general-discussion-1"><i class="fa fa-check"></i><b>6.4</b> General discussion</a></li>
+</ul></li>
+<li class="part"><span><b>II Improving science</b></span></li>
+<li class="chapter" data-level="7" data-path="extracting-data-from-vector-figures-in-scholarly-articles.html"><a href="extracting-data-from-vector-figures-in-scholarly-articles.html"><i class="fa fa-check"></i><b>7</b> Extracting data from vector figures in scholarly articles</a><ul>
+<li class="chapter" data-level="7.1" data-path="extracting-data-from-vector-figures-in-scholarly-articles.html"><a href="extracting-data-from-vector-figures-in-scholarly-articles.html#method-3"><i class="fa fa-check"></i><b>7.1</b> Method</a><ul>
+<li class="chapter" data-level="7.1.1" data-path="extracting-data-from-vector-figures-in-scholarly-articles.html"><a href="extracting-data-from-vector-figures-in-scholarly-articles.html#extraction-procedure"><i class="fa fa-check"></i><b>7.1.1</b> Extraction procedure</a></li>
+<li class="chapter" data-level="7.1.2" data-path="extracting-data-from-vector-figures-in-scholarly-articles.html"><a href="extracting-data-from-vector-figures-in-scholarly-articles.html#corpus"><i class="fa fa-check"></i><b>7.1.2</b> Corpus</a></li>
+<li class="chapter" data-level="7.1.3" data-path="extracting-data-from-vector-figures-in-scholarly-articles.html"><a href="extracting-data-from-vector-figures-in-scholarly-articles.html#documentation"><i class="fa fa-check"></i><b>7.1.3</b> Documentation</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="extracting-data-from-vector-figures-in-scholarly-articles.html"><a href="extracting-data-from-vector-figures-in-scholarly-articles.html#results-5"><i class="fa fa-check"></i><b>7.2</b> Results</a></li>
+<li class="chapter" data-level="7.3" data-path="extracting-data-from-vector-figures-in-scholarly-articles.html"><a href="extracting-data-from-vector-figures-in-scholarly-articles.html#discussion-6"><i class="fa fa-check"></i><b>7.3</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><i class="fa fa-check"></i><b>8</b> As-you-go instead of after-the-fact: A network approach to scholarly communication and evaluation</a><ul>
+<li class="chapter" data-level="8.1" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#network-structure"><i class="fa fa-check"></i><b>8.1</b> Network structure</a></li>
+<li class="chapter" data-level="8.2" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#indicators"><i class="fa fa-check"></i><b>8.2</b> Indicators</a></li>
+<li class="chapter" data-level="8.3" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#use-cases"><i class="fa fa-check"></i><b>8.3</b> Use cases</a><ul>
+<li class="chapter" data-level="8.3.1" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#funders"><i class="fa fa-check"></i><b>8.3.1</b> Funders</a></li>
+<li class="chapter" data-level="8.3.2" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#universities"><i class="fa fa-check"></i><b>8.3.2</b> Universities</a></li>
+<li class="chapter" data-level="8.3.3" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#individuals"><i class="fa fa-check"></i><b>8.3.3</b> Individuals</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#discussion-7"><i class="fa fa-check"></i><b>8.4</b> Discussion</a></li>
+<li class="chapter" data-level="8.5" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#conclusion-1"><i class="fa fa-check"></i><b>8.5</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><i class="fa fa-check"></i><b>9</b> Verified, shared, modular, and provenance based research communication with the Dat protocol</a><ul>
+<li class="chapter" data-level="9.1" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#dat-protocol"><i class="fa fa-check"></i><b>9.1</b> Dat protocol</a></li>
+<li class="chapter" data-level="9.2" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#verified-modular-scholarly-communication"><i class="fa fa-check"></i><b>9.2</b> Verified modular scholarly communication</a><ul>
+<li class="chapter" data-level="9.2.1" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#scholarly-profiles"><i class="fa fa-check"></i><b>9.2.1</b> Scholarly profiles</a></li>
+<li class="chapter" data-level="9.2.2" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#scholarly-modules"><i class="fa fa-check"></i><b>9.2.2</b> Scholarly modules</a></li>
+<li class="chapter" data-level="9.2.3" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#verification"><i class="fa fa-check"></i><b>9.2.3</b> Verification</a></li>
+<li class="chapter" data-level="9.2.4" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#prototype"><i class="fa fa-check"></i><b>9.2.4</b> Prototype</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#discussion-8"><i class="fa fa-check"></i><b>9.3</b> Discussion</a></li>
+<li class="chapter" data-level="9.4" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#limitations"><i class="fa fa-check"></i><b>9.4</b> Limitations</a></li>
+<li class="chapter" data-level="9.5" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#supporting-information-1"><i class="fa fa-check"></i><b>9.5</b> Supporting Information</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="summary.html"><a href="summary.html"><i class="fa fa-check"></i>Summary</a></li>
+<li class="chapter" data-level="" data-path="epilogue.html"><a href="epilogue.html"><i class="fa fa-check"></i>Epilogue</a></li>
+<li class="appendix"><span><b>Appendices</b></span></li>
+<li class="chapter" data-level="A" data-path="examining-statistical-properties-of-the-fisher-test.html"><a href="examining-statistical-properties-of-the-fisher-test.html"><i class="fa fa-check"></i><b>A</b> Examining statistical properties of the Fisher test</a></li>
+<li class="chapter" data-level="B" data-path="effect-computation.html"><a href="effect-computation.html"><i class="fa fa-check"></i><b>B</b> Effect computation</a></li>
+<li class="chapter" data-level="C" data-path="example-of-statcheck-report-for-pubpeer.html"><a href="example-of-statcheck-report-for-pubpeer.html"><i class="fa fa-check"></i><b>C</b> Example of <code>statcheck</code> report for PubPeer</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Contributions towards understanding and building sustainable science</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol" class="section level1">
+<h1><span class="header-section-number">9</span> Verified, shared, modular, and provenance based research communication with the Dat protocol</h1>
+<p>In scholarly research, communication needs to be thorough and parsimonious in logging the order of various research steps, while at the same time being functional in seeking- and distributing knowledge. Roosendaal and Geurts proposed that any scholarly communication system needs to serve as a (1) registration-, (2) certification-, (3) awareness-, and (4) archival system <span class="citation">(Roosendaal and Geurts <a href="#ref-roosendaal1998">1998</a>)</span>. Sompel and colleagues added that it also needs to serve as an (5) incentive system <span class="citation">(Sompel et al. <a href="#ref-doi:10.1045/september2004-vandesompel">2004</a>)</span>.</p>
+<p>How the functions of scholarly communication are conceptualized and implemented directly impacts (the effectiveness of) scholarly research. For example, an incentive system might be present where number of publications or publication outlet is more important than the quality of the publications <span class="citation">(Brembs <a href="#ref-doi:10.3389/fnhum.2018.00037">2018</a>)</span>. In a narrow sense, this scholarly communication system serves the fifth function of providing an incentive system. In a wider sense, it undermines the goal of scholarly research, which scholarly communication is a part of, and therefore does not serve its purpose.</p>
+<p>Narrow conceptualizations of the functions of a scholarly communication system can be identified throughout the current article-based system. Registration occurs for published works, but registration is incomplete due to selective publication <span class="citation">(e.g., 1 out of 2 registered clinical trials gets published; Easterbrook et al. <a href="#ref-doi:10.1016/0140-6736_91_90201-y">1991</a>)</span> making research highly inefficient <span class="citation">(Van Assen et al. <a href="#ref-doi:10.1371/journal.pone.0084896">2014</a>)</span>. Certification occurs through peer review <span class="citation">(Sompel <a href="#ref-doi:10.1038/nature05008">2006</a>)</span> but peer review is confounded by a set of human biases at the reporting- and evaluation stages <span class="citation">(e.g., methods are evaluated as of higher quality when they result in statistically significant results than when in statistically nonsignificant results; Mahoney <a href="#ref-doi:10.1007/bf01173636">1977</a>)</span>, leading to the ‘natural selection of bad science’ <span class="citation">(Smaldino and McElreath <a href="#ref-doi:10.1098/rsos.160384">2016</a>)</span>. Awareness occurs, but increasingly only for those researchers with the financial means to access or make accessible <span class="citation">(Khoo <a href="#ref-doi:10.18352/lq.10280">2019</a>)</span>. Restrictions on the sharing of scholarly information hampers discovery and widespread dissemination. Content is archived, but is centralized (i.e., failure prone), separated from the main dissemination infrastructure, and not available until an arbitrary trigger event occurs <span class="citation">(i.e., a dark archive; Kiefer <a href="#ref-doi:10.1629/uksg.215">2015</a>)</span>.</p>
+<p>The scholarly paper seems an anachronistic form of communication in light of how we now know it undermines the functions it is supposed to serve. When no alternative communication form was feasible (i.e., before the Internet and the Web), the scholarly paper seemed a reasonable and balanced form for communication. However, already in 1998, seven years after the first Web browser was released, researchers associated with the scholarly publisher Elsevier suggested to make changes to the way scholars communicate scholarly research <span class="citation">(Kircz <a href="#ref-doi:10.1108/eum0000000007185">1998</a>)</span>. More specifically, they suggested to change the communication to a more modular form, which would help iterate research more frequently and increase feedback moments <span class="citation">(high speed of feedback was essential to for example Nature’s rise during the early twentieth century; Baldwin <a href="#ref-isbn:9780226261454">2015</a>)</span>. Throughout the years, others also suggested various perspectives on modularity <span class="citation">(Priem and Hemminger <a href="#ref-doi:10.3389/fncom.2012.00019">2012</a>; Kuhn et al. <a href="#ref-doi:10.7717/peerj-cs.78">2016</a>)</span> and suggested micro- and nanopublications <span class="citation">(Kuhn et al. <a href="#ref-doi:10.7717/peerj-cs.78">2016</a>; Clark, Ciccarese, and Goble <a href="#ref-doi:10.1186/2041-1480-5-28">2014</a>)</span>. One example of modular, stepwise research communication is depicted in Figure <a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#fig:octopi">9.1</a>.</p>
+<div class="figure"><span id="fig:octopi"></span>
+<img src="assets/figures/fig-octo.png" alt="An example of modular, stepwise research communication, from the Octopus project (see also https://perma.cc/TA79-YPH9)." width="100%" />
+<p class="caption">
+Figure 9.1: An example of modular, stepwise research communication, from the Octopus project (see also <a href="https://perma.cc/TA79-YPH9" class="uri">https://perma.cc/TA79-YPH9</a>).
+</p>
+</div>
+<p>Modular scholarly outputs, each a separate step in the research process, could supplement the scholarly article <span class="citation">(as detailed in Hartgerink and Zelst <a href="#ref-doi:10.3390/publications6020021">2018</a>)</span>. Scholarly textbooks and monographs <span class="citation">(i.e., vademecum science; Fleck <a href="#ref-isbn:9780226253251">1984</a>)</span> communicate findings with few details and a high degree of certainty; scholarly articles present relatively more details and less certainty than textbooks, but still lack the detail to reproduce results. This lack of detail is multiplied by the increasingly complex research pipelines due to technological changes and the size of data processed. Moreover, textbooks and articles construct narratives across findings because they report far after events have happened and it is what editors expect. Scholarly modules could serve as the base for scholarly articles, reporting more details, less certainty of findings, and where events are reported closer to their occurrence. Granular reporting may help facilitate a shift from authorship to contributorship <span class="citation">(Holcombe <a href="#ref-doi:10.31234/osf.io/dt6e8">2019</a>)</span>, could facilitate reproducibility (i.e., it is easier to reproduce one action with more details than multiple actions with fewer details per action); earlier reporting could facilitate discussion by making it practical for the research process <span class="citation">(extending the idea of Registered Reports; Chambers <a href="#ref-doi:10.1016/j.cortex.2012.12.016">2013</a>)</span> and making content easier to find and reuse. As findings become replicated and more consensus about a finding starts to arise, findings could move up the ‘chain’ and be integrated into scholarly articles and textbooks. Articles and books would then provide overviews and larger narratives to understand historical developments within scholarly research. Figure <a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#fig:datcom-fig1">9.2</a> provides a conceptual depiction of how these different forms of documenting findings relate to each other.</p>
+<div class="figure" style="text-align: center"><span id="fig:datcom-fig1"></span>
+<img src="assets/figures/datcom-fig1.png" alt="Conceptual depiction of how different forms of scholarly communication relate to each other in both detail and certainty." width="80%" />
+<p class="caption">
+Figure 9.2: Conceptual depiction of how different forms of scholarly communication relate to each other in both detail and certainty.
+</p>
+</div>
+<p>Below I extend on technical details for a modular scholarly communication infrastructure that facilitates (more) continuous communication and builds on recent advances in Web infrastructures. The premise of this scholarly infrastructure is a wider interpretation of the five functions of a scholarly communication system, where (1) registration is (more) complete, (2) certification by peer review is supplemented by embedding chronology to prevent misrepresentation and by increased potential for verification and peer discussion, (3) unrestricted awareness (i.e., access) is embedded in the underlying peer-to-peer protocol that locks it open-by-design, (4) archival is facilitated by simplified copying, and (5) making more specific scholarly evaluation possible to improve incentives <span class="citation">(for an initial proposal of such evaluation systems see Hartgerink and Zelst <a href="#ref-doi:10.3390/publications6020021">2018</a>)</span>. First, I expand on the functionality of the Internet protocol <a href="https://datproject.org">Dat</a> and how it facilitates improved dissemination and archival. Second, I illustrate an initial design of modular scholarly communication using this protocol to facilitate better registration and certification.</p>
+<div id="dat-protocol" class="section level2">
+<h2><span class="header-section-number">9.1</span> Dat protocol</h2>
+<p>The Dat protocol (<code>dat://</code>) is a peer-to-peer protocol, with persistent public keys per filesystem <span class="citation">(see also <a href="https://perma.cc/FX7M-H85Y" class="uri">https://perma.cc/FX7M-H85Y</a>; Ogden <a href="#ref-doi:10.31219/osf.io/nsv2c">2017</a>; Robinson et al. <a href="#ref-doi:10.1038/sdata.2018.221">2018</a>)</span>. Each filesystem is a folder that lives on the Dat network. Upon creation, each Dat filesystem receives a unique 64 character hash address, which provides read-only access to anyone who has knowledge of the hash. Below an example filesystem is presented. Each Dat filesystem has a persistent public key, which is unaffected by bit-level changes within it (e.g., when a file is modified or created). Other peer-to-peer protocols, such as BitTorrent or the Inter Planetary File System (IPFS), receive new public keys upon bit-level changes in the filesystem and require re-sharing those keys after each change (at the protocol level).</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">0c6...613/</span>
+<span class="kw">|</span><span class="ex">---</span> file1
+<span class="kw">|</span><span class="ex">---</span> file2
+<span class="kw">|</span><span class="ex">---</span> file3
+<span class="kw">|</span><span class="ex">---</span> file4</code></pre></div>
+<p>Bit-level changes within a Dat filesystem are verified with cryptographically signed hashes of the changes in a Merkle Tree. In effect, using a Merkle Tree creates a verified append-only register. In a Merkle Tree, contents are decomposed into chunks that are subsequently hashed in a tree (as illustrated in Figure <a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#fig:datcom-fig2">9.3</a>), adding each new action to the tree at the lowest level. These hashes are cryptographically signed with the permitted users’ private keys. The Dat protocol regards all actions in its filesystem as <code>put</code> or <code>del</code> commands to the filesystem, allowing all operations on the filesystem to be regarded as actions to append to a register (i.e., log). For example, if an empty <code>file5</code> was added to the Dat filesystem presented above, the register would include <code>[put] /file5 0 B (0 blocks)</code>; if we delete the file, it would log <code>[del] /file5</code>. The complete register for this Dat filesystem is as follows</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">dat</span>://0c6...613
+
+<span class="ex">1</span> [put] /file1 0 B (0 blocks)
+<span class="ex">2</span> [put] /file2 0 B (0 blocks)
+<span class="ex">3</span> [put] /file3 0 B (0 blocks)
+<span class="ex">4</span> [put] /file4 0 B (0 blocks)
+<span class="ex">5</span> [put] /file5 0 B (0 blocks)
+<span class="ex">6</span> [del] /file5</code></pre></div>
+<p>The persistent public key combined with the append-only register, results in persistent versioned addresses for filesystems that also ensure content integrity. For example, based on the register presented above, we see that version 5 includes <code>file5</code> whereas version 6 does not. By appending <code>+5</code> to the public key (<code>dat://0c66...613+5</code>) we can view the Dat filesystem as it existed at version 5 and be ensured that the contents we receive are the exact contents at that version. If the specific Dat filesystem is available from at least one peer on the network, it means that both ‘link rot’ and ‘content drift’ <span class="citation">(M. Klein et al. <a href="#ref-doi:10.1371/journal.pone.0115253">2014</a>; Jones et al. <a href="#ref-doi:10.1371/journal.pone.0167475">2016</a>)</span> could become superfluous.</p>
+<div class="figure" style="text-align: center"><span id="fig:datcom-fig2"></span>
+<img src="assets/figures/datcom-fig2.png" alt="A diagram depicting how a Merkle Tree hashes initial chunks of information into one top hash, with which the content can be verified." width="100%" />
+<p class="caption">
+Figure 9.3: A diagram depicting how a Merkle Tree hashes initial chunks of information into one top hash, with which the content can be verified.
+</p>
+</div>
+<p>Any content posted to the Dat protocol is as publicly available as the public key of that Dat filesystem is shared. More specifically, the Dat protocol is inherently open. As such, if that key is widely shared, the content will also be harder or impossible to remove from the network because other peers (can) have copied it. Conversely, if that key is shared among just few people that content can more easily disappear from the network but remains more private. This is important in light of privacy issues, because researchers cannot unshare personal data after they have widely broadcasted it. However, because the Dat protocol is a peer-to-peer protocol and users connect directly to each other, information is not mediated. The protocol uses package encryption by default which can also help improve secure and private transfers of (sensitive) data. Users would (most likely) also remain personally responsible for the information they (wrongly) disclose on the network.</p>
+</div>
+<div id="verified-modular-scholarly-communication" class="section level2">
+<h2><span class="header-section-number">9.2</span> Verified modular scholarly communication</h2>
+<p>Here I propose an initial technical design of verified modular scholarly communication using the Dat protocol. Scholarly modules are instantiated as separate Dat filesystems for each researcher or for each module of scholarly content. Scholarly content could entail virtually anything the researcher wants or needs to communicate in order to verify findings <span class="citation">(see also Hartgerink and Zelst <a href="#ref-doi:10.3390/publications6020021">2018</a>)</span>. Hence, there is no restriction to text as it is in the current article-based scholarly communication system; it may also include photographs, data files, scripts, etc. Note that all presented hypothetical scenarios next include shortened Dat links and the unshortened links can be found in the Supporting Information.</p>
+<div id="scholarly-profiles" class="section level3">
+<h3><span class="header-section-number">9.2.1</span> Scholarly profiles</h3>
+<p>Before communicating research modules, a researcher would need to have a place to broadcast that information. Increasingly, researchers are acquiring centralized scholarly profiles to identify the work they do, such as ORCIDs, ResearcherIDs, Google Scholar profiles, or ResearchGate profiles. A decentralized scholarly profile in a Dat filesystem is similar and provides a unique ID (i.e., public key) for each researcher. However, researchers can modify their profiles freely because they retain full ownership and control of their data (as opposed to centralized profiles) and are not tied to one platform. As such, with decentralized scholarly profiles on the Dat network, the researcher permits others access to their profile instead of a service permitting them to have a profile.</p>
+<p>Each Dat filesystem is initialized with a <code>dat.json</code> with some initial metadata, including its own Dat public key, the title (i.e., name) of the filesystem and a description. For example, Alice wants to create a scholarly profile and initializes her Dat filesystem, resulting in:</p>
+<div class="sourceCode"><pre class="sourceCode json"><code class="sourceCode json"><span class="fu">{</span>
+  <span class="dt">&quot;title&quot;</span><span class="fu">:</span> <span class="st">&quot;Alice&quot;</span><span class="fu">,</span>
+  <span class="dt">&quot;description&quot;</span><span class="fu">:</span> <span class="st">&quot;I am a physicist at CERN-LHC. As a fan of the </span>
+<span class="st">    decentralized Web, I look forward to communicating my research</span>
+<span class="st">    in a digital native manner and in a way that is not limited </span>
+<span class="st">    to just text.&quot;</span><span class="fu">,</span>
+  <span class="dt">&quot;url&quot;</span><span class="fu">:</span> <span class="st">&quot;dat://b49...551&quot;</span>
+<span class="fu">}</span></code></pre></div>
+<p>Because <code>dat.json</code> is a generic container for metadata across the Dat network, I propose adding <code>scholarly-metadata.json</code> with some more specific metadata (i.e., data about the profile) for a scholarly context. As the bare minimum, we initialize a scholarly profile metadata file as</p>
+<div class="sourceCode"><pre class="sourceCode json"><code class="sourceCode json"><span class="fu">{</span>
+  <span class="dt">&quot;type&quot;</span><span class="fu">:</span> <span class="st">&quot;scholarly-profile&quot;</span><span class="fu">,</span>
+  <span class="dt">&quot;url&quot;</span><span class="fu">:</span> <span class="st">&quot;dat://b49...551&quot;</span><span class="fu">,</span>
+  <span class="dt">&quot;parents&quot;</span><span class="fu">:</span> <span class="ot">[]</span><span class="fu">,</span>
+  <span class="dt">&quot;roots&quot;</span><span class="fu">:</span> <span class="ot">[]</span><span class="fu">,</span>
+  <span class="dt">&quot;main&quot;</span><span class="fu">:</span> <span class="st">&quot;/cv.pdf&quot;</span><span class="fu">,</span>
+  <span class="dt">&quot;follows&quot;</span><span class="fu">:</span> <span class="ot">[]</span><span class="fu">,</span>
+  <span class="dt">&quot;modules&quot;</span><span class="fu">:</span> <span class="ot">[]</span>
+<span class="fu">}</span></code></pre></div>
+<p>where the <code>type</code> property indicates it is a scholarly profile. The <code>url</code> property provides a reference to the public key of Alice herself (i.e., self-referencing). The <code>parents</code> property is where Alice can indicate her “scholarly parents” (e.g., supervisors, mentors); the <code>roots</code> property is inherited from her scholarly parents and links back to the root(s) of her scholarly genealogy. The <code>main</code> property indicates the main file for Alice’s profile. The <code>follows</code> property links to other decentralized scholarly profiles or decentralized scholarly modules that Alice wants to watch for updates. Finally, the <code>modules</code> property refers to versioned scholarly modules, which serves as Alice’s public registrations. These metadata files may be joined in a later specification.</p>
+<p>Assuming Alice is the first person in her research program to use a decentralized scholarly profile, she is unable to indicate <code>parents</code> or inherit <code>roots</code>. However, Bob and Eve are her PhD students and she helps them set up a decentralized scholarly profile. As such, their profiles do contain a parent: Alice’s profile. Based on this genealogy, we would be able to automatically construct self-reported genealogical trees for scholarly profiles. Bob’s <code>scholarly-metadata.json</code> subsequently looks as follows</p>
+<div class="sourceCode"><pre class="sourceCode json"><code class="sourceCode json"><span class="fu">{</span>
+  <span class="dt">&quot;type&quot;</span><span class="fu">:</span> <span class="st">&quot;scholarly-profile&quot;</span><span class="fu">,</span>
+  <span class="dt">&quot;url&quot;</span><span class="fu">:</span> <span class="st">&quot;dat://c3a...a1b&quot;</span><span class="fu">,</span>
+  <span class="dt">&quot;parents&quot;</span><span class="fu">:</span> <span class="ot">[</span> <span class="st">&quot;dat://b49...551&quot;</span> <span class="ot">]</span><span class="fu">,</span>
+  <span class="dt">&quot;roots&quot;</span><span class="fu">:</span> <span class="ot">[</span> <span class="st">&quot;dat://b49...551&quot;</span> <span class="ot">]</span><span class="fu">,</span>
+  <span class="dt">&quot;main&quot;</span><span class="fu">:</span> <span class="kw">null</span><span class="fu">,</span>
+  <span class="dt">&quot;follows&quot;</span><span class="fu">:</span> <span class="ot">[]</span><span class="fu">,</span>
+  <span class="dt">&quot;modules&quot;</span><span class="fu">:</span> <span class="ot">[]</span>
+<span class="fu">}</span></code></pre></div>
+<p>Alice wants to stay up to date with the work from Bob and Eve and adds their profiles to the <code>follows</code> property. By adding the unique Dat links to their scholarly profiles to her <code>follows</code> property, the profiles can be watched in order to build a chronological feed that continuously updates. Whenever Bob (or Eve) changes something in their profile, Alice gets a post in her chronological feed. For example, when Bob follows someone, when Eve posts a new scholarly module, or when Bob updates his <code>main</code> property. In contrast to existing social media, Alice can either fully unfollow Bob, which removes all of Bob’s updates from her feed, or “freeze follow” where she simply does not get any future updates. A “freeze follow” follows a static and specific version of the profile by adding a version number to the followed link (e.g., <code>dat://...+12</code>).</p>
+<div class="figure" style="text-align: center"><span id="fig:datcom-fig3"></span>
+<img src="assets/figures/datcom-fig3.png" alt="Conceptual diagram of scholarly profiles and following others. Network propagation to rank N can be used to facilitate discovery of researchers and to build networks of researchers." width="70%" />
+<p class="caption">
+Figure 9.4: Conceptual diagram of scholarly profiles and following others. Network propagation to rank N can be used to facilitate discovery of researchers and to build networks of researchers.
+</p>
+</div>
+<p>Using the <code>follows</code> property, Alice can propagate her feed deeper into her network, as depicted in Figure <a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#fig:datcom-fig3">9.4</a>. More specifically, Alice’s personal profile, rank zero in the network, extends to the people she follows (i.e., Bob and Eve are rank one). Subsequently, the profiles Bob and Eve follow are of rank three. By using recursive functions to crawl the extended network to rank <span class="math inline">\(N\)</span>, edges in the network are easily discovered despite the (potential) lack of direct connections <span class="citation">(Travers and Milgram <a href="#ref-doi:10.2307/2786545">1969</a>)</span>.</p>
+<p>The <code>main</code> property can be used by a researcher to build a personalized profile beyond the metadata. For example, Alice wants to make sure that people who know the Dat link to her scholarly profile can access her Curriculum Vitae, so she adds <code>/cv.pdf</code> as the <code>main</code> to her scholarly profile. Whenever she submits a job application, she can link to her versioned scholarly profile (e.g., <code>dat://b49...551+13</code>). Afterwards, she can keep updating her profile whatever way she likes. She could even choose to host her website on the decentralized Web by attaching a personal webpage with <code>/index.html</code>. Because of the versioned link and the properties of the Dat protocol, she can rest assured that the version she submitted is the version the reviewing committee sees. Vice versa, whenever she receives a versioned link to a scholarly profile, she can rest assured it is what the researcher wanted her to see.</p>
+<p>The <code>modules</code> property contains an array of versioned Dat links to scholarly modules. What these scholarly modules are and how they are shaped is explained in the next section. The <code>modules</code> property differs from the <code>follows</code> property in that it can only contain versioned Dat links, which serve as registrations of the outputs of the researcher. Where a versioned link in the <code>follows</code> property is regarded as a “freeze follow,” a versioned link in the <code>modules</code> property is the registration and public communication of the output. The versioned links also prevent duplicate entries of outputs that are repeatedly updated. For example, a scholarly module containing a theory could be registered repeatedly over the timespan of several days or years. If the researcher would register non-versioned links of the scholarly module, registration would not be specific and the scholarly profile could contain duplicates. By including only versioned links the registrations are specific and unique.</p>
+</div>
+<div id="scholarly-modules" class="section level3">
+<h3><span class="header-section-number">9.2.2</span> Scholarly modules</h3>
+<p>Scholarly research is composed of time-dependent pieces of information (i.e., modules) that chronologically follow each other. For example, predictions precede data and results, otherwise they become postdictions. In a typical theory-testing research study, which adheres to the framework of a modern empirical research cycle <span class="citation">(De Groot <a href="#ref-isbn:9789023228912">1994</a>)</span>, we can identify at least eight chronological modules of research outputs: (1) theory, (2) predictions, (3) study design, (4) study materials, (5) data, (6) code for analysis, (7) results, (8) discussion, and (9) summary <span class="citation">(these are examples and modules should not be limited to these to prevent homogenization of scholarly outputs; Star <a href="#ref-doi:10.1111/j.1467-954x.1990.tb03347.x">1990</a>)</span>. Sometimes we might iterate between steps, such as adjusting a theory due to insights gathered when formulating the predictions. Continuously communicating these in the form of modules as they are produced, by registering versioned references to Dat filesystems in a scholarly profile as explained before, could fulfill the five functions of a scholarly communication system and is unconstrained by the current article-based system <span class="citation">(see also Hartgerink and Zelst <a href="#ref-doi:10.3390/publications6020021">2018</a>)</span>.</p>
+<p>These scholarly modules each live in their own filesystem, first on the researcher’s computer and when synchronized, on the Dat network. Hence, researchers can interact with files on their own machine as they are used to. The Dat network registers changes in the filesystem as soon as it is activated. As such, researchers can initialize a Dat filesystem on their computer and, for example, copy private information into the filesystem, anonymize it and only then activate and synchronize it with the Dat network (note: this does not require connection to the Internet, but initialization of the protocol). The private information will then not be available in the version history of the Dat filesystem.</p>
+<p>Metadata for scholarly modules also consists of a generic <code>dat.json</code> and a more specific <code>scholarly-metadata.json</code>. The <code>dat.json</code> contains the title of the module, the description, and its own Dat link. For example, Alice communicates the first module on the network, where she proposes a theory; the <code>dat.json</code> file for this module is</p>
+<div class="sourceCode"><pre class="sourceCode json"><code class="sourceCode json"><span class="fu">{</span>
+  <span class="dt">&quot;title&quot;</span><span class="fu">:</span> <span class="st">&quot;Mock Theory&quot;</span><span class="fu">,</span>
+  <span class="dt">&quot;description&quot;</span><span class="fu">:</span> <span class="st">&quot;This is a mock theory but it could just as well </span>
+<span class="st">    be a real one.&quot;</span><span class="fu">,</span>
+  <span class="dt">&quot;url&quot;</span><span class="fu">:</span> <span class="st">&quot;dat://dbf...d82&quot;</span>
+<span class="fu">}</span></code></pre></div>
+<p>Again, more specific metadata about the decentralized scholarly module is added in <code>scholarly-metadata.json</code>. As the bare minimum, the metadata for a scholarly module is initialized as</p>
+<div class="sourceCode"><pre class="sourceCode json"><code class="sourceCode json"><span class="fu">{</span>
+  <span class="dt">&quot;type&quot;</span><span class="fu">:</span> <span class="st">&quot;scholarly-module&quot;</span><span class="fu">,</span>
+  <span class="dt">&quot;url&quot;</span><span class="fu">:</span> <span class="st">&quot;dat://dbf...d82&quot;</span><span class="fu">,</span>
+  <span class="dt">&quot;authors&quot;</span><span class="fu">:</span> <span class="ot">[</span>
+    <span class="st">&quot;dat://b49...551&quot;</span><span class="ot">,</span>
+    <span class="st">&quot;dat://167...a26&quot;</span>
+  <span class="ot">]</span><span class="fu">,</span>
+  <span class="dt">&quot;parents&quot;</span><span class="fu">:</span> <span class="ot">[]</span><span class="fu">,</span>
+  <span class="dt">&quot;roots&quot;</span><span class="fu">:</span> <span class="ot">[]</span><span class="fu">,</span>
+  <span class="dt">&quot;main&quot;</span><span class="fu">:</span> <span class="st">&quot;/theory.md&quot;</span>
+<span class="fu">}</span></code></pre></div>
+<p>These metadata indicate aspects that are essential in determining contents and provenance of the module. First, we specify that it is a scholarly module in the <code>type</code> property. Second, we specify its own Dat <code>url</code> for reference purposes. Third, an array of Dat links in the <code>authors</code> property links to scholarly profiles for authorship. Subsequently, if the module is the following step of a previous registered module, we specify the Dat link of the preceding module(s) in the <code>parents</code> property in the form of a versioned Dat link. Tracing the parents’ parents forms a chronology of findings, leading ultimately to the <code>roots</code> property. In practice, the <code>roots</code> property is inherited from the immediate parents. Because the presented hypothetical module above is the first on the network, it has no parents or roots. The <code>main</code> property specifies a single landing page/file of the scholarly module. For a text based scholarly module, <code>main</code> might be <code>/index.html</code> (or <code>/theory.md</code> as it is here), whereas for a data module that could be <code>/data.csv</code>. For more complex modules, a guidebook to navigate the module could be included. The researcher can also store other relevant assets in the Dat filesystem, such as converted files or supporting files. For text based scholarly module, assets could include figures; for data based scholarly modules assets could include codebooks.</p>
+<p>To register a module into the researcher’s profile, the versioned Dat link is included in the <code>modules</code> array on the profile. More specifically, when the registration process is initiated, the Dat filesystem is inspected for the latest version number, which is appended to the Dat link before it is put in the <code>modules</code> property. Specifically for Alice’s theory, she was at version 19 when she wanted to register it. This means that <code>dat://dbf...d82+19</code> is appended to the <code>modules</code> array in her scholarly profile. All the users who follow Alice get an update that she registered her theory, with a versioned link that is unique and persistent, referring to exactly the content Alice registered. Alice can keep updating her theory locally, without it affecting what the people who follow her see, because it does not affect version 19. When the module is registered, others can view the most recent version of the Dat filesystem (e.g., theory) by removing the version from the Dat link (or view any other synchronized version if available from the network).</p>
+<p>Figure <a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#fig:datcom-fig4">9.5</a> depicts how the scholarly modules relate to each other (Panel B). The versioned, registered scholarly modules become the parent and root links in subsequent child modules. For example, a set of predictions link back to the theory they are distilled from; a study design links back to the predictions it is planned to test and by extension to the theory it is based on. Panel B in Figure <a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#fig:datcom-fig4">9.5</a> conceptually depicts one contained empirical research cycle registered in this way. The links between versioned scholarly modules embeds the chronological nature of the research process in its communication.</p>
+<div class="figure" style="text-align: center"><span id="fig:datcom-fig4"></span>
+<img src="assets/figures/datcom-fig4.png" alt="Conceptual representations of how scholarly profiles relate to each other (Panel A), how scholarly modules relate to each other (Panel B), how scholarly profiles and modules create a network of scholarly activity in both researchers and research (Panel C), and how claims of authorship are verified if two-way or unverified if one-way (Panel D)." width="100%" />
+<p class="caption">
+Figure 9.5: Conceptual representations of how scholarly profiles relate to each other (Panel A), how scholarly modules relate to each other (Panel B), how scholarly profiles and modules create a network of scholarly activity in both researchers and research (Panel C), and how claims of authorship are verified if two-way or unverified if one-way (Panel D).
+</p>
+</div>
+</div>
+<div id="verification" class="section level3">
+<h3><span class="header-section-number">9.2.3</span> Verification</h3>
+<p>In order to detect whether scholarly modules that a researcher claims to have authored are indeed (partly) theirs, the scholarly module needs to also assign the profile as author. For example, Alice and Eve claim to have authored version 19 of the “Theory” module in their profiles (Figure <a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#fig:datcom-fig4">9.5</a>, Panel C). Because a module can only be edited by its author, we can inspect the scholarly module to corroborate this. For verified authorship, the module should ascribe authorship to Alice and Eve. To do this, we inspect <code>scholarly-metadata.json</code> of the “Theory” module at the registered version (i.e., version 19). If the versioned theory module also ascribes authorship to Alice or Eve, we have two-way verification of authorship (Figure <a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#fig:datcom-fig4">9.5</a>, Panel D). In other words, registered scholarly modules must corroborate the authorship claims of the scholarly profiles in order to become verified.</p>
+<p>Unverified authorship can happen when a researcher incorrectly claims authorship over a module or when a module ascribes authorship to a researcher who does not claim it. In Figure <a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#fig:datcom-fig4">9.5</a> Panel D, for example, Bob has claimed authorship of the data module, which is not corroborated by the scholarly module. Unverified authorship of this kind (i.e., where a researcher incorrectly claims authorship) is helpful in preventing misrepresentation of previous work by that researcher. Unverified authorship where a researcher is incorrectly ascribed authorship can have various origins. A researcher might remove a versioned module from their profile, effectively distancing themselves from the module (similar to retracting the work but on a more individual level). In a similar vein, it might also be that the author registered a later version of the module in their profile and deleted the old version (similar to a corrigendum). Note that the registration will still be available in the history of the profile, because the history of a Dat filesystem is append-only.</p>
+</div>
+<div id="prototype" class="section level3">
+<h3><span class="header-section-number">9.2.4</span> Prototype</h3>
+<p>In order to show that decentralized, modular scholarly communication is not just a hypothetical exercise, I developed a minimal working prototype. The prototype code supplied below currently only functions within Beaker Browser because specific Application Programmatic Interfaces (APIs) that directly interface with the Dat protocol are not yet available in the most commonly used Web browsers (e.g., Mozilla Firefox, Google Chrome).</p>
+<p>The minimal working prototype ingests a network of decentralized scholarly modules and profiles. More specifically, it ingests all content to rank <span class="math inline">\(N\)</span> of the network, using <a href="https://github.com/beakerbrowser/webdb"><code>webdb</code></a>. <code>webdb</code> collects the scholarly metadata from each scholarly module and scholarly profile and consolidates these disparate pieces of information into a local database. This database can be considered temporary; the original information still has its primary origin in the disparate scholarly modules and scholarly profiles that live on the Dat network. As such, the same database can be reconstructed at any time without any issues, assuming the modules are still available. Figure <a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#fig:datcom-fig5">9.6</a> presents a screenshot of the prototype, which looks like any other webpage to the user but does not have a centralized server providing the content. Note also the link at the bottom showcasing the versioned link to the analysis file.</p>
+<div class="figure" style="text-align: center"><span id="fig:datcom-fig5"></span>
+<img src="assets/figures/datcom-fig5.png" alt="Screencap of the minimal prototype of decentralized scholarly communication. The prototype resembles a regular webpage on the userside, but on the backend it runs entirely on Dat filesystems that live on a decentralized network." width="100%" />
+<p class="caption">
+Figure 9.6: Screencap of the minimal prototype of decentralized scholarly communication. The prototype resembles a regular webpage on the userside, but on the backend it runs entirely on Dat filesystems that live on a decentralized network.
+</p>
+</div>
+<p>Procedurally, the prototype takes Alice’s scholarly profile as starting point, subsequently ingesting the network presented in Figure <a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#fig:datcom-fig4">9.5</a>. By doing so, we get a one-on-one replication of Alice’s perspective (regardless of whether we are Alice or not). As such, Alice’s Dat link serves as the starting point (rank zero). The metadata contained in her profile is ingested into our local database. Subsequently, the links in her profile to other scholarly modules (or profiles) are ingested into the database (rank one), and the links they have (rank two), and so on (to rank <span class="math inline">\(N\)</span>). The following JavaScript code produces this local database for Alice specifically (<code>dat://b49...551</code>) but can be replaced with Bob’s, Eve’s, or anyone else’s scholarly profile to receive their personal network.</p>
+<div class="sourceCode"><pre class="sourceCode js"><code class="sourceCode javascript"><span class="co">// npm install -g @beaker/webdb</span>
+<span class="kw">const</span> WebDB <span class="op">=</span> <span class="at">require</span>(<span class="st">&#39;@beaker/webdb&#39;</span>)
+
+<span class="kw">let</span> webdb <span class="op">=</span> <span class="kw">new</span> <span class="at">WebDB</span>(<span class="st">&#39;view&#39;</span>)
+
+<span class="va">webdb</span>.<span class="at">define</span>(<span class="st">&#39;modules&#39;</span><span class="op">,</span> <span class="op">{</span>
+    <span class="dt">filePattern</span><span class="op">:</span> [  <span class="st">&#39;/scholarly-metadata.json&#39;</span>  ]<span class="op">,</span>
+    <span class="dt">index</span><span class="op">:</span> [ <span class="st">&#39;type&#39;</span><span class="op">,</span> <span class="st">&#39;authors&#39;</span><span class="op">,</span> <span class="st">&#39;parents&#39;</span><span class="op">,</span> <span class="st">&#39;root&#39;</span><span class="op">,</span>
+     <span class="st">&#39;main&#39;</span><span class="op">,</span> <span class="st">&#39;follows&#39;</span><span class="op">,</span> <span class="st">&#39;modules&#39;</span> ]
+<span class="op">}</span>)
+
+async <span class="kw">function</span> <span class="at">ingestPortal</span> (url) <span class="op">{</span>
+  await <span class="va">webdb</span>.<span class="at">open</span>()
+
+  <span class="kw">let</span> archive <span class="op">=</span> <span class="kw">new</span> <span class="at">DatArchive</span>(url)
+  await <span class="va">webdb</span>.<span class="at">indexArchive</span>(url)
+  
+  <span class="kw">let</span> scholRaw <span class="op">=</span> await <span class="va">archive</span>.<span class="at">readFile</span>(
+    <span class="st">&#39;/scholarly-metadata.json&#39;</span>)
+  
+  <span class="kw">let</span> scholParsed <span class="op">=</span> await <span class="va">JSON</span>.<span class="at">parse</span>(
+    scholRaw)
+  
+  <span class="cf">if</span> (<span class="va">scholParsed</span>.<span class="at">type</span> <span class="op">===</span> <span class="st">&#39;scholarly-profile&#39;</span>) <span class="op">{</span>
+    <span class="va">console</span>.<span class="at">log</span>(scholParsed)
+    <span class="va">scholParsed</span>.<span class="va">follows</span>.<span class="at">concat</span>(
+      <span class="va">scholParsed</span>.<span class="at">modules</span>).<span class="at">forEach</span>((val) <span class="op">=&gt;</span> <span class="op">{</span>
+      <span class="at">ingestPortal</span>(val)
+    <span class="op">}</span>)
+  <span class="op">}</span>
+<span class="op">}</span>
+
+<span class="at">ingestPortal</span>(<span class="st">&quot;dat://b49...551&quot;</span>)</code></pre></div>
+<p>The presented prototype provides a portal to the information contained in the modules, but is not the sole portal to access that information. Because the modules live on a decentralized network and are open-by-design, anyone may build a portal to view that information (Figure <a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#fig:datcom-fig6">9.7</a> presents a mockup of an additional interface). As such, this is not a proposal for a platform but for infrastructure. The difference between platforms and infrastructure is vital in light of ownership and responsibility of communicated content and the moderation of that content. As opposed to centralized services that carry the legal burden and therefore moderate its platform, this type of infrastructure does not take such a role and merely aims to facilitate the individual. As a consequence, the legal burden remains with the individual. Moreover, platforms require people to go to one place (e.g., you cannot view content of ResearchGate on Academia.edu or Elsevier’s content on Wiley’s webpage); this infrastructure would give the potential for various types of usage to take place on the same type of infrastructure.</p>
+<div class="figure"><span id="fig:datcom-fig6"></span>
+<img src="assets/figures/datcom-mockup.png" alt="Mockup design of an additional interface for the proposed scholarly communication infrastructure. Made by Rebecca Lam, reused under CC-BY 4.0 license." width="100%" />
+<p class="caption">
+Figure 9.7: Mockup design of an additional interface for the proposed scholarly communication infrastructure. Made by Rebecca Lam, reused under CC-BY 4.0 license.
+</p>
+</div>
+</div>
+</div>
+<div id="discussion-8" class="section level2">
+<h2><span class="header-section-number">9.3</span> Discussion</h2>
+<p>The proposed design for decentralized, verified, provenance based modular communication on the Dat protocol fulfills a wide conceptualization of the functions of a scholarly communications system from library and information sciences <span class="citation">(Roosendaal and Geurts <a href="#ref-roosendaal1998">1998</a>; Sompel et al. <a href="#ref-doi:10.1045/september2004-vandesompel">2004</a>)</span>. Due to more modular and continuous communication, it is more difficult to selectively register results when the preceding steps have publicly been registered already. Moreover, time of communication is decided by the researcher, making it more feasible for researchers to communicate their research efforts without biases introduced at the journal stage. Certification of results is improved by embedding the chronology of the empirical research cycle in the communication process itself, making peer-to-peer discussion constructive and less obstructed by hindsight bias <span class="citation">(Nickerson <a href="#ref-doi:10.1037/1089-2680.2.2.175">1998</a>)</span>. Unfettered awareness of research is facilitated by using an open-by-design infrastructure that is the peer-to-peer Dat protocol. Moreover, because all content is open-by-design and independent of service platforms, text- and data-mining may be applied freely without technical restrictions by service providers. The removal of these technical and service restrictions may facilitate innovations in discovery of content and the potential for new business models to come into existence. Based on the links between scholarly modules, the arising network structure can be used to help evaluate networks of research(ers) instead of counting publications and citations <span class="citation">(Hartgerink and Zelst <a href="#ref-doi:10.3390/publications6020021">2018</a>)</span>. Archival is facilitated by making it trivially easy to create local copies of large sets of content, facilitating the Lots Of Copies Keeps Stuff Safe <span class="citation">(LOCKSS; Reich and Rosenthal <a href="#ref-doi:10.1045/june2001-reich">2001</a>; Domenico and Arenas <a href="#ref-doi:10.1103/physreve.95.022313">2017</a>)</span> principle to be more widely used than just approved organizations. Moreover, with append-only registers, the provenance of content can also be archived more readily than it is now. These functions also apply to non-empirical research that requires provenance of information (e.g., qualitative studies).</p>
+<p>By producing scholarly content on a decentralized infrastructure, diversity of how research is consumed and discovered can be facilitated. Currently, content lives on the webserver of the publisher and is often solely served at the publisher’s webpage due to copyright restrictions <span class="citation">(except for open access articles; Piwowar et al. <a href="#ref-doi:10.7717/peerj.4375">2018</a>)</span>. If the design of the publisher’s webpage does not suit the user’s needs <span class="citation">(e.g., due to red color blindness affecting approximately 1 in 20 males and 1 in 100 females; Fareed, Anwar, and Afzal <a href="#ref-doi:10.1016/j.gendis.2015.02.006">2015</a>)</span>, there is relatively little a user can do. Moreover, service providers that are not the rightsholder (i.e., publisher) now cannot fulfill that need for users. By making all content open by default, building on content becomes easier. For example, someone can build a portal that automatically shows content with color shifting for people who have red (or other types of) color blindness. Building and upgrading automated translation services are another way of improving accessibility (e.g., <a href="http://translexy.com/">translexy.com/</a>), which is currently restricted due to copyright. Other examples of diverse ways of consuming or discovering research might include text-based comparisons of modules to build recommender algorithms that provide contrasting and corroborating views to users <span class="citation">(e.g., McKenzie <a href="#ref-doi:10.1038/nature.2017.22163">2017</a>)</span>. Stimulating diversity in how to consume and discover content is key to making scholarly research accessible to as many people as possible and in order to attempt to keep some pace with the tremendous amount of information published each year (<a href="https://api.crossref.org/works?filter=type:journal-article,from-pub-date:2017,until-pub-date:2017&amp;rows=0">&gt;3 million articles in 2017</a>). As such, we have collectively passed the point of being able to comprehend the relevant information and should no longer strive to eliminate all uncertainty in knowing but find ways to deal with that uncertainty better <span class="citation">(Bridle <a href="#ref-isbn:9781786635471">2018</a>)</span>. As such, alternatives in consuming, discovering, and learning about knowledge are a necessity. Open Knowledge Maps is an existing example of an innovative discovery mechanism based on openly licensed and machine-readable content <span class="citation">(Kraker, Kittel, and Enkhbayar <a href="#ref-doi:10.12685/027.7-4-2-157">2016</a>)</span>. There would be more smaller pieces of information in the scholarly modules approach than in the scholarly article approach, which is counterbalanced by the network structure and lack of technical restrictions to build tools to digest that information — this may make those larger amounts of smaller units (i.e., modules) more digestible than the smaller volume of larger units (i.e., articles), mitigating information onslaught <span class="citation">(Spellman <a href="#ref-doi:10.1080/1047840X.2012.701161">2012</a>)</span>.</p>
+<p>The proposed design is only the first in a multi-layer infrastructure that would need to be developed moving forward. Currently, I only provide a model on the container format for how to store metadata for modules — not how the data is stored in the module itself or how the individual could go about doing so. Moreover, how could reviews be structured to fit in such modules? As such, the next layer to the proposed infrastructure would require further specification of how contents are stored. For example, for text-based modules, what file formats should be the standard or allowed? It would be unfeasible to allow any file format due to readability into the future (e.g., Word 2003 files are likely to be problematic) and issues could exacerbate if software becomes more proprietary and research uses more types of software. Standards similar to current publications could prove worthwhile for text (i.e., JATS XML), but impractical to non-technical users. As such, does the original file need to be in JATS XML when it can also easily be converted? <span class="citation">(e.g., Markdown to JATS XML; Johnston <a href="#ref-jatdown">2016</a>)</span> Other specifications for data, code, materials would also be needed moving forward (e.g., no proprietary binary files such as SPSS data files). In order to make those standards practical to individuals not privy to the technical details, the next infrastructure layer would be building user-facing applications that interface with the Dat protocol and take the requirements into account. These would then do the heavy lifting for the users, guiding them through potential conversion processes and reducing friction as much as possible. An example of a rich editing environment that takes the machine readability of scholarly text to the next level, and makes this relatively easy to the end-user, is Dokie.li <span class="citation">(which writes to HTML; Capadisli et al. <a href="#ref-dokieli">2017</a>)</span>. This editing environment provides a What You See Is What You Get (WYSIWYG) editor, while at the same time providing semantic enrichments to the text (e.g., discerning between positive, negative, corroborating, or other forms of citations).</p>
+<p>New infrastructure layers could provide a much needed upgrade to the security of scholarly communication. Many of the scholarly publisher’s websites do not use an appropriate level of security in transferring information to and from the user. More specifically, only 26% of all scholarly publishers use HTTPS <span class="citation">(Hartgerink <a href="#ref-https-hartgerink">2018</a>)</span>. This means that any information transferred to or from the user can be grabbed by anyone in the physical proximity of that person (amongst other scenarios) — including usernames and passwords. In other words, publisher’s lack of up-to-date security practices put the user at risk, but also the publisher. Some publishers for example complained about Sci-Hub, alleging that it illegally retrieved articles by phishing researcher’s credentials. A lack of HTTPS would facilitate the illegal retrieval of user credentials, hence those publishers would ironically facilitate the kinds of activities they say are illegal <span class="citation">(Bohannon <a href="#ref-doi:10.1126/science.aaf5664">2016</a><a href="#ref-doi:10.1126/science.aaf5664">a</a>)</span>. Beyond the potential of missed revenue for pay-to-access publishers, security negligence is worrisome because the accuracy of scholarly content is at risk. Man-in-the-middle attacks, where a middleman inserts themselves between the user and the server, can surreptitiously distort content, with practical effects for scientific practice (e.g., changing author names) and real life effects for professions using results for their jobs (e.g., milligram dosages replaced by gram dosages). By building a scholarly communication infrastructure on top of the Dat protocol, all communications are encrypted in transit from one end to the other by default. For the format of communications, scholarly publishers may currently be unknowing distributors of malware in their PDFs distributed to (paying) readers. More specifically, an estimated .3-2% of scholarly PDFs contain malware <span class="citation">(Nissim et al. <a href="#ref-doi:10.3233/978-1-61499-744-3-107">2017</a>)</span>, although the types of malware remain ill specified. By implementing scholarly modules that are converted on the user’s system (e.g., JATS XML, HTML, Markdown), the attack vector on readers of the scholarly literature can be reduced by moving away from server-side generated PDFs, which potentially contain clandestine malware.</p>
+</div>
+<div id="limitations" class="section level2">
+<h2><span class="header-section-number">9.4</span> Limitations</h2>
+<p>In the proposed decentralized, modular scholarly communication system there is no requirement for scholarly profiles to be linked to their real-world entities. This means that scholarly profiles may or may not be identified. For comparison, a link to a identification is also not mandatory for ORCID identifiers. Moreover, the history of anonymous (or pseudonymous) communication has a vibrant historical context in scholarly communication <span class="citation">(e.g., Student <a href="#ref-doi:10.1093/biomet/6.1.1">1908</a>)</span> and should therefore not be excluded by the infrastructure design. However, some might view this as a limitation.</p>
+<p>One of the major points of debate may be that the scholarly modules are chronologically ordered only (both internally and externally). As such, the temporal distance between two actions within a scholarly module or between two scholarly modules is unknown. Within a scholarly module and Dat filesystem, chronological append-only actions are more reliable to register from a technical perspective than time-based append-only registers. This has its origin in the fact that creation-, modification-, and last opened times can technically be altered by willing users (see for example <a href="https://superuser.com/questions/504829">superuser.com/questions/504829</a>). If timestamps are altered, people can fabricate records that seem genuine and chronological, but are not — undermining the whole point of immutable append-only registers. Hardcoded timestamps in the scholarly metadata would be an even greater risk due to the potential for direct modification (i.e., it would only require editing the <code>scholarly-metadata.json</code> file in a text editor). The external ordering, that is the chronology of scholarly modules, might be gamed as well. Consider the scenario where a predictions module at version 12 is said to be the parent of a design module at version 26 but does not exist yet at the time of registration for the design module. An individual with malicious intentions might do this and retroactively fabricate the parent predictions. So, despite a specific, persistent, and unique parent Dat link being provided, the chronology could be undermined, which in turn threatens the provenance of information. It would require some effort from said researcher to subsequently ensure that the referenced Dat link contains the postdictions, but it might be possible to fake predictions in this manner. Other mechanisms could be put in place to verify the existence of parent links at the time of registration (which is technically feasible but would require additional bodies of trust) or to technically investigate for filler actions in a Dat filesystems when artificially high version numbers are registered. How to game the proposed system is an active avenue for further research.</p>
+<p>The immutability of the Dat protocol that is central to this proposal only functions when information is being shared on the network continuously. Technically, if information has not been shared yet, a user could check out an old version and create an alternative history. This could prove useful when accidental versions are registered, but could also provide incorrect provenance. When already shared, the Dat protocol rejects the content given that it is inconsistent with previous versions. As such, as long as peers keep sharing a module once its author shares it, it is difficult to corrupt. Ongoing implementations that add a checksum to the Dat link (e.g., <code>dat://&lt;hash&gt;@&lt;checksum&gt;+&lt;version&gt;</code>) could help further reduce this issue.</p>
+<p>Despite the potential of building an open-by-design scholarly infrastructure on top of the Dat protocol, there are also domains where advances need to be made. Until those advances are made, widespread use in the form of a scholarly communication system remains impractical and premature (note that no technical limitations prevent an implementation of the same modular structure on current technologies, for example GitHub). These developments can occur asynchronously of the further development of this scholarly communication infrastructure. Amongst others, these domains include technical aspects and implementations of the Dat protocol itself, implementations of APIs built on top of it, legal exploration of intellectual property on a peer-to-peer network, privacy issues due to high difficulty of removing content permanently once communicated, the usability of the proposed scholarly infrastructure, and how to store information in the modules that is machine readable but also easy-to-use for individuals.</p>
+<p>The Dat protocol is functional, but is currently limited to NodeJS and single-user write access. Because it is currently only available in NodeJS, portability of the protocol is currently restricted to JavaScript environments. An experimental implementation of the Dat protocol is currently being built <a href="https://github.com/datrs">in Rust</a> and <a href="https://github.com/datcxx">in C++</a>, which would greatly improve availability of the protocol to other environments. Moreover, by being restricted to single-user write access, Dat archives are not really portable across machines or users, although work on multi-user write (i.e., multiple devices or users) <a href="https://github.com/mafintosh/hyperdb">has recently been released</a>. Other APIs built on top of the Dat protocol that are essential to building a proposed infrastructure, such as <code>webdb</code>, also need to be further refined in order to make them worthwhile. For example, <code>webdb</code> currently does not index versioned Dat links but simply the most recent versions. As such, the indexing of versioned references is problematic at the moment, but can be readily tackled with further development. If these and other developments continue, the benefits of the protocol will mature, may become readily available to individuals from within their standard browser, and become more practical to collaborate on. Considering this, the proposed design is imperfect but timely, allowing for community driven iterations into something more refined as implementations of the Dat protocol are also refined and may become more widely used.</p>
+<p>Instead of logging in with passwords, the Dat protocol uses cryptographical verification using a public-private key pair. A public-private key pair is similar to the lock-key pair we know from everyday life. This also means that if the (private) key is lost, a researcher can get locked out from their profile. Similarly, if the (private) key gets stolen, it might give access to people other than the researcher. How to securely handle private keys in a user-friendly manner is an important issue in further development of this scholarly communication system. Regardless, this changes the threat model from centralized leaks (for example of plaintext passwords by Elsevier; <a href="https://perma.cc/6J9D-ZPAW" class="uri">https://perma.cc/6J9D-ZPAW</a>) decentralized security. This would make the researcher more in control, but also more responsible, for their operational security.</p>
+<p>Despite the Dat protocol’s peer-to-peer nature, intellectual property laws still ascribe copyright upon creation and do not allow copying of content except when explicitly permitted through non-restrictive licenses by authors <span class="citation">(Baldwin <a href="#ref-isbn:9781400851911">2014</a>)</span>. As such, intellectual property laws could be used to hamper widespread copying when licensing is neglected by authors. Legal uncertainty here might give rise to a chilling effect to use the Dat protocol to share scholarly information. Moreover, it seems virtually impossible to issue takedown notices for (retroactively deemed) illicit content on the Dat protocol without removing all peer copies on the network. As a result of this, social perception of the Dat protocol might turn negative if high-profile cases of illicit or illegal sharing occur (regardless of whether that is scholarly information or something else). However, just as the Web requires local copies in cache to function and which lawmakers made legal relatively quickly when the Web was becoming widespread, the wider implementation of peer-to-peer protocols to share content might also require reforms to allow for more permissive copying of original content shared on the network. Regardless, legal issues need to be thought about beforehand and users should be made aware that they carry responsibility for their shared content. Given its inherent open and unrestricted sharing design, it would make sense to use non-restrictive licenses on the scholarly modules by default to prevent these legal issues for researchers wanting to reuse and build on scholarly modules.</p>
+<p>Similarly, we need to take seriously the issue that information on the network, once copied by a peer or multiple peers, is increasingly unlikely to be uncommunicated. The implications of this in light of privacy legislations, ethical ramifications, and general negative effects should not be underestimated. Because a Dat filesystem has a stable public key and stores versions, the content remains available even if the content is deleted from the filesystem. That is, users could go to an older version and still find the file that was deleted. The only way to truly undo the availability of that information is to remove all existing copies. Hence, it is worthwhile to ask the question whether scholarly research that is based on personal data should ever be conducted on the individual level data or whether this should be done on higher level summaries of relations between variables (e.g., covariance matrices). How these summaries can be verified, would remain an issue to tackle. Conversely, the limitation with respect to privacy is also a benefit with regards to censorship, where information would also be much harder to censure <span class="citation">(in stark contrast to publishers that might be pressured by governments; Philips <a href="#ref-guardian-cup">2017</a>)</span>. Moreover, we might start thinking about the ownership of data in research. In the case of human subjects research, researchers now collect data and store it, but we might consider decentralized data collection where human participants produce their own data locally and simply permit a researcher to ingest that into an analysis process (creating throwaway databases themselves with <code>webdb</code> for example). This would in turn return ownership to the participant and benefit transparency of data generated.</p>
+<p>Bandwidth and persistent peers on the Dat protocol are highly correlated issues that are key to a usable decentralized infrastructure. When there are few peers on the network, information redundancy is low, content attrition is (potentially) high, and bandwidth will be limited. Subsequently, maximum data transfer of 40KB/s may be possible when few peers with restricted bandwidth are available and are farther removed on the physical network. Vice versa, in the most optimal scenario data transfer could reach the maximum of the infrastructure between peers (e.g., 1GB/s on peers located on an intranet). Considering that replicating Dat filesystems is relatively easy given storage space, it could be done by individuals, and (university) libraries seem particularly qualified and motivated candidates for persistent hosting of content on the Dat network. These organizations often have substantial server infrastructure available, would facilitate high data transfer speeds, and also have a vested interested in preserving scholarly content. With over 400 research libraries in Europe and over <a href="http://db.aflia.net/list/?q=6&amp;m=n">900 academic libraries in Africa</a> alone, bandwidth and redundancy of scholarly content could be addressed if sufficient libraries participate in rehosting content. Moreover, the peer-to-peer nature would also allow for researchers to keep accessing content in the same way when the content is rehosted on the intranet and the wider connection has service interruptions.</p>
+<p>The semi-technical proposal for verified, modular, and provenance based scholarly infrastructure on the Dat protocol synthesizes meta-research, technical developments of new Web protocols, real-life issues in a lack of diversity for consuming scholarly research, and library and information science’s perspectives on the five functions scholarly communication is supposed to fulfill. With this initial proposal a scholarly commons seems feasible. The proposal provides a more complete and less biased register of information than the current article-based system. Moreover, it facilitates more constructive certification discussions and allows anyone with access to the Internet to participate. It also provides archival supportive of the distribution, which anyone may meaningfully contribute to if they have the physical means. This proposal also may provide new ways of evaluating, consuming, and discovering research. The decentralized nature of the Dat protocol requires less trust to be put in institutions to maintain key data stores that are the fundament to any infrastructure and replaces it with widespread distribution of that information. However, technological, legal, and social developments need to occur asynchronously to make this a reality.</p>
+</div>
+<div id="supporting-information-1" class="section level2">
+<h2><span class="header-section-number">9.5</span> Supporting Information</h2>
+<p>S1 File. Overview of original Dat links corresponding to shortened links: <a href="https://github.com/chartgerink/2018dat-com/raw/master/assets/mock-modules-overview.ods" class="uri">https://github.com/chartgerink/2018dat-com/raw/master/assets/mock-modules-overview.ods</a>.</p>
+
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-isbn:9780226261454">
+<p>Baldwin, Melinda. 2015. <em>Making Nature: The History of a Scientific Journal</em>. University of Chicago Press.</p>
+</div>
+<div id="ref-isbn:9781400851911">
+<p>Baldwin, Peter. 2014. <em>The Copyright Wars: Three Centuries of Trans-Atlantic Battle</em>. Princeton University Press.</p>
+</div>
+<div id="ref-doi:10.1126/science.aaf5664">
+<p>Bohannon, John. 2016a. “Who’s Downloading Pirated Papers? Everyone.” <em>Science</em>. doi:<a href="https://doi.org/10.1126/science.aaf5664">10.1126/science.aaf5664</a>.</p>
+</div>
+<div id="ref-doi:10.3389/fnhum.2018.00037">
+<p>Brembs, Björn. 2018. “Prestigious Science Journals Struggle to Reach Even Average Reliability.” <em>Frontiers in Human Neuroscience</em> 12 (February). Frontiers Media SA. doi:<a href="https://doi.org/10.3389/fnhum.2018.00037">10.3389/fnhum.2018.00037</a>.</p>
+</div>
+<div id="ref-isbn:9781786635471">
+<p>Bridle, James. 2018. <em>New Dark Age: Technology and the End of the Future</em>. Verso.</p>
+</div>
+<div id="ref-dokieli">
+<p>Capadisli, Sarven, Amy Guy, Ruben Verborgh, Christoph Lange, Soeren Auer, and Tim Berners-Lee. 2017. “Decentralised Authoring, Annotations and Notifications for a Read-Write Web with Dokieli.” <a href="https://wayback.archive.org/web/20180807191810/http://csarven.ca/dokieli-rww" class="uri">https://wayback.archive.org/web/20180807191810/http://csarven.ca/dokieli-rww</a>.</p>
+</div>
+<div id="ref-doi:10.1016/j.cortex.2012.12.016">
+<p>Chambers, Christopher D. 2013. “Registered Reports: A New Publishing Initiative at Cortex.” <em>Cortex</em> 49 (3). Elsevier BV: 609–10. doi:<a href="https://doi.org/10.1016/j.cortex.2012.12.016">10.1016/j.cortex.2012.12.016</a>.</p>
+</div>
+<div id="ref-doi:10.1186/2041-1480-5-28">
+<p>Clark, Tim, Paolo N Ciccarese, and Carole A Goble. 2014. “Micropublications: A Semantic Model for Claims, Evidence, Arguments and Annotations in Biomedical Communications.” <em>Journal of Biomedical Semantics</em> 5 (1). Springer Nature: 28. doi:<a href="https://doi.org/10.1186/2041-1480-5-28">10.1186/2041-1480-5-28</a>.</p>
+</div>
+<div id="ref-isbn:9789023228912">
+<p>De Groot, A.D. 1994. <em>Methodologie: Grondslagen van Onderzoek En Denken in de Gedragswetenschappen [Methodology: Foundations of Research and Thinking in the Behavioral Sciences]</em>. Assen, the Netherlands: Van Gorcum.</p>
+</div>
+<div id="ref-doi:10.1103/physreve.95.022313">
+<p>Domenico, Manlio De, and Alex Arenas. 2017. “Modeling Structure and Resilience of the Dark Network.” <em>Physical Review E</em> 95 (2). American Physical Society (APS). doi:<a href="https://doi.org/10.1103/physreve.95.022313">10.1103/physreve.95.022313</a>.</p>
+</div>
+<div id="ref-doi:10.1016/0140-6736_91_90201-y">
+<p>Easterbrook, P.J, R Gopalan, J.A Berlin, and D.R Matthews. 1991. “Publication Bias in Clinical Research.” <em>The Lancet</em> 337 (8746). Elsevier BV: 867–72. doi:<a href="https://doi.org/10.1016/0140-6736(91)90201-y">10.1016/0140-6736(91)90201-y</a>.</p>
+</div>
+<div id="ref-doi:10.1016/j.gendis.2015.02.006">
+<p>Fareed, Mohd, Malik Azeem Anwar, and Mohammad Afzal. 2015. “Prevalence and Gene Frequency of Color Vision Impairments Among Children of Six Populations from North Indian Region.” <em>Genes &amp; Diseases</em> 2 (2). Elsevier BV: 211–18. doi:<a href="https://doi.org/10.1016/j.gendis.2015.02.006">10.1016/j.gendis.2015.02.006</a>.</p>
+</div>
+<div id="ref-isbn:9780226253251">
+<p>Fleck, Ludwig. 1984. <em>Genesis and Development of a Scientific Fact</em>. Chicago, IL: University of Chicago Press.</p>
+</div>
+<div id="ref-https-hartgerink">
+<p>Hartgerink, Chris H. 2018. “Publishers Need to Stop Using Insecure Http.” <a href="https://wayback.archive.org/web/20180807191523/https://opensource.com/article/18/5/scholarly-publishers-https" class="uri">https://wayback.archive.org/web/20180807191523/https://opensource.com/article/18/5/scholarly-publishers-https</a>.</p>
+</div>
+<div id="ref-doi:10.3390/publications6020021">
+<p>Hartgerink, Chris H. J., and Marino van Zelst. 2018. “As-You-Go Instead of After-the-Fact: A Network Approach to Scholarly Communication and Evaluation.” <em>Publications</em> 6 (2). MDPI AG: 21. doi:<a href="https://doi.org/10.3390/publications6020021">10.3390/publications6020021</a>.</p>
+</div>
+<div id="ref-doi:10.31234/osf.io/dt6e8">
+<p>Holcombe, Alex O. 2019. “Contributorship, Not Authorship,” April. Center for Open Science. doi:<a href="https://doi.org/10.31234/osf.io/dt6e8">10.31234/osf.io/dt6e8</a>.</p>
+</div>
+<div id="ref-jatdown">
+<p>Johnston, Paul. 2016. “Jatdown: A Markdown Language for Writing Jats.” <em>Journal Article Tag Suite Conference (JATS-Con) Proceedings 2016 [Internet].</em> <a href="https://www.ncbi.nlm.nih.gov/books/NBK350677/" class="uri">https://www.ncbi.nlm.nih.gov/books/NBK350677/</a>.</p>
+</div>
+<div id="ref-doi:10.1371/journal.pone.0167475">
+<p>Jones, Shawn M., Herbert Van de Sompel, Harihar Shankar, Martin Klein, Richard Tobin, and Claire Grover. 2016. “Scholarly Context Adrift: Three Out of Four URI References Lead to Changed Content.” Edited by Neil R. Smalheiser. <em>PLOS ONE</em> 11 (12). Public Library of Science (PLoS): e0167475. doi:<a href="https://doi.org/10.1371/journal.pone.0167475">10.1371/journal.pone.0167475</a>.</p>
+</div>
+<div id="ref-doi:10.18352/lq.10280">
+<p>Khoo, Shaun Yon-Seng. 2019. “Article Processing Charge Hyperinflation and Price Insensitivity: An Open Access Sequel to the Serials Crisis.” <em>LIBER Quarterly</em> 29 (1). Uopen Journals: 1. doi:<a href="https://doi.org/10.18352/lq.10280">10.18352/lq.10280</a>.</p>
+</div>
+<div id="ref-doi:10.1629/uksg.215">
+<p>Kiefer, Randy S. 2015. “Digital Preservation of Scholarly Content, Focusing on the Example of the CLOCKSS Archive.” <em>Insights the UKSG Journal</em> 28 (1). Ubiquity Press, Ltd.: 91–96. doi:<a href="https://doi.org/10.1629/uksg.215">10.1629/uksg.215</a>.</p>
+</div>
+<div id="ref-doi:10.1108/eum0000000007185">
+<p>Kircz, Joost G. 1998. “Modularity: The Next Form of Scientific Information Presentation?” <em>Journal of Documentation</em> 54 (2). Emerald: 210–35. doi:<a href="https://doi.org/10.1108/eum0000000007185">10.1108/eum0000000007185</a>.</p>
+</div>
+<div id="ref-doi:10.1371/journal.pone.0115253">
+<p>Klein, Martin, Herbert Van de Sompel, Robert Sanderson, Harihar Shankar, Lyudmila Balakireva, Ke Zhou, and Richard Tobin. 2014. “Scholarly Context Not Found: One in Five Articles Suffers from Reference Rot.” Edited by JuditEditor Bar-Ilan. <em>PLoS ONE</em> 9 (12). Public Library of Science (PLoS): e115253. doi:<a href="https://doi.org/10.1371/journal.pone.0115253">10.1371/journal.pone.0115253</a>.</p>
+</div>
+<div id="ref-doi:10.12685/027.7-4-2-157">
+<p>Kraker, Peter, Christopher Kittel, and Asura Enkhbayar. 2016. “Open Knowledge Maps: Creating a Visual Interface to the World’s Scientific Knowledge Based on Natural Language Processing.” <em>027.7 Zeitschrift Für Bibliothekskultur / Journal for Library Culture</em> 4 (2): 98–103. doi:<a href="https://doi.org/10.12685/027.7-4-2-157">10.12685/027.7-4-2-157</a>.</p>
+</div>
+<div id="ref-doi:10.7717/peerj-cs.78">
+<p>Kuhn, Tobias, Christine Chichester, Michael Krauthammer, Núria Queralt-Rosinach, Ruben Verborgh, George Giannakopoulos, Axel-Cyrille Ngonga Ngomo, Raffaele Viglianti, and Michel Dumontier. 2016. “Decentralized Provenance-Aware Publishing with Nanopublications.” <em>PeerJ Computer Science</em> 2 (August). PeerJ: e78. doi:<a href="https://doi.org/10.7717/peerj-cs.78">10.7717/peerj-cs.78</a>.</p>
+</div>
+<div id="ref-doi:10.1007/bf01173636">
+<p>Mahoney, Michael J. 1977. “Publication Prejudices: An Experimental Study of Confirmatory Bias in the Peer Review System.” <em>Cognitive Therapy and Research</em> 1 (2). Springer Nature: 161–75. doi:<a href="https://doi.org/10.1007/bf01173636">10.1007/bf01173636</a>.</p>
+</div>
+<div id="ref-doi:10.1038/nature.2017.22163">
+<p>McKenzie, Lindsay. 2017. “Swipe Right for Science: Papr App Is ‘Tinder for Preprints’.” <em>Nature</em>, June. Springer Nature. doi:<a href="https://doi.org/10.1038/nature.2017.22163">10.1038/nature.2017.22163</a>.</p>
+</div>
+<div id="ref-doi:10.1037/1089-2680.2.2.175">
+<p>Nickerson, Raymond S. 1998. “Confirmation Bias: A Ubiquitous Phenomenon in Many Guises.” <em>Review of General Psychology</em> 2 (2). American Psychological Association (APA): 175–220. doi:<a href="https://doi.org/10.1037/1089-2680.2.2.175">10.1037/1089-2680.2.2.175</a>.</p>
+</div>
+<div id="ref-doi:10.3233/978-1-61499-744-3-107">
+<p>Nissim, Nir, Aviad Cohen, Jian Wu, Andrea Lanzi, Lior Rokach, Yuval Elovici, and Lee Giles. 2017. “Scholarly Digital Libraries as a Platform for Malware Distribution.” <em>Cryptology and Information Security Series</em>, 107–28. doi:<a href="https://doi.org/10.3233/978-1-61499-744-3-107">10.3233/978-1-61499-744-3-107</a>.</p>
+</div>
+<div id="ref-doi:10.31219/osf.io/nsv2c">
+<p>Ogden, Maxwell. 2017. “Dat - Distributed Dataset Synchronization and Versioning,” January. Center for Open Science. doi:<a href="https://doi.org/10.31219/osf.io/nsv2c">10.31219/osf.io/nsv2c</a>.</p>
+</div>
+<div id="ref-guardian-cup">
+<p>Philips, Tom. 2017. “Publishers Need to Stop Using Insecure Http.” <em>The Guardian</em>. <a href="https://wayback.archive.org/web/20180809112257/https://www.theguardian.com/world/2017/aug/19/cambridge-university-press-accused-of-selling-its-soul-over-chinese-censorship" class="uri">https://wayback.archive.org/web/20180809112257/https://www.theguardian.com/world/2017/aug/19/cambridge-university-press-accused-of-selling-its-soul-over-chinese-censorship</a>.</p>
+</div>
+<div id="ref-doi:10.7717/peerj.4375">
+<p>Piwowar, Heather, Jason Priem, Vincent Larivière, Juan Pablo Alperin, Lisa Matthias, Bree Norlander, Ashley Farley, Jevin West, and Stefanie Haustein. 2018. “The State of OA: A Large-Scale Analysis of the Prevalence and Impact of Open Access Articles.” <em>PeerJ</em> 6 (February). PeerJ: e4375. doi:<a href="https://doi.org/10.7717/peerj.4375">10.7717/peerj.4375</a>.</p>
+</div>
+<div id="ref-doi:10.3389/fncom.2012.00019">
+<p>Priem, Jason, and Bradley M. Hemminger. 2012. “Decoupling the Scholarly Journal.” <em>Frontiers in Computational Neuroscience</em> 6. Frontiers Media SA. doi:<a href="https://doi.org/10.3389/fncom.2012.00019">10.3389/fncom.2012.00019</a>.</p>
+</div>
+<div id="ref-doi:10.1045/june2001-reich">
+<p>Reich, Vicky, and David S. H. Rosenthal. 2001. “LOCKSS.” <em>D-Lib Magazine</em> 7 (6). CNRI Acct. doi:<a href="https://doi.org/10.1045/june2001-reich">10.1045/june2001-reich</a>.</p>
+</div>
+<div id="ref-doi:10.1038/sdata.2018.221">
+<p>Robinson, Danielle C., Joe A. Hand, Mathias Buus Madsen, and Karissa R. McKelvey. 2018. “The Dat Project, an Open and Decentralized Research Data Tool.” <em>Scientific Data</em> 5 (October). Springer Nature: 180221. doi:<a href="https://doi.org/10.1038/sdata.2018.221">10.1038/sdata.2018.221</a>.</p>
+</div>
+<div id="ref-roosendaal1998">
+<p>Roosendaal, Hans E, and Peter A Th M Geurts. 1998. “Forces and Functions in Scientific Communication: An Analysis of Their Interplay.” <a href="http://web.archive.org/web/20180223112609/http://www.physik.uni-oldenburg.de/conferences/crisp97/roosendaal.html" class="uri">http://web.archive.org/web/20180223112609/http://www.physik.uni-oldenburg.de/conferences/crisp97/roosendaal.html</a>.</p>
+</div>
+<div id="ref-doi:10.1098/rsos.160384">
+<p>Smaldino, Paul E., and Richard McElreath. 2016. “The Natural Selection of Bad Science.” <em>Royal Society Open Science</em> 3 (9). The Royal Society: 160384. doi:<a href="https://doi.org/10.1098/rsos.160384">10.1098/rsos.160384</a>.</p>
+</div>
+<div id="ref-doi:10.1038/nature05008">
+<p>Sompel, Herbert Van de. 2006. “Certification in a Digital Era.” <em>Nature</em>. Springer Nature. doi:<a href="https://doi.org/10.1038/nature05008">10.1038/nature05008</a>.</p>
+</div>
+<div id="ref-doi:10.1045/september2004-vandesompel">
+<p>Sompel, Herbert Van de, Sandy Payette, John Erickson, Carl Lagoze, and Simeon Warner. 2004. “Rethinking Scholarly Communication.” <em>D-Lib Magazine</em> 10 (9). CNRI Acct. doi:<a href="https://doi.org/10.1045/september2004-vandesompel">10.1045/september2004-vandesompel</a>.</p>
+</div>
+<div id="ref-doi:10.1080/1047840X.2012.701161">
+<p>Spellman, Barbara A. 2012. “Scientific Utopia … or Too Much Information? Comment on Nosek and Bar-Anan.” <em>Psychological Inquiry</em> 23 (3). Informa UK Limited: 303–4. doi:<a href="https://doi.org/10.1080/1047840x.2012.701161">10.1080/1047840x.2012.701161</a>.</p>
+</div>
+<div id="ref-doi:10.1111/j.1467-954x.1990.tb03347.x">
+<p>Star, Susan Leigh. 1990. “Power, Technology and the Phenomenology of Conventions: On Being Allergic to Onions.” <em>The Sociological Review</em> 38 (1_suppl). SAGE Publications: 26–56. doi:<a href="https://doi.org/10.1111/j.1467-954x.1990.tb03347.x">10.1111/j.1467-954x.1990.tb03347.x</a>.</p>
+</div>
+<div id="ref-doi:10.1093/biomet/6.1.1">
+<p>Student. 1908. “THE Probable Error of a Mean.” <em>Biometrika</em> 6 (1). Oxford University Press (OUP): 1–25. doi:<a href="https://doi.org/10.1093/biomet/6.1.1">10.1093/biomet/6.1.1</a>.</p>
+</div>
+<div id="ref-doi:10.2307/2786545">
+<p>Travers, Jeffrey, and Stanley Milgram. 1969. “An Experimental Study of the Small World Problem.” <em>Sociometry</em> 32 (4). JSTOR: 425. doi:<a href="https://doi.org/10.2307/2786545">10.2307/2786545</a>.</p>
+</div>
+<div id="ref-doi:10.1371/journal.pone.0084896">
+<p>Van Assen, Marcel A L M, Robbie C M Van Aert, Michèle B. Nuijten, and Jelte M Wicherts. 2014. “Why Publishing Everything Is More Effective Than Selective Publishing of Statistically Significant Results.” <em>PloS ONE</em> 9 (1): e84896. doi:<a href="https://doi.org/10.1371/journal.pone.0084896">10.1371/journal.pone.0084896</a>.</p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="summary.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": true,
+"facebook": false,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "github", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": null,
+"history": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf"],
+"toc": {
+"collapse": "subsection",
+"scroll_highlight": true
+},
+"toolbar": {
+"position": "fixed"
+},
+"search": true
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

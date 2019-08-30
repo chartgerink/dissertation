@@ -1,0 +1,19 @@
+,Timespan,Coefficient,Estimate,$SE$,$t$,$p$
+All,1985-2013,Intercept,0.007,0.017,0.392,0.698
+All,,Years (centered),-0.001,0.001,-0.492,0.627
+DP,1985-2013,Intercept,-0.043,0.056,-0.769,0.448
+DP,,Years (centered),0.001,0.003,0.193,0.849
+FP,2010-2013,Intercept,-0.182,0.148,-1.233,0.343
+FP,,Years (centered),0.055,0.079,0.694,0.56
+JAP,1985-2013,Intercept,0.041,0.081,0.504,0.619
+JAP,,Years (centered),-0.001,0.005,-0.208,0.837
+JCCP,1985-2013,Intercept,0.077,0.058,1.315,0.2
+JCCP,,Years (centered),-0.006,0.004,-1.546,0.134
+JEPG,1985-2013,Intercept,-0.022,0.124,-0.176,0.862
+JEPG,,Years (centered),0.001,0.007,0.097,0.924
+JPSP,1985-2013,Intercept,-0.002,0.027,-0.062,0.951
+JPSP,,Years (centered),0,0.002,-0.005,0.996
+PLOS,2006-2013,Intercept,\textbf{-0.382},\textbf{0.114},\textbf{-3.344},\textbf{0.016}
+PLOS,,Years (centered),\textbf{0.072},\textbf{0.027},\textbf{2.632},\textbf{0.039}
+PS,2003-2013,Intercept,0.081,0.078,1.045,0.323
+PS,,Years (centered),-0.009,0.013,-0.669,0.52

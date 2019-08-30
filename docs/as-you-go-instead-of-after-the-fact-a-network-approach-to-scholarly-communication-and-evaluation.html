@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>8 As-you-go instead of after-the-fact: A network approach to scholarly communication and evaluation | Contributions towards understanding and building sustainable science</title>
+  <meta name="description" content="PhD dissertation by CHJ Hartgerink, written during 2014-2019, mostly at Tilburg University." />
+  <meta name="generator" content="bookdown 0.10 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="8 As-you-go instead of after-the-fact: A network approach to scholarly communication and evaluation | Contributions towards understanding and building sustainable science" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="PhD dissertation by CHJ Hartgerink, written during 2014-2019, mostly at Tilburg University." />
+  <meta name="github-repo" content="chartgerink/dissertation" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="8 As-you-go instead of after-the-fact: A network approach to scholarly communication and evaluation | Contributions towards understanding and building sustainable science" />
+  
+  <meta name="twitter:description" content="PhD dissertation by CHJ Hartgerink, written during 2014-2019, mostly at Tilburg University." />
+  
+
+<meta name="author" content="Chris Hubertus Joseph Hartgerink" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="extracting-data-from-vector-figures-in-scholarly-articles.html">
+<link rel="next" href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Prologue</a></li>
+<li class="part"><span><b>I Understanding sustainable science</b></span></li>
+<li class="chapter" data-level="1" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html"><i class="fa fa-check"></i><b>1</b> Research practices and assessment of research misconduct</a><ul>
+<li class="chapter" data-level="1.1" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#responsible-conduct-of-research"><i class="fa fa-check"></i><b>1.1</b> Responsible conduct of research</a><ul>
+<li class="chapter" data-level="1.1.1" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#what-is-it"><i class="fa fa-check"></i><b>1.1.1</b> What is it?</a></li>
+<li class="chapter" data-level="1.1.2" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#what-do-researchers-do"><i class="fa fa-check"></i><b>1.1.2</b> What do researchers do?</a></li>
+<li class="chapter" data-level="1.1.3" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#improving-responsible-conduct"><i class="fa fa-check"></i><b>1.1.3</b> Improving responsible conduct</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#questionable-research-practices"><i class="fa fa-check"></i><b>1.2</b> Questionable research practices</a><ul>
+<li class="chapter" data-level="1.2.1" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#what-is-it-1"><i class="fa fa-check"></i><b>1.2.1</b> What is it?</a></li>
+<li class="chapter" data-level="1.2.2" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#what-do-researchers-do-1"><i class="fa fa-check"></i><b>1.2.2</b> What do researchers do?</a></li>
+<li class="chapter" data-level="1.2.3" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#how-can-it-be-prevented"><i class="fa fa-check"></i><b>1.2.3</b> How can it be prevented?</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#research-misconduct"><i class="fa fa-check"></i><b>1.3</b> Research misconduct</a><ul>
+<li class="chapter" data-level="1.3.1" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#what-is-it-2"><i class="fa fa-check"></i><b>1.3.1</b> What is it?</a></li>
+<li class="chapter" data-level="1.3.2" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#what-do-researchers-do-2"><i class="fa fa-check"></i><b>1.3.2</b> What do researchers do?</a></li>
+<li class="chapter" data-level="1.3.3" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#how-can-it-be-prevented-1"><i class="fa fa-check"></i><b>1.3.3</b> How can it be prevented?</a></li>
+</ul></li>
+<li class="chapter" data-level="1.4" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#conclusion"><i class="fa fa-check"></i><b>1.4</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html"><a href="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html"><i class="fa fa-check"></i><b>2</b> Reanalyzing Head et al. (2015): investigating the robustness of widespread <span class="math inline">\(p\)</span>-hacking</a><ul>
+<li class="chapter" data-level="2.1" data-path="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html"><a href="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html#data-and-methods"><i class="fa fa-check"></i><b>2.1</b> Data and methods</a></li>
+<li class="chapter" data-level="2.2" data-path="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html"><a href="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html#reanalysis-results"><i class="fa fa-check"></i><b>2.2</b> Reanalysis results</a></li>
+<li class="chapter" data-level="2.3" data-path="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html"><a href="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html#discussion"><i class="fa fa-check"></i><b>2.3</b> Discussion</a></li>
+<li class="chapter" data-level="2.4" data-path="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html"><a href="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html#limitations-and-conclusion"><i class="fa fa-check"></i><b>2.4</b> Limitations and conclusion</a></li>
+<li class="chapter" data-level="2.5" data-path="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html"><a href="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html#supporting-information"><i class="fa fa-check"></i><b>2.5</b> Supporting Information</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><i class="fa fa-check"></i><b>3</b> Distributions of p-values between .01-.05 in psychology: what is going on?</a><ul>
+<li class="chapter" data-level="3.0.1" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#how-qrps-relate-to-distributions-of-p-values"><i class="fa fa-check"></i><b>3.0.1</b> How QRPs relate to distributions of <em>p</em>-values</a></li>
+<li class="chapter" data-level="3.0.2" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#previous-findings"><i class="fa fa-check"></i><b>3.0.2</b> Previous findings</a></li>
+<li class="chapter" data-level="3.0.3" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#extensions-of-previous-studies"><i class="fa fa-check"></i><b>3.0.3</b> Extensions of previous studies</a></li>
+<li class="chapter" data-level="3.1" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#data-and-methods-1"><i class="fa fa-check"></i><b>3.1</b> Data and methods</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#data"><i class="fa fa-check"></i><b>3.1.1</b> Data</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#methods"><i class="fa fa-check"></i><b>3.2</b> Methods</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#caliper-test"><i class="fa fa-check"></i><b>3.2.1</b> Caliper test</a></li>
+<li class="chapter" data-level="3.2.2" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#measures-based-on-p-value-distributions"><i class="fa fa-check"></i><b>3.2.2</b> Measures based on <span class="math inline">\(p\)</span>-value distributions</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#results-and-discussion"><i class="fa fa-check"></i><b>3.3</b> Results and discussion</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#reported-p-values"><i class="fa fa-check"></i><b>3.3.1</b> Reported <span class="math inline">\(p\)</span>-values</a></li>
+<li class="chapter" data-level="3.3.2" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#recalculated-p-value-distributions"><i class="fa fa-check"></i><b>3.3.2</b> Recalculated <span class="math inline">\(p\)</span>-value distributions</a></li>
+<li class="chapter" data-level="3.3.3" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#excessive-significance-over-time"><i class="fa fa-check"></i><b>3.3.3</b> Excessive significance over time</a></li>
+<li class="chapter" data-level="3.3.4" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#results-of-two-measures-based-on-modeling-p-value-distributions"><i class="fa fa-check"></i><b>3.3.4</b> Results of two measures based on modeling <span class="math inline">\(p\)</span>-value distributions</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#limitations-and-conclusions"><i class="fa fa-check"></i><b>3.4</b> Limitations and conclusions</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html"><i class="fa fa-check"></i><b>4</b> Too good to be false: Nonsignificant results revisited</a><ul>
+<li class="chapter" data-level="4.1" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#theoretical-framework"><i class="fa fa-check"></i><b>4.1</b> Theoretical framework</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#distributions-of-p-values"><i class="fa fa-check"></i><b>4.1.1</b> Distributions of <em>p</em>-values</a></li>
+<li class="chapter" data-level="4.1.2" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#testing-for-false-negatives-the-fisher-test"><i class="fa fa-check"></i><b>4.1.2</b> Testing for false negatives: the Fisher test</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#application-1-evidence-of-false-negatives-in-articles-across-eight-major-psychology-journals"><i class="fa fa-check"></i><b>4.2</b> Application 1: Evidence of false negatives in articles across eight major psychology journals</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#method"><i class="fa fa-check"></i><b>4.2.1</b> Method</a></li>
+<li class="chapter" data-level="4.2.2" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#results"><i class="fa fa-check"></i><b>4.2.2</b> Results</a></li>
+<li class="chapter" data-level="4.2.3" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#expected-effect-size-distribution."><i class="fa fa-check"></i><b>4.2.3</b> Expected effect size distribution.</a></li>
+<li class="chapter" data-level="4.2.4" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#evidence-of-false-negatives-in-articles."><i class="fa fa-check"></i><b>4.2.4</b> Evidence of false negatives in articles.</a></li>
+<li class="chapter" data-level="4.2.5" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#discussion-1"><i class="fa fa-check"></i><b>4.2.5</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#application-2-evidence-of-false-negative-gender-effects-in-eight-major-psychology-journals"><i class="fa fa-check"></i><b>4.3</b> Application 2: Evidence of false negative gender effects in eight major psychology journals</a><ul>
+<li class="chapter" data-level="4.3.1" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#method-1"><i class="fa fa-check"></i><b>4.3.1</b> Method</a></li>
+<li class="chapter" data-level="4.3.2" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#results-1"><i class="fa fa-check"></i><b>4.3.2</b> Results</a></li>
+<li class="chapter" data-level="4.3.3" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#discussion-2"><i class="fa fa-check"></i><b>4.3.3</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#application-3-reproducibility-project-psychology"><i class="fa fa-check"></i><b>4.4</b> Application 3: Reproducibility Project Psychology</a><ul>
+<li class="chapter" data-level="4.4.1" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#method-2"><i class="fa fa-check"></i><b>4.4.1</b> Method</a></li>
+<li class="chapter" data-level="4.4.2" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#results-2"><i class="fa fa-check"></i><b>4.4.2</b> Results</a></li>
+<li class="chapter" data-level="4.4.3" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#discussion-3"><i class="fa fa-check"></i><b>4.4.3</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#general-discussion"><i class="fa fa-check"></i><b>4.5</b> General Discussion</a><ul>
+<li class="chapter" data-level="4.5.1" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#limitations-and-further-research"><i class="fa fa-check"></i><b>4.5.1</b> Limitations and further research</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="statistical-results-content-mining-psychology-articles-for-statistical-test-results.html"><a href="statistical-results-content-mining-psychology-articles-for-statistical-test-results.html"><i class="fa fa-check"></i><b>5</b> 688,112 Statistical Results: Content Mining Psychology Articles for Statistical Test Results</a><ul>
+<li class="chapter" data-level="5.1" data-path="statistical-results-content-mining-psychology-articles-for-statistical-test-results.html"><a href="statistical-results-content-mining-psychology-articles-for-statistical-test-results.html#data-description"><i class="fa fa-check"></i><b>5.1</b> Data description</a></li>
+<li class="chapter" data-level="5.2" data-path="statistical-results-content-mining-psychology-articles-for-statistical-test-results.html"><a href="statistical-results-content-mining-psychology-articles-for-statistical-test-results.html#methods-1"><i class="fa fa-check"></i><b>5.2</b> Methods</a></li>
+<li class="chapter" data-level="5.3" data-path="statistical-results-content-mining-psychology-articles-for-statistical-test-results.html"><a href="statistical-results-content-mining-psychology-articles-for-statistical-test-results.html#usage-notes"><i class="fa fa-check"></i><b>5.3</b> Usage notes</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html"><i class="fa fa-check"></i><b>6</b> Detection of data fabrication using statistical tools</a><ul>
+<li class="chapter" data-level="6.1" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#theoretical-framework-1"><i class="fa fa-check"></i><b>6.1</b> Theoretical framework</a><ul>
+<li class="chapter" data-level="6.1.1" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#detecting-data-fabrication-in-summary-statistics"><i class="fa fa-check"></i><b>6.1.1</b> Detecting data fabrication in summary statistics</a></li>
+<li class="chapter" data-level="6.1.2" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#detecting-data-fabrication-in-raw-data"><i class="fa fa-check"></i><b>6.1.2</b> Detecting data fabrication in raw data</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#study-1---detecting-fabricated-summary-statistics"><i class="fa fa-check"></i><b>6.2</b> Study 1 - detecting fabricated summary statistics</a><ul>
+<li class="chapter" data-level="6.2.1" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#methods-2"><i class="fa fa-check"></i><b>6.2.1</b> Methods</a></li>
+<li class="chapter" data-level="6.2.2" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#results-3"><i class="fa fa-check"></i><b>6.2.2</b> Results</a></li>
+<li class="chapter" data-level="6.2.3" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#discussion-4"><i class="fa fa-check"></i><b>6.2.3</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#study-2---detecting-fabricated-individual-level-data"><i class="fa fa-check"></i><b>6.3</b> Study 2 - detecting fabricated individual level data</a><ul>
+<li class="chapter" data-level="6.3.1" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#methods-3"><i class="fa fa-check"></i><b>6.3.1</b> Methods</a></li>
+<li class="chapter" data-level="6.3.2" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#results-4"><i class="fa fa-check"></i><b>6.3.2</b> Results</a></li>
+<li class="chapter" data-level="6.3.3" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#discussion-5"><i class="fa fa-check"></i><b>6.3.3</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#general-discussion-1"><i class="fa fa-check"></i><b>6.4</b> General discussion</a></li>
+</ul></li>
+<li class="part"><span><b>II Improving science</b></span></li>
+<li class="chapter" data-level="7" data-path="extracting-data-from-vector-figures-in-scholarly-articles.html"><a href="extracting-data-from-vector-figures-in-scholarly-articles.html"><i class="fa fa-check"></i><b>7</b> Extracting data from vector figures in scholarly articles</a><ul>
+<li class="chapter" data-level="7.1" data-path="extracting-data-from-vector-figures-in-scholarly-articles.html"><a href="extracting-data-from-vector-figures-in-scholarly-articles.html#method-3"><i class="fa fa-check"></i><b>7.1</b> Method</a><ul>
+<li class="chapter" data-level="7.1.1" data-path="extracting-data-from-vector-figures-in-scholarly-articles.html"><a href="extracting-data-from-vector-figures-in-scholarly-articles.html#extraction-procedure"><i class="fa fa-check"></i><b>7.1.1</b> Extraction procedure</a></li>
+<li class="chapter" data-level="7.1.2" data-path="extracting-data-from-vector-figures-in-scholarly-articles.html"><a href="extracting-data-from-vector-figures-in-scholarly-articles.html#corpus"><i class="fa fa-check"></i><b>7.1.2</b> Corpus</a></li>
+<li class="chapter" data-level="7.1.3" data-path="extracting-data-from-vector-figures-in-scholarly-articles.html"><a href="extracting-data-from-vector-figures-in-scholarly-articles.html#documentation"><i class="fa fa-check"></i><b>7.1.3</b> Documentation</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="extracting-data-from-vector-figures-in-scholarly-articles.html"><a href="extracting-data-from-vector-figures-in-scholarly-articles.html#results-5"><i class="fa fa-check"></i><b>7.2</b> Results</a></li>
+<li class="chapter" data-level="7.3" data-path="extracting-data-from-vector-figures-in-scholarly-articles.html"><a href="extracting-data-from-vector-figures-in-scholarly-articles.html#discussion-6"><i class="fa fa-check"></i><b>7.3</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><i class="fa fa-check"></i><b>8</b> As-you-go instead of after-the-fact: A network approach to scholarly communication and evaluation</a><ul>
+<li class="chapter" data-level="8.1" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#network-structure"><i class="fa fa-check"></i><b>8.1</b> Network structure</a></li>
+<li class="chapter" data-level="8.2" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#indicators"><i class="fa fa-check"></i><b>8.2</b> Indicators</a></li>
+<li class="chapter" data-level="8.3" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#use-cases"><i class="fa fa-check"></i><b>8.3</b> Use cases</a><ul>
+<li class="chapter" data-level="8.3.1" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#funders"><i class="fa fa-check"></i><b>8.3.1</b> Funders</a></li>
+<li class="chapter" data-level="8.3.2" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#universities"><i class="fa fa-check"></i><b>8.3.2</b> Universities</a></li>
+<li class="chapter" data-level="8.3.3" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#individuals"><i class="fa fa-check"></i><b>8.3.3</b> Individuals</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#discussion-7"><i class="fa fa-check"></i><b>8.4</b> Discussion</a></li>
+<li class="chapter" data-level="8.5" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#conclusion-1"><i class="fa fa-check"></i><b>8.5</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><i class="fa fa-check"></i><b>9</b> Verified, shared, modular, and provenance based research communication with the Dat protocol</a><ul>
+<li class="chapter" data-level="9.1" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#dat-protocol"><i class="fa fa-check"></i><b>9.1</b> Dat protocol</a></li>
+<li class="chapter" data-level="9.2" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#verified-modular-scholarly-communication"><i class="fa fa-check"></i><b>9.2</b> Verified modular scholarly communication</a><ul>
+<li class="chapter" data-level="9.2.1" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#scholarly-profiles"><i class="fa fa-check"></i><b>9.2.1</b> Scholarly profiles</a></li>
+<li class="chapter" data-level="9.2.2" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#scholarly-modules"><i class="fa fa-check"></i><b>9.2.2</b> Scholarly modules</a></li>
+<li class="chapter" data-level="9.2.3" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#verification"><i class="fa fa-check"></i><b>9.2.3</b> Verification</a></li>
+<li class="chapter" data-level="9.2.4" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#prototype"><i class="fa fa-check"></i><b>9.2.4</b> Prototype</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#discussion-8"><i class="fa fa-check"></i><b>9.3</b> Discussion</a></li>
+<li class="chapter" data-level="9.4" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#limitations"><i class="fa fa-check"></i><b>9.4</b> Limitations</a></li>
+<li class="chapter" data-level="9.5" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#supporting-information-1"><i class="fa fa-check"></i><b>9.5</b> Supporting Information</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="summary.html"><a href="summary.html"><i class="fa fa-check"></i>Summary</a></li>
+<li class="chapter" data-level="" data-path="epilogue.html"><a href="epilogue.html"><i class="fa fa-check"></i>Epilogue</a></li>
+<li class="appendix"><span><b>Appendices</b></span></li>
+<li class="chapter" data-level="A" data-path="examining-statistical-properties-of-the-fisher-test.html"><a href="examining-statistical-properties-of-the-fisher-test.html"><i class="fa fa-check"></i><b>A</b> Examining statistical properties of the Fisher test</a></li>
+<li class="chapter" data-level="B" data-path="effect-computation.html"><a href="effect-computation.html"><i class="fa fa-check"></i><b>B</b> Effect computation</a></li>
+<li class="chapter" data-level="C" data-path="example-of-statcheck-report-for-pubpeer.html"><a href="example-of-statcheck-report-for-pubpeer.html"><i class="fa fa-check"></i><b>C</b> Example of <code>statcheck</code> report for PubPeer</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Contributions towards understanding and building sustainable science</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation" class="section level1">
+<h1><span class="header-section-number">8</span> As-you-go instead of after-the-fact: A network approach to scholarly communication and evaluation</h1>
+<p>Scholarly research faces threats to its sustainability and has been said to face a reproducibility crisis <span class="citation">(Baker <a href="#ref-doi:10.1038/533452a">2016</a>)</span> amongst other pernicious problems such as access and exclusivity. The underlying cause might be the way we have collectively designed the reporting and rewarding of research (implicitly or explicitly). The current scholarly communication system is primarily organized around researchers who publish static (digital) research papers in scholarly journals. Many of these journals have artificial page limits (in the digital age), which leads to artificial scarcity and subsequently increases the perceived prestige of such a journal due to high rejection rates (71% on average for APA journals in 2016; <a href="https://perma.cc/Q7AT-RN5C">perma.cc/Q7AT-RN5C</a>). Furthermore, scholarly communication has become highly centralized, where over 50% of all papers are published by as little as five publishers <span class="citation">(over 70% for social sciences; Larivière, Haustein, and Mongeon <a href="#ref-doi:10.1371/journal.pone.0127502">2015</a>)</span>. Centralization has introduced knowledge discrimination, as publishers are able to influence who can access scholarly knowledge, what gets published, and allows for other single points of failure to arise with their own consequences (e.g., censorship; <a href="https://perma.cc/HDX8-DJ8F">perma.cc/HDX8-DJ8F</a>). In order to have a sustainable scholarly research system, we consider it necessary to implement changes that provide progress on multiple of these threats at once instead of addressing them individually.</p>
+<p>Systems design directly affects what the system and the people who use it can do; scholarly communication still retains an analog based design affecting the effectivity of the spread and production of knowledge dissemination <span class="citation">(see also Kling and Callahan <a href="#ref-doi:10.1002/aris.1440370105">2005</a>)</span>. Researchers and institutions are evaluated on where and how much papers they publish (as a form of prestige). For example, an oft-used measure of quality is the Journal Impact Factor <span class="citation">(JIF; Garfield <a href="#ref-doi:10.1001/jama.295.1.90">2006</a>)</span>. The JIF is also frequently used to evaluate the ‘quality’ of individual papers under the assumption that a high impact factor predicts the success of individual papers, which has been debunked many times <span class="citation">(Prathap, Mini, and Nishy <a href="#ref-doi:10.1007/s11192-016-2034-y">2016</a>; Seglen <a href="#ref-Seglen1992">1992</a>; Seglen <a href="#ref-Seglen1994">1994</a>)</span>. Many other performance indicators in the current system (e.g., citation counts and h-indices) resort to generic bean counting. Inadequate evaluation measures leave universities, individual researchers, and funders (amongst others) in the dark with respect to the substantive questions they might have about the produced scholarly knowledge. Additionally, work that is not aptly captured by the authorship of papers is likely to receive less recognition (e.g., writing software code) due to reward systems counting publications instead of contributions (see also <a href="https://perma.cc/MUH7-VCA9">perma.cc/MUH7-VCA9</a>). It is unfeasible that a paper-based approach to scholarly communication can escape the consequences of paper’s limitations.</p>
+<p>A scholarly communication system is supposed to serve five functions, but can do so in a narrow sense as it currently does, or in a wider sense. These functions of the scholarly communication system are (1) registration-, (2) certification-, (3) awareness-, and (4) archival <span class="citation">(Roosendaal and Geurts <a href="#ref-roosendaal1998">1998</a>)</span>, and (5) incentives <span class="citation">(Sompel et al. <a href="#ref-doi:10.1045/september2004-vandesompel">2004</a>)</span>. A narrow fulfillment of for example the registration function would mean that findings that are published are registered, but not all findings are registered (e.g., due to selective publication; <span class="citation">(Franco, Malhotra, and Simonovits <a href="#ref-doi:10.1126/science.1255484">2014</a>)</span>). Similarly, certification is supposed to occur through peer review, but peer review can exacerbate human biases in the assessment of quality <span class="citation">(e.g., statistical significance increasing the perceived quality of methods; Mahoney <a href="#ref-doi:10.1007/bf01173636">1977</a>)</span>.</p>
+<p>We propose an alternative design for scholarly communication based on modular research outputs with direct links between subsequent modules, forming a network. Whereas a paper-based approach communicates after a whole research cycle is completed, modular communication was proposed two decades ago <span class="citation">(Kircz <a href="#ref-doi:10.1108/eum0000000007185">1998</a>; Sompel et al. <a href="#ref-doi:10.1045/september2004-vandesompel">2004</a>; Kuhn et al. <a href="#ref-doi:10.7717/peerj-cs.78">2016</a>; Groth, Gibson, and Velterop <a href="#ref-doi:10.3233/isu-2010-0613">2010</a>; Velterop <a href="#ref-doi:10.1163/095796511X560006">2010</a>; Nielsen <a href="#ref-isbn:9780691148908">2012</a>)</span>. These modules could be similar to sections of a research paper, but extend to modular research outputs such as software or materials. We propose to implement this modular communication on an “as-you-go” basis and include direct links to indicate provenance. This respects the chronological nature of research cycles and decreases the possibility for pernicious problems such as selective publication and making predictions after results are known <span class="citation">(HARKing; Kerr <a href="#ref-doi:10.1207/s15327957pspr0203_4">1998</a>)</span>.</p>
+<p>With a network structure between modules of knowledge, we can go beyond citations and facilitate different questions about single- or collectives of knowledge. For example, how central is a single module in the larger network? Or: How densely interconnected is this collective of knowledge modules? A network could facilitate question-driven evaluation where an indicator needs to be operationalized per question, instead of indicators that have become a goal in themselves and become invalidated by clear cheating behaviors <span class="citation">(Seeber et al. <a href="#ref-doi:10.1016/j.respol.2017.12.004">2017</a>; “The Impact Factor Game” <a href="#ref-doi:10.1371/journal.pmed.0030291">2006</a>)</span>. As such, we propose to make evaluation of research its own research process with question formulation, operationalizations, and data collection (i.e., constructing the network of interest).</p>
+<div id="network-structure" class="section level2">
+<h2><span class="header-section-number">8.1</span> Network structure</h2>
+<p>Research outputs are typically research papers, which report on at least one research cycle after it has occurred. The communicative design of papers embeds hindsight and its biases in the reporting of results by being inherently reconstructive. Moreover, this design eliminates the verification of the chronology within a paper. On the other hand, the paper encompasses so much that citations to other papers can indicate a tangent or a crucial link. Additionally, the paper is a bottleneck for what is communicated: It cannot properly deal with code, data, materials, etc.</p>
+<p>When stages of research are communicated separately and as they occur, it changes the communicative design to eliminate hindsight and allows more types of outputs to be communicated as separate modules. For example, a theory can be communicated first and hypotheses communicated second, as a direct descendant of the theory. Subsequently, a study design can be linked as a direct descendant of the hypotheses, materials as a direct descendant of the design, and so on. This would allow for the incorporation of materials, data, and analysis code (amongst others). In this structure, many modules could link to a single module (e.g., replication causes many data modules to connect to the same hypotheses module) but one module can also link to many other modules (e.g., when hypotheses follow from multiple theories or when a meta-analytic module is linked to many results modules).</p>
+<p>Figure <a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#fig:asyougo-fig1">8.1</a> shows two simple examples of how these different modular research outputs (i.e., modules) would directly connect to each other. The connection between these modules only shows the direct descendance and could still include citations to other pieces of information. For example, a discussion module could be a direct descendant of a results module and could still include citations to other relevant findings. When one research cycle ends, a new one can link to the last module, continuing the chain of descendance. Incorporating the direct descendancy of these knowledge modules builds a different kind of network than citation and authorship networks. As such, this network would be an addition to these already existing citation and authorship networks; it does not seek to replace them.</p>
+<div class="figure"><span id="fig:asyougo-fig1"></span>
+<img src="assets/figures/Panel%20with%20DAGs.png" alt="Two Directed Acyclic Graphs (DAGs) of connected research stages. The ordering is chronological (top-bottom) and therefore modules that are situated below one another cannot refer upwards. Panel A shows a less complex network of modules; Panel B shows a more extensive network of modules." width="100%" />
+<p class="caption">
+Figure 8.1: Two Directed Acyclic Graphs (DAGs) of connected research stages. The ordering is chronological (top-bottom) and therefore modules that are situated below one another cannot refer upwards. Panel A shows a less complex network of modules; Panel B shows a more extensive network of modules.
+</p>
+</div>
+<p>Given that these modular outputs would be communicated as they occur, chronology is directly embedded in the communication process with many added benefits. For example, preregistration of hypotheses tries to ensure that predictions precede observations, which would be embedded with modular communication where predictions are communicated when they are made <span class="citation">(exploratory research could be communicated without hypotheses; for a more extensive discussion of the benefits and limits of preregistration see Nosek et al. <a href="#ref-doi:10.1073/pnas.1708274114">2018</a>)</span>. Moreover, if modular outputs are communicated as they are produced, selective reporting (i.e., publication bias) is reduced by having already communicated the data before results are generated.</p>
+<p>With immutable append-only registers, the chronology and content integrity of these outputs can be ensured and preserved over time. This can occur efficiently and elegantly with the Dat protocol (without a blockchain; <a href="https://perma.cc/GC8X-VQ4K">perma.cc/GC8X-VQ4K</a>). In short, the Dat protocol is a peer-to-peer protocol (i.e., decentralized and openly accessible) that provides non-adjustable timestamps to each change that occurs within a folder, which is given a permanent unique address on the peer-to-peer Web <span class="citation">(<span class="math inline">\(36^{64}\)</span> addresses possible; Ogden <a href="#ref-doi:10.31219/osf.io/nsv2c">2017</a>)</span>. The full details, implications, and potential implementations of this protocol for scholarly communication fall outside of the scope of this chapter (an extended technical explanation of the application of the Dat protocol can be found in the next chapter).</p>
+<p>A continuous and network based communication system could take a wider interpretation of the scholarly functions it is supposed to serve <span class="citation">(Roosendaal and Geurts <a href="#ref-roosendaal1998">1998</a>; Sompel et al. <a href="#ref-doi:10.1045/september2004-vandesompel">2004</a>)</span>. Registration would become more complete, because selective publication based on results is preempted by embedding communication before any results are known. Certification is improved by embedding the chronology of a research cycle into the communication of research, ensuring that predictions precede results <span class="citation">(Nosek et al. <a href="#ref-doi:10.1073/pnas.1708274114">2018</a>)</span>. Awareness is improved by using open by design principles, whereas awareness is now limited by financial means to access scholarly papers <span class="citation">(Tennant et al. <a href="#ref-doi:10.12688/f1000research.12037.3">2017</a>)</span>. Archival would not only be simplified with peer-to-peer protocols, but also allows anyone to create a copy and could result in excessive redundancy under the Lots Of Copies Keeps Stuff Safe principle <span class="citation">(LOCKSS; Reich and Rosenthal <a href="#ref-doi:10.1045/june2001-reich">2001</a>)</span>. In the next sections, we extend on how incentives could be adjusted in such a network structure, to facilitate both the evaluation of research(ers) and the planning of research.</p>
+</div>
+<div id="indicators" class="section level2">
+<h2><span class="header-section-number">8.2</span> Indicators</h2>
+<p>With a chronological ordering of various modular research outputs and their parent relations, a directional adjacency matrix can be extracted for network analysis. Table <a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#tab:asyougo-tab1">8.1</a> shows the directional adjacency matrix for Figure <a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#fig:asyougo-fig1">8.1</a> (Panel A). Parent modules (i.e., modules) must precede the child modules in time, therefore only <span class="math inline">\(\frac{J(J-1)}{2}\)</span> of cells of the adjacency matrix are filled in, where <span class="math inline">\(J\)</span> is the number of research modules.</p>
+<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; ">
+<table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:asyougo-tab1">Table 8.1: </span>Directional adjacency matrix for Figure 1. modules are ordered according to time (top-bottom in Figure 1). Rows indicate the source module, columns indicate the target module.
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:left;">
+module01
+</th>
+<th style="text-align:left;">
+module02
+</th>
+<th style="text-align:left;">
+module03
+</th>
+<th style="text-align:left;">
+module04
+</th>
+<th style="text-align:left;">
+module05
+</th>
+<th style="text-align:left;">
+module06
+</th>
+<th style="text-align:left;">
+module07
+</th>
+<th style="text-align:left;">
+module08
+</th>
+<th style="text-align:left;">
+module09
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+module01
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+1
+</td>
+<td style="text-align:left;">
+0
+</td>
+<td style="text-align:left;">
+1
+</td>
+<td style="text-align:left;">
+0
+</td>
+<td style="text-align:left;">
+0
+</td>
+<td style="text-align:left;">
+0
+</td>
+<td style="text-align:left;">
+0
+</td>
+<td style="text-align:left;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+module02
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+1
+</td>
+<td style="text-align:left;">
+0
+</td>
+<td style="text-align:left;">
+0
+</td>
+<td style="text-align:left;">
+0
+</td>
+<td style="text-align:left;">
+1
+</td>
+<td style="text-align:left;">
+0
+</td>
+<td style="text-align:left;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+module03
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+0
+</td>
+<td style="text-align:left;">
+0
+</td>
+<td style="text-align:left;">
+0
+</td>
+<td style="text-align:left;">
+0
+</td>
+<td style="text-align:left;">
+0
+</td>
+<td style="text-align:left;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+module04
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+1
+</td>
+<td style="text-align:left;">
+1
+</td>
+<td style="text-align:left;">
+0
+</td>
+<td style="text-align:left;">
+0
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+module05
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+0
+</td>
+<td style="text-align:left;">
+0
+</td>
+<td style="text-align:left;">
+1
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+module06
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+1
+</td>
+<td style="text-align:left;">
+0
+</td>
+<td style="text-align:left;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+module07
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+1
+</td>
+<td style="text-align:left;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+module08
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+module09
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>With a directional adjacency matrix, countless network indicators can be calculated that could be useful in research evaluation depending on the questions asked. However, not all network indicators are directly applicable because a time based component is included in the network (i.e., new outputs cannot refer to even newer outputs). Below, we propose some basic network indicators for evaluating past and future research outputs.</p>
+<p>Networks indicators could be used to evaluate the network as it exists now or how it developed in the past (i.e., backward-looking evaluation). For example, in-degree centrality could be used to identify highly interconnected modules of information. This measure indicates how many child modules are spawned by a parent module and indicates how much new work a researcher’s output stimulates (e.g., module04 in Table <a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#tab:asyougo-tab1">8.1</a> would have an in-degree centrality of three). To contextualize this, a data module could spawn four results modules, hence has an in-degree centrality of four. This measure would look only at one-generation of child modules, but other measures extend this to incorporate multiple generations of child modules. Katz centrality extends this and computes the centrality over <span class="math inline">\(N\)</span> generations of child modules <span class="citation">(pp. 206-210; Wasserman and Faust <a href="#ref-isbn:9780521387071">1994</a>)</span> whereas traditional in-degree centrality calculates centrality for <span class="math inline">\(N=1\)</span> generations. For example, two data modules that each spawn five results modules would have the same in-degree centrality, but could have different Katz centrality if only one of those two networks has a third-generation of modules included. If multi-generation indicators are relevant, Katz centrality measures could provide operationalizations of such measures.</p>
+<p>Another set of network indicators could be used to evaluate how the network would change when new modules are added in the future (i.e., forward-looking evaluation). For example, a researcher who is looking for ways to increase the density in their own network, could ask the question “If I would add one module that has <span class="math inline">\(k\)</span> parents, which addition would increase the density the most?” Subsequently, the researcher could inspect the identified connections for inspiration and feasibility. Complexity of the new module could be increased by increasing the number of parent modules to connect (<span class="math inline">\(k\)</span> in the question; e.g., five instead of two). Potentially, this could facilitate creative thinking, where <span class="math inline">\(k\)</span> is gradually increased over time to increase the complexity of the issue from a network perspective.</p>
+<p>The indicators we highlighted here are simple proposals. Other indicators from network analysis and graph theory could be applied to the study of knowledge development when a network structure is available and we hope to see suggestions to answer questions about the network. These kinds of analyses are already done within citation networks <span class="citation">(e.g., Fortunato et al. <a href="#ref-doi:10.1126/science.aao0185">2018</a>)</span> and authorship networks <span class="citation">(e.g., Morel et al. <a href="#ref-doi:10.1371/journal.pntd.0000501">2009</a>)</span>, but we cannot do so with the provenance or planning of knowledge generation in the current scholarly communication system.</p>
+</div>
+<div id="use-cases" class="section level2">
+<h2><span class="header-section-number">8.3</span> Use cases</h2>
+<p>We describe three use cases of network based evaluation to contextualize the ideas proposed above. For each use case, we first provide a general and non-exhaustive overview of the possibilities with network based evaluation. Subsequently, we specify a scenario for that use case, how an evaluation question flows from that scenario, how an indicator to answer that question could be operationalized, and how that indicator could inform the evaluation process. With these use cases we hope to illustrate that network based evaluation could align better with the implicit evaluation criteria already present in common research evaluation scenarios.</p>
+<div id="funders" class="section level3">
+<h3><span class="header-section-number">8.3.1</span> Funders</h3>
+<p>Funders of scholarly research often have specific aims when distributing their financial resources amongst researchers. Funders often use generic “one size fits all” indicators to evaluate the quality of researchers and research (e.g., JIF, h-index, citation counts). Given that funding calls often have specific aims, these funding calls could be used as the basis of research evaluation if we move beyond these generic measures. <!-- Potentially, given that network analysis allows different questions to be asked, funders might also change the aims of funding calls to shift towards more specific goals than generic notions of "innovation" or "discovery". --></p>
+<p>A scenario could exist where a funding agency wants to fund researchers to extend an existing and interconnected research line. This is not an implausible scenario, where funding agencies aim to fund several million dollars (or similar in other currencies) in order to increase follow through in research lines. A specific example might be the Dutch national funding agency “Vici” funding scheme, which aims to fund “senior researchers who have successfully demonstrated the ability to develop their own innovative lines of research” (<a href="https://perma.cc/GB83-RE4J" class="uri">https://perma.cc/GB83-RE4J</a>).</p>
+<p>Whether researchers who submitted proposals actually built a connected research line could be evaluated by looking at how interconnected each researcher’s personal network of modules is. Let us assume that a research line here would mean that new research efforts interconnect with previous efforts by that same researcher (i.e., building on previous work). Additionally, we could assume that building a research line means that the research line becomes more present in the network over the years. Building a research line thus could be reformulated into questions about the network of directly linked output and its development over time.</p>
+<p>Operationalizing the concept ‘research line’ as increased interconnectedness of modules over time, we could compute the network density per year. One way of computing density would be to tally the number of links and divide them by the number of possible links. By taking snapshots of the network of outputs of that researcher in for example the last five years on January 1st, we could compute an indicator to inform us about the development of the researcher’s network of outputs.</p>
+<p>The development of network density over time could help inform the evaluation, but one measure could hardly be deemed the only decision criterion. As such, it only provides an indication as to whether an applicant aligns with the aim of the funding agency. Other questions would still need to be answered by the evaluation committee. For example, is the project feasible or does the proposal extend the previous research line? Some of these other questions could also be seen as questions about the future development of the network and serve as their own questions to investigate the applicant on.</p>
+</div>
+<div id="universities" class="section level3">
+<h3><span class="header-section-number">8.3.2</span> Universities</h3>
+<p>Universities can use research evaluation for the internal allocation of resources and to hire new scientists. As such, a research group within a university could apply network analysis to assess how (dis)connected a group’s modules are or how their group compares to similar groups at other institutions. Using network indicators, it could become possible to assess whether a job applicant fulfills certain criteria, such as whether their modules connect to existing modules of a group. If a university wants to stimulate more diversity in research background, network analysis could also be used to identify those who are further removed from the current researchers at the institution. Considering that universities are often evaluated on the same generic indicators as individual researchers (e.g., JIF) in the rankings, such new and more precise evaluation tools might also help specify university goals. <!-- Like the use case for funders, network based evaluation allows universities to focus on question- and mission aligned evaluation.  --></p>
+<p>Extending the scenario above, imagine a research group that is looking to hire an assistant professor with the aim of increasing connectivity between the group’s members. The head of the research group made this her personal goal in order to facilitate more information exchange and collaborative potential within the group. By making increasing connectivity within the group an explicit aim of the hiring process, it can be incorporated into the evaluation process.</p>
+<p>In order to achieve the increased connectivity within the research group, the head of the research group wants to evaluate applicants relatively but also with an absolute standard. Relative evaluation could facilitate applicant selection, but absolute evaluation could facilitate insight into whether any applicant is sufficient to begin with. In other words, relative evaluation here asks which is the best applicant, whereas absolute evaluation asks whether the best applicant is good enough. These decision criteria could be preregistered in order to ensure a fair selection process.</p>
+<p>Increased connectivity could be computed as a difference measure of the research group’s network density with and without the applicant. In order to take into account the number of produced modules, the computed density could take into account the number of modules of an applicant. Moreover, the head stipulates that the minimum increase in network density needs to be five percentage points. To evaluate applicants, each gets a score that is made up of the difference between the current network density and the network density if they were hired. For example, baseline connectivity within a group might be 60%, hence, the network density has to be at least 65% for one of the applicants to pass the evaluation criterium.</p>
+<p>If the head of the research group relied purely on the increase in network density as an indicator without further evaluation, a hire that decreases morale in the research group could easily be made. For example, it is reasonable to assume that critics of a research group often link research outputs in a criticism of their work. If such a person would apply for a job within that group, the density within the network might be increased but subsequently result in a more hostile work climate. Without evaluating the content of the applicant that increases the network density, it would be difficult to assess whether they would actually increase information exchange and collaborative potential instead of stifling it.</p>
+</div>
+<div id="individuals" class="section level3">
+<h3><span class="header-section-number">8.3.3</span> Individuals</h3>
+<p>Individual researchers could use networks to better understand their research outputs and plan new research efforts. For example, simply visualizing a network of outputs could prove a useful tool for researchers to view relationships between their outputs from a different perspective. Researchers looking for new research opportunities could also use network analysis to identify their strengths, by comparing whether specific sets of outputs are more central than others in a larger network. For example, a researcher who writes software for their research might find that their software is more central in a larger network than their theoretical work, which could indicate a fruitful specialization.</p>
+<p>One scenario where network evaluation tools could be valuable for individual researchers is resource allocation needs to be optimized. A researcher might want to revisit previous work and conduct a replication, but only has funds for one such replication. Imagine a researcher wants to identify an effect that they previously studied and which has been central to their new research efforts. Identifying which effect to replicate is intended by this researcher as a safeguard mechanism to prevent further investment in new studies, if a fundamental finding proves to not be replicable.</p>
+<p>In this resource allocation scenario, the researcher aims to identify the most central finding in a network. The researcher has conducted many studies throughout their career and does not want to identify the most central finding in the entire network of outputs over the years, but only of the most recent domain they’ve been working in. As such, the researcher takes the latest output and traces all the preceding outputs automatically to five generations, to create a subset of the full network and to incorporate potential work not done by themselves.</p>
+<p>Subsequently, by computing the Katz centrality of the resulting subnetwork, the researcher can compute the number of outputs generated by a finding and how many outputs those outputs generated in return. By assigning this value to each module in the network, the researcher can identify the most central modules. However, these modules need to be investigated subsequently in order to see whether they are findings or something else (e.g., theory; we assume an agnostic infrastructure that does not classify modules).</p>
+<p>Katz centrality can be a useful measure to identify which finding to replicate in a multi-generational network, but would fail to take into account what replications have already been conducted. When taking the most recent output and looking at its parent(s), grandparent(s), etc., this only looks at the lineage of the finding. However, the children of all these parents are not taken into account in such a trace. As such, the researcher in our scenario might identify an important piece of research to replicate, but neglect that it has already been replicated. Without further inspection of the network for already available replications, resource allocation might be suboptimal after all.</p>
+</div>
+</div>
+<div id="discussion-7" class="section level2">
+<h2><span class="header-section-number">8.4</span> Discussion</h2>
+<p>We propose to communicate research in modular “as-you-go” outputs (e.g., theory followed by hypotheses, etc.) instead of large “after-the-fact” papers. Modular communication opens up the possibility of a network of knowledge to come into existence when these pieces are linked (e.g., results descend from data). This network of knowledge would be supplementary to traditional citation networks and could facilitate new evaluation tools that are based in the question of interest rather than generic “one size fits all” indicators (e.g., Journal Impact Factor, citation counts, number of publications). Given the countless questions and operationalizations possible to evaluate research in a network of knowledge, we hope this would increase the focus on indicators as a tool in the evaluation process instead of indicators being the evaluation process itself <span class="citation">(Hicks et al. <a href="#ref-doi:10.1038/520429a">2015</a>; Wilsdon et al. <a href="#ref-doi:10.13140/RG.2.1.4929.1363">2015</a>)</span>.</p>
+<p>We highlighted a few use cases and potential indicators for funders, research collectives, and individuals, but recognize that we are merely scratching the surface of possible use cases and implementations of network analysis in research evaluation. The use cases presented for the various target groups (e.g., universities) can readily be transferred to suit other target groups (e.g., individuals). Award committees might use critical path analysis or network stability analysis to identify key hubs in a network to recognize. Moreover, services could be built to harness the information available in a network to identify people who could be approached for collaborations or to facilitate the ease with which such network analyses can be conducted. Future work could investigate more use cases, qualitatively identify what researchers (or others) would like to know from such networks, and how existing network analysis methods could be harnessed to evaluate research and better understand its development over time. Despite our enthusiasm for network based evaluation, we also recognize the need for exploring the potential negative sides of this approach. Proximity effects might increase bias towards people already embedded in a network and might exacerbate inequalities already present. Researchers might also find ways to game these indicators, which warrants further investigation.</p>
+<p>Communicating scholarly research in modular “as-you-go” outputs might also address other threats to research sustainability. In modular “as-you-go” communication, selective publication based on results would be reduced because data would be communicated before results are known. Similarly, adjusting predictions after results are known would be reduced because predictions would be communicated before data are available (i.e., preregistration by design). Replications (or reanalyses) would be encouraged both for the replicated (the replicated module gets more child modules, increasing its centrality) and the replicator (time investment is lower due to only having to add a data module that is linked to the materials module of the replicated). Self-plagiarism could be reduced by not forcing researchers to rehash the same theory across papers that spawn various predictions and studies. These various issues (amongst other out of scope issues) could be addressed jointly instead of each issue vying for importance for researchers, funders, or policy makers (amongst others).</p>
+<p>To encourage culture- and behavioral change, “after-the-fact” papers and modular “as-you-go” outputs could co-exist (initially) and would not require researchers to make a zero-sum decision. Copyright is often transferred to publishers upon publication (resulting in pay-to-access), but only after a legal contract is signed. Hence, preprints cannot legally be restricted by publishers when they precede a copyright transfer agreement. However, preprints face institutional and social opposition <span class="citation">(Kaiser <a href="#ref-doi:10.1126/science.aaq0747">2017</a>)</span>, where preprinting could exclude a manuscript for publication depending on editorial policies or due to fears of non-publication or scooping (itself a result of hypercompetition). In recent years, preprints have become more widely accepted and less likely to exclude manuscript publication <span class="citation">(e.g., Science accepts preprinted manuscripts; Berg <a href="#ref-doi:10.1126/science.aaq0167">2017</a>)</span>. Similarly, sharing modular “as-you-go” outputs could not legally be restricted by publishers and can ride the wave of preprint acceptance, but might also face institutional or social counterchange similar to preprints. Researchers could communicate “as-they-go” and compile “after-the-fact” papers, facilitating co-existence and minimizing negative effects on career opportunities. Additionally, “as-you-go” modules could be used in any scholarly field where the provenance of information is important to findings and is not restricted to empirical and hypothesis driven research per se.</p>
+<p>As far as we know, modular “as-you-go” scholarly communication infrastructure that includes direct links between modules has not yet been available to researchers in a sustainable way. One of the few thought styles that has facilitated “as-you-go” reporting in the past decade is that of Open Notebook Science <span class="citation">(ONS; Bradley <a href="#ref-doi:10.1038/npre.2007.39.1">2007</a>)</span>, where researchers share their day-to-day notes and thoughts. However, ONS has remained on the fringes of the Open Science thought style and has not matured, limiting its usefulness and uptake. For example, ONS increases user control because communication occurs on personal domains, but does not have a mechanism of preserving the content. Considering reference rot occurs in seven out of ten scholarly papers containing Weblinks <span class="citation">(M. Klein et al. <a href="#ref-doi:10.1371/journal.pone.0115253">2014</a>)</span>, concern for sustainable ONS is warranted without further development of content integrity. Moreover, ONS increases information output without providing more possibilities of discovering that content.</p>
+<p>Digital infrastructure that facilitates “as-you-go” scholarly communication is now feasible and sustainable. Feasible because the peer-to-peer protocol Dat provides stable addresses for versioned content and it ensures content integrity across those versions. Sustainable because preservation in a peer-to-peer network is relatively trivial (inherent redundancy, anyone can rehost information and libraries could be persistent hosters) and removes (or at least reduces) the need for centralized services in scholarly communication. Consequently, this decreases the need for inefficient server farms of centralized services <span class="citation">(Cavdar and Alagoz <a href="#ref-doi:10.1109/glocom.2012.6503613">2012</a>)</span> by decentralizing services. However, preservation is a social process that requires commitment. Hence, a peer-to-peer infrastructure would require committed and persistent peers (e.g., libraries) to make sure content is preserved. Another form of sustainability is knowledge inclusion, which is facilitated by a decentralized network protocol that is openly accessible.</p>
+<p>Finally, we would like to note that communication was not instantly revolutionized by the printing press but changed society over the centuries that followed. The Web has only been around since 1991 and its effect on society is already pervasive, but far from over. We hope that individuals who want change do not despair by feelings of inertia in scholarly communication throughout recent years and further entrenching of positions and interests. We remain optimistic for substantial change to occur within scholarly communication that improves the way we communicate research and hope these ideas contribute in working towards that.</p>
+</div>
+<div id="conclusion-1" class="section level2">
+<h2><span class="header-section-number">8.5</span> Conclusion</h2>
+<p>The current scholarly communication system based on research papers is “after-the-fact” and can be supplemented by a modular “as-you-go” based communication system. By doing so, the functions of a scholarly communication system can be interpreted more widely, making registration complete, certification part of the process instead of just the judgment of peers, access to everything for everyone based on peer-to-peer protocols, simplify archival, and facilitate incentive structures that could align researcher’s interests with that of scholarly research.</p>
+
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-doi:10.1038/533452a">
+<p>Baker, Monya. 2016. “1,500 Scientists Lift the Lid on Reproducibility.” <em>Nature</em> 533 (7604). Springer Nature: 452–54. doi:<a href="https://doi.org/10.1038/533452a">10.1038/533452a</a>.</p>
+</div>
+<div id="ref-doi:10.1126/science.aaq0167">
+<p>Berg, Jeremy. 2017. “Preprint Ecosystems.” <em>Science</em> 357 (6358). American Association for the Advancement of Science (AAAS): 1331–1. doi:<a href="https://doi.org/10.1126/science.aaq0167">10.1126/science.aaq0167</a>.</p>
+</div>
+<div id="ref-doi:10.1038/npre.2007.39.1">
+<p>Bradley, Jean-Claude. 2007. “Open Notebook Science Using Blogs and Wikis.” <em>Nature Precedings</em>, June. Springer Nature. doi:<a href="https://doi.org/10.1038/npre.2007.39.1">10.1038/npre.2007.39.1</a>.</p>
+</div>
+<div id="ref-doi:10.1109/glocom.2012.6503613">
+<p>Cavdar, Derya, and Fatih Alagoz. 2012. “A Survey of Research on Greening Data Centers.” <em>2012 IEEE Global Communications Conference (GLOBECOM)</em>, December. IEEE. doi:<a href="https://doi.org/10.1109/glocom.2012.6503613">10.1109/glocom.2012.6503613</a>.</p>
+</div>
+<div id="ref-doi:10.1126/science.aao0185">
+<p>Fortunato, Santo, Carl T. Bergstrom, Katy Börner, James A. Evans, Dirk Helbing, Staša Milojević, Alexander M. Petersen, et al. 2018. “Science of Science.” <em>Science</em> 359 (6379). American Association for the Advancement of Science (AAAS): eaao0185. doi:<a href="https://doi.org/10.1126/science.aao0185">10.1126/science.aao0185</a>.</p>
+</div>
+<div id="ref-doi:10.1126/science.1255484">
+<p>Franco, Annie, Neil Malhotra, and Gabor Simonovits. 2014. “Publication Bias in the Social Sciences: Unlocking the File Drawer.” <em>Science</em> 345 (6203): 1502–5. doi:<a href="https://doi.org/10.1126/science.1255484">10.1126/science.1255484</a>.</p>
+</div>
+<div id="ref-doi:10.1001/jama.295.1.90">
+<p>Garfield, Eugene. 2006. “The History and Meaning of the Journal Impact Factor.” <em>JAMA</em> 295 (1). American Medical Association (AMA): 90. doi:<a href="https://doi.org/10.1001/jama.295.1.90">10.1001/jama.295.1.90</a>.</p>
+</div>
+<div id="ref-doi:10.3233/isu-2010-0613">
+<p>Groth, Paul, Andrew Gibson, and Jan Velterop. 2010. “The Anatomy of a Nanopublication.” <em>Information Services &amp; Use</em> 30 (1-2). IOS Press: 51–56. doi:<a href="https://doi.org/10.3233/isu-2010-0613">10.3233/isu-2010-0613</a>.</p>
+</div>
+<div id="ref-doi:10.1038/520429a">
+<p>Hicks, Diana, Paul Wouters, Ludo Waltman, Sarah de Rijcke, and Ismael Rafols. 2015. “Bibliometrics: The Leiden Manifesto for Research Metrics.” <em>Nature</em> 520 (7548). Springer Nature: 429–31. doi:<a href="https://doi.org/10.1038/520429a">10.1038/520429a</a>.</p>
+</div>
+<div id="ref-doi:10.1126/science.aaq0747">
+<p>Kaiser, Jocelyn. 2017. “Are Preprints the Future of Biology? A Survival Guide for Scientists.” <em>Science</em>, September. American Association for the Advancement of Science (AAAS). doi:<a href="https://doi.org/10.1126/science.aaq0747">10.1126/science.aaq0747</a>.</p>
+</div>
+<div id="ref-doi:10.1207/s15327957pspr0203_4">
+<p>Kerr, Norbert L. 1998. “HARKing: Hypothesizing After the Results Are Known.” <em>Personality and Social Psychology Review</em> 2 (3). SAGE Publications: 196–217. doi:<a href="https://doi.org/10.1207/s15327957pspr0203_4">10.1207/s15327957pspr0203_4</a>.</p>
+</div>
+<div id="ref-doi:10.1108/eum0000000007185">
+<p>Kircz, Joost G. 1998. “Modularity: The Next Form of Scientific Information Presentation?” <em>Journal of Documentation</em> 54 (2). Emerald: 210–35. doi:<a href="https://doi.org/10.1108/eum0000000007185">10.1108/eum0000000007185</a>.</p>
+</div>
+<div id="ref-doi:10.1371/journal.pone.0115253">
+<p>Klein, Martin, Herbert Van de Sompel, Robert Sanderson, Harihar Shankar, Lyudmila Balakireva, Ke Zhou, and Richard Tobin. 2014. “Scholarly Context Not Found: One in Five Articles Suffers from Reference Rot.” Edited by JuditEditor Bar-Ilan. <em>PLoS ONE</em> 9 (12). Public Library of Science (PLoS): e115253. doi:<a href="https://doi.org/10.1371/journal.pone.0115253">10.1371/journal.pone.0115253</a>.</p>
+</div>
+<div id="ref-doi:10.1002/aris.1440370105">
+<p>Kling, Rob, and Ewa Callahan. 2005. “Electronic Journals, the Internet, and Scholarly Communication.” <em>Annual Review of Information Science and Technology</em> 37 (1). Wiley: 127–77. doi:<a href="https://doi.org/10.1002/aris.1440370105">10.1002/aris.1440370105</a>.</p>
+</div>
+<div id="ref-doi:10.7717/peerj-cs.78">
+<p>Kuhn, Tobias, Christine Chichester, Michael Krauthammer, Núria Queralt-Rosinach, Ruben Verborgh, George Giannakopoulos, Axel-Cyrille Ngonga Ngomo, Raffaele Viglianti, and Michel Dumontier. 2016. “Decentralized Provenance-Aware Publishing with Nanopublications.” <em>PeerJ Computer Science</em> 2 (August). PeerJ: e78. doi:<a href="https://doi.org/10.7717/peerj-cs.78">10.7717/peerj-cs.78</a>.</p>
+</div>
+<div id="ref-doi:10.1371/journal.pone.0127502">
+<p>Larivière, Vincent, Stefanie Haustein, and Philippe Mongeon. 2015. “The Oligopoly of Academic Publishers in the Digital Era.” <em>PLOS ONE</em> 10 (6). Public Library of Science (PLoS): e0127502. doi:<a href="https://doi.org/10.1371/journal.pone.0127502">10.1371/journal.pone.0127502</a>.</p>
+</div>
+<div id="ref-doi:10.1007/bf01173636">
+<p>Mahoney, Michael J. 1977. “Publication Prejudices: An Experimental Study of Confirmatory Bias in the Peer Review System.” <em>Cognitive Therapy and Research</em> 1 (2). Springer Nature: 161–75. doi:<a href="https://doi.org/10.1007/bf01173636">10.1007/bf01173636</a>.</p>
+</div>
+<div id="ref-doi:10.1371/journal.pntd.0000501">
+<p>Morel, Carlos Medicis, Suzanne Jacob Serruya, Gerson Oliveira Penna, and Reinaldo Guimarães. 2009. “Co-Authorship Network Analysis: A Powerful Tool for Strategic Planning of Research, Development and Capacity Building Programs on Neglected Diseases.” Edited by MarcelEditor Tanner. <em>PLoS Neglected Tropical Diseases</em> 3 (8). Public Library of Science (PLoS): e501. doi:<a href="https://doi.org/10.1371/journal.pntd.0000501">10.1371/journal.pntd.0000501</a>.</p>
+</div>
+<div id="ref-isbn:9780691148908">
+<p>Nielsen, Michael. 2012. <em>Reinventing Discover: The New Era of Networked Science</em>. Princeton University Press.</p>
+</div>
+<div id="ref-doi:10.1073/pnas.1708274114">
+<p>Nosek, Brian A., Charles R. Ebersole, Alexander C. DeHaven, and David T. Mellor. 2018. “The Preregistration Revolution.” <em>Proceedings of the National Academy of Sciences</em> 115 (11). Proceedings of the National Academy of Sciences: 2600–2606. doi:<a href="https://doi.org/10.1073/pnas.1708274114">10.1073/pnas.1708274114</a>.</p>
+</div>
+<div id="ref-doi:10.31219/osf.io/nsv2c">
+<p>Ogden, Maxwell. 2017. “Dat - Distributed Dataset Synchronization and Versioning,” January. Center for Open Science. doi:<a href="https://doi.org/10.31219/osf.io/nsv2c">10.31219/osf.io/nsv2c</a>.</p>
+</div>
+<div id="ref-doi:10.1007/s11192-016-2034-y">
+<p>Prathap, Gangan, S. Mini, and P. Nishy. 2016. “Does High Impact Factor Successfully Predict Future Citations? An Analysis Using Peirce’s Measure.” <em>Scientometrics</em> 108 (3). Springer Nature: 1043–7. doi:<a href="https://doi.org/10.1007/s11192-016-2034-y">10.1007/s11192-016-2034-y</a>.</p>
+</div>
+<div id="ref-doi:10.1045/june2001-reich">
+<p>Reich, Vicky, and David S. H. Rosenthal. 2001. “LOCKSS.” <em>D-Lib Magazine</em> 7 (6). CNRI Acct. doi:<a href="https://doi.org/10.1045/june2001-reich">10.1045/june2001-reich</a>.</p>
+</div>
+<div id="ref-roosendaal1998">
+<p>Roosendaal, Hans E, and Peter A Th M Geurts. 1998. “Forces and Functions in Scientific Communication: An Analysis of Their Interplay.” <a href="http://web.archive.org/web/20180223112609/http://www.physik.uni-oldenburg.de/conferences/crisp97/roosendaal.html" class="uri">http://web.archive.org/web/20180223112609/http://www.physik.uni-oldenburg.de/conferences/crisp97/roosendaal.html</a>.</p>
+</div>
+<div id="ref-doi:10.1016/j.respol.2017.12.004">
+<p>Seeber, Marco, Mattia Cattaneo, Michele Meoli, and Paolo Malighetti. 2017. “Self-Citations as Strategic Response to the Use of Metrics for Career Decisions.” <em>Research Policy</em>, December. Elsevier BV. doi:<a href="https://doi.org/10.1016/j.respol.2017.12.004">10.1016/j.respol.2017.12.004</a>.</p>
+</div>
+<div id="ref-Seglen1992">
+<p>Seglen, P. O. 1992. “The skewness of science.” <em>Journal of the American Society for Information Science</em> 43: 628–38.</p>
+</div>
+<div id="ref-Seglen1994">
+<p>Seglen, P. 1994. “Causal relationship between article citedness and journal impact.” <em>Journal of the American Society for Information Science,</em> 45: 1–11.</p>
+</div>
+<div id="ref-doi:10.1045/september2004-vandesompel">
+<p>Sompel, Herbert Van de, Sandy Payette, John Erickson, Carl Lagoze, and Simeon Warner. 2004. “Rethinking Scholarly Communication.” <em>D-Lib Magazine</em> 10 (9). CNRI Acct. doi:<a href="https://doi.org/10.1045/september2004-vandesompel">10.1045/september2004-vandesompel</a>.</p>
+</div>
+<div id="ref-doi:10.12688/f1000research.12037.3">
+<p>Tennant, Jonathan P., Jonathan M. Dugan, Daniel Graziotin, Damien C. Jacques, François Waldner, Daniel Mietchen, Yehia Elkhatib, et al. 2017. “A Multi-Disciplinary Perspective on Emergent and Future Innovations in Peer Review.” <em>F1000Research</em> 6 (November). F1000 Research, Ltd.: 1151. doi:<a href="https://doi.org/10.12688/f1000research.12037.3">10.12688/f1000research.12037.3</a>.</p>
+</div>
+<div id="ref-doi:10.1371/journal.pmed.0030291">
+<p>“The Impact Factor Game.” 2006. <em>PLoS Medicine</em> 3 (6). Public Library of Science (PLoS): e291. doi:<a href="https://doi.org/10.1371/journal.pmed.0030291">10.1371/journal.pmed.0030291</a>.</p>
+</div>
+<div id="ref-doi:10.1163/095796511X560006">
+<p>Velterop, Jan. 2010. “Nanopublications the Future of Coping with Information Overload.” <em>Logos</em> 21 (3). Brill Academic Publishers: 119–22. doi:<a href="https://doi.org/10.1163/095796511x560006">10.1163/095796511x560006</a>.</p>
+</div>
+<div id="ref-isbn:9780521387071">
+<p>Wasserman, Stanley, and Katherine Faust. 1994. <em>Social Network Analysis: Methods and Applications (Structural Analysis in the Social Sciences)</em>. Cambridge University Press.</p>
+</div>
+<div id="ref-doi:10.13140/RG.2.1.4929.1363">
+<p>Wilsdon, James, Liz Allen, Eleonora Belfiore, Philip Campbell, Stephen Curry, Steven Hill, Richard Jones, et al. 2015. “The Metric Tide: Report of the Independent Review of the Role of Metrics in Research Assessment and Management,” July.</p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="extracting-data-from-vector-figures-in-scholarly-articles.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": true,
+"facebook": false,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "github", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": null,
+"history": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf"],
+"toc": {
+"collapse": "subsection",
+"scroll_highlight": true
+},
+"toolbar": {
+"position": "fixed"
+},
+"search": true
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

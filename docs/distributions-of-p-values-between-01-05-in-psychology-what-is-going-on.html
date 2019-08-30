@@ -1,0 +1,3701 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>3 Distributions of p-values between .01-.05 in psychology: what is going on? | Contributions towards understanding and building sustainable science</title>
+  <meta name="description" content="PhD dissertation by CHJ Hartgerink, written during 2014-2019, mostly at Tilburg University." />
+  <meta name="generator" content="bookdown 0.10 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="3 Distributions of p-values between .01-.05 in psychology: what is going on? | Contributions towards understanding and building sustainable science" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="PhD dissertation by CHJ Hartgerink, written during 2014-2019, mostly at Tilburg University." />
+  <meta name="github-repo" content="chartgerink/dissertation" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="3 Distributions of p-values between .01-.05 in psychology: what is going on? | Contributions towards understanding and building sustainable science" />
+  
+  <meta name="twitter:description" content="PhD dissertation by CHJ Hartgerink, written during 2014-2019, mostly at Tilburg University." />
+  
+
+<meta name="author" content="Chris Hubertus Joseph Hartgerink" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html">
+<link rel="next" href="too-good-to-be-false-nonsignificant-results-revisited.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Prologue</a></li>
+<li class="part"><span><b>I Understanding sustainable science</b></span></li>
+<li class="chapter" data-level="1" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html"><i class="fa fa-check"></i><b>1</b> Research practices and assessment of research misconduct</a><ul>
+<li class="chapter" data-level="1.1" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#responsible-conduct-of-research"><i class="fa fa-check"></i><b>1.1</b> Responsible conduct of research</a><ul>
+<li class="chapter" data-level="1.1.1" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#what-is-it"><i class="fa fa-check"></i><b>1.1.1</b> What is it?</a></li>
+<li class="chapter" data-level="1.1.2" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#what-do-researchers-do"><i class="fa fa-check"></i><b>1.1.2</b> What do researchers do?</a></li>
+<li class="chapter" data-level="1.1.3" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#improving-responsible-conduct"><i class="fa fa-check"></i><b>1.1.3</b> Improving responsible conduct</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#questionable-research-practices"><i class="fa fa-check"></i><b>1.2</b> Questionable research practices</a><ul>
+<li class="chapter" data-level="1.2.1" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#what-is-it-1"><i class="fa fa-check"></i><b>1.2.1</b> What is it?</a></li>
+<li class="chapter" data-level="1.2.2" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#what-do-researchers-do-1"><i class="fa fa-check"></i><b>1.2.2</b> What do researchers do?</a></li>
+<li class="chapter" data-level="1.2.3" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#how-can-it-be-prevented"><i class="fa fa-check"></i><b>1.2.3</b> How can it be prevented?</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#research-misconduct"><i class="fa fa-check"></i><b>1.3</b> Research misconduct</a><ul>
+<li class="chapter" data-level="1.3.1" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#what-is-it-2"><i class="fa fa-check"></i><b>1.3.1</b> What is it?</a></li>
+<li class="chapter" data-level="1.3.2" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#what-do-researchers-do-2"><i class="fa fa-check"></i><b>1.3.2</b> What do researchers do?</a></li>
+<li class="chapter" data-level="1.3.3" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#how-can-it-be-prevented-1"><i class="fa fa-check"></i><b>1.3.3</b> How can it be prevented?</a></li>
+</ul></li>
+<li class="chapter" data-level="1.4" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#conclusion"><i class="fa fa-check"></i><b>1.4</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html"><a href="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html"><i class="fa fa-check"></i><b>2</b> Reanalyzing Head et al. (2015): investigating the robustness of widespread <span class="math inline">\(p\)</span>-hacking</a><ul>
+<li class="chapter" data-level="2.1" data-path="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html"><a href="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html#data-and-methods"><i class="fa fa-check"></i><b>2.1</b> Data and methods</a></li>
+<li class="chapter" data-level="2.2" data-path="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html"><a href="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html#reanalysis-results"><i class="fa fa-check"></i><b>2.2</b> Reanalysis results</a></li>
+<li class="chapter" data-level="2.3" data-path="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html"><a href="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html#discussion"><i class="fa fa-check"></i><b>2.3</b> Discussion</a></li>
+<li class="chapter" data-level="2.4" data-path="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html"><a href="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html#limitations-and-conclusion"><i class="fa fa-check"></i><b>2.4</b> Limitations and conclusion</a></li>
+<li class="chapter" data-level="2.5" data-path="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html"><a href="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html#supporting-information"><i class="fa fa-check"></i><b>2.5</b> Supporting Information</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><i class="fa fa-check"></i><b>3</b> Distributions of p-values between .01-.05 in psychology: what is going on?</a><ul>
+<li class="chapter" data-level="3.0.1" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#how-qrps-relate-to-distributions-of-p-values"><i class="fa fa-check"></i><b>3.0.1</b> How QRPs relate to distributions of <em>p</em>-values</a></li>
+<li class="chapter" data-level="3.0.2" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#previous-findings"><i class="fa fa-check"></i><b>3.0.2</b> Previous findings</a></li>
+<li class="chapter" data-level="3.0.3" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#extensions-of-previous-studies"><i class="fa fa-check"></i><b>3.0.3</b> Extensions of previous studies</a></li>
+<li class="chapter" data-level="3.1" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#data-and-methods-1"><i class="fa fa-check"></i><b>3.1</b> Data and methods</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#data"><i class="fa fa-check"></i><b>3.1.1</b> Data</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#methods"><i class="fa fa-check"></i><b>3.2</b> Methods</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#caliper-test"><i class="fa fa-check"></i><b>3.2.1</b> Caliper test</a></li>
+<li class="chapter" data-level="3.2.2" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#measures-based-on-p-value-distributions"><i class="fa fa-check"></i><b>3.2.2</b> Measures based on <span class="math inline">\(p\)</span>-value distributions</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#results-and-discussion"><i class="fa fa-check"></i><b>3.3</b> Results and discussion</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#reported-p-values"><i class="fa fa-check"></i><b>3.3.1</b> Reported <span class="math inline">\(p\)</span>-values</a></li>
+<li class="chapter" data-level="3.3.2" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#recalculated-p-value-distributions"><i class="fa fa-check"></i><b>3.3.2</b> Recalculated <span class="math inline">\(p\)</span>-value distributions</a></li>
+<li class="chapter" data-level="3.3.3" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#excessive-significance-over-time"><i class="fa fa-check"></i><b>3.3.3</b> Excessive significance over time</a></li>
+<li class="chapter" data-level="3.3.4" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#results-of-two-measures-based-on-modeling-p-value-distributions"><i class="fa fa-check"></i><b>3.3.4</b> Results of two measures based on modeling <span class="math inline">\(p\)</span>-value distributions</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#limitations-and-conclusions"><i class="fa fa-check"></i><b>3.4</b> Limitations and conclusions</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html"><i class="fa fa-check"></i><b>4</b> Too good to be false: Nonsignificant results revisited</a><ul>
+<li class="chapter" data-level="4.1" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#theoretical-framework"><i class="fa fa-check"></i><b>4.1</b> Theoretical framework</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#distributions-of-p-values"><i class="fa fa-check"></i><b>4.1.1</b> Distributions of <em>p</em>-values</a></li>
+<li class="chapter" data-level="4.1.2" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#testing-for-false-negatives-the-fisher-test"><i class="fa fa-check"></i><b>4.1.2</b> Testing for false negatives: the Fisher test</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#application-1-evidence-of-false-negatives-in-articles-across-eight-major-psychology-journals"><i class="fa fa-check"></i><b>4.2</b> Application 1: Evidence of false negatives in articles across eight major psychology journals</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#method"><i class="fa fa-check"></i><b>4.2.1</b> Method</a></li>
+<li class="chapter" data-level="4.2.2" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#results"><i class="fa fa-check"></i><b>4.2.2</b> Results</a></li>
+<li class="chapter" data-level="4.2.3" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#expected-effect-size-distribution."><i class="fa fa-check"></i><b>4.2.3</b> Expected effect size distribution.</a></li>
+<li class="chapter" data-level="4.2.4" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#evidence-of-false-negatives-in-articles."><i class="fa fa-check"></i><b>4.2.4</b> Evidence of false negatives in articles.</a></li>
+<li class="chapter" data-level="4.2.5" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#discussion-1"><i class="fa fa-check"></i><b>4.2.5</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#application-2-evidence-of-false-negative-gender-effects-in-eight-major-psychology-journals"><i class="fa fa-check"></i><b>4.3</b> Application 2: Evidence of false negative gender effects in eight major psychology journals</a><ul>
+<li class="chapter" data-level="4.3.1" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#method-1"><i class="fa fa-check"></i><b>4.3.1</b> Method</a></li>
+<li class="chapter" data-level="4.3.2" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#results-1"><i class="fa fa-check"></i><b>4.3.2</b> Results</a></li>
+<li class="chapter" data-level="4.3.3" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#discussion-2"><i class="fa fa-check"></i><b>4.3.3</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#application-3-reproducibility-project-psychology"><i class="fa fa-check"></i><b>4.4</b> Application 3: Reproducibility Project Psychology</a><ul>
+<li class="chapter" data-level="4.4.1" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#method-2"><i class="fa fa-check"></i><b>4.4.1</b> Method</a></li>
+<li class="chapter" data-level="4.4.2" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#results-2"><i class="fa fa-check"></i><b>4.4.2</b> Results</a></li>
+<li class="chapter" data-level="4.4.3" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#discussion-3"><i class="fa fa-check"></i><b>4.4.3</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#general-discussion"><i class="fa fa-check"></i><b>4.5</b> General Discussion</a><ul>
+<li class="chapter" data-level="4.5.1" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#limitations-and-further-research"><i class="fa fa-check"></i><b>4.5.1</b> Limitations and further research</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="statistical-results-content-mining-psychology-articles-for-statistical-test-results.html"><a href="statistical-results-content-mining-psychology-articles-for-statistical-test-results.html"><i class="fa fa-check"></i><b>5</b> 688,112 Statistical Results: Content Mining Psychology Articles for Statistical Test Results</a><ul>
+<li class="chapter" data-level="5.1" data-path="statistical-results-content-mining-psychology-articles-for-statistical-test-results.html"><a href="statistical-results-content-mining-psychology-articles-for-statistical-test-results.html#data-description"><i class="fa fa-check"></i><b>5.1</b> Data description</a></li>
+<li class="chapter" data-level="5.2" data-path="statistical-results-content-mining-psychology-articles-for-statistical-test-results.html"><a href="statistical-results-content-mining-psychology-articles-for-statistical-test-results.html#methods-1"><i class="fa fa-check"></i><b>5.2</b> Methods</a></li>
+<li class="chapter" data-level="5.3" data-path="statistical-results-content-mining-psychology-articles-for-statistical-test-results.html"><a href="statistical-results-content-mining-psychology-articles-for-statistical-test-results.html#usage-notes"><i class="fa fa-check"></i><b>5.3</b> Usage notes</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html"><i class="fa fa-check"></i><b>6</b> Detection of data fabrication using statistical tools</a><ul>
+<li class="chapter" data-level="6.1" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#theoretical-framework-1"><i class="fa fa-check"></i><b>6.1</b> Theoretical framework</a><ul>
+<li class="chapter" data-level="6.1.1" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#detecting-data-fabrication-in-summary-statistics"><i class="fa fa-check"></i><b>6.1.1</b> Detecting data fabrication in summary statistics</a></li>
+<li class="chapter" data-level="6.1.2" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#detecting-data-fabrication-in-raw-data"><i class="fa fa-check"></i><b>6.1.2</b> Detecting data fabrication in raw data</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#study-1---detecting-fabricated-summary-statistics"><i class="fa fa-check"></i><b>6.2</b> Study 1 - detecting fabricated summary statistics</a><ul>
+<li class="chapter" data-level="6.2.1" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#methods-2"><i class="fa fa-check"></i><b>6.2.1</b> Methods</a></li>
+<li class="chapter" data-level="6.2.2" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#results-3"><i class="fa fa-check"></i><b>6.2.2</b> Results</a></li>
+<li class="chapter" data-level="6.2.3" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#discussion-4"><i class="fa fa-check"></i><b>6.2.3</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#study-2---detecting-fabricated-individual-level-data"><i class="fa fa-check"></i><b>6.3</b> Study 2 - detecting fabricated individual level data</a><ul>
+<li class="chapter" data-level="6.3.1" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#methods-3"><i class="fa fa-check"></i><b>6.3.1</b> Methods</a></li>
+<li class="chapter" data-level="6.3.2" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#results-4"><i class="fa fa-check"></i><b>6.3.2</b> Results</a></li>
+<li class="chapter" data-level="6.3.3" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#discussion-5"><i class="fa fa-check"></i><b>6.3.3</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#general-discussion-1"><i class="fa fa-check"></i><b>6.4</b> General discussion</a></li>
+</ul></li>
+<li class="part"><span><b>II Improving science</b></span></li>
+<li class="chapter" data-level="7" data-path="extracting-data-from-vector-figures-in-scholarly-articles.html"><a href="extracting-data-from-vector-figures-in-scholarly-articles.html"><i class="fa fa-check"></i><b>7</b> Extracting data from vector figures in scholarly articles</a><ul>
+<li class="chapter" data-level="7.1" data-path="extracting-data-from-vector-figures-in-scholarly-articles.html"><a href="extracting-data-from-vector-figures-in-scholarly-articles.html#method-3"><i class="fa fa-check"></i><b>7.1</b> Method</a><ul>
+<li class="chapter" data-level="7.1.1" data-path="extracting-data-from-vector-figures-in-scholarly-articles.html"><a href="extracting-data-from-vector-figures-in-scholarly-articles.html#extraction-procedure"><i class="fa fa-check"></i><b>7.1.1</b> Extraction procedure</a></li>
+<li class="chapter" data-level="7.1.2" data-path="extracting-data-from-vector-figures-in-scholarly-articles.html"><a href="extracting-data-from-vector-figures-in-scholarly-articles.html#corpus"><i class="fa fa-check"></i><b>7.1.2</b> Corpus</a></li>
+<li class="chapter" data-level="7.1.3" data-path="extracting-data-from-vector-figures-in-scholarly-articles.html"><a href="extracting-data-from-vector-figures-in-scholarly-articles.html#documentation"><i class="fa fa-check"></i><b>7.1.3</b> Documentation</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="extracting-data-from-vector-figures-in-scholarly-articles.html"><a href="extracting-data-from-vector-figures-in-scholarly-articles.html#results-5"><i class="fa fa-check"></i><b>7.2</b> Results</a></li>
+<li class="chapter" data-level="7.3" data-path="extracting-data-from-vector-figures-in-scholarly-articles.html"><a href="extracting-data-from-vector-figures-in-scholarly-articles.html#discussion-6"><i class="fa fa-check"></i><b>7.3</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><i class="fa fa-check"></i><b>8</b> As-you-go instead of after-the-fact: A network approach to scholarly communication and evaluation</a><ul>
+<li class="chapter" data-level="8.1" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#network-structure"><i class="fa fa-check"></i><b>8.1</b> Network structure</a></li>
+<li class="chapter" data-level="8.2" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#indicators"><i class="fa fa-check"></i><b>8.2</b> Indicators</a></li>
+<li class="chapter" data-level="8.3" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#use-cases"><i class="fa fa-check"></i><b>8.3</b> Use cases</a><ul>
+<li class="chapter" data-level="8.3.1" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#funders"><i class="fa fa-check"></i><b>8.3.1</b> Funders</a></li>
+<li class="chapter" data-level="8.3.2" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#universities"><i class="fa fa-check"></i><b>8.3.2</b> Universities</a></li>
+<li class="chapter" data-level="8.3.3" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#individuals"><i class="fa fa-check"></i><b>8.3.3</b> Individuals</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#discussion-7"><i class="fa fa-check"></i><b>8.4</b> Discussion</a></li>
+<li class="chapter" data-level="8.5" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#conclusion-1"><i class="fa fa-check"></i><b>8.5</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><i class="fa fa-check"></i><b>9</b> Verified, shared, modular, and provenance based research communication with the Dat protocol</a><ul>
+<li class="chapter" data-level="9.1" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#dat-protocol"><i class="fa fa-check"></i><b>9.1</b> Dat protocol</a></li>
+<li class="chapter" data-level="9.2" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#verified-modular-scholarly-communication"><i class="fa fa-check"></i><b>9.2</b> Verified modular scholarly communication</a><ul>
+<li class="chapter" data-level="9.2.1" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#scholarly-profiles"><i class="fa fa-check"></i><b>9.2.1</b> Scholarly profiles</a></li>
+<li class="chapter" data-level="9.2.2" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#scholarly-modules"><i class="fa fa-check"></i><b>9.2.2</b> Scholarly modules</a></li>
+<li class="chapter" data-level="9.2.3" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#verification"><i class="fa fa-check"></i><b>9.2.3</b> Verification</a></li>
+<li class="chapter" data-level="9.2.4" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#prototype"><i class="fa fa-check"></i><b>9.2.4</b> Prototype</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#discussion-8"><i class="fa fa-check"></i><b>9.3</b> Discussion</a></li>
+<li class="chapter" data-level="9.4" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#limitations"><i class="fa fa-check"></i><b>9.4</b> Limitations</a></li>
+<li class="chapter" data-level="9.5" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#supporting-information-1"><i class="fa fa-check"></i><b>9.5</b> Supporting Information</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="summary.html"><a href="summary.html"><i class="fa fa-check"></i>Summary</a></li>
+<li class="chapter" data-level="" data-path="epilogue.html"><a href="epilogue.html"><i class="fa fa-check"></i>Epilogue</a></li>
+<li class="appendix"><span><b>Appendices</b></span></li>
+<li class="chapter" data-level="A" data-path="examining-statistical-properties-of-the-fisher-test.html"><a href="examining-statistical-properties-of-the-fisher-test.html"><i class="fa fa-check"></i><b>A</b> Examining statistical properties of the Fisher test</a></li>
+<li class="chapter" data-level="B" data-path="effect-computation.html"><a href="effect-computation.html"><i class="fa fa-check"></i><b>B</b> Effect computation</a></li>
+<li class="chapter" data-level="C" data-path="example-of-statcheck-report-for-pubpeer.html"><a href="example-of-statcheck-report-for-pubpeer.html"><i class="fa fa-check"></i><b>C</b> Example of <code>statcheck</code> report for PubPeer</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Contributions towards understanding and building sustainable science</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="distributions-of-p-values-between-.01-.05-in-psychology-what-is-going-on" class="section level1">
+<h1><span class="header-section-number">3</span> Distributions of p-values between .01-.05 in psychology: what is going on?</h1>
+<p>A set of <span class="math inline">\(p\)</span>-values can be informative of the underlying effects that are investigated, but can also be indicative of potential research biases or questionable research practices (QRPs). In the absence of QRPs, the distribution of significant <span class="math inline">\(p\)</span>-values can be expected to have a certain shape. Under the null-hypothesis all <span class="math inline">\(p\)</span>-values are equally probable (i.e., follow a uniform distribution). If there is truly an effect, smaller <span class="math inline">\(p\)</span>-values are more likely than larger <span class="math inline">\(p\)</span>-values (i.e., the distribution decreases monotonically in the <span class="math inline">\(p\)</span>-value). Consequently, because some hypotheses are false and some are true, the distribution of observed <span class="math inline">\(p\)</span>-values arises from a mixture of uniform and right-skewed distributions and should also decrease monotonically.<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> QRPs may have various effects on the <span class="math inline">\(p\)</span>-value distribution. Figure <a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#fig:bump-fig1">3.1</a> shows the <span class="math inline">\(p\)</span>-value distribution of statistical tests both with data peeking (solid lines) and without data peeking. Data peeking (also known as optional stopping) refers to conducting intermediate significance testing during data collection <span class="citation">(Armitage, McPherson, and Rowe <a href="#ref-doi:10.2307/2343787">1969</a>)</span>. Data peeking greatly affects the <span class="math inline">\(p\)</span>-value distribution in all panels, which can be seen from comparing the ‘true’ and ‘data-peeked’ <span class="math inline">\(p\)</span>-value distributions. Panel A, which is obtained after data peeking of studies with standardized effect size <span class="math inline">\(d=0\)</span>, shows a ‘bump’ in the distribution. A bump corresponds to that part of the <span class="math inline">\(p\)</span>-value distribution that makes it no longer monotonically decreasing. Panel B also shows a bump for data peeking of studies with <span class="math inline">\(d=0\)</span>. However, Panel C shows no bump but merely monotonic excess, i.e. an increase in the frequency of <span class="math inline">\(p\)</span>-values below .05 in the absence of a bump. Consequently, data peeking may either lead to monotonic excess or a bump in the distribution of <span class="math inline">\(p\)</span>-values. There are other known QRPs in the analysis of data <span class="citation">(John, Loewenstein, and Prelec <a href="#ref-doi:10.1177/0956797611430953">2012</a>)</span>, but these have different effects on the <span class="math inline">\(p\)</span>-value distribution and do not necessarily lead to a bump, as shown in Figure <a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#fig:bump-fig1">3.1</a>.</p>
+<div class="figure" style="text-align: center"><span id="fig:bump-fig1"></span>
+<img src="assets/figures/bump-fig1.pdf.svg.png" alt="Distributions of 20 million $p$-values each, when Cohen's standardized effect size $d=0$ (bump; Panel A), $d=.2$ (bump; Panel B), and $d=.5$ (monotonic excess; Panel C), given data peeking (solid) or no data peeking (dashed). Simulations were run for two-sample $t$-tests with $n_k=24$. For data peeking, a maximum of three rounds of additional sampling occurred if the result was nonsignificant, with each round adding $1/3$ of the original sample size." width="100%" />
+<p class="caption">
+Figure 3.1: Distributions of 20 million <span class="math inline">\(p\)</span>-values each, when Cohen’s standardized effect size <span class="math inline">\(d=0\)</span> (bump; Panel A), <span class="math inline">\(d=.2\)</span> (bump; Panel B), and <span class="math inline">\(d=.5\)</span> (monotonic excess; Panel C), given data peeking (solid) or no data peeking (dashed). Simulations were run for two-sample <span class="math inline">\(t\)</span>-tests with <span class="math inline">\(n_k=24\)</span>. For data peeking, a maximum of three rounds of additional sampling occurred if the result was nonsignificant, with each round adding <span class="math inline">\(1/3\)</span> of the original sample size.
+</p>
+</div>
+<p>In this chapter we attempt to answer two questions: (1) Does a bump or monotonic excess of <span class="math inline">\(p\)</span>-values below .05 exist in psychology? and (2) Did evidence for a bump increase over time in psychology? We chose to focus on psychology because of the availability of an extensive database on statistical results in psychology <span class="citation">(used in Nuijten, Hartgerink, et al. <a href="#ref-doi:10.3758/s13428-015-0664-2">2015</a>)</span> and because discussions on research practices are particularly salient in this discipline <span class="citation">(Pashler and Wagenmakers <a href="#ref-doi:10.1177/1745691612465253">2012</a>; John, Loewenstein, and Prelec <a href="#ref-doi:10.1177/0956797611430953">2012</a>; Simmons, Nelson, and Simonsohn <a href="#ref-doi:10.1177/0956797611417632">2011</a>; Wagenmakers et al. <a href="#ref-doi:10.1177/1745691612463078">2012</a>; Asendorpf et al. <a href="#ref-doi:10.1002/per.1919">2013</a>)</span>.</p>
+<div id="how-qrps-relate-to-distributions-of-p-values" class="section level3">
+<h3><span class="header-section-number">3.0.1</span> How QRPs relate to distributions of <em>p</em>-values</h3>
+<p>QRPs are defined as practices that are detrimental to the research process <span class="citation">(National Academy of Sciences and Medicine <a href="#ref-doi:10.17226/1864">1992</a>)</span>, with a recent focus on those which “increase the likelihood of finding support for a false hypothesis” <span class="citation">(p.524; John, Loewenstein, and Prelec <a href="#ref-doi:10.1177/0956797611430953">2012</a>)</span>. Several QRPs related to significance testing are known to affect <span class="math inline">\(p\)</span>-values of statistical tests and consequently the decisions based on these tests. Specifically, particular QRPs may yield results that are just significant and can create a bump of <span class="math inline">\(p\)</span>-values, such as ad hoc exclusion of outliers <span class="citation">(Bakker and Wicherts <a href="#ref-doi:10.1037/met0000014">2014</a>)</span>, repeatedly sampling new participants and checking the results <span class="citation">(i.e., data peeking; Armitage, McPherson, and Rowe <a href="#ref-doi:10.2307/2343787">1969</a>)</span>, including various combinations of covariates until a significant result is reached, operationalizing a measure in different ways until significance is reached <span class="citation">(Simmons, Nelson, and Simonsohn <a href="#ref-doi:10.1177/0956797611417632">2011</a>)</span>, or selective reporting of <span class="math inline">\(p\)</span>-values <span class="citation">(Franco, Malhotra, and Simonovits <a href="#ref-doi:10.1177/1948550615598377">2016</a>)</span>. These QRPs have been used by many researchers at least once in their career. For instance, data peeking and the ad hoc exclusion of outliers were admitted by 63% and 38% of psychological researchers, respectively <span class="citation">(John, Loewenstein, and Prelec <a href="#ref-doi:10.1177/0956797611430953">2012</a>)</span>. On the other hand, other QRPs mainly yield very small and (clearly) significant <span class="math inline">\(p\)</span>-values, such as analyzing multiple conditions or correlated variables and selecting only the smallest <span class="math inline">\(p\)</span>-value out of this set of analyses <span class="citation">(Van Aert, Wicherts, and Van Assen <a href="#ref-doi:10.1177/1745691616650874">2016</a>; Ulrich and Miller <a href="#ref-doi:10.1037/xge0000086">2015</a>)</span> and do not lead to a bump. To summarize, different QRPs may differently affect the distribution of statistically significant <span class="math inline">\(p\)</span>-values.</p>
+<p>However, there are at least two problems with using <span class="math inline">\(p\)</span>-value distributions to examine the prevalence of QRPs. First, as we previously argued, not all QRPs lead to a bump of <span class="math inline">\(p\)</span>-values just below .05. Hence, examining the distribution of <span class="math inline">\(p\)</span>-values just below .05 will not inform us on the prevalence of QRPs that do not aim to obtain just significant results but yield mainly small and clearly significant <span class="math inline">\(p\)</span>-values <span class="citation">(Van Aert, Wicherts, and Van Assen <a href="#ref-doi:10.1177/1745691616650874">2016</a>; Ulrich and Miller <a href="#ref-doi:10.1037/xge0000086">2015</a>)</span>. Second, the QRPs yielding just significant results do not necessarily result in a non-monotonic <span class="math inline">\(p\)</span>-value distribution, that is, a distribution with a <em>bump</em>. For instance, consider Figure <a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#fig:bump-fig1">3.1</a> that shows the result of simulations done for data peeking, which is known to result in mainly just significant <span class="math inline">\(p\)</span>-values <span class="citation">(Armitage, McPherson, and Rowe <a href="#ref-doi:10.2307/2343787">1969</a>; Lakens <a href="#ref-doi:10.1080/17470218.2014.982664">2015</a><a href="#ref-doi:10.1080/17470218.2014.982664">a</a>; Wagenmakers <a href="#ref-doi:10.3758/bf03194105">2007</a>)</span>. Figure <a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#fig:bump-fig1">3.1</a> illustrates that data peeking may result in non-monotonic excess (i.e., bump; panel A and B), but can also cause <em>monotonic excess</em> (panel C), even if all researchers use data peeking. Specifically, if all underlying effects are genuinely and substantially different from zero (panel C), data peeking will generally not lead to a bump below .05. In the present paper, we therefore examine the peculiar prevalence of <span class="math inline">\(p\)</span>-values just below .05 by both investigating the presence of a bump or monotonic excess in distributions of statistically significant results.</p>
+</div>
+<div id="previous-findings" class="section level3">
+<h3><span class="header-section-number">3.0.2</span> Previous findings</h3>
+<p><span class="citation">Masicampo and Lalande (<a href="#ref-doi:10.1080/17470218.2012.711335">2012</a>)</span> found a bump of <span class="math inline">\(p\)</span>-values just below .05 in three main psychology journals (i.e., <em>Journal of Personality and Social Psychology</em>, JPSP; <em>Journal of Experimental Psychology: General</em>, JEPG; <em>Psychological Science</em>, PS), which, as we saw, could be explained by research biases due to QRPs. The observation of a bump was one of several signals of a crisis of confidence in research findings in psychological science <span class="citation">(Pashler and Wagenmakers <a href="#ref-doi:10.1177/1745691612465253">2012</a>; Ferguson <a href="#ref-doi:10.1037/a0039405">2015</a>)</span>. <span class="citation">Leggett et al. (<a href="#ref-doi:10.1080/17470218.2013.863371">2013</a>)</span> later corroborated this bump of <span class="math inline">\(p\)</span>-values for JPSP and JEPG, and observed that it was larger in 2005 than in 1965. Considering that research biases can lead to overemphasis on statistical significance, this result suggested that the state of psychology may have even deteriorated over the years. Additional corroboration in samples of published articles from various fields was provided by <span class="citation">Head et al. (<a href="#ref-doi:10.1371/journal.pbio.1002106">2015</a><a href="#ref-doi:10.1371/journal.pbio.1002106">b</a>)</span>, who documented the bump of <span class="math inline">\(p\)</span>-values below .05 in 1,048,575 articles across 16 disciplines including psychology. <span class="citation">Ginsel et al. (<a href="#ref-doi:10.1186/s13104-015-1691-x">2015</a>)</span> found similar biased reporting of <span class="math inline">\(p\)</span>-values in medical abstracts, but noted the variety of potential causes (e.g., publication bias, fraud, selective reporting).</p>
+<p>At the same time, other studies failed to find a bump of <span class="math inline">\(p\)</span>-values below .05 <span class="citation">(Jager and Leek <a href="#ref-doi:10.1093/biostatistics/kxt007">2013</a>; Krawczyk <a href="#ref-doi:10.1371/journal.pone.0127872">2015</a>; Vermeulen et al. <a href="#ref-doi:10.1080/19312458.2015.1096333">2015</a>)</span>. Reanalysis of original data by <span class="citation">Lakens (<a href="#ref-doi:10.1080/17470218.2014.982664">2015</a><a href="#ref-doi:10.1080/17470218.2014.982664">a</a>)</span> and ourselves indicated that the results may have been confounded by publication bias <span class="citation">(Masicampo and Lalande <a href="#ref-doi:10.1080/17470218.2012.711335">2012</a>)</span> and by tendencies to round <span class="math inline">\(p\)</span>-values <span class="citation">(Head et al. <a href="#ref-doi:10.1371/journal.pbio.1002106">2015</a><a href="#ref-doi:10.1371/journal.pbio.1002106">b</a>)</span>. Publication bias refers to the fact that the probability of getting published is higher for statistically significant results than for statistically nonsignificant results <span class="citation">(Gerber et al. <a href="#ref-doi:10.1177/1532673x09350979">2010</a>; Franco, Malhotra, and Simonovits <a href="#ref-doi:10.1126/science.1255484">2014</a>)</span>. Publication bias only changes the <span class="math inline">\(p\)</span>-value distribution above .05 and cannot cause a bump. <span class="citation">Krawczyk (<a href="#ref-doi:10.1371/journal.pone.0127872">2015</a>)</span> analyzed a sample of around 5,000 psychology articles and found no bump in <span class="math inline">\(p\)</span>-values that were <em>recalculated</em> on the basis of reported test statistics and degrees of freedom <span class="citation">(cf. Bakker and Wicherts <a href="#ref-doi:10.3758/s13428-011-0089-5">2011</a>)</span>. However, he did observe a bump for <em>reported</em> <span class="math inline">\(p\)</span>-values. As such, this highlights an important difference between reported <span class="math inline">\(p\)</span>-values and recalculated <span class="math inline">\(p\)</span>-values, and stresses the need to distinguish both types of results when studying signs of questionable research practices.</p>
+</div>
+<div id="extensions-of-previous-studies" class="section level3">
+<h3><span class="header-section-number">3.0.3</span> Extensions of previous studies</h3>
+<p>In answering our research questions, we extend previous studies on four dimensions. First, we eliminate the distortive effects of publication bias on the <span class="math inline">\(p\)</span>-value distribution by inspecting only statistically significant results. Second, we use a large dataset on <span class="math inline">\(p\)</span>-values from entire articles instead of only <span class="math inline">\(p\)</span>-values from abstracts <span class="citation">(as in Jager and Leek <a href="#ref-doi:10.1093/biostatistics/kxt007">2013</a>; De Winter and Dodou <a href="#ref-doi:10.7717/peerj.733">2015</a>)</span>. Third, we distinguish between reported and recalculated <span class="math inline">\(p\)</span>-value distributions for the same set of test results and show that this distinction affects answers to the two questions because of common mismatches <span class="citation">(Bakker and Wicherts <a href="#ref-doi:10.3758/s13428-011-0089-5">2011</a>)</span>. Fourth, we fit analytic models to <span class="math inline">\(p\)</span>-value distributions to investigate the existence of monotonic excess as shown in the panel C of Figure <a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#fig:bump-fig1">3.1</a>, whereas previous research only investigated whether there was non-monotonic excess (i.e., a bump).</p>
+<p>Publication bias distorts the <span class="math inline">\(p\)</span>-value distribution, but distortions caused by this bias should not be confounded with distortions caused by other QRPs. Publication bias refers to the selective publication of disproportionate amounts of statistically significant outcomes <span class="citation">(Gerber et al. <a href="#ref-doi:10.1177/1532673x09350979">2010</a>; Franco, Malhotra, and Simonovits <a href="#ref-doi:10.1126/science.1255484">2014</a>)</span>. Publication bias contributes to a higher frequency of <span class="math inline">\(p\)</span>-values just below .05 relative to the frequency of <span class="math inline">\(p\)</span>-values just above .05, but only does so by decreasing the frequency of <span class="math inline">\(p\)</span>-values <em>larger</em> than .05. <span class="citation">Masicampo and Lalande (<a href="#ref-doi:10.1080/17470218.2012.711335">2012</a>)</span> and <span class="citation">De Winter and Dodou (<a href="#ref-doi:10.7717/peerj.733">2015</a>)</span> indeed found this relatively higher frequency, which is more readily explained by publication bias. QRPs that lead to a bump affect only the distribution of <span class="math inline">\(p\)</span>-values smaller than .05 <span class="citation">(Lakens <a href="#ref-doi:10.1080/17470218.2014.982664">2015</a><a href="#ref-doi:10.1080/17470218.2014.982664">a</a>)</span>. We focus only on the distribution of significant <span class="math inline">\(p\)</span>-values, because this distribution is directly affected by QRPs that cause a bump or monotonic excess. Publication bias only indirectly affects this distribution, through QRPs to obtain statistically significant results, but not directly because publication bias lowers the frequency of observed nonsignificant <span class="math inline">\(p\)</span>-values.</p>
+<p>The second extension is the use of more extensive data for psychology than previously used to inspect QRPs that cause a bump or monotonic excess, improving our ability to examine the prevalence of QRPs. <span class="citation">Masicampo and Lalande (<a href="#ref-doi:10.1080/17470218.2012.711335">2012</a>)</span> and <span class="citation">Leggett et al. (<a href="#ref-doi:10.1080/17470218.2013.863371">2013</a>)</span> manually collected <span class="math inline">\(p\)</span>-values from a relatively small set of full research articles (i.e., 3,627 and 3,701), whereas <span class="citation">Jager and Leek (<a href="#ref-doi:10.1093/biostatistics/kxt007">2013</a>)</span> and <span class="citation">De Winter and Dodou (<a href="#ref-doi:10.7717/peerj.733">2015</a>)</span> used automated extraction of <span class="math inline">\(p\)</span>-values from only the abstracts of research papers. However, <span class="math inline">\(p\)</span>-values from abstracts are not representative for the population of <span class="math inline">\(p\)</span>-values from the entire paper <span class="citation">(Benjamini and Hechtlinger <a href="#ref-doi:10.1093/biostatistics/kxt032">2013</a>; Ioannidis <a href="#ref-doi:10.1093/biostatistics/kxt036">2013</a>)</span>, even though some have argued against this <span class="citation">(Pautasso <a href="#ref-doi:10.1007/s11192-010-0233-5">2010</a>)</span>. Our large scale inspection of full-text articles is similar to papers by <span class="citation">Head et al. (<a href="#ref-doi:10.1371/journal.pbio.1002106">2015</a><a href="#ref-doi:10.1371/journal.pbio.1002106">b</a>)</span> and <span class="citation">Krawczyk (<a href="#ref-doi:10.1371/journal.pone.0127872">2015</a>)</span>.</p>
+<p>Third, we examine the prevalence of QRPs that cause a bump or monotonic excess by investigating both reported and the accompanying recalculated <span class="math inline">\(p\)</span>-values. Not all previous studies distinguished results from reported <span class="math inline">\(p\)</span>-values and recalculated <span class="math inline">\(p\)</span>-values. This distinction is relevant, because reported <span class="math inline">\(p\)</span>-values are subject to reporting bias such as rounding errors, particularly relevant around the .05 threshold. Such reporting biases result in inaccurate <span class="math inline">\(p\)</span>-value distributions. For example, there is evidence that reporting errors that affect statistical significance (i.e., gross inconsistencies) occur in approximately 10-15% of papers in psychology <span class="citation">(Bakker and Wicherts <a href="#ref-doi:10.3758/s13428-011-0089-5">2011</a>; García-Berthou and Alcaraz <a href="#ref-doi:10.1186/1471-2288-4-13">2004</a>; Nuijten, Hartgerink, et al. <a href="#ref-doi:10.3758/s13428-015-0664-2">2015</a>; Veldkamp et al. <a href="#ref-doi:10.1371/journal.pone.0114876">2014</a>)</span>. The advantage of analyzing recalculated <span class="math inline">\(p\)</span>-values is that they contain more decimals than typically reported and that they correct reporting errors. Some previous studies analyzed reported <span class="math inline">\(p\)</span>-values <span class="citation">(De Winter and Dodou <a href="#ref-doi:10.7717/peerj.733">2015</a>; Jager and Leek <a href="#ref-doi:10.1093/biostatistics/kxt007">2013</a>; Head et al. <a href="#ref-doi:10.1371/journal.pbio.1002106">2015</a><a href="#ref-doi:10.1371/journal.pbio.1002106">b</a>)</span>, whereas others looked at recalculated <span class="math inline">\(p\)</span>-values <span class="citation">(Masicampo and Lalande <a href="#ref-doi:10.1080/17470218.2012.711335">2012</a>)</span> or a mix of reported and recalculated <span class="citation">(Leggett et al. <a href="#ref-doi:10.1080/17470218.2013.863371">2013</a>)</span>. Only <span class="citation">Krawczyk (<a href="#ref-doi:10.1371/journal.pone.0127872">2015</a>)</span> used both reported and recalculated <span class="math inline">\(p\)</span>-values for a subset of the data (approximately 27,000 of the 135,000 were recalculated), and found that the peculiar prevalence below .05 disappeared when the recalculated data were used. Hence, this distinction between reported and recalculated <span class="math inline">\(p\)</span>-values allows us to distinguish between peculiarities due to reporting errors and peculiarities due to QRPs such as data peeking.</p>
+<p>Fourth, we examine the prevalence of <span class="math inline">\(p\)</span>-values just below .05 by taking into account various models to test and explain characteristics of <span class="math inline">\(p\)</span>-value distributions. We applied tests and fitted models to <span class="math inline">\(p\)</span>-values below .05, in two ways. We first applied the non-parametric Caliper test <span class="citation">(Gerber et al. <a href="#ref-doi:10.1177/1532673x09350979">2010</a>)</span> comparing frequencies of <span class="math inline">\(p\)</span>-values in an interval just below .05 to the frequency in the adjacent lower interval; a higher frequency in the interval closest to .05 is evidence for QRPs that seek to obtain just significant results. The Caliper test has also been applied to examine publication bias, by comparing just significant to just nonsignificant <span class="math inline">\(p\)</span>-values <span class="citation">(Kühberger, Fritz, and Scherndl <a href="#ref-doi:10.1371/journal.pone.0105825">2014</a>)</span>, and to detect QRPs <span class="citation">(Head et al. <a href="#ref-doi:10.1371/journal.pbio.1002106">2015</a><a href="#ref-doi:10.1371/journal.pbio.1002106">b</a>)</span>. However, the Caliper test can only detect a bump but not monotonic excess, as illustrated by the distributions of <span class="math inline">\(p\)</span>-values in Figure <a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#fig:bump-fig1">3.1</a>. Therefore, we also attempted to model the distribution of significant <span class="math inline">\(p\)</span>-values in order to investigate for all forms of excess (i.e., both a bump and monotonic excess), and illustrate the results and difficulties of this approach.</p>
+<p>In short, this chapter studies the distribution of significant <span class="math inline">\(p\)</span>-values in four ways. First, we verified whether a bump is present in <em>reported</em> <span class="math inline">\(p\)</span>-values just below .05 with the Caliper test. Second, to examine how reporting errors might influence <span class="math inline">\(p\)</span>-value distributions around .05, we analyzed only the recalculated <span class="math inline">\(p\)</span>-values corresponding to those reported as .05. Third, we used the Caliper test to examine if a bump effect is present in <em>recalculated</em> <span class="math inline">\(p\)</span>-values and whether evidence for a bump changed over time. Finally, we modeled the distribution of significant recalculated <span class="math inline">\(p\)</span>-values in an attempt to also detect a monotonic excess of <span class="math inline">\(p\)</span>-values below .05.</p>
+</div>
+<div id="data-and-methods-1" class="section level2">
+<h2><span class="header-section-number">3.1</span> Data and methods</h2>
+<div id="data" class="section level3">
+<h3><span class="header-section-number">3.1.1</span> Data</h3>
+<p>We investigated the <span class="math inline">\(p\)</span>-value distribution of research papers in eight high impact psychology journals <span class="citation">(also used in Nuijten, Hartgerink, et al. <a href="#ref-doi:10.3758/s13428-015-0664-2">2015</a>)</span>. These eight journals were selected due to their high-impact across different subfields in psychology and their availability within the Tilburg University subscriptions. This selection also encompasses the journals covered by <span class="citation">Masicampo and Lalande (<a href="#ref-doi:10.1080/17470218.2012.711335">2012</a>)</span> and <span class="citation">Leggett et al. (<a href="#ref-doi:10.1080/17470218.2013.863371">2013</a>)</span>. A summary of the downloaded articles is included in Table <a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#tab:journals">3.1</a>.</p>
+<p>For these journals, our sample included articles published from 1985 through 2013 that were available in HTML format. For the PLOS journals, HTML versions of articles were downloaded automatically with the <code>rplos</code> package <span class="citation">(v0.3.8; Chamberlain, Boettiger, and Ram <a href="#ref-Chamberlain2015-tg">2015</a>)</span>. This package allows an <code>R</code> user to search the PLOS database as one would search for an article on the website.<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a> We used this package to retrieve search results that include the subject ‘psychology’ for (part of) an article. For all other journals, HTML versions of articles were downloaded manually by the first author.</p>
+<table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:journals">Table 3.1: </span>Articles downloaded, articles with extracted results in American Psychological Association (APA) style, and number of extracted APA test results per journal.
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+Journal
+</th>
+<th style="text-align:left;">
+Acronym
+</th>
+<th style="text-align:left;">
+Timespan
+</th>
+<th style="text-align:left;">
+Articles downloaded
+</th>
+<th style="text-align:left;">
+Articles with extracted results
+</th>
+<th style="text-align:left;">
+APA results extracted
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Developmental Psychology
+</td>
+<td style="text-align:left;">
+DP
+</td>
+<td style="text-align:left;">
+1985–2013
+</td>
+<td style="text-align:left;">
+3,381
+</td>
+<td style="text-align:left;">
+2,607 (77%)
+</td>
+<td style="text-align:left;">
+37,658
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Frontiers in Psychology
+</td>
+<td style="text-align:left;">
+FP
+</td>
+<td style="text-align:left;">
+2010–2013
+</td>
+<td style="text-align:left;">
+2,126
+</td>
+<td style="text-align:left;">
+702 (33%)
+</td>
+<td style="text-align:left;">
+10,149
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Journal of Applied Psychology
+</td>
+<td style="text-align:left;">
+JAP
+</td>
+<td style="text-align:left;">
+1985–2013
+</td>
+<td style="text-align:left;">
+2,782
+</td>
+<td style="text-align:left;">
+1,638 (59%)
+</td>
+<td style="text-align:left;">
+15,134
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Journal of Consulting and Clinical Psychology
+</td>
+<td style="text-align:left;">
+JCCP
+</td>
+<td style="text-align:left;">
+1985–2013
+</td>
+<td style="text-align:left;">
+3,519
+</td>
+<td style="text-align:left;">
+2,413 (69%)
+</td>
+<td style="text-align:left;">
+27,429
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Journal of Experimental Psychology General
+</td>
+<td style="text-align:left;">
+JEPG
+</td>
+<td style="text-align:left;">
+1985–2013
+</td>
+<td style="text-align:left;">
+1,184
+</td>
+<td style="text-align:left;">
+821 (69%)
+</td>
+<td style="text-align:left;">
+18,921
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Journal of Personality and Social Psychology
+</td>
+<td style="text-align:left;">
+JPSP
+</td>
+<td style="text-align:left;">
+1985–2013
+</td>
+<td style="text-align:left;">
+5,108
+</td>
+<td style="text-align:left;">
+4,346 (85%)
+</td>
+<td style="text-align:left;">
+101,621
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Public Library of Science
+</td>
+<td style="text-align:left;">
+PLOS
+</td>
+<td style="text-align:left;">
+2000–2013
+</td>
+<td style="text-align:left;">
+10,303
+</td>
+<td style="text-align:left;">
+2,487 (24%)
+</td>
+<td style="text-align:left;">
+31,539
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Psychological Science
+</td>
+<td style="text-align:left;">
+PS
+</td>
+<td style="text-align:left;">
+2003–2013
+</td>
+<td style="text-align:left;">
+2,307
+</td>
+<td style="text-align:left;">
+1,681 (73%)
+</td>
+<td style="text-align:left;">
+15,654
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+<em>Total</em>
+</td>
+<td style="text-align:left;">
+<em>30,710</em>
+</td>
+<td style="text-align:left;">
+<em>16,695 (54%)</em>
+</td>
+<td style="text-align:left;">
+<em>258,105</em>
+</td>
+</tr>
+</tbody>
+</table>
+<p>APA test results were extracted from the downloaded articles with the R package <code>statcheck</code> <span class="citation">(v1.0.1; Epskamp and Nuijten <a href="#ref-statcheck">2016</a>)</span>. The only requirement for this package to operate is a supply of HTML (or PDF) files of the articles that are to be scanned and <code>statcheck</code> extracts all test results reported according to the standards of the American Psychological Association <span class="citation">(APA; American Psychological Association <a href="#ref-isbn:9781433805615">2010</a><a href="#ref-isbn:9781433805615">b</a>)</span>. This format is defined as test results reported in the following order: the test statistic and degrees of freedom (encapsulated in parentheses) followed by the <span class="math inline">\(p\)</span>-value (e.g., <span class="math inline">\(t(85)=2.86,p=.005\)</span>). This style has been prescribed by the APA since at least 1983 <span class="citation">(American Psychological Association <a href="#ref-American_Psychological_Association1983-yf">1983</a>; American Psychological Association <a href="#ref-American_Psychological_Association2001-uw">2001</a>)</span>, with the only relevant revision being the precision of the reported <span class="math inline">\(p\)</span>-value, changing from two decimal places to three decimal places in the sixth edition from 2010. <code>statcheck</code> extracts <span class="math inline">\(t\)</span>, <span class="math inline">\(F\)</span>, <span class="math inline">\(\chi^{2}\)</span>, <span class="math inline">\(Z\)</span> and <span class="math inline">\(r\)</span> results reported in APA style. Additional details on the validity of the <code>statcheck</code> package can be found in <span class="citation">Nuijten, Hartgerink, et al. (<a href="#ref-doi:10.3758/s13428-015-0664-2">2015</a>)</span>.</p>
+<p>From the 30,710 downloaded papers, <code>statcheck</code> extracted 258,105 test results. We removed 55 results, because these were impossible test results (i.e., <span class="math inline">\(F(0,55)=...\)</span> or <span class="math inline">\(r&gt;1\)</span>). The final dataset thus included 258,050 test results. The extracted test results can have four different formats, where test results or <span class="math inline">\(p\)</span>-values are reported either exactly (e.g., <span class="math inline">\(p=.042\)</span>) or inexactly (e.g., <span class="math inline">\(p&lt;.05\)</span>). Table <a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#tab:2x2">3.2</a> shows the composition of the dataset, when split across these (in)exactly reported <span class="math inline">\(p\)</span>-values and (in)exactly reported test results.</p>
+<table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:2x2">Table 3.2: </span>Composition of extracted APA test results with respect to exact and inexact reporting of <span class="math inline">\(p\)</span>-values or test statistics.
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:left;">
+Exact test statistic
+</th>
+<th style="text-align:left;">
+Inexact test statistic
+</th>
+<th style="text-align:left;">
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Exact <span class="math inline">\(p\)</span>-value
+</td>
+<td style="text-align:left;">
+68,776
+</td>
+<td style="text-align:left;">
+274
+</td>
+<td style="text-align:left;">
+<em>69,050 (27%)</em>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Inexact <span class="math inline">\(p\)</span>-value
+</td>
+<td style="text-align:left;">
+187,617
+</td>
+<td style="text-align:left;">
+1,383
+</td>
+<td style="text-align:left;">
+<em>189,000 (73%)</em>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+<em>256,393 (99.36%)</em>
+</td>
+<td style="text-align:left;">
+<em>1,657 (0.64%)</em>
+</td>
+<td style="text-align:left;">
+<strong>258,050 (100%)</strong>
+</td>
+</tr>
+</tbody>
+</table>
+<p>From this dataset, we selected six subsets throughout our analyses to investigate our research questions regarding a bump below .05. We analyzed (i) all reported <span class="math inline">\(p\)</span>-values (<span class="math inline">\(N=258,050\)</span>) for a bump in their distribution just below .05. Subsequently we analyzed (ii) only exactly reported <span class="math inline">\(p\)</span>-values (<span class="math inline">\(N=69,050\)</span>). It is possible that reporting or rounding errors have occurred among the reported <span class="math inline">\(p\)</span>-values. To investigate the degree to which this happens at <span class="math inline">\(p=.05\)</span>, we analyzed (iii) exactly reported test statistics that are accompanied by an exactly reported <span class="math inline">\(p\)</span>-value of .05 (i.e., <span class="math inline">\(p=.05\)</span>). This subset contains 2,470 results. To attenuate the effect of rounding errors and other factors influencing the reporting of <span class="math inline">\(p\)</span>-values <span class="citation">(e.g., Ridley et al. <a href="#ref-doi:10.1111/j.1420-9101.2006.01291.x">2007</a>)</span>, we also investigated the recalculated <span class="math inline">\(p\)</span>-value distribution with (iv) <span class="math inline">\(p\)</span>-values that were accompanied by exactly reported test statistics (<span class="math inline">\(N=256,393\)</span>). To investigate whether evidence for a bump differs for inexactly and exactly reported <span class="math inline">\(p\)</span>-values, (v) 68,776 exactly reported test statistics with exactly reported <span class="math inline">\(p\)</span>-values were analyzed. Finally, we used (vi) all recalculated <span class="math inline">\(p\)</span>-values in 0-.05 for <span class="math inline">\(t\)</span>, <span class="math inline">\(r\)</span>, and <span class="math inline">\(F(df_1=1)\)</span> values to model the effect size distribution underlying these <span class="math inline">\(p\)</span>-values to investigate evidence of both a bump and monotonic excess.</p>
+</div>
+</div>
+<div id="methods" class="section level2">
+<h2><span class="header-section-number">3.2</span> Methods</h2>
+<p>We used the Caliper test and two new measures to examine if the observed <span class="math inline">\(p\)</span>-value distribution shows evidence for a bump or monotonic excess below .05. We applied the two measures to the observed <span class="math inline">\(p\)</span>-value distribution and we examined their performance to detect a bump or monotonic excess using a simulation study on data peeking. Data peeking was chosen because it is one of the most frequently used and well-known QRPs. Below, we explain the Caliper test, how the <span class="math inline">\(p\)</span>-value distributions are modeled with the two new measures, and describe the design of the simulation study in more detail.</p>
+<div id="caliper-test" class="section level3">
+<h3><span class="header-section-number">3.2.1</span> Caliper test</h3>
+<p>In order to test for a bump of <span class="math inline">\(p\)</span>-values just below .05, we applied the Caliper test <span class="citation">(Gerber et al. <a href="#ref-doi:10.1177/1532673x09350979">2010</a>; Kühberger, Fritz, and Scherndl <a href="#ref-doi:10.1371/journal.pone.0105825">2014</a>)</span>. This proportion test compares the frequencies of <span class="math inline">\(p\)</span>-values in two intervals, such as the intervals .04-.045 and .045-.05. Let <span class="math inline">\(Pr\)</span> denote the proportion of <span class="math inline">\(p\)</span>-values of the interval .045-.05. Then, independent of the population effect sizes underlying the <span class="math inline">\(p\)</span>-values, <span class="math inline">\(Pr\)</span> should not be higher than .5 in any situation because the <span class="math inline">\(p\)</span>-value distribution should be monotone decreasing. Hence <span class="math inline">\(Pr&gt;.5\)</span> signifies a bump of <span class="math inline">\(p\)</span>-values just below .05.</p>
+<p>We carried out one-tailed binomial proportion tests, with <span class="math inline">\(H_{0}: Pr\leq.5\)</span> and <span class="math inline">\(H_{1}: Pr&gt;.5\)</span>. For example, if 40 and 60 <span class="math inline">\(p\)</span>-values are observed in the intervals .04-.045 and .045-.05, respectively, then <span class="math inline">\(Pr=.6\)</span> and the binomial test results in <span class="math inline">\(p\)</span>-value = .0284, suggesting evidence for a bump below .05. We applied the Caliper test to the reported <span class="math inline">\(p\)</span>-values (subsets one through three as described in the previous section) and recalculated <span class="math inline">\(p\)</span>-values (subsets four and five), both for the entire dataset and each of the eight psychology journals.</p>
+<p>The Caliper test requires specifying the width of the intervals that are to be compared. For reported <span class="math inline">\(p\)</span>-values, we selected the intervals (.03875-.04] and <span class="citation">(.04875-.05) because there is a strong preference to report <span class="math inline">\(p\)</span>-values to the second decimal in research papers <span class="citation">(see also Hartgerink <a href="#ref-doi:10.7717/peerj.3068">2017</a><a href="#ref-doi:10.7717/peerj.3068">b</a>)</span>. For recalculated <span class="math inline">\(p\)</span>-values we used the same interval width as used by Masicampo and Lalande <a href="#ref-doi:10.1080/17470218.2012.711335">2012</a>; Leggett et al. <a href="#ref-doi:10.1080/17470218.2013.863371">2013</a>, which is .00125, corresponding to a comparison of intervals (.0475-.04875)</span> and [.04875-.05). Note that rounding is not a problem for recalculated <span class="math inline">\(p\)</span>-values. Considering that some journals might show small frequencies of <span class="math inline">\(p\)</span>-values in these intervals, we also carried out Caliper tests with interval widths of .0025, .005, and .01. Note that, on the one hand, increasing interval width increases the statistical power of the Caliper test because more <span class="math inline">\(p\)</span>-values are included in the test, but on the other hand also decreases power because <span class="math inline">\(Pr\)</span> is negatively related to interval width whenever <span class="math inline">\(p\)</span>-values correspond to tests of non-zero population effects. In other words, a bump just below .05 will tend more and more towards a monotonically decreasing distribution as the binwidth increases.</p>
+<p>To verify if evidence for a bump of <span class="math inline">\(p\)</span>-values increased over time, we fitted a linear trend to proportion <span class="math inline">\(Pr\)</span> of the Caliper test with binwidths .00125, .0025, .005, and .01. We computed these proportions for each year separately, for both the total dataset and per journal. Time was centered at the start of data collection, which was 1985 except for PLOS (2000), PS (2006; due to 0 <span class="math inline">\(p\)</span>-values in the considered interval for preceding years), and FP (2010). The value .5 was subtracted from all <span class="math inline">\(Pr\)</span> values, such that the intercept of the trend corresponds to the bump of <span class="math inline">\(p\)</span>-values at the start of data collection, where 0 means no bump. A positive linear trend signifies an increase in the bump of <span class="math inline">\(p\)</span>-values below .05 over time.</p>
+</div>
+<div id="measures-based-on-p-value-distributions" class="section level3">
+<h3><span class="header-section-number">3.2.2</span> Measures based on <span class="math inline">\(p\)</span>-value distributions</h3>
+<p>Figure <a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#fig:bump-fig1">3.1</a> demonstrates that the effect of data peeking on the shape of the <span class="math inline">\(p\)</span>-value distribution (i.e., bump or just monotonic excess) depends on the true effect size. The distribution after data peeking does not monotonically decrease for <span class="math inline">\(d=0\)</span> or <span class="math inline">\(d=.2\)</span> (panel A and B), whereas it does decrease monotonically for <span class="math inline">\(d=0.5\)</span> (panel C). Consequently, the Caliper test will signal a bump of <span class="math inline">\(p\)</span>-values for <span class="math inline">\(d=0\)</span> (i.e., it will detect a bump), but not for <span class="math inline">\(d=0.5\)</span>.</p>
+<p>We examined how we may be able to detect both a bump and monotonic excess of <span class="math inline">\(p\)</span>-values below .05. Figure <a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#fig:bump-fig1">3.1</a> indicates that, for <span class="math inline">\(p\)</span>-values close to zero (e.g., <span class="math inline">\(\leq.00125\)</span>) the <span class="math inline">\(p\)</span>-value distributions with data peeking (solid lines) closely match the <span class="math inline">\(p\)</span>-value distributions without data peeking (dashed lines). In other words, data-peeking in studies with initially nonsignificant <span class="math inline">\(p\)</span>-values rarely results in tiny significant <span class="math inline">\(p\)</span>-values, but more often in <span class="math inline">\(p\)</span>-values larger than .00125. The basic idea of this analysis is therefore to estimate the ‘true’ effect size distribution using only these tiny <span class="math inline">\(p\)</span>-values (i.e., <span class="math inline">\(\leq.00125\)</span>), assuming that none or a very small proportion of these <span class="math inline">\(p\)</span>-values were affected by data-peeking. We note that we selected the .00125 cut-off point rather arbitrarily. Other, more liberal (e.g., .01, in case of a smaller set of statistically significant <span class="math inline">\(p\)</span>-values) or even more conservative cut-off points (e.g., .0001, in case of a very large dataset as ours) can be selected.</p>
+<p>We examined the performance of two measures to detect a bump or monotonic excess of <span class="math inline">\(p\)</span>-values below .05. The first method compares the effect sizes estimated on <span class="math inline">\(p\)</span>-values smaller than .00125 to effect sizes estimated using all <span class="math inline">\(p\)</span>-values smaller than .05. The idea of this first method is that increasing the frequency of just-significant <span class="math inline">\(p\)</span>-values <em>decreases</em> the effect size estimate. Indeed, the more right-skewed the <span class="math inline">\(p\)</span>-value distribution, the higher the effect size estimate when keeping constant studies’ sample sizes <span class="citation">(Simonsohn, Nelson, and Simmons <a href="#ref-doi:10.1037/a0033242">2014</a>; Van Assen, Van Aert, and Wicherts <a href="#ref-doi:10.1037/met0000025">2015</a>)</span>. According to the first method, there is evidence suggestive of data peeking (or other QRPs leading to a bump of <span class="math inline">\(p\)</span>-values just below .05) if the effect size estimate is considerably lower when based on all <span class="math inline">\(p\)</span>-values than when based on only <span class="math inline">\(p\)</span>-values <span class="math inline">\(\leq.00125\)</span>.</p>
+The second method yields a measure of excess of <span class="math inline">\(p\)</span>-values just below .05, for either a bump or monotonic excess, by comparing the observed frequency of <span class="math inline">\(p\)</span>-values in the interval .00125-.05 to the predicted frequency of <span class="math inline">\(p\)</span>-values in that interval. This prediction is based on the effect size estimated using the <span class="math inline">\(p\)</span>-values smaller than .00125. If the ratio of observed over expected <span class="math inline">\(p\)</span>-values is larger than 1, referred to as statistic <span class="math inline">\(D\)</span>, then this could indicate data peeking. Statistic <span class="math inline">\(D\)</span> is calculated as
+<span class="math display" id="eq:bump-d">\[\begin{equation}
+D=\frac{p^o_{.00125}}{1-p^o_{.00125}}\times\frac{1-p^e_{.00125}}{p^e_{.00125}}
+\tag{3.1}
+\end{equation}\]</span>
+<p>with <span class="math inline">\(p^o_{.00125}\)</span> and <span class="math inline">\(p^e_{.00125}\)</span> representing the proportion of <span class="math inline">\(p\)</span>-values lower than .00125 observed and expected, respectively. Note that <span class="math inline">\(D\)</span> is an odds ratio.</p>
+<p>For both measures the expected <span class="math inline">\(p\)</span>-value distribution needs to be derived and compared to the observed <span class="math inline">\(p\)</span>-value distribtuion. The expected <span class="math inline">\(p\)</span>-value distribution was derived by minimizing the <span class="math inline">\(\chi^2\)</span>-statistic as a function of mean effect <span class="math inline">\(\delta\)</span> and standard deviation <span class="math inline">\(\tau\)</span>, where it was assumed that the true effect size (Fisher-transformed correlation, <span class="math inline">\(\rho_F\)</span>) is normally distributed with parameters <span class="math inline">\(\delta\)</span> and <span class="math inline">\(\tau\)</span>. We only considered nonnegative values of <span class="math inline">\(\delta\)</span> because we only fitted our model to observed positive effects. See the Supplemental File for the technical details.</p>
+<div id="design-of-simulation-study" class="section level4">
+<h4><span class="header-section-number">3.2.2.1</span> Design of simulation study</h4>
+<p>To examine the potential of the two measures to detect data peeking, their performance was examined on simulated data with and without data peeking. We used a two-group between-subjects design with 24 participants per group (<span class="math inline">\(n_k=24\)</span>), and compared their means using a <span class="math inline">\(t\)</span>-test. The performance of both measures was examined as a function of true effect size <span class="math inline">\(\delta\)</span> (0; 0.2; 0.5; 0.8) and heterogeneity <span class="math inline">\(\tau\)</span> (0; 0.15). In the data peeking conditions, data were simulated as follows: means and variances per group were simulated and a two-sample <span class="math inline">\(t\)</span>-test was conducted. If this <span class="math inline">\(t\)</span>-test was statistically significant (i.e., <span class="math inline">\(p\leq.05\)</span>), the <span class="math inline">\(p\)</span>-value was stored, otherwise the data peeking procedure was started. In this data peeking procedure, one-third of the original sample size was added to the data before conducting another two-sample <span class="math inline">\(t\)</span>-test. This data peeking procedure was repeated until a statistically significant result was obtained or three rounds of additive sampling had taken place (see <a href="https://osf.io/x5z6u">osf.io/x5z6u</a> for functions used in the simulation). The simulations were stopped if 1,000,000 studies with a <span class="math inline">\(p\)</span>-value below .1 were obtained for each combination of <span class="math inline">\(\delta\)</span> and <span class="math inline">\(\tau\)</span>.</p>
+</div>
+</div>
+</div>
+<div id="results-and-discussion" class="section level2">
+<h2><span class="header-section-number">3.3</span> Results and discussion</h2>
+<p>In this section, we report the results of our analyses in the following order for the subsets: all reported <span class="math inline">\(p\)</span>-values (258,050 results), exactly reported <span class="math inline">\(p\)</span>-values (69,050 results), <span class="math inline">\(p\)</span>-values erroneously reported as equal to .05 (2,470 results), all recalculated <span class="math inline">\(p\)</span>-values based on exactly reported test statistics (256,393 results), recalculated <span class="math inline">\(p\)</span>-values based on exactly reported test statistics and exactly reported <span class="math inline">\(p\)</span>-values (68,776 results), and the modeling of <span class="math inline">\(p\)</span>-value distributions based on recalculated <span class="math inline">\(p\)</span>-values 0-.00125 and 0-.05 (54,561 results and 127,509, respectively). These analyses apply the Caliper test to investigate evidence of a possible bump below .05. Subsequently, the results of the two measures are presented based on all recalculated <span class="math inline">\(p\)</span>-values.</p>
+<div id="reported-p-values" class="section level3">
+<h3><span class="header-section-number">3.3.1</span> Reported <span class="math inline">\(p\)</span>-values</h3>
+<p>Figure <a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#fig:bump-fig2">3.2</a> shows the distribution for all reported <span class="math inline">\(p\)</span>-values (i.e., 258,050; white bars) and exactly reported <span class="math inline">\(p\)</span>-values (i.e., 69,050; blue bars). Results of the Caliper test indicate (i) there is a bump just below .05 when considering all reported <span class="math inline">\(p\)</span>-values in bins .03875-.04 versus .04875-.05, <span class="math inline">\(N=45,667, Pr=0.905,p&lt;.001\)</span> and (ii) there is less evidence for a bump when considering only exactly reported <span class="math inline">\(p\)</span>-values, <span class="math inline">\(N=4,900,Pr=0.547,p&lt;.001\)</span>. The difference in bumps between these two subsets can be explained by the amount of <span class="math inline">\(p\)</span>-values that are reported as <span class="math inline">\(&lt;.05\)</span>, which is 86% of all <span class="math inline">\(p\)</span>-values reported as exactly equal to .05 and 14% of all reported <span class="math inline">\(p\)</span>-values.</p>
+<div class="figure" style="text-align: center"><span id="fig:bump-fig2"></span>
+<img src="assets/figures/bump-fig2.png" alt="Distributions of all reported $p$-values (white) and exactly reported $p$-values (blue) across eight psychology journals. Binwidth = .00125." width="472" />
+<p class="caption">
+Figure 3.2: Distributions of all reported <span class="math inline">\(p\)</span>-values (white) and exactly reported <span class="math inline">\(p\)</span>-values (blue) across eight psychology journals. Binwidth = .00125.
+</p>
+</div>
+<p>To investigate whether this observed bump below .05 across exactly reported <span class="math inline">\(p\)</span>-values originates from one or multiple journals, we performed the Caliper test on the exactly reported <span class="math inline">\(p\)</span>-values per journal. Table <a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#tab:report">3.3</a> shows the results for these tests. The results indicate that there is sufficient and reliable evidence for a bump below .05 (i.e., <span class="math inline">\(Pr&gt;.5\)</span>) for the journals DP and JPSP and sufficient evidence, but debatable reliability for JAP, where the results depend on the binwidth. However, the other five journals show no evidence for a bump below .05 in exactly reported <span class="math inline">\(p\)</span>-values at all. In other words, the bump below .05 in exactly reported <span class="math inline">\(p\)</span>-values is mainly driven by the journals DP, JAP, and JPSP.</p>
+<p>The Caliper test results for reported <span class="math inline">\(p\)</span>-values indicate two things: (i) including inexactly reported <span class="math inline">\(p\)</span>-values has a large impact on the <span class="math inline">\(p\)</span>-value distribution and (ii) a bump below .05 is also found when only considering exactly reported <span class="math inline">\(p\)</span>-values. Because inexact reporting of <span class="math inline">\(p\)</span>-values causes excess at certain points of the <span class="math inline">\(p\)</span>-value <span class="citation">(e.g., the significance threshold .05; Ridley et al. <a href="#ref-doi:10.1111/j.1420-9101.2006.01291.x">2007</a>)</span>, we recommend only inspecting exactly reported <span class="math inline">\(p\)</span>-values when examining <span class="math inline">\(p\)</span>-value distributions.</p>
+<div class="table table-striped table-hover table-condensed table-responsive" style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%;  margin-left: auto; margin-right: auto;">
+<table>
+<caption>
+<span id="tab:report">Table 3.3: </span>Caliper test for exactly reported p-values per journal for different binwidths.
+</caption>
+<thead>
+<tr>
+<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+Binwidth
+</div>
+</th>
+<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="4">
+<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+0.00125
+</div>
+</th>
+<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="4">
+<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+0.0025
+</div>
+</th>
+<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="4">
+<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+0.005
+</div>
+</th>
+<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="4">
+<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+0.01
+</div>
+</th>
+</tr>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:left;">
+<span class="math inline">\(x\)</span>
+</th>
+<th style="text-align:left;">
+<span class="math inline">\(N\)</span>
+</th>
+<th style="text-align:left;">
+<span class="math inline">\(Pr\)</span>
+</th>
+<th style="text-align:left;">
+<span class="math inline">\(p\)</span>
+</th>
+<th style="text-align:left;">
+<span class="math inline">\(x\)</span>
+</th>
+<th style="text-align:left;">
+<span class="math inline">\(N\)</span>
+</th>
+<th style="text-align:left;">
+<span class="math inline">\(Pr\)</span>
+</th>
+<th style="text-align:left;">
+<span class="math inline">\(p\)</span>
+</th>
+<th style="text-align:left;">
+<span class="math inline">\(x\)</span>
+</th>
+<th style="text-align:left;">
+<span class="math inline">\(N\)</span>
+</th>
+<th style="text-align:left;">
+<span class="math inline">\(Pr\)</span>
+</th>
+<th style="text-align:left;">
+<span class="math inline">\(p\)</span>
+</th>
+<th style="text-align:left;">
+<span class="math inline">\(x\)</span>
+</th>
+<th style="text-align:left;">
+<span class="math inline">\(N\)</span>
+</th>
+<th style="text-align:left;">
+<span class="math inline">\(Pr\)</span>
+</th>
+<th style="text-align:left;">
+<span class="math inline">\(p\)</span>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+All
+</td>
+<td style="text-align:left;">
+<strong>2,682</strong>
+</td>
+<td style="text-align:left;">
+<strong>4,900</strong>
+</td>
+<td style="text-align:left;">
+<strong>0.547</strong>
+</td>
+<td style="text-align:left;">
+<strong>&lt;.001</strong>
+</td>
+<td style="text-align:left;">
+<strong>2,881</strong>
+</td>
+<td style="text-align:left;">
+<strong>5,309</strong>
+</td>
+<td style="text-align:left;">
+<strong>0.543</strong>
+</td>
+<td style="text-align:left;">
+<strong>&lt;.001</strong>
+</td>
+<td style="text-align:left;">
+<strong>3,308</strong>
+</td>
+<td style="text-align:left;">
+<strong>6,178</strong>
+</td>
+<td style="text-align:left;">
+<strong>0.535</strong>
+</td>
+<td style="text-align:left;">
+<strong>&lt;.001</strong>
+</td>
+<td style="text-align:left;">
+<strong>4,218</strong>
+</td>
+<td style="text-align:left;">
+<strong>8,129</strong>
+</td>
+<td style="text-align:left;">
+<strong>0.519</strong>
+</td>
+<td style="text-align:left;">
+<strong>&lt;.001</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DP
+</td>
+<td style="text-align:left;">
+<strong>319</strong>
+</td>
+<td style="text-align:left;">
+<strong>531</strong>
+</td>
+<td style="text-align:left;">
+<strong>0.601</strong>
+</td>
+<td style="text-align:left;">
+<strong>&lt;.001</strong>
+</td>
+<td style="text-align:left;">
+<strong>336</strong>
+</td>
+<td style="text-align:left;">
+<strong>567</strong>
+</td>
+<td style="text-align:left;">
+<strong>0.593</strong>
+</td>
+<td style="text-align:left;">
+<strong>&lt;.001</strong>
+</td>
+<td style="text-align:left;">
+<strong>383</strong>
+</td>
+<td style="text-align:left;">
+<strong>653</strong>
+</td>
+<td style="text-align:left;">
+<strong>0.587</strong>
+</td>
+<td style="text-align:left;">
+<strong>&lt;.001</strong>
+</td>
+<td style="text-align:left;">
+<strong>464</strong>
+</td>
+<td style="text-align:left;">
+<strong>843</strong>
+</td>
+<td style="text-align:left;">
+<strong>0.55</strong>
+</td>
+<td style="text-align:left;">
+<strong>0.002</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+FP
+</td>
+<td style="text-align:left;">
+96
+</td>
+<td style="text-align:left;">
+193
+</td>
+<td style="text-align:left;">
+0.497
+</td>
+<td style="text-align:left;">
+0.557
+</td>
+<td style="text-align:left;">
+105
+</td>
+<td style="text-align:left;">
+227
+</td>
+<td style="text-align:left;">
+0.463
+</td>
+<td style="text-align:left;">
+0.884
+</td>
+<td style="text-align:left;">
+141
+</td>
+<td style="text-align:left;">
+304
+</td>
+<td style="text-align:left;">
+0.464
+</td>
+<td style="text-align:left;">
+0.906
+</td>
+<td style="text-align:left;">
+215
+</td>
+<td style="text-align:left;">
+458
+</td>
+<td style="text-align:left;">
+0.469
+</td>
+<td style="text-align:left;">
+0.912
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+JAP
+</td>
+<td style="text-align:left;">
+<strong>78</strong>
+</td>
+<td style="text-align:left;">
+<strong>131</strong>
+</td>
+<td style="text-align:left;">
+<strong>0.595</strong>
+</td>
+<td style="text-align:left;">
+<strong>0.018</strong>
+</td>
+<td style="text-align:left;">
+<strong>82</strong>
+</td>
+<td style="text-align:left;">
+<strong>137</strong>
+</td>
+<td style="text-align:left;">
+<strong>0.599</strong>
+</td>
+<td style="text-align:left;">
+<strong>0.013</strong>
+</td>
+<td style="text-align:left;">
+85
+</td>
+<td style="text-align:left;">
+154
+</td>
+<td style="text-align:left;">
+0.552
+</td>
+<td style="text-align:left;">
+0.113
+</td>
+<td style="text-align:left;">
+101
+</td>
+<td style="text-align:left;">
+183
+</td>
+<td style="text-align:left;">
+0.552
+</td>
+<td style="text-align:left;">
+0.092
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+JCCP
+</td>
+<td style="text-align:left;">
+246
+</td>
+<td style="text-align:left;">
+517
+</td>
+<td style="text-align:left;">
+0.476
+</td>
+<td style="text-align:left;">
+0.874
+</td>
+<td style="text-align:left;">
+267
+</td>
+<td style="text-align:left;">
+562
+</td>
+<td style="text-align:left;">
+0.475
+</td>
+<td style="text-align:left;">
+0.889
+</td>
+<td style="text-align:left;">
+308
+</td>
+<td style="text-align:left;">
+641
+</td>
+<td style="text-align:left;">
+0.48
+</td>
+<td style="text-align:left;">
+0.848
+</td>
+<td style="text-align:left;">
+395
+</td>
+<td style="text-align:left;">
+823
+</td>
+<td style="text-align:left;">
+0.48
+</td>
+<td style="text-align:left;">
+0.882
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+JEPG
+</td>
+<td style="text-align:left;">
+147
+</td>
+<td style="text-align:left;">
+285
+</td>
+<td style="text-align:left;">
+0.516
+</td>
+<td style="text-align:left;">
+0.318
+</td>
+<td style="text-align:left;">
+159
+</td>
+<td style="text-align:left;">
+310
+</td>
+<td style="text-align:left;">
+0.513
+</td>
+<td style="text-align:left;">
+0.346
+</td>
+<td style="text-align:left;">
+195
+</td>
+<td style="text-align:left;">
+375
+</td>
+<td style="text-align:left;">
+0.52
+</td>
+<td style="text-align:left;">
+0.235
+</td>
+<td style="text-align:left;">
+258
+</td>
+<td style="text-align:left;">
+509
+</td>
+<td style="text-align:left;">
+0.507
+</td>
+<td style="text-align:left;">
+0.395
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+JPSP
+</td>
+<td style="text-align:left;">
+<strong>1,252</strong>
+</td>
+<td style="text-align:left;">
+<strong>2,097</strong>
+</td>
+<td style="text-align:left;">
+<strong>0.597</strong>
+</td>
+<td style="text-align:left;">
+<strong>&lt;.001</strong>
+</td>
+<td style="text-align:left;">
+<strong>1310</strong>
+</td>
+<td style="text-align:left;">
+<strong>2,207</strong>
+</td>
+<td style="text-align:left;">
+<strong>0.594</strong>
+</td>
+<td style="text-align:left;">
+<strong>&lt;.001</strong>
+</td>
+<td style="text-align:left;">
+<strong>1,408</strong>
+</td>
+<td style="text-align:left;">
+<strong>2,399</strong>
+</td>
+<td style="text-align:left;">
+<strong>0.587</strong>
+</td>
+<td style="text-align:left;">
+<strong>&lt;.001</strong>
+</td>
+<td style="text-align:left;">
+<strong>1,623</strong>
+</td>
+<td style="text-align:left;">
+<strong>2,869</strong>
+</td>
+<td style="text-align:left;">
+<strong>0.566</strong>
+</td>
+<td style="text-align:left;">
+<strong>&lt;.001</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+PLOS
+</td>
+<td style="text-align:left;">
+307
+</td>
+<td style="text-align:left;">
+649
+</td>
+<td style="text-align:left;">
+0.473
+</td>
+<td style="text-align:left;">
+0.921
+</td>
+<td style="text-align:left;">
+366
+</td>
+<td style="text-align:left;">
+760
+</td>
+<td style="text-align:left;">
+0.482
+</td>
+<td style="text-align:left;">
+0.854
+</td>
+<td style="text-align:left;">
+489
+</td>
+<td style="text-align:left;">
+1000
+</td>
+<td style="text-align:left;">
+0.489
+</td>
+<td style="text-align:left;">
+0.766
+</td>
+<td style="text-align:left;">
+744
+</td>
+<td style="text-align:left;">
+1558
+</td>
+<td style="text-align:left;">
+0.478
+</td>
+<td style="text-align:left;">
+0.964
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+PS
+</td>
+<td style="text-align:left;">
+237
+</td>
+<td style="text-align:left;">
+497
+</td>
+<td style="text-align:left;">
+0.477
+</td>
+<td style="text-align:left;">
+0.859
+</td>
+<td style="text-align:left;">
+256
+</td>
+<td style="text-align:left;">
+539
+</td>
+<td style="text-align:left;">
+0.475
+</td>
+<td style="text-align:left;">
+0.886
+</td>
+<td style="text-align:left;">
+299
+</td>
+<td style="text-align:left;">
+652
+</td>
+<td style="text-align:left;">
+0.459
+</td>
+<td style="text-align:left;">
+0.984
+</td>
+<td style="text-align:left;">
+418
+</td>
+<td style="text-align:left;">
+886
+</td>
+<td style="text-align:left;">
+0.472
+</td>
+<td style="text-align:left;">
+0.957
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Considering only exactly reported <span class="math inline">\(p\)</span>-values, there is sufficient evidence for a bump below .05 in the journals DP, JAP, and JPSP, but not in the remaining five journals (i.e., FP, JCCP, JEPG, PLOS, PS). A tentative explanation of the bump of <span class="math inline">\(p\)</span>-values just below .05 for DP, JAP, and JPSP may be that QRPs that aim to obtain barely significant results are more frequent in the fields of these journals. However, another explanation may be that scientists in these fields are more prone to exactly report <span class="math inline">\(p\)</span>-values just below .05 (e.g., to emphasize they are really smaller than .05) than <span class="math inline">\(p\)</span>-values considerably smaller than .05.</p>
+</div>
+<div id="recalculated-p-value-distributions" class="section level3">
+<h3><span class="header-section-number">3.3.2</span> Recalculated <span class="math inline">\(p\)</span>-value distributions</h3>
+<div id="recalculated-when-reported-p.05" class="section level4">
+<h4><span class="header-section-number">3.3.2.1</span> Recalculated when reported <span class="math inline">\(p=.05\)</span></h4>
+<p>Results for reported <span class="math inline">\(p\)</span>-values remain inconclusive with regard to the distribution of <span class="math inline">\(p\)</span>-values, due to potential rounding or errors <span class="citation">(Bakker and Wicherts <a href="#ref-doi:10.3758/s13428-011-0089-5">2011</a>; Nuijten, Hartgerink, et al. <a href="#ref-doi:10.3758/s13428-015-0664-2">2015</a>; Veldkamp et al. <a href="#ref-doi:10.1371/journal.pone.0114876">2014</a>)</span>. Rounding and errors could result in an over-representation of <span class="math inline">\(p\)</span>-values <span class="math inline">\(\leq.05\)</span>. To investigate the plausibility of this notion, we inspected recalculated <span class="math inline">\(p\)</span>-values when <span class="math inline">\(p=.05\)</span> was reported (i.e., 2,470 values). Figure <a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#fig:bump-fig3">3.3</a> indicates that <span class="math inline">\(p\)</span>-values that were reported as .05 show remarkable spread when recalculated, which indicates that the reported <span class="math inline">\(p\)</span>-value might frequently be rounded or incorrect, assuming that the reported test statistics are correct. More specifically, 67.45% of <span class="math inline">\(p\)</span>-values reported as .05 were larger than .05 when recalculated and 32.55% were smaller than .05. This percentage does not greatly vary across journals (range 58.8%-73.4% compared to 67.45%). Taking into account rounding possibilities (i.e., widening the range of correct <span class="math inline">\(p\)</span>-values to .045-.055), these percentages become 13.81% and 7.85%, respectively, meaning incorrect reporting of at least 21.66% of the <span class="math inline">\(p\)</span>-values that were reported as .05. In comparison, <span class="math inline">\(p\)</span>-values reported as <span class="math inline">\(p=.04, p=.03,\)</span> or <span class="math inline">\(p=.02\)</span> show smaller proportions of downward rounding when compared to <span class="math inline">\(p=.05\)</span> (i.e., 53.33%, 54.32%, 50.38%, respectively compared to 67.45%). When taking into account potential rounding errors in the initial reporting of <span class="math inline">\(p\)</span>-values, the discrepancy remains but becomes smaller (i.e., 11.74%, 9.57%, 8.03%, respectively compared to 13.81%). These results provide direct evidence for the QRP “incorrect rounding of <span class="math inline">\(p\)</span>-value” <span class="citation">(John, Loewenstein, and Prelec <a href="#ref-doi:10.1177/0956797611430953">2012</a>)</span>, which contributes to a bump or monotonic excess just below .05.</p>
+<div class="figure" style="text-align: center"><span id="fig:bump-fig3"></span>
+<img src="assets/figures/bump-fig3.png" alt="Distribution of recalculated $p$-values where the $p$-value is reported as $p=.05$. 9.7 percent of the results fall outside the range of the plot, with 3.6 percent at the left tail and 6.1 percent at the right tail. Binwidth = .00125" width="500" />
+<p class="caption">
+Figure 3.3: Distribution of recalculated <span class="math inline">\(p\)</span>-values where the <span class="math inline">\(p\)</span>-value is reported as <span class="math inline">\(p=.05\)</span>. 9.7 percent of the results fall outside the range of the plot, with 3.6 percent at the left tail and 6.1 percent at the right tail. Binwidth = .00125
+</p>
+</div>
+<p>The discrepancy between recalculated <span class="math inline">\(p\)</span>-values and <span class="math inline">\(p\)</span>-values reported as equal to .05 highlights the importance of using recalculated <span class="math inline">\(p\)</span>-values when underlying effect distributions are estimated as in <span class="math inline">\(p\)</span>-uniform and <span class="math inline">\(p\)</span>-curve <span class="citation">(Van Assen, Van Aert, and Wicherts <a href="#ref-doi:10.1037/met0000025">2015</a>; Simonsohn, Nelson, and Simmons <a href="#ref-doi:10.1037/a0033242">2014</a>)</span>. When interested in inspecting the <span class="math inline">\(p\)</span>-value distribution, reported <span class="math inline">\(p\)</span>-values can substantially distort the <span class="math inline">\(p\)</span>-value distribution, such that results become biased if we rely solely on the reported <span class="math inline">\(p\)</span>-value. Such a discrepancy indicates potential rounding of <span class="math inline">\(p\)</span>-values, erroneous reporting of <span class="math inline">\(p\)</span>-values, or strategic reporting of <span class="math inline">\(p\)</span>-values. The <span class="math inline">\(p\)</span>-value distortions can be (partially) corrected for by recalculating <span class="math inline">\(p\)</span>-values based on reported test statistics. Additionally, potential distortions to the distribution at the third decimal place due to the rounding of <span class="math inline">\(p\)</span>-values to the second decimal <span class="citation">(Hartgerink <a href="#ref-doi:10.7717/peerj.3068">2017</a><a href="#ref-doi:10.7717/peerj.3068">b</a>)</span> is also solved by recalculating <span class="math inline">\(p\)</span>-values. We continue with recalculated <span class="math inline">\(p\)</span>-values in our following analyses.</p>
+</div>
+<div id="recalculated-p-values" class="section level4">
+<h4><span class="header-section-number">3.3.2.2</span> Recalculated <span class="math inline">\(p\)</span>-values</h4>
+<p>Figure <a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#fig:bump-fig4">3.4</a> shows the distribution of all recalculated <span class="math inline">\(p\)</span>-values (i.e., set of 256,393 results) and of recalculated <span class="math inline">\(p\)</span>-values whenever the reported <span class="math inline">\(p\)</span>-value is exact (i.e., set of 68,776 results). The recalculated <span class="math inline">\(p\)</span>-value distribution is markedly smoother than the reported <span class="math inline">\(p\)</span>-value distribution (see Figure <a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#fig:bump-fig2">3.2</a>) due to the absence of rounded <span class="math inline">\(p\)</span>-values.</p>
+<div class="figure" style="text-align: center"><span id="fig:bump-fig4"></span>
+<img src="assets/figures/bump-fig4.png" alt="Recalculated $p$-values for exactly reported test statistics (white bars), and recalculated $p$-values for exactly reported test statistics where $p$-values are also exactly reported (blue bars). Binwidth = .00125" width="60%" />
+<p class="caption">
+Figure 3.4: Recalculated <span class="math inline">\(p\)</span>-values for exactly reported test statistics (white bars), and recalculated <span class="math inline">\(p\)</span>-values for exactly reported test statistics where <span class="math inline">\(p\)</span>-values are also exactly reported (blue bars). Binwidth = .00125
+</p>
+</div>
+<p>After inspecting all recalculated <span class="math inline">\(p\)</span>-values, we did not observe a bump just below .05, <span class="math inline">\(N=2,808,Pr=.5,p=0.508\)</span>. When we analyzed the recalculated <span class="math inline">\(p\)</span>-values per journal (Table <a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#tab:recalculated1">3.4</a>), there is no evidence for a bump below .05 in any of the journals. Additionally, we inspected all recalculated <span class="math inline">\(p\)</span>-values that resulted from exactly reported <span class="math inline">\(p\)</span>-values. For this subset we did observe a bump below .05, <span class="math inline">\(N=809,Pr=0.564,p=0.000165\)</span> (blue histogram in Figure <a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#fig:bump-fig4">3.4</a>) for the smallest binwidth (i.e., .00125), but this effect was not robust across larger binwidths, as shown in Table <a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#tab:recalculated2">3.5</a>. This table also specifies the results for a bump below .05 per journal, with sufficient evidence of a bump only in JPSP. This finding, however, was only observed for binwidths .00125 and .0025, not for larger binwidths. Considering the results from the recalculated <span class="math inline">\(p\)</span>-values, there is sparse evidence for the presence of a bump below .05, opposed to previously claimed widespread evidence <span class="citation">(Masicampo and Lalande <a href="#ref-doi:10.1080/17470218.2012.711335">2012</a>; Leggett et al. <a href="#ref-doi:10.1080/17470218.2013.863371">2013</a>; Head et al. <a href="#ref-doi:10.1371/journal.pbio.1002106">2015</a><a href="#ref-doi:10.1371/journal.pbio.1002106">b</a>)</span>. Moreover, interpretation of the bump for JPSP is not straightforward; it may also be that authors of JPSP are more prone to report exact test statistics if the <span class="math inline">\(p\)</span>-value is just below .05 than whenever <span class="math inline">\(p\)</span>-values are considerably smaller than .05.</p>
+<div class="table table-striped table-hover table-condensed table-responsive" style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%;  margin-left: auto; margin-right: auto;">
+<table>
+<caption>
+<span id="tab:recalculated1">Table 3.4: </span>Caliper test for exactly recalculated p-values per journal for different binwidths.
+</caption>
+<thead>
+<tr>
+<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+Binwidth
+</div>
+</th>
+<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="4">
+<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+0.00125
+</div>
+</th>
+<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="4">
+<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+0.0025
+</div>
+</th>
+<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="4">
+<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+0.005
+</div>
+</th>
+<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="4">
+<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+0.01
+</div>
+</th>
+</tr>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:left;">
+<span class="math inline">\(x\)</span>
+</th>
+<th style="text-align:left;">
+<span class="math inline">\(N\)</span>
+</th>
+<th style="text-align:right;">
+<span class="math inline">\(Pr\)</span>
+</th>
+<th style="text-align:right;">
+<span class="math inline">\(p\)</span>
+</th>
+<th style="text-align:left;">
+<span class="math inline">\(x\)</span>
+</th>
+<th style="text-align:left;">
+<span class="math inline">\(N\)</span>
+</th>
+<th style="text-align:right;">
+<span class="math inline">\(Pr\)</span>
+</th>
+<th style="text-align:right;">
+<span class="math inline">\(p\)</span>
+</th>
+<th style="text-align:left;">
+<span class="math inline">\(x\)</span>
+</th>
+<th style="text-align:left;">
+<span class="math inline">\(N\)</span>
+</th>
+<th style="text-align:right;">
+<span class="math inline">\(Pr\)</span>
+</th>
+<th style="text-align:right;">
+<span class="math inline">\(p\)</span>
+</th>
+<th style="text-align:left;">
+<span class="math inline">\(x\)</span>
+</th>
+<th style="text-align:left;">
+<span class="math inline">\(N\)</span>
+</th>
+<th style="text-align:right;">
+<span class="math inline">\(Pr\)</span>
+</th>
+<th style="text-align:left;">
+<span class="math inline">\(p\)</span>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+All
+</td>
+<td style="text-align:left;">
+1,404
+</td>
+<td style="text-align:left;">
+2,808
+</td>
+<td style="text-align:right;">
+0.500
+</td>
+<td style="text-align:right;">
+0.508
+</td>
+<td style="text-align:left;">
+2,808
+</td>
+<td style="text-align:left;">
+5,761
+</td>
+<td style="text-align:right;">
+0.487
+</td>
+<td style="text-align:right;">
+0.973
+</td>
+<td style="text-align:left;">
+5,761
+</td>
+<td style="text-align:left;">
+11,824
+</td>
+<td style="text-align:right;">
+0.487
+</td>
+<td style="text-align:right;">
+0.997
+</td>
+<td style="text-align:left;">
+11,824
+</td>
+<td style="text-align:left;">
+25,142
+</td>
+<td style="text-align:right;">
+0.470
+</td>
+<td style="text-align:left;">
+&gt;.999
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DP
+</td>
+<td style="text-align:left;">
+184
+</td>
+<td style="text-align:left;">
+382
+</td>
+<td style="text-align:right;">
+0.482
+</td>
+<td style="text-align:right;">
+0.779
+</td>
+<td style="text-align:left;">
+382
+</td>
+<td style="text-align:left;">
+829
+</td>
+<td style="text-align:right;">
+0.461
+</td>
+<td style="text-align:right;">
+0.989
+</td>
+<td style="text-align:left;">
+829
+</td>
+<td style="text-align:left;">
+1,710
+</td>
+<td style="text-align:right;">
+0.485
+</td>
+<td style="text-align:right;">
+0.900
+</td>
+<td style="text-align:left;">
+1,710
+</td>
+<td style="text-align:left;">
+3,579
+</td>
+<td style="text-align:right;">
+0.478
+</td>
+<td style="text-align:left;">
+0.996
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+FP
+</td>
+<td style="text-align:left;">
+30
+</td>
+<td style="text-align:left;">
+69
+</td>
+<td style="text-align:right;">
+0.435
+</td>
+<td style="text-align:right;">
+0.886
+</td>
+<td style="text-align:left;">
+69
+</td>
+<td style="text-align:left;">
+172
+</td>
+<td style="text-align:right;">
+0.401
+</td>
+<td style="text-align:right;">
+0.996
+</td>
+<td style="text-align:left;">
+172
+</td>
+<td style="text-align:left;">
+376
+</td>
+<td style="text-align:right;">
+0.457
+</td>
+<td style="text-align:right;">
+0.956
+</td>
+<td style="text-align:left;">
+376
+</td>
+<td style="text-align:left;">
+799
+</td>
+<td style="text-align:right;">
+0.471
+</td>
+<td style="text-align:left;">
+0.955
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+JAP
+</td>
+<td style="text-align:left;">
+73
+</td>
+<td style="text-align:left;">
+145
+</td>
+<td style="text-align:right;">
+0.503
+</td>
+<td style="text-align:right;">
+0.500
+</td>
+<td style="text-align:left;">
+145
+</td>
+<td style="text-align:left;">
+270
+</td>
+<td style="text-align:right;">
+0.537
+</td>
+<td style="text-align:right;">
+0.124
+</td>
+<td style="text-align:left;">
+270
+</td>
+<td style="text-align:left;">
+556
+</td>
+<td style="text-align:right;">
+0.486
+</td>
+<td style="text-align:right;">
+0.765
+</td>
+<td style="text-align:left;">
+556
+</td>
+<td style="text-align:left;">
+1,168
+</td>
+<td style="text-align:right;">
+0.476
+</td>
+<td style="text-align:left;">
+0.952
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+JCCP
+</td>
+<td style="text-align:left;">
+160
+</td>
+<td style="text-align:left;">
+308
+</td>
+<td style="text-align:right;">
+0.519
+</td>
+<td style="text-align:right;">
+0.265
+</td>
+<td style="text-align:left;">
+308
+</td>
+<td style="text-align:left;">
+633
+</td>
+<td style="text-align:right;">
+0.487
+</td>
+<td style="text-align:right;">
+0.763
+</td>
+<td style="text-align:left;">
+633
+</td>
+<td style="text-align:left;">
+1,267
+</td>
+<td style="text-align:right;">
+0.500
+</td>
+<td style="text-align:right;">
+0.522
+</td>
+<td style="text-align:left;">
+1,267
+</td>
+<td style="text-align:left;">
+2,706
+</td>
+<td style="text-align:right;">
+0.468
+</td>
+<td style="text-align:left;">
+&gt;.999
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+JEPG
+</td>
+<td style="text-align:left;">
+81
+</td>
+<td style="text-align:left;">
+164
+</td>
+<td style="text-align:right;">
+0.494
+</td>
+<td style="text-align:right;">
+0.593
+</td>
+<td style="text-align:left;">
+164
+</td>
+<td style="text-align:left;">
+332
+</td>
+<td style="text-align:right;">
+0.494
+</td>
+<td style="text-align:right;">
+0.608
+</td>
+<td style="text-align:left;">
+332
+</td>
+<td style="text-align:left;">
+683
+</td>
+<td style="text-align:right;">
+0.486
+</td>
+<td style="text-align:right;">
+0.778
+</td>
+<td style="text-align:left;">
+683
+</td>
+<td style="text-align:left;">
+1,535
+</td>
+<td style="text-align:right;">
+0.445
+</td>
+<td style="text-align:left;">
+&gt;.999
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+JPSP
+</td>
+<td style="text-align:left;">
+640
+</td>
+<td style="text-align:left;">
+1,268
+</td>
+<td style="text-align:right;">
+0.505
+</td>
+<td style="text-align:right;">
+0.379
+</td>
+<td style="text-align:left;">
+1,268
+</td>
+<td style="text-align:left;">
+2,557
+</td>
+<td style="text-align:right;">
+0.496
+</td>
+<td style="text-align:right;">
+0.668
+</td>
+<td style="text-align:left;">
+2,557
+</td>
+<td style="text-align:left;">
+5,174
+</td>
+<td style="text-align:right;">
+0.494
+</td>
+<td style="text-align:right;">
+0.802
+</td>
+<td style="text-align:left;">
+5,174
+</td>
+<td style="text-align:left;">
+10,976
+</td>
+<td style="text-align:right;">
+0.471
+</td>
+<td style="text-align:left;">
+&gt;.999
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+PLOS
+</td>
+<td style="text-align:left;">
+125
+</td>
+<td style="text-align:left;">
+260
+</td>
+<td style="text-align:right;">
+0.481
+</td>
+<td style="text-align:right;">
+0.752
+</td>
+<td style="text-align:left;">
+260
+</td>
+<td style="text-align:left;">
+541
+</td>
+<td style="text-align:right;">
+0.481
+</td>
+<td style="text-align:right;">
+0.828
+</td>
+<td style="text-align:left;">
+541
+</td>
+<td style="text-align:left;">
+1,170
+</td>
+<td style="text-align:right;">
+0.462
+</td>
+<td style="text-align:right;">
+0.995
+</td>
+<td style="text-align:left;">
+1,170
+</td>
+<td style="text-align:left;">
+2,544
+</td>
+<td style="text-align:right;">
+0.460
+</td>
+<td style="text-align:left;">
+&gt;.999
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+PS
+</td>
+<td style="text-align:left;">
+111
+</td>
+<td style="text-align:left;">
+212
+</td>
+<td style="text-align:right;">
+0.524
+</td>
+<td style="text-align:right;">
+0.268
+</td>
+<td style="text-align:left;">
+212
+</td>
+<td style="text-align:left;">
+427
+</td>
+<td style="text-align:right;">
+0.496
+</td>
+<td style="text-align:right;">
+0.577
+</td>
+<td style="text-align:left;">
+427
+</td>
+<td style="text-align:left;">
+888
+</td>
+<td style="text-align:right;">
+0.481
+</td>
+<td style="text-align:right;">
+0.880
+</td>
+<td style="text-align:left;">
+888
+</td>
+<td style="text-align:left;">
+1,835
+</td>
+<td style="text-align:right;">
+0.484
+</td>
+<td style="text-align:left;">
+0.919
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="table table-striped table-hover table-condensed table-responsive" style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%;  margin-left: auto; margin-right: auto;">
+<table>
+<caption>
+<span id="tab:recalculated2">Table 3.5: </span>Caliper tests for exactly recalculated and exactly reported p-values per journal, including alternative binwidths.
+</caption>
+<thead>
+<tr>
+<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="1">
+<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+Binwidth
+</div>
+</th>
+<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="4">
+<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+0.00125
+</div>
+</th>
+<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="4">
+<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+0.0025
+</div>
+</th>
+<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="4">
+<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+0.005
+</div>
+</th>
+<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="4">
+<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+0.01
+</div>
+</th>
+</tr>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:left;">
+<span class="math inline">\(x\)</span>
+</th>
+<th style="text-align:left;">
+<span class="math inline">\(N\)</span>
+</th>
+<th style="text-align:left;">
+<span class="math inline">\(Pr\)</span>
+</th>
+<th style="text-align:left;">
+<span class="math inline">\(p\)</span>
+</th>
+<th style="text-align:left;">
+<span class="math inline">\(x\)</span>
+</th>
+<th style="text-align:left;">
+<span class="math inline">\(N\)</span>
+</th>
+<th style="text-align:left;">
+<span class="math inline">\(Pr\)</span>
+</th>
+<th style="text-align:left;">
+<span class="math inline">\(p\)</span>
+</th>
+<th style="text-align:left;">
+<span class="math inline">\(x\)</span>
+</th>
+<th style="text-align:left;">
+<span class="math inline">\(N\)</span>
+</th>
+<th style="text-align:right;">
+<span class="math inline">\(Pr\)</span>
+</th>
+<th style="text-align:right;">
+<span class="math inline">\(p\)</span>
+</th>
+<th style="text-align:left;">
+<span class="math inline">\(x\)</span>
+</th>
+<th style="text-align:left;">
+<span class="math inline">\(N\)</span>
+</th>
+<th style="text-align:right;">
+<span class="math inline">\(Pr\)</span>
+</th>
+<th style="text-align:left;">
+<span class="math inline">\(p\)</span>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+All
+</td>
+<td style="text-align:left;">
+<strong>456</strong>
+</td>
+<td style="text-align:left;">
+<strong>809</strong>
+</td>
+<td style="text-align:left;">
+<strong>0.564</strong>
+</td>
+<td style="text-align:left;">
+<strong>&lt;.001</strong>
+</td>
+<td style="text-align:left;">
+809
+</td>
+<td style="text-align:left;">
+1,617
+</td>
+<td style="text-align:left;">
+0.5
+</td>
+<td style="text-align:left;">
+0.5
+</td>
+<td style="text-align:left;">
+1,617
+</td>
+<td style="text-align:left;">
+3,403
+</td>
+<td style="text-align:right;">
+0.475
+</td>
+<td style="text-align:right;">
+0.998
+</td>
+<td style="text-align:left;">
+3,403
+</td>
+<td style="text-align:left;">
+7,402
+</td>
+<td style="text-align:right;">
+0.460
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DP
+</td>
+<td style="text-align:left;">
+46
+</td>
+<td style="text-align:left;">
+87
+</td>
+<td style="text-align:left;">
+0.529
+</td>
+<td style="text-align:left;">
+0.334
+</td>
+<td style="text-align:left;">
+87
+</td>
+<td style="text-align:left;">
+185
+</td>
+<td style="text-align:left;">
+0.47
+</td>
+<td style="text-align:left;">
+0.811
+</td>
+<td style="text-align:left;">
+185
+</td>
+<td style="text-align:left;">
+358
+</td>
+<td style="text-align:right;">
+0.517
+</td>
+<td style="text-align:right;">
+0.281
+</td>
+<td style="text-align:left;">
+358
+</td>
+<td style="text-align:left;">
+756
+</td>
+<td style="text-align:right;">
+0.474
+</td>
+<td style="text-align:left;">
+0.932
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+FP
+</td>
+<td style="text-align:left;">
+15
+</td>
+<td style="text-align:left;">
+27
+</td>
+<td style="text-align:left;">
+0.556
+</td>
+<td style="text-align:left;">
+0.351
+</td>
+<td style="text-align:left;">
+27
+</td>
+<td style="text-align:left;">
+87
+</td>
+<td style="text-align:left;">
+0.31
+</td>
+<td style="text-align:left;">
+&gt;.999
+</td>
+<td style="text-align:left;">
+87
+</td>
+<td style="text-align:left;">
+192
+</td>
+<td style="text-align:right;">
+0.453
+</td>
+<td style="text-align:right;">
+0.915
+</td>
+<td style="text-align:left;">
+192
+</td>
+<td style="text-align:left;">
+437
+</td>
+<td style="text-align:right;">
+0.439
+</td>
+<td style="text-align:left;">
+0.995
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+JAP
+</td>
+<td style="text-align:left;">
+8
+</td>
+<td style="text-align:left;">
+20
+</td>
+<td style="text-align:left;">
+0.4
+</td>
+<td style="text-align:left;">
+0.868
+</td>
+<td style="text-align:left;">
+<strong>20</strong>
+</td>
+<td style="text-align:left;">
+<strong>29</strong>
+</td>
+<td style="text-align:left;">
+<strong>0.69</strong>
+</td>
+<td style="text-align:left;">
+<strong>0.031</strong>
+</td>
+<td style="text-align:left;">
+29
+</td>
+<td style="text-align:left;">
+65
+</td>
+<td style="text-align:right;">
+0.446
+</td>
+<td style="text-align:right;">
+0.839
+</td>
+<td style="text-align:left;">
+65
+</td>
+<td style="text-align:left;">
+141
+</td>
+<td style="text-align:right;">
+0.461
+</td>
+<td style="text-align:left;">
+0.844
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+JCCP
+</td>
+<td style="text-align:left;">
+43
+</td>
+<td style="text-align:left;">
+78
+</td>
+<td style="text-align:left;">
+0.551
+</td>
+<td style="text-align:left;">
+0.214
+</td>
+<td style="text-align:left;">
+78
+</td>
+<td style="text-align:left;">
+161
+</td>
+<td style="text-align:left;">
+0.484
+</td>
+<td style="text-align:left;">
+0.682
+</td>
+<td style="text-align:left;">
+161
+</td>
+<td style="text-align:left;">
+364
+</td>
+<td style="text-align:right;">
+0.442
+</td>
+<td style="text-align:right;">
+0.988
+</td>
+<td style="text-align:left;">
+364
+</td>
+<td style="text-align:left;">
+780
+</td>
+<td style="text-align:right;">
+0.467
+</td>
+<td style="text-align:left;">
+0.971
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+JEPG
+</td>
+<td style="text-align:left;">
+27
+</td>
+<td style="text-align:left;">
+50
+</td>
+<td style="text-align:left;">
+0.54
+</td>
+<td style="text-align:left;">
+0.336
+</td>
+<td style="text-align:left;">
+50
+</td>
+<td style="text-align:left;">
+98
+</td>
+<td style="text-align:left;">
+0.51
+</td>
+<td style="text-align:left;">
+0.46
+</td>
+<td style="text-align:left;">
+98
+</td>
+<td style="text-align:left;">
+209
+</td>
+<td style="text-align:right;">
+0.469
+</td>
+<td style="text-align:right;">
+0.834
+</td>
+<td style="text-align:left;">
+209
+</td>
+<td style="text-align:left;">
+479
+</td>
+<td style="text-align:right;">
+0.436
+</td>
+<td style="text-align:left;">
+0.998
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+JPSP
+</td>
+<td style="text-align:left;">
+<strong>184</strong>
+</td>
+<td style="text-align:left;">
+<strong>305</strong>
+</td>
+<td style="text-align:left;">
+<strong>0.603</strong>
+</td>
+<td style="text-align:left;">
+<strong>&lt;.001</strong>
+</td>
+<td style="text-align:left;">
+<strong>305</strong>
+</td>
+<td style="text-align:left;">
+<strong>547</strong>
+</td>
+<td style="text-align:left;">
+<strong>0.558</strong>
+</td>
+<td style="text-align:left;">
+<strong>0.004</strong>
+</td>
+<td style="text-align:left;">
+547
+</td>
+<td style="text-align:left;">
+1,117
+</td>
+<td style="text-align:right;">
+0.490
+</td>
+<td style="text-align:right;">
+0.764
+</td>
+<td style="text-align:left;">
+1,117
+</td>
+<td style="text-align:left;">
+2,451
+</td>
+<td style="text-align:right;">
+0.456
+</td>
+<td style="text-align:left;">
+&gt;.999
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+PLOS
+</td>
+<td style="text-align:left;">
+76
+</td>
+<td style="text-align:left;">
+149
+</td>
+<td style="text-align:left;">
+0.51
+</td>
+<td style="text-align:left;">
+0.435
+</td>
+<td style="text-align:left;">
+149
+</td>
+<td style="text-align:left;">
+323
+</td>
+<td style="text-align:left;">
+0.461
+</td>
+<td style="text-align:left;">
+0.926
+</td>
+<td style="text-align:left;">
+323
+</td>
+<td style="text-align:left;">
+698
+</td>
+<td style="text-align:right;">
+0.463
+</td>
+<td style="text-align:right;">
+0.978
+</td>
+<td style="text-align:left;">
+698
+</td>
+<td style="text-align:left;">
+1,470
+</td>
+<td style="text-align:right;">
+0.475
+</td>
+<td style="text-align:left;">
+0.975
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+PS
+</td>
+<td style="text-align:left;">
+57
+</td>
+<td style="text-align:left;">
+93
+</td>
+<td style="text-align:left;">
+0.613
+</td>
+<td style="text-align:left;">
+0.019
+</td>
+<td style="text-align:left;">
+93
+</td>
+<td style="text-align:left;">
+187
+</td>
+<td style="text-align:left;">
+0.497
+</td>
+<td style="text-align:left;">
+0.558
+</td>
+<td style="text-align:left;">
+187
+</td>
+<td style="text-align:left;">
+400
+</td>
+<td style="text-align:right;">
+0.468
+</td>
+<td style="text-align:right;">
+0.912
+</td>
+<td style="text-align:left;">
+400
+</td>
+<td style="text-align:left;">
+888
+</td>
+<td style="text-align:right;">
+0.450
+</td>
+<td style="text-align:left;">
+0.999
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="excessive-significance-over-time" class="section level3">
+<h3><span class="header-section-number">3.3.3</span> Excessive significance over time</h3>
+<p>The regression results of the development of a bump below .05 over time, based on recalculated <span class="math inline">\(p\)</span>-values, are shown in Table <a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#tab:excess">3.6</a>. Results indicate that there is no evidence for a linear relation between publication year and the degree to which a bump of <span class="math inline">\(p\)</span>-values below .05 is present across the different binwidths (only results for binwidth .00125 are presented; results for the other binwidths available at <a href="https://osf.io/96kbc/">osf.io/96kbc/</a>). Conversely, for PLOS there is some evidence for a minor increase of a bump throughout the years (<span class="math inline">\(b=.072,p=.039\)</span>), but this result is not robust for binwidths .0025, .005, and .01. These results contrast with <span class="citation">Leggett et al. (<a href="#ref-doi:10.1080/17470218.2013.863371">2013</a>)</span>, who found a linear relation between time and the degree to which a bump occurred for JEPG and JPSP. Hence, based on the period 1985-2013, our findings contrast with the increase of a bump below .05 for the period 1965-2005 in psychology <span class="citation">(Leggett et al. <a href="#ref-doi:10.1080/17470218.2013.863371">2013</a>)</span>. In other words, our results of the Caliper test indicate that, generally speaking, there is no evidence for an increasing prevalence of <span class="math inline">\(p\)</span>-values just below .05 or of QRPs causing such a bump in psychology.</p>
+<div class="table table-striped table-hover table-condensed table-responsive" style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%;  margin-left: auto; margin-right: auto;">
+<table>
+<caption>
+<span id="tab:excess">Table 3.6: </span>Linear regression coefficients as a test of increasing excess of <span class="math inline">\(p\)</span>-values just below .05.
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:left;">
+Timespan
+</th>
+<th style="text-align:left;">
+Coefficient
+</th>
+<th style="text-align:left;">
+Estimate
+</th>
+<th style="text-align:left;">
+<em>SE</em>
+</th>
+<th style="text-align:left;">
+<em>t</em>
+</th>
+<th style="text-align:left;">
+<em>p</em>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+All
+</td>
+<td style="text-align:left;">
+1985-2013
+</td>
+<td style="text-align:left;">
+Intercept
+</td>
+<td style="text-align:left;">
+0.007
+</td>
+<td style="text-align:left;">
+0.017
+</td>
+<td style="text-align:left;">
+0.392
+</td>
+<td style="text-align:left;">
+0.698
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+All
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+Years (centered)
+</td>
+<td style="text-align:left;">
+-0.001
+</td>
+<td style="text-align:left;">
+0.001
+</td>
+<td style="text-align:left;">
+-0.492
+</td>
+<td style="text-align:left;">
+0.627
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DP
+</td>
+<td style="text-align:left;">
+1985-2013
+</td>
+<td style="text-align:left;">
+Intercept
+</td>
+<td style="text-align:left;">
+-0.043
+</td>
+<td style="text-align:left;">
+0.056
+</td>
+<td style="text-align:left;">
+-0.769
+</td>
+<td style="text-align:left;">
+0.448
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DP
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+Years (centered)
+</td>
+<td style="text-align:left;">
+0.001
+</td>
+<td style="text-align:left;">
+0.003
+</td>
+<td style="text-align:left;">
+0.193
+</td>
+<td style="text-align:left;">
+0.849
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+FP
+</td>
+<td style="text-align:left;">
+2010-2013
+</td>
+<td style="text-align:left;">
+Intercept
+</td>
+<td style="text-align:left;">
+-0.182
+</td>
+<td style="text-align:left;">
+0.148
+</td>
+<td style="text-align:left;">
+-1.233
+</td>
+<td style="text-align:left;">
+0.343
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+FP
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+Years (centered)
+</td>
+<td style="text-align:left;">
+0.055
+</td>
+<td style="text-align:left;">
+0.079
+</td>
+<td style="text-align:left;">
+0.694
+</td>
+<td style="text-align:left;">
+0.56
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+JAP
+</td>
+<td style="text-align:left;">
+1985-2013
+</td>
+<td style="text-align:left;">
+Intercept
+</td>
+<td style="text-align:left;">
+0.041
+</td>
+<td style="text-align:left;">
+0.081
+</td>
+<td style="text-align:left;">
+0.504
+</td>
+<td style="text-align:left;">
+0.619
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+JAP
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+Years (centered)
+</td>
+<td style="text-align:left;">
+-0.001
+</td>
+<td style="text-align:left;">
+0.005
+</td>
+<td style="text-align:left;">
+-0.208
+</td>
+<td style="text-align:left;">
+0.837
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+JCCP
+</td>
+<td style="text-align:left;">
+1985-2013
+</td>
+<td style="text-align:left;">
+Intercept
+</td>
+<td style="text-align:left;">
+0.077
+</td>
+<td style="text-align:left;">
+0.058
+</td>
+<td style="text-align:left;">
+1.315
+</td>
+<td style="text-align:left;">
+0.2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+JCCP
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+Years (centered)
+</td>
+<td style="text-align:left;">
+-0.006
+</td>
+<td style="text-align:left;">
+0.004
+</td>
+<td style="text-align:left;">
+-1.546
+</td>
+<td style="text-align:left;">
+0.134
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+JEPG
+</td>
+<td style="text-align:left;">
+1985-2013
+</td>
+<td style="text-align:left;">
+Intercept
+</td>
+<td style="text-align:left;">
+-0.022
+</td>
+<td style="text-align:left;">
+0.124
+</td>
+<td style="text-align:left;">
+-0.176
+</td>
+<td style="text-align:left;">
+0.862
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+JEPG
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+Years (centered)
+</td>
+<td style="text-align:left;">
+0.001
+</td>
+<td style="text-align:left;">
+0.007
+</td>
+<td style="text-align:left;">
+0.097
+</td>
+<td style="text-align:left;">
+0.924
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+JPSP
+</td>
+<td style="text-align:left;">
+1985-2013
+</td>
+<td style="text-align:left;">
+Intercept
+</td>
+<td style="text-align:left;">
+-0.002
+</td>
+<td style="text-align:left;">
+0.027
+</td>
+<td style="text-align:left;">
+-0.062
+</td>
+<td style="text-align:left;">
+0.951
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+JPSP
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+Years (centered)
+</td>
+<td style="text-align:left;">
+0
+</td>
+<td style="text-align:left;">
+0.002
+</td>
+<td style="text-align:left;">
+-0.005
+</td>
+<td style="text-align:left;">
+0.996
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+PLOS
+</td>
+<td style="text-align:left;">
+2006-2013
+</td>
+<td style="text-align:left;">
+Intercept
+</td>
+<td style="text-align:left;">
+<strong>-0.382</strong>
+</td>
+<td style="text-align:left;">
+<strong>0.114</strong>
+</td>
+<td style="text-align:left;">
+<strong>-3.344</strong>
+</td>
+<td style="text-align:left;">
+<strong>0.016</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+PLOS
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+Years (centered)
+</td>
+<td style="text-align:left;">
+<strong>0.072</strong>
+</td>
+<td style="text-align:left;">
+<strong>0.027</strong>
+</td>
+<td style="text-align:left;">
+<strong>2.632</strong>
+</td>
+<td style="text-align:left;">
+<strong>0.039</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+PS
+</td>
+<td style="text-align:left;">
+2003-2013
+</td>
+<td style="text-align:left;">
+Intercept
+</td>
+<td style="text-align:left;">
+0.081
+</td>
+<td style="text-align:left;">
+0.078
+</td>
+<td style="text-align:left;">
+1.045
+</td>
+<td style="text-align:left;">
+0.323
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+PS
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+Years (centered)
+</td>
+<td style="text-align:left;">
+-0.009
+</td>
+<td style="text-align:left;">
+0.013
+</td>
+<td style="text-align:left;">
+-0.669
+</td>
+<td style="text-align:left;">
+0.52
+</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td style="padding: 0; border: 0;" colspan="100%">
+<span style="font-style: italic;">Note: </span>
+</td>
+</tr>
+<tr>
+<td style="padding: 0; border: 0;" colspan="100%">
+<sup></sup> Intercept indicates the degree of excess for the first year of the estimated timespan (&gt;0 is excess).
+</td>
+</tr>
+</tfoot>
+</table>
+</div>
+</div>
+<div id="results-of-two-measures-based-on-modeling-p-value-distributions" class="section level3">
+<h3><span class="header-section-number">3.3.4</span> Results of two measures based on modeling <span class="math inline">\(p\)</span>-value distributions</h3>
+<div id="simulation-study" class="section level4">
+<h4><span class="header-section-number">3.3.4.1</span> Simulation study</h4>
+<p>Table <a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#tab:simres">3.7</a> shows the results of the two measures for data simulated with and without data peeking. The column headers show the mean effect size (i.e., <span class="math inline">\(\delta\)</span>) and heterogeneity (i.e., <span class="math inline">\(\tau\)</span>) of the simulated conditions, with the corresponding <span class="math inline">\(\rho_F\)</span> and <span class="math inline">\(\tau_{\rho_F}\)</span> on the Fisher transformed correlation scale. The first set of rows shows the results for the data simulated without data peeking, of which we discuss the results first.</p>
+<!-- hier zit nog iets wat alles kapot maakt -->
+<div class="table table-striped table-hover table-condensed table-responsive" style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%;  margin-left: auto; margin-right: auto;">
+<table>
+<caption>
+<span id="tab:simres">Table 3.7: </span>Results of parameter estimation of the distribution of effect sizes and measures of data peeking as a function of population effect size (<span class="math inline">\(\delta\)</span>, <span class="math inline">\(\rho_F\)</span>), population heterogeneity (<span class="math inline">\(\tau\)</span>), and data peeking, for the simulated data. Results are based on all <span class="math inline">\(p\)</span>-values 0-1, <span class="math inline">\(p\)</span>-values <span class="math inline">\(\leq.05\)</span>, and <span class="math inline">\(\leq.00125\)</span>.
+</caption>
+<thead>
+<tr>
+<th style="border-bottom:hidden" colspan="3">
+</th>
+<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="4">
+<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+<span class="math inline">\(\\\tau=0\)</span>
+</div>
+</th>
+<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="4">
+<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+<span class="math inline">\(\\\tau=.15\)</span>
+</div>
+</th>
+</tr>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:left;">
+<span class="math inline">\(p\)</span>-values
+</th>
+<th style="text-align:left;">
+</th>
+<th style="text-align:right;">
+<span class="math inline">\(\delta=0,\rho_{F}=0\)</span>
+</th>
+<th style="text-align:right;">
+<span class="math inline">\(\delta=.2,\rho_{F}=.099\)</span>
+</th>
+<th style="text-align:right;">
+<span class="math inline">\(\delta=.5,\rho_{F}=.247\)</span>
+</th>
+<th style="text-align:right;">
+<span class="math inline">\(\delta=.8,\rho_{F}=.390\)</span>
+</th>
+<th style="text-align:right;">
+<span class="math inline">\(\delta=0,\rho_{F}=0\)</span>
+</th>
+<th style="text-align:right;">
+<span class="math inline">\(\delta=.2,\rho_{F}=.099\)</span>
+</th>
+<th style="text-align:right;">
+<span class="math inline">\(\delta=.5,\rho_{F}=.247\)</span>
+</th>
+<th style="text-align:right;">
+<span class="math inline">\(\delta=.8,\rho_{F}=.390\)</span>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Without data peeking
+</td>
+<td style="text-align:left;">
+0-1
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(\hat{\rho}_{F}\)</span>
+</td>
+<td style="text-align:right;">
+0.00e+00
+</td>
+<td style="text-align:right;">
+1.03e-01
+</td>
+<td style="text-align:right;">
+2.58e-01
+</td>
+<td style="text-align:right;">
+4.13e-01
+</td>
+<td style="text-align:right;">
+0.00e+00
+</td>
+<td style="text-align:right;">
+1.03e-01
+</td>
+<td style="text-align:right;">
+2.58e-01
+</td>
+<td style="text-align:right;">
+4.13e-01
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(\hat{\tau}_{\rho_F}\)</span>
+</td>
+<td style="text-align:right;">
+0.00e+00
+</td>
+<td style="text-align:right;">
+0.00e+00
+</td>
+<td style="text-align:right;">
+0.00e+00
+</td>
+<td style="text-align:right;">
+0.00e+00
+</td>
+<td style="text-align:right;">
+7.70e-02
+</td>
+<td style="text-align:right;">
+7.70e-02
+</td>
+<td style="text-align:right;">
+7.70e-02
+</td>
+<td style="text-align:right;">
+7.70e-02
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+0-.05
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(\hat{\rho}_{F}\)</span>
+</td>
+<td style="text-align:right;">
+0.00e+00
+</td>
+<td style="text-align:right;">
+1.03e-01
+</td>
+<td style="text-align:right;">
+2.58e-01
+</td>
+<td style="text-align:right;">
+4.13e-01
+</td>
+<td style="text-align:right;">
+0.00e+00
+</td>
+<td style="text-align:right;">
+1.03e-01
+</td>
+<td style="text-align:right;">
+2.58e-01
+</td>
+<td style="text-align:right;">
+4.13e-01
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(\hat{\tau}_{\rho_F}\)</span>
+</td>
+<td style="text-align:right;">
+0.00e+00
+</td>
+<td style="text-align:right;">
+0.00e+00
+</td>
+<td style="text-align:right;">
+0.00e+00
+</td>
+<td style="text-align:right;">
+1.00e-03
+</td>
+<td style="text-align:right;">
+7.70e-02
+</td>
+<td style="text-align:right;">
+7.70e-02
+</td>
+<td style="text-align:right;">
+7.70e-02
+</td>
+<td style="text-align:right;">
+7.70e-02
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+Misfit <span class="math inline">\(\chi^2\)</span>
+</td>
+<td style="text-align:right;">
+0.00e+00
+</td>
+<td style="text-align:right;">
+0.00e+00
+</td>
+<td style="text-align:right;">
+0.00e+00
+</td>
+<td style="text-align:right;">
+0.00e+00
+</td>
+<td style="text-align:right;">
+0.00e+00
+</td>
+<td style="text-align:right;">
+0.00e+00
+</td>
+<td style="text-align:right;">
+0.00e+00
+</td>
+<td style="text-align:right;">
+0.00e+00
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+0-.00125
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(\hat{\rho}_{F}\)</span>
+</td>
+<td style="text-align:right;">
+0.00e+00
+</td>
+<td style="text-align:right;">
+1.03e-01
+</td>
+<td style="text-align:right;">
+2.58e-01
+</td>
+<td style="text-align:right;">
+4.13e-01
+</td>
+<td style="text-align:right;">
+1.00e-01
+</td>
+<td style="text-align:right;">
+1.07e-01
+</td>
+<td style="text-align:right;">
+2.59e-01
+</td>
+<td style="text-align:right;">
+4.13e-01
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(\hat{\tau}_{\rho_F}\)</span>
+</td>
+<td style="text-align:right;">
+0.00e+00
+</td>
+<td style="text-align:right;">
+0.00e+00
+</td>
+<td style="text-align:right;">
+0.00e+00
+</td>
+<td style="text-align:right;">
+1.00e-03
+</td>
+<td style="text-align:right;">
+2.50e-02
+</td>
+<td style="text-align:right;">
+7.60e-02
+</td>
+<td style="text-align:right;">
+7.70e-02
+</td>
+<td style="text-align:right;">
+7.70e-02
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+Misfit <span class="math inline">\(\chi^2\)</span>
+</td>
+<td style="text-align:right;">
+0.00e+00
+</td>
+<td style="text-align:right;">
+0.00e+00
+</td>
+<td style="text-align:right;">
+0.00e+00
+</td>
+<td style="text-align:right;">
+0.00e+00
+</td>
+<td style="text-align:right;">
+0.00e+00
+</td>
+<td style="text-align:right;">
+0.00e+00
+</td>
+<td style="text-align:right;">
+0.00e+00
+</td>
+<td style="text-align:right;">
+0.00e+00
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(D\)</span>
+</td>
+<td style="text-align:right;">
+1.00e+00
+</td>
+<td style="text-align:right;">
+1.00e+00
+</td>
+<td style="text-align:right;">
+1.00e+00
+</td>
+<td style="text-align:right;">
+1.00e+00
+</td>
+<td style="text-align:right;">
+1.21e+00
+</td>
+<td style="text-align:right;">
+1.01e+00
+</td>
+<td style="text-align:right;">
+1.00e+00
+</td>
+<td style="text-align:right;">
+1.00e+00
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+With data peeking
+</td>
+<td style="text-align:left;">
+0-.05
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(\hat{\rho}_{F}\)</span>
+</td>
+<td style="text-align:right;">
+0.00e+00
+</td>
+<td style="text-align:right;">
+0.00e+00
+</td>
+<td style="text-align:right;">
+1.17e-01
+</td>
+<td style="text-align:right;">
+3.45e-01
+</td>
+<td style="text-align:right;">
+0.00e+00
+</td>
+<td style="text-align:right;">
+0.00e+00
+</td>
+<td style="text-align:right;">
+7.50e-02
+</td>
+<td style="text-align:right;">
+3.60e-01
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(\hat{\tau}_{\rho_F}\)</span>
+</td>
+<td style="text-align:right;">
+0.00e+00
+</td>
+<td style="text-align:right;">
+0.00e+00
+</td>
+<td style="text-align:right;">
+0.00e+00
+</td>
+<td style="text-align:right;">
+3.80e-02
+</td>
+<td style="text-align:right;">
+0.00e+00
+</td>
+<td style="text-align:right;">
+5.50e-02
+</td>
+<td style="text-align:right;">
+1.37e-01
+</td>
+<td style="text-align:right;">
+9.10e-02
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+Misfit <span class="math inline">\(\chi^2\)</span>
+</td>
+<td style="text-align:right;">
+1.26e+05
+</td>
+<td style="text-align:right;">
+5.03e+04
+</td>
+<td style="text-align:right;">
+6.97e+02
+</td>
+<td style="text-align:right;">
+1.02e+02
+</td>
+<td style="text-align:right;">
+1.49e+04
+</td>
+<td style="text-align:right;">
+1.21e+03
+</td>
+<td style="text-align:right;">
+5.76e+02
+</td>
+<td style="text-align:right;">
+3.41e+02
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(N\)</span>
+</td>
+<td style="text-align:right;">
+7.60e+05
+</td>
+<td style="text-align:right;">
+8.11e+05
+</td>
+<td style="text-align:right;">
+9.37e+05
+</td>
+<td style="text-align:right;">
+9.95e+05
+</td>
+<td style="text-align:right;">
+4.35e+05
+</td>
+<td style="text-align:right;">
+5.25e+05
+</td>
+<td style="text-align:right;">
+7.08e+05
+</td>
+<td style="text-align:right;">
+8.90e+05
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+0-.00125
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(\hat{\rho}_{F}\)</span>
+</td>
+<td style="text-align:right;">
+0.00e+00
+</td>
+<td style="text-align:right;">
+7.50e-02
+</td>
+<td style="text-align:right;">
+2.18e-01
+</td>
+<td style="text-align:right;">
+3.66e-01
+</td>
+<td style="text-align:right;">
+6.60e-02
+</td>
+<td style="text-align:right;">
+1.61e-01
+</td>
+<td style="text-align:right;">
+2.83e-01
+</td>
+<td style="text-align:right;">
+4.02e-01
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(\hat{\tau}_{\rho_F}\)</span>
+</td>
+<td style="text-align:right;">
+0.00e+00
+</td>
+<td style="text-align:right;">
+0.00e+00
+</td>
+<td style="text-align:right;">
+0.00e+00
+</td>
+<td style="text-align:right;">
+0.00e+00
+</td>
+<td style="text-align:right;">
+3.60e-02
+</td>
+<td style="text-align:right;">
+0.00e+00
+</td>
+<td style="text-align:right;">
+0.00e+00
+</td>
+<td style="text-align:right;">
+1.20e-02
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+Misfit <span class="math inline">\(\chi^2\)</span>
+</td>
+<td style="text-align:right;">
+6.90e+00
+</td>
+<td style="text-align:right;">
+3.20e+00
+</td>
+<td style="text-align:right;">
+7.10e+00
+</td>
+<td style="text-align:right;">
+1.18e+01
+</td>
+<td style="text-align:right;">
+2.00e+00
+</td>
+<td style="text-align:right;">
+1.90e+00
+</td>
+<td style="text-align:right;">
+2.60e+00
+</td>
+<td style="text-align:right;">
+2.10e+00
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(N\)</span>
+</td>
+<td style="text-align:right;">
+9.73e+03
+</td>
+<td style="text-align:right;">
+2.16e+04
+</td>
+<td style="text-align:right;">
+9.56e+04
+</td>
+<td style="text-align:right;">
+3.50e+05
+</td>
+<td style="text-align:right;">
+1.48e+04
+</td>
+<td style="text-align:right;">
+3.45e+04
+</td>
+<td style="text-align:right;">
+1.25e+05
+</td>
+<td style="text-align:right;">
+3.67e+05
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+<span class="math inline">\(D\)</span>
+</td>
+<td style="text-align:right;">
+1.98e+00
+</td>
+<td style="text-align:right;">
+1.98e+00
+</td>
+<td style="text-align:right;">
+1.83e+00
+</td>
+<td style="text-align:right;">
+1.17e+00
+</td>
+<td style="text-align:right;">
+1.63e+00
+</td>
+<td style="text-align:right;">
+1.62e+00
+</td>
+<td style="text-align:right;">
+1.47e+00
+</td>
+<td style="text-align:right;">
+1.16e+00
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The results for the data without data peeking inform us on (i) whether the effect size distribution parameters can accurately be recovered using only very small (<span class="math inline">\(\leq.00125\)</span>) or small <span class="math inline">\(p\)</span>-values (<span class="math inline">\(\leq.05\)</span>), and (ii) if both measures accurately signal no data peeking. Note that <span class="math inline">\(\rho_F\)</span> is slightly overestimated due to categorizing the <span class="math inline">\(p\)</span>-value distribution into 40 categories: the estimates based on all <span class="math inline">\(p\)</span>-values (i.e., <span class="math inline">\(\hat{\rho}_F\)</span>, first row) are slightly larger than the population parameter (i.e., <span class="math inline">\(\rho_F\)</span>, column headers).</p>
+<p>Answering the first question of accurate parameter estimates, whenever there is no heterogeneity (i.e., <span class="math inline">\(\tau_{\rho_F}=0\)</span>) both <span class="math inline">\(\rho_F\)</span> and <span class="math inline">\(\tau_{\rho_F}\)</span> are accurately recovered. When heterogeneity is non-zero, the parameters were also accurately recovered, but not when <span class="math inline">\(\rho_F=0\)</span>. Here, <span class="math inline">\(\rho_F\)</span> was overestimated (equal to .1) and <span class="math inline">\(\tau_{\rho_F}\)</span> underestimated (.025 rather than the true .077), while at the same time the misfit was negligible.</p>
+<p>The latter result, that the effect is overestimated under heterogeneity when <span class="math inline">\(\rho_F=0\)</span>, is explained by the fact that a <span class="math inline">\(p\)</span>-value distribution can accurately be modeled with an infinite range of negatively correlated values of <span class="math inline">\(\rho_F\)</span> and <span class="math inline">\(\tau_{\rho_F}\)</span>. An increase in <span class="math inline">\(\rho_F\)</span> yields a more right-skewed distribution, which is hardly distinguishable from the right-skewed distribution caused by an increase in <span class="math inline">\(\tau_{\rho_F}\)</span>. Hence almost identical <span class="math inline">\(p\)</span>-value distributions can be generated with (<span class="math inline">\(\delta\)</span>,<span class="math inline">\(\tau\)</span>) and some values (<span class="math inline">\(\delta^*\)</span>,<span class="math inline">\(\tau^*\)</span>), with <span class="math inline">\(\delta^*&gt;\mu\)</span> and at the same time <span class="math inline">\(\tau^*&lt;\tau\)</span>, or <span class="math inline">\(\delta^*&lt;\mu\)</span> and at the same time <span class="math inline">\(\tau^*&gt;\tau\)</span>. The similar effects of both parameters on the fitted <span class="math inline">\(p\)</span>-value distribution already hint at potential problems for both measures, because performance of these measures is dependent on accurate estimates of these parameters.</p>
+<p>With respect to the second question, whether the measures accurately signal the absence of data peeking, the first measure does so in both homo- and heterogeneous conditions, whereas the second measure correctly signals absence only under homogeneity. The first measure signals data peeking if the estimate of <span class="math inline">\(\rho_F\)</span> is smaller when based on <span class="math inline">\(p\leq.05\)</span> than on <span class="math inline">\(p\leq.00125\)</span>. Previously, we already noted that effect size estimates were identical to population effect sizes under homogeneity, and equal or <em>larger</em> when based on <span class="math inline">\(p\leq.00125\)</span> under heterogeneity. This suggests that the first measure behaves well if there is no data peeking (but see the conclusion section). The second measure, <span class="math inline">\(D\)</span>, performed well (i.e., was equal to 1) under homogeneity, but incorrectly suggested data peeking under heterogeneity. For instance, <span class="math inline">\(D=1.205\)</span> for <span class="math inline">\(\rho_F\)</span> = 0 and <span class="math inline">\(\tau=.15\)</span>, which suggests that 20.5% more <span class="math inline">\(p\)</span>-values were observed in the interval .00125-.05 than were expected based on the <span class="math inline">\(\hat{\rho}_F\)</span> estimate even though no data peeking occurred. The explanation for the breakdown of the performance of <span class="math inline">\(D\)</span> is that the parameters of the effect size distribution were not accurately recovered, overestimating the average effect size and underestimating heterogeneity based on small <span class="math inline">\(p\)</span>-values. This yields a lower expected frequency of higher <span class="math inline">\(p\)</span>-values (between .00125 and .05), thereby falsely suggesting data peeking.</p>
+<p>The last rows present the results obtained when data peeking does occur. First, consider the estimates of <span class="math inline">\(\rho_F\)</span> and the performance of the first measure of data peeking. The estimates of <span class="math inline">\(\rho_F\)</span> confirm that data peeking results in underestimation, particularly if the average true effect size is not large (i.e., <span class="math inline">\(\delta=.2\)</span> or <span class="math inline">\(.5\)</span>). Moreover, downward bias of <span class="math inline">\(\rho_F\)</span> decreases when it is estimated on <span class="math inline">\(p\)</span>-values <span class="math inline">\(\leq.00125\)</span> than on <span class="math inline">\(\leq.05\)</span>, accurately signaling data peeking with the first measure. For instance, if <span class="math inline">\(\rho_F=.099\)</span> and <span class="math inline">\(\tau=0\)</span>, <span class="math inline">\(\hat{\rho}_F=.075\)</span> when based on <span class="math inline">\(p\)</span>-values <span class="math inline">\(\leq.00125\)</span> and <span class="math inline">\(\hat{\rho}_F=0\)</span> when based on <span class="math inline">\(p\)</span>-values <span class="math inline">\(\leq.05\)</span>. Together with the good performance of this measure under no data peeking, these results suggest that the first measure may be useful to detect data peeking in practice.</p>
+<p>Consider the estimates of <span class="math inline">\(\tau_{\rho_F}\)</span> and the performance of <span class="math inline">\(D\)</span>. Similar to conditions under no data peeking, heterogeneity is grossly underestimated when using <span class="math inline">\(p\)</span>-values <span class="math inline">\(\leq.00125\)</span>. Hence <span class="math inline">\(D\)</span> cannot be expected to perform well under data peeking. Although <span class="math inline">\(D\)</span>-values seem to correctly signal data peeking in all conditions and decrease as expected when the effect size increases, these values do not correspond to the actual values of data peeking. For instance, consider the condition with <span class="math inline">\(\delta=.5\)</span> and <span class="math inline">\(\tau_{\rho_F}=.15\)</span>; of the 582,659 simulated <span class="math inline">\(p\)</span>-values in interval .00125-.05, 106,241 <span class="math inline">\(p\)</span>-values were obtained through data-peeking, which yields a true <span class="math inline">\(D=1.223\)</span>, which is very different from the estimated <span class="math inline">\(D=1.472\)</span> in Table <a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#tab:simres">3.7</a>.</p>
+<p>Finally, consider the (mis)fit of the estimated <span class="math inline">\(p\)</span>-value distribution. Despite the considerable downward bias in heterogeneity estimate <span class="math inline">\(\hat{\tau}_{\rho_F}\)</span>, the simulated <span class="math inline">\(p\)</span>-value distribution is mostly well approximated by the expected <span class="math inline">\(p\)</span>-value distribution, as indicated by the small values of the <span class="math inline">\(\chi^2\)</span> statistic for <span class="math inline">\(p\)</span>-values in 0-.00125. Hence, good fit again does not imply accurate parameter estimates. The misfit of the estimated distribution for <span class="math inline">\(p\)</span>-values <span class="math inline">\(\leq.05\)</span> is indicated by large <span class="math inline">\(\chi^2\)</span>-values, particularly when the <span class="math inline">\(p\)</span>-value distribution is not monotonically decreasing (which is the case for, e.g., <span class="math inline">\(\delta=0\)</span>).</p>
+<p>To conclude, this simulation study showed that under true homogeneity both measures of data peeking can accurately signal both absence and presence of data peeking. However, under true heterogeneity, heterogeneity is underestimated and the performance of <span class="math inline">\(D\)</span> breaks down, while results suggest that comparing estimates of average effect size, the first measure, may still accurately signal both the absence and presence of data peeking.</p>
+</div>
+<div id="applied-to-data-of-eight-psychology-journals" class="section level4">
+<h4><span class="header-section-number">3.3.4.2</span> Applied to data of eight psychology journals</h4>
+<p>Figure <a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#fig:bump-fig5">3.5</a> depicts the observed <span class="math inline">\(p\)</span>-value distribution and the expected <span class="math inline">\(p\)</span>-value distribution corresponding to the fitted effect size distribution based on <span class="math inline">\(p\)</span>-values <span class="math inline">\(\leq.00125\)</span>. Estimates for <span class="math inline">\(p\)</span>-values <span class="math inline">\(\leq.05\)</span> were effect size <span class="math inline">\(\hat{\rho}_F=0\)</span> and heterogeneity <span class="math inline">\(\hat{\tau}_{\rho_F}=.183\)</span>, and <span class="math inline">\(\hat{\rho}_F=.149\)</span> and <span class="math inline">\(\hat{\tau}_{\rho_F}=.106\)</span> for <span class="math inline">\(p\)</span>-values <span class="math inline">\(\leq.00125\)</span>. Note that we only considered nonnegative values of <span class="math inline">\(\delta\)</span> in the estimation procedure. Misfit between observed and expected <span class="math inline">\(p\)</span>-value distribution for <span class="math inline">\(p\leq.00125\)</span> was minor (<span class="math inline">\(\chi^2=4.1\)</span>), indicating that the observed <span class="math inline">\(p\)</span>-values <span class="math inline">\(\leq.00125\)</span> were well approximated by the estimated effect size distribution.</p>
+<div class="figure" style="text-align: center"><span id="fig:bump-fig5"></span>
+<img src="assets/figures/bump-fig5.png" alt="Observed proportions of $p$-values (circles) and expected proportions of $p$-values based on estimated $\hat{\rho}_F$ and estimated $\hat{\tau}_{\rho_F}$ estimated from 0-.00125 (crosses)." width="80%" />
+<p class="caption">
+Figure 3.5: Observed proportions of <span class="math inline">\(p\)</span>-values (circles) and expected proportions of <span class="math inline">\(p\)</span>-values based on estimated <span class="math inline">\(\hat{\rho}_F\)</span> and estimated <span class="math inline">\(\hat{\tau}_{\rho_F}\)</span> estimated from 0-.00125 (crosses).
+</p>
+</div>
+<p>Our first measure suggests practices leading to a monotonic excess of <span class="math inline">\(p\)</span>-values below .05, because the estimated effect size based on all significant <span class="math inline">\(p\)</span>-values (i.e., 0) is much smaller than the supposedly more accurate estimate based on only the very small <span class="math inline">\(p\)</span>-values (i.e., .183). Moreover, assuming that effect sizes are normally distributed with <span class="math inline">\(\rho_F=0\)</span> and <span class="math inline">\(\tau_{\rho_F}=.183\)</span>, combined with the degrees of freedom of the observed effects, implies that only 27.5% of all effects would be statistically significant. However, of all reported <span class="math inline">\(p\)</span>-values, 74.7% were statistically significant, but this difference may at least partly be caused by other factors such as publication bias. It is highly unlikely that the average true effect size underlying statistically significant results in psychology is truly zero. It remains undecided, however, whether this very low estimate is mainly due to QRPs leading to a downward bias of the effect size estimate, or to a misspecification of the model, an issue we revisit later in the paper.</p>
+<p>For the second measure that compares the ratio of observed and expected <span class="math inline">\(p\)</span>-values below .05, we found <span class="math inline">\(D=.701\)</span>, which does not suggest data peeking but <em>under</em>-reporting of <span class="math inline">\(p\)</span>-values (29.9%) in the <span class="math inline">\(p\)</span>-value interval .00125-.05. The simulation results, however, have already demonstrated that the measure <span class="math inline">\(D\)</span> performs badly under effect size heterogeneity. Since heterogeneity is underlying the observed data, we conclude that the measure <span class="math inline">\(D\)</span> is not useful for investigating evidence of a bump or monotonic excess of <span class="math inline">\(p\)</span>-values.</p>
+</div>
+</div>
+</div>
+<div id="limitations-and-conclusions" class="section level2">
+<h2><span class="header-section-number">3.4</span> Limitations and conclusions</h2>
+<p>Before concluding, some limitations of our method to collect <span class="math inline">\(p\)</span>-values need to be addressed. First, <code>statcheck</code> <span class="citation">(Epskamp and Nuijten <a href="#ref-statcheck">2016</a>; Nuijten, Hartgerink, et al. <a href="#ref-doi:10.3758/s13428-015-0664-2">2015</a>)</span>, the R package used to collect the observed data, extracts all APA test results reported in the text of an article, but not those reported in tables. Hence, our selection of results is potentially not representative of all reported results and systematically excludes results that are not reported to APA standards. Second, our analysis assumed that test statistics other than <span class="math inline">\(p\)</span>-values were accurately reported. If test statistics and degrees of freedom are incorrectly reported, recalculated <span class="math inline">\(p\)</span>-values are wrong as well. We identified some erroneous test statistics (e.g., <span class="math inline">\(df_1=0\)</span> and <span class="math inline">\(r&gt;1\)</span>), but do not know how often errors in reported test statistics and df occur and how these errors may have affected our results. We assumed that <span class="math inline">\(p\)</span>-value errors were made due to the overemphasis on them in current day research.</p>
+<p>In light of conflicting findings and interpretations, we aimed to provide final answers to the questions (1) Does a bump or monotonic excess of <span class="math inline">\(p\)</span>-values below .05 exist in psychology? and (2) Did evidence for a bump increase over time in psychology? Answering these research questions may inform us on the prevalence of QRPs and its development over time in psychology. Using <code>statcheck</code>, we extracted and analyzed 258,050 test results conforming to APA-style across 30,710 articles from eight high impact journals in psychology, and distinguished between results with inexactly reported <span class="math inline">\(p\)</span>-values, exactly reported <span class="math inline">\(p\)</span>-values, and recalculated <span class="math inline">\(p\)</span>-values. The basic idea underlying our analyses is that QRPs distort the <span class="math inline">\(p\)</span>-value distribution. We argued that only some QRPs yield an excess of <span class="math inline">\(p\)</span>-values just below .05, and show that QRPs sometimes yield a bump and sometimes only monotonic excess of <span class="math inline">\(p\)</span>-values just below .05. We used the Caliper test to test for a bump, and suggested two measures to examine monotonic excess.</p>
+<p>Starting with the existence of a bump in psychology, we drew the following conclusions. First, <em>inexactly</em> reported <span class="math inline">\(p\)</span>-values are not useful for analyses of <span class="math inline">\(p\)</span>-value distributions. Second, a bump in <em>exactly</em> reported <span class="math inline">\(p\)</span>-values indeed exists in psychology journals DP, JAP, and JPSP. QRPs leading to just significant <span class="math inline">\(p\)</span>-values can explain these bumps, but we also cannot rule out the explanation that scientists in these particular journals are more prone to exactly report <span class="math inline">\(p\)</span>-values just below .05 (e.g., to emphasize they are really smaller than .05) than <span class="math inline">\(p\)</span>-values considerably smaller than .05. Third, contradicting <span class="citation">Leggett et al. (<a href="#ref-doi:10.1080/17470218.2013.863371">2013</a>)</span>, the bump and evidence of a bump in psychology did not increase over the years. Fourth, when analyzing only the <em>exactly</em> reported <span class="math inline">\(p\)</span>-values equal to .05, clear and direct evidence was obtained for the QRP “incorrect rounding of <span class="math inline">\(p\)</span>-value” <span class="citation">(John, Loewenstein, and Prelec <a href="#ref-doi:10.1177/0956797611430953">2012</a>)</span>. Evidence of this QRP, which contributed to the bump in exactly reported <span class="math inline">\(p\)</span>-values in psychology, was found in all psychology journals. Fifth, after removing reporting errors and analyzing the <em>recalculated</em> reported <span class="math inline">\(p\)</span>-values, evidence of a bump was found only for JPSP. Again, this may have been caused by QRPs or by scientists being more prone to report all test statistics when <span class="math inline">\(p\)</span>-values are just below .05 than if they are considerable smaller than zero.</p>
+<p>The conclusions obtained with the two measures investigating the bump and monotonic excess are not satisfactory. First, performance of both measures is dependent on accurately recovering parameters of the effect size distribution, which turned out to be difficult; estimates of effect size heterogeneity and average effect size are highly correlated and unstable when based on only statistically significant findings. Second, simulations show that one of the measures, <span class="math inline">\(D\)</span>, does not accurately assess the QRP data peeking when effect sizes are heterogeneous. Third, even though performance of the second measure (i.e., difference between effect sizes based on contaminated and supposedly uncontaminated <span class="math inline">\(p\)</span>-values) is affected by estimation problems, it correctly signaled data peeking in the simulations. Fourth, when applying the second measure to the observed distribution of significant <span class="math inline">\(p\)</span>-values in psychology, the measure found evidence of monotonic excess of <span class="math inline">\(p\)</span>-values; the average effect size estimate based on all these <span class="math inline">\(p\)</span>-values was 0, which seems very unrealistic, and suggests the use of QRPs in psychology leading to <span class="math inline">\(p\)</span>-values just below .05.</p>
+<p>Notwithstanding the outcome of the second measure, suggesting QRPs that cause monotonic excess, we do not consider it as direct evidence of such QRPs in psychology. Lakens (p.3; 2015) suggests that “it is essential to use a model of <span class="math inline">\(p\)</span>-value distributions before drawing conclusions about the underlying reasons for specific distributions of <span class="math inline">\(p\)</span>-values extracted from the scientific literature.” We explicitly modeled the effect size distribution and by using the degrees of freedom of test results also model the effect sizes’ power and the <span class="math inline">\(p\)</span>-value distribution. But we fear this is not and cannot be sufficient. First of all, we could not accurately recover the effect size distribution under heterogeneity in our simulation study, even if all assumptions of our model were met. This rendered measure <span class="math inline">\(D\)</span> unfruitful when there is heterogeneity, and severely limits the usefulness of the second measure that compares estimated average effect sizes. Second, devising other models may yield other results and thereby other interpretations <span class="citation">(Benjamini and Hechtlinger <a href="#ref-doi:10.1093/biostatistics/kxt032">2013</a>; Goodman <a href="#ref-doi:10.1093/biostatistics/kxt035">2013</a>; Lakens <a href="#ref-doi:10.7717/peerj.1142">2015</a><a href="#ref-doi:10.7717/peerj.1142">b</a>; De Winter and Dodou <a href="#ref-doi:10.7717/peerj.733">2015</a>)</span>.</p>
+<p>Results of all the aforementioned models are most likely not robust to violations of their assumptions. For instance, we assume a normal distribution of true effect sizes. This assumption is surely violated, since the reported <span class="math inline">\(p\)</span>-values arise from a mixture of many different types of effects, such as very large effects (manipulation checks), effects corresponding to main hypotheses, and zero effects (‘control’ variables). Additionally, consider the QRPs themselves; we examined the effect of only one QRP, data peeking, in one of its limited variants. Other QRPs exist that also increase the prevalence of <span class="math inline">\(p\)</span>-values just below .05, such as multiple operationalizations of a measure and selecting the first one to be significant. Other QRPs even increase the frequency of very small <span class="math inline">\(p\)</span>-values <span class="citation">(Van Aert, Wicherts, and Van Assen <a href="#ref-doi:10.1177/1745691616650874">2016</a>)</span>. We deem it impossible to accurately model QRPs and their effects, considering the difficulties we already demonstrated for modeling the <span class="math inline">\(p\)</span>-value distribution generated using a single QRP that was clearly defined. To conclude, we fear that <span class="citation">Gelman and O’Rourke (<a href="#ref-doi:10.1093/biostatistics/kxt034">2013</a>)</span> may be right when suggesting that drawing conclusions with regard to any QRP based on modeling <span class="math inline">\(p\)</span>-value distributions obtained from automatically extracted results is unfruitful.</p>
+<p>On the other hand, we do recommend modeling effect size and <span class="math inline">\(p\)</span>-value distributions of results that all intend to test the same hypothesis, to prevent contamination by irrelevant test results <span class="citation">(Bishop and Thompson <a href="#ref-doi:10.7717/peerj.1715">2016</a>; Simonsohn, Simmons, and Nelson <a href="#ref-doi:10.1037/xge0000104">2015</a>)</span>. Examples of methods that focus on similar results are <span class="math inline">\(p\)</span>-uniform <span class="citation">(Van Assen, Van Aert, and Wicherts <a href="#ref-doi:10.1037/met0000025">2015</a>)</span> and <span class="math inline">\(p\)</span>-curve <span class="citation">(Simonsohn, Nelson, and Simmons <a href="#ref-doi:10.1037/a0033242">2014</a>)</span>, which model statistically significant statistics pertaining to one specific effect and estimate the effect size based on these statistics while correcting for publication bias. Further research should reveal if both methods can also be used to detect and correct for <span class="math inline">\(p\)</span>-hacking in the context of estimating one particular effect size. Preliminary results suggest, however, that detection and correcting for <span class="math inline">\(p\)</span>-hacking based on statistics alone is rather challenging <span class="citation">(Van Aert, Wicherts, and Van Assen <a href="#ref-doi:10.1177/1745691616650874">2016</a>)</span>.</p>
+
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-American_Psychological_Association1983-yf">
+<p>American Psychological Association. 1983. <em>Publication manual of the American Psychological Association</em>. 3rd ed. Washington, DC: American Psychological Association.</p>
+</div>
+<div id="ref-American_Psychological_Association2001-uw">
+<p>American Psychological Association. 2001. <em>Publication manual of the American Psychological Association</em>. 5th ed. Washington, DC: American Psychological Association.</p>
+</div>
+<div id="ref-isbn:9781433805615">
+<p>American Psychological Association. 2010b. <em>Publication Manual of the American Psychological Association</em>. 6th ed. Washington, DC: American Psychological Association.</p>
+</div>
+<div id="ref-doi:10.2307/2343787">
+<p>Armitage, P., C. K. McPherson, and B. C. Rowe. 1969. “Repeated Significance Tests on Accumulating Data.” <em>Journal of the Royal Statistical Society. Series A (General)</em> 132 (2). JSTOR: 235. doi:<a href="https://doi.org/10.2307/2343787">10.2307/2343787</a>.</p>
+</div>
+<div id="ref-doi:10.1002/per.1919">
+<p>Asendorpf, Jens B., Mark Conner, Filip De Fruyt, Jan De Houwer, Jaap J. A. Denissen, Klaus Fiedler, Susann Fiedler, et al. 2013. “Recommendations for Increasing Replicability in Psychology.” <em>European Journal of Personality</em> 27 (2). Wiley: 108–19. doi:<a href="https://doi.org/10.1002/per.1919">10.1002/per.1919</a>.</p>
+</div>
+<div id="ref-doi:10.3758/s13428-011-0089-5">
+<p>Bakker, Marjan, and Jelte M Wicherts. 2011. “The (Mis)reporting of Statistical Results in Psychology Journals.” <em>Behavior Research Methods</em> 43 (3): 666–78. doi:<a href="https://doi.org/10.3758/s13428-011-0089-5">10.3758/s13428-011-0089-5</a>.</p>
+</div>
+<div id="ref-doi:10.1037/met0000014">
+<p>Bakker, Marjan, and Jelte M. Wicherts. 2014. “Outlier Removal, Sum Scores, and the Inflation of the Type I Error Rate in Independent Samples T Tests: The Power of Alternatives and Recommendations.” <em>Psychological Methods</em> 19 (3). American Psychological Association (APA): 409–27. doi:<a href="https://doi.org/10.1037/met0000014">10.1037/met0000014</a>.</p>
+</div>
+<div id="ref-doi:10.1093/biostatistics/kxt032">
+<p>Benjamini, Y., and Y. Hechtlinger. 2013. “Discussion: An Estimate of the Science-Wise False Discovery Rate and Applications to Top Medical Journals by Jager and Leek.” <em>Biostatistics</em> 15 (1). Oxford University Press (OUP): 13–16. doi:<a href="https://doi.org/10.1093/biostatistics/kxt032">10.1093/biostatistics/kxt032</a>.</p>
+</div>
+<div id="ref-doi:10.7717/peerj.1715">
+<p>Bishop, Dorothy V.M., and Paul A. Thompson. 2016. “Problems in Usingp-Curve Analysis and Text-Mining to Detect Rate Ofp-Hacking and Evidential Value.” <em>PeerJ</em> 4 (February). PeerJ: e1715. doi:<a href="https://doi.org/10.7717/peerj.1715">10.7717/peerj.1715</a>.</p>
+</div>
+<div id="ref-Chamberlain2015-tg">
+<p>Chamberlain, Scott, Carl Boettiger, and Karthik Ram. 2015. “Rplos: Interface to the Search ’API’ for ’PLoS’ Journals.” <a href="http://CRAN.R-project.org/package=rplos" class="uri">http://CRAN.R-project.org/package=rplos</a>.</p>
+</div>
+<div id="ref-doi:10.7717/peerj.733">
+<p>De Winter, Joost CF, and Dimitra Dodou. 2015. “A Surge of P-Values Between 0.041 and 0.049 in Recent Decades (but Negative Results Are Increasing Rapidly Too).” <em>PeerJ</em> 3 (January). PeerJ: e733. doi:<a href="https://doi.org/10.7717/peerj.733">10.7717/peerj.733</a>.</p>
+</div>
+<div id="ref-statcheck">
+<p>Epskamp, Sacha, and Michèle B. Nuijten. 2016. <em>Statcheck: Extract Statistics from Articles and Recompute P Values</em>. <a href="https://CRAN.R-project.org/package=statcheck" class="uri">https://CRAN.R-project.org/package=statcheck</a>.</p>
+</div>
+<div id="ref-doi:10.1037/a0039405">
+<p>Ferguson, Christopher J. 2015. “‘Everybody Knows Psychology Is Not a Real Science’: Public Perceptions of Psychology and How We Can Improve Our Relationship with Policymakers, the Scientific Community, and the General Public.” <em>American Psychologist</em> 70 (6). American Psychological Association (APA): 527–42. doi:<a href="https://doi.org/10.1037/a0039405">10.1037/a0039405</a>.</p>
+</div>
+<div id="ref-doi:10.1126/science.1255484">
+<p>Franco, Annie, Neil Malhotra, and Gabor Simonovits. 2014. “Publication Bias in the Social Sciences: Unlocking the File Drawer.” <em>Science</em> 345 (6203): 1502–5. doi:<a href="https://doi.org/10.1126/science.1255484">10.1126/science.1255484</a>.</p>
+</div>
+<div id="ref-doi:10.1177/1948550615598377">
+<p>Franco, Annie, Neil Malhotra, and Gabor Simonovits. 2016. “Underreporting in Psychology Experiments: Evidence from a Study Registry.” <em>Social Psychological and Personality Science</em> 7 (1): 8–12. doi:<a href="https://doi.org/10.1177/1948550615598377">10.1177/1948550615598377</a>.</p>
+</div>
+<div id="ref-doi:10.1186/1471-2288-4-13">
+<p>García-Berthou, Emili, and Carles Alcaraz. 2004. “Incongruence Between Test Statistics and P Values in Medical Papers.” <em>BMC Medical Research Methodology</em> 4 (1). Springer Nature. doi:<a href="https://doi.org/10.1186/1471-2288-4-13">10.1186/1471-2288-4-13</a>.</p>
+</div>
+<div id="ref-doi:10.1093/biostatistics/kxt034">
+<p>Gelman, A., and K. O’Rourke. 2013. “Discussion: Difficulties in Making Inferences About Scientific Truth from Distributions of Published P-Values.” <em>Biostatistics</em> 15 (1). Oxford University Press (OUP): 18–23. doi:<a href="https://doi.org/10.1093/biostatistics/kxt034">10.1093/biostatistics/kxt034</a>.</p>
+</div>
+<div id="ref-doi:10.1177/1532673x09350979">
+<p>Gerber, Alan S., Neil Malhotra, Conor M. Dowling, and David Doherty. 2010. “Publication Bias in Two Political Behavior Literatures.” <em>American Politics Research</em> 38 (4). SAGE Publications: 591–613. doi:<a href="https://doi.org/10.1177/1532673x09350979">10.1177/1532673x09350979</a>.</p>
+</div>
+<div id="ref-doi:10.1186/s13104-015-1691-x">
+<p>Ginsel, Bastiaan, Abhinav Aggarwal, Wei Xuan, and Ian Harris. 2015. “The Distribution of Probability Values in Medical Abstracts: An Observational Study.” <em>BMC Research Notes</em> 8 (1). Springer Nature. doi:<a href="https://doi.org/10.1186/s13104-015-1691-x">10.1186/s13104-015-1691-x</a>.</p>
+</div>
+<div id="ref-doi:10.1093/biostatistics/kxt035">
+<p>Goodman, S. N. 2013. “Discussion: An Estimate of the Science-Wise False Discovery Rate and Application to the Top Medical Literature.” <em>Biostatistics</em> 15 (1). Oxford University Press (OUP): 23–27. doi:<a href="https://doi.org/10.1093/biostatistics/kxt035">10.1093/biostatistics/kxt035</a>.</p>
+</div>
+<div id="ref-doi:10.7717/peerj.3068">
+<p>Hartgerink, Chris H. 2017b. “Reanalyzing Head et Al. (2015): Investigating the Robustness of Widespread P-Hacking.” <em>PeerJ</em> 5 (March). PeerJ: e3068. doi:<a href="https://doi.org/10.7717/peerj.3068">10.7717/peerj.3068</a>.</p>
+</div>
+<div id="ref-doi:10.1371/journal.pbio.1002106">
+<p>Head, Megan, Luke Holman, Rob Lanfear, Andrew Kahn, and Michael Jennions. 2015b. “The extent and consequences of p-hacking in science.” <em>PLOS Biology</em> 13: e1002106. doi:<a href="https://doi.org/10.1371/journal.pbio.1002106">10.1371/journal.pbio.1002106</a>.</p>
+</div>
+<div id="ref-doi:10.1093/biostatistics/kxt036">
+<p>Ioannidis, J. P. A. 2013. “Discussion: Why ‘an Estimate of the Science-Wise False Discovery Rate and Application to the Top Medical Literature’ Is False.” <em>Biostatistics</em> 15 (1). Oxford University Press (OUP): 28–36. doi:<a href="https://doi.org/10.1093/biostatistics/kxt036">10.1093/biostatistics/kxt036</a>.</p>
+</div>
+<div id="ref-doi:10.1093/biostatistics/kxt007">
+<p>Jager, L. R., and J. T. Leek. 2013. “An Estimate of the Science-Wise False Discovery Rate and Application to the Top Medical Literature.” <em>Biostatistics</em> 15 (1). Oxford University Press (OUP): 1–12. doi:<a href="https://doi.org/10.1093/biostatistics/kxt007">10.1093/biostatistics/kxt007</a>.</p>
+</div>
+<div id="ref-doi:10.1177/0956797611430953">
+<p>John, Leslie K, George Loewenstein, and Drazen Prelec. 2012. “Measuring the prevalence of questionable research practices with incentives for truth telling.” <em>Psychological Science</em> 23 (5): 524–32. doi:<a href="https://doi.org/10.1177/0956797611430953">10.1177/0956797611430953</a>.</p>
+</div>
+<div id="ref-doi:10.1371/journal.pone.0127872">
+<p>Krawczyk, Michał. 2015. “The Search for Significance: A Few Peculiarities in the Distribution of P Values in Experimental Psychology Literature.” Edited by DanieleEditor Fanelli. <em>PLOS ONE</em> 10 (6). Public Library of Science (PLoS): e0127872. doi:<a href="https://doi.org/10.1371/journal.pone.0127872">10.1371/journal.pone.0127872</a>.</p>
+</div>
+<div id="ref-doi:10.1371/journal.pone.0105825">
+<p>Kühberger, Anton, Astrid Fritz, and Thomas Scherndl. 2014. “Publication Bias in Psychology: A Diagnosis Based on the Correlation Between Effect Size and Sample Size.” Edited by DanieleEditor Fanelli. <em>PLoS ONE</em> 9 (9). Public Library of Science (PLoS): e105825. doi:<a href="https://doi.org/10.1371/journal.pone.0105825">10.1371/journal.pone.0105825</a>.</p>
+</div>
+<div id="ref-doi:10.1080/17470218.2014.982664">
+<p>Lakens, Daniël. 2015a. “Comment: What P-Hacking Really Looks Like: A Comment on Masicampo and Lalande (2012).” <em>Quarterly Journal of Experimental Psychology</em> 68 (4). SAGE Publications: 829–32. doi:<a href="https://doi.org/10.1080/17470218.2014.982664">10.1080/17470218.2014.982664</a>.</p>
+</div>
+<div id="ref-doi:10.7717/peerj.1142">
+<p>Lakens, Daniël. 2015b. “On the Challenges of Drawing Conclusions Fromp-Values Just Below 0.05.” <em>PeerJ</em> 3 (July). PeerJ: e1142. doi:<a href="https://doi.org/10.7717/peerj.1142">10.7717/peerj.1142</a>.</p>
+</div>
+<div id="ref-doi:10.1080/17470218.2013.863371">
+<p>Leggett, Nathan C., Nicole A. Thomas, Tobias Loetscher, and Michael E. R. Nicholls. 2013. “The Life of P: ‘Just Significant’ Results Are on the Rise.” <em>Quarterly Journal of Experimental Psychology</em> 66 (12). SAGE Publications: 2303–9. doi:<a href="https://doi.org/10.1080/17470218.2013.863371">10.1080/17470218.2013.863371</a>.</p>
+</div>
+<div id="ref-doi:10.1080/17470218.2012.711335">
+<p>Masicampo, E.J., and Daniel R. Lalande. 2012. “A Peculiar Prevalence of P Values Just Below .05.” <em>Quarterly Journal of Experimental Psychology</em> 65 (11). SAGE Publications: 2271–9. doi:<a href="https://doi.org/10.1080/17470218.2012.711335">10.1080/17470218.2012.711335</a>.</p>
+</div>
+<div id="ref-doi:10.17226/1864">
+<p>National Academy of Sciences, National Academy of Engineering, and Institute of Medicine. 1992. <em>Responsible Science, Volume I: Ensuring the Integrity of the Research Process</em>. Washington, DC: The National Academies Press. doi:<a href="https://doi.org/10.17226/1864">10.17226/1864</a>.</p>
+</div>
+<div id="ref-doi:10.3758/s13428-015-0664-2">
+<p>Nuijten, Michèle B., Chris H. J. Hartgerink, Marcel A.L.M. Van Assen, Epskamp Sacha, and Jelte M. Wicherts. 2015. “The Prevalence of Statistical Reporting Errors in Psychology (1985–2013).” <em>Behavior Research Methods</em> 48 (4). Springer Nature: 1205–26. doi:<a href="https://doi.org/10.3758/s13428-015-0664-2">10.3758/s13428-015-0664-2</a>.</p>
+</div>
+<div id="ref-doi:10.1177/1745691612465253">
+<p>Pashler, Harold, and Eric–Jan Wagenmakers. 2012. “Editors’ Introduction to the Special Section on Replicability in Psychological Science.” <em>Perspectives on Psychological Science</em> 7 (6). SAGE Publications: 528–30. doi:<a href="https://doi.org/10.1177/1745691612465253">10.1177/1745691612465253</a>.</p>
+</div>
+<div id="ref-doi:10.1007/s11192-010-0233-5">
+<p>Pautasso, Marco. 2010. “Worsening File-Drawer Problem in the Abstracts of Natural, Medical and Social Science Databases.” <em>Scientometrics</em> 85 (1). Springer Nature: 193–202. doi:<a href="https://doi.org/10.1007/s11192-010-0233-5">10.1007/s11192-010-0233-5</a>.</p>
+</div>
+<div id="ref-doi:10.1111/j.1420-9101.2006.01291.x">
+<p>Ridley, J., N. Kolm, R. P. Freckelton, and M. J. G. Gage. 2007. “An Unexpected Influence of Widely Used Significance Thresholds on the Distribution of Reported P-Values.” <em>Journal of Evolutionary Biology</em> 20 (3). Wiley: 1082–9. doi:<a href="https://doi.org/10.1111/j.1420-9101.2006.01291.x">10.1111/j.1420-9101.2006.01291.x</a>.</p>
+</div>
+<div id="ref-doi:10.1177/0956797611417632">
+<p>Simmons, Joseph P, Leif D Nelson, and Uri Simonsohn. 2011. “False-Positive Psychology: Undisclosed Flexibility in Data Collection and Analysis Allows Presenting Anything as Significant.” <em>Psychological Science</em> 22 (11): 1359–66. doi:<a href="https://doi.org/10.1177/0956797611417632">10.1177/0956797611417632</a>.</p>
+</div>
+<div id="ref-doi:10.1037/a0033242">
+<p>Simonsohn, Uri, Leif D. Nelson, and Joseph P. Simmons. 2014. “P-Curve: A Key to the File-Drawer.” <em>Journal of Experimental Psychology: General</em> 143 (2). American Psychological Association (APA): 534–47. doi:<a href="https://doi.org/10.1037/a0033242">10.1037/a0033242</a>.</p>
+</div>
+<div id="ref-doi:10.1037/xge0000104">
+<p>Simonsohn, Uri, Joseph P. Simmons, and Leif D. Nelson. 2015. “Better P-Curves: Making P-Curve Analysis More Robust to Errors, Fraud, and Ambitious P-Hacking, a Reply to Ulrich and Miller (2015).” <em>Journal of Experimental Psychology: General</em> 144 (6). American Psychological Association (APA): 1146–52. doi:<a href="https://doi.org/10.1037/xge0000104">10.1037/xge0000104</a>.</p>
+</div>
+<div id="ref-doi:10.1037/xge0000086">
+<p>Ulrich, Rolf, and Jeff Miller. 2015. “P-Hacking by Post Hoc Selection with Multiple Opportunities: Detectability by Skewness Test?: Comment on Simonsohn, Nelson, and Simmons (2014).” <em>Journal of Experimental Psychology: General</em> 144 (6). American Psychological Association (APA): 1137–45. doi:<a href="https://doi.org/10.1037/xge0000086">10.1037/xge0000086</a>.</p>
+</div>
+<div id="ref-doi:10.1177/1745691616650874">
+<p>Van Aert, Robbie C. M., Jelte M. Wicherts, and Marcel A. L. M. Van Assen. 2016. “Conducting Meta-Analyses Based on P Values.” <em>Perspectives on Psychological Science</em> 11 (5). SAGE Publications: 713–29. doi:<a href="https://doi.org/10.1177/1745691616650874">10.1177/1745691616650874</a>.</p>
+</div>
+<div id="ref-doi:10.1037/met0000025">
+<p>Van Assen, Marcel A. L. M., Robbie C. M. Van Aert, and Jelte M. Wicherts. 2015. “Meta-Analysis Using Effect Size Distributions of Only Statistically Significant Studies.” <em>Psychological Methods</em> 20 (3). American Psychological Association (APA): 293–309. doi:<a href="https://doi.org/10.1037/met0000025">10.1037/met0000025</a>.</p>
+</div>
+<div id="ref-doi:10.1371/journal.pone.0114876">
+<p>Veldkamp, Coosje L. S., Michèle B. Nuijten, Linda Dominguez-Alvarez, Marcel A. L. M. Van Assen, and Jelte M. Wicherts. 2014. “Statistical Reporting Errors and Collaboration on Statistical Analyses in Psychological Science.” <em>PloS ONE</em> 9 (12): e114876. doi:<a href="https://doi.org/10.1371/journal.pone.0114876">10.1371/journal.pone.0114876</a>.</p>
+</div>
+<div id="ref-doi:10.1080/19312458.2015.1096333">
+<p>Vermeulen, Ivar, Camiel J. Beukeboom, Anika Batenburg, Arthur Avramiea, Dimo Stoyanov, Bob van de Velde, and Dirk Oegema. 2015. “Blinded by the Light: How a Focus on Statistical ‘Significance’ May Causep-Value Misreporting and an Excess Ofp-Values Just Below .05 in Communication Science.” <em>Communication Methods and Measures</em> 9 (4). Informa UK Limited: 253–79. doi:<a href="https://doi.org/10.1080/19312458.2015.1096333">10.1080/19312458.2015.1096333</a>.</p>
+</div>
+<div id="ref-doi:10.3758/bf03194105">
+<p>Wagenmakers, Eric-Jan. 2007. “A Practical Solution to the Pervasive Problems Ofp Values.” <em>Psychonomic Bulletin &amp; Review</em> 14 (5). Springer Nature: 779–804. doi:<a href="https://doi.org/10.3758/bf03194105">10.3758/bf03194105</a>.</p>
+</div>
+<div id="ref-doi:10.1177/1745691612463078">
+<p>Wagenmakers, Eric-Jan, Ruud Wetzels, Denny Borsboom, Han L J van der Maas, and Rogier A Kievit. 2012. “An Agenda for Purely Confirmatory Research.” <em>Perspectives on Psychological Science</em> 7 (6): 632–38. doi:<a href="https://doi.org/10.1177/1745691612463078">10.1177/1745691612463078</a>.</p>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="1">
+<li id="fn1"><p>One exception to this rule is when the alternative hypothesis is wrongly specified, that is, if the true effect size is negative whereas the alternative hypothesis states that the true effect is positive. In this case the distribution of the <span class="math inline">\(p\)</span>- value is left-skewed and monotonically increasing.<a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#fnref1">↩</a></p></li>
+<li id="fn2"><p>We note there are minor differences in the number of search results from the PLOS webpage and the <code>rplos</code> package for equal searches. This is due to differences in the default search database for the webpage and the package. For technical details on this issue, see <a href="https://github.com/ropensci/rplos/issues/75" class="uri">https://github.com/ropensci/rplos/issues/75</a><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#fnref2">↩</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="too-good-to-be-false-nonsignificant-results-revisited.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": true,
+"facebook": false,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "github", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": null,
+"history": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf"],
+"toc": {
+"collapse": "subsection",
+"scroll_highlight": true
+},
+"toolbar": {
+"position": "fixed"
+},
+"search": true
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

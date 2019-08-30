@@ -58,7 +58,8 @@ suggested micro- and nanopublications [@doi:10.7717/peerj-cs.78;
 @doi:10.1186/2041-1480-5-28]. One example of modular, stepwise
 research communication is depicted in Figure \@ref(fig:octopi).
 
-```{r octopi, echo=FALSE, fig.cap = "An example of modular, stepwise research communication, from the Octopus project (see also https://perma.cc/TA79-YPH9).", out.width="100%"}
+```{r octopi, echo=FALSE, fig.cap = "An example of modular, stepwise research communication, from the Octopus project (see also https://perma.cc/TA79-YPH9).", out.width="100%", fig.pos = 'h'}
+suppressPackageStartupMessages(library(kableExtra))
 knitr::include_graphics('assets/figures/fig-octo.png')
 ```
 
@@ -90,7 +91,7 @@ developments within scholarly research. Figure \@ref(fig:datcom-fig1)
 provides a conceptual depiction of how these different forms of
 documenting findings relate to each other.
 
-```{r datcom-fig1, echo = FALSE, , fig.align="center", out.width="80%", fig.cap="Conceptual depiction of how different forms of scholarly communication relate to each other in both detail and certainty."}
+```{r datcom-fig1, echo = FALSE, , fig.align="center", out.width="80%", fig.cap="Conceptual depiction of how different forms of scholarly communication relate to each other in both detail and certainty.", fig.pos = 'h'}
 knitr::include_graphics('assets/figures/datcom-fig1.png')
 ```
 
@@ -174,7 +175,7 @@ network, it means that both 'link rot' and 'content drift'
 [@doi:10.1371/journal.pone.0115253; @doi:10.1371/journal.pone.0167475]
 could become superfluous.
 
-```{r datcom-fig2, echo = FALSE, , fig.align="center", out.width='100%', fig.cap='A diagram depicting how a Merkle Tree hashes initial chunks of information into one top hash, with which the content can be verified.'}
+```{r datcom-fig2, echo = FALSE, , fig.align="center", out.width='100%', fig.cap='A diagram depicting how a Merkle Tree hashes initial chunks of information into one top hash, with which the content can be verified.', fig.pos = 'h'}
 knitr::include_graphics('assets/figures/datcom-fig2.png')
 ```
 
@@ -231,9 +232,10 @@ scholarly profile and initializes her Dat filesystem, resulting in:
 ```json
 {
   "title": "Alice",
-  "description": "I am a physicist at CERN-LHC. As a fan of the decentralized Web, I 
-  look forward to communicating my research in a digital native manner and in a way that
-  is not limited to just text.",
+  "description": "I am a physicist at CERN-LHC. As a fan of the 
+    decentralized Web, I look forward to communicating my research
+    in a digital native manner and in a way that is not limited 
+    to just text.",
   "url": "dat://b49...551"
 }
 ```
@@ -303,7 +305,7 @@ fully unfollow Bob, which removes all of Bob's updates from her feed, or
 "freeze follow" follows a static and specific version of the profile by
 adding a version number to the followed link (e.g., `dat://...+12`).
 
-```{r datcom-fig3, echo = FALSE, , fig.align="center", out.width='70%', fig.cap='Conceptual diagram of scholarly profiles and following others. Network propagation to rank N can be used to facilitate discovery of researchers and to build networks of researchers.'}
+```{r datcom-fig3, echo = FALSE, , fig.align="center", out.width='70%', fig.cap='Conceptual diagram of scholarly profiles and following others. Network propagation to rank N can be used to facilitate discovery of researchers and to build networks of researchers.', fig.pos = 'h'}
 knitr::include_graphics('assets/figures/datcom-fig3.png')
 ```
 
@@ -387,7 +389,8 @@ theory; the `dat.json` file for this module is
 ```json
 {
   "title": "Mock Theory",
-  "description": "This is a mock theory but it could just as well be a real one.",
+  "description": "This is a mock theory but it could just as well 
+    be a real one.",
   "url": "dat://dbf...d82"
 }
 ```
@@ -456,7 +459,7 @@ research cycle registered in this way. The links between versioned
 scholarly modules embeds the chronological nature of the research
 process in its communication.
 
-```{r datcom-fig4, echo = FALSE, fig.align="center", out.width='100%', fig.cap='Conceptual representations of how scholarly profiles relate to each other (Panel A), how scholarly modules relate to each other (Panel B), how scholarly profiles and modules create a network of scholarly activity in both researchers and research (Panel C), and how claims of authorship are verified if two-way or unverified if one-way (Panel D).'}
+```{r datcom-fig4, echo = FALSE, fig.align="center", out.width='100%', fig.cap='Conceptual representations of how scholarly profiles relate to each other (Panel A), how scholarly modules relate to each other (Panel B), how scholarly profiles and modules create a network of scholarly activity in both researchers and research (Panel C), and how claims of authorship are verified if two-way or unverified if one-way (Panel D).', fig.pos = 'h'}
 knitr::include_graphics('assets/figures/datcom-fig4.png')
 ```
 
@@ -520,7 +523,7 @@ webpage to the user but does not have a centralized server providing the
 content. Note also the link at the bottom showcasing the versioned link
 to the analysis file.
 
-```{r datcom-fig5, echo = FALSE, fig.align="center", out.width='100%', fig.cap='Screencap of the minimal prototype of decentralized scholarly communication. The prototype resembles a regular webpage on the userside, but on the backend it runs entirely on Dat filesystems that live on a decentralized network.'}
+```{r datcom-fig5, echo = FALSE, fig.align="center", out.width='100%', fig.cap='Screencap of the minimal prototype of decentralized scholarly communication. The prototype resembles a regular webpage on the userside, but on the backend it runs entirely on Dat filesystems that live on a decentralized network.', fig.pos = 'h'}
 knitr::include_graphics('assets/figures/datcom-fig5.png')
 ```
 
@@ -591,7 +594,7 @@ Elsevier's content on Wiley's webpage); this infrastructure would give
 the potential for various types of usage to take place on the same type
 of infrastructure.
 
-```{r datcom-fig6, echo = FALSE, fig.cap = 'Mockup design of an additional interface for the proposed scholarly communication infrastructure. Made by Rebecca Lam, reused under CC-BY 4.0 license.'}
+```{r datcom-fig6, echo = FALSE, fig.cap = 'Mockup design of an additional interface for the proposed scholarly communication infrastructure. Made by Rebecca Lam, reused under CC-BY 4.0 license.', out.width = '100%'}
 # knitr::include_graphics('assets/mockup-1.png')
 knitr::include_graphics('assets/figures/datcom-mockup.png')
 ```

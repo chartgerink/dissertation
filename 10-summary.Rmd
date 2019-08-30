@@ -1,8 +1,8 @@
-# Summary
+# Summary {-}
 
-This dissertation focuses on either understanding and detecting threats to the epistemology of science (chapters 2-7) or making practical advances to remedy epistemological threats (chapters 8-10)
+This dissertation focuses on either understanding and detecting threats to the epistemology of science (chapters 1-6) or making practical advances to remedy epistemological threats (chapters 7-9)
 
-Chapter 2 reviews the literature on responsible conduct of research, questionable
+Chapter 1 reviews the literature on responsible conduct of research, questionable
 research practices, and research misconduct. Responsible conduct of
 research is often defined in terms of a set of abstract, normative
 principles, professional standards, and ethics in doing research. In
@@ -34,7 +34,7 @@ the retraction has been issued.
 
 @doi:10.1371/journal.pbio.1002106 provided a large collection of
 $p$-values that, from their perspective, indicates widespread
-statistical significance seeking (i.e., $p$-hacking). Chapter 3
+statistical significance seeking (i.e., $p$-hacking). Chapter 2
 inspects this result for robustness. Theoretically, the $p$-value
 distribution should be a smooth, decreasing function, but the
 distribution of reported $p$-values shows systematically more reported
@@ -69,9 +69,9 @@ all. These results nuance the conclusion by
 robust and that the evidence for widespread left-skew $p$-hacking is
 ambiguous at best.
 
-Chapter 4 examined 258,050 test results across 30,710 articles from eight high impact journals to investigate the existence of a peculiar prevalence of $p$-values just below .05 (i.e., a bump) in the psychological literature, and a potential increase thereof over time. I indeed found evidence for a bump just below .05 in the distribution of exactly reported $p$-values in the journals Developmental Psychology, Journal of Applied Psychology, and Journal of Personality and Social Psychology, but the bump did not increase over the years and disappeared when using recalculated $p$-values. I found clear and direct evidence for the QRP  "incorrect rounding of $p$-value" [@doi:10.1177/0956797611430953] in all psychology journals. Finally, I also investigated monotonic excess of $p$-values, an effect of certain QRPs that has been neglected in previous research, and developed two measures to detect this by modeling the  distributions of statistically significant $p$-values. Using simulations and applying the two measures to the retrieved test results, I argue that, although one of the measures suggests the use of QRPs in psychology, it is difficult to draw general conclusions concerning QRPs based on modeling of $p$-value distributions.
+Chapter 3 examined 258,050 test results across 30,710 articles from eight high impact journals to investigate the existence of a peculiar prevalence of $p$-values just below .05 (i.e., a bump) in the psychological literature, and a potential increase thereof over time. I indeed found evidence for a bump just below .05 in the distribution of exactly reported $p$-values in the journals Developmental Psychology, Journal of Applied Psychology, and Journal of Personality and Social Psychology, but the bump did not increase over the years and disappeared when using recalculated $p$-values. I found clear and direct evidence for the QRP  "incorrect rounding of $p$-value" [@doi:10.1177/0956797611430953] in all psychology journals. Finally, I also investigated monotonic excess of $p$-values, an effect of certain QRPs that has been neglected in previous research, and developed two measures to detect this by modeling the  distributions of statistically significant $p$-values. Using simulations and applying the two measures to the retrieved test results, I argue that, although one of the measures suggests the use of QRPs in psychology, it is difficult to draw general conclusions concerning QRPs based on modeling of $p$-value distributions.
 
-In Chapter 5 I examined evidence for false negatives in nonsignificant
+In Chapter 4 I examined evidence for false negatives in nonsignificant
 results in three different ways. I adapted the Fisher method to detect
 the presence of at least one false negative in a set of statistically
 nonsignificant results. Simulations show that the adapted Fisher
@@ -93,7 +93,7 @@ psychology. Potentially neglecting effects due to a lack of
 statistical power can lead to a waste of research resources and stifle
 the scientific discovery process.
 
-Chapter 6 describes a dataset that is the result of content mining
+Chapter 5 describes a dataset that is the result of content mining
 167,318 published articles for statistical test results reported
 according to the standards prescribed by the American Psychological
 Association (APA). Articles published by the APA, Springer, Sage, and
@@ -116,7 +116,7 @@ published. The links are included to remain consistent with the
 published version.] and preserved at
 [http://dx.doi.org/10.5281/zenodo.59818](http://doi.org/10.5281/zenodo.59818).
 
-In Chapter 7, I test the validity of statistical methods to detect
+In Chapter 6, I test the validity of statistical methods to detect
 fabricated data in two studies. In Study 1, I tested the validity of
 statistical methods to detect fabricated data at the study level using
 summary statistics. Using (arguably) genuine data from the Many Labs 1
@@ -151,7 +151,7 @@ of the assumptions of fabrication detection methods may yield high
 false positive or false negative probabilities, I recommend comparing
 potentially fabricated data to genuine data on the same topic.
 
-Chapter 8 tackles the issue of data extraction. It is common for
+Chapter 7 tackles the issue of data extraction. It is common for
 authors to communicate their results in graphical figures, but those
 data are frequently unavailable for reanalysis. Reconstructing data
 points from a figure manually requires the author to measure the
@@ -171,8 +171,7 @@ and strongly insist publishers to provide more vector based data
 figures in the near future for the benefit of the scholarly community.
 
 Scholarly research faces threats to its sustainability on multiple
-domains (access, incentives, reproducibility, inclusivity). In Chapter
-9 I argue that "after-the-fact" research papers do not help and
+domains (access, incentives, reproducibility, inclusivity). In Chapter 8 I argue that "after-the-fact" research papers do not help and
 actually cause some of these threats because the chronology of the
 research cycle is lost in a research paper. I propose to give up the
 academic paper and propose a digitally native "as-you-go"
@@ -190,7 +189,7 @@ in the evaluation process, with specific use cases for funders,
 universities, and individual researchers.
 
 A scholarly communication system needs to register, distribute,
-certify, archive, and incentivize knowledge production. Chapter 10
+certify, archive, and incentivize knowledge production. Chapter 9
 proposes that the current article-based system technically fulfills
 these functions, but suboptimally. I propose a module-based
 communication infrastructure that attempts to take a wider view of

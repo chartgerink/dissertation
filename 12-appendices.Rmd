@@ -1,0 +1,54 @@
+# (APPENDIX) Appendices {-} 
+
+# Examining statistical properties of the Fisher test
+
+The Fisher test to detect false negatives is only useful if it is powerful enough to detect evidence of at least one false negative result in papers with few nonsignificant results. Therefore we examined the specificity and sensitivity of the Fisher test to test for false negatives, with a simulation study of the one sample $t$-test. Throughout this chapter, we apply the Fisher test with $\alpha_{Fisher}=0.10$, because tests that inspect whether results are "too good to be true" typically also use alpha levels of 10\% [@doi:10.1016/s0895-43560000242-0;@doi:10.1177/1740774507079441;@doi:10.3758/s13423-012-0227-9]. The simulation procedure was carried out for conditions in a three-factor design, where power of the Fisher test was simulated as a function of sample size $N$, effect size $\eta$, and $k$ test results. The three factor design was a 3 (sample size $N$: 33, 62, 119) by 100 (effect size $\eta$: .00, .01, .02, ..., .99) by 18 ($k$ test results: 1, 2, 3, ..., 10, 15, 20, ..., 50) design, resulting in 5,400 conditions. The levels for sample size were determined based on the 25th, 50th, and 75th percentile for the degrees of freedom ($df2$) in the observed dataset for Application 1. Each condition contained 10,000 simulations. The power of the Fisher test for one condition was calculated as the proportion of significant Fisher test results given $\alpha_{Fisher}=0.10$. If the power for a specific effect size $\eta$ was $\geq99.5\%$, power for larger effect sizes were set to 1.
+
+We simulated false negative $p$-values according to the following six steps (see Figure \@ref(fig:appendix5a). First, we determined the critical value under the null distribution. Second, we determined the distribution under the alternative hypothesis by computing the non-centrality parameter as $\delta=(\eta^2/1-\eta^2)N$ [@Steiger1997-qq;@doi:10.1177/00131640121971392]. Third, we calculated the probability that a result under the alternative hypothesis was, in fact, nonsignificant (i.e., $\beta$). Fourth, we randomly sampled, uniformly, a value between $0-\beta$. Fifth, with this value we determined the accompanying $t$-value. Finally, we computed the $p$-value for this $t$-value under the null distribution. 
+
+```{r appendix5a, fig.cap="Visual aid for simulating one nonsignificant test result. The critical value from $H_0$ (left distribution) was used to determine $\\beta$ under $H_1$ (right distribution). A value between 0 and $\\beta$ was drawn, $t$-value computed, and $p$-value under $H_0$ determined.", echo=FALSE, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics('assets/figures/tgtbf-appendix_a.png', auto_pdf = TRUE)
+```
+
+We repeated the procedure to simulate a false negative $p$-value $k$ times and used the resulting $p$-values to compute the Fisher test. Before computing the Fisher test statistic, the nonsignificant $p$-values were transformed (see Equation \@ref(eq:pistar)). Subsequently, we computed the Fisher test statistic and the accompanying $p$-value according to Equation \@ref(eq:fishertest). 
+
+# Effect computation
+
+The $t$, $F$, and $r$-values were all transformed into the effect size $\eta^2$, which is the explained variance for that test result and ranges between 0 and 1, for comparing observed to expected effect size distributions. For $r$-values, this only requires taking the square (i.e., $r^2$). $F$ and $t$-values were converted to effect sizes by
+\begin{equation}
+\eta^2=\frac{\frac{F\times df_1}{df_2}}{\frac{F\times df_1}{df_2}+1}
+(\#eq:b1)
+\end{equation}
+where $F=t^2$ and $df_1=1$ for $t$-values. Adjusted effect sizes, which correct for positive bias due to sample size, were computed as
+\begin{equation}
+\eta^2_{adj}=\frac{\frac{F\times df_1}{df_2}-\frac{df_1}{df_2}}{\frac{F\times df_1}{df_2}+1}
+(\#eq:b2)
+\end{equation}
+which shows that when $F=1$ the adjusted effect size is zero. For $r$-values the adjusted effect sizes were computed as [@doi:10.1016/j.psychsport.2012.07.007]
+\begin{equation}
+\eta^2_{adj}=\eta^2-([1-\eta^2]\times\frac{v}{N-v-1})
+(\#eq:b3)
+\end{equation}
+where $v$ is the number of predictors. It was assumed that reported correlations concern simple bivariate correlations and concern only one predictor (i.e., $v=1$). This reduces the previous formula to
+\begin{equation}
+\eta^2_{adj}=\eta^2-\frac{1-\eta^2}{df}
+(\#eq:b4)
+\end{equation}
+where $df=N-2$.
+
+# Example of `statcheck` report for PubPeer
+
+> The HTML version of this article was scanned on 5 August 2016 for statistical results ($t$, $r$, $F$, $\chi^2$, and $Z$ values) reported in APA format [for specifics, see @doi:10.3758/s13428-015-0664-2]. An automatically generated report follows.
+
+> The scan detected 5 statistical results in APA format, of which 3 contained potentially incorrect statistical results, of which 1 may change statistical significance ($\alpha$=0.05). Potential one-tailed results were taken into account when "one-sided", "one-tailed", or "directional" occurred in the text.
+The errors that may change statistical significance were reported as:
+
+> $t(67)=-0.436, p<0.001$ (recalculated $p$-value: 0.66424)
+
+> The errors that may affect the computed $p$-value (but not the statistical significance) were reported as:
+
+> $F(1,126)=2.1, p>0.90$ (recalculated $p$-value: 0.14978)
+
+> $t(67)=-1.02, p=0.35$ (recalculated $p$-value: 0.31140)
+
+> Note that these are not definitive results and require manual inspection to definitively assess whether results are erroneous.

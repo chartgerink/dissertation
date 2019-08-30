@@ -3,14 +3,22 @@
 In this chapter, I describe a dataset (available at http://doi.org/10.17026/dans-2cm-v9j9) that is the result of content mining 167,318 published psychology articles for statistical test results. I tried to mine the content of HTML articles in all psychology journals published by the six major publishers in psychology, and succeeded in doing so for four major publishers (see Table \@ref(tab:data-1) for descriptives per publisher). This content mining was done with the `R` package `statcheck` [@doi:10.3758/s13428-015-0664-2;@statcheck], which extracts statistical results from research articles in an automated fashion, given that they are reported in the format prescribed by the American Psychological Association (APA). I only inspected psychology journals, because this is a standard within the field of psychology and not necessarily outside of this field.
 
 ```{r data-1, echo = FALSE, results="asis"}
+suppressPackageStartupMessages(library(kableExtra))
 df <- read.csv('assets/tables/statcheck-1.csv', stringsAsFactors = FALSE)
 df$Publisher[1] <- 'APA'
 names(df) <- c('Publisher', 'Timespan',
   '# articles', '# articles with results', '# results',
   'Median # results per article', 'Mean reported p-value', 'Mean recalculated p-value')
 
+if (!knitr::is_html_output()) {
+  knitr::kable(df, caption = 'An overview of the publishers included accompanied by descriptive statistics per publisher regarding the extracted APA results.', booktabs = TRUE, format = 'latex') %>%
+    landscape() %>%
+  kableExtra::kable_styling(latex_options = c('striped', 'scale_down'), position = 'center')
+} else {
 knitr::kable(df, caption = 'An overview of the publishers included accompanied by descriptive statistics per publisher regarding the extracted APA results.', booktabs = TRUE) %>%
-  kableExtra::kable_styling(latex_options = c('scale_down', 'striped', 'hold_position'), position = 'left')
+  kableExtra::kable_styling(position = 'center',
+                            bootstrap_options = c("striped", "hover", "condensed", "responsive", full_width = F))
+  }
 ```
 
 The `statcheck` software extracted 688,112 results from 50,845 articles (out of 167,318 articles). The extracted statistical test results are presented in long format in this dataset (i.e., each row corresponds to one statistical result). For each extracted statistical test result, the reported statistical values are used to recalculate the $p$-value for the reported statistical result. These recalculated $p$-values are checked against the reported $p$-value for (decision) errors. A potential error has occurred when the reported $p$-value is not congruent with the recalculated $p$-value, whereas a decision error (or gross error) occurs when the recalculated $p$-value does not correspond to the reported $p$-value and alters the significance of the result, assuming $\alpha=0.05$. The results of this comparison are available in the dataset. The articles for which no results were found are not included in the dataset (filenames without results available at [https://raw.githubusercontent.com/chartgerink/2016statcheckdata/master/noresult.txt](https://raw.githubusercontent.com/chartgerink/2016statcheckdata/master/noresult.txt)).
@@ -27,15 +35,23 @@ For each of the 688,112 results, 20 variables are included, of which seven perta
 
 ```{r data-2, echo = FALSE}
 df <- read.csv('assets/tables/statcheck-2.csv')
-kable(df, caption = 'Variables included in the dataset and a description of each variable. ', booktabs = TRUE) %>%
-  kable_styling(latex_options = c('scale_down', 'striped'), position = 'left') 
+
+if (!knitr::is_html_output()) {
+  kable(df, caption = 'Variables included in the dataset and a description of each variable. ', booktabs = TRUE, format = 'latex') %>%
+    landscape() %>%
+  kableExtra::kable_styling(latex_options = c('striped', 'scale_down'), position = 'left')
+} else {
+  kable(df, caption = 'Variables included in the dataset and a description of each variable. ', booktabs = TRUE) %>%
+  kableExtra::kable_styling(position = 'left',
+                            bootstrap_options = c("striped", "hover", "condensed", "responsive", full_width = F))
+}
 ```
 
 ## Methods
 
 The data were collected in five steps: (i) collect journal lists; (ii) spider journal pages for articles; (iii) download articles; (iv) add article metadata; and (v) mine articles for statistical results. These five steps are specified below. All code and version history is available at [https://github.com/chartgerink/2016statcheckdata](https://github.com/chartgerink/2016statcheckdata) (preserved at [http://doi.org/10.5281/zenodo.59818](http://doi.org/10.5281/zenodo.59818)). Figure \@ref(fig:data-fig1) gives a flowchart of the different steps in the data collection process.
 
-```{r data-fig1, echo = FALSE, fig.cap = 'Flowchart of the data collection process, specified per step in the collection process.', fig.align = 'center'}
+```{r data-fig1, echo = FALSE, fig.cap = 'Flowchart of the data collection process, specified per step in the collection process.', fig.align = 'center', out.width = '100%', fig.pos = 'h'}
 knitr::include_graphics('assets/figures/statcheck-fig1.png')
 ```
 
@@ -62,23 +78,5 @@ Additionally, it is worth mentioning that relatively few articles contained resu
 
 The presented data have been deposited in the Dutch Archival Network for the Sciences (DANS) and are available under a public domain license (CC0 1.0 rights waiver). The DANS repository is a trustworthy digital repository and has received the Data Seal of Approval (DSA), the World Data System (WDS) certificate, and the NESTOR-seal. This ensures that deposited data will remain available for a substantial amount of time. All rights to this dataset are waived to the furthest extent possible, such that reuse is maximized.
 
-In addition to preserving the data in the DANS repository, individual reports have been generated for each of the 50,845 articles and posted on PubPeer (https://pubpeer.com/). Appendix 6.A shows a fictitious example of such a report. These reports were generated in order to increase the accessibility of the data for those wanting to investigate a specific paper instead of the entire dataset. Additionally, this increases the discoverability of potential errors by posting them in a central forum of post-publication peer review.
+In addition to preserving the data in the DANS repository, individual reports have been generated for each of the 50,845 articles and posted on PubPeer (<https://pubpeer.com/>). Appendix C shows a fictitious example of such a report. These reports were generated in order to increase the accessibility of the data for those wanting to investigate a specific paper instead of the entire dataset. Additionally, this increases the discoverability of potential errors by posting them in a central forum of post-publication peer review.
 
-\newpage
-
-## Appendix 6.A. Example of `statcheck` Report for PubPeer
-
-> The HTML version of this article was scanned on 5 August 2016 for statistical results ($t$, $r$, $F$, $\chi^2$, and $Z$ values) reported in APA format [for specifics, see @doi:10.3758/s13428-015-0664-2]. An automatically generated report follows.
-
-> The scan detected 5 statistical results in APA format, of which 3 contained potentially incorrect statistical results, of which 1 may change statistical significance ($\alpha$=0.05). Potential one-tailed results were taken into account when "one-sided", "one-tailed", or "directional" occurred in the text.
-The errors that may change statistical significance were reported as:
-
-> $t(67)=-0.436, p<0.001$ (recalculated $p$-value: 0.66424)
-
-> The errors that may affect the computed $p$-value (but not the statistical significance) were reported as:
-
-> $F(1,126)=2.1, p>0.90$ (recalculated $p$-value: 0.14978)
-
-> $t(67)=-1.02, p=0.35$ (recalculated $p$-value: 0.31140)
-
-> Note that these are not definitive results and require manual inspection to definitively assess whether results are erroneous.
