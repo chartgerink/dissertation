@@ -31,12 +31,3 @@ vignettes/*.pdf
 # Temporary files created by R markdown
 *.utf8.md
 *.knit.md
-
-_publish.R
-_book
-_bookdown_files
-rsconnect
-.Rproj.user
-_main*
-tmp/
-reading-list.md

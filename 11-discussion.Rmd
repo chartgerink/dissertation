@@ -8,7 +8,7 @@ reform fiddles with minor superficial knobs when and where we are
 allowed to. Piecemeal reform, such as giving virtual stickers for
 sharing data, is just not going to cut it when we want to do something
 about the sustainability of science. In this Epilogue, I reflect on
-the need for radical and uncompromising reform in science and I
+the dire need for radical and uncompromising reform in science and I
 propose a set of demands.
 
 The fundamental question when choosing between reformism and
@@ -26,19 +26,20 @@ conclusion, does not work, hence, is unsustainable. For that reason, I
 see radical thinking as the only viable option.
 
 That the current, article based, scientific system is too broken to
-fix is painfully clear. Putting aside how invested the established
-institutions are in the current system, why should it objectively
-persist in its current form? Not only must all changes to the
-publication system, even effective ones, go through the gatekeepers of
-that system, those gatekeepers do not even serve the scientific
-system. The publishers clearly and obviously serve their
-shareholders. Even if we could alter the rules such that mischief no
-longer pays in the publishing game [@doi:10.1177/1745691612459060], framing it in terms
-of bettering science need not convince publishers. Moreover, my
-research suggests that it is unfeasible to detect mischief at large,
-indicating it may be more fruitful to aim for a system that prevents
-it in the first place. Only under the sunk cost fallacy does it make
-sense to me to keep the current system.
+fix has become painfully clear. Putting aside how invested the
+established institutions are in the current system, why should it
+objectively persist in its current form? Not only must all changes to
+the publication system, even effective ones, go through the
+gatekeepers of that system, those gatekeepers do not even serve the
+scientific system. The publishers clearly and logically serve their
+shareholders in the end. Even if we could alter the rules such that
+mischief no longer pays in the publishing game
+[@doi:10.1177/1745691612459060], framing it in terms of bettering
+science need not convince publishers. Moreover, my research suggests
+that it is unfeasible to detect mischief at large, indicating it may
+be more fruitful to aim for a system that prevents it in the first
+place. Only under the sunk cost fallacy does it make sense to me to
+keep the current system.
 
 In order to understand the need for radical reform from another angle,
 we need to consider how the complex systemic issues of science are
@@ -69,7 +70,7 @@ resembling the problematic and data-exploitative models of
 Facebook. But even for researchers, the cost to play in publishing
 Open Access is substantial and rising faster than inflation
 [@doi:10.7287/peerj.preprints.27809v1], reaffirming structural and
-global inequalities. This further extends existing inequalities in
+global inequalities. This extends existing inequalities in
 participation, such as participation in scientific education that is
 increasingly difficult as collective financing programs are replaced
 with individualized debt^[Again, due to austerity measures of
@@ -201,14 +202,15 @@ Finally, we must demand systems that are sustainable for both
 knowledge production and the planetary environment. This is *the*
 acute societal context that we must not neglect
 [@ipccGlobalWarmingIPCC2018]. In order to reduce the need for
-consumptive resources, we must reimagine how we can interact with
-other researchers. Doing so may drastically reduce the need for
-flights for conferences (and benefit our schedules). The digital
-services that are provided also consume substantial amounts of energy,
-especially given the rise of machine learning algorithms whose
-training is substantial in its energy use [@]. Electrical energy is
-often still fossil fuel based. Any radical proposals must be evaluated
-on their sustainability given the acute urgency of global warming.
+consumptive resources [often fossil fuel based; @isbn:9780745335612],
+we must reimagine how we can interact with other researchers. Doing so
+may drastically reduce the need for flights for conferences (and
+benefit our schedules). The digital services that are provided also
+consume substantial amounts of energy, especially given the rise of
+machine learning algorithms whose training is substantial in its
+energy use [@DBLP:journals/corr/abs-1906-02243]. Any radical proposals
+must be evaluated on their sustainability given the acute urgency of
+the ecological crises.
 
 Only together do these demands produce a framework to build parallel
 systems that may start to substantially change the sustainability of
@@ -216,10 +218,10 @@ science. Many scientific issues intersect with the societal issues
 that we are embedded in; ignoring this intersection harms effective
 and sustainable change. Reformist changes often lack this
 intersectionalism by being highly specific, which ultimately results
-in more effort spent for (maybe) the same goals. Regardless, this
-framework served me in creating a proposal (cf. chapters 8 and 9) and
-provides the basis as I implement this in my work moving forward.
-Nonetheless, there is a multiplicity of ways to think radically and
-achieve these demands. With pluralism of radical ideas, substantial
-change may happen. In the end, it does not matter who makes the
-change, but that the change happens.
+in more effort spent for (maybe) the same goals. Regardless, the
+described framework served me in creating a concrete radical proposal
+(cf. chapters 8 and 9) and provides the basis as I implement this in
+my work moving forward.  Nonetheless, there is a multiplicity of ways
+to think radically and achieve these demands. With pluralism of
+radical ideas, substantial change may happen. In the end, it does not
+matter who makes the change, but that the change happens.
