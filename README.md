@@ -103,7 +103,7 @@ __Contributions towards understanding and building sustainable science__
   - [x] Preprint: [https://doi.org/10.7287/peerj.preprints.26462v1](https://doi.org/10.7287/peerj.preprints.26462v1)
   - [x] Status: [published in Publications](https://doi.org/10.3390/publications6020021)
   - [x] Data: NO DATA
-  - [x] Reproducibility packet: [GitHub for manuscript files](https://github.com/chartgerink/2017network-rankings)
+  - [x] Reproducibility packet: [![DOI](https://zenodo.org/badge/97157193.svg)](https://zenodo.org/badge/latestdoi/97157193)
   - [x] License: [CC 0 rights waiver](http://creativecommons.org/publicdomain/zero/1.0/)
   - [x] Bookdown-ready
   
