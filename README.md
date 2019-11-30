@@ -35,6 +35,8 @@ xtable
 
 Remember that there might be other dependencies like `pandoc`, `pandoc-citeproc`, and some LaTeX dependencies I haven't included and depend on your installation.
 
+For the PDF, I did some manual adjustments to get to the final version because LaTeX...
+
 ## Outline
 
 __Contributions towards understanding and building sustainable science__
@@ -114,4 +116,4 @@ __Contributions towards understanding and building sustainable science__
   - [x] Bookdown-ready
 
 10. Epilogue
-  - [ ] Being drafted
+  - [x] Done
