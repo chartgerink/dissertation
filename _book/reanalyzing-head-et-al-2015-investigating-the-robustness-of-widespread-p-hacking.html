@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>2 Reanalyzing Head et al. (2015): investigating the robustness of widespread \(p\)-hacking | Contributions towards understanding and building sustainable science</title>
+  <meta name="description" content="PhD dissertation by CHJ Hartgerink, written during 2014-2019, mostly at Tilburg University." />
+  <meta name="generator" content="bookdown 0.10 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="2 Reanalyzing Head et al. (2015): investigating the robustness of widespread \(p\)-hacking | Contributions towards understanding and building sustainable science" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="PhD dissertation by CHJ Hartgerink, written during 2014-2019, mostly at Tilburg University." />
+  <meta name="github-repo" content="chartgerink/dissertation" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="2 Reanalyzing Head et al. (2015): investigating the robustness of widespread \(p\)-hacking | Contributions towards understanding and building sustainable science" />
+  
+  <meta name="twitter:description" content="PhD dissertation by CHJ Hartgerink, written during 2014-2019, mostly at Tilburg University." />
+  
+
+<meta name="author" content="Chris Hubertus Joseph Hartgerink" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="research-practices-and-assessment-of-research-misconduct.html">
+<link rel="next" href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Prologue</a></li>
+<li class="part"><span><b>I Understanding sustainable science</b></span></li>
+<li class="chapter" data-level="1" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html"><i class="fa fa-check"></i><b>1</b> Research practices and assessment of research misconduct</a><ul>
+<li class="chapter" data-level="1.1" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#responsible-conduct-of-research"><i class="fa fa-check"></i><b>1.1</b> Responsible conduct of research</a><ul>
+<li class="chapter" data-level="1.1.1" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#what-is-it"><i class="fa fa-check"></i><b>1.1.1</b> What is it?</a></li>
+<li class="chapter" data-level="1.1.2" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#what-do-researchers-do"><i class="fa fa-check"></i><b>1.1.2</b> What do researchers do?</a></li>
+<li class="chapter" data-level="1.1.3" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#improving-responsible-conduct"><i class="fa fa-check"></i><b>1.1.3</b> Improving responsible conduct</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#questionable-research-practices"><i class="fa fa-check"></i><b>1.2</b> Questionable research practices</a><ul>
+<li class="chapter" data-level="1.2.1" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#what-is-it-1"><i class="fa fa-check"></i><b>1.2.1</b> What is it?</a></li>
+<li class="chapter" data-level="1.2.2" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#what-do-researchers-do-1"><i class="fa fa-check"></i><b>1.2.2</b> What do researchers do?</a></li>
+<li class="chapter" data-level="1.2.3" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#how-can-it-be-prevented"><i class="fa fa-check"></i><b>1.2.3</b> How can it be prevented?</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#research-misconduct"><i class="fa fa-check"></i><b>1.3</b> Research misconduct</a><ul>
+<li class="chapter" data-level="1.3.1" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#what-is-it-2"><i class="fa fa-check"></i><b>1.3.1</b> What is it?</a></li>
+<li class="chapter" data-level="1.3.2" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#what-do-researchers-do-2"><i class="fa fa-check"></i><b>1.3.2</b> What do researchers do?</a></li>
+<li class="chapter" data-level="1.3.3" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#how-can-it-be-prevented-1"><i class="fa fa-check"></i><b>1.3.3</b> How can it be prevented?</a></li>
+</ul></li>
+<li class="chapter" data-level="1.4" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#conclusion"><i class="fa fa-check"></i><b>1.4</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html"><a href="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html"><i class="fa fa-check"></i><b>2</b> Reanalyzing Head et al. (2015): investigating the robustness of widespread <span class="math inline">\(p\)</span>-hacking</a><ul>
+<li class="chapter" data-level="2.1" data-path="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html"><a href="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html#data-and-methods"><i class="fa fa-check"></i><b>2.1</b> Data and methods</a></li>
+<li class="chapter" data-level="2.2" data-path="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html"><a href="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html#reanalysis-results"><i class="fa fa-check"></i><b>2.2</b> Reanalysis results</a></li>
+<li class="chapter" data-level="2.3" data-path="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html"><a href="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html#discussion"><i class="fa fa-check"></i><b>2.3</b> Discussion</a></li>
+<li class="chapter" data-level="2.4" data-path="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html"><a href="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html#limitations-and-conclusion"><i class="fa fa-check"></i><b>2.4</b> Limitations and conclusion</a></li>
+<li class="chapter" data-level="2.5" data-path="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html"><a href="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html#supporting-information"><i class="fa fa-check"></i><b>2.5</b> Supporting Information</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><i class="fa fa-check"></i><b>3</b> Distributions of <span class="math inline">\(p\)</span>-values between .01-.05 in psychology: What is going on?</a><ul>
+<li class="chapter" data-level="3.0.1" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#how-qrps-relate-to-distributions-of-p-values"><i class="fa fa-check"></i><b>3.0.1</b> How QRPs relate to distributions of <em>p</em>-values</a></li>
+<li class="chapter" data-level="3.0.2" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#previous-findings"><i class="fa fa-check"></i><b>3.0.2</b> Previous findings</a></li>
+<li class="chapter" data-level="3.0.3" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#extensions-of-previous-studies"><i class="fa fa-check"></i><b>3.0.3</b> Extensions of previous studies</a></li>
+<li class="chapter" data-level="3.1" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#data-and-methods-1"><i class="fa fa-check"></i><b>3.1</b> Data and methods</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#data"><i class="fa fa-check"></i><b>3.1.1</b> Data</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#methods"><i class="fa fa-check"></i><b>3.2</b> Methods</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#caliper-test"><i class="fa fa-check"></i><b>3.2.1</b> Caliper test</a></li>
+<li class="chapter" data-level="3.2.2" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#measures-based-on-p-value-distributions"><i class="fa fa-check"></i><b>3.2.2</b> Measures based on <span class="math inline">\(p\)</span>-value distributions</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#results-and-discussion"><i class="fa fa-check"></i><b>3.3</b> Results and discussion</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#reported-p-values"><i class="fa fa-check"></i><b>3.3.1</b> Reported <span class="math inline">\(p\)</span>-values</a></li>
+<li class="chapter" data-level="3.3.2" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#recalculated-p-value-distributions"><i class="fa fa-check"></i><b>3.3.2</b> Recalculated <span class="math inline">\(p\)</span>-value distributions</a></li>
+<li class="chapter" data-level="3.3.3" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#excessive-significance-over-time"><i class="fa fa-check"></i><b>3.3.3</b> Excessive significance over time</a></li>
+<li class="chapter" data-level="3.3.4" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#results-of-two-measures-based-on-modeling-p-value-distributions"><i class="fa fa-check"></i><b>3.3.4</b> Results of two measures based on modeling <span class="math inline">\(p\)</span>-value distributions</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#limitations-and-conclusions"><i class="fa fa-check"></i><b>3.4</b> Limitations and conclusions</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html"><i class="fa fa-check"></i><b>4</b> Too good to be false: Nonsignificant results revisited</a><ul>
+<li class="chapter" data-level="4.1" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#theoretical-framework"><i class="fa fa-check"></i><b>4.1</b> Theoretical framework</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#distributions-of-p-values"><i class="fa fa-check"></i><b>4.1.1</b> Distributions of <em>p</em>-values</a></li>
+<li class="chapter" data-level="4.1.2" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#testing-for-false-negatives-the-fisher-test"><i class="fa fa-check"></i><b>4.1.2</b> Testing for false negatives: the Fisher test</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#application-1-evidence-of-false-negatives-in-articles-across-eight-major-psychology-journals"><i class="fa fa-check"></i><b>4.2</b> Application 1: Evidence of false negatives in articles across eight major psychology journals</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#method"><i class="fa fa-check"></i><b>4.2.1</b> Method</a></li>
+<li class="chapter" data-level="4.2.2" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#results"><i class="fa fa-check"></i><b>4.2.2</b> Results</a></li>
+<li class="chapter" data-level="4.2.3" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#expected-effect-size-distribution."><i class="fa fa-check"></i><b>4.2.3</b> Expected effect size distribution.</a></li>
+<li class="chapter" data-level="4.2.4" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#evidence-of-false-negatives-in-articles."><i class="fa fa-check"></i><b>4.2.4</b> Evidence of false negatives in articles.</a></li>
+<li class="chapter" data-level="4.2.5" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#discussion-1"><i class="fa fa-check"></i><b>4.2.5</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#application-2-evidence-of-false-negative-gender-effects-in-eight-major-psychology-journals"><i class="fa fa-check"></i><b>4.3</b> Application 2: Evidence of false negative gender effects in eight major psychology journals</a><ul>
+<li class="chapter" data-level="4.3.1" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#method-1"><i class="fa fa-check"></i><b>4.3.1</b> Method</a></li>
+<li class="chapter" data-level="4.3.2" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#results-1"><i class="fa fa-check"></i><b>4.3.2</b> Results</a></li>
+<li class="chapter" data-level="4.3.3" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#discussion-2"><i class="fa fa-check"></i><b>4.3.3</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#application-3-reproducibility-project-psychology"><i class="fa fa-check"></i><b>4.4</b> Application 3: Reproducibility Project Psychology</a><ul>
+<li class="chapter" data-level="4.4.1" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#method-2"><i class="fa fa-check"></i><b>4.4.1</b> Method</a></li>
+<li class="chapter" data-level="4.4.2" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#results-2"><i class="fa fa-check"></i><b>4.4.2</b> Results</a></li>
+<li class="chapter" data-level="4.4.3" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#discussion-3"><i class="fa fa-check"></i><b>4.4.3</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#general-discussion"><i class="fa fa-check"></i><b>4.5</b> General Discussion</a><ul>
+<li class="chapter" data-level="4.5.1" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#limitations-and-further-research"><i class="fa fa-check"></i><b>4.5.1</b> Limitations and further research</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="statistical-results-content-mining-psychology-articles-for-statistical-test-results.html"><a href="statistical-results-content-mining-psychology-articles-for-statistical-test-results.html"><i class="fa fa-check"></i><b>5</b> 688,112 Statistical Results: Content Mining Psychology Articles for Statistical Test Results</a><ul>
+<li class="chapter" data-level="5.1" data-path="statistical-results-content-mining-psychology-articles-for-statistical-test-results.html"><a href="statistical-results-content-mining-psychology-articles-for-statistical-test-results.html#data-description"><i class="fa fa-check"></i><b>5.1</b> Data description</a></li>
+<li class="chapter" data-level="5.2" data-path="statistical-results-content-mining-psychology-articles-for-statistical-test-results.html"><a href="statistical-results-content-mining-psychology-articles-for-statistical-test-results.html#methods-1"><i class="fa fa-check"></i><b>5.2</b> Methods</a></li>
+<li class="chapter" data-level="5.3" data-path="statistical-results-content-mining-psychology-articles-for-statistical-test-results.html"><a href="statistical-results-content-mining-psychology-articles-for-statistical-test-results.html#usage-notes"><i class="fa fa-check"></i><b>5.3</b> Usage notes</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html"><i class="fa fa-check"></i><b>6</b> Detection of data fabrication using statistical tools</a><ul>
+<li class="chapter" data-level="6.1" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#theoretical-framework-1"><i class="fa fa-check"></i><b>6.1</b> Theoretical framework</a><ul>
+<li class="chapter" data-level="6.1.1" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#detecting-data-fabrication-in-summary-statistics"><i class="fa fa-check"></i><b>6.1.1</b> Detecting data fabrication in summary statistics</a></li>
+<li class="chapter" data-level="6.1.2" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#detecting-data-fabrication-in-raw-data"><i class="fa fa-check"></i><b>6.1.2</b> Detecting data fabrication in raw data</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#study-1---detecting-fabricated-summary-statistics"><i class="fa fa-check"></i><b>6.2</b> Study 1 - detecting fabricated summary statistics</a><ul>
+<li class="chapter" data-level="6.2.1" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#methods-2"><i class="fa fa-check"></i><b>6.2.1</b> Methods</a></li>
+<li class="chapter" data-level="6.2.2" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#results-3"><i class="fa fa-check"></i><b>6.2.2</b> Results</a></li>
+<li class="chapter" data-level="6.2.3" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#discussion-4"><i class="fa fa-check"></i><b>6.2.3</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#study-2---detecting-fabricated-individual-level-data"><i class="fa fa-check"></i><b>6.3</b> Study 2 - detecting fabricated individual level data</a><ul>
+<li class="chapter" data-level="6.3.1" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#methods-3"><i class="fa fa-check"></i><b>6.3.1</b> Methods</a></li>
+<li class="chapter" data-level="6.3.2" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#results-4"><i class="fa fa-check"></i><b>6.3.2</b> Results</a></li>
+<li class="chapter" data-level="6.3.3" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#discussion-5"><i class="fa fa-check"></i><b>6.3.3</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#general-discussion-1"><i class="fa fa-check"></i><b>6.4</b> General discussion</a></li>
+</ul></li>
+<li class="part"><span><b>II Improving science</b></span></li>
+<li class="chapter" data-level="7" data-path="extracting-data-from-vector-figures-in-scholarly-articles.html"><a href="extracting-data-from-vector-figures-in-scholarly-articles.html"><i class="fa fa-check"></i><b>7</b> Extracting data from vector figures in scholarly articles</a><ul>
+<li class="chapter" data-level="7.1" data-path="extracting-data-from-vector-figures-in-scholarly-articles.html"><a href="extracting-data-from-vector-figures-in-scholarly-articles.html#method-3"><i class="fa fa-check"></i><b>7.1</b> Method</a><ul>
+<li class="chapter" data-level="7.1.1" data-path="extracting-data-from-vector-figures-in-scholarly-articles.html"><a href="extracting-data-from-vector-figures-in-scholarly-articles.html#extraction-procedure"><i class="fa fa-check"></i><b>7.1.1</b> Extraction procedure</a></li>
+<li class="chapter" data-level="7.1.2" data-path="extracting-data-from-vector-figures-in-scholarly-articles.html"><a href="extracting-data-from-vector-figures-in-scholarly-articles.html#corpus"><i class="fa fa-check"></i><b>7.1.2</b> Corpus</a></li>
+<li class="chapter" data-level="7.1.3" data-path="extracting-data-from-vector-figures-in-scholarly-articles.html"><a href="extracting-data-from-vector-figures-in-scholarly-articles.html#documentation"><i class="fa fa-check"></i><b>7.1.3</b> Documentation</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="extracting-data-from-vector-figures-in-scholarly-articles.html"><a href="extracting-data-from-vector-figures-in-scholarly-articles.html#results-5"><i class="fa fa-check"></i><b>7.2</b> Results</a></li>
+<li class="chapter" data-level="7.3" data-path="extracting-data-from-vector-figures-in-scholarly-articles.html"><a href="extracting-data-from-vector-figures-in-scholarly-articles.html#discussion-6"><i class="fa fa-check"></i><b>7.3</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><i class="fa fa-check"></i><b>8</b> As-you-go instead of after-the-fact: A network approach to scholarly communication and evaluation</a><ul>
+<li class="chapter" data-level="8.1" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#network-structure"><i class="fa fa-check"></i><b>8.1</b> Network structure</a></li>
+<li class="chapter" data-level="8.2" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#indicators"><i class="fa fa-check"></i><b>8.2</b> Indicators</a></li>
+<li class="chapter" data-level="8.3" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#use-cases"><i class="fa fa-check"></i><b>8.3</b> Use cases</a><ul>
+<li class="chapter" data-level="8.3.1" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#funders"><i class="fa fa-check"></i><b>8.3.1</b> Funders</a></li>
+<li class="chapter" data-level="8.3.2" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#universities"><i class="fa fa-check"></i><b>8.3.2</b> Universities</a></li>
+<li class="chapter" data-level="8.3.3" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#individuals"><i class="fa fa-check"></i><b>8.3.3</b> Individuals</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#discussion-7"><i class="fa fa-check"></i><b>8.4</b> Discussion</a></li>
+<li class="chapter" data-level="8.5" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#conclusion-1"><i class="fa fa-check"></i><b>8.5</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><i class="fa fa-check"></i><b>9</b> Verified, shared, modular, and provenance based research communication with the Dat protocol</a><ul>
+<li class="chapter" data-level="9.1" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#dat-protocol"><i class="fa fa-check"></i><b>9.1</b> Dat protocol</a></li>
+<li class="chapter" data-level="9.2" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#verified-modular-scholarly-communication"><i class="fa fa-check"></i><b>9.2</b> Verified modular scholarly communication</a><ul>
+<li class="chapter" data-level="9.2.1" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#scholarly-profiles"><i class="fa fa-check"></i><b>9.2.1</b> Scholarly profiles</a></li>
+<li class="chapter" data-level="9.2.2" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#scholarly-modules"><i class="fa fa-check"></i><b>9.2.2</b> Scholarly modules</a></li>
+<li class="chapter" data-level="9.2.3" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#verification"><i class="fa fa-check"></i><b>9.2.3</b> Verification</a></li>
+<li class="chapter" data-level="9.2.4" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#prototype"><i class="fa fa-check"></i><b>9.2.4</b> Prototype</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#discussion-8"><i class="fa fa-check"></i><b>9.3</b> Discussion</a></li>
+<li class="chapter" data-level="9.4" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#limitations"><i class="fa fa-check"></i><b>9.4</b> Limitations</a></li>
+<li class="chapter" data-level="9.5" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#supporting-information-1"><i class="fa fa-check"></i><b>9.5</b> Supporting Information</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="summary.html"><a href="summary.html"><i class="fa fa-check"></i>Summary</a></li>
+<li class="chapter" data-level="" data-path="epilogue.html"><a href="epilogue.html"><i class="fa fa-check"></i>Epilogue</a></li>
+<li class="appendix"><span><b>Appendices</b></span></li>
+<li class="chapter" data-level="A" data-path="examining-statistical-properties-of-the-fisher-test.html"><a href="examining-statistical-properties-of-the-fisher-test.html"><i class="fa fa-check"></i><b>A</b> Examining statistical properties of the Fisher test</a></li>
+<li class="chapter" data-level="B" data-path="effect-computation.html"><a href="effect-computation.html"><i class="fa fa-check"></i><b>B</b> Effect computation</a></li>
+<li class="chapter" data-level="C" data-path="example-of-statcheck-report-for-pubpeer.html"><a href="example-of-statcheck-report-for-pubpeer.html"><i class="fa fa-check"></i><b>C</b> Example of <code>statcheck</code> report for PubPeer</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Contributions towards understanding and building sustainable science</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="reanalyzing-head-et-al.-2015-investigating-the-robustness-of-widespread-p-hacking" class="section level1">
+<h1><span class="header-section-number">2</span> Reanalyzing Head et al. (2015): investigating the robustness of widespread <span class="math inline">\(p\)</span>-hacking</h1>
+<p><span class="citation">Head et al. (<a href="#ref-doi:10.1371/journal.pbio.1002106">2015</a><a href="#ref-doi:10.1371/journal.pbio.1002106">b</a>)</span> provided a large collection of <span class="math inline">\(p\)</span>-values that, from their perspective, indicates widespread statistical significance seeking (i.e., <span class="math inline">\(p\)</span>-hacking) throughout the sciences. This result has been questioned from an epistemological perspective because analyzing all reported <span class="math inline">\(p\)</span>-values in research articles answers the supposedly inappropriate question of evidential value across all results <span class="citation">(Simonsohn, Simmons, and Nelson <a href="#ref-doi:10.1037/xge0000104">2015</a>)</span>. Adjacent to epistemological concerns, the robustness of widespread <span class="math inline">\(p\)</span>-hacking in these data can be questioned due to the large variation in a priori choices with regards to data analysis. <span class="citation">Head et al. (<a href="#ref-doi:10.1371/journal.pbio.1002106">2015</a><a href="#ref-doi:10.1371/journal.pbio.1002106">b</a>)</span> had to make several decisions with respect to the data analysis, which might have affected the results. In this chapter I evaluate the data analysis approach with which <span class="citation">Head et al. (<a href="#ref-doi:10.1371/journal.pbio.1002106">2015</a><a href="#ref-doi:10.1371/journal.pbio.1002106">b</a>)</span> found widespread <span class="math inline">\(p\)</span>-hacking and propose that this effect is not robust to several justifiable changes. The underlying models for their findings have been discussed in several preprints <span class="citation">(e.g., Bishop and Thompson <a href="#ref-doi:10.7287/peerj.preprints.1266v1">2015</a>; Holman <a href="#ref-doi:10.6084/m9.figshare.1500901.v1">2015</a>)</span> and publications <span class="citation">(e.g., Simonsohn, Simmons, and Nelson <a href="#ref-doi:10.1037/xge0000104">2015</a>; Bruns and Ioannidis <a href="#ref-doi:10.1371/journal.pone.0149144">2016</a>)</span>, but the data have not extensively been reanalyzed for robustness.</p>
+<p>The <span class="math inline">\(p\)</span>-value distribution of a set of true- and null results without <span class="math inline">\(p\)</span>-hacking should be a mixture distribution of only the uniform <span class="math inline">\(p\)</span>-value distribution under the null hypothesis <span class="math inline">\(H_0\)</span> and right-skew <span class="math inline">\(p\)</span>-value distributions under the alternative hypothesis <span class="math inline">\(H_1\)</span>. <span class="math inline">\(P\)</span>-hacking behaviors affect the distribution of statistically significant <span class="math inline">\(p\)</span>-values, potentially resulting in left-skew below .05 (i.e., a bump), but not necessarily so <span class="citation">(Hartgerink et al. <a href="#ref-doi:10.7717/peerj.1935">2016</a>; Lakens <a href="#ref-doi:10.1080/17470218.2014.982664">2015</a><a href="#ref-doi:10.1080/17470218.2014.982664">a</a>; Bishop and Thompson <a href="#ref-doi:10.7717/peerj.1715">2016</a>)</span>. An example of a questionable behavior that can result in left-skew is optional stopping (i.e., data peeking) if the null hypothesis is true <span class="citation">(Lakens <a href="#ref-doi:10.1080/17470218.2014.982664">2015</a><a href="#ref-doi:10.1080/17470218.2014.982664">a</a>)</span>.</p>
+<p>Consequently, <span class="citation">Head et al. (<a href="#ref-doi:10.1371/journal.pbio.1002106">2015</a><a href="#ref-doi:10.1371/journal.pbio.1002106">b</a>)</span> correctly argue that an aggregate <span class="math inline">\(p\)</span>-value distribution could show a bump below .05 when left-skew <span class="math inline">\(p\)</span>-hacking occurs frequently. Questionable behaviors that result in seeking statistically significant results, such as (but not limited to) the aforementioned optional stopping under <span class="math inline">\(H_0\)</span>, could result in a bump below .05. Hence, a systematic bump below .05 (i.e., not due to sampling error) is a sufficient condition for the presence of specific forms of <span class="math inline">\(p\)</span>-hacking. However, this bump below .05 is not a necessary condition, because other types of <span class="math inline">\(p\)</span>-hacking can still occur without a bump below .05 presenting itself <span class="citation">(Hartgerink et al. <a href="#ref-doi:10.7717/peerj.1935">2016</a>; Lakens <a href="#ref-doi:10.1080/17470218.2014.982664">2015</a><a href="#ref-doi:10.1080/17470218.2014.982664">a</a>; Bishop and Thompson <a href="#ref-doi:10.7717/peerj.1715">2016</a>)</span>. For example, one might use optional stopping when there is a true effect or conduct multiple analyses, but only report that statistical test which yielded the smallest <span class="math inline">\(p\)</span>-value. Therefore, if no bump of statistically significant <span class="math inline">\(p\)</span>-values is found, this does not exclude that <span class="math inline">\(p\)</span>-hacking occurs at a large scale.</p>
+<p>In the current chapter, the conclusion from <span class="citation">Head et al. (<a href="#ref-doi:10.1371/journal.pbio.1002106">2015</a><a href="#ref-doi:10.1371/journal.pbio.1002106">b</a>)</span> is inspected for robustness. Their conclusion is that the data fullfill the sufficient condition for <span class="math inline">\(p\)</span>-hacking (i.e., show a systematic bump below .05), hence, provides evidence for the presence of specific forms of <span class="math inline">\(p\)</span>-hacking. The robustness of this conclusion is inspected in three steps: (i) explaining the data and data analysis strategies (original and reanalysis), (ii) reevaluating the evidence for a bump below .05 (i.e., the sufficient condition) based on the reanalysis, and (iii) discussing whether this means that there is widespread <span class="math inline">\(p\)</span>-hacking in the literature.</p>
+<div id="data-and-methods" class="section level2">
+<h2><span class="header-section-number">2.1</span> Data and methods</h2>
+<p>In the original paper, over two million reported <span class="math inline">\(p\)</span>-values were mined from the <a href="https://www.ncbi.nlm.nih.gov/pmc/tools/openftlist/">Open Access subset of PubMed central</a>. PubMed central indexes the biomedical and life sciences and permits bulk downloading of full-text Open Access articles. By text-mining these full-text articles for <span class="math inline">\(p\)</span>-values, <span class="citation">Head et al. (<a href="#ref-doi:10.1371/journal.pbio.1002106">2015</a><a href="#ref-doi:10.1371/journal.pbio.1002106">b</a>)</span> extracted more than two million <span class="math inline">\(p\)</span>-values in total. Their text-mining procedure extracted all reported <span class="math inline">\(p\)</span>-values, including those that were reported without an accompanying test statistic. For example, the <span class="math inline">\(p\)</span>-value from the result <span class="math inline">\(t(59)=1.75,p&gt;.05\)</span> was included, but also a lone <span class="math inline">\(p&lt;.05\)</span>. Subsequently, <span class="citation">Head et al. (<a href="#ref-doi:10.1371/journal.pbio.1002106">2015</a><a href="#ref-doi:10.1371/journal.pbio.1002106">b</a>)</span> analyzed a subset of statistically significant <span class="math inline">\(p\)</span>-values (assuming <span class="math inline">\(\alpha=.05\)</span>) that were exactly reported (e.g., <span class="math inline">\(p=.043\)</span>; the same subset is analyzed in this chapter).</p>
+<p><span class="citation">Head et al. (<a href="#ref-doi:10.1371/journal.pbio.1002106">2015</a><a href="#ref-doi:10.1371/journal.pbio.1002106">b</a>)</span> their data analysis approach focused on comparing frequencies in the last and penultimate bins from .05 at a binwidth of .005 (i.e., <span class="math inline">\(.04&lt;p&lt; .045\)</span> versus <span class="math inline">\(.045&lt;p&lt;.05\)</span>). Based on the tenet that a sufficient condition for <span class="math inline">\(p\)</span>-hacking is a systematic bump of <span class="math inline">\(p\)</span>-values below .05 <span class="citation">(Simonsohn, Nelson, and Simmons <a href="#ref-doi:10.1037/a0033242">2014</a>)</span>, sufficient evidence for <span class="math inline">\(p\)</span>-hacking is present if the last bin has a significantly higher frequency than the penultimate bin in a binomial test. Applying the binomial test (i.e., Caliper test) to two frequency bins has previously been used in publication bias research <span class="citation">(Gerber et al. <a href="#ref-doi:10.1177/1532673x09350979">2010</a>; Kühberger, Fritz, and Scherndl <a href="#ref-doi:10.1371/journal.pone.0105825">2014</a>)</span>, applied here specifically to test for <span class="math inline">\(p\)</span>-hacking behaviors that result in a bump below .05. The binwidth of .005 and the bins <span class="math inline">\(.04&lt;p&lt;.045\)</span> and <span class="math inline">\(.045&lt;p&lt;.05\)</span> were chosen by <span class="citation">Head et al. (<a href="#ref-doi:10.1371/journal.pbio.1002106">2015</a><a href="#ref-doi:10.1371/journal.pbio.1002106">b</a>)</span> because they expected the signal of this form of <span class="math inline">\(p\)</span>-hacking to be strongest in this part of the distribution (regions of the <span class="math inline">\(p\)</span>-value distribution closer to zero are more likely to contain evidence of true effects than regions close to .05). They excluded <span class="math inline">\(p=.05\)</span> “because [they] suspect[ed] that many authors do not regard <span class="math inline">\(p=0.05\)</span> as significant” (p.4).</p>
+<div class="figure" style="text-align: center"><span id="fig:head-hist"></span>
+<img src="assets/figures/head-fig1.png" alt="Histograms of $p$-values as selected in Head et al. (in green; $.04 &lt; p &lt; .045$ versus $.045 &lt; p &lt; .05$), the significant $p$-value distribution as selected in Head et al. (in grey; $0&lt;p\leq.00125$, $.00125&lt;p\leq.0025$, ..., $.0475&lt;p\leq.04875$, $.04875&lt;p&lt;.05$, binwidth = .00125). The green and grey histograms exclude $p=.045$ and $p=.05$; the black histogram shows the frequencies of results that are omitted because of this ($.04375&lt;p\leq.045$ and $.04875&lt;p\leq.05$, binwidth = .00125)." width="80%" />
+<p class="caption">
+Figure 2.1: Histograms of <span class="math inline">\(p\)</span>-values as selected in Head et al. (in green; <span class="math inline">\(.04 &lt; p &lt; .045\)</span> versus <span class="math inline">\(.045 &lt; p &lt; .05\)</span>), the significant <span class="math inline">\(p\)</span>-value distribution as selected in Head et al. (in grey; <span class="math inline">\(0&lt;p\leq.00125\)</span>, <span class="math inline">\(.00125&lt;p\leq.0025\)</span>, …, <span class="math inline">\(.0475&lt;p\leq.04875\)</span>, <span class="math inline">\(.04875&lt;p&lt;.05\)</span>, binwidth = .00125). The green and grey histograms exclude <span class="math inline">\(p=.045\)</span> and <span class="math inline">\(p=.05\)</span>; the black histogram shows the frequencies of results that are omitted because of this (<span class="math inline">\(.04375&lt;p\leq.045\)</span> and <span class="math inline">\(.04875&lt;p\leq.05\)</span>, binwidth = .00125).
+</p>
+</div>
+<p>Figure <a href="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html#fig:head-hist">2.1</a> shows the selection of <span class="math inline">\(p\)</span>-values in <span class="citation">Head et al. (<a href="#ref-doi:10.1371/journal.pbio.1002106">2015</a><a href="#ref-doi:10.1371/journal.pbio.1002106">b</a>)</span> in two ways: (1) in green, which shows the results as analysed by Head et al. (i.e., <span class="math inline">\(.04&lt;p&lt;.045\)</span> versus <span class="math inline">\(.045&lt;p&lt;.05\)</span>), and (2) in grey, which shows the entire distribution of significant <span class="math inline">\(p\)</span>-values (assuming <span class="math inline">\(\alpha=.05\)</span>) available to Head et al. after eliminating <span class="math inline">\(p=.045\)</span> and <span class="math inline">\(p=.05\)</span> (depicted by the black bins). The height of the two green bins (i.e., the sum of the grey bins in the same range) show a bump below .05, which indicates <span class="math inline">\(p\)</span>-hacking. The grey histogram in Figure <a href="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html#fig:head-hist">2.1</a> shows a more fine-grained depiction of the <span class="math inline">\(p\)</span>-value distribution and does not clearly show a bump below .05, because it is dependent on which bins are compared. However, the grey histogram clearly indicates that results around the second decimal tend to be reported more frequently when <span class="math inline">\(p\geq.01\)</span>.</p>
+<p>Theoretically, the <span class="math inline">\(p\)</span>-value distribution should be a smooth, decreasing function, but the grey distribution shows systematically more reported <span class="math inline">\(p\)</span>-values for .01, .02, .03, .04 (and .05 when the black histogram is included). As such, there seems to be a tendency to report <span class="math inline">\(p\)</span>-values to two decimal places, instead of three. For example, <span class="math inline">\(p=.041\)</span> might be correctly rounded down to <span class="math inline">\(p=.04\)</span> or <span class="math inline">\(p=.046\)</span> rounded up to <span class="math inline">\(p=.05\)</span>. A potential post-hoc explanation is that three decimal reporting of <span class="math inline">\(p\)</span>-values is a relatively recent standard, if a standard at all. For example, it has only been prescribed since 2010 in psychology <span class="citation">(American Psychological Association <a href="#ref-isbn:9781433805615">2010</a><a href="#ref-isbn:9781433805615">b</a>)</span>, where it previously prescribed two decimal reporting <span class="citation">(American Psychological Association <a href="#ref-American_Psychological_Association1983-yf">1983</a>; American Psychological Association <a href="#ref-American_Psychological_Association2001-uw">2001</a>)</span>. Given the results, it seems reasonable to assume that other fields might also report to two decimal places instead of three, most of the time.</p>
+Moreover, the data analysis approach used by <span class="citation">Head et al. (<a href="#ref-doi:10.1371/journal.pbio.1002106">2015</a><a href="#ref-doi:10.1371/journal.pbio.1002106">b</a>)</span> eliminates <span class="math inline">\(p=.045\)</span> for symmetry of the compared bins and <span class="math inline">\(p=.05\)</span> based on a potentially invalid assumption of when researchers regard results as statistically significant. <span class="math inline">\(P=.045\)</span> is not included in the selected bins (<span class="math inline">\(.04&lt;p&lt;.045\)</span> versus <span class="math inline">\(.045&lt;p&lt;.05\)</span>), while this could affect the results. If <span class="math inline">\(p=.045\)</span> is included, no evidence of a bump below .05 is found (the left black bin in Figure <a href="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html#fig:head-hist">2.1</a> is then included; frequency <span class="math inline">\(.04&lt;p\leq.045=20114\)</span> versus <span class="math inline">\(.045&lt;p&lt;.05=18132\)</span>). However, the bins are subsequently asymmetrical and require a different analysis. To this end, I supplement the Caliper tests with Fisher’s method <span class="citation">(Fisher <a href="#ref-Fisher1925-jl">1925</a>; Mosteller and Fisher <a href="#ref-doi:10.2307/2681650">1948</a>)</span> based on the same range analyzed by <span class="citation">Head et al. (<a href="#ref-doi:10.1371/journal.pbio.1002106">2015</a><a href="#ref-doi:10.1371/journal.pbio.1002106">b</a>)</span>. This analysis includes <span class="math inline">\(.04&lt;p&lt;.05\)</span> (i.e., it does not exclude <span class="math inline">\(p=.045\)</span> as in the binned Caliper test). Fisher’s method tests for a deviation from uniformity and was computed as
+<span class="math display" id="eq:fishmeth">\[\begin{equation} 
+  \chi^2_{2k}=-2\sum^k_{i=1}ln(\frac{p_i-.04}{.01})
+  \tag{2.1}
+\end{equation}\]</span>
+<p>where <span class="math inline">\(p_i\)</span> are the <span class="math inline">\(p\)</span>-values between <span class="math inline">\(.04&lt;p&lt;.05\)</span>. Effectively, Equation <a href="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html#eq:fishmeth">(2.1)</a> tests for a bump between .04 and .05 (i.e., the transformation ensures that the transformed <span class="math inline">\(p\)</span>-values range from 0-1 and that Fisher’s method inspects left-skew instead of right-skew). <span class="math inline">\(P=.05\)</span> was consistently excluded by <span class="citation">Head et al. (<a href="#ref-doi:10.1371/journal.pbio.1002106">2015</a><a href="#ref-doi:10.1371/journal.pbio.1002106">b</a>)</span> because they assumed researchers did not interpret this as statistically significant. However, researchers interpret <span class="math inline">\(p=.05\)</span> as statistically significant more frequently than they thought: 94% of 236 cases investigated by <span class="citation">Nuijten, Hartgerink, et al. (<a href="#ref-doi:10.3758/s13428-015-0664-2">2015</a>)</span> interpreted <span class="math inline">\(p=.05\)</span> as statistically significant, indicating this assumption might not be valid.</p>
+<p>Given that systematically more <span class="math inline">\(p\)</span>-values are reported to two decimal places and the adjustments described in the previous paragraph, I did not exclude <span class="math inline">\(p=.045\)</span> and <span class="math inline">\(p=.05\)</span> and I adjusted the bin selection to <span class="math inline">\(.03875&lt;p\leq.04\)</span> versus <span class="math inline">\(.04875&lt;p\leq.05\)</span>. Visually, the newly selected data are the grey and black bins from Figure <a href="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html#fig:head-hist">2.1</a> combined, where the rightmost black bin (i.e., <span class="math inline">\(.04875&lt;p\leq.05\)</span>) is compared with the large grey bin at .04 (i.e., <span class="math inline">\(.03875&lt;p\leq.04\)</span>). The bins <span class="math inline">\(.03875&lt;p\leq.04\)</span> and <span class="math inline">\(.04875&lt;p\leq.05\)</span> were selected to take into account that <span class="math inline">\(p\)</span>-values are typically rounded (both up and down) in the observed data. Moreover, if incorrect or excessive rounding-down of <span class="math inline">\(p\)</span>-values occurs strategically <span class="citation">(e.g., <span class="math inline">\(p=.054\)</span> reported as <span class="math inline">\(p=.05\)</span>; Vermeulen et al. <a href="#ref-doi:10.1080/19312458.2015.1096333">2015</a>)</span>, this can be considered <span class="math inline">\(p\)</span>-hacking. If <span class="math inline">\(p=.05\)</span> is excluded from the analyses, these types of <span class="math inline">\(p\)</span>-hacking behaviors are eliminated from the analyses, potentially decreasing the sensitivity of the test for a bump.</p>
+<p>The reanalysis approach for the bins <span class="math inline">\(.03875&lt;p\leq.04\)</span> and <span class="math inline">\(.04875&lt;p\leq.05\)</span> is similar to <span class="citation">Head et al. (<a href="#ref-doi:10.1371/journal.pbio.1002106">2015</a><a href="#ref-doi:10.1371/journal.pbio.1002106">b</a>)</span> and applies the Caliper test to detect a bump below .05, with the addition of Bayesian Caliper tests. The Caliper test investigates whether the bins are equally distributed or that the penultimate bin (i.e., <span class="math inline">\(.03875&lt;p\leq.04\)</span>) contains more results than the ultimate bin (i.e., <span class="math inline">\(.04875&lt;p\leq.05\)</span>; <span class="math inline">\(H_0:Proportion\leq.5\)</span>). Sensitivity analyses were also conducted, altering the binwidth from .00125 to .005 and .01. Moreover, the analyses were conducted for both the <span class="math inline">\(p\)</span>-values extracted from the abstracts- and the results sections separately.</p>
+<p>The results from the Bayesian Caliper test and the traditional, frequentist Caliper test give results with different interpretations. The <span class="math inline">\(p\)</span>-value of the Caliper test gives the probability of more extreme results if the null hypothesis is true, but does not quantify the probability of the null- and alternative hypothesis. The added value of the Bayes Factor (<span class="math inline">\(BF\)</span>) is that it does quantify the probabilities of the hypotheses in the model and creates a ratio, either as <span class="math inline">\(BF_{10}\)</span>, the alternative hypothesis versus the null hypothesis, or vice versa, <span class="math inline">\(BF_{01}\)</span>. A <span class="math inline">\(BF\)</span> of 1 indicates that both hypotheses are equally probable, given the data. All Bayesian proportion tests were conducted with highly uncertain priors (<span class="math inline">\(r=1\)</span>, ‘ultrawide’ prior) using the <code>BayesFactor</code> package <span class="citation">(Morey and Rouder <a href="#ref-bf">2015</a>)</span>. In this specific instance, <span class="math inline">\(BF_{10}\)</span> is computed and values <span class="math inline">\(&gt;1\)</span> can be interpreted, for our purposes, as: the data are more likely under <span class="math inline">\(p\)</span>-hacking that results in a bump below .05 (i.e., left-skew <span class="math inline">\(p\)</span>-hacking) than under no left-skew <span class="math inline">\(p\)</span>-hacking. <span class="math inline">\(BF_{10}\)</span> values <span class="math inline">\(&lt;1\)</span> indicate that the data are more likely under no left-skew <span class="math inline">\(p\)</span>-hacking than under left-skew <span class="math inline">\(p\)</span>-hacking. The further removed from <span class="math inline">\(1\)</span>, the more evidence in the direction of either hypothesis is available.</p>
+</div>
+<div id="reanalysis-results" class="section level2">
+<h2><span class="header-section-number">2.2</span> Reanalysis results</h2>
+<p>Results of Fisher’s method for all <span class="math inline">\(p\)</span>-values between <span class="math inline">\(.04&lt;p&lt;.05\)</span> and does not exclude <span class="math inline">\(p=.045\)</span> fails to find evidence for a bump below .05, <span class="math inline">\(\chi^2(76492)=70328.86,p&gt;.999\)</span>. Additionally, no evidence for a bump below .05 remains when I focus on the more frequently reported second-decimal bins, which could include <span class="math inline">\(p\)</span>-hacking behaviors such as incorrect or excessive rounding down to <span class="math inline">\(p=.05\)</span>. Reanalyses showed no evidence for left-skew <span class="math inline">\(p\)</span>-hacking, <span class="math inline">\(Proportion=.417,p&gt;.999, BF_{10}&lt;.001\)</span> for the Results sections and <span class="math inline">\(Proportion=.358,p&gt;.999,BF_{10}&lt;.001\)</span> for the Abstract sections. Table <a href="#tab:caliper-table"><strong>??</strong></a> summarizes these results for alternate binwidths (.00125, .005, and .01) and shows results are consistent across different binwidths. Separated per discipline, no binomial test for left-skew <span class="math inline">\(p\)</span>-hacking is statistically significant in either the Results- or Abstract sections (see the Supporting Information). This indicates that the evidence for <span class="math inline">\(p\)</span>-hacking that results in a bump below .05, as presented by <span class="citation">Head et al. (<a href="#ref-doi:10.1371/journal.pbio.1002106">2015</a><a href="#ref-doi:10.1371/journal.pbio.1002106">b</a>)</span>, seems to not be robust to minor changes in the analysis such as including <span class="math inline">\(p=.045\)</span> by evaluating <span class="math inline">\(.04&lt;p&lt;.05\)</span> continuously instead of binning, or when taking into account the observed tendency to round <span class="math inline">\(p\)</span>-values to two decimal places during the bin selection.</p>
+
+</div>
+<div id="discussion" class="section level2">
+<h2><span class="header-section-number">2.3</span> Discussion</h2>
+<p><span class="citation">Head et al. (<a href="#ref-doi:10.1371/journal.pbio.1002106">2015</a><a href="#ref-doi:10.1371/journal.pbio.1002106">b</a>)</span> collected <span class="math inline">\(p\)</span>-values from full-text articles and analyzed these for <span class="math inline">\(p\)</span>-hacking, concluding that “<span class="math inline">\(p\)</span>-hacking is widespread throughout science” <span class="citation">(see abstract; Head et al. <a href="#ref-doi:10.1371/journal.pbio.1002106">2015</a><a href="#ref-doi:10.1371/journal.pbio.1002106">b</a>)</span>. Given the implications of such a finding, I inspected whether evidence for widespread <span class="math inline">\(p\)</span>-hacking was robust to some substantively justified changes in the data selection. A minor adjustment from comparing bins to continuously evaluating <span class="math inline">\(.04&lt;p&lt;.05\)</span>, the latter not excluding .045, already indicated this finding seems to not be robust. Additionally, after altering the bins inspected due to the observation that systematically more <span class="math inline">\(p\)</span>-values are reported to the second decimal and including <span class="math inline">\(p=.05\)</span> in the analyses, the results indicate that evidence for widespread <span class="math inline">\(p\)</span>-hacking, as presented by <span class="citation">Head et al. (<a href="#ref-doi:10.1371/journal.pbio.1002106">2015</a><a href="#ref-doi:10.1371/journal.pbio.1002106">b</a>)</span> is not robust to these substantive changes in the analysis. Moreover, the frequency of <span class="math inline">\(p=.05\)</span> is directly affected by <span class="math inline">\(p\)</span>-hacking, when rounding-down of <span class="math inline">\(p\)</span>-values is done strategically. The conclusion drawn by <span class="citation">Head et al. (<a href="#ref-doi:10.1371/journal.pbio.1002106">2015</a><a href="#ref-doi:10.1371/journal.pbio.1002106">b</a>)</span> might still be correct, but the data do not undisputably show so. Moreover, even if there is no <span class="math inline">\(p\)</span>-hacking that results in a bump of <span class="math inline">\(p\)</span>-values below .05, other forms of <span class="math inline">\(p\)</span>-hacking that do not cause such a bump can still be present and prevalent <span class="citation">(Hartgerink et al. <a href="#ref-doi:10.7717/peerj.1935">2016</a>; Lakens <a href="#ref-doi:10.1080/17470218.2014.982664">2015</a><a href="#ref-doi:10.1080/17470218.2014.982664">a</a>; Bishop and Thompson <a href="#ref-doi:10.7717/peerj.1715">2016</a>)</span>.</p>
+<p>Second-decimal reporting tendencies of <span class="math inline">\(p\)</span>-values should be taken into consideration when selecting bins for inspection because this data set does not allow for the elimination of such reporting tendencies. Its substantive consequences are clearly depicted in the results of the reanalysis and Figure <a href="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html#fig:head-hist">2.1</a> illustrates how the theoretical properties of <span class="math inline">\(p\)</span>-value distributions do not hold for the reported <span class="math inline">\(p\)</span>-value distribution. Previous research has indicated that when the recalculated <span class="math inline">\(p\)</span>-value distribution is inspected, the theoretically expected smooth distribution re-emerges even when the reported <span class="math inline">\(p\)</span>-value distribution shows reporting tendencies <span class="citation">(Hartgerink et al. <a href="#ref-doi:10.7717/peerj.1935">2016</a>; Krawczyk <a href="#ref-doi:10.1371/journal.pone.0127872">2015</a>)</span>. Given that the text-mining procedure implemented by <span class="citation">Head et al. (<a href="#ref-doi:10.1371/journal.pbio.1002106">2015</a><a href="#ref-doi:10.1371/journal.pbio.1002106">b</a>)</span> does not allow for recalculation of <span class="math inline">\(p\)</span>-values, the effect of reporting tendencies needs to mitigated by altering the data analysis approach.</p>
+<p>Even after mitigating the effect of reporting tendencies, these analyses were all conducted on a set of aggregated <span class="math inline">\(p\)</span>-values, which can either detect <span class="math inline">\(p\)</span>-hacking that results in a bump of <span class="math inline">\(p\)</span>-values below .05 if it is widespread, but not prove that no <span class="math inline">\(p\)</span>-hacking is going on in any of the individual papers. Firstly, there is the risk of an ecological fallacy. These analyses take place at the aggregate level, but there might still be research papers that show a bump below .05 at the paper level. Secondly, some forms of <span class="math inline">\(p\)</span>-hacking also result in right-skew, which is not picked up in these analyses and is difficult to detect in a set of heterogeneous results <span class="citation">(attempted in Hartgerink et al. <a href="#ref-doi:10.7717/peerj.1935">2016</a>)</span>. As such, if any detection of <span class="math inline">\(p\)</span>-hacking is attempted, this should be done at the paper level and after careful scrutiny of which results are included <span class="citation">(Simonsohn, Simmons, and Nelson <a href="#ref-doi:10.1037/xge0000104">2015</a>; Bishop and Thompson <a href="#ref-doi:10.7717/peerj.1715">2016</a>)</span>.</p>
+</div>
+<div id="limitations-and-conclusion" class="section level2">
+<h2><span class="header-section-number">2.4</span> Limitations and conclusion</h2>
+<p>In this reanalysis two limitations remain with respect to the data analysis. First, selecting the bins just below .04 and .05 results in selecting non-adjacent bins. Hence, the test might be less sensitive to detect a bump below .05. In light of this limitation I ran the original analysis from <span class="citation">Head et al. (<a href="#ref-doi:10.1371/journal.pbio.1002106">2015</a><a href="#ref-doi:10.1371/journal.pbio.1002106">b</a>)</span>, but included the second decimal (i.e., <span class="math inline">\(.04\leq p&lt;.045\)</span> versus <span class="math inline">\(.045&lt;p\leq.05\)</span>). This analysis also yielded no evidence for a bump of <span class="math inline">\(p\)</span>-values below .05, <span class="math inline">\(Proportion=.431,p&gt;.999,BF_{10}&lt;.001\)</span>. Second, the selection of only exactly reported <span class="math inline">\(p\)</span>-values might have distorted the <span class="math inline">\(p\)</span>-value distribution due to reporting tendencies in rounding. For example, a researcher with a <span class="math inline">\(p\)</span>-value of .047 might be more likely to report <span class="math inline">\(p&lt;.05\)</span> than a researcher with a <span class="math inline">\(p\)</span>-value of .037 reporting <span class="math inline">\(p&lt;.04\)</span>. Given that these analyses exclude all values reported as <span class="math inline">\(p&lt;X\)</span>, this could have affected the results. There is some indication that this tendency to round up is relatively stronger around .05 than around .04 <span class="citation">(a factor of 1.25 approximately based on the <a href="https://doi.org/10.1371/journal.pone.0127872.g005">original Figure 5</a>; Krawczyk <a href="#ref-doi:10.1371/journal.pone.0127872">2015</a>)</span>, which might result in an underrepresentation of <span class="math inline">\(p\)</span>-values around .05.</p>
+<p>Given the implications of the findings by <span class="citation">Head et al. (<a href="#ref-doi:10.1371/journal.pbio.1002106">2015</a><a href="#ref-doi:10.1371/journal.pbio.1002106">b</a>)</span>, it is important that these findings are robust to choices that can vary. Moreover, the absence of a bump below .05 seems to be stronger than its presence throughout the literature: a reanalysis of a previous paper, which found evidence for a bump below .05 <span class="citation">(Masicampo and Lalande <a href="#ref-doi:10.1080/17470218.2012.711335">2012</a>)</span>, yielded no evidence for a bump below .05 <span class="citation">(Lakens <a href="#ref-doi:10.1080/17470218.2014.982664">2015</a><a href="#ref-doi:10.1080/17470218.2014.982664">a</a>)</span>; two new data sets also did not reveal a bump below .05 <span class="citation">(Hartgerink et al. <a href="#ref-doi:10.7717/peerj.1935">2016</a>; Vermeulen et al. <a href="#ref-doi:10.1080/19312458.2015.1096333">2015</a>)</span>. Consequently, findings that claim there is a bump below .05 need to be robust. In this chapter, I explained why a different data analysis approach to the data of <span class="citation">Head et al. (<a href="#ref-doi:10.1371/journal.pbio.1002106">2015</a><a href="#ref-doi:10.1371/journal.pbio.1002106">b</a>)</span> can be justified and as a result no evidence of widespread <span class="math inline">\(p\)</span>-hacking that results in a bump of <span class="math inline">\(p\)</span>-values below .05 is found. Although this does not mean that no <span class="math inline">\(p\)</span>-hacking occurs at all, the conclusion by <span class="citation">Head et al. (<a href="#ref-doi:10.1371/journal.pbio.1002106">2015</a><a href="#ref-doi:10.1371/journal.pbio.1002106">b</a>)</span> should not be taken at face value considering that the results are not robust to (minor) choices in the data analysis approach. As such, the evidence for widespread left-skew <span class="math inline">\(p\)</span>-hacking is ambiguous at best.</p>
+</div>
+<div id="supporting-information" class="section level2">
+<h2><span class="header-section-number">2.5</span> Supporting Information</h2>
+<p>S1 File. Full reanalysis results per discipline: <a href="https://doi.org/10.7717/peerj.3068/supp-1" class="uri">https://doi.org/10.7717/peerj.3068/supp-1</a>.</p>
+
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-American_Psychological_Association1983-yf">
+<p>American Psychological Association. 1983. <em>Publication manual of the American Psychological Association</em>. 3rd ed. Washington, DC: American Psychological Association.</p>
+</div>
+<div id="ref-American_Psychological_Association2001-uw">
+<p>American Psychological Association. 2001. <em>Publication manual of the American Psychological Association</em>. 5th ed. Washington, DC: American Psychological Association.</p>
+</div>
+<div id="ref-isbn:9781433805615">
+<p>American Psychological Association. 2010b. <em>Publication Manual of the American Psychological Association</em>. 6th ed. Washington, DC: American Psychological Association.</p>
+</div>
+<div id="ref-doi:10.7287/peerj.preprints.1266v1">
+<p>Bishop, Dorothy V, and Paul A Thompson. 2015. “Problems in Using Text-Mining and P-Curve Analysis to Detect Rate of P-Hacking.” <em>PeerJ PrePrints</em> 3 (July): e1550. doi:<a href="https://doi.org/10.7287/peerj.preprints.1266v1">10.7287/peerj.preprints.1266v1</a>.</p>
+</div>
+<div id="ref-doi:10.7717/peerj.1715">
+<p>Bishop, Dorothy V.M., and Paul A. Thompson. 2016. “Problems in Usingp-Curve Analysis and Text-Mining to Detect Rate Ofp-Hacking and Evidential Value.” <em>PeerJ</em> 4 (February). PeerJ: e1715. doi:<a href="https://doi.org/10.7717/peerj.1715">10.7717/peerj.1715</a>.</p>
+</div>
+<div id="ref-doi:10.1371/journal.pone.0149144">
+<p>Bruns, Stephan B., and John P. A. Ioannidis. 2016. “P-Curve and P-Hacking in Observational Research.” <em>PLOS ONE</em> 11 (2). Public Library of Science: 1–13. doi:<a href="https://doi.org/10.1371/journal.pone.0149144">10.1371/journal.pone.0149144</a>.</p>
+</div>
+<div id="ref-Fisher1925-jl">
+<p>Fisher, Ronald Aylmer. 1925. <em>Statistical methods for research workers</em>. Edinburg, United Kingdom: Oliver Boyd.</p>
+</div>
+<div id="ref-doi:10.1177/1532673x09350979">
+<p>Gerber, Alan S., Neil Malhotra, Conor M. Dowling, and David Doherty. 2010. “Publication Bias in Two Political Behavior Literatures.” <em>American Politics Research</em> 38 (4). SAGE Publications: 591–613. doi:<a href="https://doi.org/10.1177/1532673x09350979">10.1177/1532673x09350979</a>.</p>
+</div>
+<div id="ref-doi:10.7717/peerj.1935">
+<p>Hartgerink, Chris H. J., Robbie C. M. Van Aert, Michèle B. Nuijten, Jelte M. Wicherts, and Marcel A.L.M. Van Assen. 2016. “Distributions Ofp-Values Smaller Than .05 in Psychology: What Is Going on?” <em>PeerJ</em> 4 (April). PeerJ: e1935. doi:<a href="https://doi.org/10.7717/peerj.1935">10.7717/peerj.1935</a>.</p>
+</div>
+<div id="ref-doi:10.1371/journal.pbio.1002106">
+<p>Head, Megan, Luke Holman, Rob Lanfear, Andrew Kahn, and Michael Jennions. 2015b. “The extent and consequences of p-hacking in science.” <em>PLOS Biology</em> 13: e1002106. doi:<a href="https://doi.org/10.1371/journal.pbio.1002106">10.1371/journal.pbio.1002106</a>.</p>
+</div>
+<div id="ref-doi:10.6084/m9.figshare.1500901.v1">
+<p>Holman, Luke. 2015. “Reply to Bishop and Thompson,” August. doi:<a href="https://doi.org/10.6084/m9.figshare.1500901.v1">10.6084/m9.figshare.1500901.v1</a>.</p>
+</div>
+<div id="ref-doi:10.1371/journal.pone.0127872">
+<p>Krawczyk, Michał. 2015. “The Search for Significance: A Few Peculiarities in the Distribution of P Values in Experimental Psychology Literature.” Edited by DanieleEditor Fanelli. <em>PLOS ONE</em> 10 (6). Public Library of Science (PLoS): e0127872. doi:<a href="https://doi.org/10.1371/journal.pone.0127872">10.1371/journal.pone.0127872</a>.</p>
+</div>
+<div id="ref-doi:10.1371/journal.pone.0105825">
+<p>Kühberger, Anton, Astrid Fritz, and Thomas Scherndl. 2014. “Publication Bias in Psychology: A Diagnosis Based on the Correlation Between Effect Size and Sample Size.” Edited by DanieleEditor Fanelli. <em>PLoS ONE</em> 9 (9). Public Library of Science (PLoS): e105825. doi:<a href="https://doi.org/10.1371/journal.pone.0105825">10.1371/journal.pone.0105825</a>.</p>
+</div>
+<div id="ref-doi:10.1080/17470218.2014.982664">
+<p>Lakens, Daniël. 2015a. “Comment: What P-Hacking Really Looks Like: A Comment on Masicampo and Lalande (2012).” <em>Quarterly Journal of Experimental Psychology</em> 68 (4). SAGE Publications: 829–32. doi:<a href="https://doi.org/10.1080/17470218.2014.982664">10.1080/17470218.2014.982664</a>.</p>
+</div>
+<div id="ref-doi:10.1080/17470218.2012.711335">
+<p>Masicampo, E.J., and Daniel R. Lalande. 2012. “A Peculiar Prevalence of P Values Just Below .05.” <em>Quarterly Journal of Experimental Psychology</em> 65 (11). SAGE Publications: 2271–9. doi:<a href="https://doi.org/10.1080/17470218.2012.711335">10.1080/17470218.2012.711335</a>.</p>
+</div>
+<div id="ref-bf">
+<p>Morey, Richard D., and Jeffrey N. Rouder. 2015. <em>BayesFactor: Computation of Bayes Factors for Common Designs</em>. <a href="https://CRAN.R-project.org/package=BayesFactor" class="uri">https://CRAN.R-project.org/package=BayesFactor</a>.</p>
+</div>
+<div id="ref-doi:10.2307/2681650">
+<p>Mosteller, Frederick, and R. A. Fisher. 1948. “Questions and Answers.” <em>The American Statistician</em> 2 (5). [American Statistical Association, Taylor &amp; Francis, Ltd.]: 30–31. <a href="http://www.jstor.org/stable/2681650" class="uri">http://www.jstor.org/stable/2681650</a>.</p>
+</div>
+<div id="ref-doi:10.3758/s13428-015-0664-2">
+<p>Nuijten, Michèle B., Chris H. J. Hartgerink, Marcel A.L.M. Van Assen, Epskamp Sacha, and Jelte M. Wicherts. 2015. “The Prevalence of Statistical Reporting Errors in Psychology (1985–2013).” <em>Behavior Research Methods</em> 48 (4). Springer Nature: 1205–26. doi:<a href="https://doi.org/10.3758/s13428-015-0664-2">10.3758/s13428-015-0664-2</a>.</p>
+</div>
+<div id="ref-doi:10.1037/a0033242">
+<p>Simonsohn, Uri, Leif D. Nelson, and Joseph P. Simmons. 2014. “P-Curve: A Key to the File-Drawer.” <em>Journal of Experimental Psychology: General</em> 143 (2). American Psychological Association (APA): 534–47. doi:<a href="https://doi.org/10.1037/a0033242">10.1037/a0033242</a>.</p>
+</div>
+<div id="ref-doi:10.1037/xge0000104">
+<p>Simonsohn, Uri, Joseph P. Simmons, and Leif D. Nelson. 2015. “Better P-Curves: Making P-Curve Analysis More Robust to Errors, Fraud, and Ambitious P-Hacking, a Reply to Ulrich and Miller (2015).” <em>Journal of Experimental Psychology: General</em> 144 (6). American Psychological Association (APA): 1146–52. doi:<a href="https://doi.org/10.1037/xge0000104">10.1037/xge0000104</a>.</p>
+</div>
+<div id="ref-doi:10.1080/19312458.2015.1096333">
+<p>Vermeulen, Ivar, Camiel J. Beukeboom, Anika Batenburg, Arthur Avramiea, Dimo Stoyanov, Bob van de Velde, and Dirk Oegema. 2015. “Blinded by the Light: How a Focus on Statistical ‘Significance’ May Causep-Value Misreporting and an Excess Ofp-Values Just Below .05 in Communication Science.” <em>Communication Methods and Measures</em> 9 (4). Informa UK Limited: 253–79. doi:<a href="https://doi.org/10.1080/19312458.2015.1096333">10.1080/19312458.2015.1096333</a>.</p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="research-practices-and-assessment-of-research-misconduct.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": true,
+"facebook": false,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "github", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": null,
+"history": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"toc": {
+"collapse": "subsection",
+"scroll_highlight": true
+},
+"toolbar": {
+"position": "fixed"
+},
+"search": true
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

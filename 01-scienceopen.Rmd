@@ -19,7 +19,7 @@ intentional behaviors: fabrication, falsification, and plagiarism
 responsible nor defined as research misconduct could be considered
 questionable research practices, which are practices that are
 detrimental to the research process
-[@doi:10.17226/1864;@doi:10.1007/pl00022268].  For example, the
+[@doi:10.17226/1864;@doi:10.1007/pl00022268]. For example, the
 misapplication of statistical methods can increase the number of false
 results and is therefore not responsible. At the same time, such
 misapplication can also not be deemed research misconduct because it
@@ -96,8 +96,8 @@ many researchers perceive their scientific peers to adhere to them even
 less. A survey of 3,247 researchers by @doi:10.1525/jer.2007.2.4.3 indicated that
 researchers subscribed to the norms more than they actually behaved in
 accordance to these norms. For instance, a researcher may be committed
-to sharing his or her data (the norm of communality), but might shy away
-from actually sharing data at an early stage out of a fear that of being
+to sharing their data (the norm of communality), but might shy away
+from actually sharing data at an early stage out of a fear of being
 scooped by other researchers. This result aligns with surveys showing
 that many researchers express a willingness to share data, but often
 fail to do so when asked [@doi:10.1080/08989621.2012.678688;@doi:10.1371/journal.pone.0007078]. Moreover,
@@ -131,7 +131,7 @@ weekly 15-minute ethics discussions facilitated confidence in
 recognizing ethical problems in a way that participants deemed both
 effective and enjoyable [@doi:10.1007/s11948-010-9197-3]. Such forms of active education
 are fruitful because they teach researchers practical skills that can
-change their research conduct and improves prospective decision making,
+change their research conduct and improve prospective decision making,
 where a researcher rapidly assesses the potential outcomes and ethical
 implications of the decision at hand, instead of in hindsight
 [@doi:10.1007/s11948-001-0012-z]. It is not to be expected that passive education on
@@ -159,7 +159,7 @@ professional standards. Openness regarding the choices made (e.g., on
 how to analyze the data) during the research process will promote active
 discussion of prospective ethics, increasing self-reflective capacities
 of both the individual researcher and the collective evaluation of the
-research (e.g., peer-reviewers).
+research (e.g., peer reviewers).
 
 In the remainder of this section we outline a type of project
 management, founded on transparency, which seems apt to be the new
@@ -279,7 +279,7 @@ and politicians initiate new forms of oversight.
 
 Suppose a researcher fails to find the (a priori) hypothesized effect,
 subsequently decides to inspect the effect for each gender, and finds an
-effect only for females. Such an ad hoc exploration of the data is
+effect only for women. Such an ad hoc exploration of the data is
 perfectly fine if it were presented as an exploration [@doi:10.1007/s11336-015-9445-1].
 However, if the subsequent publication only mentions the effect for
 females and presents it as confirmatory, instead of exploratory, this is
@@ -289,7 +289,7 @@ clearly not as convincing as one that would have been hypothesized a
 priori.
 
 These biases occur in part because researchers, editors, and
-peer-reviewers are biased to believe that statistical significance has a
+peer reviewers are biased to believe that statistical significance has a
 bearing on the probability of a hypothesis being true. Such
 misinterpretation of the $p$-value is not uncommon [@doi:10.1037/0003-066X.49.12.997]. The
 perception that statistical significance bears on the probability of a
@@ -356,7 +356,7 @@ Moreover, use of transparent practices even allows for unpublished
 research to become discoverable, effectively eliminating publication
 bias. Eliminating publication bias would make the research system an
 estimated 30 times more efficient [@doi:10.1371/journal.pone.0084896]. Considering that
-unpublished research is not indexed in the familiar peer-reviewed
+unpublished research is not indexed in the familiar peer reviewed
 databases, infrastructures to search through repositories similar to the
 OSF are needed. One such infrastructure is being built by the Center for
 Open Science (SHARE; [osf.io/share](https://osf.io/share)), which searches
@@ -369,7 +369,7 @@ through repositories similar to the OSF (e.g., figshare, Dryad, arXiv).
 [As mentioned at the beginning of the article](#introduction), research misconduct has
 been defined as fabrication, falsification, and plagiarism (FFP).
 However, it does not include "honest error or differences of opinion"
-[@ostp2000;@doi:10.1080/08989621.2012.650948]. Fabrication is the making up of datasets
+[@ostp2000;@doi:10.1080/08989621.2012.650948]. Fabrication is the making up of data sets
 entirely. Falsification is the adjustment of a set of data points to
 ensure the wanted results. Plagiarism is the direct reproduction of
 other's creative work without properly attributing it. These behaviors
@@ -569,7 +569,7 @@ therefore should invest in verification of results, which improves
 earlier detection of problems even if these problems are the result of
 mere sloppiness or honest error. Even though it is not feasible for all
 authors to verify all results, ideally results should be verified by at
-least one co-author. As mentioned earlier, peer-review does not weed out
+least one co-author. As mentioned earlier, peer review does not weed out
 all major problems [@doi:10.1007/s11192-007-1950-2] and should not be trusted blindly.
 
 Institutions could facilitate detection of data fabrication and
@@ -606,9 +606,9 @@ subjected to a formal investigation of research misconduct.
 
 Many retracted articles are still cited after the retraction has been
 issued [@doi:10.1007/s11948-015-9680-y;@doi:10.1001/jama.1990.03440100140020]. Additionally, retractions might
-be issued following a misconduct investigation, but not completed by
-journals, that the original content is simply deleted, or that legal
-threats resulted in not retracting the work [@doi:10.1371/journal.pone.0085846]. If retractions
+be issued following a misconduct investigation, resulting in no action taken by
+journals, the original content simply being deleted wholesale, or subsequent legal
+threats if the work would be retracted [@doi:10.1371/journal.pone.0085846]. If retractions
 do not occur even though they have been issued, their negative effect,
 for instance decreased author citations [@doi:10.1038/srep03146], are nullified,
 reducing the costs of committing misconduct.

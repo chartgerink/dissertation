@@ -1,0 +1,1396 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>C Example of statcheck report for PubPeer | Contributions towards understanding and building sustainable science</title>
+  <meta name="description" content="PhD dissertation by CHJ Hartgerink, written during 2014-2019, mostly at Tilburg University." />
+  <meta name="generator" content="bookdown 0.10 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="C Example of statcheck report for PubPeer | Contributions towards understanding and building sustainable science" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="PhD dissertation by CHJ Hartgerink, written during 2014-2019, mostly at Tilburg University." />
+  <meta name="github-repo" content="chartgerink/dissertation" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="C Example of statcheck report for PubPeer | Contributions towards understanding and building sustainable science" />
+  
+  <meta name="twitter:description" content="PhD dissertation by CHJ Hartgerink, written during 2014-2019, mostly at Tilburg University." />
+  
+
+<meta name="author" content="Chris Hubertus Joseph Hartgerink" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="effect-computation.html">
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Prologue</a></li>
+<li class="part"><span><b>I Understanding sustainable science</b></span></li>
+<li class="chapter" data-level="1" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html"><i class="fa fa-check"></i><b>1</b> Research practices and assessment of research misconduct</a><ul>
+<li class="chapter" data-level="1.1" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#responsible-conduct-of-research"><i class="fa fa-check"></i><b>1.1</b> Responsible conduct of research</a><ul>
+<li class="chapter" data-level="1.1.1" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#what-is-it"><i class="fa fa-check"></i><b>1.1.1</b> What is it?</a></li>
+<li class="chapter" data-level="1.1.2" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#what-do-researchers-do"><i class="fa fa-check"></i><b>1.1.2</b> What do researchers do?</a></li>
+<li class="chapter" data-level="1.1.3" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#improving-responsible-conduct"><i class="fa fa-check"></i><b>1.1.3</b> Improving responsible conduct</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#questionable-research-practices"><i class="fa fa-check"></i><b>1.2</b> Questionable research practices</a><ul>
+<li class="chapter" data-level="1.2.1" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#what-is-it-1"><i class="fa fa-check"></i><b>1.2.1</b> What is it?</a></li>
+<li class="chapter" data-level="1.2.2" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#what-do-researchers-do-1"><i class="fa fa-check"></i><b>1.2.2</b> What do researchers do?</a></li>
+<li class="chapter" data-level="1.2.3" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#how-can-it-be-prevented"><i class="fa fa-check"></i><b>1.2.3</b> How can it be prevented?</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#research-misconduct"><i class="fa fa-check"></i><b>1.3</b> Research misconduct</a><ul>
+<li class="chapter" data-level="1.3.1" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#what-is-it-2"><i class="fa fa-check"></i><b>1.3.1</b> What is it?</a></li>
+<li class="chapter" data-level="1.3.2" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#what-do-researchers-do-2"><i class="fa fa-check"></i><b>1.3.2</b> What do researchers do?</a></li>
+<li class="chapter" data-level="1.3.3" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#how-can-it-be-prevented-1"><i class="fa fa-check"></i><b>1.3.3</b> How can it be prevented?</a></li>
+</ul></li>
+<li class="chapter" data-level="1.4" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#conclusion"><i class="fa fa-check"></i><b>1.4</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html"><a href="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html"><i class="fa fa-check"></i><b>2</b> Reanalyzing Head et al. (2015): investigating the robustness of widespread <span class="math inline">\(p\)</span>-hacking</a><ul>
+<li class="chapter" data-level="2.1" data-path="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html"><a href="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html#data-and-methods"><i class="fa fa-check"></i><b>2.1</b> Data and methods</a></li>
+<li class="chapter" data-level="2.2" data-path="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html"><a href="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html#reanalysis-results"><i class="fa fa-check"></i><b>2.2</b> Reanalysis results</a></li>
+<li class="chapter" data-level="2.3" data-path="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html"><a href="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html#discussion"><i class="fa fa-check"></i><b>2.3</b> Discussion</a></li>
+<li class="chapter" data-level="2.4" data-path="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html"><a href="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html#limitations-and-conclusion"><i class="fa fa-check"></i><b>2.4</b> Limitations and conclusion</a></li>
+<li class="chapter" data-level="2.5" data-path="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html"><a href="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html#supporting-information"><i class="fa fa-check"></i><b>2.5</b> Supporting Information</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><i class="fa fa-check"></i><b>3</b> Distributions of <span class="math inline">\(p\)</span>-values between .01-.05 in psychology: What is going on?</a><ul>
+<li class="chapter" data-level="3.0.1" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#how-qrps-relate-to-distributions-of-p-values"><i class="fa fa-check"></i><b>3.0.1</b> How QRPs relate to distributions of <em>p</em>-values</a></li>
+<li class="chapter" data-level="3.0.2" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#previous-findings"><i class="fa fa-check"></i><b>3.0.2</b> Previous findings</a></li>
+<li class="chapter" data-level="3.0.3" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#extensions-of-previous-studies"><i class="fa fa-check"></i><b>3.0.3</b> Extensions of previous studies</a></li>
+<li class="chapter" data-level="3.1" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#data-and-methods-1"><i class="fa fa-check"></i><b>3.1</b> Data and methods</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#data"><i class="fa fa-check"></i><b>3.1.1</b> Data</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#methods"><i class="fa fa-check"></i><b>3.2</b> Methods</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#caliper-test"><i class="fa fa-check"></i><b>3.2.1</b> Caliper test</a></li>
+<li class="chapter" data-level="3.2.2" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#measures-based-on-p-value-distributions"><i class="fa fa-check"></i><b>3.2.2</b> Measures based on <span class="math inline">\(p\)</span>-value distributions</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#results-and-discussion"><i class="fa fa-check"></i><b>3.3</b> Results and discussion</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#reported-p-values"><i class="fa fa-check"></i><b>3.3.1</b> Reported <span class="math inline">\(p\)</span>-values</a></li>
+<li class="chapter" data-level="3.3.2" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#recalculated-p-value-distributions"><i class="fa fa-check"></i><b>3.3.2</b> Recalculated <span class="math inline">\(p\)</span>-value distributions</a></li>
+<li class="chapter" data-level="3.3.3" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#excessive-significance-over-time"><i class="fa fa-check"></i><b>3.3.3</b> Excessive significance over time</a></li>
+<li class="chapter" data-level="3.3.4" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#results-of-two-measures-based-on-modeling-p-value-distributions"><i class="fa fa-check"></i><b>3.3.4</b> Results of two measures based on modeling <span class="math inline">\(p\)</span>-value distributions</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#limitations-and-conclusions"><i class="fa fa-check"></i><b>3.4</b> Limitations and conclusions</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html"><i class="fa fa-check"></i><b>4</b> Too good to be false: Nonsignificant results revisited</a><ul>
+<li class="chapter" data-level="4.1" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#theoretical-framework"><i class="fa fa-check"></i><b>4.1</b> Theoretical framework</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#distributions-of-p-values"><i class="fa fa-check"></i><b>4.1.1</b> Distributions of <em>p</em>-values</a></li>
+<li class="chapter" data-level="4.1.2" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#testing-for-false-negatives-the-fisher-test"><i class="fa fa-check"></i><b>4.1.2</b> Testing for false negatives: the Fisher test</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#application-1-evidence-of-false-negatives-in-articles-across-eight-major-psychology-journals"><i class="fa fa-check"></i><b>4.2</b> Application 1: Evidence of false negatives in articles across eight major psychology journals</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#method"><i class="fa fa-check"></i><b>4.2.1</b> Method</a></li>
+<li class="chapter" data-level="4.2.2" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#results"><i class="fa fa-check"></i><b>4.2.2</b> Results</a></li>
+<li class="chapter" data-level="4.2.3" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#expected-effect-size-distribution."><i class="fa fa-check"></i><b>4.2.3</b> Expected effect size distribution.</a></li>
+<li class="chapter" data-level="4.2.4" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#evidence-of-false-negatives-in-articles."><i class="fa fa-check"></i><b>4.2.4</b> Evidence of false negatives in articles.</a></li>
+<li class="chapter" data-level="4.2.5" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#discussion-1"><i class="fa fa-check"></i><b>4.2.5</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#application-2-evidence-of-false-negative-gender-effects-in-eight-major-psychology-journals"><i class="fa fa-check"></i><b>4.3</b> Application 2: Evidence of false negative gender effects in eight major psychology journals</a><ul>
+<li class="chapter" data-level="4.3.1" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#method-1"><i class="fa fa-check"></i><b>4.3.1</b> Method</a></li>
+<li class="chapter" data-level="4.3.2" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#results-1"><i class="fa fa-check"></i><b>4.3.2</b> Results</a></li>
+<li class="chapter" data-level="4.3.3" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#discussion-2"><i class="fa fa-check"></i><b>4.3.3</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#application-3-reproducibility-project-psychology"><i class="fa fa-check"></i><b>4.4</b> Application 3: Reproducibility Project Psychology</a><ul>
+<li class="chapter" data-level="4.4.1" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#method-2"><i class="fa fa-check"></i><b>4.4.1</b> Method</a></li>
+<li class="chapter" data-level="4.4.2" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#results-2"><i class="fa fa-check"></i><b>4.4.2</b> Results</a></li>
+<li class="chapter" data-level="4.4.3" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#discussion-3"><i class="fa fa-check"></i><b>4.4.3</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#general-discussion"><i class="fa fa-check"></i><b>4.5</b> General Discussion</a><ul>
+<li class="chapter" data-level="4.5.1" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#limitations-and-further-research"><i class="fa fa-check"></i><b>4.5.1</b> Limitations and further research</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="statistical-results-content-mining-psychology-articles-for-statistical-test-results.html"><a href="statistical-results-content-mining-psychology-articles-for-statistical-test-results.html"><i class="fa fa-check"></i><b>5</b> 688,112 Statistical Results: Content Mining Psychology Articles for Statistical Test Results</a><ul>
+<li class="chapter" data-level="5.1" data-path="statistical-results-content-mining-psychology-articles-for-statistical-test-results.html"><a href="statistical-results-content-mining-psychology-articles-for-statistical-test-results.html#data-description"><i class="fa fa-check"></i><b>5.1</b> Data description</a></li>
+<li class="chapter" data-level="5.2" data-path="statistical-results-content-mining-psychology-articles-for-statistical-test-results.html"><a href="statistical-results-content-mining-psychology-articles-for-statistical-test-results.html#methods-1"><i class="fa fa-check"></i><b>5.2</b> Methods</a></li>
+<li class="chapter" data-level="5.3" data-path="statistical-results-content-mining-psychology-articles-for-statistical-test-results.html"><a href="statistical-results-content-mining-psychology-articles-for-statistical-test-results.html#usage-notes"><i class="fa fa-check"></i><b>5.3</b> Usage notes</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html"><i class="fa fa-check"></i><b>6</b> Detection of data fabrication using statistical tools</a><ul>
+<li class="chapter" data-level="6.1" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#theoretical-framework-1"><i class="fa fa-check"></i><b>6.1</b> Theoretical framework</a><ul>
+<li class="chapter" data-level="6.1.1" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#detecting-data-fabrication-in-summary-statistics"><i class="fa fa-check"></i><b>6.1.1</b> Detecting data fabrication in summary statistics</a></li>
+<li class="chapter" data-level="6.1.2" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#detecting-data-fabrication-in-raw-data"><i class="fa fa-check"></i><b>6.1.2</b> Detecting data fabrication in raw data</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#study-1---detecting-fabricated-summary-statistics"><i class="fa fa-check"></i><b>6.2</b> Study 1 - detecting fabricated summary statistics</a><ul>
+<li class="chapter" data-level="6.2.1" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#methods-2"><i class="fa fa-check"></i><b>6.2.1</b> Methods</a></li>
+<li class="chapter" data-level="6.2.2" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#results-3"><i class="fa fa-check"></i><b>6.2.2</b> Results</a></li>
+<li class="chapter" data-level="6.2.3" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#discussion-4"><i class="fa fa-check"></i><b>6.2.3</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#study-2---detecting-fabricated-individual-level-data"><i class="fa fa-check"></i><b>6.3</b> Study 2 - detecting fabricated individual level data</a><ul>
+<li class="chapter" data-level="6.3.1" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#methods-3"><i class="fa fa-check"></i><b>6.3.1</b> Methods</a></li>
+<li class="chapter" data-level="6.3.2" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#results-4"><i class="fa fa-check"></i><b>6.3.2</b> Results</a></li>
+<li class="chapter" data-level="6.3.3" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#discussion-5"><i class="fa fa-check"></i><b>6.3.3</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#general-discussion-1"><i class="fa fa-check"></i><b>6.4</b> General discussion</a></li>
+</ul></li>
+<li class="part"><span><b>II Improving science</b></span></li>
+<li class="chapter" data-level="7" data-path="extracting-data-from-vector-figures-in-scholarly-articles.html"><a href="extracting-data-from-vector-figures-in-scholarly-articles.html"><i class="fa fa-check"></i><b>7</b> Extracting data from vector figures in scholarly articles</a><ul>
+<li class="chapter" data-level="7.1" data-path="extracting-data-from-vector-figures-in-scholarly-articles.html"><a href="extracting-data-from-vector-figures-in-scholarly-articles.html#method-3"><i class="fa fa-check"></i><b>7.1</b> Method</a><ul>
+<li class="chapter" data-level="7.1.1" data-path="extracting-data-from-vector-figures-in-scholarly-articles.html"><a href="extracting-data-from-vector-figures-in-scholarly-articles.html#extraction-procedure"><i class="fa fa-check"></i><b>7.1.1</b> Extraction procedure</a></li>
+<li class="chapter" data-level="7.1.2" data-path="extracting-data-from-vector-figures-in-scholarly-articles.html"><a href="extracting-data-from-vector-figures-in-scholarly-articles.html#corpus"><i class="fa fa-check"></i><b>7.1.2</b> Corpus</a></li>
+<li class="chapter" data-level="7.1.3" data-path="extracting-data-from-vector-figures-in-scholarly-articles.html"><a href="extracting-data-from-vector-figures-in-scholarly-articles.html#documentation"><i class="fa fa-check"></i><b>7.1.3</b> Documentation</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="extracting-data-from-vector-figures-in-scholarly-articles.html"><a href="extracting-data-from-vector-figures-in-scholarly-articles.html#results-5"><i class="fa fa-check"></i><b>7.2</b> Results</a></li>
+<li class="chapter" data-level="7.3" data-path="extracting-data-from-vector-figures-in-scholarly-articles.html"><a href="extracting-data-from-vector-figures-in-scholarly-articles.html#discussion-6"><i class="fa fa-check"></i><b>7.3</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><i class="fa fa-check"></i><b>8</b> As-you-go instead of after-the-fact: A network approach to scholarly communication and evaluation</a><ul>
+<li class="chapter" data-level="8.1" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#network-structure"><i class="fa fa-check"></i><b>8.1</b> Network structure</a></li>
+<li class="chapter" data-level="8.2" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#indicators"><i class="fa fa-check"></i><b>8.2</b> Indicators</a></li>
+<li class="chapter" data-level="8.3" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#use-cases"><i class="fa fa-check"></i><b>8.3</b> Use cases</a><ul>
+<li class="chapter" data-level="8.3.1" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#funders"><i class="fa fa-check"></i><b>8.3.1</b> Funders</a></li>
+<li class="chapter" data-level="8.3.2" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#universities"><i class="fa fa-check"></i><b>8.3.2</b> Universities</a></li>
+<li class="chapter" data-level="8.3.3" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#individuals"><i class="fa fa-check"></i><b>8.3.3</b> Individuals</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#discussion-7"><i class="fa fa-check"></i><b>8.4</b> Discussion</a></li>
+<li class="chapter" data-level="8.5" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#conclusion-1"><i class="fa fa-check"></i><b>8.5</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><i class="fa fa-check"></i><b>9</b> Verified, shared, modular, and provenance based research communication with the Dat protocol</a><ul>
+<li class="chapter" data-level="9.1" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#dat-protocol"><i class="fa fa-check"></i><b>9.1</b> Dat protocol</a></li>
+<li class="chapter" data-level="9.2" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#verified-modular-scholarly-communication"><i class="fa fa-check"></i><b>9.2</b> Verified modular scholarly communication</a><ul>
+<li class="chapter" data-level="9.2.1" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#scholarly-profiles"><i class="fa fa-check"></i><b>9.2.1</b> Scholarly profiles</a></li>
+<li class="chapter" data-level="9.2.2" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#scholarly-modules"><i class="fa fa-check"></i><b>9.2.2</b> Scholarly modules</a></li>
+<li class="chapter" data-level="9.2.3" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#verification"><i class="fa fa-check"></i><b>9.2.3</b> Verification</a></li>
+<li class="chapter" data-level="9.2.4" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#prototype"><i class="fa fa-check"></i><b>9.2.4</b> Prototype</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#discussion-8"><i class="fa fa-check"></i><b>9.3</b> Discussion</a></li>
+<li class="chapter" data-level="9.4" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#limitations"><i class="fa fa-check"></i><b>9.4</b> Limitations</a></li>
+<li class="chapter" data-level="9.5" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#supporting-information-1"><i class="fa fa-check"></i><b>9.5</b> Supporting Information</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="summary.html"><a href="summary.html"><i class="fa fa-check"></i>Summary</a></li>
+<li class="chapter" data-level="" data-path="epilogue.html"><a href="epilogue.html"><i class="fa fa-check"></i>Epilogue</a></li>
+<li class="appendix"><span><b>Appendices</b></span></li>
+<li class="chapter" data-level="A" data-path="examining-statistical-properties-of-the-fisher-test.html"><a href="examining-statistical-properties-of-the-fisher-test.html"><i class="fa fa-check"></i><b>A</b> Examining statistical properties of the Fisher test</a></li>
+<li class="chapter" data-level="B" data-path="effect-computation.html"><a href="effect-computation.html"><i class="fa fa-check"></i><b>B</b> Effect computation</a></li>
+<li class="chapter" data-level="C" data-path="example-of-statcheck-report-for-pubpeer.html"><a href="example-of-statcheck-report-for-pubpeer.html"><i class="fa fa-check"></i><b>C</b> Example of <code>statcheck</code> report for PubPeer</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Contributions towards understanding and building sustainable science</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="example-of-statcheck-report-for-pubpeer" class="section level1">
+<h1><span class="header-section-number">C</span> Example of <code>statcheck</code> report for PubPeer</h1>
+<blockquote>
+<p>The HTML version of this article was scanned on 5 August 2016 for statistical results (<span class="math inline">\(t\)</span>, <span class="math inline">\(r\)</span>, <span class="math inline">\(F\)</span>, <span class="math inline">\(\chi^2\)</span>, and <span class="math inline">\(Z\)</span> values) reported in APA format <span class="citation">(for specifics, see Nuijten, Hartgerink, et al. <a href="#ref-doi:10.3758/s13428-015-0664-2">2015</a>)</span>. An automatically generated report follows.</p>
+</blockquote>
+<blockquote>
+<p>The scan detected 5 statistical results in APA format, of which 3 contained potentially incorrect statistical results, of which 1 may change statistical significance (<span class="math inline">\(\alpha\)</span>=0.05). Potential one-tailed results were taken into account when “one-sided”, “one-tailed”, or “directional” occurred in the text. The errors that may change statistical significance were reported as:</p>
+</blockquote>
+<blockquote>
+<p><span class="math inline">\(t(67)=-0.436, p&lt;0.001\)</span> (recalculated <span class="math inline">\(p\)</span>-value: 0.66424)</p>
+</blockquote>
+<blockquote>
+<p>The errors that may affect the computed <span class="math inline">\(p\)</span>-value (but not the statistical significance) were reported as:</p>
+</blockquote>
+<blockquote>
+<p><span class="math inline">\(F(1,126)=2.1, p&gt;0.90\)</span> (recalculated <span class="math inline">\(p\)</span>-value: 0.14978)</p>
+</blockquote>
+<blockquote>
+<p><span class="math inline">\(t(67)=-1.02, p=0.35\)</span> (recalculated <span class="math inline">\(p\)</span>-value: 0.31140)</p>
+</blockquote>
+<blockquote>
+<p>Note that these are not definitive results and require manual inspection to definitively assess whether results are erroneous.</p>
+</blockquote>
+
+
+<div id="refs" class="references">
+<div>
+<p>Aberson, Christopher L. 2010. “What is power? Why is power important?” In <em>Applied power analysis for the behavioral sciences</em>, edited by Christopher L Aberson. New York, NY: Routledge.</p>
+</div>
+<div>
+<p>Aczel, Balazs, Bence Palfi, and Barnabas Szaszi. 2017. “Estimating the Evidential Value of Significant Results in Psychological Science.” Edited by Jelte M. Wicherts. <em>PLOS ONE</em> 12 (8). Public Library of Science (PLoS): e0182651. doi:<a href="https://doi.org/10.1371/journal.pone.0182651">10.1371/journal.pone.0182651</a>.</p>
+</div>
+<div>
+<p>Agresti, Alan. 2003. <em>Categorical Data Analysis</em>. Vol. 482. London, United Kingdom: John Wiley &amp; Sons. <a href="https://mathdept.iut.ac.ir/sites/mathdept.iut.ac.ir/files/AGRESTI.PDF" class="uri">https://mathdept.iut.ac.ir/sites/mathdept.iut.ac.ir/files/AGRESTI.PDF</a>.</p>
+</div>
+<div>
+<p>Akhtar-Danesh, Noori, and Mahshid Dehghan-Kooshkghazi. 2003. “How Does Correlation Structure Differ Between Real and Fabricated Data-Sets?” <em>BMC Medical Research Methodology</em> 3 (1). Springer Nature. doi:<a href="https://doi.org/10.1186/1471-2288-3-18">10.1186/1471-2288-3-18</a>.</p>
+</div>
+<div>
+<p>Allen, Mary, and Robin Dowell. 2013. “Retrospective Reflections of a Whistleblower: Opinions on Misconduct Responses.” <em>Accountability in Research</em> 20 (5-6): 339–48. doi:<a href="https://doi.org/10.1080/08989621.2013.822249">10.1080/08989621.2013.822249</a>.</p>
+</div>
+<div>
+<p>American Psychological Association. 1983. <em>Publication manual of the American Psychological Association</em>. 3rd ed. Washington, DC: American Psychological Association.</p>
+</div>
+<div>
+<p>———. 2001. <em>Publication manual of the American Psychological Association</em>. 5th ed. Washington, DC: American Psychological Association.</p>
+</div>
+<div>
+<p>———. 2010a. “Ethical Principles of Psychologists and Code of Conduct.” <a href="http://www.apa.org/ethics/code/principles.pdf" class="uri">http://www.apa.org/ethics/code/principles.pdf</a>. <a href="http://www.apa.org/ethics/code/principles.pdf" class="uri">http://www.apa.org/ethics/code/principles.pdf</a>.</p>
+</div>
+<div>
+<p>———. 2010b. <em>Publication Manual of the American Psychological Association</em>. 6th ed. Washington, DC: American Psychological Association.</p>
+</div>
+<div>
+<p>Anaya, Jordan. 2016. “The Grimmer Test: A Method for Testing the Validity of Reported Measures of Variability.” <em>PeerJ Preprints</em> 4 (August): e2400v1. doi:<a href="https://doi.org/10.7287/peerj.preprints.2400v1">10.7287/peerj.preprints.2400v1</a>.</p>
+</div>
+<div>
+<p>Anderson, C. J., t pan Bahnik, M. Barnett-Cowan, F. A. Bosco, J. Chandler, C. R. Chartier, F. Cheung, et al. 2016. “Response to Comment on ‘Estimating the Reproducibility of Psychological Science’.” <em>Science</em> 351 (6277). American Association for the Advancement of Science (AAAS): 1037–7. doi:<a href="https://doi.org/10.1126/science.aad9163">10.1126/science.aad9163</a>.</p>
+</div>
+<div>
+<p>Anderson, Melissa S, Aaron S Horn, Kelly R Risbey, Emily A Ronning, Raymond De Vries, and Brian C Martinson. 2007. “What Do Mentoring and Training in the Responsible Conduct of Research Have to Do with Scientists’ Misbehavior? Findings from a National Survey of NIH-funded Scientists.” <em>Academic Medicine</em> 82 (9): 853. doi:<a href="https://doi.org/10.1097/ACM.0b013e31812f764c">10.1097/ACM.0b013e31812f764c</a>.</p>
+</div>
+<div>
+<p>Anderson, Melissa S, Brian C Martinson, and Raymond De Vries. 2007. “Normative Dissonance in Science: Results from a National Survey of U.s. Scientists.” <em>Journal of Empirical Research on Human Research Ethics</em> 2 (4): 3–14. doi:<a href="https://doi.org/10.1525/jer.2007.2.4.3">10.1525/jer.2007.2.4.3</a>.</p>
+</div>
+<div>
+<p>Anderson, Melissa S, Emily A Ronning, Raymond Devries, and Brian C Martinson. 2010. “Extending the Mertonian Norms: Scientists’ Subscription to Norms of Research.” <em>The Journal of Higher Education</em> 81 (3): 366–93. doi:<a href="https://doi.org/10.1353/jhe.0.0095">10.1353/jhe.0.0095</a>.</p>
+</div>
+<div>
+<p>Anonymous. 2012. “Suspicion of scientific misconduct by Dr. Jens Foerster.” <a href="http://wayback.archive.org/web/20170511084213/https://retractionwatch.files.wordpress.com/2014/04/report_foerster.pdf" class="uri">http://wayback.archive.org/web/20170511084213/https://retractionwatch.files.wordpress.com/2014/04/report_foerster.pdf</a>.</p>
+</div>
+<div>
+<p>Armitage, P., C. K. McPherson, and B. C. Rowe. 1969. “Repeated Significance Tests on Accumulating Data.” <em>Journal of the Royal Statistical Society. Series A (General)</em> 132 (2). JSTOR: 235. doi:<a href="https://doi.org/10.2307/2343787">10.2307/2343787</a>.</p>
+</div>
+<div>
+<p>Asendorpf, Jens B., Mark Conner, Filip De Fruyt, Jan De Houwer, Jaap J. A. Denissen, Klaus Fiedler, Susann Fiedler, et al. 2013. “Recommendations for Increasing Replicability in Psychology.” <em>European Journal of Personality</em> 27 (2). Wiley: 108–19. doi:<a href="https://doi.org/10.1002/per.1919">10.1002/per.1919</a>.</p>
+</div>
+<div>
+<p>Bailey, Kent R. 1991. “Detecting Fabrication of Data in a Multicenter Collaborative Animal Study.” <em>Controlled Clinical Trials</em> 12 (6). Elsevier BV: 741–52. doi:<a href="https://doi.org/10.1016/0197-2456(91)90037-m">10.1016/0197-2456(91)90037-m</a>.</p>
+</div>
+<div>
+<p>Bakan, David. 1966. “The Test of Significance in Psychological Research.” <em>Psychological Bulletin</em> 66 (6). American Psychological Association (APA): 423–37. doi:<a href="https://doi.org/10.1037/h0020412">10.1037/h0020412</a>.</p>
+</div>
+<div>
+<p>Baker, Monya. 2016. “1,500 Scientists Lift the Lid on Reproducibility.” <em>Nature</em> 533 (7604). Springer Nature: 452–54. doi:<a href="https://doi.org/10.1038/533452a">10.1038/533452a</a>.</p>
+</div>
+<div>
+<p>Bakker, Marjan, and Jelte M Wicherts. 2011. “The (Mis)reporting of Statistical Results in Psychology Journals.” <em>Behavior Research Methods</em> 43 (3): 666–78. doi:<a href="https://doi.org/10.3758/s13428-011-0089-5">10.3758/s13428-011-0089-5</a>.</p>
+</div>
+<div>
+<p>Bakker, Marjan, and Jelte M. Wicherts. 2014. “Outlier Removal, Sum Scores, and the Inflation of the Type I Error Rate in Independent Samples T Tests: The Power of Alternatives and Recommendations.” <em>Psychological Methods</em> 19 (3). American Psychological Association (APA): 409–27. doi:<a href="https://doi.org/10.1037/met0000014">10.1037/met0000014</a>.</p>
+</div>
+<div>
+<p>Bakker, Marjan, Annette Van Dijk, Jelte M., and Jelte M Wicherts. 2012. “The rules of the game called psychological science.” <em>Perspectives on Psychological Science</em> 7 (6): 543–54. doi:<a href="https://doi.org/10.1177/1745691612459060">10.1177/1745691612459060</a>.</p>
+</div>
+<div>
+<p>Bakker, Marjan, Chris H. J. Hartgerink, Jelte M. Wicherts, and Han L. J. van der Maas. 2016. “Researchers’ Intuitions About Power in Psychological Research.” <em>Psychological Science</em> 27 (8). SAGE Publications: 1069–77. doi:<a href="https://doi.org/10.1177/0956797616647519">10.1177/0956797616647519</a>.</p>
+</div>
+<div>
+<p>Baldwin, Melinda. 2015. <em>Making Nature: The History of a Scientific Journal</em>. University of Chicago Press.</p>
+</div>
+<div>
+<p>Baldwin, Peter. 2014. <em>The Copyright Wars: Three Centuries of Trans-Atlantic Battle</em>. Princeton University Press.</p>
+</div>
+<div>
+<p>Bauer, Johannes, and Jochen Gross. 2011. “Difficulties Detecting Fraud? The Use of Benford’s Law on Regression Tables.” Edited by AndreasEditor Diekmann. <em>Methodological Artefacts, Data Manipulation and Fraud in Economics and Social Science</em>, January. De Gruyter. doi:<a href="https://doi.org/10.1515/9783110508420-010">10.1515/9783110508420-010</a>.</p>
+</div>
+<div>
+<p>Begley, C. Glenn, and Lee M. Ellis. 2012. “Raise Standards for Preclinical Cancer Research.” <em>Nature</em> 483 (7391). Springer Nature: 531–33. doi:<a href="https://doi.org/10.1038/483531a">10.1038/483531a</a>.</p>
+</div>
+<div>
+<p>Bem, Daryl J. 2000. “Writing an Empirical Article.” Edited by Robert J. Sternberg. Cambridge University Press, 3–16. doi:<a href="https://doi.org/10.1017/cbo9780511807862.002">10.1017/cbo9780511807862.002</a>.</p>
+</div>
+<div>
+<p>Benford, Frank. 1938. “The Law of Anomalous Numbers.” <em>Proceedings of the American Philosophical Society</em> 78 (4). American Philosophical Society: 551–72. <a href="http://www.jstor.org/stable/984802" class="uri">http://www.jstor.org/stable/984802</a>.</p>
+</div>
+<div>
+<p>Benjamini, Y., and Y. Hechtlinger. 2013. “Discussion: An Estimate of the Science-Wise False Discovery Rate and Applications to Top Medical Journals by Jager and Leek.” <em>Biostatistics</em> 15 (1). Oxford University Press (OUP): 13–16. doi:<a href="https://doi.org/10.1093/biostatistics/kxt032">10.1093/biostatistics/kxt032</a>.</p>
+</div>
+<div>
+<p>Berg, Jeremy. 2017. “Preprint Ecosystems.” <em>Science</em> 357 (6358). American Association for the Advancement of Science (AAAS): 1331–1. doi:<a href="https://doi.org/10.1126/science.aaq0167">10.1126/science.aaq0167</a>.</p>
+</div>
+<div>
+<p>Berger, Arno, and Theodore P. Hill. 2011. “A Basic Theory of Benford’s Law.” <em>Probability Surveys</em> 8 (0). Institute of Mathematical Statistics: 1–126. doi:<a href="https://doi.org/10.1214/11-ps175">10.1214/11-ps175</a>.</p>
+</div>
+<div>
+<p>Bik, Elisabeth M., Arturo Casadevall, and Ferric C. Fang. 2016a. “The Prevalence of Inappropriate Image Duplication in Biomedical Research Publications.” <em>mBio</em> 7 (3). American Society for Microbiology: e00809–16. doi:<a href="https://doi.org/10.1128/mbio.00809-16">10.1128/mbio.00809-16</a>.</p>
+</div>
+<div>
+<p>———. 2016b. “The Prevalence of Inappropriate Image Duplication in Biomedical Research Publications.” <em>mBio</em> 7 (3). American Society for Microbiology: e00809–16. doi:<a href="https://doi.org/10.1128/mbio.00809-16">10.1128/mbio.00809-16</a>.</p>
+</div>
+<div>
+<p>Bishop, Dorothy V, and Paul A Thompson. 2015. “Problems in Using Text-Mining and P-Curve Analysis to Detect Rate of P-Hacking.” <em>PeerJ PrePrints</em> 3 (July): e1550. doi:<a href="https://doi.org/10.7287/peerj.preprints.1266v1">10.7287/peerj.preprints.1266v1</a>.</p>
+</div>
+<div>
+<p>Bishop, Dorothy V.M., and Paul A. Thompson. 2016. “Problems in Usingp-Curve Analysis and Text-Mining to Detect Rate Ofp-Hacking and Evidential Value.” <em>PeerJ</em> 4 (February). PeerJ: e1715. doi:<a href="https://doi.org/10.7717/peerj.1715">10.7717/peerj.1715</a>.</p>
+</div>
+<div>
+<p>Bloudoff-Indelicato, Mollie. 2015. “Text-Mining Block Prompts Online Response.” <em>Nature</em> 527 (7579). Springer Nature: 413–13. doi:<a href="https://doi.org/10.1038/527413f">10.1038/527413f</a>.</p>
+</div>
+<div>
+<p>Bohannon, John. 2016a. “Who’s Downloading Pirated Papers? Everyone.” <em>Science</em>. doi:<a href="https://doi.org/10.1126/science.aaf5664">10.1126/science.aaf5664</a>.</p>
+</div>
+<div>
+<p>———. 2016b. “Who’s Downloading Pirated Papers? Everyone.” <em>Science</em> 352 (6285). American Association for the Advancement of Science (AAAS): 508–12. doi:<a href="https://doi.org/10.1126/science.352.6285.508">10.1126/science.352.6285.508</a>.</p>
+</div>
+<div>
+<p>Bolland, Mark J., Greg D. Gamble, Alison Avenell, and Andrew Grey. 2019. “Rounding, but Not Randomization Method, Non-Normality, or Correlation, Affected Baseline P-Value Distributions in Randomized Trials.” <em>Journal of Clinical Epidemiology</em> 110 (June). Elsevier BV: 50–62. doi:<a href="https://doi.org/10.1016/j.jclinepi.2019.03.001">10.1016/j.jclinepi.2019.03.001</a>.</p>
+</div>
+<div>
+<p>Borenstein, Michael, Larry V. Hedges, Julian P. T. Higgins, and Hannah R. Rothstein. 2011. <em>Introduction to Meta-Analysis</em>. Wiley.</p>
+</div>
+<div>
+<p>Bornemann-Cimenti, Helmar, Istvan S Szilagyi, and Andreas Sandner-Kiesling. 2015. “Perpetuation of Retracted Publications Using the Example of the Scott S. Reuben Case: Incidences, Reasons and Possible Improvements.” <em>Science and Engineering Ethics</em>, 7~jul. doi:<a href="https://doi.org/10.1007/s11948-015-9680-y">10.1007/s11948-015-9680-y</a>.</p>
+</div>
+<div>
+<p>Bornmann, Lutz, Irina Nast, and Hans-Dieter Daniel. 2008. “Do Editors and Referees Look for Signs of Scientific Misconduct When Reviewing Manuscripts? A Quantitative Content Analysis of Studies That Examined Review Criteria and Reasons for Accepting and Rejecting Manuscripts for Publication.” <em>Scientometrics</em> 77 (3). Springer Netherlands: 415–32. doi:<a href="https://doi.org/10.1007/s11192-007-1950-2">10.1007/s11192-007-1950-2</a>.</p>
+</div>
+<div>
+<p>Bradley, Jean-Claude. 2007. “Open Notebook Science Using Blogs and Wikis.” <em>Nature Precedings</em>, June. Springer Nature. doi:<a href="https://doi.org/10.1038/npre.2007.39.1">10.1038/npre.2007.39.1</a>.</p>
+</div>
+<div>
+<p>Brembs, Björn. 2018. “Prestigious Science Journals Struggle to Reach Even Average Reliability.” <em>Frontiers in Human Neuroscience</em> 12 (February). Frontiers Media SA. doi:<a href="https://doi.org/10.3389/fnhum.2018.00037">10.3389/fnhum.2018.00037</a>.</p>
+</div>
+<div>
+<p>Bridle, James. 2018. <em>New Dark Age: Technology and the End of the Future</em>. Verso.</p>
+</div>
+<div>
+<p>Broad, William, and Nicholas Wade. 1983. <em>Betrayers of the Truth</em>. New York, NY: Simon; Schuster.</p>
+</div>
+<div>
+<p>Broockman, David, Joshua Kalla, and Peter Aronow. 2015. “Irregularities in LaCour (2014).” <a href="https://wayback.archive.org/web/20180823093137/http://stanford.edu/~dbroock/broockman_kalla_aronow_lg_irregularities.pdf" class="uri">https://wayback.archive.org/web/20180823093137/http://stanford.edu/~dbroock/broockman_kalla_aronow_lg_irregularities.pdf</a>.</p>
+</div>
+<div>
+<p>Brown, Nicholas J. L., and James A. J. Heathers. 2016. “The GRIM Test.” <em>Social Psychological and Personality Science</em> 8 (4). SAGE Publications: 363–69. doi:<a href="https://doi.org/10.1177/1948550616673876">10.1177/1948550616673876</a>.</p>
+</div>
+<div>
+<p>Bruns, Stephan B., and John P. A. Ioannidis. 2016. “P-Curve and P-Hacking in Observational Research.” <em>PLOS ONE</em> 11 (2). Public Library of Science: 1–13. doi:<a href="https://doi.org/10.1371/journal.pone.0149144">10.1371/journal.pone.0149144</a>.</p>
+</div>
+<div>
+<p>Burns, Bruce D. 2009. “Sensitivity to statistical regularities : People (largely) follow Benford’s law.” In <em>Proceedings of the Thirty First Annual Conference of the Cognitive Science Society</em>. Austin, TX: Cognitive Science Society. <a href="http://wayback.archive.org/web/20170619175106/http://csjarchive.cogsci.rpi.edu/Proceedings/2009/papers/637/paper637.pdf" class="uri">http://wayback.archive.org/web/20170619175106/http://csjarchive.cogsci.rpi.edu/Proceedings/2009/papers/637/paper637.pdf</a>.</p>
+</div>
+<div>
+<p>Buyse, M, S L George, S Evans, N L Geller, J Ranstam, B Scherrer, E Lesaffre, et al. 1999. “The Role of Biostatistics in the Prevention, Detection and Treatment of Fraud in Clinical Trials.” <em>Statistics in Medicine</em> 18 (24): 3435–51. doi:<a href="https://doi.org/10.1002/(SICI)1097-0258(19991230)18:24&lt;3435::AID-SIM365&gt;3.0.CO;2-O">10.1002/(SICI)1097-0258(19991230)18:24&lt;3435::AID-SIM365&gt;3.0.CO;2-O</a>.</p>
+</div>
+<div>
+<p>Camerer, C. F., A. Dreber, E. Forsell, T.-H. Ho, J. Huber, M. Johannesson, M. Kirchler, et al. 2016. “Evaluating Replicability of Laboratory Experiments in Economics.” <em>Science</em> 351 (6280). American Association for the Advancement of Science (AAAS): 1433–6. doi:<a href="https://doi.org/10.1126/science.aaf0918">10.1126/science.aaf0918</a>.</p>
+</div>
+<div>
+<p>Capadisli, Sarven, Amy Guy, Ruben Verborgh, Christoph Lange, Soeren Auer, and Tim Berners-Lee. 2017. “Decentralised Authoring, Annotations and Notifications for a Read-Write Web with Dokieli.” <a href="https://wayback.archive.org/web/20180807191810/http://csarven.ca/dokieli-rww" class="uri">https://wayback.archive.org/web/20180807191810/http://csarven.ca/dokieli-rww</a>.</p>
+</div>
+<div>
+<p>Carlisle, J. B. 2012. “The Analysis of 168 Randomised Controlled Trials to Test Data Integrity.” <em>Anaesthesia</em> 67 (5): 521–37. doi:<a href="https://doi.org/10.1111/j.1365-2044.2012.07128.x">10.1111/j.1365-2044.2012.07128.x</a>.</p>
+</div>
+<div>
+<p>———. 2017a. “Data Fabrication and Other Reasons for Non-Random Sampling in 5087 Randomised, Controlled Trials in Anaesthetic and General Medical Journals.” <em>Anaesthesia</em>, June. Wiley-Blackwell. doi:<a href="https://doi.org/10.1111/anae.13938">10.1111/anae.13938</a>.</p>
+</div>
+<div>
+<p>———. 2017b. “Seeking and Reporting Apparent Research Misconduct: Errors and Integrity - a Reply.” <em>Anaesthesia</em> 73 (1). Wiley: 126–28. doi:<a href="https://doi.org/10.1111/anae.14148">10.1111/anae.14148</a>.</p>
+</div>
+<div>
+<p>Carlisle, J. B., and J. A. Loadsman. 2016. “Evidence for Non-Random Sampling in Randomised, Controlled Trials by Yuhji Saitoh.” <em>Anaesthesia</em> 72 (1). Wiley: 17–27. doi:<a href="https://doi.org/10.1111/anae.13650">10.1111/anae.13650</a>.</p>
+</div>
+<div>
+<p>Carlisle, J. B., F. Dexter, J. J. Pandit, S. L. Shafer, and S. M. Yentis. 2015. “Calculating the Probability of Random Sampling for Continuous Variables in Submitted or Published Randomised Controlled Trials.” <em>Anaesthesia</em> 70 (7): 848–58. doi:<a href="https://doi.org/10.1111/anae.13126">10.1111/anae.13126</a>.</p>
+</div>
+<div>
+<p>Casella, George, and Roger L. Berger. 2001. <em>Statistical Inference</em>. Cengage Learning.</p>
+</div>
+<div>
+<p>Cavdar, Derya, and Fatih Alagoz. 2012. “A Survey of Research on Greening Data Centers.” <em>2012 IEEE Global Communications Conference (GLOBECOM)</em>, December. IEEE. doi:<a href="https://doi.org/10.1109/glocom.2012.6503613">10.1109/glocom.2012.6503613</a>.</p>
+</div>
+<div>
+<p>Chamberlain, Scott, Carl Boettiger, and Karthik Ram. 2015. “Rplos: Interface to the Search ’API’ for ’PLoS’ Journals.” <a href="http://CRAN.R-project.org/package=rplos" class="uri">http://CRAN.R-project.org/package=rplos</a>.</p>
+</div>
+<div>
+<p>Chambers, Christopher D. 2015. “Ten Reasons Why Journals Must Review Manuscripts Before Results Are Known.” <em>Addiction</em> 110 (1): 10–11. doi:<a href="https://doi.org/10.1111/add.12728">10.1111/add.12728</a>.</p>
+</div>
+<div>
+<p>Chambers, Christopher D. 2013. “Registered Reports: A New Publishing Initiative at Cortex.” <em>Cortex</em> 49 (3). Elsevier BV: 609–10. doi:<a href="https://doi.org/10.1016/j.cortex.2012.12.016">10.1016/j.cortex.2012.12.016</a>.</p>
+</div>
+<div>
+<p>Cheung, I., L. Campbell, E. P. LeBel, R. A. Ackerman, B. Aykutoğlu, Š. Bahník, J. D. Bowen, et al. 2016. “Registered Replication Report.” <em>Perspectives on Psychological Science</em> 11 (5). SAGE Publications: 750–64. doi:<a href="https://doi.org/10.1177/1745691616664694">10.1177/1745691616664694</a>.</p>
+</div>
+<div>
+<p>Cho, Wendy K. Tam, and Brian J. Gaines. 2007. “Breaking the (Benford) Law: Statistical Fraud Detection in Campaign Finance.” <em>The American Statistician</em> 61 (3). [American Statistical Association, Taylor &amp; Francis, Ltd.]: 218–23. <a href="http://www.jstor.org/stable/27643897" class="uri">http://www.jstor.org/stable/27643897</a>.</p>
+</div>
+<div>
+<p>Cialdini, Robert B., and Noah J. Goldstein. 2004. “Social Influence: Compliance and Conformity.” <em>Annual Review of Psychology</em> 55 (1). Annual Reviews: 591–621. doi:<a href="https://doi.org/10.1146/annurev.psych.55.090902.142015">10.1146/annurev.psych.55.090902.142015</a>.</p>
+</div>
+<div>
+<p>Clark, Tim, Paolo N Ciccarese, and Carole A Goble. 2014. “Micropublications: A Semantic Model for Claims, Evidence, Arguments and Annotations in Biomedical Communications.” <em>Journal of Biomedical Semantics</em> 5 (1). Springer Nature: 28. doi:<a href="https://doi.org/10.1186/2041-1480-5-28">10.1186/2041-1480-5-28</a>.</p>
+</div>
+<div>
+<p>Cohen, Jacob. 1962. “The Statistical Power of Abnormal-Social Psychological Research: A Review.” <em>The Journal of Abnormal and Social Psychology</em> 65 (3). American Psychological Association (APA): 145–53. doi:<a href="https://doi.org/10.1037/h0045186">10.1037/h0045186</a>.</p>
+</div>
+<div>
+<p>———. 1988. <em>Statistical Power Analysis for the Behavioral Sciences (2nd Edition)</em>. Routledge.</p>
+</div>
+<div>
+<p>———. 1994. “The Earth Is Round (P &lt; .05).” <em>American Psychologist</em> 49 (12): 997–1003. doi:<a href="https://doi.org/10.1037/0003-066X.49.12.997">10.1037/0003-066X.49.12.997</a>.</p>
+</div>
+<div>
+<p>Cressey, Daniel. 2013. “’Rehab’ Helps Errant Researchers Return to the Lab.” <em>Nature News</em> 493 (7431): 147. doi:<a href="https://doi.org/10.1038/493147a">10.1038/493147a</a>.</p>
+</div>
+<div>
+<p>Cumming, Geoff. 2013. “The New Statistics.” <em>Psychological Science</em> 25 (1). SAGE Publications: 7–29. doi:<a href="https://doi.org/10.1177/0956797613504966">10.1177/0956797613504966</a>.</p>
+</div>
+<div>
+<p>Cyranoski, David. 2015. “Collateral Damage: How One Misconduct Case Brought a Biology Institute to Its Knees.” <em>Nature</em> 520 (7549). Springer Nature: 600–603. doi:<a href="https://doi.org/10.1038/520600a">10.1038/520600a</a>.</p>
+</div>
+<div>
+<p>De Groot, A.D. 1994. <em>Methodologie: Grondslagen van Onderzoek En Denken in de Gedragswetenschappen [Methodology: Foundations of Research and Thinking in the Behavioral Sciences]</em>. Assen, the Netherlands: Van Gorcum.</p>
+</div>
+<div>
+<p>De Winter, Joost CF, and Dimitra Dodou. 2015. “A Surge of P-Values Between 0.041 and 0.049 in Recent Decades (but Negative Results Are Increasing Rapidly Too).” <em>PeerJ</em> 3 (January). PeerJ: e733. doi:<a href="https://doi.org/10.7717/peerj.733">10.7717/peerj.733</a>.</p>
+</div>
+<div>
+<p>Diekmann, Andreas. 2007. “Not the First Digit! Using Benford’s Law to Detect Fraudulent Scientific Data.” <em>Journal of Applied Statistics</em> 34 (3). Taylor &amp; Francis: 321–29. doi:<a href="https://doi.org/10.1080/02664760601004940">10.1080/02664760601004940</a>.</p>
+</div>
+<div>
+<p>Domenico, Manlio De, and Alex Arenas. 2017. “Modeling Structure and Resilience of the Dark Network.” <em>Physical Review E</em> 95 (2). American Physical Society (APS). doi:<a href="https://doi.org/10.1103/physreve.95.022313">10.1103/physreve.95.022313</a>.</p>
+</div>
+<div>
+<p>Durtschi, Cindy, William Hillison, and Carl Pacini. 2004. “The Effective Use of Benford’s Law to Assist in Detecting Fraud in Accounting Data.” <em>Journal of Forensic Accounting</em> 5 (1): 17–34.</p>
+</div>
+<div>
+<p>Easterbrook, P.J, R Gopalan, J.A Berlin, and D.R Matthews. 1991. “Publication Bias in Clinical Research.” <em>The Lancet</em> 337 (8746). Elsevier BV: 867–72. doi:<a href="https://doi.org/10.1016/0140-6736(91)90201-y">10.1016/0140-6736(91)90201-y</a>.</p>
+</div>
+<div>
+<p>Ebersole, Charles R., Olivia E. Atherton, Aimee L. Belanger, Hayley M. Skulborstad, Jill M. Allen, Jonathan B. Banks, Erica Baranski, et al. 2016. “Many Labs 3: Evaluating Participant Pool Quality Across the Academic Semester via Replication.” <em>Journal of Experimental Social Psychology</em> 67 (November). Elsevier BV: 68–82. doi:<a href="https://doi.org/10.1016/j.jesp.2015.10.012">10.1016/j.jesp.2015.10.012</a>.</p>
+</div>
+<div>
+<p>Elia, Nadia, Elizabeth Wager, and Martin R. Tramèr. 2014. “Fate of Articles That Warranted Retraction Due to Ethical Concerns: A Descriptive Cross-Sectional Study.” Edited by K. BradEditor Wray. <em>PLoS ONE</em> 9 (1). Public Library of Science (PLoS): e85846. doi:<a href="https://doi.org/10.1371/journal.pone.0085846">10.1371/journal.pone.0085846</a>.</p>
+</div>
+<div>
+<p>Ellemers, Naomi. 2017. “Ethisch klimaat op het werk: Op zoek naar het nieuwe normaal [Ethical climate at work: Searching for the new normal].” <a href="https://wayback.archive.org/web/20180726070256/https://www.scoop-program.org/images/Tekst_Oratie_Naomi_Ellemers_9_februari_2017.pdf" class="uri">https://wayback.archive.org/web/20180726070256/https://www.scoop-program.org/images/Tekst_Oratie_Naomi_Ellemers_9_februari_2017.pdf</a>.</p>
+</div>
+<div>
+<p>Epskamp, Sacha, and Michèle B. Nuijten. 2016. <em>Statcheck: Extract Statistics from Articles and Recompute P Values</em>. <a href="https://CRAN.R-project.org/package=statcheck" class="uri">https://CRAN.R-project.org/package=statcheck</a>.</p>
+</div>
+<div>
+<p>Etz, Alexander, and Joachim Vandekerckhove. 2016. “A Bayesian Perspective on the Reproducibility Project: Psychology.” Edited by DanieleEditor Marinazzo. <em>PLOS ONE</em> 11 (2). Public Library of Science (PLoS): e0149794. doi:<a href="https://doi.org/10.1371/journal.pone.0149794">10.1371/journal.pone.0149794</a>.</p>
+</div>
+<div>
+<p>Fanelli, Daniele. 2009. “How Many Scientists Fabricate and Falsify Research? A Systematic Review and Meta-Analysis of Survey Data.” <em>PloS ONE</em> 4 (5): e5738. doi:<a href="https://doi.org/10.1371/journal.pone.0005738">10.1371/journal.pone.0005738</a>.</p>
+</div>
+<div>
+<p>———. 2011. “Negative Results Are Disappearing from Most Disciplines and Countries.” <em>Scientometrics</em> 90 (3). Springer Nature: 891–904. doi:<a href="https://doi.org/10.1007/s11192-011-0494-7">10.1007/s11192-011-0494-7</a>.</p>
+</div>
+<div>
+<p>Fanelli, Daniele, Rodrigo Costas, Ferric C. Fang, Arturo Casadevall, and Elisabeth M. Bik. 2018. “Testing Hypotheses on Risk Factors for Scientific Misconduct via Matched-Control Analysis of Papers Containing Problematic Image Duplications.” <em>Science and Engineering Ethics</em>, February. Springer Nature. doi:<a href="https://doi.org/10.1007/s11948-018-0023-7">10.1007/s11948-018-0023-7</a>.</p>
+</div>
+<div>
+<p>Fang, Ferric C, R Grant Steen, and Arturo Casadevall. 2012. “Misconduct Accounts for the Majority of Retracted Scientific Publications.” <em>Proceedings of the National Academy of Sciences of the United States of America</em> 109 (42): 17028–33. doi:<a href="https://doi.org/10.1073/pnas.1212247109">10.1073/pnas.1212247109</a>.</p>
+</div>
+<div>
+<p>Fareed, Mohd, Malik Azeem Anwar, and Mohammad Afzal. 2015. “Prevalence and Gene Frequency of Color Vision Impairments Among Children of Six Populations from North Indian Region.” <em>Genes &amp; Diseases</em> 2 (2). Elsevier BV: 211–18. doi:<a href="https://doi.org/10.1016/j.gendis.2015.02.006">10.1016/j.gendis.2015.02.006</a>.</p>
+</div>
+<div>
+<p>Ferguson, Christopher J. 2015. “‘Everybody Knows Psychology Is Not a Real Science’: Public Perceptions of Psychology and How We Can Improve Our Relationship with Policymakers, the Scientific Community, and the General Public.” <em>American Psychologist</em> 70 (6). American Psychological Association (APA): 527–42. doi:<a href="https://doi.org/10.1037/a0039405">10.1037/a0039405</a>.</p>
+</div>
+<div>
+<p>Fewster, R. M. 2009. “A Simple Explanation of Benford’s Law.” <em>The American Statistician</em> 63 (1): 26–32. doi:<a href="https://doi.org/10.1198/tast.2009.0005">10.1198/tast.2009.0005</a>.</p>
+</div>
+<div>
+<p>Fiedler, Klaus, Florian Kutzner, and Joachim I. Krueger. 2012. “The Long Way from Alpha-Error Control to Validity Proper.” <em>Perspectives on Psychological Science</em> 7 (6). SAGE Publications: 661–69. doi:<a href="https://doi.org/10.1177/1745691612462587">10.1177/1745691612462587</a>.</p>
+</div>
+<div>
+<p>Fisher, Ronald Aylmer. 1925. <em>Statistical methods for research workers</em>. Edinburg, United Kingdom: Oliver Boyd.</p>
+</div>
+<div>
+<p>Fleck, Ludwig. 1984. <em>Genesis and Development of a Scientific Fact</em>. Chicago, IL: University of Chicago Press.</p>
+</div>
+<div>
+<p>Fortunato, Santo, Carl T. Bergstrom, Katy Börner, James A. Evans, Dirk Helbing, Staša Milojević, Alexander M. Petersen, et al. 2018. “Science of Science.” <em>Science</em> 359 (6379). American Association for the Advancement of Science (AAAS): eaao0185. doi:<a href="https://doi.org/10.1126/science.aao0185">10.1126/science.aao0185</a>.</p>
+</div>
+<div>
+<p>Fraley, R. Chris, and Simine Vazire. 2014. “The N-Pact Factor: Evaluating the Quality of Empirical Journals with Respect to Sample Size and Statistical Power.” Edited by Christos A.Editor Ouzounis. <em>PLoS ONE</em> 9 (10). Public Library of Science (PLoS): e109019. doi:<a href="https://doi.org/10.1371/journal.pone.0109019">10.1371/journal.pone.0109019</a>.</p>
+</div>
+<div>
+<p>Francis, Gregory. 2012. “Too Good to Be True: Publication Bias in Two Prominent Studies from Experimental Psychology.” <em>Psychonomic Bulletin &amp; Review</em> 19 (2). Springer Nature: 151–56. doi:<a href="https://doi.org/10.3758/s13423-012-0227-9">10.3758/s13423-012-0227-9</a>.</p>
+</div>
+<div>
+<p>Franco, Annie, Neil Malhotra, and Gabor Simonovits. 2014. “Publication Bias in the Social Sciences: Unlocking the File Drawer.” <em>Science</em> 345 (6203): 1502–5. doi:<a href="https://doi.org/10.1126/science.1255484">10.1126/science.1255484</a>.</p>
+</div>
+<div>
+<p>———. 2016. “Underreporting in Psychology Experiments: Evidence from a Study Registry.” <em>Social Psychological and Personality Science</em> 7 (1): 8–12. doi:<a href="https://doi.org/10.1177/1948550615598377">10.1177/1948550615598377</a>.</p>
+</div>
+<div>
+<p>García-Berthou, Emili, and Carles Alcaraz. 2004. “Incongruence Between Test Statistics and P Values in Medical Papers.” <em>BMC Medical Research Methodology</em> 4 (1). Springer Nature. doi:<a href="https://doi.org/10.1186/1471-2288-4-13">10.1186/1471-2288-4-13</a>.</p>
+</div>
+<div>
+<p>Garfield, Eugene. 2006. “The History and Meaning of the Journal Impact Factor.” <em>JAMA</em> 295 (1). American Medical Association (AMA): 90. doi:<a href="https://doi.org/10.1001/jama.295.1.90">10.1001/jama.295.1.90</a>.</p>
+</div>
+<div>
+<p>Gelman, A., and K. O’Rourke. 2013. “Discussion: Difficulties in Making Inferences About Scientific Truth from Distributions of Published P-Values.” <em>Biostatistics</em> 15 (1). Oxford University Press (OUP): 18–23. doi:<a href="https://doi.org/10.1093/biostatistics/kxt034">10.1093/biostatistics/kxt034</a>.</p>
+</div>
+<div>
+<p>Gelman, Andrew, and Eric Loken. 2013. “The Garden of Forking Paths: Why Multiple Comparisons Can Be a Problem, Even When There Is No ‘Fishing Expedition’ or ‘P-Hacking’ and the Research Hypothesis Was Posited Ahead of Time.” <a href="https://wayback.archive.org/web/20180712075516/http://www.stat.columbia.edu/~gelman/research/unpublished/p_hacking.pdf" class="uri">https://wayback.archive.org/web/20180712075516/http://www.stat.columbia.edu/~gelman/research/unpublished/p_hacking.pdf</a>.</p>
+</div>
+<div>
+<p>Gerber, Alan S., Neil Malhotra, Conor M. Dowling, and David Doherty. 2010. “Publication Bias in Two Political Behavior Literatures.” <em>American Politics Research</em> 38 (4). SAGE Publications: 591–613. doi:<a href="https://doi.org/10.1177/1532673x09350979">10.1177/1532673x09350979</a>.</p>
+</div>
+<div>
+<p>Gignac, Gilles E., and Eva T. Szodorai. 2016. “Effect Size Guidelines for Individual Differences Researchers.” <em>Personality and Individual Differences</em> 102 (November). Elsevier BV: 74–78. doi:<a href="https://doi.org/10.1016/j.paid.2016.06.069">10.1016/j.paid.2016.06.069</a>.</p>
+</div>
+<div>
+<p>Gilbert, D. T., G. King, S. Pettigrew, and T. D. Wilson. 2016. “Comment on ‘Estimating the Reproducibility of Psychological Science’.” <em>Science</em> 351 (6277). American Association for the Advancement of Science (AAAS): 1037–7. doi:<a href="https://doi.org/10.1126/science.aad7243">10.1126/science.aad7243</a>.</p>
+</div>
+<div>
+<p>Giner-Sorolla, Roger. 2012. “Science or Art? How Aesthetic Standards Grease the Way Through the Publication Bottleneck but Undermine Science.” <em>Perspectives on Psychological Science</em> 7 (6). SAGE Publications: 562–71. doi:<a href="https://doi.org/10.1177/1745691612457576">10.1177/1745691612457576</a>.</p>
+</div>
+<div>
+<p>Ginsel, Bastiaan, Abhinav Aggarwal, Wei Xuan, and Ian Harris. 2015. “The Distribution of Probability Values in Medical Abstracts: An Observational Study.” <em>BMC Research Notes</em> 8 (1). Springer Nature. doi:<a href="https://doi.org/10.1186/s13104-015-1691-x">10.1186/s13104-015-1691-x</a>.</p>
+</div>
+<div>
+<p>Goodman, S. N. 2013. “Discussion: An Estimate of the Science-Wise False Discovery Rate and Application to the Top Medical Literature.” <em>Biostatistics</em> 15 (1). Oxford University Press (OUP): 23–27. doi:<a href="https://doi.org/10.1093/biostatistics/kxt035">10.1093/biostatistics/kxt035</a>.</p>
+</div>
+<div>
+<p>Goodman, Steven. 2008. “A Dirty Dozen: Twelve P-Value Misconceptions.” <em>Seminars in Hematology</em> 45 (3). Elsevier BV: 135–40. doi:<a href="https://doi.org/10.1053/j.seminhematol.2008.04.003">10.1053/j.seminhematol.2008.04.003</a>.</p>
+</div>
+<div>
+<p>Greenwald, Anthony G. 1975. “Consequences of Prejudice Against the Null Hypothesis.” <em>Psychological Bulletin</em> 82 (1). American Psychological Association (APA): 1–20. doi:<a href="https://doi.org/10.1037/h0076157">10.1037/h0076157</a>.</p>
+</div>
+<div>
+<p>Grossmann, Alexander, and Björn Brembs. 2019. “Assessing the Size of the Affordability Problem in Scholarly Publishing,” June. PeerJ. doi:<a href="https://doi.org/10.7287/peerj.preprints.27809v1">10.7287/peerj.preprints.27809v1</a>.</p>
+</div>
+<div>
+<p>Groth, Paul, Andrew Gibson, and Jan Velterop. 2010. “The Anatomy of a Nanopublication.” <em>Information Services &amp; Use</em> 30 (1-2). IOS Press: 51–56. doi:<a href="https://doi.org/10.3233/isu-2010-0613">10.3233/isu-2010-0613</a>.</p>
+</div>
+<div>
+<p>Haldane, J B S. 1948. “The faking of genetical results.” <em>Eureka</em> 6: 21–28. <a href="http://wayback.archive.org/web/20170206144438/http://www.archim.org.uk/eureka/27/faking.html" class="uri">http://wayback.archive.org/web/20170206144438/http://www.archim.org.uk/eureka/27/faking.html</a>.</p>
+</div>
+<div>
+<p>Hanley, J A, and B J McNeil. 1982. “The Meaning and Use of the Area Under a Receiver Operating Characteristic (ROC) Curve.” <em>Radiology</em> 143 (1). Radiological Society of North America (RSNA): 29–36. doi:<a href="https://doi.org/10.1148/radiology.143.1.7063747">10.1148/radiology.143.1.7063747</a>.</p>
+</div>
+<div>
+<p>Harnad, Stevan. 2000. “The Invisible Hand of Peer Review.” <em>Exploit Interactive</em>. <a href="http://cogprints.org/1646/" class="uri">http://cogprints.org/1646/</a>.</p>
+</div>
+<div>
+<p>Hartgerink, Chris H. J. 2014. “Poster: Low Threshold Open Science.” figshare. doi:<a href="https://doi.org/10.6084/m9.figshare.928315.v2">10.6084/m9.figshare.928315.v2</a>.</p>
+</div>
+<div>
+<p>———. 2015a. “Do Not Trust Science Verify It.” Authorea, Inc. doi:<a href="https://doi.org/10.15200/winn.144232.26366">10.15200/winn.144232.26366</a>.</p>
+</div>
+<div>
+<p>———. 2015b. “Elsevier Stopped Me Doing My Research.” <a href="https://wayback.archive.org/web/20180814123817/http://onsnetwork.org/chartgerink/2015/11/16/elsevier-stopped-me-doing-my-research/" class="uri">https://wayback.archive.org/web/20180814123817/http://onsnetwork.org/chartgerink/2015/11/16/elsevier-stopped-me-doing-my-research/</a>.</p>
+</div>
+<div>
+<p>———. 2016a. “Wiley Also Stopped Me Doing My Research.” <a href="https://wayback.archive.org/web/20180814123807/http://onsnetwork.org/chartgerink/2016/02/23/wiley-also-stopped-my-doing-my-research/" class="uri">https://wayback.archive.org/web/20180814123807/http://onsnetwork.org/chartgerink/2016/02/23/wiley-also-stopped-my-doing-my-research/</a>.</p>
+</div>
+<div>
+<p>———. 2016b. “688,112 Statistical Results: Content Mining Psychology Articles for Statistical Test Results.” <em>Data</em> 1 (3). MDPI AG: 14. doi:<a href="https://doi.org/10.3390/data1030014">10.3390/data1030014</a>.</p>
+</div>
+<div>
+<p>———. 2017a. “Developing the Potential of Data Extraction in Scholarly Articles for Research Verification.” <em>D-Lib Magazine</em>. <a href="http://www.dlib.org/dlib/may17/05inbrief.html#HARTGERINK" class="uri">http://www.dlib.org/dlib/may17/05inbrief.html#HARTGERINK</a>.</p>
+</div>
+<div>
+<p>———. 2017b. “Reanalyzing Head et Al. (2015): Investigating the Robustness of Widespread P-Hacking.” <em>PeerJ</em> 5 (March). PeerJ: e3068. doi:<a href="https://doi.org/10.7717/peerj.3068">10.7717/peerj.3068</a>.</p>
+</div>
+<div>
+<p>———. 2018. “Publishers Need to Stop Using Insecure Http.” <a href="https://wayback.archive.org/web/20180807191523/https://opensource.com/article/18/5/scholarly-publishers-https" class="uri">https://wayback.archive.org/web/20180807191523/https://opensource.com/article/18/5/scholarly-publishers-https</a>.</p>
+</div>
+<div>
+<p>Hartgerink, Chris H. J., and Marino Van Zelst. 2018. “As-You-Go Instead of After-the-Fact: A Network Approach to Scholarly Communication and Evaluation.” <em>Publications</em> 6 (2). MDPI AG: 21. doi:<a href="https://doi.org/10.3390/publications6020021">10.3390/publications6020021</a>.</p>
+</div>
+<div>
+<p>Hartgerink, Chris H. J., Robbie C. M. Van Aert, Michèle B. Nuijten, Jelte M. Wicherts, and Marcel A.L.M. Van Assen. 2016. “Distributions Ofp-Values Smaller Than .05 in Psychology: What Is Going on?” <em>PeerJ</em> 4 (April). PeerJ: e1935. doi:<a href="https://doi.org/10.7717/peerj.1935">10.7717/peerj.1935</a>.</p>
+</div>
+<div>
+<p>Hartgerink, Chris H. J., Jan V Voelkel, Jelte M Wicherts, and Marcel ALM van Assen. 2017. “Transcripts of 28 interviews with researchers who fabricated data for an experiment.” doi:<a href="https://doi.org/10.5281/zenodo.832490">10.5281/zenodo.832490</a>.</p>
+</div>
+<div>
+<p>Hartgerink, Chris H. J., J. M. Wicherts, and M. A. L. M. Van Assen. 2017. “Too Good to Be False: Nonsignificant Results Revisited.” <em>Collabra: Psychology</em> 3 (1). University of California Press: 9. doi:<a href="https://doi.org/10.1525/collabra.71">10.1525/collabra.71</a>.</p>
+</div>
+<div>
+<p>Hartgerink, Chris H. J., Jelte Wicherts, and Marcel van Assen. 2016. “The Value of Statistical Tools to Detect Data Fabrication.” <em>Research Ideas and Outcomes</em> 2 (April). Pensoft Publishers: e8860. doi:<a href="https://doi.org/10.3897/rio.2.e8860">10.3897/rio.2.e8860</a>.</p>
+</div>
+<div>
+<p>Head, Megan, Luke Holman, Rob Lanfear, Andrew Kahn, and Michael Jennions. 2015a. “Data from: The extent and consequences of p-hacking in science.” Dryad Digital Repository. doi:<a href="https://doi.org/10.5061/dryad.79d43">10.5061/dryad.79d43</a>.</p>
+</div>
+<div>
+<p>———. 2015b. “The extent and consequences of p-hacking in science.” <em>PLOS Biology</em> 13: e1002106. doi:<a href="https://doi.org/10.1371/journal.pbio.1002106">10.1371/journal.pbio.1002106</a>.</p>
+</div>
+<div>
+<p>Heathers, James A, Jordan Anaya, Tim van der Zee, and Nicholas JL Brown. 2018. “Recovering Data from Summary Statistics: Sample Parameter Reconstruction via Iterative TEchniques (SPRITE),” May. PeerJ. doi:<a href="https://doi.org/10.7287/peerj.preprints.26968v1">10.7287/peerj.preprints.26968v1</a>.</p>
+</div>
+<div>
+<p>Hedges, L V, and I Olkin. 1985. <em>Statistical methods for meta-analysis</em>. London, United Kingdom: Academic Press.</p>
+</div>
+<div>
+<p>Hedges, Larry V. 1981. “Distribution Theory for Glass’s Estimator of Effect Size and Related Estimators.” <em>Journal of Educational Statistics</em> 6 (2). American Educational Research Association (AERA): 107–28. doi:<a href="https://doi.org/10.3102/10769986006002107">10.3102/10769986006002107</a>.</p>
+</div>
+<div>
+<p>Hettinger, Thomas P. 2010. “Misconduct: Don’t Assume Science Is Self-Correcting.” <em>Nature</em> 466 (7310): 1040. doi:<a href="https://doi.org/10.1038/4661040b">10.1038/4661040b</a>.</p>
+</div>
+<div>
+<p>Hicks, Diana, Paul Wouters, Ludo Waltman, Sarah de Rijcke, and Ismael Rafols. 2015. “Bibliometrics: The Leiden Manifesto for Research Metrics.” <em>Nature</em> 520 (7548). Springer Nature: 429–31. doi:<a href="https://doi.org/10.1038/520429a">10.1038/520429a</a>.</p>
+</div>
+<div>
+<p>Hill, Theodore P. 1995. “A Statistical Derivation of the Significant-Digit Law.” <em>Statistical Science</em> 10 (4). Institute of Mathematical Statistics: 354–63. <a href="http://www.jstor.org/stable/2246134" class="uri">http://www.jstor.org/stable/2246134</a>.</p>
+</div>
+<div>
+<p>Hill, Theodore P., and Klaus Schürger. 2005. “Regularity of Digits and Significant Digits of Random Variables.” <em>Stochastic Processes and Their Applications</em> 115 (10). Elsevier BV: 1723–43. doi:<a href="https://doi.org/10.1016/j.spa.2005.05.003">10.1016/j.spa.2005.05.003</a>.</p>
+</div>
+<div>
+<p>Hobbes, Thomas. 1651. <em>Leviathan</em>. Oxford University Presss.</p>
+</div>
+<div>
+<p>Hoekstra, Rink, Sue Finch, Henk A. L. Kiers, and Addie Johnson. 2006. “Probability as Certainty: Dichotomous Thinking and the Misuse Ofp Values.” <em>Psychonomic Bulletin &amp; Review</em> 13 (6). Springer Nature: 1033–7. doi:<a href="https://doi.org/10.3758/bf03213921">10.3758/bf03213921</a>.</p>
+</div>
+<div>
+<p>Hogg, Robert V, and Elliot A Tanis. 2001. <em>Probability and Statistical Inference</em>. New Jersey, NJ: Prentice-Hall.</p>
+</div>
+<div>
+<p>Holcombe, Alex O. 2019. “Contributorship, Not Authorship,” April. Center for Open Science. doi:<a href="https://doi.org/10.31234/osf.io/dt6e8">10.31234/osf.io/dt6e8</a>.</p>
+</div>
+<div>
+<p>Holman, Luke. 2015. “Reply to Bishop and Thompson,” August. doi:<a href="https://doi.org/10.6084/m9.figshare.1500901.v1">10.6084/m9.figshare.1500901.v1</a>.</p>
+</div>
+<div>
+<p>Hüllemann, S., G. Schüpfer, and J. Mauch. 2017. “Application of Benford’s Law: A Valuable Tool for Detecting Scientific Papers with Fabricated Data?” <em>Der Anaesthesist</em> 66 (10). Springer Nature: 795–802. doi:<a href="https://doi.org/10.1007/s00101-017-0333-1">10.1007/s00101-017-0333-1</a>.</p>
+</div>
+<div>
+<p>Hyde, Janet Shibley. 2005. “The Gender Similarities Hypothesis.” <em>American Psychologist</em> 60 (6). American Psychological Association (APA): 581–92. doi:<a href="https://doi.org/10.1037/0003-066x.60.6.581">10.1037/0003-066x.60.6.581</a>.</p>
+</div>
+<div>
+<p>Ioannidis, J. P. A. 2013. “Discussion: Why ‘an Estimate of the Science-Wise False Discovery Rate and Application to the Top Medical Literature’ Is False.” <em>Biostatistics</em> 15 (1). Oxford University Press (OUP): 28–36. doi:<a href="https://doi.org/10.1093/biostatistics/kxt036">10.1093/biostatistics/kxt036</a>.</p>
+</div>
+<div>
+<p>Ioannidis, John P. A. 2005. “Why Most Published Research Findings Are False.” <em>PLoS Medicine</em> 2 (8). Public Library of Science (PLoS): e124. doi:<a href="https://doi.org/10.1371/journal.pmed.0020124">10.1371/journal.pmed.0020124</a>.</p>
+</div>
+<div>
+<p>Ioannidis, John PA, and Thomas A Trikalinos. 2007. “An Exploratory Test for an Excess of Significant Findings.” <em>Clinical Trials: Journal of the Society for Clinical Trials</em> 4 (3). SAGE Publications: 245–53. doi:<a href="https://doi.org/10.1177/1740774507079441">10.1177/1740774507079441</a>.</p>
+</div>
+<div>
+<p>IPCC. 2018. “Global Warming of 1.5c. an Ipcc Special Report on the Impacts of Global Warming of 1.5c Above Pre-Industrial Levels and Related Global Greenhouse Gas Emission Pathways, in the Context of Strengthening the Global Response to the Threat of Climate Change, Sustainable Development, and Efforts to Eradicate Poverty.” <a href="https://www.ipcc.ch/report/sr15/" class="uri">https://www.ipcc.ch/report/sr15/</a>.</p>
+</div>
+<div>
+<p>Ivarsson, Andreas, Mark B. Andersen, Urban Johnson, and Magnus Lindwall. 2013. “To Adjust or Not Adjust: Nonparametric Effect Sizes, Confidence Intervals, and Real-World Meaning.” <em>Psychology of Sport and Exercise</em> 14 (1). Elsevier BV: 97–102. doi:<a href="https://doi.org/10.1016/j.psychsport.2012.07.007">10.1016/j.psychsport.2012.07.007</a>.</p>
+</div>
+<div>
+<p>Jacowitz, Karen E, and Daniel Kahneman. 1995. “Measures of Anchoring in Estimation Tasks.” <em>Personality &amp; Social Psychology Bulletin</em> 21. SAGE PERIODICALS PRESS: 1161–6. doi:<a href="https://doi.org/10.1037/e722982011-058">10.1037/e722982011-058</a>.</p>
+</div>
+<div>
+<p>Jager, L. R., and J. T. Leek. 2013. “An Estimate of the Science-Wise False Discovery Rate and Application to the Top Medical Literature.” <em>Biostatistics</em> 15 (1). Oxford University Press (OUP): 1–12. doi:<a href="https://doi.org/10.1093/biostatistics/kxt007">10.1093/biostatistics/kxt007</a>.</p>
+</div>
+<div>
+<p>John, Leslie K, George Loewenstein, and Drazen Prelec. 2012. “Measuring the prevalence of questionable research practices with incentives for truth telling.” <em>Psychological Science</em> 23 (5): 524–32. doi:<a href="https://doi.org/10.1177/0956797611430953">10.1177/0956797611430953</a>.</p>
+</div>
+<div>
+<p>Johnson, Valen E., Richard D. Payne, Tianying Wang, Alex Asher, and Soutrik Mandal. 2016. “On the Reproducibility of Psychological Science.” <em>Journal of the American Statistical Association</em> 112 (517). Informa UK Limited: 1–10. doi:<a href="https://doi.org/10.1080/01621459.2016.1240079">10.1080/01621459.2016.1240079</a>.</p>
+</div>
+<div>
+<p>Johnston, Paul. 2016. “Jatdown: A Markdown Language for Writing Jats.” <em>Journal Article Tag Suite Conference (JATS-Con) Proceedings 2016 [Internet].</em> <a href="https://www.ncbi.nlm.nih.gov/books/NBK350677/" class="uri">https://www.ncbi.nlm.nih.gov/books/NBK350677/</a>.</p>
+</div>
+<div>
+<p>“Joint Editors-in-Chief request for determination regarding papers published by Dr. Yoshitaka Fujii.” 2013. <em>International Journal of Obstetric Anesthesia</em> 22 (1). Elsevier BV: e1–e21. doi:<a href="https://doi.org/10.1016/j.ijoa.2012.10.001">10.1016/j.ijoa.2012.10.001</a>.</p>
+</div>
+<div>
+<p>Jones, Shawn M., Herbert Van de Sompel, Harihar Shankar, Martin Klein, Richard Tobin, and Claire Grover. 2016. “Scholarly Context Adrift: Three Out of Four URI References Lead to Changed Content.” Edited by Neil R. Smalheiser. <em>PLOS ONE</em> 11 (12). Public Library of Science (PLoS): e0167475. doi:<a href="https://doi.org/10.1371/journal.pone.0167475">10.1371/journal.pone.0167475</a>.</p>
+</div>
+<div>
+<p>Kaiser, Jocelyn. 2017. “Are Preprints the Future of Biology? A Survival Guide for Scientists.” <em>Science</em>, September. American Association for the Advancement of Science (AAAS). doi:<a href="https://doi.org/10.1126/science.aaq0747">10.1126/science.aaq0747</a>.</p>
+</div>
+<div>
+<p>Kerr, Norbert L. 1998. “HARKing: Hypothesizing After the Results Are Known.” <em>Personality and Social Psychology Review</em> 2 (3). SAGE Publications: 196–217. doi:<a href="https://doi.org/10.1207/s15327957pspr0203_4">10.1207/s15327957pspr0203_4</a>.</p>
+</div>
+<div>
+<p>Kevles, Daniel J. 2000. <em>The Baltimore Case: A Trial of Politics, Science, and Character</em>. WW Norton &amp; Company.</p>
+</div>
+<div>
+<p>Kharasch, E. D., and T. H. Houle. 2017a. “Errors and Integrity in Seeking and Reporting Apparent Research Misconduct.” <em>Anesthesiology</em> 127 (5). Ovid Technologies (Wolters Kluwer Health): 733–37. doi:<a href="https://doi.org/10.1097/aln.0000000000001875">10.1097/aln.0000000000001875</a>.</p>
+</div>
+<div>
+<p>Kharasch, E. D., and T. T. Houle. 2017b. “Seeking and Reporting Apparent Research Misconduct: Errors and Integrity.” <em>Anaesthesia</em> 73 (1). Wiley: 125–26. doi:<a href="https://doi.org/10.1111/anae.14147">10.1111/anae.14147</a>.</p>
+</div>
+<div>
+<p>Khoo, Shaun Yon-Seng. 2019. “Article Processing Charge Hyperinflation and Price Insensitivity: An Open Access Sequel to the Serials Crisis.” <em>LIBER Quarterly</em> 29 (1). Uopen Journals: 1. doi:<a href="https://doi.org/10.18352/lq.10280">10.18352/lq.10280</a>.</p>
+</div>
+<div>
+<p>Kiefer, Randy S. 2015. “Digital Preservation of Scholarly Content, Focusing on the Example of the CLOCKSS Archive.” <em>Insights the UKSG Journal</em> 28 (1). Ubiquity Press, Ltd.: 91–96. doi:<a href="https://doi.org/10.1629/uksg.215">10.1629/uksg.215</a>.</p>
+</div>
+<div>
+<p>Kircz, Joost G. 1998. “Modularity: The Next Form of Scientific Information Presentation?” <em>Journal of Documentation</em> 54 (2). Emerald: 210–35. doi:<a href="https://doi.org/10.1108/eum0000000007185">10.1108/eum0000000007185</a>.</p>
+</div>
+<div>
+<p>Klaassen, Chris A. J. 2014. “Evidential Value in Anova-Regression Results in Scientific Integrity Studies.”</p>
+</div>
+<div>
+<p>Klein, Martin, Herbert Van de Sompel, Robert Sanderson, Harihar Shankar, Lyudmila Balakireva, Ke Zhou, and Richard Tobin. 2014. “Scholarly Context Not Found: One in Five Articles Suffers from Reference Rot.” Edited by JuditEditor Bar-Ilan. <em>PLoS ONE</em> 9 (12). Public Library of Science (PLoS): e115253. doi:<a href="https://doi.org/10.1371/journal.pone.0115253">10.1371/journal.pone.0115253</a>.</p>
+</div>
+<div>
+<p>Klein, Richard A., Kate A Ratliff, Michelangelo Vianello, Reginald B Adams Jr., Štěpán Bahník, Michael J Bernstein, Konrad Bocian, et al. 2014. “Investigating Variation in Replicability.” <em>Social Psychology</em> 45 (3): 142–52. doi:<a href="https://doi.org/10.1027/1864-9335/a000178">10.1027/1864-9335/a000178</a>.</p>
+</div>
+<div>
+<p>Kling, Rob, and Ewa Callahan. 2005. “Electronic Journals, the Internet, and Scholarly Communication.” <em>Annual Review of Information Science and Technology</em> 37 (1). Wiley: 127–77. doi:<a href="https://doi.org/10.1002/aris.1440370105">10.1002/aris.1440370105</a>.</p>
+</div>
+<div>
+<p>Koppelman-White, Elysa. 2006. “Research Misconduct and the Scientific Process: Continuing Quality Improvement.” <em>Accountability in Research</em> 13 (3): 225–46. doi:<a href="https://doi.org/10.1080/08989620600848611">10.1080/08989620600848611</a>.</p>
+</div>
+<div>
+<p>Koppers, Lars, Holger Wormer, and Katja Ickstadt. 2016. “Towards a Systematic Screening Tool for Quality Assurance and Semiautomatic Fraud Detection for Images in the Life Sciences.” <em>Science and Engineering Ethics</em>, November. Springer Nature. doi:<a href="https://doi.org/10.1007/s11948-016-9841-7">10.1007/s11948-016-9841-7</a>.</p>
+</div>
+<div>
+<p>Kornfeld, Donald S. 2012. “Research Misconduct: The Search for a Remedy.” <em>Academic Medicine</em> 87 (7): 877–82. doi:<a href="https://doi.org/10.1097/ACM.0b013e318257ee6a">10.1097/ACM.0b013e318257ee6a</a>.</p>
+</div>
+<div>
+<p>Kraker, Peter, Christopher Kittel, and Asura Enkhbayar. 2016. “Open Knowledge Maps: Creating a Visual Interface to the World’s Scientific Knowledge Based on Natural Language Processing.” <em>027.7 Zeitschrift Für Bibliothekskultur / Journal for Library Culture</em> 4 (2): 98–103. doi:<a href="https://doi.org/10.12685/027.7-4-2-157">10.12685/027.7-4-2-157</a>.</p>
+</div>
+<div>
+<p>Kranke, P. 2012. “Putting the Record Straight: Granisetron’s Efficacy as an Antiemetic ‘Post-Fujii’.” <em>Anaesthesia</em> 67 (10). Wiley-Blackwell: 1063–7. doi:<a href="https://doi.org/10.1111/j.1365-2044.2012.07318.x">10.1111/j.1365-2044.2012.07318.x</a>.</p>
+</div>
+<div>
+<p>Kranke, Peter, Christian C. Apfel, and Norbert Roewer. 2000. “Reported Data on Granisetron and Postoperative Nausea and Vomiting by Fujii et Al. Are Incredibly Nice!” <em>Anesthesia &amp; Analgesia</em> 90 (4). Ovid Technologies (Wolters Kluwer Health): 1004. doi:<a href="https://doi.org/10.1213/00000539-200004000-00053">10.1213/00000539-200004000-00053</a>.</p>
+</div>
+<div>
+<p>Krawczyk, Michał. 2015. “The Search for Significance: A Few Peculiarities in the Distribution of P Values in Experimental Psychology Literature.” Edited by DanieleEditor Fanelli. <em>PLOS ONE</em> 10 (6). Public Library of Science (PLoS): e0127872. doi:<a href="https://doi.org/10.1371/journal.pone.0127872">10.1371/journal.pone.0127872</a>.</p>
+</div>
+<div>
+<p>Krawczyk, Michal, and Ernesto Reuben. 2012. “(Un)available Upon Request: Field Experiment on Researchers’ Willingness to Share Supplementary Materials.” <em>Accountability in Research</em> 19 (3): 175–86. doi:<a href="https://doi.org/10.1080/08989621.2012.678688">10.1080/08989621.2012.678688</a>.</p>
+</div>
+<div>
+<p>Kühberger, Anton, Astrid Fritz, and Thomas Scherndl. 2014. “Publication Bias in Psychology: A Diagnosis Based on the Correlation Between Effect Size and Sample Size.” Edited by DanieleEditor Fanelli. <em>PLoS ONE</em> 9 (9). Public Library of Science (PLoS): e105825. doi:<a href="https://doi.org/10.1371/journal.pone.0105825">10.1371/journal.pone.0105825</a>.</p>
+</div>
+<div>
+<p>Kuhn, Tobias, Christine Chichester, Michael Krauthammer, Núria Queralt-Rosinach, Ruben Verborgh, George Giannakopoulos, Axel-Cyrille Ngonga Ngomo, Raffaele Viglianti, and Michel Dumontier. 2016. “Decentralized Provenance-Aware Publishing with Nanopublications.” <em>PeerJ Computer Science</em> 2 (August). PeerJ: e78. doi:<a href="https://doi.org/10.7717/peerj-cs.78">10.7717/peerj-cs.78</a>.</p>
+</div>
+<div>
+<p>LaCour, M. J., and D. P. Green. 2014. “When Contact Changes Minds: An Experiment on Transmission of Support for Gay Equality.” <em>Science</em> 346 (6215). American Association for the Advancement of Science (AAAS): 1366–9. doi:<a href="https://doi.org/10.1126/science.1256151">10.1126/science.1256151</a>.</p>
+</div>
+<div>
+<p>Lakens, Daniël. 2015a. “Comment: What P-Hacking Really Looks Like: A Comment on Masicampo and Lalande (2012).” <em>Quarterly Journal of Experimental Psychology</em> 68 (4). SAGE Publications: 829–32. doi:<a href="https://doi.org/10.1080/17470218.2014.982664">10.1080/17470218.2014.982664</a>.</p>
+</div>
+<div>
+<p>———. 2015b. “On the Challenges of Drawing Conclusions Fromp-Values Just Below 0.05.” <em>PeerJ</em> 3 (July). PeerJ: e1142. doi:<a href="https://doi.org/10.7717/peerj.1142">10.7717/peerj.1142</a>.</p>
+</div>
+<div>
+<p>Lane, David M., and William P. Dunlap. 1978. “Estimating Effect Size: Bias Resulting from the Significance Criterion in Editorial Decisions.” <em>British Journal of Mathematical and Statistical Psychology</em> 31 (2). Wiley: 107–12. doi:<a href="https://doi.org/10.1111/j.2044-8317.1978.tb00578.x">10.1111/j.2044-8317.1978.tb00578.x</a>.</p>
+</div>
+<div>
+<p>Larivière, Vincent, Stefanie Haustein, and Philippe Mongeon. 2015. “The Oligopoly of Academic Publishers in the Digital Era.” <em>PLOS ONE</em> 10 (6). Public Library of Science (PLoS): e0127502. doi:<a href="https://doi.org/10.1371/journal.pone.0127502">10.1371/journal.pone.0127502</a>.</p>
+</div>
+<div>
+<p>Latour, Bruno, and Steve Woolgard. 1986. <em>Laboratory Life: The Construction of Scientific Facts</em>. Princeton, NJ: Princeton University Press. <a href="http://aacoa.net/bookinfo/laboratory-life-the-construction-of-scientific-facts.pdf/" class="uri">http://aacoa.net/bookinfo/laboratory-life-the-construction-of-scientific-facts.pdf/</a>.</p>
+</div>
+<div>
+<p>Leggett, Nathan C., Nicole A. Thomas, Tobias Loetscher, and Michael E. R. Nicholls. 2013. “The Life of P: ‘Just Significant’ Results Are on the Rise.” <em>Quarterly Journal of Experimental Psychology</em> 66 (12). SAGE Publications: 2303–9. doi:<a href="https://doi.org/10.1080/17470218.2013.863371">10.1080/17470218.2013.863371</a>.</p>
+</div>
+<div>
+<p>Levelt. 2012. “Flawed science: The fraudulent research practices of social psychologist Diederik Stapel.” <a href="https://www.commissielevelt.nl/" class="uri">https://www.commissielevelt.nl/</a>.</p>
+</div>
+<div>
+<p>Levelt Committee, Drenth Committee, and Noort, Committee. 2012. “Flawed Science: The Fraudulent Research Practices of Social Psychologist Diederik Stapel.” <a href="https://www.commissielevelt.nl/" class="uri">https://www.commissielevelt.nl/</a>.</p>
+</div>
+<div>
+<p>Loadsman, J. A., and T. J. McCulloch. 2017. “Widening the Search for Suspect Data - Is the Flood of Retractions About to Become a Tsunami?” <em>Anaesthesia</em> 72 (8). Wiley: 931–35. doi:<a href="https://doi.org/10.1111/anae.13962">10.1111/anae.13962</a>.</p>
+</div>
+<div>
+<p>Lu, Susan Feng, Ginger Zhe Jin, Brian Uzzi, and Benjamin Jones. 2013. “The Retraction Penalty: Evidence from the Web of Science.” <em>Scientific Reports</em> 3 (6~nov): 3146. doi:<a href="https://doi.org/10.1038/srep03146">10.1038/srep03146</a>.</p>
+</div>
+<div>
+<p>Lubalin, James S, and Jennifer L Matheson. 1999. “The Fallout: What Happens to Whistleblowers and Those Accused but Exonerated of Scientific Misconduct?” <em>Science and Engineering Ethics</em> 5 (2). Kluwer Academic Publishers: 229–50. doi:<a href="https://doi.org/10.1007/s11948-999-0014-9">10.1007/s11948-999-0014-9</a>.</p>
+</div>
+<div>
+<p>Lubalin, James S, Mary-Anne E Ardini, and Jennifer L Matheson. 1995. “Consequences of Whistleblowing for the Whistleblower in Misconduct in Science Cases.” Research Triangle Institute. <a href="http://web.archive.org/web/20150819064509/https://ori.hhs.gov/sites/default/files/final.pdf" class="uri">http://web.archive.org/web/20150819064509/https://ori.hhs.gov/sites/default/files/final.pdf</a>.</p>
+</div>
+<div>
+<p>Mahoney, Michael J. 1977. “Publication Prejudices: An Experimental Study of Confirmatory Bias in the Peer Review System.” <em>Cognitive Therapy and Research</em> 1 (2). Springer Nature: 161–75. doi:<a href="https://doi.org/10.1007/bf01173636">10.1007/bf01173636</a>.</p>
+</div>
+<div>
+<p>Makel, Matthew C, Jonathan A Plucker, and Boyd Hegarty. 2012. “Replications in Psychology Research: How Often Do They Really Occur?” <em>Perspectives on Psychological Science</em> 7 (6): 537–42. doi:<a href="https://doi.org/10.1177/1745691612460688">10.1177/1745691612460688</a>.</p>
+</div>
+<div>
+<p>Marcus, Adam, and Ivan Oransky. 2014. “What Studies of Retractions Tell Us.” <em>Journal of Microbiology &amp; Biology Education</em> 15 (2): 151–54. doi:<a href="https://doi.org/10.1128/jmbe.v15i2.855">10.1128/jmbe.v15i2.855</a>.</p>
+</div>
+<div>
+<p>Margraf, Jürgen. 2015. “Zur Lage Der Psychologie.” <em>Psychologische Rundschau; Ueberblick Uber Die Fortschritte Der Psychologie in Deutschland, Oesterreich, Und Der Schweiz</em> 66 (1): 1–30. doi:<a href="https://doi.org/10.1026/0033-3042/a000247">10.1026/0033-3042/a000247</a>.</p>
+</div>
+<div>
+<p>Marszalek, Jacob M., Carolyn Barber, Julie Kohlhart, and B. Holmes Cooper. 2011. “Sample Size in Psychological Research over the Past 30 Years.” <em>Perceptual and Motor Skills</em> 112 (2). SAGE Publications: 331–48. doi:<a href="https://doi.org/10.2466/03.11.pms.112.2.331-348">10.2466/03.11.pms.112.2.331-348</a>.</p>
+</div>
+<div>
+<p>Mascha, Edward J., Thomas R. Vetter, and Jean-Francois Pittet. 2017. “An Appraisal of the Carlisle-Stouffer-Fisher Method for Assessing Study Data Integrity and Fraud.” <em>Anesthesia &amp; Analgesia</em> 125 (4). Ovid Technologies (Wolters Kluwer Health): 1381–5. doi:<a href="https://doi.org/10.1213/ane.0000000000002415">10.1213/ane.0000000000002415</a>.</p>
+</div>
+<div>
+<p>Masicampo, E.J., and Daniel R. Lalande. 2012. “A Peculiar Prevalence of P Values Just Below .05.” <em>Quarterly Journal of Experimental Psychology</em> 65 (11). SAGE Publications: 2271–9. doi:<a href="https://doi.org/10.1080/17470218.2012.711335">10.1080/17470218.2012.711335</a>.</p>
+</div>
+<div>
+<p>Massey, Frank J. 1951. “The Kolmogorov-Smirnov Test for Goodness of Fit.” <em>Journal of the American Statistical Association</em> 46 (253). JSTOR: 68. doi:<a href="https://doi.org/10.2307/2280095">10.2307/2280095</a>.</p>
+</div>
+<div>
+<p>Maxwell, Scott E., Michael Y. Lau, and George S. Howard. 2015. “Is Psychology Suffering from a Replication Crisis? What Does ‘Failure to Replicate’ Really Mean?” <em>American Psychologist</em> 70 (6). American Psychological Association (APA): 487–98. doi:<a href="https://doi.org/10.1037/a0039400">10.1037/a0039400</a>.</p>
+</div>
+<div>
+<p>Mazar, Nina, On Amir, and Dan Ariely. 2008. “The Dishonesty of Honest People: A Theory of Self-Concept Maintenance.” <em>Journal of Marketing Research</em> 45 (6). American Marketing Association (AMA): 633–44. doi:<a href="https://doi.org/10.1509/jmkr.45.6.633">10.1509/jmkr.45.6.633</a>.</p>
+</div>
+<div>
+<p>McKenzie, Lindsay. 2017. “Swipe Right for Science: Papr App Is ‘Tinder for Preprints’.” <em>Nature</em>, June. Springer Nature. doi:<a href="https://doi.org/10.1038/nature.2017.22163">10.1038/nature.2017.22163</a>.</p>
+</div>
+<div>
+<p>McNutt, M. 2015. “Editorial Expression of Concern.” <em>Science</em> 348 (6239). American Association for the Advancement of Science (AAAS): 1100–1100. doi:<a href="https://doi.org/10.1126/science.aac6184">10.1126/science.aac6184</a>.</p>
+</div>
+<div>
+<p>Meehl, Paul E. 2004. “Theoretical Risks and Tabular Asterisks: Sir Karl, Sir Ronald, and the Slow Progress of Soft Psychology.” <em>Applied and Preventive Psychology</em> 11 (1). Elsevier BV: 1. doi:<a href="https://doi.org/10.1016/j.appsy.2004.02.001">10.1016/j.appsy.2004.02.001</a>.</p>
+</div>
+<div>
+<p>Merton, Robert K. 1942. “A Note on Science and Democracy.” <em>J. Legal &amp; Pol. Soc.</em> 1. HeinOnline: 115.</p>
+</div>
+<div>
+<p>Miller, D. R. 2015. “Probability Screening in Manuscripts Submitted to Biomedical Journals - an Effective Tool or a Statistical Quagmire?” <em>Anaesthesia</em> 70 (7). Wiley: 765–68. doi:<a href="https://doi.org/10.1111/anae.13165">10.1111/anae.13165</a>.</p>
+</div>
+<div>
+<p>Mills, James L. 1993. “Data Torturing.” <em>New England Journal of Medicine</em> 329 (16). New England Journal of Medicine (NEJM/MMS): 1196–9. doi:<a href="https://doi.org/10.1056/nejm199310143291613">10.1056/nejm199310143291613</a>.</p>
+</div>
+<div>
+<p>Mitroff, Ian I. 1974. “Norms and Counter-Norms in a Select Group of the Apollo Moon Scientists: A Case Study of the Ambivalence of Scientists.” <em>American Sociological Review</em> 39 (4). American Sociological Association: 579–95. doi:<a href="https://doi.org/10.2307/2094423">10.2307/2094423</a>.</p>
+</div>
+<div>
+<p>Moppett, I. K. 2017. “Errors in Published Papers Are Multifactorial.” <em>Anaesthesia</em> 72 (11). Wiley: 1415–6. doi:<a href="https://doi.org/10.1111/anae.14048">10.1111/anae.14048</a>.</p>
+</div>
+<div>
+<p>Morel, Carlos Medicis, Suzanne Jacob Serruya, Gerson Oliveira Penna, and Reinaldo Guimarães. 2009. “Co-Authorship Network Analysis: A Powerful Tool for Strategic Planning of Research, Development and Capacity Building Programs on Neglected Diseases.” Edited by MarcelEditor Tanner. <em>PLoS Neglected Tropical Diseases</em> 3 (8). Public Library of Science (PLoS): e501. doi:<a href="https://doi.org/10.1371/journal.pntd.0000501">10.1371/journal.pntd.0000501</a>.</p>
+</div>
+<div>
+<p>Morey, Richard D., and Jeffrey N. Rouder. 2015. <em>BayesFactor: Computation of Bayes Factors for Common Designs</em>. <a href="https://CRAN.R-project.org/package=BayesFactor" class="uri">https://CRAN.R-project.org/package=BayesFactor</a>.</p>
+</div>
+<div>
+<p>Mosimann, James E, Claire V Wiseman, and Ruth E Edelman. 1995. “Data Fabrication: Can People Generate Random Digits?” <em>Accountability in Research</em> 4 (1): 31–55. doi:<a href="https://doi.org/10.1080/08989629508573866">10.1080/08989629508573866</a>.</p>
+</div>
+<div>
+<p>Mosimann, James E., and Makarand V. Ratnaparkhi. 1996. “Uniform Occurrence of Digits for Folded and Mixture Distributions on Finite Intervals.” <em>Communications in Statistics - Simulation and Computation</em> 25 (2). Informa UK Limited: 481–506. doi:<a href="https://doi.org/10.1080/03610919608813325">10.1080/03610919608813325</a>.</p>
+</div>
+<div>
+<p>Mosimann, James, John Dahlberg, Nancy Davidian, and John Krueger. 2002. “Terminal Digits and the Examination of Questioned Data.” <em>Accountability in Research</em> 9 (2): 75–92. doi:<a href="https://doi.org/10.1080/08989620212969">10.1080/08989620212969</a>.</p>
+</div>
+<div>
+<p>Mosteller, Frederick, and R. A. Fisher. 1948. “Questions and Answers.” <em>The American Statistician</em> 2 (5). [American Statistical Association, Taylor &amp; Francis, Ltd.]: 30–31. <a href="http://www.jstor.org/stable/2681650" class="uri">http://www.jstor.org/stable/2681650</a>.</p>
+</div>
+<div>
+<p>Munafò, Marcus R., Brian A. Nosek, Dorothy V. M. Bishop, Katherine S. Button, Christopher D. Chambers, Nathalie Percie du Sert, Uri Simonsohn, Eric-Jan Wagenmakers, Jennifer J. Ware, and John P. A. Ioannidis. 2017. “A Manifesto for Reproducible Science.” <em>Nature Human Behaviour</em> 1 (1). Springer Nature: 0021. doi:<a href="https://doi.org/10.1038/s41562-016-0021">10.1038/s41562-016-0021</a>.</p>
+</div>
+<div>
+<p>National Academy of Sciences, National Academy of Engineering, and Institute of Medicine. 1992. <em>Responsible Science, Volume I: Ensuring the Integrity of the Research Process</em>. Washington, DC: The National Academies Press. doi:<a href="https://doi.org/10.17226/1864">10.17226/1864</a>.</p>
+</div>
+<div>
+<p>Nature editors. 2017. “Image Doctoring Must Be Halted.” <em>Nature</em> 546 (7660). Springer Nature: 575–75. doi:<a href="https://doi.org/10.1038/546575a">10.1038/546575a</a>.</p>
+</div>
+<div>
+<p>Newcomb, Simon. 1881. “Note on the Frequency of Use of the Different Digits in Natural Numbers.” <em>American Journal of Mathematics</em> 4 (1/4). JSTOR: 39. doi:<a href="https://doi.org/10.2307/2369148">10.2307/2369148</a>.</p>
+</div>
+<div>
+<p>Nickerson, Raymond S. 1998. “Confirmation Bias: A Ubiquitous Phenomenon in Many Guises.” <em>Review of General Psychology</em> 2 (2). American Psychological Association (APA): 175–220. doi:<a href="https://doi.org/10.1037/1089-2680.2.2.175">10.1037/1089-2680.2.2.175</a>.</p>
+</div>
+<div>
+<p>———. 2000. “Null Hypothesis Significance Testing: A Review of an Old and Continuing Controversy.” <em>Psychological Methods</em> 5 (2). American Psychological Association (APA): 241–301. doi:<a href="https://doi.org/10.1037/1082-989x.5.2.241">10.1037/1082-989x.5.2.241</a>.</p>
+</div>
+<div>
+<p>Nielsen, Michael. 2012. <em>Reinventing Discover: The New Era of Networked Science</em>. Princeton University Press.</p>
+</div>
+<div>
+<p>Nigrini, Mark. 2015. “Chapter Eight. Detecting Fraud and Errors Using Benford’s Law.” In <em>Benfords Law</em>, edited by Steven J. Miller. Princeton University Press. doi:<a href="https://doi.org/10.1515/9781400866595-011">10.1515/9781400866595-011</a>.</p>
+</div>
+<div>
+<p>Nissim, Nir, Aviad Cohen, Jian Wu, Andrea Lanzi, Lior Rokach, Yuval Elovici, and Lee Giles. 2017. “Scholarly Digital Libraries as a Platform for Malware Distribution.” <em>Cryptology and Information Security Series</em>, 107–28. doi:<a href="https://doi.org/10.3233/978-1-61499-744-3-107">10.3233/978-1-61499-744-3-107</a>.</p>
+</div>
+<div>
+<p>Nosek, B A, G Alter, G C Banks, D Borsboom, S D Bowman, S J Breckler, S Buck, et al. 2015. “Promoting an Open Research Culture.” <em>Science</em> 348 (6242): 1422–5. doi:<a href="https://doi.org/10.1126/science.aab2374">10.1126/science.aab2374</a>.</p>
+</div>
+<div>
+<p>Nosek, Brian A, and Yoav Bar-Anan. 2012. “Scientific Utopia: I. Opening Scientific Communication.” <em>Psychological Inquiry</em> 23 (3). Taylor &amp; Francis: 217–43. doi:<a href="https://doi.org/10.1080/1047840X.2012.692215">10.1080/1047840X.2012.692215</a>.</p>
+</div>
+<div>
+<p>Nosek, Brian A, Jeffrey R Spies, and Matt Motyl. 2012. “Scientific Utopia: II. Restructuring Incentives and Practices to Promote Truth over Publishability.” <em>Perspectives on Psychological Science</em> 7 (6): 615–31. doi:<a href="https://doi.org/10.1177/1745691612459058">10.1177/1745691612459058</a>.</p>
+</div>
+<div>
+<p>Nosek, Brian A., Charles R. Ebersole, Alexander C. DeHaven, and David T. Mellor. 2018. “The Preregistration Revolution.” <em>Proceedings of the National Academy of Sciences</em> 115 (11). Proceedings of the National Academy of Sciences: 2600–2606. doi:<a href="https://doi.org/10.1073/pnas.1708274114">10.1073/pnas.1708274114</a>.</p>
+</div>
+<div>
+<p>Nuijten, Michèle B., Chris H. J. Hartgerink, Marcel A.L.M. Van Assen, Epskamp Sacha, and Jelte M. Wicherts. 2015. “The Prevalence of Statistical Reporting Errors in Psychology (1985–2013).” <em>Behavior Research Methods</em> 48 (4). Springer Nature: 1205–26. doi:<a href="https://doi.org/10.3758/s13428-015-0664-2">10.3758/s13428-015-0664-2</a>.</p>
+</div>
+<div>
+<p>Nuijten, Michèle B., Marcel A. L. M. Van Assen, Coosje L. S. Veldkamp, and Jelte M. Wicherts. 2015. “The Replication Paradox: Combining Studies Can Decrease Accuracy of Effect Size Estimates.” <em>Review of General Psychology</em> 19 (2). American Psychological Association (APA): 172–82. doi:<a href="https://doi.org/10.1037/gpr0000034">10.1037/gpr0000034</a>.</p>
+</div>
+<div>
+<p>O’Brien, Susan Patricia, and Danny Chan, Frederick Leung, Eun Jung Ko, Jin Sun Kwak, TaeHwan Gwon, Ji Min Lee, et al. 2016. “Proceedings of the 4th World Conference on Research Integrity.” <em>Research Integrity and Peer Review</em> 1 (S1). Springer Nature. doi:<a href="https://doi.org/10.1186/s41073-016-0012-9">10.1186/s41073-016-0012-9</a>.</p>
+</div>
+<div>
+<p>Office of Science and Technology Policy. 2000. “Federal Policy on Research Misconduct.” <a href="https://web.archive.org/web/20150910131244/https://www.federalregister.gov/articles/2000/12/06/00-30852/executive-office-of-the-president-federal-policy-on-research-misconduct-preamble-for-research#h-16" class="uri">https://web.archive.org/web/20150910131244/https://www.federalregister.gov/articles/2000/12/06/00-30852/executive-office-of-the-president-federal-policy-on-research-misconduct-preamble-for-research#h-16</a>.</p>
+</div>
+<div>
+<p>Ogden, Maxwell. 2017. “Dat - Distributed Dataset Synchronization and Versioning,” January. Center for Open Science. doi:<a href="https://doi.org/10.31219/osf.io/nsv2c">10.31219/osf.io/nsv2c</a>.</p>
+</div>
+<div>
+<p>Open Science Collaboration. 2015. “Estimating the Reproducibility of Psychological Science.” <em>Science</em> 349 (6251). doi:<a href="https://doi.org/10.1126/science.aac4716">10.1126/science.aac4716</a>.</p>
+</div>
+<div>
+<p>Oransky, Ivan. 2015. “The Retraction Watch Leaderboard.” <a href="http://wayback.archive.org/web/20170206163805/http://retractionwatch.com/the-retraction-watch-leaderboard/" class="uri">http://wayback.archive.org/web/20170206163805/http://retractionwatch.com/the-retraction-watch-leaderboard/</a>.</p>
+</div>
+<div>
+<p>Parker, A., and J.O. Hamblen. 1989. “Computer Algorithms for Plagiarism Detection.” <em>IEEE Transactions on Education</em> 32 (2). Institute of Electrical; Electronics Engineers (IEEE): 94–99. doi:<a href="https://doi.org/10.1109/13.28038">10.1109/13.28038</a>.</p>
+</div>
+<div>
+<p>Pashler, Harold, and Eric–Jan Wagenmakers. 2012. “Editors’ Introduction to the Special Section on Replicability in Psychological Science.” <em>Perspectives on Psychological Science</em> 7 (6). SAGE Publications: 528–30. doi:<a href="https://doi.org/10.1177/1745691612465253">10.1177/1745691612465253</a>.</p>
+</div>
+<div>
+<p>Pautasso, Marco. 2010. “Worsening File-Drawer Problem in the Abstracts of Natural, Medical and Social Science Databases.” <em>Scientometrics</em> 85 (1). Springer Nature: 193–202. doi:<a href="https://doi.org/10.1007/s11192-010-0233-5">10.1007/s11192-010-0233-5</a>.</p>
+</div>
+<div>
+<p>Peeters, C A W, C A J Klaassen, and M A van de Wiel. 2015. “Meta-Response to Public Discussions of the Investigation into Publications by Dr. Förster.” University of Amsterdam. <a href="https://wayback.archive.org/web/20180709102400/https://www.uva.nl/binaries/content/assets/uva/nl/persvoorlichting/uva-nieuws/meta-response.pdf?1436179086511" class="uri">https://wayback.archive.org/web/20180709102400/https://www.uva.nl/binaries/content/assets/uva/nl/persvoorlichting/uva-nieuws/meta-response.pdf?1436179086511</a>.</p>
+</div>
+<div>
+<p>Peiffer, Ann M, Christina E Hugenschmidt, and Paul J Laurienti. 2011. “Ethics in 15 Min Per Week.” <em>Science and Engineering Ethics</em> 17 (2): 289–97. doi:<a href="https://doi.org/10.1007/s11948-010-9197-3">10.1007/s11948-010-9197-3</a>.</p>
+</div>
+<div>
+<p>Pfeifer, M P, and G L Snodgrass. 1990. “The Continued Use of Retracted, Invalid Scientific Literature.” <em>JAMA</em> 263 (10): 1420–3. doi:<a href="https://doi.org/10.1001/jama.1990.03440100140020">10.1001/jama.1990.03440100140020</a>.</p>
+</div>
+<div>
+<p>Philips, Tom. 2017. “Cambridge University Press Accused of ’Selling Its Soul’ over Chinese Censorship.” <em>The Guardian</em>. <a href="https://www.theguardian.com/world/2017/aug/19/cambridge-university-press-accused-of-selling-its-soul-over-chinese-censorship" class="uri">https://www.theguardian.com/world/2017/aug/19/cambridge-university-press-accused-of-selling-its-soul-over-chinese-censorship</a>.</p>
+</div>
+<div>
+<p>Piraino, Scott W. 2017. “Issues in the Statistical Detection of Data Fabrication and Data Errors in the Scientific Literature: Simulation Study and Reanalysis of Carlisle, 2017,” August. Cold Spring Harbor Laboratory. doi:<a href="https://doi.org/10.1101/179135">10.1101/179135</a>.</p>
+</div>
+<div>
+<p>Pirani, Simon. 2018. <em>Burning up</em>.</p>
+</div>
+<div>
+<p>Piwowar, Heather, Jason Priem, Vincent Larivière, Juan Pablo Alperin, Lisa Matthias, Bree Norlander, Ashley Farley, Jevin West, and Stefanie Haustein. 2018. “The State of OA: A Large-Scale Analysis of the Prevalence and Impact of Open Access Articles.” <em>PeerJ</em> 6 (February). PeerJ: e4375. doi:<a href="https://doi.org/10.7717/peerj.4375">10.7717/peerj.4375</a>.</p>
+</div>
+<div>
+<p>Plemmons, Dena K, Suzanne A Brody, and Michael W Kalichman. 2006. “Student Perceptions of the Effectiveness of Education in the Responsible Conduct of Research.” <em>Science and Engineering Ethics</em> 12 (3): 571–82. doi:<a href="https://doi.org/10.1007/s11948-006-0055-2">10.1007/s11948-006-0055-2</a>.</p>
+</div>
+<div>
+<p>Popper, Karl. 2002. <em>The Logic of Scientific Discovery (Routledge Classics)</em>. Routledge.</p>
+</div>
+<div>
+<p>Prathap, Gangan, S. Mini, and P. Nishy. 2016. “Does High Impact Factor Successfully Predict Future Citations? An Analysis Using Peirce’s Measure.” <em>Scientometrics</em> 108 (3). Springer Nature: 1043–7. doi:<a href="https://doi.org/10.1007/s11192-016-2034-y">10.1007/s11192-016-2034-y</a>.</p>
+</div>
+<div>
+<p>Price, A R. 1998. “Anonymity and Pseudonymity in Whistleblowing to the U.s. Office of Research Integrity.” <em>Academic Medicine</em> 73 (5): 467–72. doi:<a href="https://doi.org/10.1097/00001888-199805000-00009">10.1097/00001888-199805000-00009</a>.</p>
+</div>
+<div>
+<p>Priem, Jason, and Bradley M. Hemminger. 2012. “Decoupling the Scholarly Journal.” <em>Frontiers in Computational Neuroscience</em> 6. Frontiers Media SA. doi:<a href="https://doi.org/10.3389/fncom.2012.00019">10.3389/fncom.2012.00019</a>.</p>
+</div>
+<div>
+<p>Reich, Vicky, and David S. H. Rosenthal. 2001. “LOCKSS.” <em>D-Lib Magazine</em> 7 (6). CNRI Acct. doi:<a href="https://doi.org/10.1045/june2001-reich">10.1045/june2001-reich</a>.</p>
+</div>
+<div>
+<p>Resnik, David B, and C Neal Stewart Jr. 2012. “Misconduct Versus Honest Error and Scientific Disagreement.” <em>Accountability in Research</em> 19 (1): 56–63. doi:<a href="https://doi.org/10.1080/08989621.2012.650948">10.1080/08989621.2012.650948</a>.</p>
+</div>
+<div>
+<p>“Retraction of ‘the Secret Life of Emotions’ and ‘Emotion Elicitor or Emotion Messenger? Subliminal Priming Reveals Two Faces of Facial Expressions’.” 2012. <em>Psychological Science</em> 23 (7): 828–28. doi:<a href="https://doi.org/10.1177/0956797612453137">10.1177/0956797612453137</a>.</p>
+</div>
+<div>
+<p>Rhoades, Lawrence J. 2004. “ORI Closed Investigations into Misconduct Allegations Involving Research Supported by the Public Health Service: 1994-2003.” Office of Research Integrity; ori.hhs.gov. <a href="https://wayback.archive.org/web/20180709101834/https://ori.hhs.gov/sites/default/files/Investigations1994-2003-2.pdf" class="uri">https://wayback.archive.org/web/20180709101834/https://ori.hhs.gov/sites/default/files/Investigations1994-2003-2.pdf</a>.</p>
+</div>
+<div>
+<p>Ridley, J., N. Kolm, R. P. Freckelton, and M. J. G. Gage. 2007. “An Unexpected Influence of Widely Used Significance Thresholds on the Distribution of Reported P-Values.” <em>Journal of Evolutionary Biology</em> 20 (3). Wiley: 1082–9. doi:<a href="https://doi.org/10.1111/j.1420-9101.2006.01291.x">10.1111/j.1420-9101.2006.01291.x</a>.</p>
+</div>
+<div>
+<p>Robin, Xavier, Natacha Turck, Alexandre Hainard, Natalia Tiberti, Frédérique Lisacek, Jean-Charles Sanchez, and Markus Müller. 2011. “PROC: An Open-Source Package for R and S+ to Analyze and Compare Roc Curves.” <em>BMC Bioinformatics</em> 12 (1). Springer Nature: 77. doi:<a href="https://doi.org/10.1186/1471-2105-12-77">10.1186/1471-2105-12-77</a>.</p>
+</div>
+<div>
+<p>Robinson, Danielle C., Joe A. Hand, Mathias Buus Madsen, and Karissa R. McKelvey. 2018. “The Dat Project, an Open and Decentralized Research Data Tool.” <em>Scientific Data</em> 5 (October). Springer Nature: 180221. doi:<a href="https://doi.org/10.1038/sdata.2018.221">10.1038/sdata.2018.221</a>.</p>
+</div>
+<div>
+<p>Roosendaal, Hans E, and Peter A Th M Geurts. 1998. “Forces and Functions in Scientific Communication: An Analysis of Their Interplay.” <a href="http://web.archive.org/web/20180223112609/http://www.physik.uni-oldenburg.de/conferences/crisp97/roosendaal.html" class="uri">http://web.archive.org/web/20180223112609/http://www.physik.uni-oldenburg.de/conferences/crisp97/roosendaal.html</a>.</p>
+</div>
+<div>
+<p>Rosenthal, Robert. 1979. “The File Drawer Problem and Tolerance for Null Results.” <em>Psychological Bulletin</em> 86 (3). American Psychological Association (APA): 638–41. doi:<a href="https://doi.org/10.1037/0033-2909.86.3.638">10.1037/0033-2909.86.3.638</a>.</p>
+</div>
+<div>
+<p>Rossner, Mike, and Kenneth M Yamada. 2004. “What’s in a Picture? The Temptation of Image Manipulation.” <em>The Journal of Cell Biology</em> 166 (1): 11–15. doi:<a href="https://doi.org/10.1083/jcb.200406019">10.1083/jcb.200406019</a>.</p>
+</div>
+<div>
+<p>Rothstein, Hannah. 2005. <em>Publication Bias in Meta-Analysis : Prevention, Assessment and Adjustments</em>. Chichester, England Hoboken, NJ: Wiley.</p>
+</div>
+<div>
+<p>Ruys, Kirsten I, and Diederik A Stapel. 2008. “Emotion Elicitor or Emotion Messenger?: Subliminal Priming Reveals Two Faces of Facial Expressions [Retracted].” <em>Psychological Science</em> 19 (6): 593–600. doi:<a href="https://doi.org/10.1111/j.1467-9280.2008.02128.x">10.1111/j.1467-9280.2008.02128.x</a>.</p>
+</div>
+<div>
+<p>Savage, Caroline J, and Andrew J Vickers. 2009. “Empirical Study of Data Sharing by Authors Publishing in PLoS Journals.” <em>PloS ONE</em> 4 (9): e7078. doi:<a href="https://doi.org/10.1371/journal.pone.0007078">10.1371/journal.pone.0007078</a>.</p>
+</div>
+<div>
+<p>Schimmack, Ulrich. 2012. “The Ironic Effect of Significant Results on the Credibility of Multiple-Study Articles.” <em>Psychological Methods</em> 17 (4). American Psychological Association (APA): 551–66. doi:<a href="https://doi.org/10.1037/a0029487">10.1037/a0029487</a>.</p>
+</div>
+<div>
+<p>Sedlmeier, Peter, and Gerd Gigerenzer. 1989. “Do Studies of Statistical Power Have an Effect on the Power of Studies?” <em>Psychological Bulletin</em> 105 (2). American Psychological Association (APA): 309–16. doi:<a href="https://doi.org/10.1037/0033-2909.105.2.309">10.1037/0033-2909.105.2.309</a>.</p>
+</div>
+<div>
+<p>Seeber, Marco, Mattia Cattaneo, Michele Meoli, and Paolo Malighetti. 2017. “Self-Citations as Strategic Response to the Use of Metrics for Career Decisions.” <em>Research Policy</em>, December. Elsevier BV. doi:<a href="https://doi.org/10.1016/j.respol.2017.12.004">10.1016/j.respol.2017.12.004</a>.</p>
+</div>
+<div>
+<p>Seglen, P. O. 1992. “The skewness of science.” <em>Journal of the American Society for Information Science</em> 43: 628–38.</p>
+</div>
+<div>
+<p>———. 1994. “Causal relationship between article citedness and journal impact.” <em>Journal of the American Society for Information Science,</em> 45: 1–11.</p>
+</div>
+<div>
+<p>Seife, Charles. 2015. “Research Misconduct Identified by the US Food and Drug Administration: Out of Sight, Out of Mind, Out of the Peer-Reviewed Literature.” <em>JAMA Internal Medicine</em> 175 (4): 567–77. doi:<a href="https://doi.org/10.1001/jamainternmed.2014.7774">10.1001/jamainternmed.2014.7774</a>.</p>
+</div>
+<div>
+<p>Shamoo, A E, and D B Resnik. 2009. <em>Responsible Conduct of Research</em>. New York, NY: Oxford University Press.</p>
+</div>
+<div>
+<p>Shamoo, Adil E. 2006. “Data Audit Would Reduce Unethical Behaviour.” <em>Nature</em> 439 (7078): 784. doi:<a href="https://doi.org/10.1038/439784c">10.1038/439784c</a>.</p>
+</div>
+<div>
+<p>Sijtsma, Klaas, Coosje L S Veldkamp, and Jelte M Wicherts. 2015. “Improving the Conduct and Reporting of Statistical Analysis in Psychology.” <em>Psychometrika</em>, 28~mar. doi:<a href="https://doi.org/10.1007/s11336-015-9444-2">10.1007/s11336-015-9444-2</a>.</p>
+</div>
+<div>
+<p>Simmons, Joseph P, Leif D Nelson, and Uri Simonsohn. 2011. “False-Positive Psychology: Undisclosed Flexibility in Data Collection and Analysis Allows Presenting Anything as Significant.” <em>Psychological Science</em> 22 (11): 1359–66. doi:<a href="https://doi.org/10.1177/0956797611417632">10.1177/0956797611417632</a>.</p>
+</div>
+<div>
+<p>Simonsohn, Uri. 2013. “Just Post It: The Lesson from Two Cases of Fabricated Data Detected by Statistics Alone.” <em>Psychological Science</em> 24 (10): 1875–88. doi:<a href="https://doi.org/10.1177/0956797613480366">10.1177/0956797613480366</a>.</p>
+</div>
+<div>
+<p>Simonsohn, Uri, Leif D. Nelson, and Joseph P. Simmons. 2014. “P-Curve: A Key to the File-Drawer.” <em>Journal of Experimental Psychology: General</em> 143 (2). American Psychological Association (APA): 534–47. doi:<a href="https://doi.org/10.1037/a0033242">10.1037/a0033242</a>.</p>
+</div>
+<div>
+<p>Simonsohn, Uri, Joseph P. Simmons, and Leif D. Nelson. 2015. “Better P-Curves: Making P-Curve Analysis More Robust to Errors, Fraud, and Ambitious P-Hacking, a Reply to Ulrich and Miller (2015).” <em>Journal of Experimental Psychology: General</em> 144 (6). American Psychological Association (APA): 1146–52. doi:<a href="https://doi.org/10.1037/xge0000104">10.1037/xge0000104</a>.</p>
+</div>
+<div>
+<p>Smaldino, Paul E., and Richard McElreath. 2016. “The Natural Selection of Bad Science.” <em>Royal Society Open Science</em> 3 (9). The Royal Society: 160384. doi:<a href="https://doi.org/10.1098/rsos.160384">10.1098/rsos.160384</a>.</p>
+</div>
+<div>
+<p>Smithson, Michael. 2001. “Correct Confidence Intervals for Various Regression Effect Sizes and Parameters: The Importance of Noncentral Distributions in Computing Intervals.” <em>Educational and Psychological Measurement</em> 61 (4). SAGE Publications: 605–32. doi:<a href="https://doi.org/10.1177/00131640121971392">10.1177/00131640121971392</a>.</p>
+</div>
+<div>
+<p>Sompel, Herbert Van de. 2006. “Certification in a Digital Era.” <em>Nature</em>. Springer Nature. doi:<a href="https://doi.org/10.1038/nature05008">10.1038/nature05008</a>.</p>
+</div>
+<div>
+<p>Sompel, Herbert Van de, Sandy Payette, John Erickson, Carl Lagoze, and Simeon Warner. 2004. “Rethinking Scholarly Communication.” <em>D-Lib Magazine</em> 10 (9). CNRI Acct. doi:<a href="https://doi.org/10.1045/september2004-vandesompel">10.1045/september2004-vandesompel</a>.</p>
+</div>
+<div>
+<p>Spellman, Barbara A. 2012. “Scientific Utopia … or Too Much Information? Comment on Nosek and Bar-Anan.” <em>Psychological Inquiry</em> 23 (3). Informa UK Limited: 303–4. doi:<a href="https://doi.org/10.1080/1047840x.2012.701161">10.1080/1047840x.2012.701161</a>.</p>
+</div>
+<div>
+<p>———. 2015. “A Short (Personal) Future History of Revolution 2.0.” <em>Perspectives on Psychological Science</em> 10 (6). SAGE Publications: 886–99. doi:<a href="https://doi.org/10.1177/1745691615609918">10.1177/1745691615609918</a>.</p>
+</div>
+<div>
+<p>Spies, Jeffrey Robert. 2017. “The Open Science Framework: Improving Science by Making It Open and Accessible,” April. Center for Open Science. doi:<a href="https://doi.org/10.31237/osf.io/t23za">10.31237/osf.io/t23za</a>.</p>
+</div>
+<div>
+<p>Standish, E. M. 2004. “The Astronomical Unit Now.” <em>Proceedings of the International Astronomical Union</em> 2004 (IAUC196). Cambridge University Press (CUP): 163–79. doi:<a href="https://doi.org/10.1017/s1743921305001365">10.1017/s1743921305001365</a>.</p>
+</div>
+<div>
+<p>Stanley, David J., and Jeffrey R. Spence. 2014. “Expectations for Replications.” <em>Perspectives on Psychological Science</em> 9 (3). SAGE Publications: 305–18. doi:<a href="https://doi.org/10.1177/1745691614528518">10.1177/1745691614528518</a>.</p>
+</div>
+<div>
+<p>Stapel, Diederik A. 2012. <em>Ontsporing</em>. Amsterdam, the Netherlands: Prometheus.</p>
+</div>
+<div>
+<p>Star, Susan Leigh. 1990. “Power, Technology and the Phenomenology of Conventions: On Being Allergic to Onions.” <em>The Sociological Review</em> 38 (1_suppl). SAGE Publications: 26–56. doi:<a href="https://doi.org/10.1111/j.1467-954x.1990.tb03347.x">10.1111/j.1467-954x.1990.tb03347.x</a>.</p>
+</div>
+<div>
+<p>Steiger, James H, and Rachel T Fouladi. 1997. “Noncentrality interval estimation and the evaluation of statistical models.” In <em>What If There Were No Significance Tests</em>, edited by Lisa L. Harlow, Stanley A. Mulaik, and James H Steiger. New York, NY: Psychology Press.</p>
+</div>
+<div>
+<p>Steneck, Nicholas H. 2006. “Fostering Integrity in Research: Definitions, Current Knowledge, and Future Directions.” <em>Science and Engineering Ethics</em> 12 (1). Springer Nature: 53–74. doi:<a href="https://doi.org/10.1007/pl00022268">10.1007/pl00022268</a>.</p>
+</div>
+<div>
+<p>Sterling, T. D., W. L. Rosenbaum, and J. J. Weinkam. 1995. “Publication Decisions Revisited: The Effect of the Outcome of Statistical Tests on the Decision to Publish and Vice Versa.” <em>The American Statistician</em> 49 (1). JSTOR: 108. doi:<a href="https://doi.org/10.2307/2684823">10.2307/2684823</a>.</p>
+</div>
+<div>
+<p>Sterling, Theodore D. 1959. “Publication Decisions and Their Possible Effects on Inferences Drawn from Tests of Significance–or Vice Versa.” <em>Journal of the American Statistical Association</em> 54 (285). JSTOR: 30. doi:<a href="https://doi.org/10.2307/2282137">10.2307/2282137</a>.</p>
+</div>
+<div>
+<p>Sterne, Jonathan A.C, David Gavaghan, and Matthias Egger. 2000. “Publication and Related Bias in Meta-Analysis.” <em>Journal of Clinical Epidemiology</em> 53 (11). Elsevier BV: 1119–29. doi:<a href="https://doi.org/10.1016/s0895-4356(00)00242-0">10.1016/s0895-4356(00)00242-0</a>.</p>
+</div>
+<div>
+<p>Stewart, W W, and N Feder. 1987. “The Integrity of the Scientific Literature.” <em>Nature</em> 325 (6101): 207–14. doi:<a href="https://doi.org/10.1038/325207a0">10.1038/325207a0</a>.</p>
+</div>
+<div>
+<p>Streeck, Wolfgang. 2014. <em>Buying Time</em>.</p>
+</div>
+<div>
+<p>Stricker, Johannes, and Armin Günther. 2019. “Scientific Misconduct in Psychology.” <em>Zeitschrift Für Psychologie</em> 227 (1). Hogrefe Publishing Group: 53–63. doi:<a href="https://doi.org/10.1027/2151-2604/a000356">10.1027/2151-2604/a000356</a>.</p>
+</div>
+<div>
+<p>Stroebe, Wolfgang, Tom Postmes, and Russell Spears. 2012. “Scientific Misconduct and the Myth of Self-Correction in Science.” <em>Perspectives on Psychological Science</em> 7 (6): 670–88. doi:<a href="https://doi.org/10.1177/1745691612460687">10.1177/1745691612460687</a>.</p>
+</div>
+<div>
+<p>Stroop, J. R. 1935. “Studies of Interference in Serial Verbal Reactions.” <em>Journal of Experimental Psychology</em> 18 (6). American Psychological Association (APA): 643–62. doi:<a href="https://doi.org/10.1037/h0054651">10.1037/h0054651</a>.</p>
+</div>
+<div>
+<p>Strubell, Emma, Ananya Ganesh, and Andrew McCallum. 2019. “Energy and Policy Considerations for Deep Learning in NLP.” <em>CoRR</em> abs/1906.02243. <a href="http://arxiv.org/abs/1906.02243" class="uri">http://arxiv.org/abs/1906.02243</a>.</p>
+</div>
+<div>
+<p>Student. 1908. “THE Probable Error of a Mean.” <em>Biometrika</em> 6 (1). Oxford University Press (OUP): 1–25. doi:<a href="https://doi.org/10.1093/biomet/6.1.1">10.1093/biomet/6.1.1</a>.</p>
+</div>
+<div>
+<p>Tennant, Jonathan P., Jonathan M. Dugan, Daniel Graziotin, Damien C. Jacques, François Waldner, Daniel Mietchen, Yehia Elkhatib, et al. 2017. “A Multi-Disciplinary Perspective on Emergent and Future Innovations in Peer Review.” <em>F1000Research</em> 6 (November). F1000 Research, Ltd.: 1151. doi:<a href="https://doi.org/10.12688/f1000research.12037.3">10.12688/f1000research.12037.3</a>.</p>
+</div>
+<div>
+<p>“The Impact Factor Game.” 2006. <em>PLoS Medicine</em> 3 (6). Public Library of Science (PLoS): e291. doi:<a href="https://doi.org/10.1371/journal.pmed.0030291">10.1371/journal.pmed.0030291</a>.</p>
+</div>
+<div>
+<p>The Journal of Cell Biology. 2015a. “About the Journal.” <a href="https://web.archive.org/web/20150911132421/http://jcb.rupress.org/site/misc/about.xhtml" class="uri">https://web.archive.org/web/20150911132421/http://jcb.rupress.org/site/misc/about.xhtml</a>.</p>
+</div>
+<div>
+<p>———. 2015b. “About the Journal.” <a href="https://web.archive.org/web/20150911132421/http://jcb.rupress.org/site/misc/about.xhtml" class="uri">https://web.archive.org/web/20150911132421/http://jcb.rupress.org/site/misc/about.xhtml</a>.</p>
+</div>
+<div>
+<p>Travers, Jeffrey, and Stanley Milgram. 1969. “An Experimental Study of the Small World Problem.” <em>Sociometry</em> 32 (4). JSTOR: 425. doi:<a href="https://doi.org/10.2307/2786545">10.2307/2786545</a>.</p>
+</div>
+<div>
+<p>Tversky, A, and D Kahneman. 1974. “Judgment Under Uncertainty: Heuristics and Biases.” <em>Science</em> 185 (4157): 1124–31. doi:<a href="https://doi.org/10.1126/science.185.4157.1124">10.1126/science.185.4157.1124</a>.</p>
+</div>
+<div>
+<p>Tversky, Amos, and Daniel Kahneman. 1971. “Belief in the Law of Small Numbers.” <em>Psychological Bulletin</em> 76 (2). American Psychological Association (APA): 105–10. doi:<a href="https://doi.org/10.1037/h0031322">10.1037/h0031322</a>.</p>
+</div>
+<div>
+<p>Ulrich, Rolf, and Jeff Miller. 2015. “P-Hacking by Post Hoc Selection with Multiple Opportunities: Detectability by Skewness Test?: Comment on Simonsohn, Nelson, and Simmons (2014).” <em>Journal of Experimental Psychology: General</em> 144 (6). American Psychological Association (APA): 1137–45. doi:<a href="https://doi.org/10.1037/xge0000086">10.1037/xge0000086</a>.</p>
+</div>
+<div>
+<p>Urbina, Mauricio A., Andrew J. R. Watts, and Erin E. Reardon. 2015. “Labs Should Cut Plastic Waste Too.” <em>Nature</em> 528 (7583). Springer Science; Business Media LLC: 479–79. doi:<a href="https://doi.org/10.1038/528479c">10.1038/528479c</a>.</p>
+</div>
+<div>
+<p>Van Aert, Robbie C. M., and Marcel A. L. M. Van Assen. 2017a. “Bayesian Evaluation of Effect Size After Replicating an Original Study.” Edited by DanieleEditor Marinazzo. <em>PLOS ONE</em> 12 (4). Public Library of Science (PLoS): e0175302. doi:<a href="https://doi.org/10.1371/journal.pone.0175302">10.1371/journal.pone.0175302</a>.</p>
+</div>
+<div>
+<p>———. 2017b. “Examining Reproducibility in Psychology: A Hybrid Method for Combining a Statistically Significant Original Study and a Replication.” <em>Behavior Research Methods</em> 50 (4). Springer Nature America, Inc: 1515–39. doi:<a href="https://doi.org/10.3758/s13428-017-0967-6">10.3758/s13428-017-0967-6</a>.</p>
+</div>
+<div>
+<p>Van Aert, Robbie C. M., Jelte M. Wicherts, and Marcel A. L. M. Van Assen. 2016. “Conducting Meta-Analyses Based on P Values.” <em>Perspectives on Psychological Science</em> 11 (5). SAGE Publications: 713–29. doi:<a href="https://doi.org/10.1177/1745691616650874">10.1177/1745691616650874</a>.</p>
+</div>
+<div>
+<p>Van Assen, Marcel A L M, Robbie C M Van Aert, Michèle B. Nuijten, and Jelte M Wicherts. 2014. “Why Publishing Everything Is More Effective Than Selective Publishing of Statistically Significant Results.” <em>PloS ONE</em> 9 (1): e84896. doi:<a href="https://doi.org/10.1371/journal.pone.0084896">10.1371/journal.pone.0084896</a>.</p>
+</div>
+<div>
+<p>Van Assen, Marcel A. L. M., Robbie C. M. Van Aert, and Jelte M. Wicherts. 2015. “Meta-Analysis Using Effect Size Distributions of Only Statistically Significant Studies.” <em>Psychological Methods</em> 20 (3). American Psychological Association (APA): 293–309. doi:<a href="https://doi.org/10.1037/met0000025">10.1037/met0000025</a>.</p>
+</div>
+<div>
+<p>Van Noorden, Richard. 2011. “Science Publishing: The Trouble with Retractions.” <em>Nature</em> 478 (7367): 26–28. doi:<a href="https://doi.org/10.1038/478026a">10.1038/478026a</a>.</p>
+</div>
+<div>
+<p>———. 2017. “Science Journals Permit Open-Access Publishing for Gates Foundation Scholars.” <em>Nature</em>, February. Springer Science; Business Media LLC. doi:<a href="https://doi.org/10.1038/nature.2017.21486">10.1038/nature.2017.21486</a>.</p>
+</div>
+<div>
+<p>Vanpaemel, Wolf, Maarten Vermorgen, Leen Deriemaecker, and Gert Storms. 2015. “Are We Wasting a Good Crisis? The Availability of Psychological Research Data After the Storm.” <em>Collabra</em> 1 (1). University of California Press. doi:<a href="https://doi.org/10.1525/collabra.13">10.1525/collabra.13</a>.</p>
+</div>
+<div>
+<p>Veldkamp, Coosje L. S., Chris H. J. Hartgerink, Marcel A. L. M. Van Assen, and Jelte M. Wicherts. 2016. “Who Believes in the Storybook Image of the Scientist?” <em>Accountability in Research</em> 24 (3). Informa UK Limited: 127–51. doi:<a href="https://doi.org/10.1080/08989621.2016.1268922">10.1080/08989621.2016.1268922</a>.</p>
+</div>
+<div>
+<p>Veldkamp, Coosje L. S., Michèle B. Nuijten, Linda Dominguez-Alvarez, Marcel A. L. M. Van Assen, and Jelte M. Wicherts. 2014. “Statistical Reporting Errors and Collaboration on Statistical Analyses in Psychological Science.” <em>PloS ONE</em> 9 (12): e114876. doi:<a href="https://doi.org/10.1371/journal.pone.0114876">10.1371/journal.pone.0114876</a>.</p>
+</div>
+<div>
+<p>Velterop, Jan. 2010. “Nanopublications the Future of Coping with Information Overload.” <em>Logos</em> 21 (3). Brill Academic Publishers: 119–22. doi:<a href="https://doi.org/10.1163/095796511x560006">10.1163/095796511x560006</a>.</p>
+</div>
+<div>
+<p>Vermeulen, Ivar, Camiel J. Beukeboom, Anika Batenburg, Arthur Avramiea, Dimo Stoyanov, Bob van de Velde, and Dirk Oegema. 2015. “Blinded by the Light: How a Focus on Statistical ‘Significance’ May Causep-Value Misreporting and an Excess Ofp-Values Just Below .05 in Communication Science.” <em>Communication Methods and Measures</em> 9 (4). Informa UK Limited: 253–79. doi:<a href="https://doi.org/10.1080/19312458.2015.1096333">10.1080/19312458.2015.1096333</a>.</p>
+</div>
+<div>
+<p>Verschuere, Bruno, Ewout H. Meijer, Ariane Jim, Katherine Hoogesteyn, Robin Orthey, Randy J. McCarthy, John J. Skowronski, et al. 2018. “Registered Replication Report on Mazar, Amir, and Ariely (2008).” <em>Advances in Methods and Practices in Psychological Science</em>, September. SAGE Publications, 251524591878103. doi:<a href="https://doi.org/10.1177/2515245918781032">10.1177/2515245918781032</a>.</p>
+</div>
+<div>
+<p>Vines, Timothy H., Arianne Y.K. Albert, Rose L. Andrew, Florence Débarre, Dan G. Bock, Michelle T. Franklin, Kimberly J. Gilbert, Jean-Sébastien Moore, Sébastien Renaut, and Diana J. Rennison. 2014. “The Availability of Research Data Declines Rapidly with Article Age.” <em>Current Biology</em> 24 (1). Elsevier BV: 94–97. doi:<a href="https://doi.org/10.1016/j.cub.2013.11.014">10.1016/j.cub.2013.11.014</a>.</p>
+</div>
+<div>
+<p>Voelkle, Manuel C., Phillip L. Ackerman, and Werner W. Wittmann. 2007. “Effect Sizes and F Ratios &lt; 1.0.” <em>Methodology</em> 3 (1). Hogrefe Publishing Group: 35–46. doi:<a href="https://doi.org/10.1027/1614-2241.3.1.35">10.1027/1614-2241.3.1.35</a>.</p>
+</div>
+<div>
+<p>Wagenaar, W. A. 1972. “Generation of Random Sequences by Human Subjects: A Critical Survey of Literature.” <em>Psychological Bulletin</em> 77 (1). American Psychological Association (APA): 65–72. doi:<a href="https://doi.org/10.1037/h0032060">10.1037/h0032060</a>.</p>
+</div>
+<div>
+<p>Wagenmakers, Eric-Jan. 2007. “A Practical Solution to the Pervasive Problems Ofp Values.” <em>Psychonomic Bulletin &amp; Review</em> 14 (5). Springer Nature: 779–804. doi:<a href="https://doi.org/10.3758/bf03194105">10.3758/bf03194105</a>.</p>
+</div>
+<div>
+<p>Wagenmakers, Eric-Jan, Ruud Wetzels, Denny Borsboom, Han L J van der Maas, and Rogier A Kievit. 2012. “An Agenda for Purely Confirmatory Research.” <em>Perspectives on Psychological Science</em> 7 (6): 632–38. doi:<a href="https://doi.org/10.1177/1745691612463078">10.1177/1745691612463078</a>.</p>
+</div>
+<div>
+<p>Wasserman, Stanley, and Katherine Faust. 1994. <em>Social Network Analysis: Methods and Applications (Structural Analysis in the Social Sciences)</em>. Cambridge University Press.</p>
+</div>
+<div>
+<p>Whitebeck, Caroline. 2001. “Group Mentoring to Foster the Responsible Conduct of Research.” <em>Science and Engineering Ethics</em> 7 (4). Kluwer Academic Publishers: 541–58. doi:<a href="https://doi.org/10.1007/s11948-001-0012-z">10.1007/s11948-001-0012-z</a>.</p>
+</div>
+<div>
+<p>Wicherts, Jelte M. 2011. “Psychology Must Learn a Lesson from Fraud Case.” <em>Nature</em> 480 (7375): 7. doi:<a href="https://doi.org/10.1038/480007a">10.1038/480007a</a>.</p>
+</div>
+<div>
+<p>Wicherts, Jelte M, and Marcel A L M Van Assen. 2012. “Research Fraud: Speed up Reviews of Misconduct.” <em>Nature</em> 488 (7413): 591. doi:<a href="https://doi.org/10.1038/488591b">10.1038/488591b</a>.</p>
+</div>
+<div>
+<p>Wicherts, Jelte M., Denny Borsboom, Judith Kats, and Dylan Molenaar. 2006. “The Poor Availability of Psychological Research Data for Reanalysis.” <em>American Psychologist</em> 61 (7). American Psychological Association (APA): 726–28. doi:<a href="https://doi.org/10.1037/0003-066x.61.7.726">10.1037/0003-066x.61.7.726</a>.</p>
+</div>
+<div>
+<p>Wicherts, Jelte M., Chris H. J. Hartgerink, and Raoul P.P.P. Grasman. 2016. “The Growth of Psychology and Its Corrective Mechanisms: A Bibliometric Analysis (1950-2015).” Manuscript in preparation.</p>
+</div>
+<div>
+<p>Wicherts, Jelte M., Coosje L. S. Veldkamp, Hilde E. M. Augusteijn, Marjan Bakker, Robbie C. M. van Aert, and Marcel A. L. M. van Assen. 2016. “Degrees of Freedom in Planning, Running, Analyzing, and Reporting Psychological Studies: A Checklist to Avoid P-Hacking.” <em>Frontiers in Psychology</em> 7 (November). Frontiers Media SA. doi:<a href="https://doi.org/10.3389/fpsyg.2016.01832">10.3389/fpsyg.2016.01832</a>.</p>
+</div>
+<div>
+<p>Wigboldus, Daniel H J, and Ron Dotsch. 2015. “Encourage Playing with Data and Discourage Questionable Reporting Practices.” <em>Psychometrika</em>, 28~mar. doi:<a href="https://doi.org/10.1007/s11336-015-9445-1">10.1007/s11336-015-9445-1</a>.</p>
+</div>
+<div>
+<p>Wilkinson, Leland. 1999. “Statistical Methods in Psychology Journals: Guidelines and Explanations.” <em>American Psychologist</em> 54 (8). American Psychological Association (APA): 594–604. doi:<a href="https://doi.org/10.1037/0003-066x.54.8.594">10.1037/0003-066x.54.8.594</a>.</p>
+</div>
+<div>
+<p>Wilsdon, James, Liz Allen, Eleonora Belfiore, Philip Campbell, Stephen Curry, Steven Hill, Richard Jones, et al. 2015. “The Metric Tide: Report of the Independent Review of the Role of Metrics in Research Assessment and Management,” July.</p>
+</div>
+<div>
+<p>Wootton, David. 2015. <em>The Invention of Science: A New History of the Scientific Revolution</em>. Toronto, Canada: Allen Lane.</p>
+</div>
+<div>
+<p>Wynes, Seth, Simon D. Donner, Steuart Tannason, and Noni Nabors. 2019. “Academic Air Travel Has a Limited Influence on Professional Success.” <em>Journal of Cleaner Production</em> 226 (July). Elsevier BV: 959–67. doi:<a href="https://doi.org/10.1016/j.jclepro.2019.04.109">10.1016/j.jclepro.2019.04.109</a>.</p>
+</div>
+<div>
+<p>Youngstrom, Eric A. 2013. “A Primer on Receiver Operating Characteristic Analysis and Diagnostic Efficiency Statistics for Pediatric Psychology: We Are Ready to Roc.” <em>Journal of Pediatric Psychology</em> 39 (2). Oxford University Press (OUP): 204–21. doi:<a href="https://doi.org/10.1093/jpepsy/jst062">10.1093/jpepsy/jst062</a>.</p>
+</div>
+<div>
+<p>Yule, George Udny. 1922. “An Introduction to the Theory of Statistics.” London, United Kingdom: Griffin. <a href="https://ia800205.us.archive.org/13/items/cu31924013993187/cu31924013993187.pdf" class="uri">https://ia800205.us.archive.org/13/items/cu31924013993187/cu31924013993187.pdf</a>.</p>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-doi:10.3758/s13428-015-0664-2">
+<p>Nuijten, Michèle B., Chris H. J. Hartgerink, Marcel A.L.M. Van Assen, Epskamp Sacha, and Jelte M. Wicherts. 2015. “The Prevalence of Statistical Reporting Errors in Psychology (1985–2013).” <em>Behavior Research Methods</em> 48 (4). Springer Nature: 1205–26. doi:<a href="https://doi.org/10.3758/s13428-015-0664-2">10.3758/s13428-015-0664-2</a>.</p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="effect-computation.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": true,
+"facebook": false,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "github", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": null,
+"history": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"toc": {
+"collapse": "subsection",
+"scroll_highlight": true
+},
+"toolbar": {
+"position": "fixed"
+},
+"search": true
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

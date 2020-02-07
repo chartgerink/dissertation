@@ -48,11 +48,11 @@ output:
 suppressPackageStartupMessages(require(magrittr))
 ```
 
-The history- and practice of science is convoluted
-[@isbn:9781846142109], but as a student it was taught to me in a
+The history and practice of science is convoluted
+[@isbn:9781846142109], but when I was a student it was taught to me in a
 relatively uncomplicated manner. Among the things I remember from my
 high school science classes are how to convert a metric distance into
-\index{Astronomical Units} (AUs) and that there was something called the
+(Astronomical Units; AUs) and that there was something called the
 research cycle (I always forgot the separate steps and their order,
 which will ironically be a crucial subject of this
 dissertation). Those classes presented things such as the AU and the
@@ -77,9 +77,9 @@ certain knowledge. Through this kind of teaching, storybook images of
 scientists and science might arise, often as the actors and process of
 discovering absolute truths rather than of uncertain and iterative
 production of coherent and consistent knowledge. Such storybook images
-likely result in substantively higher ratings for scientists than
-non-scientists with respect to objectivity, rationality, skepticism,
-rigor, and ethics, even after taking into account educational level
+likely result in the impression that scientists versus non-scientists
+are more objective, rational, skeptical, rigorous, and ethical, even
+after taking into account educational level
 [@doi:10.1080/08989621.2016.1268922].
 
 Scientific research articles tend to provide more details and less
@@ -133,7 +133,7 @@ empirical scientist was warranted the storybook qualities exactly
 human biases and provided grounds for the widespread belief that
 search for 'the truth' was more important than individual gain.
 
-As I progressed throughout my science education, it became apparent 
+As I progressed throughout my science education, it became clear to me 
 how naive the storybook image of science and the scientist was through
 a series of events that undercut the very epistemological model that
 granted these qualities. As a result of these events, I had what I
@@ -145,9 +145,9 @@ was studying and conducting. Both these crises made me consider
 leaving scientific research and I am sure I was not alone in
 experiencing this sentiment.
 
-My first crisis of epistemological faith was when the psychology
-professor who got me interested in research publicly confessed to
-having fabricated data throughout his academic career
+My first, local crisis of epistemological faith was when the
+psychology professor who got me interested in research publicly
+confessed to having fabricated data throughout his academic career
 [@isbn:9789044623123]. Having been inspired to go down the path of
 scholarly research by this very professor and having worked as a
 research assistant for him, I doubted myself and my abilities and
@@ -155,26 +155,26 @@ asked whether I was critical enough to conduct and notice valid
 research. After all, I had not had even an inch of suspicion while
 working with him. Moreover, I wondered what to make of my interest in
 research, given that the person who got me inspired appeared to be
-such a bad example to model myself to. Ultimately, I considered it
-unlikely that the majority of researchers would be fraudsters like
-this professor and simply realized that research could fail at various
-stages (e.g., data sharing, peer review). This event also unveiled to
+such a bad example to model myself after. This event also unveiled to
 me the politics of science and how validity, rigor, and 'truth'
 finding was not a given [see for example
 @isbn:9780671447694]. Regardless, the self-reported prevalence of
 fraudulent behaviors among scientists [viz. 2%;
 @doi:10.1371/journal.pone.0005738] was sufficiently low to not
 undermine the epistemological effort of the scientific collective
-(although it could still severely distort it). As a result, I became
-more skeptical of the certified stories in peer-reviewed journals and
-in my own and other's research. I ultimately shifted my focus towards
-studying statistics to improve research.
+(although it could still severely distort it). Ultimately, I
+considered it unlikely that the majority of researchers would be
+fraudsters like this professor and simply realized that research could
+fail at various stages (e.g., data sharing, peer review). As a result,
+I became more skeptical of the certified stories in peer reviewed
+journals and in my own and other's research. I ultimately shifted my
+focus towards studying statistics to improve research.
 
-A second epistemological crisis arose when I took a class that
-indicated that scientists undermine the empirical research cycle at a
-large scale. These behaviors were sometimes intentional, sometimes
-unintentional, but often the result of misconceptions and ill
-procedures in order to play the game of getting published
+A second, more encompassing epistemological crisis arose when I took a
+class that indicated that scientists undermine the empirical research
+cycle at a large scale. These behaviors were sometimes intentional,
+sometimes unintentional, but often the result of misconceptions and
+ill procedures in order to play the game of getting published
 [@doi:10.1177/1745691612459060]. More specifically, this
 epistemological crisis originated from learning about how loose
 application of statistical procedures could produce statistically
@@ -184,8 +184,8 @@ in biased publication of results [@doi:10.1007/bf01173636] through the
 invisible (and often unaccountable) hand of peer review
 [@cogprints1646] that in itself suffers from various
 misconceptions. This combination potentially leads to a vicious cycle
-of overestimated (and sometimes false positive) effects leading to
-underpowered research that is selectively published leading to
+of overestimated (and sometimes false positive) effects, leading to
+underpowered research that is selectively published, leading to
 overestimated effects and underpowered research, and so on until that
 cycle gets disrupted. These issues are not necessarily new and have
 been discussed for over 40 years in some way or form
@@ -200,8 +200,8 @@ to be substantial, because the improvements made over the last decades
 remained insufficient [although the historical context is highly
 relevant, see @doi:10.1177/1745691615609918]. Because of the failed
 attempts in the past and the awareness of these issues throughout the
-last six years or so, my epistemological crisis is ongoing and
-oscillates between frustration and hope for improvement.
+last six years or so, my epistemological worries are ongoing and
+oscillate between pessimism and optimism for improvement.
 
 Nonetheless, these two epistemological crises caused me to become
 increasingly engaged with various initiatives and research domains to
@@ -216,24 +216,25 @@ launched only recently [@doi:10.31237/osf.io/t23za], which is where I
 started to document my work openly. I found it scary, difficult, and
 did not know where to start simply because I had never been taught to
 do science this way nor did anyone really know how. It led me to
-experiment with these new tools and processes, find out the
-practicalities of actually making my own work open, and have continued
-to do so ever since. It made my work in a more reproducible, open manner and
-also led me to become engaged in what are often called the Open Access
-and Open Science movements. Both these movements aim to make knowledge
-available to all in various ways, going beyond dumping excessive
-amounts of information but also making it comprehensible by providing
-clear documentation to for example data. Not only are the communities
-behind these movements supportive in educating each other in open
-practices, they also activated me to help others see the value of Open
-Science and how to implement it [it all started with
-@doi:10.6084/m9.figshare.928315.v2]. Through this, activism within the
-realm of science became part of my daily scientific practice.
+experiment with these new tools and processes to find out the
+practicalities of actually making my own work open, and I have
+continued to do so ever since. It made me work in a more reproducible,
+open manner, and also led me to become engaged in what are often
+called the Open Access and Open Science movements. Both these
+movements aim to make knowledge available to all in various ways,
+going beyond dumping excessive amounts of information but also making
+it comprehensible by providing clear documentation to for example
+data. Not only are the communities behind these movements supportive
+in educating each other in open practices, they also activated me to
+help others see the value of Open Science and how to implement it [my
+first steps taken in @doi:10.6084/m9.figshare.928315.v2]. Through
+this, activism within the realm of science became part of my daily
+scientific practice.
 
 Actively improving science through doing research became the main
 motivation for me to pursue a PhD project. Initially, we set out to
 focus purely on statistical detection of data fabrication (linking
-back to the first epistemological crisis) within the PhD
+back to my first epistemological crisis) within my PhD
 project. After all, the proposed methods to detect data fabrication
 had not been tested widely nor validated and there was a clear
 opportunity for a valuable contribution. Rather quickly, our attention
@@ -272,21 +273,21 @@ detection of $p$-hacking. Chapter 4 focuses on the opposite of false
 positive results, namely false negative results. Here we argue that,
 based on the published statistically nonsignificant results in
 combination with typically small sample sizes, researchers are letting
-a lot of potential true effects slip off their radar if nonsignificant
+a lot of potential true effects slip under their radar if nonsignificant
 findings are interpreted as true zero effects. We introduce the
 adjusted Fisher method for testing the presence of non-zero true
 effects among a set of statistically nonsignificant results, and
 present three applications of this method. In Chapter 5 I report on a
-dataset containing over half a million statistical results extracted
+data set containing over half a million statistical results extracted
 with the tool `statcheck` from the psychology literature. This
 chapter, in the form of a data paper, explains the methodology
 underlying the data collection process, how the data can be
 downloaded, that there are no copyright restrictions on the data, and
-what the limitations of the data are. This dataset was documented and
+what the limitations of the data are. This data set was documented and
 shared for further research on understanding the reporting and
 reported results [original research using these data has already been
 conducted; @doi:10.1371/journal.pone.0182651]. Chapter 6 presents
-results on two studies where we tried to classify genuine- and
+results on two studies where we tried to classify genuine and
 fabricated data solely using statistical methods. In these two
 studies, we relied heavily on openly shared data from two Many Labs
 projects
@@ -305,7 +306,7 @@ images. We developed and tested software to this end, which is a
 promising way to mitigate the effect of rapidly decreasing odds of
 data retrieval as a paper gets older [@doi:10.1016/j.cub.2013.11.014].
 In Chapter 8 we present a conceptual redesign of the scholarly
-communication system based on piecemeal modules, focusing on how
+communication system based on modules, focusing on how
 networked scholarly communication might facilitate improved research
 and researcher evaluation. This conceptual redesign takes into account
 the issues of restricted access, researcher degrees of freedom,
@@ -336,30 +337,31 @@ additional information for each chapter. More specifically, it
 includes the copyright license (all can be freely reused and
 redistributed without permission), a direct link to the collection of
 materials underlying that chapter (if relevant), whether the chapter
-was shared as a preprint, and the associated peer-reviewed publication
+was shared as a preprint, and the associated peer reviewed publication
 (if any). If published, the chapters in this dissertation may be
 slightly different in word use or formatting, but contain
 substantively the same content. These are additional aspects to the
 chapters that attempt to improve the reproducibility of the chapters,
-in order to prevent the issues from my epistemological crises. A
+in order to prevent the issues causing my epistemological crises. A
 digital version of this dissertation is available under
 <https://phd.chjh.nl>.
 
 ```{r overview, echo = FALSE}
 df <- read.csv('assets/tables/ch1-table.csv')
+df[,1] <- df[,1] - 1 
 names(df)[2] <- 'Data package'
 
 if (!knitr::is_html_output()) {
      knitr::kable(df, format = 'latex',
       booktabs = TRUE,
-      caption = 'Chronologically ordered dissertation chapters, supplemented with identifiers data package, preprint, and peer-reviewed article.') %>%
-       landscape() %>%
+      caption = 'Chronologically ordered dissertation chapters, supplemented with identifiers data package, preprint, and peer reviewed article.') %>%
+       kableExtra::landscape() %>%
   kableExtra::kable_styling(
                 latex_options = c("striped"), position = "center")
 } else {
 knitr::kable(df,
       booktabs = TRUE,
-      caption = 'Chronologically ordered dissertation chapters, supplemented with identifiers data package, preprint, and peer-reviewed article.') %>%
+      caption = 'Chronologically ordered dissertation chapters, supplemented with identifiers data package, preprint, and peer reviewed article.') %>%
   kableExtra::kable_styling(
     bootstrap_options = c("striped", "hover", "condensed", "responsive", full_width = F))
       }

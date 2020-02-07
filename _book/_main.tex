@@ -167,6 +167,20 @@
 
 %% \begin{hangparas}{1cm}{1}
 %% \end{hangparas}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
 
 \begin{document}
 \maketitle
@@ -178,16 +192,16 @@
 \chapter*{Prologue}\label{prologue}
 \addcontentsline{toc}{chapter}{Prologue}
 
-The history- and practice of science is convoluted (Wootton
-\protect\hyperlink{ref-isbn:9781846142109}{2015}), but as a student it
-was taught to me in a relatively uncomplicated manner. Among the things
-I remember from my high school science classes are how to convert a
-metric distance into \index{Astronomical Units} (AUs) and that there was
-something called the research cycle (I always forgot the separate steps
-and their order, which will ironically be a crucial subject of this
-dissertation). Those classes presented things such as the AU and the
-empirical cycle as unambiguous truths. In hindsight, it is difficult to
-imagine these constructed ideas as historically unambiguous. For
+The history and practice of science is convoluted (Wootton
+\protect\hyperlink{ref-isbn:9781846142109}{2015}), but when I was a
+student it was taught to me in a relatively uncomplicated manner. Among
+the things I remember from my high school science classes are how to
+convert a metric distance into (Astronomical Units; AUs) and that there
+was something called the research cycle (I always forgot the separate
+steps and their order, which will ironically be a crucial subject of
+this dissertation). Those classes presented things such as the AU and
+the empirical cycle as unambiguous truths. In hindsight, it is difficult
+to imagine these constructed ideas as historically unambiguous. For
 example, I was taught the AU as simple arithmetic while that calculation
 implies accepting a historically complex process full of debate on how
 an AU should be defined (Standish
@@ -211,9 +225,9 @@ knowledge. Through this kind of teaching, storybook images of scientists
 and science might arise, often as the actors and process of discovering
 absolute truths rather than of uncertain and iterative production of
 coherent and consistent knowledge. Such storybook images likely result
-in substantively higher ratings for scientists than non-scientists with
-respect to objectivity, rationality, skepticism, rigor, and ethics, even
-after taking into account educational level (Veldkamp et al.
+in the impression that scientists versus non-scientists are more
+objective, rational, skeptical, rigorous, and ethical, even after taking
+into account educational level (Veldkamp et al.
 \protect\hyperlink{ref-doi:10.1080ux2f08989621.2016.1268922}{2016}).
 
 Scientific research articles tend to provide more details and less
@@ -270,8 +284,8 @@ research cycle provided a way to overcome human biases and provided
 grounds for the widespread belief that search for \enquote{the truth}
 was more important than individual gain.
 
-As I progressed throughout my science education, it became apparent how
-naive the storybook image of science and the scientist was through a
+As I progressed throughout my science education, it became clear to me
+how naive the storybook image of science and the scientist was through a
 series of events that undercut the very epistemological model that
 granted these qualities. As a result of these events, I had what I
 somewhat dramatically called two \enquote{personal crises of
@@ -282,7 +296,7 @@ research I was studying and conducting. Both these crises made me
 consider leaving scientific research and I am sure I was not alone in
 experiencing this sentiment.
 
-My first crisis of epistemological faith was when the psychology
+My first, local crisis of epistemological faith was when the psychology
 professor who got me interested in research publicly confessed to having
 fabricated data throughout his academic career (Stapel
 \protect\hyperlink{ref-isbn:9789044623123}{2012}). Having been inspired
@@ -292,27 +306,27 @@ abilities and asked whether I was critical enough to conduct and notice
 valid research. After all, I had not had even an inch of suspicion while
 working with him. Moreover, I wondered what to make of my interest in
 research, given that the person who got me inspired appeared to be such
-a bad example to model myself to. Ultimately, I considered it unlikely
-that the majority of researchers would be fraudsters like this professor
-and simply realized that research could fail at various stages (e.g.,
-data sharing, peer review). This event also unveiled to me the politics
-of science and how validity, rigor, and \enquote{truth} finding was not
-a given (see for example Broad and Wade
+a bad example to model myself after. This event also unveiled to me the
+politics of science and how validity, rigor, and \enquote{truth} finding
+was not a given (see for example Broad and Wade
 \protect\hyperlink{ref-isbn:9780671447694}{1983}). Regardless, the
 self-reported prevalence of fraudulent behaviors among scientists (viz.
 2\%; Fanelli
 \protect\hyperlink{ref-doi:10.1371ux2fjournal.pone.0005738}{2009}) was
 sufficiently low to not undermine the epistemological effort of the
-scientific collective (although it could still severely distort it). As
-a result, I became more skeptical of the certified stories in
-peer-reviewed journals and in my own and other's research. I ultimately
+scientific collective (although it could still severely distort it).
+Ultimately, I considered it unlikely that the majority of researchers
+would be fraudsters like this professor and simply realized that
+research could fail at various stages (e.g., data sharing, peer review).
+As a result, I became more skeptical of the certified stories in peer
+reviewed journals and in my own and other's research. I ultimately
 shifted my focus towards studying statistics to improve research.
 
-A second epistemological crisis arose when I took a class that indicated
-that scientists undermine the empirical research cycle at a large scale.
-These behaviors were sometimes intentional, sometimes unintentional, but
-often the result of misconceptions and ill procedures in order to play
-the game of getting published (Bakker, Dijk, and Wicherts
+A second, more encompassing epistemological crisis arose when I took a
+class that indicated that scientists undermine the empirical research
+cycle at a large scale. These behaviors were sometimes intentional,
+sometimes unintentional, but often the result of misconceptions and ill
+procedures in order to play the game of getting published (Bakker et al.
 \protect\hyperlink{ref-doi:10.1177ux2f1745691612459060}{2012}). More
 specifically, this epistemological crisis originated from learning about
 how loose application of statistical procedures could produce
@@ -325,7 +339,7 @@ through the invisible (and often unaccountable) hand of peer review
 (Harnad \protect\hyperlink{ref-cogprints1646}{2000}) that in itself
 suffers from various misconceptions. This combination potentially leads
 to a vicious cycle of overestimated (and sometimes false positive)
-effects leading to underpowered research that is selectively published
+effects, leading to underpowered research that is selectively published,
 leading to overestimated effects and underpowered research, and so on
 until that cycle gets disrupted. These issues are not necessarily new
 and have been discussed for over 40 years in some way or form (Sedlmeier
@@ -348,8 +362,8 @@ remained insufficient (although the historical context is highly
 relevant, see Spellman
 \protect\hyperlink{ref-doi:10.1177ux2f1745691615609918}{2015}). Because
 of the failed attempts in the past and the awareness of these issues
-throughout the last six years or so, my epistemological crisis is
-ongoing and oscillates between frustration and hope for improvement.
+throughout the last six years or so, my epistemological worries are
+ongoing and oscillate between pessimism and optimism for improvement.
 
 Nonetheless, these two epistemological crises caused me to become
 increasingly engaged with various initiatives and research domains to
@@ -365,17 +379,17 @@ The Open Science Framework had launched only recently (Spies
 where I started to document my work openly. I found it scary, difficult,
 and did not know where to start simply because I had never been taught
 to do science this way nor did anyone really know how. It led me to
-experiment with these new tools and processes, find out the
-practicalities of actually making my own work open, and have continued
-to do so ever since. It made my work in a more reproducible, open manner
-and also led me to become engaged in what are often called the Open
-Access and Open Science movements. Both these movements aim to make
+experiment with these new tools and processes to find out the
+practicalities of actually making my own work open, and I have continued
+to do so ever since. It made me work in a more reproducible, open
+manner, and also led me to become engaged in what are often called the
+Open Access and Open Science movements. Both these movements aim to make
 knowledge available to all in various ways, going beyond dumping
 excessive amounts of information but also making it comprehensible by
 providing clear documentation to for example data. Not only are the
 communities behind these movements supportive in educating each other in
 open practices, they also activated me to help others see the value of
-Open Science and how to implement it (it all started with Hartgerink
+Open Science and how to implement it (my first steps taken in Hartgerink
 \protect\hyperlink{ref-doi:10.6084ux2fm9.figshare.928315.v2}{2014}).
 Through this, activism within the realm of science became part of my
 daily scientific practice.
@@ -383,7 +397,7 @@ daily scientific practice.
 Actively improving science through doing research became the main
 motivation for me to pursue a PhD project. Initially, we set out to
 focus purely on statistical detection of data fabrication (linking back
-to the first epistemological crisis) within the PhD project. After all,
+to my first epistemological crisis) within my PhD project. After all,
 the proposed methods to detect data fabrication had not been tested
 widely nor validated and there was a clear opportunity for a valuable
 contribution. Rather quickly, our attention widened towards a broader
@@ -425,22 +439,22 @@ detection of \(p\)-hacking. Chapter 4 focuses on the opposite of false
 positive results, namely false negative results. Here we argue that,
 based on the published statistically nonsignificant results in
 combination with typically small sample sizes, researchers are letting a
-lot of potential true effects slip off their radar if nonsignificant
+lot of potential true effects slip under their radar if nonsignificant
 findings are interpreted as true zero effects. We introduce the adjusted
 Fisher method for testing the presence of non-zero true effects among a
 set of statistically nonsignificant results, and present three
-applications of this method. In Chapter 5 I report on a dataset
+applications of this method. In Chapter 5 I report on a data set
 containing over half a million statistical results extracted with the
 tool \texttt{statcheck} from the psychology literature. This chapter, in
 the form of a data paper, explains the methodology underlying the data
 collection process, how the data can be downloaded, that there are no
 copyright restrictions on the data, and what the limitations of the data
-are. This dataset was documented and shared for further research on
+are. This data set was documented and shared for further research on
 understanding the reporting and reported results (original research
 using these data has already been conducted; Aczel, Palfi, and Szaszi
 \protect\hyperlink{ref-doi:10.1371ux2fjournal.pone.0182651}{2017}).
 Chapter 6 presents results on two studies where we tried to classify
-genuine- and fabricated data solely using statistical methods. In these
+genuine and fabricated data solely using statistical methods. In these
 two studies, we relied heavily on openly shared data from two Many Labs
 projects (R. A. Klein et al.
 \protect\hyperlink{ref-doi:10.1027ux2f1864-9335ux2fa000178}{2014};
@@ -460,8 +474,8 @@ this end, which is a promising way to mitigate the effect of rapidly
 decreasing odds of data retrieval as a paper gets older (Vines et al.
 \protect\hyperlink{ref-doi:10.1016ux2fj.cub.2013.11.014}{2014}). In
 Chapter 8 we present a conceptual redesign of the scholarly
-communication system based on piecemeal modules, focusing on how
-networked scholarly communication might facilitate improved research and
+communication system based on modules, focusing on how networked
+scholarly communication might facilitate improved research and
 researcher evaluation. This conceptual redesign takes into account the
 issues of restricted access, researcher degrees of freedom, publication
 biases, perverse incentives for researchers, and other human biases in
@@ -492,36 +506,36 @@ information for each chapter. More specifically, it includes the
 copyright license (all can be freely reused and redistributed without
 permission), a direct link to the collection of materials underlying
 that chapter (if relevant), whether the chapter was shared as a
-preprint, and the associated peer-reviewed publication (if any). If
+preprint, and the associated peer reviewed publication (if any). If
 published, the chapters in this dissertation may be slightly different
 in word use or formatting, but contain substantively the same content.
 These are additional aspects to the chapters that attempt to improve the
-reproducibility of the chapters, in order to prevent the issues from my
-epistemological crises. A digital version of this dissertation is
+reproducibility of the chapters, in order to prevent the issues causing
+my epistemological crises. A digital version of this dissertation is
 available under \url{https://phd.chjh.nl}.
 
 \begin{landscape}\begin{table}[t]
 
-\caption{\label{tab:overview}Chronologically ordered dissertation chapters, supplemented with identifiers data package, preprint, and peer-reviewed article.}
+\caption{\label{tab:overview}Chronologically ordered dissertation chapters, supplemented with identifiers data package, preprint, and peer reviewed article.}
 \centering
 \begin{tabular}{rlll}
 \toprule
 Chapter & Data package & Preprint & Article\\
 \midrule
-\rowcolor{gray!6}  4 & https://osf.io/4d2g9/ & http://doi.org/c9tf & http://doi.org/c9s7\\
-2 &  &  & http://doi.org/c9s5\\
-\rowcolor{gray!6}  6 & http://doi.org/c9th & http://doi.org/c9td & http://doi.org/c9s6\\
-3 & http://doi.org/c9tj & http://doi.org/c9tc & http://doi.org/c9s8\\
-\rowcolor{gray!6}  5 & http://doi.org/c9tk & http://doi.org/c9tg & http://doi.org/gfrjj3\\
+\rowcolor{gray!6}  3 & https://osf.io/4d2g9/ & http://doi.org/c9tf & http://doi.org/c9s7\\
+1 &  &  & http://doi.org/c9s5\\
+\rowcolor{gray!6}  5 & http://doi.org/c9th & http://doi.org/c9td & http://doi.org/c9s6\\
+2 & http://doi.org/c9tj & http://doi.org/c9tc & http://doi.org/c9s8\\
+\rowcolor{gray!6}  4 & http://doi.org/c9tk & http://doi.org/c9tg & http://doi.org/gfrjj3\\
 \addlinespace
-8 & http://doi.org/c9tm & https://arxiv.org/abs/1709.02261 & \\
-\rowcolor{gray!6}  9 &  & http://doi.org/c9tb & http://doi.org/c9s9\\
-1 &  &  & \\
-\rowcolor{gray!6}  7 & http://doi.org/c9tn & http://doi.org/c9tq & \\
-10 & http://doi.org/c9tp &  & http://doi.org/gf4hpr\\
+7 & http://doi.org/c9tm & https://arxiv.org/abs/1709.02261 & \\
+\rowcolor{gray!6}  8 &  & http://doi.org/c9tb & http://doi.org/c9s9\\
+0 &  &  & \\
+\rowcolor{gray!6}  6 & http://doi.org/c9tn & http://doi.org/c9tq & \\
+9 & http://doi.org/c9tp &  & http://doi.org/gf4hpr\\
 \addlinespace
-\rowcolor{gray!6}  11 &  &  & \\
-12 &  &  & \\
+\rowcolor{gray!6}  10 &  &  & \\
+11 &  &  & \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -650,11 +664,11 @@ less. A survey of 3,247 researchers by Anderson, Martinson, and De Vries
 (\protect\hyperlink{ref-doi:10.1525ux2fjer.2007.2.4.3}{2007}) indicated
 that researchers subscribed to the norms more than they actually behaved
 in accordance to these norms. For instance, a researcher may be
-committed to sharing his or her data (the norm of communality), but
-might shy away from actually sharing data at an early stage out of a
-fear that of being scooped by other researchers. This result aligns with
-surveys showing that many researchers express a willingness to share
-data, but often fail to do so when asked (Krawczyk and Reuben
+committed to sharing their data (the norm of communality), but might shy
+away from actually sharing data at an early stage out of a fear of being
+scooped by other researchers. This result aligns with surveys showing
+that many researchers express a willingness to share data, but often
+fail to do so when asked (Krawczyk and Reuben
 \protect\hyperlink{ref-doi:10.1080ux2f08989621.2012.678688}{2012};
 Savage and Vickers
 \protect\hyperlink{ref-doi:10.1371ux2fjournal.pone.0007078}{2009}).
@@ -694,7 +708,7 @@ recognizing ethical problems in a way that participants deemed both
 effective and enjoyable (Peiffer, Hugenschmidt, and Laurienti
 \protect\hyperlink{ref-doi:10.1007ux2fs11948-010-9197-3}{2011}). Such
 forms of active education are fruitful because they teach researchers
-practical skills that can change their research conduct and improves
+practical skills that can change their research conduct and improve
 prospective decision making, where a researcher rapidly assesses the
 potential outcomes and ethical implications of the decision at hand,
 instead of in hindsight (Whitebeck
@@ -730,7 +744,7 @@ results in a failure to adhere to professional standards. Openness
 regarding the choices made (e.g., on how to analyze the data) during the
 research process will promote active discussion of prospective ethics,
 increasing self-reflective capacities of both the individual researcher
-and the collective evaluation of the research (e.g., peer-reviewers).
+and the collective evaluation of the research (e.g., peer reviewers).
 
 In the remainder of this section we outline a type of project
 management, founded on transparency, which seems apt to be the new
@@ -881,7 +895,7 @@ and politicians initiate new forms of oversight.
 
 Suppose a researcher fails to find the (a priori) hypothesized effect,
 subsequently decides to inspect the effect for each gender, and finds an
-effect only for females. Such an ad hoc exploration of the data is
+effect only for women. Such an ad hoc exploration of the data is
 perfectly fine if it were presented as an exploration (Wigboldus and
 Dotsch \protect\hyperlink{ref-doi:10.1007ux2fs11336-015-9445-1}{2015}).
 However, if the subsequent publication only mentions the effect for
@@ -891,8 +905,8 @@ testing (three hypotheses rather than one were tested) and the result is
 clearly not as convincing as one that would have been hypothesized a
 priori.
 
-These biases occur in part because researchers, editors, and
-peer-reviewers are biased to believe that statistical significance has a
+These biases occur in part because researchers, editors, and peer
+reviewers are biased to believe that statistical significance has a
 bearing on the probability of a hypothesis being true. Such
 misinterpretation of the \(p\)-value is not uncommon (Cohen
 \protect\hyperlink{ref-doi:10.1037ux2f0003-066X.49.12.997}{1994}). The
@@ -978,7 +992,7 @@ bias. Eliminating publication bias would make the research system an
 estimated 30 times more efficient (Van Assen et al.
 \protect\hyperlink{ref-doi:10.1371ux2fjournal.pone.0084896}{2014}).
 Considering that unpublished research is not indexed in the familiar
-peer-reviewed databases, infrastructures to search through repositories
+peer reviewed databases, infrastructures to search through repositories
 similar to the OSF are needed. One such infrastructure is being built by
 the Center for Open Science (SHARE;
 \href{https://osf.io/share}{osf.io/share}), which searches through
@@ -996,7 +1010,7 @@ falsification, and plagiarism (FFP). However, it does not include
 Technology Policy \protect\hyperlink{ref-ostp2000}{2000}; Resnik and
 Stewart
 \protect\hyperlink{ref-doi:10.1080ux2f08989621.2012.650948}{2012}).
-Fabrication is the making up of datasets entirely. Falsification is the
+Fabrication is the making up of data sets entirely. Falsification is the
 adjustment of a set of data points to ensure the wanted results.
 Plagiarism is the direct reproduction of other's creative work without
 properly attributing it. These behaviors are condemned by many
@@ -1245,7 +1259,7 @@ therefore should invest in verification of results, which improves
 earlier detection of problems even if these problems are the result of
 mere sloppiness or honest error. Even though it is not feasible for all
 authors to verify all results, ideally results should be verified by at
-least one co-author. As mentioned earlier, peer-review does not weed out
+least one co-author. As mentioned earlier, peer review does not weed out
 all major problems (Bornmann, Nast, and Daniel
 \protect\hyperlink{ref-doi:10.1007ux2fs11192-007-1950-2}{2008}) and
 should not be trusted blindly.
@@ -1293,9 +1307,9 @@ issued (Bornemann-Cimenti, Szilagyi, and Sandner-Kiesling
 and Snodgrass
 \protect\hyperlink{ref-doi:10.1001ux2fjama.1990.03440100140020}{1990}).
 Additionally, retractions might be issued following a misconduct
-investigation, but not completed by journals, that the original content
-is simply deleted, or that legal threats resulted in not retracting the
-work (Elia, Wager, and Tramèr
+investigation, resulting in no action taken by journals, the original
+content simply being deleted wholesale, or subsequent legal threats if
+the work would be retracted (Elia, Wager, and Tramèr
 \protect\hyperlink{ref-doi:10.1371ux2fjournal.pone.0085846}{2014}). If
 retractions do not occur even though they have been issued, their
 negative effect, for instance decreased author citations (Lu et al.
@@ -1400,7 +1414,7 @@ of \(p\)-hacking. The robustness of this conclusion is inspected in
 three steps: (i) explaining the data and data analysis strategies
 (original and reanalysis), (ii) reevaluating the evidence for a bump
 below .05 (i.e., the sufficient condition) based on the reanalysis, and
-(iii) discussing whether this means that there is no widespread
+(iii) discussing whether this means that there is widespread
 \(p\)-hacking in the literature.
 
 \section{Data and methods}\label{data-and-methods}
@@ -1454,7 +1468,7 @@ regard \(p=0.05\) as significant} (p.4).
 
 }
 
-\caption{Histograms of p-values as selected in Head et al. (in green; $.04 < p < .045$ versus $.045 < p < .05$), the significant $p$-value distribution as selected in Head et al. (in grey; $0<p\leq.00125$, $.00125<p\leq.0025$, ..., $.0475<p\leq.04875$, $.04875<p<.05$, binwidth = .00125). The green and grey histograms exclude $p=.045$ and $p=.05$; the black histogram shows the frequencies of results that are omitted because of this ($.04375<p\leq.045$ and $.04875<p\leq.05$, binwidth = .00125).}\label{fig:head-hist}
+\caption{Histograms of $p$-values as selected in Head et al. (in green; $.04 < p < .045$ versus $.045 < p < .05$), the significant $p$-value distribution as selected in Head et al. (in grey; $0<p\leq.00125$, $.00125<p\leq.0025$, ..., $.0475<p\leq.04875$, $.04875<p<.05$, binwidth = .00125). The green and grey histograms exclude $p=.045$ and $p=.05$; the black histogram shows the frequencies of results that are omitted because of this ($.04375<p\leq.045$ and $.04875<p\leq.05$, binwidth = .00125).}\label{fig:head-hist}
 \end{figure}
 
 Figure \ref{fig:head-hist} shows the selection of \(p\)-values in Head
@@ -1667,7 +1681,7 @@ Bishop and Thompson
 \protect\hyperlink{ref-doi:10.7717ux2fpeerj.1715}{2016}).
 
 Second-decimal reporting tendencies of \(p\)-values should be taken into
-consideration when selecting bins for inspection because this dataset
+consideration when selecting bins for inspection because this data set
 does not allow for the elimination of such reporting tendencies. Its
 substantive consequences are clearly depicted in the results of the
 reanalysis and Figure \ref{fig:head-hist} illustrates how the
@@ -1734,9 +1748,10 @@ which found evidence for a bump below .05 (Masicampo and Lalande
 \protect\hyperlink{ref-doi:10.1080ux2f17470218.2012.711335}{2012}),
 yielded no evidence for a bump below .05 (Lakens
 \protect\hyperlink{ref-doi:10.1080ux2f17470218.2014.982664}{2015}\protect\hyperlink{ref-doi:10.1080ux2f17470218.2014.982664}{a});
-two new datasets also did not reveal a bump below .05 (Hartgerink et al.
-\protect\hyperlink{ref-doi:10.7717ux2fpeerj.1935}{2016}; Vermeulen et
-al. \protect\hyperlink{ref-doi:10.1080ux2f19312458.2015.1096333}{2015}).
+two new data sets also did not reveal a bump below .05 (Hartgerink et
+al. \protect\hyperlink{ref-doi:10.7717ux2fpeerj.1935}{2016}; Vermeulen
+et al.
+\protect\hyperlink{ref-doi:10.1080ux2f19312458.2015.1096333}{2015}).
 Consequently, findings that claim there is a bump below .05 need to be
 robust. In this chapter, I explained why a different data analysis
 approach to the data of Head et al.
@@ -1755,15 +1770,15 @@ evidence for widespread left-skew \(p\)-hacking is ambiguous at best.
 S1 File. Full reanalysis results per discipline:
 \url{https://doi.org/10.7717/peerj.3068/supp-1}.
 
-\chapter{Distributions of p-values between .01-.05 in psychology: what
-is going
-on?}\label{distributions-of-p-values-between-.01-.05-in-psychology-what-is-going-on}
+\chapter{\texorpdfstring{Distributions of \(p\)-values between .01-.05
+in psychology: What is going
+on?}{Distributions of p-values between .01-.05 in psychology: What is going on?}}\label{distributions-of-p-values-between-.01-.05-in-psychology-what-is-going-on}
 
 A set of \(p\)-values can be informative of the underlying effects that
 are investigated, but can also be indicative of potential research
 biases or questionable research practices (QRPs). In the absence of
 QRPs, the distribution of significant \(p\)-values can be expected to
-have a certain shape. Under the null-hypothesis all \(p\)-values are
+have a certain shape. Under the null hypothesis all \(p\)-values are
 equally probable (i.e., follow a uniform distribution). If there is
 truly an effect, smaller \(p\)-values are more likely than larger
 \(p\)-values (i.e., the distribution decreases monotonically in the
@@ -1788,7 +1803,7 @@ seen from comparing the \enquote{true} and \enquote{data-peeked}
 of studies with standardized effect size \(d=0\), shows a \enquote{bump}
 in the distribution. A bump corresponds to that part of the \(p\)-value
 distribution that makes it no longer monotonically decreasing. Panel B
-also shows a bump for data peeking of studies with \(d=0\). However,
+also shows a bump for data peeking of studies with \(d=0.2\). However,
 Panel C shows no bump but merely monotonic excess, i.e.~an increase in
 the frequency of \(p\)-values below .05 in the absence of a bump.
 Consequently, data peeking may either lead to monotonic excess or a bump
@@ -1957,9 +1972,9 @@ studies}\label{extensions-of-previous-studies}
 In answering our research questions, we extend previous studies on four
 dimensions. First, we eliminate the distortive effects of publication
 bias on the \(p\)-value distribution by inspecting only statistically
-significant results. Second, we use a large dataset on \(p\)-values from
-entire articles instead of only \(p\)-values from abstracts (as in Jager
-and Leek
+significant results. Second, we use a large data set on \(p\)-values
+from entire articles instead of only \(p\)-values from abstracts (as in
+Jager and Leek
 \protect\hyperlink{ref-doi:10.1093ux2fbiostatisticsux2fkxt007}{2013}; De
 Winter and Dodou
 \protect\hyperlink{ref-doi:10.7717ux2fpeerj.733}{2015}). Third, we
@@ -2180,11 +2195,11 @@ in Nuijten, Hartgerink, et al.
 
 From the 30,710 downloaded papers, \texttt{statcheck} extracted 258,105
 test results. We removed 55 results, because these were impossible test
-results (i.e., \(F(0,55)=...\) or \(r>1\)). The final dataset thus
+results (i.e., \(F(0,55)=...\) or \(r>1\)). The final data set thus
 included 258,050 test results. The extracted test results can have four
 different formats, where test results or \(p\)-values are reported
 either exactly (e.g., \(p=.042\)) or inexactly (e.g., \(p<.05\)). Table
-\ref{tab:2x2} shows the composition of the dataset, when split across
+\ref{tab:2x2} shows the composition of the data set, when split across
 these (in)exactly reported \(p\)-values and (in)exactly reported test
 results.
 
@@ -2204,7 +2219,7 @@ Inexact $p$-value & 187,617 & 1,383 & \textit{189,000 (73\%)}\\
 \end{tabular}}
 \end{table}
 
-From this dataset, we selected six subsets throughout our analyses to
+From this data set, we selected six subsets throughout our analyses to
 investigate our research questions regarding a bump below .05. We
 analyzed (i) all reported \(p\)-values (\(N=258,050\)) for a bump in
 their distribution just below .05. Subsequently we analyzed (ii) only
@@ -2261,7 +2276,7 @@ respectively, then \(Pr=.6\) and the binomial test results in
 \(p\)-value = .0284, suggesting evidence for a bump below .05. We
 applied the Caliper test to the reported \(p\)-values (subsets one
 through three as described in the previous section) and recalculated
-\(p\)-values (subsets four and five), both for the entire dataset and
+\(p\)-values (subsets four and five), both for the entire data set and
 each of the eight psychology journals.
 
 The Caliper test requires specifying the width of the intervals that are
@@ -2291,7 +2306,7 @@ distribution as the binwidth increases.
 To verify if evidence for a bump of \(p\)-values increased over time, we
 fitted a linear trend to proportion \(Pr\) of the Caliper test with
 binwidths .00125, .0025, .005, and .01. We computed these proportions
-for each year separately, for both the total dataset and per journal.
+for each year separately, for both the total data set and per journal.
 Time was centered at the start of data collection, which was 1985 except
 for PLOS (2000), PS (2006; due to 0 \(p\)-values in the considered
 interval for preceding years), and FP (2010). The value .5 was
@@ -2326,8 +2341,8 @@ assuming that none or a very small proportion of these \(p\)-values were
 affected by data-peeking. We note that we selected the .00125 cut-off
 point rather arbitrarily. Other, more liberal (e.g., .01, in case of a
 smaller set of statistically significant \(p\)-values) or even more
-conservative cut-off points (e.g., .0001, in case of a very large
-dataset as ours) can be selected.
+conservative cut-off points (e.g., .0001, in case of a very large data
+set as ours) can be selected.
 
 We examined the performance of two measures to detect a bump or
 monotonic excess of \(p\)-values below .05. The first method compares
@@ -2460,7 +2475,7 @@ examining \(p\)-value distributions.
 
 \begin{landscape}\begin{table}[t]
 
-\caption{\label{tab:report}Caliper test for exactly reported p-values per journal for different binwidths.}
+\caption{\label{tab:report}Caliper test for exactly reported $p$-values per journal for different binwidths.}
 \centering
 \resizebox{\linewidth}{!}{
 \begin{tabular}{lllllllllllllllll}
@@ -2509,7 +2524,7 @@ Hartgerink, et al.
 \protect\hyperlink{ref-doi:10.3758ux2fs13428-015-0664-2}{2015}; Veldkamp
 et al.
 \protect\hyperlink{ref-doi:10.1371ux2fjournal.pone.0114876}{2014}).
-Rounding and errors could result in an over-representation of
+Rounding and errors could result in an overrepresentation of
 \(p\)-values \(\leq.05\). To investigate the plausibility of this
 notion, we inspected recalculated \(p\)-values when \(p=.05\) was
 reported (i.e., 2,470 values). Figure \ref{fig:bump-fig3} indicates that
@@ -2612,7 +2627,7 @@ statistics if the \(p\)-value is just below .05 than whenever
 
 \begin{landscape}\begin{table}[t]
 
-\caption{\label{tab:recalculated1}Caliper test for exactly recalculated p-values per journal for different binwidths.}
+\caption{\label{tab:recalculated1}Caliper test for exactly recalculated $p$-values per journal for different binwidths.}
 \centering
 \resizebox{\linewidth}{!}{
 \begin{tabular}{lllrrllrrllrrllrl}
@@ -2638,7 +2653,7 @@ PLOS & 125 & 260 & 0.481 & 0.752 & 260 & 541 & 0.481 & 0.828 & 541 & 1,170 & 0.4
 
 \begin{landscape}\begin{table}[t]
 
-\caption{\label{tab:recalculated2}Caliper tests for exactly recalculated and exactly reported p-values per journal, including alternative binwidths.}
+\caption{\label{tab:recalculated2}Caliper tests for exactly recalculated and exactly reported $p$-values per journal, including alternative binwidths.}
 \centering
 \resizebox{\linewidth}{!}{
 \begin{tabular}{lllllllllllrrllrl}
@@ -2940,9 +2955,9 @@ statistics other than \(p\)-values were accurately reported. If test
 statistics and degrees of freedom are incorrectly reported, recalculated
 \(p\)-values are wrong as well. We identified some erroneous test
 statistics (e.g., \(df_1=0\) and \(r>1\)), but do not know how often
-errors in reported test statistics and df occur and how these errors may
-have affected our results. We assumed that \(p\)-value errors were made
-due to the overemphasis on them in current day research.
+errors in reported test statistics and \(df\) occur and how these errors
+may have affected our results. We assumed that \(p\)-value errors were
+made due to the overemphasis on them in current day research.
 
 In light of conflicting findings and interpretations, we aimed to
 provide final answers to the questions (1) Does a bump or monotonic
@@ -3074,16 +3089,17 @@ Assen \protect\hyperlink{ref-doi:10.1177ux2f1745691616650874}{2016}).
 \chapter{Too good to be false: Nonsignificant results
 revisited}\label{too-good-to-be-false-nonsignificant-results-revisited}
 
-Popper (\protect\hyperlink{ref-isbn:9780415278430}{2002}) falsifiability
-serves as one of the main demarcating criteria in the social sciences,
-which stipulates that a hypothesis is required to have the possibility
-of being proven false to be considered scientific. Within the
-theoretical framework of scientific hypothesis testing, accepting or
-rejecting a hypothesis is unequivocal, because the hypothesis is either
-true or false. Statistical hypothesis testing, on the other hand, is a
-probabilistic operationalization of scientific hypothesis testing (Meehl
+According to Popper (\protect\hyperlink{ref-isbn:9780415278430}{2002})
+falsifiability serves as one of the main demarcating criteria in the
+social sciences, which stipulates that a hypothesis is required to have
+the possibility of being proven false to be considered scientific.
+Within the theoretical framework of scientific hypothesis testing,
+accepting or rejecting a hypothesis is unequivocal, because the
+hypothesis is either true or false. Statistical hypothesis testing, on
+the other hand, is a probabilistic operationalization of scientific
+hypothesis testing (Meehl
 \protect\hyperlink{ref-doi:10.1016ux2fj.appsy.2004.02.001}{2004}) and,
-in lieu of its probabilistic nature, is subject to decision errors. Such
+in view of its probabilistic nature, is subject to decision errors. Such
 decision errors are the topic of this chapter.
 
 Null Hypothesis Significance Testing (NHST) is the most prevalent
@@ -3106,20 +3122,20 @@ data. When there is discordance between the true- and decided
 hypothesis, a decision error is made. More specifically, when \(H_0\) is
 true in the population, but \(H_1\) is accepted (\('H_1'\)), a Type I
 error is made (\(\alpha\)); a false positive (lower left cell). When
-\(H_1\) is true in the population and \(H_0\) is accepted (\('H_0'\)), a
-Type II error is made (\(\beta\)); a false negative (upper right cell).
-However, when the null hypothesis is true in the population and \(H_0\)
-is accepted (\('H_0'\)), this is a true negative (upper left cell;
-\(1-\alpha\)). The true negative rate is also called specificity of the
-test. Conversely, when the alternative hypothesis is true in the
-population and \(H_1\) is accepted (\('H_1'\)), this is a true positive
-(lower right cell). The probability of finding a statistically
-significant result if \(H_1\) is true is the power (\(1-\beta\)), which
-is also called the sensitivity of the test. Power is a positive function
-of the (true) population effect size, the sample size, and the alpha of
-the study, such that higher power can always be achieved by altering
-either the sample size or the alpha level (Aberson
-\protect\hyperlink{ref-Aberson2010-xa}{2010}).
+\(H_1\) is true in the population and \(H_0\) is not rejected
+(\('H_0'\)), a Type II error is made (\(\beta\)); a false negative
+(upper right cell). However, when the null hypothesis is true in the
+population and \(H_0\) is not rejected (\('H_0'\)), this is a true
+negative (upper left cell; \(1-\alpha\)). The true negative rate is also
+called specificity of the test. Conversely, when the alternative
+hypothesis is true in the population and \(H_1\) is accepted
+(\('H_1'\)), this is a true positive (lower right cell). The probability
+of finding a statistically significant result if \(H_1\) is true is the
+power (\(1-\beta\)), which is also called the sensitivity of the test.
+Power is a positive function of the (true) population effect size, the
+sample size, and the alpha of the study, such that higher power can
+always be achieved by altering either the sample size or the alpha level
+(Aberson \protect\hyperlink{ref-Aberson2010-xa}{2010}).
 
 \begin{table}[!h]
 
@@ -3143,11 +3159,11 @@ misinterpretations (Goodman
 \protect\hyperlink{ref-doi:10.1053ux2fj.seminhematol.2008.04.003}{2008};
 Bakan \protect\hyperlink{ref-doi:10.1037ux2fh0020412}{1966}). The most
 serious mistake relevant to our chapter is that many researchers accept
-the null-hypothesis and claim no effect in case of a statistically
+the null hypothesis and claim no effect in case of a statistically
 nonsignificant effect (about 60\%, see Hoekstra et al.
 \protect\hyperlink{ref-doi:10.3758ux2fbf03213921}{2006}). Hence, most
 researchers overlook that the outcome of hypothesis testing is
-probabilistic (if the null-hypothesis is true, or the alternative
+probabilistic (if the null hypothesis is true, or the alternative
 hypothesis is true and power is less than 1) and interpret outcomes of
 hypothesis testing as reflecting the absolute truth. At least partly
 because of mistakes like this, many researchers ignore the possibility
@@ -3196,7 +3212,7 @@ Gigerenzer
 \protect\hyperlink{ref-doi:10.1037ux2f0033-2909.105.2.309}{1989};
 Marszalek et al.
 \protect\hyperlink{ref-doi:10.2466ux2f03.11.pms.112.2.331-348}{2011};
-Bakker, Dijk, and Wicherts
+Bakker et al.
 \protect\hyperlink{ref-doi:10.1177ux2f1745691612459060}{2012}).
 Consequently, publications have become biased by overrepresenting
 statistically significant results (Greenwald
@@ -3212,10 +3228,10 @@ et al. \protect\hyperlink{ref-isbn:9781119964377}{2011}). The
 overemphasis on statistically significant effects has been accompanied
 by questionable research practices (QRPs; John, Loewenstein, and Prelec
 \protect\hyperlink{ref-doi:10.1177ux2f0956797611430953}{2012}) such as
-erroneously rounding p-values towards significance, which for example
-occurred for 13.8\% of all \(p\)-values reported as \enquote{\(p =.05\)}
-in articles from eight major psychology journals in the period 1985-2013
-(Hartgerink et al.
+erroneously rounding \(p\)-values towards significance, which for
+example occurred for 13.8\% of all \(p\)-values reported as
+\enquote{\(p =.05\)} in articles from eight major psychology journals in
+the period 1985-2013 (Hartgerink et al.
 \protect\hyperlink{ref-doi:10.7717ux2fpeerj.1935}{2016}).
 
 The concern for false positives has overshadowed the concern for false
@@ -3225,16 +3241,15 @@ indicate that psychological science was (severely) underpowered, which
 is defined as the chance of finding a statistically significant effect
 in the sample being lower than 50\% when there is truly an effect in the
 population. This has not changed throughout the subsequent fifty years
-(Bakker, Dijk, and Wicherts
+(Bakker et al.
 \protect\hyperlink{ref-doi:10.1177ux2f1745691612459060}{2012}; Fraley
 and Vazire
 \protect\hyperlink{ref-doi:10.1371ux2fjournal.pone.0109019}{2014}).
 Given that the complement of true positives (i.e., power) are false
 negatives, no evidence either exists that the problem of false negatives
 has been resolved in psychology. Moreover, Fiedler, Kutzner, and Krueger
-(Fiedler, Kutzner, and Krueger
-\protect\hyperlink{ref-doi:10.1177ux2f1745691612462587}{2012}) expressed
-the concern that an increased focus on false positives is too
+(\protect\hyperlink{ref-doi:10.1177ux2f1745691612462587}{2012})
+expressed the concern that an increased focus on false positives is too
 shortsighted because false negatives are more difficult to detect than
 false positives. They also argued that, because of the focus on
 statistically significant results, negative results are less likely to
@@ -3247,7 +3262,10 @@ been a major point of discussion in recent years, whereas the Negative
 Predictive Value (NPV) has rarely been mentioned.
 
 The research objective of the current chapter is to examine evidence for
-false negative results in the psychology literature. To this end, we
+false negative results in the psychology literature. This chapter
+operates under the premise of naive realism about the interpretation of
+statistically nonsignificant results, where naive realism would result
+in neglecting the probabilistic nature of these results. To this end, we
 inspected a large number of nonsignificant results from eight flagship
 psychology journals. First, we compared the observed effect
 distributions of nonsignificant results for eight journals (combined and
@@ -3304,7 +3322,7 @@ primarily examine nonsignificant \(p\)-values and their distribution.
 Since the test we apply is based on nonselected \(p\)-values, it
 requires random variables distributed between 0 and 1. We apply the
 following transformation to each nonsignificant \(p\)-value that is
-selected
+selected:
 
 \begin{equation}
 p^*_i=\frac{p_i-\alpha}{1-\alpha}
@@ -3359,7 +3377,7 @@ simulation study (33, 62, 119) correspond to the 25th, 50th (median) and
 \(r\) statistics in eight flagship psychology journals (see Application
 1 below). Degrees of freedom of these statistics are directly related to
 sample size, for instance, for a two-group comparison including 100
-people, df = 98.
+people, \(df=98\).
 
 Table \ref{tab:tgtbf-tab2} summarizes the results for the simulations of
 the Fisher test when the nonsignificant \(p\)-values are generated by
@@ -3472,7 +3490,7 @@ However, our recalculated \(p\)-values assumed that all other test
 statistics (degrees of freedom, test values of \(t\), \(F\), or \(r\))
 are correctly reported. These errors may have affected the results of
 our analyses. Since most \(p\)-values and corresponding test statistics
-were consistent in our dataset (90.7\%), we do not believe these typing
+were consistent in our data set (90.7\%), we do not believe these typing
 errors substantially affected our results and conclusions based on them.
 
 \begin{landscape}\begin{table}[t]
@@ -3513,7 +3531,7 @@ procedure was repeated 163,785 times, which is three times the number of
 observed nonsignificant test results (54,595). The collection of
 simulated results approximates the expected effect size distribution
 under \(H_0\), assuming independence of test results in the same paper.
-We inspected this possible dependency with the intra-class correlation
+We inspected this possible dependency with the intraclass correlation
 (\(ICC\)), where \(ICC=1\) indicates full dependency and \(ICC=0\)
 indicates full independence. For the set of observed results, the ICC
 for nonsignificant \(p\)-values was 0.001, indicating independence of
@@ -3554,8 +3572,8 @@ that the majority of effects reported in psychology is medium or smaller
 (i.e., 30\%), which is somewhat in line with a previous study on effect
 distributions (Gignac and Szodorai
 \protect\hyperlink{ref-doi:10.1016ux2fj.paid.2016.06.069}{2016}). Of the
-full set of 223,082 test results, 54,595 (24.5\%) were nonsiginificant,
-which is the dataset for our main analyses.
+full set of 223,082 test results, 54,595 (24.5\%) were nonsignificant,
+which is the data set for our main analyses.
 
 \begin{figure}[h]
 
@@ -3563,10 +3581,10 @@ which is the dataset for our main analyses.
 
 }
 
-\caption{Density of observed effect sizes of results reported in eight psychology journals, with 7 percent of effects in the category none-small, 23 percent small-medium, 27 percent medium-large, and 42 percent beyond large.}\label{fig:tgtbf-fig1}
+\caption{Density of observed effect sizes of results reported in eight psychology journals, with 7 percent of effects in the category none-small, 23 percent small-medium, 27 percent medium-large, and 42 percent large and beyond.}\label{fig:tgtbf-fig1}
 \end{figure}
 
-Our dataset indicated that more nonsignificant results are reported
+Our data set indicated that more nonsignificant results are reported
 throughout the years, strengthening the case for inspecting potential
 false negatives. The proportion of reported nonsignificant results
 showed an upward trend, as depicted in Figure \ref{fig:tgtbf-fig2}, from
@@ -3961,7 +3979,7 @@ exploratory results has been previously demonstrated (Wagenmakers et al.
 been incorporated into the Transparency and Openness Promotion
 guidelines (TOP; Nosek et al.
 \protect\hyperlink{ref-doi:10.1126ux2fscience.aab2374}{2015}) with
-explicit attention paid to pre-registration.
+explicit attention paid to preregistration.
 
 \section{Application 3: Reproducibility Project
 Psychology}\label{application-3-reproducibility-project-psychology}
@@ -4007,16 +4025,16 @@ is the value of \(X\) for which \(p_Y\) is closest to \(.025\) and
 number of weak, medium, and large effects.
 
 We computed \(p_Y\) for a combination of a value of \(X\) and a true
-effect size using 10,000 randomly generated datasets, in three steps.
-For each dataset we: + Randomly selected \(X\) out of 63 effects which
+effect size using 10,000 randomly generated data sets, in three steps.
+For each data set we: + Randomly selected \(X\) out of 63 effects which
 are supposed to be generated by true nonzero effects, with the remaining
 \(63-X\) supposed to be generated by true zero effects; + Given the
 degrees of freedom of the effects, we randomly generated \(p\)-values
-under the \(H_0\) using the central distributions and non-central
+under the \(H_0\) using the central distributions and noncentral
 distributions (for the \(63-X\) and \(X\) effects selected in step 1,
 respectively); + The Fisher statistic \(Y\) was computed by applying
 Equation (5.2) to the transformed \(p\)-values (see Equation (5.1)) of
-step 2. Probability \(p_Y\) equals the proportion of 10,000 datasets
+step 2. Probability \(p_Y\) equals the proportion of 10,000 data sets
 with \(Y\) exceeding the value of the Fisher statistic applied to the
 RPP data. See \href{https://osf.io/egnh9}{osf.io/egnh9} for the analysis
 script to compute the confidence intervals of \(X\).
@@ -4072,14 +4090,14 @@ account (Cumming
 publication bias of the original studies (Etz and Vandekerckhove
 \protect\hyperlink{ref-doi:10.1371ux2fjournal.pone.0149794}{2016}).
 
-Very recently four statistical papers have re-analyzed the RPP results
-to either estimate the frequency of studies testing true zero hypotheses
-or to estimate the individual effects examined in the original and
+Very recently four statistical papers have reanalyzed the RPP results to
+either estimate the frequency of studies testing true zero hypotheses or
+to estimate the individual effects examined in the original and
 replication study. All four papers account for the possibility of
 publication bias in the original study. Johnson et al.
 (\protect\hyperlink{ref-doi:10.1080ux2f01621459.2016.1240079}{2016})
 estimated a Bayesian statistical model including a distribution of
-effect sizes among studies for which the null-hypothesis is false. On
+effect sizes among studies for which the null hypothesis is false. On
 the basis of their analyses they conclude that at least 90\% of
 psychology experiments tested negligible true effects. Johnson et al.'s
 model as well as our Fisher's test are not useful for estimation and
@@ -4094,9 +4112,10 @@ reanalyzed the RPP at the level of individual effects, using Bayesian
 models incorporating publication bias. They concluded that 64\% of
 individual studies did not provide strong evidence for either the null
 or the alternative hypothesis in either the original of the replication
-study. This agrees with our own and Maxwell, Lau, and Howard
-(\protect\hyperlink{ref-doi:10.1037ux2fa0039400}{2015}) their
-interpretation of the RPP findings. As opposed to Etz and Vandekerckhove
+study. This agrees with our interpretaion of the RPP findings and that
+of Maxwell, Lau, and Howard
+(\protect\hyperlink{ref-doi:10.1037ux2fa0039400}{2015}). As opposed to
+Etz and Vandekerckhove
 (\protect\hyperlink{ref-doi:10.1371ux2fjournal.pone.0149794}{2016}), Van
 Aert and Van Assen
 (\protect\hyperlink{ref-doi:10.3758ux2fs13428-017-0967-6}{2017}\protect\hyperlink{ref-doi:10.3758ux2fs13428-017-0967-6}{b})
@@ -4108,9 +4127,9 @@ assuming equally likely zero, small, medium, large true effects, they
 conclude that only 13.4\% of individual effects contain substantial
 evidence (Bayes factor \textgreater{} 3) of a true zero effect. For a
 staggering 62.7\% of individual effects no substantial evidence in favor
-zero, small, medium, or large true effect size was obtained. All in all,
-conclusions of our analyses using the Fisher are in line with other
-statistical papers re-analyzing the RPP data (with the exception of
+of zero, small, medium, or large true effect size was obtained. All in
+all, conclusions of our analyses using the Fisher test are in line with
+other statistical papers reanalyzing the RPP data (with the exception of
 Johnson et al.
 \protect\hyperlink{ref-doi:10.1080ux2f01621459.2016.1240079}{2016})
 suggesting that studies in psychology are typically not powerful enough
@@ -4159,10 +4178,9 @@ problem of false negatives in psychology remains pervasive. Previous
 concern about power (Cohen
 \protect\hyperlink{ref-doi:10.1037ux2fh0045186}{1962}; Sedlmeier and
 Gigerenzer
-\protect\hyperlink{ref-doi:10.1037ux2f0033-2909.105.2.309}{1989};
-Bakker, Dijk, and Wicherts
-\protect\hyperlink{ref-doi:10.1177ux2f1745691612459060}{2012}; Marszalek
-et al.
+\protect\hyperlink{ref-doi:10.1037ux2f0033-2909.105.2.309}{1989}; Bakker
+et al. \protect\hyperlink{ref-doi:10.1177ux2f1745691612459060}{2012};
+Marszalek et al.
 \protect\hyperlink{ref-doi:10.2466ux2f03.11.pms.112.2.331-348}{2011}),
 which was even addressed by an APA Statistical Task Force in 1999 that
 recommended increased statistical power (Wilkinson
@@ -4175,7 +4193,7 @@ overestimate statistical power when designing a study for small effects
 \protect\hyperlink{ref-doi:10.1177ux2f0956797616647519}{2016}), use
 \(p\)-hacking to artificially increase statistical power, and can act
 strategically by running multiple underpowered studies rather than one
-large powerful study (Bakker, Dijk, and Wicherts
+large powerful study (Bakker et al.
 \protect\hyperlink{ref-doi:10.1177ux2f1745691612459060}{2012}). The
 effects of \(p\)-hacking are likely to be the most pervasive, with many
 people admitting to using such behaviors at some point (John,
@@ -4237,8 +4255,8 @@ helps researchers prevent dichotomous thinking with individual
 \(p\)-values (Hoekstra et al.
 \protect\hyperlink{ref-doi:10.3758ux2fbf03213921}{2006}). Finally, the
 Fisher test may and is also used to meta-analyze effect sizes of
-different studies. Whereas Fisher used his method to test the
-null-hypothesis of an underlying true zero effect using several studies'
+different studies. Whereas Fisher used his method to test the null
+hypothesis of an underlying true zero effect using several studies'
 \(p\)-values, the method has recently been extended to yield unbiased
 effect estimates using only statistically significant \(p\)-values. The
 principle of uniformly distributed \(p\)-values given the true effect
@@ -4250,6 +4268,8 @@ methods of meta-analysis that adjust for publication bias, such as
 \protect\hyperlink{ref-doi:10.1037ux2fa0033242}{2014}). Extensions of
 these methods to include nonsignificant as well as significant
 \(p\)-values and to estimate heterogeneity are still under construction.
+Other approaches may include inspecting effect sizes directly, instead
+of relying on the NHST framework.
 
 To conclude, our three applications indicate that false negatives remain
 a problem in the psychology literature, despite the decreased attention
@@ -4264,7 +4284,7 @@ out such a test is available at \url{https://osf.io/tk57v/}).
 for Statistical Test
 Results}\label{statistical-results-content-mining-psychology-articles-for-statistical-test-results}
 
-In this chapter, I describe a dataset (available at
+In this chapter, I describe a data set (available at
 \url{http://doi.org/10.17026/dans-2cm-v9j9}) that is the result of
 content mining 167,318 published psychology articles for statistical
 test results. I tried to mine the content of HTML articles in all
@@ -4302,7 +4322,7 @@ Taylor \& Francis & 2003–2016 & 25,274 & 732 & 8,527 & 8 & 0.118 & 0.133\\
 
 The \texttt{statcheck} software extracted 688,112 results from 50,845
 articles (out of 167,318 articles). The extracted statistical test
-results are presented in long format in this dataset (i.e., each row
+results are presented in long format in this data set (i.e., each row
 corresponds to one statistical result). For each extracted statistical
 test result, the reported statistical values are used to recalculate the
 \(p\)-value for the reported statistical result. These recalculated
@@ -4312,22 +4332,22 @@ not congruent with the recalculated \(p\)-value, whereas a decision
 error (or gross error) occurs when the recalculated \(p\)-value does not
 correspond to the reported \(p\)-value and alters the significance of
 the result, assuming \(\alpha=0.05\). The results of this comparison are
-available in the dataset. The articles for which no results were found
-are not included in the dataset (filenames without results available at
+available in the data set. The articles for which no results were found
+are not included in the data set (filenames without results available at
 \url{https://raw.githubusercontent.com/chartgerink/2016statcheckdata/master/noresult.txt}).
 
-In order to provide a comprehensive dataset, the statistical results are
-supplemented with metadata of the original article as available in
+In order to provide a comprehensive data set, the statistical results
+are supplemented with metadata of the original article as available in
 CrossRef (\url{https://crossref.org}). These metadata include the
 \texttt{doi}, the publisher, the publication year, the journal, the
 author names, the author count, and the publication title. Given that
-the dataset is in long format, multiple rows can contain duplicate
+the data set is in long format, multiple rows can contain duplicate
 metadata if multiple results are extracted from the same article.
 
-This dataset of statistical results and accompanying metadata can be
+This data set of statistical results and accompanying metadata can be
 used to inspect if specific papers include potential statistical errors
 or for trends in statistical results over time. Articles based on a
-similar dataset inspected the degree to which reporting errors occur
+similar data set inspected the degree to which reporting errors occur
 (Nuijten, Hartgerink, et al.
 \protect\hyperlink{ref-doi:10.3758ux2fs13428-015-0664-2}{2015}), tried
 to assess whether such data could be modeled for \(p\)-hacking
@@ -4335,7 +4355,7 @@ to assess whether such data could be modeled for \(p\)-hacking
 \protect\hyperlink{ref-doi:10.7717ux2fpeerj.1935}{2016}), and the degree
 to which sample sizes and potential false negative results developed
 over time (Hartgerink, Wicherts, and Van Assen
-\protect\hyperlink{ref-doi:10.1525ux2fcollabra.71}{2017}). This dataset
+\protect\hyperlink{ref-doi:10.1525ux2fcollabra.71}{2017}). This data set
 can be used to replicate these findings and correlate findings with the
 available metadata. These data can also be used as baseline data to
 identify extreme statistical results in the literature by determining
@@ -4351,13 +4371,13 @@ multiple rows can pertain to the same article and include the same
 metadata. This information is provided in duplicate because any other
 file format (wide-format or separate files per article) is unfeasible
 without increasing the difficulty to reuse the data (e.g., in JSON
-format). Given the size of the full dataset (\textgreater{}200MB), a
-smaller test dataset is also included to pilot analysis scripts.
+format). Given the size of the full data set (\textgreater{}200MB), a
+smaller test data set is also included to pilot analysis scripts.
 
 For each of the 688,112 results, 20 variables are included, of which
 seven pertain to article metadata and 13 pertain to the individual
 statistical results. Table \ref{tab:data-2} lists all variables included
-in the dataset. Two specific sets of variables are worth explaining
+in the data set. Two specific sets of variables are worth explaining
 further. First, only \(F\)-values have two degrees of freedom (i.e.,
 \(df1\) and \(df2\)). For \(t\)-values, the reported degrees of freedom
 are \(df2\), because \(t^2(df)=F(1,df)\). For all other test statistics
@@ -4372,7 +4392,7 @@ variables \texttt{OneTail} and \texttt{OneTailedInTxt} are \texttt{TRUE}
 
 \begin{landscape}\begin{table}[t]
 
-\caption{\label{tab:data-2}Variables included in the dataset and a description of each variable. }
+\caption{\label{tab:data-2}Variables included in the data set and a description of each variable. }
 \resizebox{\linewidth}{!}{
 \begin{tabular}{lll}
 \toprule
@@ -4482,7 +4502,7 @@ restricting downloads to weekends or limiting the download rate to 10
 per minute at most.
 
 Metadata for each article were collected with the Ruby module
-\texttt{terrier} (\url{https://github.com/thewinnower/terrier}. This
+\texttt{terrier} (\url{https://github.com/thewinnower/terrier}). This
 module queries the CrossRef database when provided with a Digital Object
 Identifier (DOI). If available, it returns the available metadata such
 as the journal name, publication year, etc. These metadata were
@@ -4495,8 +4515,8 @@ Finally, after all HTML files were collected and metadata were added,
 \texttt{statcheck} (v1.0.1; Nuijten, Hartgerink, et al.
 \protect\hyperlink{ref-doi:10.3758ux2fs13428-015-0664-2}{2015}; Epskamp
 and Nuijten \protect\hyperlink{ref-statcheck}{2016}) was run in August
-2016 to create the final dataset. This \texttt{R} package scans the text
-from an article for APA style statistical results, extracts these
+2016 to create the final data set. This \texttt{R} package scans the
+text from an article for APA style statistical results, extracts these
 statistical results, and checks whether the reported \(p\)-values are
 equivalent to the recalculated \(p\)-value (with a margin of error due
 to potential rounding). For example, the result \(t(85)=2.86,p=0.005\)
@@ -4507,7 +4527,7 @@ able to mine \(t\),\(F\),\(r\),\(Z\), and \(\chi^2\) results.
 
 Usage of the data requires understanding several limitations of the
 \texttt{statcheck} package, in order to provide context for results
-obtained from this dataset. A manual validity check for
+obtained from this data set. A manual validity check for
 \texttt{statcheck} proved that the software is valid for extracting APA
 style reported test results (Nuijten, Hartgerink, et al.
 \protect\hyperlink{ref-doi:10.3758ux2fs13428-015-0664-2}{2015}).
@@ -4515,8 +4535,8 @@ However, it does not extract results that are not in line with what the
 APA prescribes. Additionally, \texttt{statcheck} only extracts results
 reported in the text and not those reported in tabular format or in
 images. As such, statistical results from tables and images are
-systematically excluded. As a result, any conclusions based on this
-dataset should not be extrapolated without caution.
+systematically excluded. As a result, any conclusions based on this data
+set should not be extrapolated without caution.
 
 Additionally, it is worth mentioning that relatively few articles
 contained results that were extracted by \texttt{statcheck} (\(\sim1/3\)
@@ -4535,7 +4555,7 @@ the Sciences (DANS) and are available under a public domain license (CC0
 repository and has received the Data Seal of Approval (DSA), the World
 Data System (WDS) certificate, and the NESTOR-seal. This ensures that
 deposited data will remain available for a substantial amount of time.
-All rights to this dataset are waived to the furthest extent possible,
+All rights to this data set are waived to the furthest extent possible,
 such that reuse is maximized.
 
 In addition to preserving the data in the DANS repository, individual
@@ -4543,16 +4563,12 @@ reports have been generated for each of the 50,845 articles and posted
 on PubPeer (\url{https://pubpeer.com/}). Appendix C shows a fictitious
 example of such a report. These reports were generated in order to
 increase the accessibility of the data for those wanting to investigate
-a specific paper instead of the entire dataset. Additionally, this
+a specific paper instead of the entire data set. Additionally, this
 increases the discoverability of potential errors by posting them in a
 central forum of post-publication peer review.
 
 \chapter{Detection of data fabrication using statistical
 tools}\label{detection-of-data-fabrication-using-statistical-tools}
-
-\begin{verbatim}
-## Loading required package: viridisLite
-\end{verbatim}
 
 Any field of empirical inquiry is faced with cases of scientific
 misconduct at some point, either in the form of fabrication,
@@ -4653,7 +4669,7 @@ methods to detect data fabrication are quantifications of case specific
 suspicions by researchers, but these applications do not inform us on
 their diagnostic value (i.e., sensitivity and specificity) outside of
 those specific cases. Side-by-side comparisons of different statistical
-methods to detect data fabrication has also been difficult through the
+methods to detect data fabrication have also been difficult through the
 in-casu origin of these methods. Moreover, the efficacy of these methods
 based on known cases is likely to be biased, considering that an unknown
 amount of undetected cases is not included. Using different statistical
@@ -4699,10 +4715,10 @@ nonsignificant \(p\)-values are reported; variance analysis can be
 applied whenever a set of variances and accompanying sample sizes are
 reported for independent, randomly assigned groups; effect size analysis
 can be used whenever the effect size is reported or calculated (e.g., an
-APA reported t- or F-statistic; Hartgerink, Wicherts, and Van Assen
-\protect\hyperlink{ref-doi:10.1525ux2fcollabra.71}{2017}). Among the
-methods that can be applied to uncover potential fabrication using raw
-data, we consider digit analyses (i.e., the Newcomb-Benford law and
+APA reported \(t\)- or \(F\)-statistic; Hartgerink, Wicherts, and Van
+Assen \protect\hyperlink{ref-doi:10.1525ux2fcollabra.71}{2017}). Among
+the methods that can be applied to uncover potential fabrication using
+raw data, we consider digit analyses (i.e., the Newcomb-Benford law and
 terminal digit analysis) and multivariate associations between
 variables. The Newcomb-Benford law can be applied on ratio- or count
 scale measures that have sufficient digits and that are not truncated
@@ -4790,17 +4806,17 @@ illustration have a mean \(p\)-value of 0.956.
 \cmidrule(l{3pt}r{3pt}){2-2} \cmidrule(l{3pt}r{3pt}){3-3} \cmidrule(l{3pt}r{3pt}){5-5} \cmidrule(l{3pt}r{3pt}){6-6}
  & M (SD) & M (SD) & P-value & M (SD) & M (SD) & P-value\\
 \midrule
-\rowcolor{gray!6}  Study 1 & 48.432 (10.044) & 49.158 (9.138) & 0.594 & 52.274 (10.475) & 63.872 (10.684) & 0.918\\
-Study 2 & 50.412 (10.322) & 49.925 (9.777) & 0.732 & 62.446 (10.454) & 60.899 (10.398) & 0.989\\
-\rowcolor{gray!6}  Study 3 & 51.546 (9.602) & 51.336 (9.479) & 0.877 & 62.185 (10.239) & 55.655 (10.457) & 0.951\\
-Study 4 & 49.919 (10.503) & 50.857 (9.513) & 0.509 & 62.468 (10.06) & 68.469 (10.761) & 0.956\\
-\rowcolor{gray!6}  Study 5 & 49.782 (11.167) & 50.308 (8.989) & 0.714 & 67.218 (10.328) & 55.846 (10.272) & 0.915\\
+\rowcolor{gray!6}  Study 1 & 48.432 (10.044) & 49.158 (9.138) & 0.594 & 49.913 (9.707) & 49.918 (9.308) & 0.997\\
+Study 2 & 50.412 (10.322) & 49.925 (9.777) & 0.732 & 49.918 (9.993) & 49.924 (10.071) & 0.997\\
+\rowcolor{gray!6}  Study 3 & 51.546 (9.602) & 51.336 (9.479) & 0.877 & 49.266 (10.251) & 49.264 (9.49) & 0.999\\
+Study 4 & 49.919 (10.503) & 50.857 (9.513) & 0.509 & 49.219 (10.876) & 49.23 (10.712) & 0.994\\
+\rowcolor{gray!6}  Study 5 & 49.782 (11.167) & 50.308 (8.989) & 0.714 & 51.287 (9.311) & 51.282 (10.183) & 0.997\\
 \addlinespace
-Study 6 & 48.631 (9.289) & 49.29 (10.003) & 0.630 & 62.806 (11.216) & 66.746 (11.14) & 0.975\\
-\rowcolor{gray!6}  Study 7 & 49.121 (9.191) & 47.756 (10.095) & 0.318 & 50.19 (10.789) & 55.724 (10.302) & 0.960\\
-Study 8 & 49.992 (9.849) & 51.651 (10.425) & 0.249 & 54.651 (11.372) & 55.336 (10.388) & 0.995\\
-\rowcolor{gray!6}  Study 9 & 50.181 (9.236) & 51.292 (10.756) & 0.434 & 63.322 (11.247) & 53.734 (11.488) & 0.941\\
-Study 10 & 49.323 (10.414) & 49.879 (9.577) & 0.695 & 60.285 (10.069) & 54.645 (11.211) & 0.960\\
+Study 6 & 48.631 (9.289) & 49.29 (10.003) & 0.630 & 50.02 (10.792) & 50.014 (9.231) & 0.997\\
+\rowcolor{gray!6}  Study 7 & 49.121 (9.191) & 47.756 (10.095) & 0.318 & 49.927 (10.139) & 49.919 (10.019) & 0.996\\
+Study 8 & 49.992 (9.849) & 51.651 (10.425) & 0.249 & 49.396 (10.449) & 49.398 (9.77) & 0.999\\
+\rowcolor{gray!6}  Study 9 & 50.181 (9.236) & 51.292 (10.756) & 0.434 & 50.239 (10.191) & 50.24 (10.421) & 0.999\\
+Study 10 & 49.323 (10.414) & 49.879 (9.577) & 0.695 & 50.739 (9.846) & 50.748 (9.942) & 0.994\\
 \bottomrule
 \end{tabular}}
 \end{table}
@@ -4836,12 +4852,12 @@ method} is
 
 where \(t\) determines the range of \(p\)-values that are selected in
 the method. For instance, if \(t=0\), all \(p\)-values are selected,
-whereas if \(t=.05\) only statistically nonsignificant results are
+whereas if \(t=0.05\) only statistically nonsignificant results are
 selected in the method. Note that each result's contribution (between
 the brackets) is in the interval (0,1), as for the original Fisher
 method. The reversed Fisher method is similar (but not equivalent) to
 Carlisle's method testing for excessive homogeneity across baseline
-measurements in RCTs (Carlisle
+measurements in Randomized Controlled Trials (Carlisle
 \protect\hyperlink{ref-doi:10.1111ux2fanae.13938}{2017}\protect\hyperlink{ref-doi:10.1111ux2fanae.13938}{a};
 Carlisle
 \protect\hyperlink{ref-doi:10.1111ux2fj.1365-2044.2012.07128.x}{2012};
@@ -4886,7 +4902,9 @@ In most empirical research papers, sample variance or standard deviation
 estimates are typically reported alongside means to indicate dispersion
 in the data. For example, if a sample has a reported age of
 \(M(SD)=21.05(2.11)\) we know this sample is both younger and more
-homogeneous than another sample with reported \(M(SD)=42.78(17.83)\).
+homogeneous than another sample with reported \(M(SD)=42.78(17.83)\)
+(see also Klaassen \protect\hyperlink{ref-klaassen2014evidential}{2014}
+for another approach).
 
 Similar to the estimate of the mean in the data, there is sampling error
 in the estimated variance in the data (i.e., dispersion of the
@@ -5012,8 +5030,8 @@ that the fabricated data generally showed much larger effect sizes than
 the genuine data. From our own anecdotal experience, we have found that
 large effect sizes raised initial suspicions of data fabrication (e.g.,
 \(d>20\)). In clinical trials, extreme effect sizes are also used to
-identify potentially fabricated data in multi-site trials while the
-study is still being conducted (Bailey
+identify potentially fabricated data in multisite trials while the study
+is still being conducted (Bailey
 \protect\hyperlink{ref-doi:10.1016ux2f0197-24569190037-M}{1991}).
 
 Effect sizes can be reported in research reports in various ways. For
@@ -5021,7 +5039,7 @@ example, effect sizes in psychology papers are often reported as a
 standardized mean difference (e.g., \(d\)) or as an explained variance
 (e.g., \(R^2\)). A test statistic can be transformed into a measure of
 effect size. A test result such as \(t( 59)=3.55\) in a between-subjects
-design corresponds to \(d=0.924\) and \(r=0.176\) (Hartgerink, Wicherts,
+design corresponds to \(d=0.924\) and \(r=0.42\) (Hartgerink, Wicherts,
 and Van Assen \protect\hyperlink{ref-doi:10.1525ux2fcollabra.71}{2017}).
 These effect sizes can readily be recomputed based on data extracted
 with \texttt{statcheck} across thousands of results (Nuijten,
@@ -5219,7 +5237,7 @@ percentile).
 
 }
 
-\caption{Distribution of 100 simulated observed associations between Ms and SDs for a response latency task; simulated under $N(.123,.1)$. The red- and blue dots indicate observed multivariate associations from fictitious papers. Paper 1 may be considered relatively extreme and of interest for further inspection; Paper 2 may be considered relatively normal.}\label{fig:multivariate-association}
+\caption{Distribution of 100 simulated observed associations between $M$s and $SD$s for a response latency task; simulated under $N(.123,.1)$. The red- and blue dots indicate observed multivariate associations from fictitious papers. Paper 1 may be considered relatively extreme and of interest for further inspection; Paper 2 may be considered relatively normal.}\label{fig:multivariate-association}
 \end{figure}
 
 \section{Study 1 - detecting fabricated summary
@@ -5238,9 +5256,9 @@ information in the question as the starting point for the answer, which
 is then adjusted to yield a final estimate of a quantity. For example:
 
 \begin{quote}
-Do you think the percentage of African countries in the UN is above or
-below {[}10\% or 65\%{]}? What do you think is the percentage of African
-countries in the UN?
+\emph{Do you think the percentage of African countries in the UN is
+above or below {[}10\% or 65\%{]}? What do you think is the percentage
+of African countries in the UN?}
 \end{quote}
 
 In their classic study, Tversky and Kahneman
@@ -5256,7 +5274,7 @@ et al.
 \protect\hyperlink{ref-doi:10.1027ux2f1864-9335ux2fa000178}{2014}). This
 allowed us to compare data knowingly and openly fabricated by our
 participants (researchers in psychology) to actual data that can be
-assumed to be genuine because they were draw from a large-scale
+assumed to be genuine because they were drawn from a large-scale
 international project involving many contributing labs (a so-called Many
 Labs study). Our data fabrication study was approved by Tilburg
 University's Ethics Review Board (EC-2015.50;
@@ -5327,10 +5345,10 @@ and in order to reduce heterogeneity across fabricators.\footnote{We
   search through the open ended comments of the participant's responses,
   there was no mention of issues in fabricating the data related to the
   metric or imperial system.} We searched WoS on October 13, 2015. In
-total, 2,038 unique corresponding e-mails were extracted from 2,014
+total, 2,038 unique corresponding emails were extracted from 2,014
 papers (due to multiple corresponding authors).
 
-From these 2,038 psychology researchers, we e-mailed a random sample of
+From these 2,038 psychology researchers, we emailed a random sample of
 1,000 researchers to participate in our study (April 25, 2016;
 \href{https://osf.io/s4w8r}{osf.io/s4w8r}). We used Qualtrics and
 removed identifying information not essential to the study (e.g., no
@@ -5344,23 +5362,22 @@ if they were willing to enter their email address. They could win an
 additional \$50 Amazon gift card if they were one of three top
 fabricators (participants were not informed about how we planned to
 detect data fabrication; the procedure for this is explained in the Data
-Analysis section). We did not inform participants about how we planned
-to detect data fabrication. The provided e-mail addresses were unlinked
-from individual responses upon sending the bonus gift cards. The full
+Analysis section). The provided email addresses were unlinked from
+individual responses upon sending the bonus gift cards. The full
 Qualtrics survey is available at
 \href{https://osf.io/rg3qc}{osf.io/rg3qc}.
 
 Each participant was instructed to fabricate 32 summary statistics (4
 studies \(\times\) 2 anchoring conditions \(\times\) 2 sexes \(\times\)
-2 statistics {[}mean and SD{]}) that corresponded to three hypotheses.
-We instructed participants to fabricate results for the following
-hypotheses: there is (i) a positive main effect of the anchoring
-condition, (ii) no effect of sex, and (iii) no interaction effect
-between condition and sex. We fixed the sample sizes in the fabricated
-anchoring studies to 25 per cell so that participants did not need to
-fabricate sample sizes. These fabricated summary statistics and their
-accompanying test results for these three hypotheses serve as the data
-to examine the properties of statistical tools to detect data
+2 statistics {[}mean and \(SD\){]}) that corresponded to three
+hypotheses. We instructed participants to fabricate results for the
+following hypotheses: there is (i) a positive main effect of the
+anchoring condition, (ii) no effect of sex, and (iii) no interaction
+effect between condition and sex. We fixed the sample sizes in the
+fabricated anchoring studies to 25 per cell so that participants did not
+need to fabricate sample sizes. These fabricated summary statistics and
+their accompanying test results for these three hypotheses serve as the
+data to examine the properties of statistical tools to detect data
 fabrication.
 
 We provided participants with a template spreadsheet to fill out the
@@ -5530,7 +5547,7 @@ discuss results bearing on the specific tests for data fabrication next.
 \caption{\label{fig:ddfab-density1}Density distributions of genuine and
 fabricated summary statistics across four anchoring studies, per effect
 (gender, anchoring, or interaction across columns) and type of result
-(p-value or effect size across rows).}
+(\(p\)-value or effect size across rows).}
 \end{figure}
 
 \subsubsection{\texorpdfstring{\(P\)-value
@@ -5655,7 +5672,7 @@ classified 19 of the 39 fabricated summary statistics as fabricated
 per respondent available at \href{https://osf.io/hq29t}{osf.io/hq29t}).
 Given that the combination method would be expected to perform not much
 better than its constituent results it logically follows that the
-combination of \(p\)-values and variance analyses performs this poorly.
+combination of \(p\)-values and variance analyses performs poorly.
 
 The poor performance is in part is due to the unrealistic assumption of
 homogeneous variances in the variance analysis; we explored the efficacy
@@ -6081,19 +6098,19 @@ database. We selected Dutch and Flemish researchers to allow for
 face-to-face interviews on how the data were fabricated. We chose the
 period 2005-2015 to prevent a decrease in the probability that the
 corresponding author would still be reachable via the given
-corresponding e-mail address. The database was searched on October 10,
-2016 and 80 unique e-mails were retrieved from 90 publications. Two of
+corresponding email address. The database was searched on October 10,
+2016 and 80 unique emails were retrieved from 90 publications. Two of
 these 80 researchers (2.5\%) we contacted actually ended up
 participating in our study. Subsequently, we implemented a second,
-unplanned sampling stage where we collected e-mails from all
+unplanned sampling stage where we collected emails from all
 PhD-candidates, teachers, and professors of psychology-related
 departments at Dutch universities. This resulted in 1,659 additional
-unique e-mails that we subsequently invited to participate in this
-study. Due to a malfunction in Qualtrics' quotum sampling, we
-oversampled, resulting in 28 participants instead of the originally
-intended 20 participants. The second sampling scheme was not part of the
-original ethics application, but was considered crucial to obtain a
-sufficiently large sample.
+unique emails that we subsequently invited to participate in this study.
+Due to a malfunction in Qualtrics' quotum sampling, we oversampled,
+resulting in 28 participants instead of the originally intended 20
+participants. The second sampling scheme was not part of the original
+ethics application, but was considered crucial to obtain a sufficiently
+large sample.
 
 Each participant received instructions on the data fabrication task via
 Qualtrics and was allowed to fabricate data until the face-to-face
@@ -6634,7 +6651,7 @@ from large-scale replication projects, such as Registered Replication
 Reports (e.g., Cheung et al.
 \protect\hyperlink{ref-doi:10.1177ux2f1745691616664694}{2016}) and
 building systemic efforts to reduce publication bias (see also
-Hartgerink and Zelst
+Hartgerink and Van Zelst
 \protect\hyperlink{ref-doi:10.3390ux2fpublications6020021}{2018}).
 
 Our results depend on the (majority of the) Many Labs data being
@@ -7173,7 +7190,7 @@ resource for data extraction. Based on initial alpha software of
 \texttt{norma} to extract data from vector figures, we correctly
 extracted data from 50\% of funnel plots for which data was extracted.
 This is a very strict assessment, considering our manual investigation
-depicted that four extracted datasets (which used a non-standard
+depicted that four extracted data sets (which used a non-standard
 direction of the y-axis) only required a simple reversal of one axis to
 be 100\% accurate (i.e., 1.23 should be -1.23, etc.), adding a constant
 to all data points on an axis to adjust an incorrect mapping, or by
@@ -7897,7 +7914,8 @@ Figure \ref{fig:octopi}.
 
 Modular scholarly outputs, each a separate step in the research process,
 could supplement the scholarly article (as detailed in Hartgerink and
-Zelst \protect\hyperlink{ref-doi:10.3390ux2fpublications6020021}{2018}).
+Van Zelst
+\protect\hyperlink{ref-doi:10.3390ux2fpublications6020021}{2018}).
 Scholarly textbooks and monographs (i.e., vademecum science; Fleck
 \protect\hyperlink{ref-isbn:9780226253251}{1984}) communicate findings
 with few details and a high degree of certainty; scholarly articles
@@ -7947,7 +7965,7 @@ unrestricted awareness (i.e., access) is embedded in the underlying
 peer-to-peer protocol that locks it open-by-design, (4) archival is
 facilitated by simplified copying, and (5) making more specific
 scholarly evaluation possible to improve incentives (for an initial
-proposal of such evaluation systems see Hartgerink and Zelst
+proposal of such evaluation systems see Hartgerink and Van Zelst
 \protect\hyperlink{ref-doi:10.3390ux2fpublications6020021}{2018}).
 First, I expand on the functionality of the Internet protocol
 \href{https://datproject.org}{Dat} and how it facilitates improved
@@ -8058,7 +8076,7 @@ communication using the Dat protocol. Scholarly modules are instantiated
 as separate Dat filesystems for each researcher or for each module of
 scholarly content. Scholarly content could entail virtually anything the
 researcher wants or needs to communicate in order to verify findings
-(see also Hartgerink and Zelst
+(see also Hartgerink and Van Zelst
 \protect\hyperlink{ref-doi:10.3390ux2fpublications6020021}{2018}).
 Hence, there is no restriction to text as it is in the current
 article-based scholarly communication system; it may also include
@@ -8241,7 +8259,7 @@ communicating these in the form of modules as they are produced, by
 registering versioned references to Dat filesystems in a scholarly
 profile as explained before, could fulfill the five functions of a
 scholarly communication system and is unconstrained by the current
-article-based system (see also Hartgerink and Zelst
+article-based system (see also Hartgerink and Van Zelst
 \protect\hyperlink{ref-doi:10.3390ux2fpublications6020021}{2018}).
 
 These scholarly modules each live in their own filesystem, first on the
@@ -8523,7 +8541,7 @@ discovery of content and the potential for new business models to come
 into existence. Based on the links between scholarly modules, the
 arising network structure can be used to help evaluate networks of
 research(ers) instead of counting publications and citations (Hartgerink
-and Zelst
+and Van Zelst
 \protect\hyperlink{ref-doi:10.3390ux2fpublications6020021}{2018}).
 Archival is facilitated by making it trivially easy to create local
 copies of large sets of content, facilitating the Lots Of Copies Keeps
@@ -9111,39 +9129,40 @@ is available today and this is technically feasible.
 \chapter*{Epilogue}\label{epilogue}
 \addcontentsline{toc}{chapter}{Epilogue}
 
-Eight years after my first epistemological crisis, during which I spent
+Eight years after my first epistemological crisis, which led me to spend
 five years attempting to understand and find ways to improve the
 sustainability of science, I see no way around it: We need new systems
-to intersectionally address the systemic issues of science. Now, most
-reform fiddles with minor superficial knobs when and where we are
-allowed to. Piecemeal reform, such as giving virtual stickers for
-sharing data, is just not going to cut it when we want to do something
-about the sustainability of science. In this Epilogue, I reflect on the
-dire need for radical and uncompromising reform in science and I propose
-a set of demands.
+to intersectionally and fundamentally address the systemic issues of
+science. Now, most reform fiddles with minor superficial knobs when and
+where we are allowed to. Piecemeal reform, such as giving virtual
+stickers for sharing data, is just not going to cut it when we want to
+do something about the sustainability of science. In this Epilogue, I
+reflect on the dire need for radical and uncompromising reform in
+science and I propose a set of demands.
 
 The fundamental question when choosing between reformism and radicalism
 is whether one thinks the current system mostly works. Reformist
 thinking is conditional on the current system, whereas radical thinking
-is unconditioned. In that sense, reformist thinking accepts the very
+is unconditional. In that sense, reformist thinking accepts the very
 system it is trying to change --- which makes perfect sense if one
 explicitly or implicitly believes the current system mostly works or if
 it serves them. Hence, there is a clear interest for established actors
 to argue for (conservative) reform. Conversely, radicalism does not
 condition itself on the current system and reimagines what is necessary
-where it is necessary. I consider that the current system, taken to its
-logical conclusion, does not work, hence, is unsustainable. For that
-reason, I see radical thinking as the only viable option.
+for deep-seated change where it is necessary. I consider that the
+current system, taken to its logical conclusion, does not work, hence,
+is unsustainable. For that reason, I see radical thinking as the only
+viable option.
 
 That the current, article based, scientific system is too broken to fix
 has become painfully clear. Putting aside how invested the established
 institutions are in the current system, why should it objectively
 persist in its current form? Not only must all changes to the
 publication system, even effective ones, go through the gatekeepers of
-that system, those gatekeepers do not serve the scientific system. The
+that system, but its gatekeepers do not serve the scientific system. The
 publishers logically serve their shareholders in the end. Even if we
 could alter the rules such that \enquote{mischief} no longer pays in the
-publishing game (Bakker, Dijk, and Wicherts
+publishing game (Bakker et al.
 \protect\hyperlink{ref-doi:10.1177ux2f1745691612459060}{2012}), framing
 it in terms of bettering science need not convince publishers. Moreover,
 my research suggests that it is unfeasible to detect mischief at large,
@@ -9151,15 +9170,15 @@ indicating it may be more fruitful to aim for a system that prevents it
 in the first place. Only under the sunk cost fallacy does it make sense
 to me to keep the current system.
 
-In order to understand the need for radical reform from another angle,
-we need to consider how the complex systemic issues of science are
-intertwined with the complex systemic issues of society. One societal
-issue that affects issues in science, for example, is austerity policy
-in government spending. Spending cuts affect the available national
-(research) budgets, which in turn intensifies competition among
-scientists, negatively affecting their mental health\footnote{I am
-  afraid this example is all too familiar to many.} and feeding a race
-to the bottom of validity of findings (Smaldino and McElreath
+To understand the need for radical reform from another angle, we need to
+consider how the complex systemic issues of science are intertwined with
+the complex systemic issues of society. One societal issue that affects
+issues in science, for example, is austerity policy in government
+spending. Spending cuts affect the available national (research)
+budgets, which in turn intensifies competition among scientists,
+negatively affecting their mental health\footnote{I am afraid this
+  example is all too familiar to many.} and feeding a race to the bottom
+of validity of findings (Smaldino and McElreath
 \protect\hyperlink{ref-doi:10.1098ux2frsos.160384}{2016}). Vice versa,
 we cannot neglect the impact the scientific system has on societal
 issues. For example, we increasingly add to the ecological crises
@@ -9173,32 +9192,36 @@ Many complex interactions between issues of science and society exist.
 These include restrictive access to publications, causing many people to
 resort to illegitimate means to gain access for legitimate purposes
 (Bohannon
-\protect\hyperlink{ref-doi:10.1126ux2fscience.352.6285.508}{2016}\protect\hyperlink{ref-doi:10.1126ux2fscience.352.6285.508}{b})\footnote{\href{https://therostrumblog.wordpress.com/2015/01/12/why-all-phd-students-should-do-a-policy-placement/}{It
-  even happens that governments seek university interns to get access}}.
+\protect\hyperlink{ref-doi:10.1126ux2fscience.352.6285.508}{2016}\protect\hyperlink{ref-doi:10.1126ux2fscience.352.6285.508}{b})\footnote{Governments
+  have been documented to seek university interns to get access (see
+  also
+  \url{https://therostrumblog.wordpress.com/2015/01/12/why-all-phd-students-should-do-a-policy-placement/}).}.
 Additionally, in an attempt to manage the risks Open Access poses to
 their subscription models (and shareholders), the highly centralized
-oligarchy of academic publishers are shifting to business models
-resembling the problematic and data-exploitative models of Facebook. But
-even for researchers, the cost to play in publishing Open Access is
-substantial and rising faster than inflation (Grossmann and Brembs
+oligarchy of academic publishers (Larivière, Haustein, and Mongeon
+\protect\hyperlink{ref-doi:10.1371ux2fjournal.pone.0127502}{2015}) are
+shifting to business models resembling the problematic and
+data-exploitative models of Facebook. But even for researchers, the
+costs to play in publishing Open Access is substantial and rising faster
+than inflation (Grossmann and Brembs
 \protect\hyperlink{ref-doi:10.7287ux2fpeerj.preprints.27809v1}{2019}),
-reaffirming structural and global inequalities. This extends existing
+reaffirming structural and global inequalities. This affirms existing
 inequalities in participation, such as participation in scientific
 education that is increasingly difficult as collective financing
-programs are replaced with individualized debt\footnote{Again, due to
-  austerity measures of governments.}. These complex issues do not even
-begin to grapple with the distortion caused by biased publication of
-results. If the studied effects are not large (the low hanging fruit) or
-widely reproduced using open data, the rules of the game promote
-contradicting results, serving confirmation bias. Moreover, intellectual
-property laws restrict our capabilities to deal with information
-overload in science. On top of all of this and more, systemic factors
-resulting in conscious and unconscious individual or institutional
-ableism, ageism, classism, homophobia, racism, sexism, and transphobia
-multiply these struggles for already underrepresented scientists, making
-it probable they become even more underrepresented as time passes. How
-can we create or expect valid, reproducible, and applicable knowledge if
-these issues are its context?
+programs are replaced with individualized debt (Streeck
+\protect\hyperlink{ref-isbn:9781781686195}{2014}). These complex issues
+do not even begin to grapple with the distortion caused by biased
+publication of results. If the studied effects are not large (the low
+hanging fruit) or widely reproduced using open data, the rules of the
+game promote contradicting results, serving confirmation bias. Moreover,
+intellectual property laws restrict our capabilities to deal with
+information overload in science. On top of all of this and more,
+systemic factors resulting in conscious and unconscious individual or
+institutional ableism, ageism, classism, homophobia, racism, sexism, and
+transphobia multiply these struggles for already underrepresented
+scientists, making it probable they become even more underrepresented as
+time passes. How can we create or expect valid, reproducible, and
+applicable knowledge if these issues are its context?
 
 We need to start considering these interconnected issues together, not
 separately, and consider that current powerful stakeholders are invested
@@ -9214,7 +9237,7 @@ shift power to a new generation; we can use it to restructure and
 distribute power. To restructure power in such a way that when we learn
 about the immanent problems of the new systems we build, power no longer
 serves to maintain the status quo but to change it. To distribute power
-such that those traditionally underrepresented may finally become
+such that those chronically underrepresented may finally become
 adequately represented.
 
 What should we demand of a parallel scientific system to make it
@@ -9227,11 +9250,12 @@ might already be embedded in (e.g., universities). This would allow
 simultaneous participation in both old and new systems for researchers
 in institutions. This would also not force (early career) academics into
 zero-sum publishing decisions, which would effectively exacerbate the
-institutionalized issues they are already facing. Nonetheless, the
-parallel system should be usable on its own for researchers outside of
-academic institutions, who should not be forced to conform to the norms
-of the institutions that they are not a part of (or may have actively
-rejected if they left academia).
+institutionalized issues they are already facing (e.g., not being able
+to publish Open Access in the most career rewarding journals).
+Nonetheless, the parallel system should be usable on its own for
+researchers outside of academic institutions, who should not be forced
+to conform to the norms of the institutions that they are not a part of
+(or may have actively rejected if they left academia).
 
 Beyond minimizing barriers to participation in the scientific system,
 everyday research practices must be facilitated in the most concrete
@@ -9241,11 +9265,13 @@ difficult to do and participate in research. Especially (quick)
 technocratic fixes serve such alienation from research: technocrats
 formulate these rules to create a veil of progress, telling people what
 to do but (often) not how they might go about (effectively) doing so.
-Additionally, technocratic measures are inherently institution-specific
-and affirm top-down control mechanisms, further entrenching power
-inequities. A worthwhile alternative must boost bottom-up change by
-making it easier to organize information, retrieve it, discuss it, and
-use it in the most concrete, everyday sense.
+Examples include stricter data regulations but with no support
+structures to achieve them. Additionally, technocratic measures are
+inherently institution-specific and affirm top-down control mechanisms,
+further entrenching power inequities. A worthwhile alternative must
+boost bottom-up change by making it easier to organize information,
+retrieve it, discuss it, and use it in the most concrete, everyday
+sense.
 
 Alternatives must provide a coherent and extensive answer to the
 functions of a scholarly communication system. These functions encompass
@@ -9256,34 +9282,37 @@ completely. By providing a more coherent and parsimonious answer to
 these functions, a parallel system may also prove more convincing for
 bottom-up change.
 
-Those designing parallel scientific systems must actively renew and
-embed the values in science. As a result, incrementalism, validity,
-reliability, and replications must become preferred and rewarded over
-innovativeness, unreliability, and spontaneous isolated discovery. There
-is nothing objective about what we subjectively decide to value. Only
-deep and active value changes allow for incentive superstructures that
-substantially differ from the current and problematic system.
+Those designing parallel scientific systems must actively reconsider
+what ought to be valued in science. As a result, incrementalism,
+validity, reliability, and replications must become preferred and
+rewarded over innovativeness, unreliability, and spontaneous isolated
+discovery. There is nothing objective about what we subjectively decide
+to value. Only deep and active value changes allow for incentive
+superstructures that substantially differ from the current and
+problematic system.
 
-Access to and reuse of information must be complete and unlimited,
-further removing barriers to participate in research. Unlimited access
-and reuse means that intellectual control and censorship of information
-by state, commercial, or other actors needs to be mitigated by design.
-These actors benefit from bottlenecks in information flow that can be
-tightened, controlled, and surveilled. This is exactly how the services
-we now use are (being) designed. Hence, current centralized and
-restrictive models need to be replaced for decentralized and permissive
-models.
+Access to and reuse of published information must be complete and
+unlimited, further removing barriers to participate in research. Not all
+information should be published to begin with (e.g., sensitive data),
+but published information should not be additionally fortified.
+Unlimited access and reuse means that intellectual control and
+censorship of information by state, commercial, or other actors needs to
+be mitigated by design. These actors benefit from bottlenecks in
+information flow that can be tightened, controlled, and surveilled. This
+is exactly how the services we now use are (being) designed. Hence,
+current centralized and restrictive models need to be replaced for
+decentralized and permissive models.
 
-We must demand the potential of unlimited ways to deal with information
+We must demand the potential of new ways to deal with information
 overload. Full access and unlimited reuse permits us to deal with
 information overload in better ways by making it easier to commodify
 ways to consume and discover information. Creating such a market was
-part of the European Digital Single Market strategy, but it failed to do
-so. Oligarchic control over access and reuse prevents its existence
-today. By demanding decentralization and distribution of information, we
-may break up both the oligarchic publishing structures in science and
-break up the oligarchic control over the data on which services can be
-built.
+part of the European Digital Single Market strategy\footnote{\url{https://ec.europa.eu/digital-single-market/en/policies/digitising-european-industry}},
+but it failed to do so. Oligarchic control over access and reuse
+prevents its existence today. By demanding decentralization and
+distribution of information, we may break up both the oligarchic
+publishing structures in science and break up the oligarchic control
+over the data on which services can be built.
 
 To better deal with information overload we must also demand new
 information structures. Transparency is often proposed as the key to
@@ -9317,11 +9346,10 @@ societal context that we must not neglect (IPCC
 reduce the need for consumptive resources (often fossil fuel based;
 Pirani \protect\hyperlink{ref-isbn:9780745335612}{2018}), we must
 reimagine how we can interact with other researchers. Doing so may
-drastically reduce the need for flights for conferences (and benefit our
-schedules). The digital services that are provided also consume
-substantial amounts of energy, especially given the rise of machine
-learning algorithms whose training is substantial in its energy use
-(Strubell, Ganesh, and McCallum
+drastically reduce the need for flights for conferences. The digital
+services that are provided also consume substantial amounts of energy,
+especially given the rise of machine learning algorithms whose training
+is substantial in its energy use (Strubell, Ganesh, and McCallum
 \protect\hyperlink{ref-DBLP:journalsux2fcorrux2fabs-1906-02243}{2019}).
 Any radical proposals must be evaluated on their sustainability given
 the acute urgency of the ecological crises.
@@ -9627,9 +9655,9 @@ Samples T Tests: The Power of Alternatives and Recommendations.''
 doi:\href{https://doi.org/10.1037/met0000014}{10.1037/met0000014}.
 
 \hypertarget{ref-doi:10.1177ux2f1745691612459060}{}
-Bakker, Marjan, Annette van Dijk, and Jelte M Wicherts. 2012. ``The
-rules of the game called psychological science.'' \emph{Perspectives on
-Psychological Science} 7 (6): 543--54.
+Bakker, Marjan, Annette Van Dijk, Jelte M., and Jelte M Wicherts. 2012.
+``The rules of the game called psychological science.''
+\emph{Perspectives on Psychological Science} 7 (6): 543--54.
 doi:\href{https://doi.org/10.1177/1745691612459060}{10.1177/1745691612459060}.
 
 \hypertarget{ref-doi:10.1177ux2f0956797616647519}{}
@@ -10236,7 +10264,7 @@ doi:\href{https://doi.org/10.7717/peerj.3068}{10.7717/peerj.3068}.
 \url{https://wayback.archive.org/web/20180807191523/https://opensource.com/article/18/5/scholarly-publishers-https}.
 
 \hypertarget{ref-doi:10.3390ux2fpublications6020021}{}
-Hartgerink, Chris H. J., and Marino van Zelst. 2018. ``As-You-Go Instead
+Hartgerink, Chris H. J., and Marino Van Zelst. 2018. ``As-You-Go Instead
 of After-the-Fact: A Network Approach to Scholarly Communication and
 Evaluation.'' \emph{Publications} 6 (2). MDPI AG: 21.
 doi:\href{https://doi.org/10.3390/publications6020021}{10.3390/publications6020021}.
@@ -10477,6 +10505,10 @@ Kircz, Joost G. 1998. ``Modularity: The Next Form of Scientific
 Information Presentation?'' \emph{Journal of Documentation} 54 (2).
 Emerald: 210--35.
 doi:\href{https://doi.org/10.1108/eum0000000007185}{10.1108/eum0000000007185}.
+
+\hypertarget{ref-klaassen2014evidential}{}
+Klaassen, Chris A. J. 2014. ``Evidential Value in Anova-Regression
+Results in Scientific Integrity Studies.''
 
 \hypertarget{ref-doi:10.1371ux2fjournal.pone.0115253}{}
 Klein, Martin, Herbert Van de Sompel, Robert Sanderson, Harihar Shankar,
@@ -10951,9 +10983,9 @@ Invalid Scientific Literature.'' \emph{JAMA} 263 (10): 1420--3.
 doi:\href{https://doi.org/10.1001/jama.1990.03440100140020}{10.1001/jama.1990.03440100140020}.
 
 \hypertarget{ref-guardian-cup}{}
-Philips, Tom. 2017. ``Publishers Need to Stop Using Insecure Http.''
-\emph{The Guardian}.
-\url{https://wayback.archive.org/web/20180809112257/https://www.theguardian.com/world/2017/aug/19/cambridge-university-press-accused-of-selling-its-soul-over-chinese-censorship}.
+Philips, Tom. 2017. ``Cambridge University Press Accused of 'Selling Its
+Soul' over Chinese Censorship.'' \emph{The Guardian}.
+\url{https://www.theguardian.com/world/2017/aug/19/cambridge-university-press-accused-of-selling-its-soul-over-chinese-censorship}.
 
 \hypertarget{ref-doi:10.1101ux2f179135}{}
 Piraino, Scott W. 2017. ``Issues in the Statistical Detection of Data
@@ -11255,6 +11287,9 @@ doi:\href{https://doi.org/10.1016/s0895-4356(00)00242-0}{10.1016/s0895-4356(00)0
 Stewart, W W, and N Feder. 1987. ``The Integrity of the Scientific
 Literature.'' \emph{Nature} 325 (6101): 207--14.
 doi:\href{https://doi.org/10.1038/325207a0}{10.1038/325207a0}.
+
+\hypertarget{ref-isbn:9781781686195}{}
+Streeck, Wolfgang. 2014. \emph{Buying Time}.
 
 \hypertarget{ref-doi:10.1027ux2f2151-2604ux2fa000356}{}
 Stricker, Johannes, and Armin Günther. 2019. ``Scientific Misconduct in

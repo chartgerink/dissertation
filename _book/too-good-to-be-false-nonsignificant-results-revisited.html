@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>4 Too good to be false: Nonsignificant results revisited | Contributions towards understanding and building sustainable science</title>
+  <meta name="description" content="PhD dissertation by CHJ Hartgerink, written during 2014-2019, mostly at Tilburg University." />
+  <meta name="generator" content="bookdown 0.10 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="4 Too good to be false: Nonsignificant results revisited | Contributions towards understanding and building sustainable science" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="PhD dissertation by CHJ Hartgerink, written during 2014-2019, mostly at Tilburg University." />
+  <meta name="github-repo" content="chartgerink/dissertation" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="4 Too good to be false: Nonsignificant results revisited | Contributions towards understanding and building sustainable science" />
+  
+  <meta name="twitter:description" content="PhD dissertation by CHJ Hartgerink, written during 2014-2019, mostly at Tilburg University." />
+  
+
+<meta name="author" content="Chris Hubertus Joseph Hartgerink" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html">
+<link rel="next" href="statistical-results-content-mining-psychology-articles-for-statistical-test-results.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Prologue</a></li>
+<li class="part"><span><b>I Understanding sustainable science</b></span></li>
+<li class="chapter" data-level="1" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html"><i class="fa fa-check"></i><b>1</b> Research practices and assessment of research misconduct</a><ul>
+<li class="chapter" data-level="1.1" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#responsible-conduct-of-research"><i class="fa fa-check"></i><b>1.1</b> Responsible conduct of research</a><ul>
+<li class="chapter" data-level="1.1.1" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#what-is-it"><i class="fa fa-check"></i><b>1.1.1</b> What is it?</a></li>
+<li class="chapter" data-level="1.1.2" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#what-do-researchers-do"><i class="fa fa-check"></i><b>1.1.2</b> What do researchers do?</a></li>
+<li class="chapter" data-level="1.1.3" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#improving-responsible-conduct"><i class="fa fa-check"></i><b>1.1.3</b> Improving responsible conduct</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#questionable-research-practices"><i class="fa fa-check"></i><b>1.2</b> Questionable research practices</a><ul>
+<li class="chapter" data-level="1.2.1" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#what-is-it-1"><i class="fa fa-check"></i><b>1.2.1</b> What is it?</a></li>
+<li class="chapter" data-level="1.2.2" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#what-do-researchers-do-1"><i class="fa fa-check"></i><b>1.2.2</b> What do researchers do?</a></li>
+<li class="chapter" data-level="1.2.3" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#how-can-it-be-prevented"><i class="fa fa-check"></i><b>1.2.3</b> How can it be prevented?</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#research-misconduct"><i class="fa fa-check"></i><b>1.3</b> Research misconduct</a><ul>
+<li class="chapter" data-level="1.3.1" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#what-is-it-2"><i class="fa fa-check"></i><b>1.3.1</b> What is it?</a></li>
+<li class="chapter" data-level="1.3.2" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#what-do-researchers-do-2"><i class="fa fa-check"></i><b>1.3.2</b> What do researchers do?</a></li>
+<li class="chapter" data-level="1.3.3" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#how-can-it-be-prevented-1"><i class="fa fa-check"></i><b>1.3.3</b> How can it be prevented?</a></li>
+</ul></li>
+<li class="chapter" data-level="1.4" data-path="research-practices-and-assessment-of-research-misconduct.html"><a href="research-practices-and-assessment-of-research-misconduct.html#conclusion"><i class="fa fa-check"></i><b>1.4</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html"><a href="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html"><i class="fa fa-check"></i><b>2</b> Reanalyzing Head et al. (2015): investigating the robustness of widespread <span class="math inline">\(p\)</span>-hacking</a><ul>
+<li class="chapter" data-level="2.1" data-path="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html"><a href="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html#data-and-methods"><i class="fa fa-check"></i><b>2.1</b> Data and methods</a></li>
+<li class="chapter" data-level="2.2" data-path="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html"><a href="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html#reanalysis-results"><i class="fa fa-check"></i><b>2.2</b> Reanalysis results</a></li>
+<li class="chapter" data-level="2.3" data-path="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html"><a href="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html#discussion"><i class="fa fa-check"></i><b>2.3</b> Discussion</a></li>
+<li class="chapter" data-level="2.4" data-path="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html"><a href="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html#limitations-and-conclusion"><i class="fa fa-check"></i><b>2.4</b> Limitations and conclusion</a></li>
+<li class="chapter" data-level="2.5" data-path="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html"><a href="reanalyzing-head-et-al-2015-investigating-the-robustness-of-widespread-p-hacking.html#supporting-information"><i class="fa fa-check"></i><b>2.5</b> Supporting Information</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><i class="fa fa-check"></i><b>3</b> Distributions of <span class="math inline">\(p\)</span>-values between .01-.05 in psychology: What is going on?</a><ul>
+<li class="chapter" data-level="3.0.1" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#how-qrps-relate-to-distributions-of-p-values"><i class="fa fa-check"></i><b>3.0.1</b> How QRPs relate to distributions of <em>p</em>-values</a></li>
+<li class="chapter" data-level="3.0.2" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#previous-findings"><i class="fa fa-check"></i><b>3.0.2</b> Previous findings</a></li>
+<li class="chapter" data-level="3.0.3" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#extensions-of-previous-studies"><i class="fa fa-check"></i><b>3.0.3</b> Extensions of previous studies</a></li>
+<li class="chapter" data-level="3.1" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#data-and-methods-1"><i class="fa fa-check"></i><b>3.1</b> Data and methods</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#data"><i class="fa fa-check"></i><b>3.1.1</b> Data</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#methods"><i class="fa fa-check"></i><b>3.2</b> Methods</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#caliper-test"><i class="fa fa-check"></i><b>3.2.1</b> Caliper test</a></li>
+<li class="chapter" data-level="3.2.2" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#measures-based-on-p-value-distributions"><i class="fa fa-check"></i><b>3.2.2</b> Measures based on <span class="math inline">\(p\)</span>-value distributions</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#results-and-discussion"><i class="fa fa-check"></i><b>3.3</b> Results and discussion</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#reported-p-values"><i class="fa fa-check"></i><b>3.3.1</b> Reported <span class="math inline">\(p\)</span>-values</a></li>
+<li class="chapter" data-level="3.3.2" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#recalculated-p-value-distributions"><i class="fa fa-check"></i><b>3.3.2</b> Recalculated <span class="math inline">\(p\)</span>-value distributions</a></li>
+<li class="chapter" data-level="3.3.3" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#excessive-significance-over-time"><i class="fa fa-check"></i><b>3.3.3</b> Excessive significance over time</a></li>
+<li class="chapter" data-level="3.3.4" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#results-of-two-measures-based-on-modeling-p-value-distributions"><i class="fa fa-check"></i><b>3.3.4</b> Results of two measures based on modeling <span class="math inline">\(p\)</span>-value distributions</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html"><a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html#limitations-and-conclusions"><i class="fa fa-check"></i><b>3.4</b> Limitations and conclusions</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html"><i class="fa fa-check"></i><b>4</b> Too good to be false: Nonsignificant results revisited</a><ul>
+<li class="chapter" data-level="4.1" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#theoretical-framework"><i class="fa fa-check"></i><b>4.1</b> Theoretical framework</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#distributions-of-p-values"><i class="fa fa-check"></i><b>4.1.1</b> Distributions of <em>p</em>-values</a></li>
+<li class="chapter" data-level="4.1.2" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#testing-for-false-negatives-the-fisher-test"><i class="fa fa-check"></i><b>4.1.2</b> Testing for false negatives: the Fisher test</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#application-1-evidence-of-false-negatives-in-articles-across-eight-major-psychology-journals"><i class="fa fa-check"></i><b>4.2</b> Application 1: Evidence of false negatives in articles across eight major psychology journals</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#method"><i class="fa fa-check"></i><b>4.2.1</b> Method</a></li>
+<li class="chapter" data-level="4.2.2" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#results"><i class="fa fa-check"></i><b>4.2.2</b> Results</a></li>
+<li class="chapter" data-level="4.2.3" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#expected-effect-size-distribution."><i class="fa fa-check"></i><b>4.2.3</b> Expected effect size distribution.</a></li>
+<li class="chapter" data-level="4.2.4" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#evidence-of-false-negatives-in-articles."><i class="fa fa-check"></i><b>4.2.4</b> Evidence of false negatives in articles.</a></li>
+<li class="chapter" data-level="4.2.5" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#discussion-1"><i class="fa fa-check"></i><b>4.2.5</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#application-2-evidence-of-false-negative-gender-effects-in-eight-major-psychology-journals"><i class="fa fa-check"></i><b>4.3</b> Application 2: Evidence of false negative gender effects in eight major psychology journals</a><ul>
+<li class="chapter" data-level="4.3.1" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#method-1"><i class="fa fa-check"></i><b>4.3.1</b> Method</a></li>
+<li class="chapter" data-level="4.3.2" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#results-1"><i class="fa fa-check"></i><b>4.3.2</b> Results</a></li>
+<li class="chapter" data-level="4.3.3" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#discussion-2"><i class="fa fa-check"></i><b>4.3.3</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#application-3-reproducibility-project-psychology"><i class="fa fa-check"></i><b>4.4</b> Application 3: Reproducibility Project Psychology</a><ul>
+<li class="chapter" data-level="4.4.1" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#method-2"><i class="fa fa-check"></i><b>4.4.1</b> Method</a></li>
+<li class="chapter" data-level="4.4.2" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#results-2"><i class="fa fa-check"></i><b>4.4.2</b> Results</a></li>
+<li class="chapter" data-level="4.4.3" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#discussion-3"><i class="fa fa-check"></i><b>4.4.3</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#general-discussion"><i class="fa fa-check"></i><b>4.5</b> General Discussion</a><ul>
+<li class="chapter" data-level="4.5.1" data-path="too-good-to-be-false-nonsignificant-results-revisited.html"><a href="too-good-to-be-false-nonsignificant-results-revisited.html#limitations-and-further-research"><i class="fa fa-check"></i><b>4.5.1</b> Limitations and further research</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="statistical-results-content-mining-psychology-articles-for-statistical-test-results.html"><a href="statistical-results-content-mining-psychology-articles-for-statistical-test-results.html"><i class="fa fa-check"></i><b>5</b> 688,112 Statistical Results: Content Mining Psychology Articles for Statistical Test Results</a><ul>
+<li class="chapter" data-level="5.1" data-path="statistical-results-content-mining-psychology-articles-for-statistical-test-results.html"><a href="statistical-results-content-mining-psychology-articles-for-statistical-test-results.html#data-description"><i class="fa fa-check"></i><b>5.1</b> Data description</a></li>
+<li class="chapter" data-level="5.2" data-path="statistical-results-content-mining-psychology-articles-for-statistical-test-results.html"><a href="statistical-results-content-mining-psychology-articles-for-statistical-test-results.html#methods-1"><i class="fa fa-check"></i><b>5.2</b> Methods</a></li>
+<li class="chapter" data-level="5.3" data-path="statistical-results-content-mining-psychology-articles-for-statistical-test-results.html"><a href="statistical-results-content-mining-psychology-articles-for-statistical-test-results.html#usage-notes"><i class="fa fa-check"></i><b>5.3</b> Usage notes</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html"><i class="fa fa-check"></i><b>6</b> Detection of data fabrication using statistical tools</a><ul>
+<li class="chapter" data-level="6.1" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#theoretical-framework-1"><i class="fa fa-check"></i><b>6.1</b> Theoretical framework</a><ul>
+<li class="chapter" data-level="6.1.1" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#detecting-data-fabrication-in-summary-statistics"><i class="fa fa-check"></i><b>6.1.1</b> Detecting data fabrication in summary statistics</a></li>
+<li class="chapter" data-level="6.1.2" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#detecting-data-fabrication-in-raw-data"><i class="fa fa-check"></i><b>6.1.2</b> Detecting data fabrication in raw data</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#study-1---detecting-fabricated-summary-statistics"><i class="fa fa-check"></i><b>6.2</b> Study 1 - detecting fabricated summary statistics</a><ul>
+<li class="chapter" data-level="6.2.1" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#methods-2"><i class="fa fa-check"></i><b>6.2.1</b> Methods</a></li>
+<li class="chapter" data-level="6.2.2" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#results-3"><i class="fa fa-check"></i><b>6.2.2</b> Results</a></li>
+<li class="chapter" data-level="6.2.3" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#discussion-4"><i class="fa fa-check"></i><b>6.2.3</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#study-2---detecting-fabricated-individual-level-data"><i class="fa fa-check"></i><b>6.3</b> Study 2 - detecting fabricated individual level data</a><ul>
+<li class="chapter" data-level="6.3.1" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#methods-3"><i class="fa fa-check"></i><b>6.3.1</b> Methods</a></li>
+<li class="chapter" data-level="6.3.2" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#results-4"><i class="fa fa-check"></i><b>6.3.2</b> Results</a></li>
+<li class="chapter" data-level="6.3.3" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#discussion-5"><i class="fa fa-check"></i><b>6.3.3</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="detection-of-data-fabrication-using-statistical-tools.html"><a href="detection-of-data-fabrication-using-statistical-tools.html#general-discussion-1"><i class="fa fa-check"></i><b>6.4</b> General discussion</a></li>
+</ul></li>
+<li class="part"><span><b>II Improving science</b></span></li>
+<li class="chapter" data-level="7" data-path="extracting-data-from-vector-figures-in-scholarly-articles.html"><a href="extracting-data-from-vector-figures-in-scholarly-articles.html"><i class="fa fa-check"></i><b>7</b> Extracting data from vector figures in scholarly articles</a><ul>
+<li class="chapter" data-level="7.1" data-path="extracting-data-from-vector-figures-in-scholarly-articles.html"><a href="extracting-data-from-vector-figures-in-scholarly-articles.html#method-3"><i class="fa fa-check"></i><b>7.1</b> Method</a><ul>
+<li class="chapter" data-level="7.1.1" data-path="extracting-data-from-vector-figures-in-scholarly-articles.html"><a href="extracting-data-from-vector-figures-in-scholarly-articles.html#extraction-procedure"><i class="fa fa-check"></i><b>7.1.1</b> Extraction procedure</a></li>
+<li class="chapter" data-level="7.1.2" data-path="extracting-data-from-vector-figures-in-scholarly-articles.html"><a href="extracting-data-from-vector-figures-in-scholarly-articles.html#corpus"><i class="fa fa-check"></i><b>7.1.2</b> Corpus</a></li>
+<li class="chapter" data-level="7.1.3" data-path="extracting-data-from-vector-figures-in-scholarly-articles.html"><a href="extracting-data-from-vector-figures-in-scholarly-articles.html#documentation"><i class="fa fa-check"></i><b>7.1.3</b> Documentation</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="extracting-data-from-vector-figures-in-scholarly-articles.html"><a href="extracting-data-from-vector-figures-in-scholarly-articles.html#results-5"><i class="fa fa-check"></i><b>7.2</b> Results</a></li>
+<li class="chapter" data-level="7.3" data-path="extracting-data-from-vector-figures-in-scholarly-articles.html"><a href="extracting-data-from-vector-figures-in-scholarly-articles.html#discussion-6"><i class="fa fa-check"></i><b>7.3</b> Discussion</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><i class="fa fa-check"></i><b>8</b> As-you-go instead of after-the-fact: A network approach to scholarly communication and evaluation</a><ul>
+<li class="chapter" data-level="8.1" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#network-structure"><i class="fa fa-check"></i><b>8.1</b> Network structure</a></li>
+<li class="chapter" data-level="8.2" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#indicators"><i class="fa fa-check"></i><b>8.2</b> Indicators</a></li>
+<li class="chapter" data-level="8.3" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#use-cases"><i class="fa fa-check"></i><b>8.3</b> Use cases</a><ul>
+<li class="chapter" data-level="8.3.1" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#funders"><i class="fa fa-check"></i><b>8.3.1</b> Funders</a></li>
+<li class="chapter" data-level="8.3.2" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#universities"><i class="fa fa-check"></i><b>8.3.2</b> Universities</a></li>
+<li class="chapter" data-level="8.3.3" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#individuals"><i class="fa fa-check"></i><b>8.3.3</b> Individuals</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#discussion-7"><i class="fa fa-check"></i><b>8.4</b> Discussion</a></li>
+<li class="chapter" data-level="8.5" data-path="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html"><a href="as-you-go-instead-of-after-the-fact-a-network-approach-to-scholarly-communication-and-evaluation.html#conclusion-1"><i class="fa fa-check"></i><b>8.5</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><i class="fa fa-check"></i><b>9</b> Verified, shared, modular, and provenance based research communication with the Dat protocol</a><ul>
+<li class="chapter" data-level="9.1" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#dat-protocol"><i class="fa fa-check"></i><b>9.1</b> Dat protocol</a></li>
+<li class="chapter" data-level="9.2" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#verified-modular-scholarly-communication"><i class="fa fa-check"></i><b>9.2</b> Verified modular scholarly communication</a><ul>
+<li class="chapter" data-level="9.2.1" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#scholarly-profiles"><i class="fa fa-check"></i><b>9.2.1</b> Scholarly profiles</a></li>
+<li class="chapter" data-level="9.2.2" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#scholarly-modules"><i class="fa fa-check"></i><b>9.2.2</b> Scholarly modules</a></li>
+<li class="chapter" data-level="9.2.3" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#verification"><i class="fa fa-check"></i><b>9.2.3</b> Verification</a></li>
+<li class="chapter" data-level="9.2.4" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#prototype"><i class="fa fa-check"></i><b>9.2.4</b> Prototype</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#discussion-8"><i class="fa fa-check"></i><b>9.3</b> Discussion</a></li>
+<li class="chapter" data-level="9.4" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#limitations"><i class="fa fa-check"></i><b>9.4</b> Limitations</a></li>
+<li class="chapter" data-level="9.5" data-path="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html"><a href="verified-shared-modular-and-provenance-based-research-communication-with-the-dat-protocol.html#supporting-information-1"><i class="fa fa-check"></i><b>9.5</b> Supporting Information</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="summary.html"><a href="summary.html"><i class="fa fa-check"></i>Summary</a></li>
+<li class="chapter" data-level="" data-path="epilogue.html"><a href="epilogue.html"><i class="fa fa-check"></i>Epilogue</a></li>
+<li class="appendix"><span><b>Appendices</b></span></li>
+<li class="chapter" data-level="A" data-path="examining-statistical-properties-of-the-fisher-test.html"><a href="examining-statistical-properties-of-the-fisher-test.html"><i class="fa fa-check"></i><b>A</b> Examining statistical properties of the Fisher test</a></li>
+<li class="chapter" data-level="B" data-path="effect-computation.html"><a href="effect-computation.html"><i class="fa fa-check"></i><b>B</b> Effect computation</a></li>
+<li class="chapter" data-level="C" data-path="example-of-statcheck-report-for-pubpeer.html"><a href="example-of-statcheck-report-for-pubpeer.html"><i class="fa fa-check"></i><b>C</b> Example of <code>statcheck</code> report for PubPeer</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Contributions towards understanding and building sustainable science</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="too-good-to-be-false-nonsignificant-results-revisited" class="section level1">
+<h1><span class="header-section-number">4</span> Too good to be false: Nonsignificant results revisited</h1>
+<p>According to <span class="citation">Popper (<a href="#ref-isbn:9780415278430">2002</a>)</span> falsifiability serves as one of the main demarcating criteria in the social sciences, which stipulates that a hypothesis is required to have the possibility of being proven false to be considered scientific. Within the theoretical framework of scientific hypothesis testing, accepting or rejecting a hypothesis is unequivocal, because the hypothesis is either true or false. Statistical hypothesis testing, on the other hand, is a probabilistic operationalization of scientific hypothesis testing <span class="citation">(Meehl <a href="#ref-doi:10.1016/j.appsy.2004.02.001">2004</a>)</span> and, in view of its probabilistic nature, is subject to decision errors. Such decision errors are the topic of this chapter.</p>
+<p>Null Hypothesis Significance Testing (NHST) is the most prevalent paradigm for statistical hypothesis testing in the social sciences <span class="citation">(American Psychological Association <a href="#ref-isbn:9781433805615">2010</a><a href="#ref-isbn:9781433805615">b</a>)</span>. In NHST the hypothesis <span class="math inline">\(H_0\)</span> is tested, where <span class="math inline">\(H_0\)</span> most often regards the absence of an effect. If deemed false, an alternative, mutually exclusive hypothesis <span class="math inline">\(H_1\)</span> is accepted. These decisions are based on the <span class="math inline">\(p\)</span>-value; the probability of the sample data, or more extreme data, given <span class="math inline">\(H_0\)</span> is true. If the <span class="math inline">\(p\)</span>-value is smaller than the decision criterion <span class="math inline">\(\alpha\)</span> <span class="citation">(typically .05; Nuijten, Hartgerink, et al. <a href="#ref-doi:10.3758/s13428-015-0664-2">2015</a>)</span>, <span class="math inline">\(H_0\)</span> is rejected and <span class="math inline">\(H_1\)</span> is accepted.</p>
+<p>Table <a href="#tab:tgtbf-tab1"><strong>??</strong></a> summarizes the four possible situations that can occur in NHST. The columns indicate which hypothesis is true in the population and the rows indicate what is decided based on the sample data. When there is discordance between the true- and decided hypothesis, a decision error is made. More specifically, when <span class="math inline">\(H_0\)</span> is true in the population, but <span class="math inline">\(H_1\)</span> is accepted (<span class="math inline">\(&#39;H_1&#39;\)</span>), a Type I error is made (<span class="math inline">\(\alpha\)</span>); a false positive (lower left cell). When <span class="math inline">\(H_1\)</span> is true in the population and <span class="math inline">\(H_0\)</span> is not rejected (<span class="math inline">\(&#39;H_0&#39;\)</span>), a Type II error is made (<span class="math inline">\(\beta\)</span>); a false negative (upper right cell). However, when the null hypothesis is true in the population and <span class="math inline">\(H_0\)</span> is not rejected (<span class="math inline">\(&#39;H_0&#39;\)</span>), this is a true negative (upper left cell; <span class="math inline">\(1-\alpha\)</span>). The true negative rate is also called specificity of the test. Conversely, when the alternative hypothesis is true in the population and <span class="math inline">\(H_1\)</span> is accepted (<span class="math inline">\(&#39;H_1&#39;\)</span>), this is a true positive (lower right cell). The probability of finding a statistically significant result if <span class="math inline">\(H_1\)</span> is true is the power (<span class="math inline">\(1-\beta\)</span>), which is also called the sensitivity of the test. Power is a positive function of the (true) population effect size, the sample size, and the alpha of the study, such that higher power can always be achieved by altering either the sample size or the alpha level <span class="citation">(Aberson <a href="#ref-Aberson2010-xa">2010</a>)</span>.</p>
+
+<p>Unfortunately, NHST has led to many misconceptions and misinterpretations <span class="citation">(Goodman <a href="#ref-doi:10.1053/j.seminhematol.2008.04.003">2008</a>; Bakan <a href="#ref-doi:10.1037/h0020412">1966</a>)</span>. The most serious mistake relevant to our chapter is that many researchers accept the null hypothesis and claim no effect in case of a statistically nonsignificant effect <span class="citation">(about 60%, see Hoekstra et al. <a href="#ref-doi:10.3758/bf03213921">2006</a>)</span>. Hence, most researchers overlook that the outcome of hypothesis testing is probabilistic (if the null hypothesis is true, or the alternative hypothesis is true and power is less than 1) and interpret outcomes of hypothesis testing as reflecting the absolute truth. At least partly because of mistakes like this, many researchers ignore the possibility of false negatives and false positives and they remain pervasive in the literature.</p>
+<p>Recent debate about false positives has received much attention in science and psychological science in particular. The Reproducibility Project Psychology (RPP), which replicated 100 effects reported in prominent psychology journals in 2008, found that only 36% of these effects were statistically significant in the replication <span class="citation">(Open Science Collaboration <a href="#ref-doi:10.1126/science.aac4716">2015</a>)</span>. Besides in psychology, reproducibility problems have also been indicated in economics <span class="citation">(Camerer et al. <a href="#ref-doi:10.1126/science.aaf0918">2016</a>)</span> and medicine <span class="citation">(Begley and Ellis <a href="#ref-doi:10.1038/483531a">2012</a>)</span>. Although these studies suggest substantial evidence of false positives in these fields, replications show considerable variability in resulting effect size estimates <span class="citation">(R. A. Klein et al. <a href="#ref-doi:10.1027/1864-9335/a000178">2014</a>; Stanley and Spence <a href="#ref-doi:10.1177/1745691614528518">2014</a>)</span>. Therefore caution is warranted when wishing to draw conclusions on the presence of an effect in individual (original or replication) studies <span class="citation">(Open Science Collaboration <a href="#ref-doi:10.1126/science.aac4716">2015</a>; Gilbert et al. <a href="#ref-doi:10.1126/science.aad7243">2016</a>; Anderson et al. <a href="#ref-doi:10.1126/science.aad9163">2016</a>)</span>.</p>
+<p>The debate about false positives is driven by the current overemphasis on statistical significance of research results <span class="citation">(Giner-Sorolla <a href="#ref-doi:10.1177/1745691612457576">2012</a>)</span>. This overemphasis is substantiated by the finding that more than 90% of results in the psychological literature are statistically significant <span class="citation">(Open Science Collaboration <a href="#ref-doi:10.1126/science.aac4716">2015</a>; Sterling, Rosenbaum, and Weinkam <a href="#ref-doi:10.2307/2684823">1995</a>; Sterling <a href="#ref-doi:10.2307/2282137">1959</a>)</span> despite low statistical power due to small sample sizes <span class="citation">(Cohen <a href="#ref-doi:10.1037/h0045186">1962</a>; Sedlmeier and Gigerenzer <a href="#ref-doi:10.1037/0033-2909.105.2.309">1989</a>; Marszalek et al. <a href="#ref-doi:10.2466/03.11.pms.112.2.331-348">2011</a>; Bakker et al. <a href="#ref-doi:10.1177/1745691612459060">2012</a>)</span>. Consequently, publications have become biased by overrepresenting statistically significant results <span class="citation">(Greenwald <a href="#ref-doi:10.1037/h0076157">1975</a>)</span>, which generally results in effect size overestimation in both individual studies <span class="citation">(Nuijten, Hartgerink, et al. <a href="#ref-doi:10.3758/s13428-015-0664-2">2015</a>)</span> and meta-analyses <span class="citation">(Van Assen, Van Aert, and Wicherts <a href="#ref-doi:10.1037/met0000025">2015</a>; Lane and Dunlap <a href="#ref-doi:10.1111/j.2044-8317.1978.tb00578.x">1978</a>; Rothstein <a href="#ref-isbn:9780470870150">2005</a>; Borenstein et al. <a href="#ref-isbn:9781119964377">2011</a>)</span>. The overemphasis on statistically significant effects has been accompanied by questionable research practices <span class="citation">(QRPs; John, Loewenstein, and Prelec <a href="#ref-doi:10.1177/0956797611430953">2012</a>)</span> such as erroneously rounding <span class="math inline">\(p\)</span>-values towards significance, which for example occurred for 13.8% of all <span class="math inline">\(p\)</span>-values reported as “<span class="math inline">\(p =.05\)</span>” in articles from eight major psychology journals in the period 1985-2013 <span class="citation">(Hartgerink et al. <a href="#ref-doi:10.7717/peerj.1935">2016</a>)</span>.</p>
+<p>The concern for false positives has overshadowed the concern for false negatives in the recent debate, which seems unwarranted. <span class="citation">Cohen (<a href="#ref-doi:10.1037/h0045186">1962</a>)</span> was the first to indicate that psychological science was (severely) underpowered, which is defined as the chance of finding a statistically significant effect in the sample being lower than 50% when there is truly an effect in the population. This has not changed throughout the subsequent fifty years <span class="citation">(Bakker et al. <a href="#ref-doi:10.1177/1745691612459060">2012</a>; Fraley and Vazire <a href="#ref-doi:10.1371/journal.pone.0109019">2014</a>)</span>. Given that the complement of true positives (i.e., power) are false negatives, no evidence either exists that the problem of false negatives has been resolved in psychology. Moreover, <span class="citation">Fiedler, Kutzner, and Krueger (<a href="#ref-doi:10.1177/1745691612462587">2012</a>)</span> expressed the concern that an increased focus on false positives is too shortsighted because false negatives are more difficult to detect than false positives. They also argued that, because of the focus on statistically significant results, negative results are less likely to be the subject of replications than positive results, decreasing the probability of detecting a false negative. Additionally, the Positive Predictive Value <span class="citation">(PPV, the number of statistically significant effects that are true; Ioannidis <a href="#ref-doi:10.1371/journal.pmed.0020124">2005</a>)</span> has been a major point of discussion in recent years, whereas the Negative Predictive Value (NPV) has rarely been mentioned.</p>
+<p>The research objective of the current chapter is to examine evidence for false negative results in the psychology literature. This chapter operates under the premise of naive realism about the interpretation of statistically nonsignificant results, where naive realism would result in neglecting the probabilistic nature of these results. To this end, we inspected a large number of nonsignificant results from eight flagship psychology journals. First, we compared the observed effect distributions of nonsignificant results for eight journals (combined and separately) to the expected null distribution based on simulations, where a discrepancy between observed and expected distribution was anticipated (i.e., presence of false negatives). Second, we propose to use the Fisher test to test the hypothesis that <span class="math inline">\(H_0\)</span> is true for all nonsignificant results reported in a paper, which we show to have high power to detect false negatives in a simulation study. Third, we applied the Fisher test to the nonsignificant results in 14,765 psychology papers from these eight flagship psychology journals to inspect how many papers show evidence of at least one false negative result. Fourth, we examined evidence of false negatives in reported gender effects. Gender effects are particularly interesting, because gender is typically a control variable and not the primary focus of studies. Hence we expect little <span class="math inline">\(p\)</span>-hacking and substantial evidence of false negatives in reported gender effects in psychology. Finally, as another application, we applied the Fisher test to the 64 nonsignificant replication results of the RPP <span class="citation">(Open Science Collaboration <a href="#ref-doi:10.1126/science.aac4716">2015</a>)</span> to examine whether at least one of these nonsignificant results may actually be a false negative.</p>
+<div id="theoretical-framework" class="section level2">
+<h2><span class="header-section-number">4.1</span> Theoretical framework</h2>
+<p>We begin by reviewing the probability density function of both an individual <span class="math inline">\(p\)</span>-value and a set of independent <span class="math inline">\(p\)</span>-values as a function of population effect size. Subsequently, we apply the Kolmogorov-Smirnov test to inspect whether a collection of nonsignificant results across papers deviates from what would be expected under the <span class="math inline">\(H_0\)</span>. We also propose an adapted Fisher method to test whether nonsignificant results deviate from <span class="math inline">\(H_0\)</span> within a paper. These methods will be used to test whether there is evidence for false negatives in the psychology literature.</p>
+<div id="distributions-of-p-values" class="section level3">
+<h3><span class="header-section-number">4.1.1</span> Distributions of <em>p</em>-values</h3>
+<p>The distribution of one <span class="math inline">\(p\)</span>-value is a function of the population effect, the observed effect and the precision of the estimate. When the population effect is zero, the probability distribution of one <span class="math inline">\(p\)</span>-value is uniform. When there is a non-zero effect, the probability distribution is right-skewed. More specifically, as sample size or true effect size increases, the probability distribution of one <span class="math inline">\(p\)</span>-value becomes increasingly right-skewed. These regularities also generalize to a set of independent <span class="math inline">\(p\)</span>-values, which are uniformly distributed when there is no population effect and right-skew distributed when there is a population effect, with more right-skew as the population effect and/or precision increases <span class="citation">(Fisher <a href="#ref-Fisher1925-jl">1925</a>)</span>.</p>
+Considering that the present chapter focuses on false negatives, we primarily examine nonsignificant <span class="math inline">\(p\)</span>-values and their distribution. Since the test we apply is based on nonselected <span class="math inline">\(p\)</span>-values, it requires random variables distributed between 0 and 1. We apply the following transformation to each nonsignificant <span class="math inline">\(p\)</span>-value that is selected:
+<span class="math display" id="eq:pistar">\[\begin{equation}
+p^*_i=\frac{p_i-\alpha}{1-\alpha}
+\tag{4.1}
+\end{equation}\]</span>
+<p>where <span class="math inline">\(p_i\)</span> is the reported nonsignificant <span class="math inline">\(p\)</span>-value, <span class="math inline">\(\alpha\)</span> is the selected significance cutoff (i.e., <span class="math inline">\(\alpha=.05\)</span>), and <span class="math inline">\(p^*_i\)</span> the transformed <span class="math inline">\(p\)</span>-value. Note that this transformation retains the distributional properties of the original <span class="math inline">\(p\)</span>-values for the selected nonsignificant results. Both one-tailed and two-tailed tests can be included in this way.</p>
+</div>
+<div id="testing-for-false-negatives-the-fisher-test" class="section level3">
+<h3><span class="header-section-number">4.1.2</span> Testing for false negatives: the Fisher test</h3>
+We applied the Fisher test to inspect whether the distribution of observed nonsignificant <span class="math inline">\(p\)</span>-values deviates from those expected under <span class="math inline">\(H_0\)</span>. The Fisher test was initially introduced as a meta-analytic technique to synthesize results across studies <span class="citation">(Fisher <a href="#ref-Fisher1925-jl">1925</a>; Hedges and Olkin <a href="#ref-Hedges1985-dy">1985</a>)</span>. When applied to transformed nonsignificant <span class="math inline">\(p\)</span>-values (see Equation <a href="too-good-to-be-false-nonsignificant-results-revisited.html#eq:pistar">(4.1)</a>) the Fisher test tests for evidence against <span class="math inline">\(H_0\)</span> in a set of nonsignificant <span class="math inline">\(p\)</span>-values. In other words, the null hypothesis we test with the Fisher test is that all included nonsignificant results are true negatives. The Fisher test statistic is calculated as
+<span class="math display" id="eq:fishertest">\[\begin{equation}
+\chi^2_{2k}=-2\sum\limits^k_{i=1}ln(p^*_i)
+\tag{4.2}
+\end{equation}\]</span>
+<p>where <span class="math inline">\(k\)</span> is the number of nonsignificant <span class="math inline">\(p\)</span>-values and <span class="math inline">\(\chi^2\)</span> has <span class="math inline">\(2k\)</span> degrees of freedom. A larger <span class="math inline">\(\chi^2\)</span> value indicates more evidence for at least one false negative in the set of <span class="math inline">\(p\)</span>-values. We conclude that there is sufficient evidence of at least one false negative result, if the Fisher test is statistically significant at <span class="math inline">\(\alpha=.10\)</span>, similar to tests of publication bias that also use <span class="math inline">\(\alpha=.10\)</span> <span class="citation">(Sterne, Gavaghan, and Egger <a href="#ref-doi:10.1016/s0895-43560000242-0">2000</a>; Ioannidis and Trikalinos <a href="#ref-doi:10.1177/1740774507079441">2007</a>; Francis <a href="#ref-doi:10.3758/s13423-012-0227-9">2012</a>)</span>.</p>
+<p>We estimated the power of detecting false negatives with the Fisher test as a function of sample size <span class="math inline">\(N\)</span>, true correlation effect size <span class="math inline">\(\eta\)</span>, and <span class="math inline">\(k\)</span> nonsignificant test results (the full procedure is described in Appendix A). The three levels of sample size used in our simulation study (33, 62, 119) correspond to the 25th, 50th (median) and 75th percentiles of the degrees of freedom of reported <span class="math inline">\(t\)</span>, <span class="math inline">\(F\)</span>, and <span class="math inline">\(r\)</span> statistics in eight flagship psychology journals (see Application 1 below). Degrees of freedom of these statistics are directly related to sample size, for instance, for a two-group comparison including 100 people, <span class="math inline">\(df=98\)</span>.</p>
+<p>Table <a href="#tab:tgtbf-tab2"><strong>??</strong></a> summarizes the results for the simulations of the Fisher test when the nonsignificant <span class="math inline">\(p\)</span>-values are generated by either small- or medium population effect sizes. Results for all 5,400 conditions can be found on the OSF (<a href="https://osf.io/qpfnw">osf.io/qpfnw</a>). The results indicate that the Fisher test is a powerful method to test for a false negative among nonsignificant results. For example, for small true effect sizes (<span class="math inline">\(\eta=.1\)</span>), 25 nonsignificant results from medium samples result in 85% power (7 nonsignificant results from large samples yield 83% power). For medium true effects (<span class="math inline">\(\eta=.25\)</span>), three nonsignificant results from small samples (<span class="math inline">\(N=33\)</span>) already provide 89% power for detecting a false negative with the Fisher test. For large effects (<span class="math inline">\(\eta=.4\)</span>), two nonsignificant results from small samples already almost always detects the existence of false negatives (not shown in Table <a href="#tab:tgtbf-tab2"><strong>??</strong></a>).</p>
+
+<p>To put the power of the Fisher test into perspective, we can compare its power to reject the null based on one statistically nonsignificant result (<span class="math inline">\(k=1\)</span>) with the power of a regular <span class="math inline">\(t\)</span>-test to reject the null. If <span class="math inline">\(\eta=.1\)</span>, the power of a regular <span class="math inline">\(t\)</span>-test equals 0.17, 0.255, 0.467 for sample sizes of 33, 62, 119, respectively; if <span class="math inline">\(\eta\)</span> = .25, power values equal 0.813, 0.998, 1 for these sample sizes. The power values of the regular <span class="math inline">\(t\)</span>-test are higher than that of the Fisher test, because the Fisher test does not make use of the more informative statistically significant findings.</p>
+</div>
+</div>
+<div id="application-1-evidence-of-false-negatives-in-articles-across-eight-major-psychology-journals" class="section level2">
+<h2><span class="header-section-number">4.2</span> Application 1: Evidence of false negatives in articles across eight major psychology journals</h2>
+<p>To show that statistically nonsignificant results do not warrant the interpretation that there is truly no effect, we analyzed statistically nonsignificant results from eight major psychology journals. First, we investigate if and how much the distribution of reported nonsignificant effect sizes deviates from what the expected effect size distribution is if there is truly no effect (i.e., <span class="math inline">\(H_0\)</span>). Second, we investigate how many research articles report nonsignificant results and how many of those show evidence for at least one false negative using the Fisher test <span class="citation">(Fisher <a href="#ref-Fisher1925-jl">1925</a>)</span>. Note that this application only investigates the evidence of false negatives in articles, not how authors might interpret these findings (i.e., we do not assume all these nonsignificant results are interpreted as evidence for the null).</p>
+<div id="method" class="section level3">
+<h3><span class="header-section-number">4.2.1</span> Method</h3>
+<p>APA style <span class="math inline">\(t\)</span>, <span class="math inline">\(r\)</span>, and <span class="math inline">\(F\)</span> test statistics were extracted from eight psychology journals with the <code>R</code> package <code>statcheck</code> <span class="citation">(Nuijten, Hartgerink, et al. <a href="#ref-doi:10.3758/s13428-015-0664-2">2015</a>; Epskamp and Nuijten <a href="#ref-statcheck">2016</a>)</span>. APA style is defined as the format where the type of test statistic is reported, followed by the degrees of freedom (if applicable), the observed test value, and the <span class="math inline">\(p\)</span>-value <span class="citation">(e.g., <span class="math inline">\(t(85)=2.86, p=.005\)</span>; American Psychological Association <a href="#ref-isbn:9781433805615">2010</a><a href="#ref-isbn:9781433805615">b</a>)</span>. The <code>statcheck</code> package also recalculates <span class="math inline">\(p\)</span>-values. We reuse the data from Nuijten et al. <span class="citation">(<a href="https://osf.io/gdr4q" class="uri">https://osf.io/gdr4q</a>; Nuijten, Hartgerink, et al. <a href="#ref-doi:10.3758/s13428-015-0664-2">2015</a>)</span>. Table <a href="#tab:tgtbf-tab3"><strong>??</strong></a> depicts the journals, the timeframe, and summaries of the results extracted. The database also includes <span class="math inline">\(\chi^2\)</span> results, which we did not use in our analyses because effect sizes based on these results are not readily mapped on the correlation scale. Two erroneously reported test statistics were eliminated, such that these did not confound results.</p>
+<p>The analyses reported in this chapter use the recalculated <span class="math inline">\(p\)</span>-values to eliminate potential errors in the reported <span class="math inline">\(p\)</span>-values <span class="citation">(Bakker and Wicherts <a href="#ref-doi:10.3758/s13428-011-0089-5">2011</a>; Nuijten, Hartgerink, et al. <a href="#ref-doi:10.3758/s13428-015-0664-2">2015</a>)</span>. However, our recalculated <span class="math inline">\(p\)</span>-values assumed that all other test statistics (degrees of freedom, test values of <span class="math inline">\(t\)</span>, <span class="math inline">\(F\)</span>, or <span class="math inline">\(r\)</span>) are correctly reported. These errors may have affected the results of our analyses. Since most <span class="math inline">\(p\)</span>-values and corresponding test statistics were consistent in our data set (90.7%), we do not believe these typing errors substantially affected our results and conclusions based on them.</p>
+<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; ">
+
+</div>
+<p>First, we compared the observed nonsignificant effect size distribution (computed with observed test results) to the expected nonsignificant effect size distribution under <span class="math inline">\(H_0\)</span>. The expected effect size distribution under <span class="math inline">\(H_0\)</span> was approximated using simulation. We first randomly drew an observed test result (with replacement) and subsequently drew a random nonsignificant <span class="math inline">\(p\)</span>-value between 0.05 and 1 (i.e., under the distribution of the <span class="math inline">\(H_0\)</span>). Based on the drawn <span class="math inline">\(p\)</span>-value and the degrees of freedom of the drawn test result, we computed the accompanying test statistic and the corresponding effect size (for details on effect size computation see Appendix A). This procedure was repeated 163,785 times, which is three times the number of observed nonsignificant test results (54,595). The collection of simulated results approximates the expected effect size distribution under <span class="math inline">\(H_0\)</span>, assuming independence of test results in the same paper. We inspected this possible dependency with the intraclass correlation (<span class="math inline">\(ICC\)</span>), where <span class="math inline">\(ICC=1\)</span> indicates full dependency and <span class="math inline">\(ICC=0\)</span> indicates full independence. For the set of observed results, the ICC for nonsignificant <span class="math inline">\(p\)</span>-values was 0.001, indicating independence of <span class="math inline">\(p\)</span>-values within a paper (the ICC of the log odds transformed <span class="math inline">\(p\)</span>-values was similar, with <span class="math inline">\(ICC=0.002\)</span> after excluding <span class="math inline">\(p\)</span>-values equal to 1 for computational reasons). The resulting, expected effect size distribution was compared to the observed effect size distribution (i) across all journals and (ii) per journal. To test for differences between the expected and observed nonsignificant effect size distributions we applied the Kolmogorov-Smirnov test. This is a non-parametric goodness-of-fit test for equality of distributions, which is based on the maximum absolute deviation between the independent distributions being compared <span class="citation">(denoted <span class="math inline">\(D\)</span>; Massey <a href="#ref-doi:10.2307/2280095">1951</a>)</span>.</p>
+<p>Second, we applied the Fisher test to test how many research papers show evidence of at least one false negative statistical result. To recapitulate, the Fisher test tests whether the distribution of observed nonsignificant <span class="math inline">\(p\)</span>-values deviates from the uniform distribution expected under <span class="math inline">\(H_0\)</span>. In order to compute the result of the Fisher test, we applied equations <a href="too-good-to-be-false-nonsignificant-results-revisited.html#eq:pistar">(4.1)</a> and <a href="too-good-to-be-false-nonsignificant-results-revisited.html#eq:fishertest">(4.2)</a> to the recalculated nonsignificant <span class="math inline">\(p\)</span>-values in each paper (<span class="math inline">\(\alpha=.05\)</span>).</p>
+</div>
+<div id="results" class="section level3">
+<h3><span class="header-section-number">4.2.2</span> Results</h3>
+<div id="observed-effect-size-distribution." class="section level4">
+<h4><span class="header-section-number">4.2.2.1</span> Observed effect size distribution.</h4>
+<p>Figure <a href="too-good-to-be-false-nonsignificant-results-revisited.html#fig:tgtbf-fig1">4.1</a> shows the distribution of observed effect sizes (in <span class="math inline">\(|\eta|\)</span>) across all articles and indicates that, of the 223,082 observed effects, 7% were zero to small (i.e., <span class="math inline">\(0\leq|\eta|&lt;.1\)</span>), 23% were small to medium (i.e., <span class="math inline">\(.1\leq|\eta|&lt;.25\)</span>), 27% medium to large (i.e., <span class="math inline">\(.25\leq|\eta|&lt;.4\)</span>), and 42% large or larger <span class="citation">(i.e., <span class="math inline">\(|\eta|\geq.4\)</span>; Cohen <a href="#ref-isbn:9780805802832">1988</a>)</span>. This suggests that the majority of effects reported in psychology is medium or smaller (i.e., 30%), which is somewhat in line with a previous study on effect distributions <span class="citation">(Gignac and Szodorai <a href="#ref-doi:10.1016/j.paid.2016.06.069">2016</a>)</span>. Of the full set of 223,082 test results, 54,595 (24.5%) were nonsignificant, which is the data set for our main analyses.</p>
+<div class="figure" style="text-align: center"><span id="fig:tgtbf-fig1"></span>
+<img src="assets/figures/tgtbf-fig1.pdf.svg.png" alt="Density of observed effect sizes of results reported in eight psychology journals, with 7 percent of effects in the category none-small, 23 percent small-medium, 27 percent medium-large, and 42 percent large and beyond." width="100%" />
+<p class="caption">
+Figure 4.1: Density of observed effect sizes of results reported in eight psychology journals, with 7 percent of effects in the category none-small, 23 percent small-medium, 27 percent medium-large, and 42 percent large and beyond.
+</p>
+</div>
+<p>Our data set indicated that more nonsignificant results are reported throughout the years, strengthening the case for inspecting potential false negatives. The proportion of reported nonsignificant results showed an upward trend, as depicted in Figure <a href="too-good-to-be-false-nonsignificant-results-revisited.html#fig:tgtbf-fig2">4.2</a>, from approximately 20% in the eighties to approximately 30% of all reported APA results in 2015.</p>
+<div class="figure" style="text-align: center"><span id="fig:tgtbf-fig2"></span>
+<img src="assets/figures/tgtbf-fig2.pdf.svg.png" alt="Observed proportion of nonsignificant test results per year." width="100%" />
+<p class="caption">
+Figure 4.2: Observed proportion of nonsignificant test results per year.
+</p>
+</div>
+</div>
+</div>
+<div id="expected-effect-size-distribution." class="section level3">
+<h3><span class="header-section-number">4.2.3</span> Expected effect size distribution.</h3>
+<p>For the entire set of nonsignificant results across journals, Figure <a href="too-good-to-be-false-nonsignificant-results-revisited.html#fig:tgtbf-fig3">4.3</a> indicates that there is substantial evidence of false negatives. Under <span class="math inline">\(H_0\)</span>, 46% of all observed effects is expected to be within the range <span class="math inline">\(0\leq|\eta|&lt;.1\)</span>, as can be seen in the left panel of Figure <a href="too-good-to-be-false-nonsignificant-results-revisited.html#fig:tgtbf-fig3">4.3</a> highlighted by the lowest grey line (dashed). However, of the observed effects, only 26% fall within this range, as highlighted by the lowest black line. Similarly, we would expect 85% of all effect sizes to be within the range <span class="math inline">\(0\leq|\eta|&lt;.25\)</span> (middle grey line), but we observed 14 percentage points less in this range (i.e., 71%; middle black line); 96% is expected for the range <span class="math inline">\(0\leq|\eta|&lt;.4\)</span> (top grey line), but we observed 4 percentage points less (i.e., 92%; top black line). These differences indicate that larger nonsignificant effects are reported in papers than expected under a null effect. This indicates the presence of false negatives, which is confirmed by the Kolmogorov-Smirnov test, <span class="math inline">\(D=0.3\)</span>, <span class="math inline">\(p&lt;.000000000000001\)</span>. Results were similar when the nonsignificant effects were considered separately for the eight journals, although deviations were smaller for the Journal of Applied Psychology (see <a href="https://osf.io/au3wv/" class="uri">https://osf.io/au3wv/</a> for results per journal).</p>
+<div class="figure" style="text-align: center"><span id="fig:tgtbf-fig3"></span>
+<img src="assets/figures/tgtbf-fig3.pdf.svg.png" alt="Observed and expected (adjusted and unadjusted) effect size distribution for statistically nonsignificant APA results reported in eight psychology journals. Grey lines depict expected values; black lines depict observed values. The three vertical dotted lines correspond to a small, medium, large effect, respectively. Header includes Kolmogorov-Smirnov test results." width="100%" />
+<p class="caption">
+Figure 4.3: Observed and expected (adjusted and unadjusted) effect size distribution for statistically nonsignificant APA results reported in eight psychology journals. Grey lines depict expected values; black lines depict observed values. The three vertical dotted lines correspond to a small, medium, large effect, respectively. Header includes Kolmogorov-Smirnov test results.
+</p>
+</div>
+<p>Because effect sizes and their distribution typically overestimate population effect size <span class="math inline">\(\eta^2\)</span>, particularly when sample size is small <span class="citation">(Voelkle, Ackerman, and Wittmann <a href="#ref-doi:10.1027/1614-2241.3.1.35">2007</a>; Hedges <a href="#ref-doi:10.3102/10769986006002107">1981</a>)</span>, we also compared the observed and expected adjusted nonsignificant effect sizes that correct for such overestimation of effect sizes (right panel of Figure <a href="too-good-to-be-false-nonsignificant-results-revisited.html#fig:tgtbf-fig3">4.3</a>; see Appendix A). Such overestimation affects all effects in a model, both focal and non-focal. The distribution of adjusted effect sizes of nonsignificant results tells the same story as the unadjusted effect sizes; observed effect sizes are larger than expected effect sizes. For instance, the distribution of adjusted reported effect size suggests 49% of effect sizes are at least small, whereas under the <span class="math inline">\(H_0\)</span> only 22% is expected.</p>
+</div>
+<div id="evidence-of-false-negatives-in-articles." class="section level3">
+<h3><span class="header-section-number">4.2.4</span> Evidence of false negatives in articles.</h3>
+<p>The Fisher test was applied to the nonsignificant test results of each of the 14,765 papers separately, to inspect for evidence of false negatives. More technically, we inspected whether <span class="math inline">\(p\)</span>-values within a paper deviate from what can be expected under the <span class="math inline">\(H_0\)</span> (i.e., uniformity). If <span class="math inline">\(H_0\)</span> is in fact true, our results would be that there is evidence for false negatives in 10% of the papers (a meta-false positive). Table <a href="#tab:tgtbf-tab4"><strong>??</strong></a> shows the number of papers with evidence for false negatives, specified per journal and per <span class="math inline">\(k\)</span> number of nonsignificant test results. The first row indicates the number of papers that report no nonsignificant results. When <span class="math inline">\(k=1\)</span>, the Fisher test is simply another way of testing whether the result deviates from a null effect, conditional on the result being statistically nonsignificant. Overall results (last row) indicate that 47.1% of all articles show evidence of false negatives (i.e. 6,951 articles). Of articles reporting at least one nonsignificant result, 66.7% show evidence of false negatives, which is much more than the 10% predicted by chance alone. Results did not substantially differ if nonsignificance is determined based on <span class="math inline">\(\alpha=.10\)</span> (the analyses can be rerun with any set of <span class="math inline">\(p\)</span>-values larger than a certain value based on the code provided on OSF; <a href="https://osf.io/qpfnw" class="uri">https://osf.io/qpfnw</a>.</p>
+<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; ">
+
+</div>
+<p>Table <a href="#tab:tgtbf-tab4"><strong>??</strong></a> also shows evidence of false negatives for each of the eight journals. The lowest proportion of articles with evidence of at least one false negative was for the Journal of Applied Psychology (49.4%; penultimate row). The remaining journals show higher proportions, with a maximum of 81.3% (Journal of Personality and Social Psychology). Researchers should thus be wary to interpret negative results in journal articles as a sign that there is no effect; at least half of the papers provide evidence for at least one false negative finding.</p>
+<p>As would be expected, we found a higher proportion of articles with evidence of at least one false negative for higher numbers of statistically nonsignificant results (<span class="math inline">\(k\)</span>; see Table <a href="#tab:tgtbf-tab4"><strong>??</strong></a>). For instance, 84% of all papers that report more than 20 nonsignificant results show evidence for false negatives, whereas 57.7% of all papers with only 1 nonsignificant result show evidence for false negatives. Consequently, we observe that journals with articles containing a higher number of nonsignificant results, such as JPSP, have a higher proportion of articles with evidence of false negatives. This is the result of higher power of the Fisher method when there are more nonsignificant results and does not necessarily reflect that a nonsignificant <span class="math inline">\(p\)</span>-value in e.g. JPSP has a higher probability of being a false negative than one in another journal.</p>
+<p>We also checked whether evidence of at least one false negative at the article level changed over time. Figure <a href="too-good-to-be-false-nonsignificant-results-revisited.html#fig:tgtbf-fig4">4.4</a> depicts evidence across all articles per year, as a function of year (1985-2013); point size in the figure corresponds to the mean number of nonsignificant results per article (mean <span class="math inline">\(k\)</span>) in that year. Interestingly, the proportion of articles with evidence for false negatives decreased from 77% in 1985 to 55% in 2013, despite the increase in mean <span class="math inline">\(k\)</span> (from 2.11 in 1985 to 4.52 in 2013). This decreasing proportion of papers with evidence over time cannot be explained by a decrease in sample size over time, as sample size in psychology articles has stayed stable across time (see Figure <a href="too-good-to-be-false-nonsignificant-results-revisited.html#fig:tgtbf-fig5">4.5</a>; degrees of freedom is a direct proxy of sample size resulting from the sample size minus the number of parameters in the model). One (at least partial) explanation of this surprising result is that in the early days researchers primarily reported fewer APA results and used to report relatively more APA results with ‘marginally significant’ <span class="math inline">\(p\)</span>-values (i.e., <span class="math inline">\(p\)</span>-values slightly larger than .05), compared to nowadays. This explanation is supported by both a smaller number of reported APA results in the past and the smaller mean reported nonsignificant <span class="math inline">\(p\)</span>-value (0.222 in 1985, 0.386 in 2013). We do not know whether these marginally significant <span class="math inline">\(p\)</span>-values were interpreted as evidence in favor of a finding (or not) and how these interpretations changed over time. Another potential explanation is that the effect sizes being studied have become smaller over time (mean correlation effect <span class="math inline">\(r=\)</span> 0.257 in 1985, 0.187 in 2013), which results in both higher <span class="math inline">\(p\)</span>-values over time and lower power of the Fisher test. Using the data at hand, we cannot distinguish between the two explanations.</p>
+<div class="figure" style="text-align: center"><span id="fig:tgtbf-fig4"></span>
+<img src="assets/figures/tgtbf-fig4.pdf.svg.png" alt="Proportion of papers reporting nonsignificant results in a given year, showing evidence for false negative results. Larger point size indicates a higher mean number of nonsignificant results reported in that year." width="100%" />
+<p class="caption">
+Figure 4.4: Proportion of papers reporting nonsignificant results in a given year, showing evidence for false negative results. Larger point size indicates a higher mean number of nonsignificant results reported in that year.
+</p>
+</div>
+<div class="figure" style="text-align: center"><span id="fig:tgtbf-fig5"></span>
+<img src="assets/figures/tgtbf-fig5.pdf.svg.png" alt="Sample size development in psychology throughout 1985-2013, based on degrees of freedom across 258,050 test results. P25 = 25th percentile. P50 = 50th percentile (i.e., median). P75 = 75th percentile." width="100%" />
+<p class="caption">
+Figure 4.5: Sample size development in psychology throughout 1985-2013, based on degrees of freedom across 258,050 test results. P25 = 25th percentile. P50 = 50th percentile (i.e., median). P75 = 75th percentile.
+</p>
+</div>
+</div>
+<div id="discussion-1" class="section level3">
+<h3><span class="header-section-number">4.2.5</span> Discussion</h3>
+<p>The result that 2 out of 3 papers containing nonsignificant results show evidence of at least one false negative empirically verifies previously voiced concerns about insufficient attention for false negatives <span class="citation">(Fiedler, Kutzner, and Krueger <a href="#ref-doi:10.1177/1745691612462587">2012</a>)</span>. The Fisher test proved a powerful test to inspect for false negatives in our simulation study, where three nonsignificant results already results in high power to detect evidence of a false negative if sample size is at least 33 per result and the population effect is medium. Journals differed in the proportion of papers that showed evidence of false negatives, but this was largely due to differences in the number of nonsignificant results reported in these papers. More generally, we observed that more nonsignificant results were reported in 2013 than in 1985.</p>
+<p>The repeated concern about power and false negatives throughout the last decades seems not to have trickled down into substantial change in psychology research practice. <span class="citation">Cohen (<a href="#ref-doi:10.1037/h0045186">1962</a>)</span> and <span class="citation">Sedlmeier and Gigerenzer (<a href="#ref-doi:10.1037/0033-2909.105.2.309">1989</a>)</span> already voiced concern decades ago and showed that power in psychology was low. <span class="citation">Fiedler, Kutzner, and Krueger (<a href="#ref-doi:10.1177/1745691612462587">2012</a>)</span> contended that false negatives are harder to detect in the current scientific system and therefore warrant more concern. Despite recommendations of increasing power by increasing sample size, we found no evidence for increased sample size (see Figure <a href="too-good-to-be-false-nonsignificant-results-revisited.html#fig:tgtbf-fig5">4.5</a>). To the contrary, the data indicate that average sample sizes have been remarkably stable since 1985, despite the improved ease of collecting participants with data collection tools such as online services.</p>
+<p>However, what has changed is the amount of nonsignificant results reported in the literature. Our data show that more nonsignificant results are reported throughout the years (see Figure <a href="too-good-to-be-false-nonsignificant-results-revisited.html#fig:tgtbf-fig2">4.2</a>), which seems contrary to findings that indicate that relatively more significant results are being reported <span class="citation">(Fanelli <a href="#ref-doi:10.1007/s11192-011-0494-7">2011</a>; Sterling, Rosenbaum, and Weinkam <a href="#ref-doi:10.2307/2684823">1995</a>; Sterling <a href="#ref-doi:10.2307/2282137">1959</a>; De Winter and Dodou <a href="#ref-doi:10.7717/peerj.733">2015</a>)</span>. It would seem the field is not shying away from publishing negative results per se, as proposed before <span class="citation">(Fanelli <a href="#ref-doi:10.1007/s11192-011-0494-7">2011</a>; Greenwald <a href="#ref-doi:10.1037/h0076157">1975</a>; Nosek, Spies, and Motyl <a href="#ref-doi:10.1177/1745691612459058">2012</a>; Rosenthal <a href="#ref-doi:10.1037/0033-2909.86.3.638">1979</a>; Schimmack <a href="#ref-doi:10.1037/a0029487">2012</a>)</span>, but whether this is also the case for results relating to hypotheses of explicit interest in a study and not all results reported in a paper, requires further research. Other research strongly suggests that most reported results relating to hypotheses of explicit interest are statistically significant <span class="citation">(Open Science Collaboration <a href="#ref-doi:10.1126/science.aac4716">2015</a>)</span>.</p>
+</div>
+</div>
+<div id="application-2-evidence-of-false-negative-gender-effects-in-eight-major-psychology-journals" class="section level2">
+<h2><span class="header-section-number">4.3</span> Application 2: Evidence of false negative gender effects in eight major psychology journals</h2>
+<p>In order to illustrate the practical value of the Fisher test to test for evidential value of (non)significant <span class="math inline">\(p\)</span>-values, we investigated gender related effects in a random subsample of our database. Gender effects are particularly interesting because gender is typically a control variable and not the primary focus of studies. Hence, we expect little <span class="math inline">\(p\)</span>-hacking and substantial evidence of false negatives in reported gender effects in psychology. We apply the Fisher test to significant and nonsignificant gender results to test for evidential value <span class="citation">(Van Assen, Van Aert, and Wicherts <a href="#ref-doi:10.1037/met0000025">2015</a>; Simonsohn, Nelson, and Simmons <a href="#ref-doi:10.1037/a0033242">2014</a>)</span>. More precisely, we investigate whether evidential value depends on whether or not the result is statistically significant, and whether or not the results were in line with expectations expressed in the paper.</p>
+<div id="method-1" class="section level3">
+<h3><span class="header-section-number">4.3.1</span> Method</h3>
+<p>We planned to test for evidential value in six categories (expectation [3 levels] <span class="math inline">\(\times\)</span> significance [2 levels]). Expectations were specified as ‘<span class="math inline">\(H_1\)</span> expected’, ‘<span class="math inline">\(H_0\)</span> expected’, or ‘no expectation’. Prior to data collection, we assessed the required sample size for the Fisher test based on research on the gender similarities hypothesis <span class="citation">(Hyde <a href="#ref-doi:10.1037/0003-066x.60.6.581">2005</a>)</span>. We calculated that the required number of statistical results for the Fisher test, given <span class="math inline">\(r=.11\)</span> <span class="citation">(Hyde <a href="#ref-doi:10.1037/0003-066x.60.6.581">2005</a>)</span> and 80% power, is 15 <span class="math inline">\(p\)</span>-values per condition, requiring 90 results in total. However, the six categories are unlikely to occur equally throughout the literature, hence we sampled 90 significant and 90 nonsignificant results pertaining to gender, with an expected cell size of 30 if results are equally distributed across the six cells of our design. Significance was coded based on the reported <span class="math inline">\(p\)</span>-value, where <span class="math inline">\(\leq.05\)</span> was used as the decision criterion to determine significance <span class="citation">(Nuijten, Hartgerink, et al. <a href="#ref-doi:10.3758/s13428-015-0664-2">2015</a>)</span>.</p>
+<p>We sampled the 180 gender results from our database of over 250,000 test results in four steps. First, we automatically searched for “gender”, “sex”, “female” AND “male”, &quot; man&quot; AND &quot; woman&quot; [sic], or &quot; men&quot; AND &quot; women&quot; [sic] in the <span class="math inline">\(100\)</span> characters before the statistical result and <span class="math inline">\(100\)</span> after the statistical result (i.e., range of <span class="math inline">\(200\)</span> characters surrounding the result), which yielded 27,523 results. Second, the first author inspected <span class="math inline">\(500\)</span> characters before and after the first result of a randomly ordered list of all 27,523 results and coded whether it indeed pertained to gender. This was done until 180 results pertaining to gender were retrieved from 180 different articles. Third, these results were independently coded by all authors with respect to the expectations of the original researcher(s) (coding scheme available at <a href="https://osf.io/9ev63" class="uri">https://osf.io/9ev63</a>). The coding included checks for qualifiers pertaining to the expectation of the statistical result (confirmed/theorized/hypothesized/expected/etc.). If researchers reported such a qualifier, we assumed they correctly represented these expectations with respect to the statistical significance of the result. For example, if the text stated “as expected no evidence for an effect was found, <span class="math inline">\(t(12)=1, p=.337\)</span>” we assumed the authors expected a nonsignificant result. Fourth, discrepant codings were resolved by discussion (25 cases [13.9%]; two cases remained unresolved and were dropped). 178 valid results remained for analysis.</p>
+<p>Prior to analyzing these 178 <span class="math inline">\(p\)</span>-values for evidential value with the Fisher test, we transformed them to variables ranging from 0 to 1. Statistically nonsignificant results were transformed with Equation <a href="too-good-to-be-false-nonsignificant-results-revisited.html#eq:pistar">(4.1)</a>; statistically significant <span class="math inline">\(p\)</span>-values were divided by alpha .05 <span class="citation">(Van Assen, Van Aert, and Wicherts <a href="#ref-doi:10.1037/met0000025">2015</a>; Simonsohn, Nelson, and Simmons <a href="#ref-doi:10.1037/a0033242">2014</a>)</span>.</p>
+</div>
+<div id="results-1" class="section level3">
+<h3><span class="header-section-number">4.3.2</span> Results</h3>
+<p>The coding of the 178 results indicated that results rarely specify whether these are in line with the hypothesized effect (see Table <a href="#tab:tgtbf-tab5"><strong>??</strong></a>. For the 178 results, only 15 clearly stated whether their results were as expected, whereas the remaining 163 did not. Illustrative of the lack of clarity in expectations is the following quote: “<em>As predicted, there was little gender difference […] p &lt; .06.</em>” There were two results that were presented as significant but contained <span class="math inline">\(p\)</span>-values larger than .05; these two were dropped (i.e., 176 results were analyzed). As a result, the conditions significant-<span class="math inline">\(H_0\)</span> expected, nonsignificant-<span class="math inline">\(H_0\)</span> expected, and nonsignificant-<span class="math inline">\(H_1\)</span> expected contained too few results for meaningful investigation of evidential value (i.e., with sufficient statistical power).</p>
+
+<p>Figure <a href="too-good-to-be-false-nonsignificant-results-revisited.html#fig:tgtbf-fig6">4.6</a> presents the distributions of both transformed significant and non-significant <span class="math inline">\(p\)</span>-values. For significant results, applying the Fisher test to the <span class="math inline">\(p\)</span>-values showed evidential value for a gender effect both when an effect was expected (<span class="math inline">\(\chi^2(22)=358.904\)</span>, <span class="math inline">\(p&lt;.001\)</span>) and when no expectation was presented at all (<span class="math inline">\(\chi^2(15)=1094.911\)</span>, <span class="math inline">\(p&lt;.001\)</span>). Similarly, applying the Fisher test to nonsignificant gender results without stated expectation yielded evidence of at least one false negative (<span class="math inline">\(\chi^2(174)=324.374\)</span>, <span class="math inline">\(p&lt;.001\)</span>). Unfortunately, we could not examine whether evidential value of gender effects is dependent on the hypothesis/expectation of the researcher, because these effects are most frequently reported without stated expectations.</p>
+<div class="figure" style="text-align: center"><span id="fig:tgtbf-fig6"></span>
+<img src="assets/figures/tgtbf-fig6.pdf.svg.png" alt="Probability density distributions of the $p$-values for gender effects, split for nonsignificant and significant results. A uniform density distribution indicates the absence of a true effect." width="100%" />
+<p class="caption">
+Figure 4.6: Probability density distributions of the <span class="math inline">\(p\)</span>-values for gender effects, split for nonsignificant and significant results. A uniform density distribution indicates the absence of a true effect.
+</p>
+</div>
+</div>
+<div id="discussion-2" class="section level3">
+<h3><span class="header-section-number">4.3.3</span> Discussion</h3>
+<p>We observed evidential value of gender effects both in the statistically significant (no expectation or <span class="math inline">\(H_1\)</span> expected) and nonsignificant results (no expectation). The data from the 178 results we investigated indicated that in only 15 cases the expectation of the test result was clearly explicated. This indicates that based on test results alone, it is very difficult to differentiate between results that relate to a priori hypotheses and results that are of an exploratory nature. The importance of being able to differentiate between confirmatory and exploratory results has been previously demonstrated <span class="citation">(Wagenmakers et al. <a href="#ref-doi:10.1177/1745691612463078">2012</a>)</span> and has been incorporated into the Transparency and Openness Promotion guidelines <span class="citation">(TOP; Nosek et al. <a href="#ref-doi:10.1126/science.aab2374">2015</a>)</span> with explicit attention paid to preregistration.</p>
+</div>
+</div>
+<div id="application-3-reproducibility-project-psychology" class="section level2">
+<h2><span class="header-section-number">4.4</span> Application 3: Reproducibility Project Psychology</h2>
+<p>Out of the 100 replicated studies in the RPP, 64 did not yield a statistically significant effect size, despite the fact that high replication power was one of the aims of the project <span class="citation">(Open Science Collaboration <a href="#ref-doi:10.1126/science.aac4716">2015</a>)</span>. Regardless, the authors suggested “<em>…that at least one replication could be a false negative</em>” (p. aac4716-4). Here we estimate how many of these nonsignificant replications might be false negative, by applying the Fisher test to these nonsignificant effects.</p>
+<div id="method-2" class="section level3">
+<h3><span class="header-section-number">4.4.1</span> Method</h3>
+<p>Of the 64 nonsignificant studies in the RPP data (<a href="https://osf.io/fgjvw" class="uri">https://osf.io/fgjvw</a>), we selected the 63 nonsignificant studies with a test statistic. We eliminated one result because it was a regression coefficient that could not be used in the following procedure. We first applied the Fisher test to the nonsignificant results, after transforming them to variables ranging from 0 to 1 using equations <a href="too-good-to-be-false-nonsignificant-results-revisited.html#eq:pistar">(4.1)</a> and <a href="too-good-to-be-false-nonsignificant-results-revisited.html#eq:fishertest">(4.2)</a>. Denote the value of this Fisher test by <span class="math inline">\(Y\)</span>; note that under the <span class="math inline">\(H_0\)</span> of no evidential value <span class="math inline">\(Y\)</span> is <span class="math inline">\(\chi^2\)</span>-distributed with 126 degrees of freedom.</p>
+<p>Subsequently, we hypothesized that <span class="math inline">\(X\)</span> out of these 63 nonsignificant results had a weak, medium, or strong population effect size <span class="citation">(i.e., <span class="math inline">\(\rho=.1\)</span>, <span class="math inline">\(.3\)</span>, <span class="math inline">\(.5\)</span>, respectively; Cohen <a href="#ref-isbn:9780805802832">1988</a>)</span> and the remaining <span class="math inline">\(63-X\)</span> had a zero population effect size. For each of these hypotheses, we generated 10,000 data sets (see next paragraph for details) and used them to approximate the distribution of the Fisher test statistic (i.e., <span class="math inline">\(Y\)</span>). Using this distribution, we computed the probability that a <span class="math inline">\(\chi^2\)</span>-value exceeds <span class="math inline">\(Y\)</span>, further denoted by <span class="math inline">\(p_Y\)</span>. We then used the inversion method <span class="citation">(Casella and Berger <a href="#ref-isbn:9780534243128">2001</a>)</span> to compute confidence intervals of <span class="math inline">\(X\)</span>, the number of nonzero effects. Specifically, the confidence interval for <span class="math inline">\(X\)</span> is (<span class="math inline">\(X_{LB};X_{UB}\)</span>), where <span class="math inline">\(X_{LB}\)</span> is the value of <span class="math inline">\(X\)</span> for which <span class="math inline">\(p_Y\)</span> is closest to <span class="math inline">\(.025\)</span> and <span class="math inline">\(X_{UB}\)</span> is the value of <span class="math inline">\(X\)</span> for which <span class="math inline">\(p_Y\)</span> is closest to <span class="math inline">\(.975\)</span>. We computed three confidence intervals of <span class="math inline">\(X\)</span>: one for the number of weak, medium, and large effects.</p>
+<p>We computed <span class="math inline">\(p_Y\)</span> for a combination of a value of <span class="math inline">\(X\)</span> and a true effect size using 10,000 randomly generated data sets, in three steps. For each data set we: + Randomly selected <span class="math inline">\(X\)</span> out of 63 effects which are supposed to be generated by true nonzero effects, with the remaining <span class="math inline">\(63-X\)</span> supposed to be generated by true zero effects; + Given the degrees of freedom of the effects, we randomly generated <span class="math inline">\(p\)</span>-values under the <span class="math inline">\(H_0\)</span> using the central distributions and noncentral distributions (for the <span class="math inline">\(63-X\)</span> and <span class="math inline">\(X\)</span> effects selected in step 1, respectively); + The Fisher statistic <span class="math inline">\(Y\)</span> was computed by applying Equation (5.2) to the transformed <span class="math inline">\(p\)</span>-values (see Equation (5.1)) of step 2. Probability <span class="math inline">\(p_Y\)</span> equals the proportion of 10,000 data sets with <span class="math inline">\(Y\)</span> exceeding the value of the Fisher statistic applied to the RPP data. See <a href="https://osf.io/egnh9">osf.io/egnh9</a> for the analysis script to compute the confidence intervals of <span class="math inline">\(X\)</span>.</p>
+</div>
+<div id="results-2" class="section level3">
+<h3><span class="header-section-number">4.4.2</span> Results</h3>
+<p>Upon reanalysis of the 63 statistically nonsignificant replications within RPP we determined that many of these “failed” replications say hardly anything about whether there are truly no effects when using the adapted Fisher method. The Fisher test of these 63 nonsignificant results indicated some evidence for the presence of at least one false negative finding (<span class="math inline">\(\chi^2(126)=155.2382\)</span>, <span class="math inline">\(p=0.039\)</span>). Assuming <span class="math inline">\(X\)</span> small nonzero true effects among the nonsignificant results yields a confidence interval of 0-63 (0-100%). More specifically, if all results are in fact true negatives then <span class="math inline">\(p_Y=.039\)</span>, whereas if all true effects are <span class="math inline">\(\rho=.1\)</span> then <span class="math inline">\(p_Y=.872\)</span>. Hence, the 63 statistically nonsignificant results of the RPP are in line with any number of true small effects — from none to all. Consequently, we cannot draw firm conclusions about the state of the field psychology concerning the frequency of false negatives using the RPP results and the Fisher test, when all true effects are small. Assuming <span class="math inline">\(X\)</span> medium or strong true effects underlying the nonsignificant results from RPP yields confidence intervals 0-21 (0-33.3%) and 0-13 (0-20.6%), respectively. In other words, the 63 statistically nonsignificant RPP results are also in line with some true effects actually being medium or even large.</p>
+</div>
+<div id="discussion-3" class="section level3">
+<h3><span class="header-section-number">4.4.3</span> Discussion</h3>
+<p>The reanalysis of the nonsignificant RPP results using the Fisher method demonstrates that any conclusions on the validity of individual effects based on “failed” replications, as determined by statistical significance, is unwarranted. This was also noted by both the original RPP team <span class="citation">(Open Science Collaboration <a href="#ref-doi:10.1126/science.aac4716">2015</a>; Anderson et al. <a href="#ref-doi:10.1126/science.aad9163">2016</a>)</span> and in a critique of the RPP <span class="citation">(Gilbert et al. <a href="#ref-doi:10.1126/science.aad7243">2016</a>)</span>. Replication efforts such as the RPP or the Many Labs project remove publication bias and result in a less biased assessment of the true effect size. Nonetheless, single replications should not be seen as the definitive result, considering that these results indicate there remains much uncertainty about whether a nonsignificant result is a true negative or a false negative. The explanation of this finding is that most of the RPP replications, although often statistically more powerful than the original studies, still did not have enough statistical power to distinguish a true small effect from a true zero effect <span class="citation">(Maxwell, Lau, and Howard <a href="#ref-doi:10.1037/a0039400">2015</a>)</span>. Interpreting results of replications should therefore also take the precision of the estimate of both the original and replication into account <span class="citation">(Cumming <a href="#ref-doi:10.1177/0956797613504966">2013</a>)</span> and publication bias of the original studies <span class="citation">(Etz and Vandekerckhove <a href="#ref-doi:10.1371/journal.pone.0149794">2016</a>)</span>.</p>
+<p>Very recently four statistical papers have reanalyzed the RPP results to either estimate the frequency of studies testing true zero hypotheses or to estimate the individual effects examined in the original and replication study. All four papers account for the possibility of publication bias in the original study. <span class="citation">Johnson et al. (<a href="#ref-doi:10.1080/01621459.2016.1240079">2016</a>)</span> estimated a Bayesian statistical model including a distribution of effect sizes among studies for which the null hypothesis is false. On the basis of their analyses they conclude that at least 90% of psychology experiments tested negligible true effects. Johnson et al.’s model as well as our Fisher’s test are not useful for estimation and testing of individual effects examined in original and replication study. Interpreting results of individual effects should take the precision of the estimate of both the original and replication into account <span class="citation">(Cumming <a href="#ref-doi:10.1177/0956797613504966">2013</a>)</span>. <span class="citation">Etz and Vandekerckhove (<a href="#ref-doi:10.1371/journal.pone.0149794">2016</a>)</span> reanalyzed the RPP at the level of individual effects, using Bayesian models incorporating publication bias. They concluded that 64% of individual studies did not provide strong evidence for either the null or the alternative hypothesis in either the original of the replication study. This agrees with our interpretaion of the RPP findings and that of <span class="citation">Maxwell, Lau, and Howard (<a href="#ref-doi:10.1037/a0039400">2015</a>)</span>. As opposed to <span class="citation">Etz and Vandekerckhove (<a href="#ref-doi:10.1371/journal.pone.0149794">2016</a>)</span>, <span class="citation">Van Aert and Van Assen (<a href="#ref-doi:10.3758/s13428-017-0967-6">2017</a><a href="#ref-doi:10.3758/s13428-017-0967-6">b</a>)</span> use a statistically significant original and a replication study to evaluate the common true underlying effect size, adjusting for publication bias. From their Bayesian analysis <span class="citation">(Van Aert and Van Assen <a href="#ref-doi:10.1371/journal.pone.0175302">2017</a><a href="#ref-doi:10.1371/journal.pone.0175302">a</a>)</span> assuming equally likely zero, small, medium, large true effects, they conclude that only 13.4% of individual effects contain substantial evidence (Bayes factor &gt; 3) of a true zero effect. For a staggering 62.7% of individual effects no substantial evidence in favor of zero, small, medium, or large true effect size was obtained. All in all, conclusions of our analyses using the Fisher test are in line with other statistical papers reanalyzing the RPP data <span class="citation">(with the exception of Johnson et al. <a href="#ref-doi:10.1080/01621459.2016.1240079">2016</a>)</span> suggesting that studies in psychology are typically not powerful enough to distinguish zero from nonzero true findings.</p>
+</div>
+</div>
+<div id="general-discussion" class="section level2">
+<h2><span class="header-section-number">4.5</span> General Discussion</h2>
+<p>Much attention has been paid to false positive results in recent years. Our study demonstrates the importance of paying attention to false negatives alongside false positives. We examined evidence for false negatives in nonsignificant results in three different ways. Specifically, we adapted the Fisher method to detect the presence of at least one false negative in a set of statistically nonsignificant results. Simulations indicated the adapted Fisher test to be a powerful method for that purpose. The three applications indicated that (i) approximately two out of three psychology articles reporting nonsignificant results contain evidence for at least one false negative, (ii) nonsignificant results on gender effects contain evidence of true nonzero effects, and (iii) the statistically nonsignificant replications from the Reproducibility Project Psychology (RPP) do not warrant strong conclusions about the absence or presence of true zero effects underlying these nonsignificant results (RPP does yield less biased estimates of the effect; the original studies severely overestimated the effects of interest).</p>
+<p>The methods used in the three different applications provide crucial context to interpret the results. In applications 1 and 2, we did not differentiate between main and peripheral results. Hence, the interpretation of a significant Fisher test result pertains to the evidence of at least one false negative in all reported results, not the evidence for at least one false negative in the main results. Nonetheless, even when we focused only on the main results in application 3, the Fisher test does not indicate specifically which result is false negative, rather it only provides evidence for a false negative in a set of results. As such, the Fisher test is primarily useful to test a set of potentially underpowered results in a more powerful manner, albeit that the result then applies to the complete set. Additionally, in applications 1 and 2 we focused on results reported in eight psychology journals; extrapolating the results to other journals might not be warranted given that there might be substantial differences in the type of results reported in other journals or fields.</p>
+<p>More generally, our results in these three applications confirm that the problem of false negatives in psychology remains pervasive. Previous concern about power <span class="citation">(Cohen <a href="#ref-doi:10.1037/h0045186">1962</a>; Sedlmeier and Gigerenzer <a href="#ref-doi:10.1037/0033-2909.105.2.309">1989</a>; Bakker et al. <a href="#ref-doi:10.1177/1745691612459060">2012</a>; Marszalek et al. <a href="#ref-doi:10.2466/03.11.pms.112.2.331-348">2011</a>)</span>, which was even addressed by an APA Statistical Task Force in 1999 that recommended increased statistical power <span class="citation">(Wilkinson <a href="#ref-doi:10.1037/0003-066x.54.8.594">1999</a>)</span>, seems not to have resulted in actual change <span class="citation">(Marszalek et al. <a href="#ref-doi:10.2466/03.11.pms.112.2.331-348">2011</a>)</span>. Potential explanations for this lack of change is that researchers overestimate statistical power when designing a study for small effects <span class="citation">(Bakker et al. <a href="#ref-doi:10.1177/0956797616647519">2016</a>)</span>, use <span class="math inline">\(p\)</span>-hacking to artificially increase statistical power, and can act strategically by running multiple underpowered studies rather than one large powerful study <span class="citation">(Bakker et al. <a href="#ref-doi:10.1177/1745691612459060">2012</a>)</span>. The effects of <span class="math inline">\(p\)</span>-hacking are likely to be the most pervasive, with many people admitting to using such behaviors at some point <span class="citation">(John, Loewenstein, and Prelec <a href="#ref-doi:10.1177/0956797611430953">2012</a>)</span> and publication bias pushing researchers to find statistically significant results. As such, the problems of false positives, publication bias, and false negatives are intertwined and mutually reinforcing.</p>
+<p>Reducing the emphasis on binary decisions in individual studies and increasing the emphasis on the precision of a study might help reduce the problem of decision errors <span class="citation">(Cumming <a href="#ref-doi:10.1177/0956797613504966">2013</a>)</span>. For example, a large but statistically nonsignificant study might yield a confidence interval (CI) of the effect size of [-0.01; 0.05], whereas a small but significant study might yield a CI of [0.01; 1.30]. In a purely binary decision mode, the small but significant study would result in the conclusion that there is an effect because it provided a statistically significant result, despite it containing much more uncertainty than the larger study about the underlying true effect size. In a precision mode, the large study provides a more certain estimate and therefore is deemed more informative and provides the best estimate. Using meta-analyses to combine estimates obtained in studies on the same effect may further increase the overall estimate’s precision. Although the emphasis on precision and the meta-analytic approach is fruitful in theory, we should realize that publication bias will result in precise but biased (overestimated) effect size estimation of meta-analyses <span class="citation">(Nuijten, Van Assen, et al. <a href="#ref-doi:10.1037/gpr0000034">2015</a>)</span>.</p>
+<div id="limitations-and-further-research" class="section level3">
+<h3><span class="header-section-number">4.5.1</span> Limitations and further research</h3>
+<p>For all three applications, the Fisher tests’ conclusions are limited to detecting at least one false negative in a <em>set of results</em>. The method cannot be used to draw inferences on individuals results in the set. To draw inferences on the true effect size underlying one specific observed effect size, generally more information (i.e., studies) is needed to increase the precision of the effect size estimate.</p>
+<p>Another potential caveat relates to the data collected with the <code>R</code> package <code>statcheck</code> and used in applications 1 and 2. <code>statcheck</code> extracts inline, APA style reported test statistics, but does not include results included from tables or results that are not reported as the APA prescribes. Consequently, our results and conclusions may not be generalizable to <em>all</em> results reported in articles.</p>
+<p>Given that the results indicate that false negatives are still a problem in psychology, albeit slowly on the decline in published research, further research is warranted. Further research could focus on comparing evidence for false negatives in main and peripheral results. Our results in combination with results of previous studies suggest that publication bias mainly operates on results of tests of main hypotheses, and less so on peripheral results. Another venue for future research is using the Fisher test to re-examine evidence in the literature on certain other effects or often-used covariates, such as age and race, or to see if it helps researchers prevent dichotomous thinking with individual <span class="math inline">\(p\)</span>-values <span class="citation">(Hoekstra et al. <a href="#ref-doi:10.3758/bf03213921">2006</a>)</span>. Finally, the Fisher test may and is also used to meta-analyze effect sizes of different studies. Whereas Fisher used his method to test the null hypothesis of an underlying true zero effect using several studies’ <span class="math inline">\(p\)</span>-values, the method has recently been extended to yield unbiased effect estimates using only statistically significant <span class="math inline">\(p\)</span>-values. The principle of uniformly distributed <span class="math inline">\(p\)</span>-values given the true effect size on which the Fisher method is based, also underlies newly developed methods of meta-analysis that adjust for publication bias, such as <span class="math inline">\(p\)</span>-uniform <span class="citation">(Van Assen, Van Aert, and Wicherts <a href="#ref-doi:10.1037/met0000025">2015</a>)</span> and <span class="math inline">\(p\)</span>-curve <span class="citation">(Simonsohn, Nelson, and Simmons <a href="#ref-doi:10.1037/a0033242">2014</a>)</span>. Extensions of these methods to include nonsignificant as well as significant <span class="math inline">\(p\)</span>-values and to estimate heterogeneity are still under construction. Other approaches may include inspecting effect sizes directly, instead of relying on the NHST framework.</p>
+<p>To conclude, our three applications indicate that false negatives remain a problem in the psychology literature, despite the decreased attention and that we should be wary to interpret statistically nonsignificant results as there being no effect in reality. One way to combat this interpretation of statistically nonsignificant results is to incorporate testing for potential false negatives, which the Fisher method facilitates in a highly approachable manner (a spreadsheet for carrying out such a test is available at <a href="https://osf.io/tk57v/" class="uri">https://osf.io/tk57v/</a>).</p>
+
+</div>
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-Aberson2010-xa">
+<p>Aberson, Christopher L. 2010. “What is power? Why is power important?” In <em>Applied power analysis for the behavioral sciences</em>, edited by Christopher L Aberson. New York, NY: Routledge.</p>
+</div>
+<div id="ref-isbn:9781433805615">
+<p>American Psychological Association. 2010b. <em>Publication Manual of the American Psychological Association</em>. 6th ed. Washington, DC: American Psychological Association.</p>
+</div>
+<div id="ref-doi:10.1126/science.aad9163">
+<p>Anderson, C. J., t pan Bahnik, M. Barnett-Cowan, F. A. Bosco, J. Chandler, C. R. Chartier, F. Cheung, et al. 2016. “Response to Comment on ‘Estimating the Reproducibility of Psychological Science’.” <em>Science</em> 351 (6277). American Association for the Advancement of Science (AAAS): 1037–7. doi:<a href="https://doi.org/10.1126/science.aad9163">10.1126/science.aad9163</a>.</p>
+</div>
+<div id="ref-doi:10.1037/h0020412">
+<p>Bakan, David. 1966. “The Test of Significance in Psychological Research.” <em>Psychological Bulletin</em> 66 (6). American Psychological Association (APA): 423–37. doi:<a href="https://doi.org/10.1037/h0020412">10.1037/h0020412</a>.</p>
+</div>
+<div id="ref-doi:10.3758/s13428-011-0089-5">
+<p>Bakker, Marjan, and Jelte M Wicherts. 2011. “The (Mis)reporting of Statistical Results in Psychology Journals.” <em>Behavior Research Methods</em> 43 (3): 666–78. doi:<a href="https://doi.org/10.3758/s13428-011-0089-5">10.3758/s13428-011-0089-5</a>.</p>
+</div>
+<div id="ref-doi:10.1177/1745691612459060">
+<p>Bakker, Marjan, Annette Van Dijk, Jelte M., and Jelte M Wicherts. 2012. “The rules of the game called psychological science.” <em>Perspectives on Psychological Science</em> 7 (6): 543–54. doi:<a href="https://doi.org/10.1177/1745691612459060">10.1177/1745691612459060</a>.</p>
+</div>
+<div id="ref-doi:10.1177/0956797616647519">
+<p>Bakker, Marjan, Chris H. J. Hartgerink, Jelte M. Wicherts, and Han L. J. van der Maas. 2016. “Researchers’ Intuitions About Power in Psychological Research.” <em>Psychological Science</em> 27 (8). SAGE Publications: 1069–77. doi:<a href="https://doi.org/10.1177/0956797616647519">10.1177/0956797616647519</a>.</p>
+</div>
+<div id="ref-doi:10.1038/483531a">
+<p>Begley, C. Glenn, and Lee M. Ellis. 2012. “Raise Standards for Preclinical Cancer Research.” <em>Nature</em> 483 (7391). Springer Nature: 531–33. doi:<a href="https://doi.org/10.1038/483531a">10.1038/483531a</a>.</p>
+</div>
+<div id="ref-isbn:9781119964377">
+<p>Borenstein, Michael, Larry V. Hedges, Julian P. T. Higgins, and Hannah R. Rothstein. 2011. <em>Introduction to Meta-Analysis</em>. Wiley.</p>
+</div>
+<div id="ref-doi:10.1126/science.aaf0918">
+<p>Camerer, C. F., A. Dreber, E. Forsell, T.-H. Ho, J. Huber, M. Johannesson, M. Kirchler, et al. 2016. “Evaluating Replicability of Laboratory Experiments in Economics.” <em>Science</em> 351 (6280). American Association for the Advancement of Science (AAAS): 1433–6. doi:<a href="https://doi.org/10.1126/science.aaf0918">10.1126/science.aaf0918</a>.</p>
+</div>
+<div id="ref-isbn:9780534243128">
+<p>Casella, George, and Roger L. Berger. 2001. <em>Statistical Inference</em>. Cengage Learning.</p>
+</div>
+<div id="ref-doi:10.1037/h0045186">
+<p>Cohen, Jacob. 1962. “The Statistical Power of Abnormal-Social Psychological Research: A Review.” <em>The Journal of Abnormal and Social Psychology</em> 65 (3). American Psychological Association (APA): 145–53. doi:<a href="https://doi.org/10.1037/h0045186">10.1037/h0045186</a>.</p>
+</div>
+<div id="ref-isbn:9780805802832">
+<p>Cohen, Jacob. 1988. <em>Statistical Power Analysis for the Behavioral Sciences (2nd Edition)</em>. Routledge.</p>
+</div>
+<div id="ref-doi:10.1177/0956797613504966">
+<p>Cumming, Geoff. 2013. “The New Statistics.” <em>Psychological Science</em> 25 (1). SAGE Publications: 7–29. doi:<a href="https://doi.org/10.1177/0956797613504966">10.1177/0956797613504966</a>.</p>
+</div>
+<div id="ref-doi:10.7717/peerj.733">
+<p>De Winter, Joost CF, and Dimitra Dodou. 2015. “A Surge of P-Values Between 0.041 and 0.049 in Recent Decades (but Negative Results Are Increasing Rapidly Too).” <em>PeerJ</em> 3 (January). PeerJ: e733. doi:<a href="https://doi.org/10.7717/peerj.733">10.7717/peerj.733</a>.</p>
+</div>
+<div id="ref-statcheck">
+<p>Epskamp, Sacha, and Michèle B. Nuijten. 2016. <em>Statcheck: Extract Statistics from Articles and Recompute P Values</em>. <a href="https://CRAN.R-project.org/package=statcheck" class="uri">https://CRAN.R-project.org/package=statcheck</a>.</p>
+</div>
+<div id="ref-doi:10.1371/journal.pone.0149794">
+<p>Etz, Alexander, and Joachim Vandekerckhove. 2016. “A Bayesian Perspective on the Reproducibility Project: Psychology.” Edited by DanieleEditor Marinazzo. <em>PLOS ONE</em> 11 (2). Public Library of Science (PLoS): e0149794. doi:<a href="https://doi.org/10.1371/journal.pone.0149794">10.1371/journal.pone.0149794</a>.</p>
+</div>
+<div id="ref-doi:10.1007/s11192-011-0494-7">
+<p>Fanelli, Daniele. 2011. “Negative Results Are Disappearing from Most Disciplines and Countries.” <em>Scientometrics</em> 90 (3). Springer Nature: 891–904. doi:<a href="https://doi.org/10.1007/s11192-011-0494-7">10.1007/s11192-011-0494-7</a>.</p>
+</div>
+<div id="ref-doi:10.1177/1745691612462587">
+<p>Fiedler, Klaus, Florian Kutzner, and Joachim I. Krueger. 2012. “The Long Way from Alpha-Error Control to Validity Proper.” <em>Perspectives on Psychological Science</em> 7 (6). SAGE Publications: 661–69. doi:<a href="https://doi.org/10.1177/1745691612462587">10.1177/1745691612462587</a>.</p>
+</div>
+<div id="ref-Fisher1925-jl">
+<p>Fisher, Ronald Aylmer. 1925. <em>Statistical methods for research workers</em>. Edinburg, United Kingdom: Oliver Boyd.</p>
+</div>
+<div id="ref-doi:10.1371/journal.pone.0109019">
+<p>Fraley, R. Chris, and Simine Vazire. 2014. “The N-Pact Factor: Evaluating the Quality of Empirical Journals with Respect to Sample Size and Statistical Power.” Edited by Christos A.Editor Ouzounis. <em>PLoS ONE</em> 9 (10). Public Library of Science (PLoS): e109019. doi:<a href="https://doi.org/10.1371/journal.pone.0109019">10.1371/journal.pone.0109019</a>.</p>
+</div>
+<div id="ref-doi:10.3758/s13423-012-0227-9">
+<p>Francis, Gregory. 2012. “Too Good to Be True: Publication Bias in Two Prominent Studies from Experimental Psychology.” <em>Psychonomic Bulletin &amp; Review</em> 19 (2). Springer Nature: 151–56. doi:<a href="https://doi.org/10.3758/s13423-012-0227-9">10.3758/s13423-012-0227-9</a>.</p>
+</div>
+<div id="ref-doi:10.1016/j.paid.2016.06.069">
+<p>Gignac, Gilles E., and Eva T. Szodorai. 2016. “Effect Size Guidelines for Individual Differences Researchers.” <em>Personality and Individual Differences</em> 102 (November). Elsevier BV: 74–78. doi:<a href="https://doi.org/10.1016/j.paid.2016.06.069">10.1016/j.paid.2016.06.069</a>.</p>
+</div>
+<div id="ref-doi:10.1126/science.aad7243">
+<p>Gilbert, D. T., G. King, S. Pettigrew, and T. D. Wilson. 2016. “Comment on ‘Estimating the Reproducibility of Psychological Science’.” <em>Science</em> 351 (6277). American Association for the Advancement of Science (AAAS): 1037–7. doi:<a href="https://doi.org/10.1126/science.aad7243">10.1126/science.aad7243</a>.</p>
+</div>
+<div id="ref-doi:10.1177/1745691612457576">
+<p>Giner-Sorolla, Roger. 2012. “Science or Art? How Aesthetic Standards Grease the Way Through the Publication Bottleneck but Undermine Science.” <em>Perspectives on Psychological Science</em> 7 (6). SAGE Publications: 562–71. doi:<a href="https://doi.org/10.1177/1745691612457576">10.1177/1745691612457576</a>.</p>
+</div>
+<div id="ref-doi:10.1053/j.seminhematol.2008.04.003">
+<p>Goodman, Steven. 2008. “A Dirty Dozen: Twelve P-Value Misconceptions.” <em>Seminars in Hematology</em> 45 (3). Elsevier BV: 135–40. doi:<a href="https://doi.org/10.1053/j.seminhematol.2008.04.003">10.1053/j.seminhematol.2008.04.003</a>.</p>
+</div>
+<div id="ref-doi:10.1037/h0076157">
+<p>Greenwald, Anthony G. 1975. “Consequences of Prejudice Against the Null Hypothesis.” <em>Psychological Bulletin</em> 82 (1). American Psychological Association (APA): 1–20. doi:<a href="https://doi.org/10.1037/h0076157">10.1037/h0076157</a>.</p>
+</div>
+<div id="ref-doi:10.7717/peerj.1935">
+<p>Hartgerink, Chris H. J., Robbie C. M. Van Aert, Michèle B. Nuijten, Jelte M. Wicherts, and Marcel A.L.M. Van Assen. 2016. “Distributions Ofp-Values Smaller Than .05 in Psychology: What Is Going on?” <em>PeerJ</em> 4 (April). PeerJ: e1935. doi:<a href="https://doi.org/10.7717/peerj.1935">10.7717/peerj.1935</a>.</p>
+</div>
+<div id="ref-Hedges1985-dy">
+<p>Hedges, L V, and I Olkin. 1985. <em>Statistical methods for meta-analysis</em>. London, United Kingdom: Academic Press.</p>
+</div>
+<div id="ref-doi:10.3102/10769986006002107">
+<p>Hedges, Larry V. 1981. “Distribution Theory for Glass’s Estimator of Effect Size and Related Estimators.” <em>Journal of Educational Statistics</em> 6 (2). American Educational Research Association (AERA): 107–28. doi:<a href="https://doi.org/10.3102/10769986006002107">10.3102/10769986006002107</a>.</p>
+</div>
+<div id="ref-doi:10.3758/bf03213921">
+<p>Hoekstra, Rink, Sue Finch, Henk A. L. Kiers, and Addie Johnson. 2006. “Probability as Certainty: Dichotomous Thinking and the Misuse Ofp Values.” <em>Psychonomic Bulletin &amp; Review</em> 13 (6). Springer Nature: 1033–7. doi:<a href="https://doi.org/10.3758/bf03213921">10.3758/bf03213921</a>.</p>
+</div>
+<div id="ref-doi:10.1037/0003-066x.60.6.581">
+<p>Hyde, Janet Shibley. 2005. “The Gender Similarities Hypothesis.” <em>American Psychologist</em> 60 (6). American Psychological Association (APA): 581–92. doi:<a href="https://doi.org/10.1037/0003-066x.60.6.581">10.1037/0003-066x.60.6.581</a>.</p>
+</div>
+<div id="ref-doi:10.1371/journal.pmed.0020124">
+<p>Ioannidis, John P. A. 2005. “Why Most Published Research Findings Are False.” <em>PLoS Medicine</em> 2 (8). Public Library of Science (PLoS): e124. doi:<a href="https://doi.org/10.1371/journal.pmed.0020124">10.1371/journal.pmed.0020124</a>.</p>
+</div>
+<div id="ref-doi:10.1177/1740774507079441">
+<p>Ioannidis, John PA, and Thomas A Trikalinos. 2007. “An Exploratory Test for an Excess of Significant Findings.” <em>Clinical Trials: Journal of the Society for Clinical Trials</em> 4 (3). SAGE Publications: 245–53. doi:<a href="https://doi.org/10.1177/1740774507079441">10.1177/1740774507079441</a>.</p>
+</div>
+<div id="ref-doi:10.1177/0956797611430953">
+<p>John, Leslie K, George Loewenstein, and Drazen Prelec. 2012. “Measuring the prevalence of questionable research practices with incentives for truth telling.” <em>Psychological Science</em> 23 (5): 524–32. doi:<a href="https://doi.org/10.1177/0956797611430953">10.1177/0956797611430953</a>.</p>
+</div>
+<div id="ref-doi:10.1080/01621459.2016.1240079">
+<p>Johnson, Valen E., Richard D. Payne, Tianying Wang, Alex Asher, and Soutrik Mandal. 2016. “On the Reproducibility of Psychological Science.” <em>Journal of the American Statistical Association</em> 112 (517). Informa UK Limited: 1–10. doi:<a href="https://doi.org/10.1080/01621459.2016.1240079">10.1080/01621459.2016.1240079</a>.</p>
+</div>
+<div id="ref-doi:10.1027/1864-9335/a000178">
+<p>Klein, Richard A., Kate A Ratliff, Michelangelo Vianello, Reginald B Adams Jr., Štěpán Bahník, Michael J Bernstein, Konrad Bocian, et al. 2014. “Investigating Variation in Replicability.” <em>Social Psychology</em> 45 (3): 142–52. doi:<a href="https://doi.org/10.1027/1864-9335/a000178">10.1027/1864-9335/a000178</a>.</p>
+</div>
+<div id="ref-doi:10.1111/j.2044-8317.1978.tb00578.x">
+<p>Lane, David M., and William P. Dunlap. 1978. “Estimating Effect Size: Bias Resulting from the Significance Criterion in Editorial Decisions.” <em>British Journal of Mathematical and Statistical Psychology</em> 31 (2). Wiley: 107–12. doi:<a href="https://doi.org/10.1111/j.2044-8317.1978.tb00578.x">10.1111/j.2044-8317.1978.tb00578.x</a>.</p>
+</div>
+<div id="ref-doi:10.2466/03.11.pms.112.2.331-348">
+<p>Marszalek, Jacob M., Carolyn Barber, Julie Kohlhart, and B. Holmes Cooper. 2011. “Sample Size in Psychological Research over the Past 30 Years.” <em>Perceptual and Motor Skills</em> 112 (2). SAGE Publications: 331–48. doi:<a href="https://doi.org/10.2466/03.11.pms.112.2.331-348">10.2466/03.11.pms.112.2.331-348</a>.</p>
+</div>
+<div id="ref-doi:10.2307/2280095">
+<p>Massey, Frank J. 1951. “The Kolmogorov-Smirnov Test for Goodness of Fit.” <em>Journal of the American Statistical Association</em> 46 (253). JSTOR: 68. doi:<a href="https://doi.org/10.2307/2280095">10.2307/2280095</a>.</p>
+</div>
+<div id="ref-doi:10.1037/a0039400">
+<p>Maxwell, Scott E., Michael Y. Lau, and George S. Howard. 2015. “Is Psychology Suffering from a Replication Crisis? What Does ‘Failure to Replicate’ Really Mean?” <em>American Psychologist</em> 70 (6). American Psychological Association (APA): 487–98. doi:<a href="https://doi.org/10.1037/a0039400">10.1037/a0039400</a>.</p>
+</div>
+<div id="ref-doi:10.1016/j.appsy.2004.02.001">
+<p>Meehl, Paul E. 2004. “Theoretical Risks and Tabular Asterisks: Sir Karl, Sir Ronald, and the Slow Progress of Soft Psychology.” <em>Applied and Preventive Psychology</em> 11 (1). Elsevier BV: 1. doi:<a href="https://doi.org/10.1016/j.appsy.2004.02.001">10.1016/j.appsy.2004.02.001</a>.</p>
+</div>
+<div id="ref-doi:10.1126/science.aab2374">
+<p>Nosek, B A, G Alter, G C Banks, D Borsboom, S D Bowman, S J Breckler, S Buck, et al. 2015. “Promoting an Open Research Culture.” <em>Science</em> 348 (6242): 1422–5. doi:<a href="https://doi.org/10.1126/science.aab2374">10.1126/science.aab2374</a>.</p>
+</div>
+<div id="ref-doi:10.1177/1745691612459058">
+<p>Nosek, Brian A, Jeffrey R Spies, and Matt Motyl. 2012. “Scientific Utopia: II. Restructuring Incentives and Practices to Promote Truth over Publishability.” <em>Perspectives on Psychological Science</em> 7 (6): 615–31. doi:<a href="https://doi.org/10.1177/1745691612459058">10.1177/1745691612459058</a>.</p>
+</div>
+<div id="ref-doi:10.3758/s13428-015-0664-2">
+<p>Nuijten, Michèle B., Chris H. J. Hartgerink, Marcel A.L.M. Van Assen, Epskamp Sacha, and Jelte M. Wicherts. 2015. “The Prevalence of Statistical Reporting Errors in Psychology (1985–2013).” <em>Behavior Research Methods</em> 48 (4). Springer Nature: 1205–26. doi:<a href="https://doi.org/10.3758/s13428-015-0664-2">10.3758/s13428-015-0664-2</a>.</p>
+</div>
+<div id="ref-doi:10.1037/gpr0000034">
+<p>Nuijten, Michèle B., Marcel A. L. M. Van Assen, Coosje L. S. Veldkamp, and Jelte M. Wicherts. 2015. “The Replication Paradox: Combining Studies Can Decrease Accuracy of Effect Size Estimates.” <em>Review of General Psychology</em> 19 (2). American Psychological Association (APA): 172–82. doi:<a href="https://doi.org/10.1037/gpr0000034">10.1037/gpr0000034</a>.</p>
+</div>
+<div id="ref-doi:10.1126/science.aac4716">
+<p>Open Science Collaboration. 2015. “Estimating the Reproducibility of Psychological Science.” <em>Science</em> 349 (6251). doi:<a href="https://doi.org/10.1126/science.aac4716">10.1126/science.aac4716</a>.</p>
+</div>
+<div id="ref-isbn:9780415278430">
+<p>Popper, Karl. 2002. <em>The Logic of Scientific Discovery (Routledge Classics)</em>. Routledge.</p>
+</div>
+<div id="ref-doi:10.1037/0033-2909.86.3.638">
+<p>Rosenthal, Robert. 1979. “The File Drawer Problem and Tolerance for Null Results.” <em>Psychological Bulletin</em> 86 (3). American Psychological Association (APA): 638–41. doi:<a href="https://doi.org/10.1037/0033-2909.86.3.638">10.1037/0033-2909.86.3.638</a>.</p>
+</div>
+<div id="ref-isbn:9780470870150">
+<p>Rothstein, Hannah. 2005. <em>Publication Bias in Meta-Analysis : Prevention, Assessment and Adjustments</em>. Chichester, England Hoboken, NJ: Wiley.</p>
+</div>
+<div id="ref-doi:10.1037/a0029487">
+<p>Schimmack, Ulrich. 2012. “The Ironic Effect of Significant Results on the Credibility of Multiple-Study Articles.” <em>Psychological Methods</em> 17 (4). American Psychological Association (APA): 551–66. doi:<a href="https://doi.org/10.1037/a0029487">10.1037/a0029487</a>.</p>
+</div>
+<div id="ref-doi:10.1037/0033-2909.105.2.309">
+<p>Sedlmeier, Peter, and Gerd Gigerenzer. 1989. “Do Studies of Statistical Power Have an Effect on the Power of Studies?” <em>Psychological Bulletin</em> 105 (2). American Psychological Association (APA): 309–16. doi:<a href="https://doi.org/10.1037/0033-2909.105.2.309">10.1037/0033-2909.105.2.309</a>.</p>
+</div>
+<div id="ref-doi:10.1037/a0033242">
+<p>Simonsohn, Uri, Leif D. Nelson, and Joseph P. Simmons. 2014. “P-Curve: A Key to the File-Drawer.” <em>Journal of Experimental Psychology: General</em> 143 (2). American Psychological Association (APA): 534–47. doi:<a href="https://doi.org/10.1037/a0033242">10.1037/a0033242</a>.</p>
+</div>
+<div id="ref-doi:10.1177/1745691614528518">
+<p>Stanley, David J., and Jeffrey R. Spence. 2014. “Expectations for Replications.” <em>Perspectives on Psychological Science</em> 9 (3). SAGE Publications: 305–18. doi:<a href="https://doi.org/10.1177/1745691614528518">10.1177/1745691614528518</a>.</p>
+</div>
+<div id="ref-doi:10.2307/2684823">
+<p>Sterling, T. D., W. L. Rosenbaum, and J. J. Weinkam. 1995. “Publication Decisions Revisited: The Effect of the Outcome of Statistical Tests on the Decision to Publish and Vice Versa.” <em>The American Statistician</em> 49 (1). JSTOR: 108. doi:<a href="https://doi.org/10.2307/2684823">10.2307/2684823</a>.</p>
+</div>
+<div id="ref-doi:10.2307/2282137">
+<p>Sterling, Theodore D. 1959. “Publication Decisions and Their Possible Effects on Inferences Drawn from Tests of Significance–or Vice Versa.” <em>Journal of the American Statistical Association</em> 54 (285). JSTOR: 30. doi:<a href="https://doi.org/10.2307/2282137">10.2307/2282137</a>.</p>
+</div>
+<div id="ref-doi:10.1016/s0895-43560000242-0">
+<p>Sterne, Jonathan A.C, David Gavaghan, and Matthias Egger. 2000. “Publication and Related Bias in Meta-Analysis.” <em>Journal of Clinical Epidemiology</em> 53 (11). Elsevier BV: 1119–29. doi:<a href="https://doi.org/10.1016/s0895-4356(00)00242-0">10.1016/s0895-4356(00)00242-0</a>.</p>
+</div>
+<div id="ref-doi:10.1371/journal.pone.0175302">
+<p>Van Aert, Robbie C. M., and Marcel A. L. M. Van Assen. 2017a. “Bayesian Evaluation of Effect Size After Replicating an Original Study.” Edited by DanieleEditor Marinazzo. <em>PLOS ONE</em> 12 (4). Public Library of Science (PLoS): e0175302. doi:<a href="https://doi.org/10.1371/journal.pone.0175302">10.1371/journal.pone.0175302</a>.</p>
+</div>
+<div id="ref-doi:10.3758/s13428-017-0967-6">
+<p>Van Aert, Robbie C. 2017b. “Examining Reproducibility in Psychology: A Hybrid Method for Combining a Statistically Significant Original Study and a Replication.” <em>Behavior Research Methods</em> 50 (4). Springer Nature America, Inc: 1515–39. doi:<a href="https://doi.org/10.3758/s13428-017-0967-6">10.3758/s13428-017-0967-6</a>.</p>
+</div>
+<div id="ref-doi:10.1037/met0000025">
+<p>Van Assen, Marcel A. L. M., Robbie C. M. Van Aert, and Jelte M. Wicherts. 2015. “Meta-Analysis Using Effect Size Distributions of Only Statistically Significant Studies.” <em>Psychological Methods</em> 20 (3). American Psychological Association (APA): 293–309. doi:<a href="https://doi.org/10.1037/met0000025">10.1037/met0000025</a>.</p>
+</div>
+<div id="ref-doi:10.1027/1614-2241.3.1.35">
+<p>Voelkle, Manuel C., Phillip L. Ackerman, and Werner W. Wittmann. 2007. “Effect Sizes and F Ratios &lt; 1.0.” <em>Methodology</em> 3 (1). Hogrefe Publishing Group: 35–46. doi:<a href="https://doi.org/10.1027/1614-2241.3.1.35">10.1027/1614-2241.3.1.35</a>.</p>
+</div>
+<div id="ref-doi:10.1177/1745691612463078">
+<p>Wagenmakers, Eric-Jan, Ruud Wetzels, Denny Borsboom, Han L J van der Maas, and Rogier A Kievit. 2012. “An Agenda for Purely Confirmatory Research.” <em>Perspectives on Psychological Science</em> 7 (6): 632–38. doi:<a href="https://doi.org/10.1177/1745691612463078">10.1177/1745691612463078</a>.</p>
+</div>
+<div id="ref-doi:10.1037/0003-066x.54.8.594">
+<p>Wilkinson, Leland. 1999. “Statistical Methods in Psychology Journals: Guidelines and Explanations.” <em>American Psychologist</em> 54 (8). American Psychological Association (APA): 594–604. doi:<a href="https://doi.org/10.1037/0003-066x.54.8.594">10.1037/0003-066x.54.8.594</a>.</p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="distributions-of-p-values-between-01-05-in-psychology-what-is-going-on.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="statistical-results-content-mining-psychology-articles-for-statistical-test-results.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": true,
+"facebook": false,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "github", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": null,
+"history": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"toc": {
+"collapse": "subsection",
+"scroll_highlight": true
+},
+"toolbar": {
+"position": "fixed"
+},
+"search": true
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

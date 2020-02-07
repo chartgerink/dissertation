@@ -9,12 +9,12 @@ df2,Individual result,Second degree of freedom of the test statistic
 Test.Comparison,Individual result,"Sign used in reporting of test statistic (>, <, =)"
 Value,Individual result,Reported value of the test statistic
 Reported.Comparison,Individual result,"Sign used in reporting of p-value (>, <, =)"
-Reported.P.Value,Individual result,Reported p-value
+Reported.P.Value,Individual result,"Reported p-value"
 Computed,Individual result,"Recalculated p-value (two-tailed) based on Statistic and df1, df2"
 Raw,Individual result,Raw text of extracted statistical result
 Error,Individual result,Whether the reported p-value differs from recalculated p-value
-DecisionError,Individual result,Whether the reported p-value differs from the recalculated p-value AND significance is different (alpha=0.05)
-OneTail,Individual result,Whether the result would be correct if the p-value were one-tailed
+DecisionError,Individual result,"Whether the reported p-value differs from the recalculated p-value AND significance is different (alpha=0.05)"
+OneTail,Individual result,"Whether the result would be correct if the p-value were one-tailed"
 OneTailedInTxt,Individual result,"Whether the article contains “sided”, “tailed”, or “directional”"
 authors,Metadata,"Author names, as available in CrossRef"
 author_count,Metadata,Number of authors
