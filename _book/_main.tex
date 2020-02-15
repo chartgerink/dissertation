@@ -518,24 +518,20 @@ available under \url{https://phd.chjh.nl}.
 
 \caption{\label{tab:overview}Chronologically ordered dissertation chapters, supplemented with identifiers data package, preprint, and peer reviewed article.}
 \centering
-\begin{tabular}{rlll}
+\begin{tabular}{lrlll}
 \toprule
-Chapter & Data package & Preprint & Article\\
+  & Chapter & Data package & Preprint & Article\\
 \midrule
-\rowcolor{gray!6}  3 & https://osf.io/4d2g9/ & http://doi.org/c9tf & http://doi.org/c9s7\\
-1 &  &  & http://doi.org/c9s5\\
-\rowcolor{gray!6}  5 & http://doi.org/c9th & http://doi.org/c9td & http://doi.org/c9s6\\
-2 & http://doi.org/c9tj & http://doi.org/c9tc & http://doi.org/c9s8\\
-\rowcolor{gray!6}  4 & http://doi.org/c9tk & http://doi.org/c9tg & http://doi.org/gfrjj3\\
+\rowcolor{gray!6}  1 & 3 & https://osf.io/4d2g9/ & http://doi.org/c9tf & http://doi.org/c9s7\\
+2 & 1 &  &  & http://doi.org/c9s5\\
+\rowcolor{gray!6}  3 & 5 & http://doi.org/c9th & http://doi.org/c9td & http://doi.org/c9s6\\
+4 & 2 & http://doi.org/c9tj & http://doi.org/c9tc & http://doi.org/c9s8\\
+\rowcolor{gray!6}  5 & 4 & http://doi.org/c9tk & http://doi.org/c9tg & http://doi.org/gfrjj3\\
 \addlinespace
-7 & http://doi.org/c9tm & https://arxiv.org/abs/1709.02261 & \\
-\rowcolor{gray!6}  8 &  & http://doi.org/c9tb & http://doi.org/c9s9\\
-0 &  &  & \\
-\rowcolor{gray!6}  6 & http://doi.org/c9tn & http://doi.org/c9tq & \\
-9 & http://doi.org/c9tp &  & http://doi.org/gf4hpr\\
-\addlinespace
-\rowcolor{gray!6}  10 &  &  & \\
-11 &  &  & \\
+6 & 7 & http://doi.org/c9tm & https://arxiv.org/abs/1709.02261 & \\
+\rowcolor{gray!6}  7 & 8 &  & http://doi.org/c9tb & http://doi.org/c9s9\\
+9 & 6 & http://doi.org/c9tn & http://doi.org/c9tq & \\
+\rowcolor{gray!6}  10 & 9 & http://doi.org/c9tp &  & http://doi.org/gf4hpr\\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -3170,6 +3166,16 @@ because of mistakes like this, many researchers ignore the possibility
 of false negatives and false positives and they remain pervasive in the
 literature.
 
+Readers should be aware that outcomes of inferential statistics such as
+\(p\)-values are generally highly unstable (e.g., Cumming
+\protect\hyperlink{ref-isbn:9780415879682}{2020}), and that we should
+consider statistical results as more incomplete and uncertain than is
+currently the norm (Amrhein, Trafimow, and Greenland
+\protect\hyperlink{ref-doi:10.1080ux2f00031305.2018.1543137}{2019}).
+Nonetheless, as NHST and decisions based on that are still the norm in
+many empirical sciences, the present chapter focuses on the NHST
+framework and erroneous decisions based on this framework.
+
 Recent debate about false positives has received much attention in
 science and psychological science in particular. The Reproducibility
 Project Psychology (RPP), which replicated 100 effects reported in
@@ -3262,32 +3268,44 @@ been a major point of discussion in recent years, whereas the Negative
 Predictive Value (NPV) has rarely been mentioned.
 
 The research objective of the current chapter is to examine evidence for
-false negative results in the psychology literature. This chapter
-operates under the premise of naive realism about the interpretation of
-statistically nonsignificant results, where naive realism would result
-in neglecting the probabilistic nature of these results. To this end, we
-inspected a large number of nonsignificant results from eight flagship
-psychology journals. First, we compared the observed effect
-distributions of nonsignificant results for eight journals (combined and
-separately) to the expected null distribution based on simulations,
-where a discrepancy between observed and expected distribution was
-anticipated (i.e., presence of false negatives). Second, we propose to
-use the Fisher test to test the hypothesis that \(H_0\) is true for all
-nonsignificant results reported in a paper, which we show to have high
-power to detect false negatives in a simulation study. Third, we applied
-the Fisher test to the nonsignificant results in 14,765 psychology
-papers from these eight flagship psychology journals to inspect how many
-papers show evidence of at least one false negative result. Fourth, we
-examined evidence of false negatives in reported gender effects. Gender
-effects are particularly interesting, because gender is typically a
-control variable and not the primary focus of studies. Hence we expect
-little \(p\)-hacking and substantial evidence of false negatives in
-reported gender effects in psychology. Finally, as another application,
-we applied the Fisher test to the 64 nonsignificant replication results
-of the RPP (Open Science Collaboration
+false negative results in the psychology literature. Assuming the
+framework of NHST, this chapter operates under the premise of naive
+realism about the interpretation of statistically nonsignificant
+results, where naive realism would result in neglecting the
+probabilistic nature of these results. To this end, we inspected a large
+number of nonsignificant results from eight flagship psychology
+journals. First, we compared the observed effect distributions of
+nonsignificant results for eight journals (combined and separately) to
+the expected null distribution based on simulations, where a discrepancy
+between observed and expected distribution was anticipated (i.e.,
+presence of false negatives). Second, we propose to use the Fisher test
+to test the hypothesis that \(H_0\) is true for all nonsignificant
+results reported in a paper, which we show to have high power to detect
+false negatives in a simulation study. Third, we applied the Fisher test
+to the nonsignificant results in 14,765 psychology papers from these
+eight flagship psychology journals to inspect how many papers show
+evidence of at least one false negative result. Fourth, we examined
+evidence of false negatives in reported gender effects. Gender effects
+are particularly interesting, because gender is typically a control
+variable and not the primary focus of studies. Hence we expect little
+\(p\)-hacking and substantial evidence of false negatives in reported
+gender effects in psychology. Finally, as another application, we
+applied the Fisher test to the 64 nonsignificant replication results of
+the RPP (Open Science Collaboration
 \protect\hyperlink{ref-doi:10.1126ux2fscience.aac4716}{2015}) to examine
 whether at least one of these nonsignificant results may actually be a
 false negative.
+
+The approach in this chapter contrasts with research on statistical
+power in the current psychological literature. Research on statistical
+power in a literature or set of papers typically asks the
+\emph{theoretical} question \enquote{what is the power of detecting true
+effect size \(x\) with the sample size of paper \(y\)?} for all papers
+\(y\) in that set of papers or literature, as a function of \(x\).
+Alternatively, this chapter answers the \emph{empirical} question
+\enquote{do we reject the null-hypothesis of no effect based on a set of
+statistically nonsignificant \(p\)-values}, although we also examine the
+statistical power of the procedure to answer this question.
 
 \section{Theoretical framework}\label{theoretical-framework}
 
@@ -3781,14 +3799,14 @@ the two explanations.
 \subsection{Discussion}\label{discussion-1}
 
 The result that 2 out of 3 papers containing nonsignificant results show
-evidence of at least one false negative empirically verifies previously
-voiced concerns about insufficient attention for false negatives
-(Fiedler, Kutzner, and Krueger
-\protect\hyperlink{ref-doi:10.1177ux2f1745691612462587}{2012}). The
-Fisher test proved a powerful test to inspect for false negatives in our
-simulation study, where three nonsignificant results already results in
-high power to detect evidence of a false negative if sample size is at
-least 33 per result and the population effect is medium. Journals
+evidence of at least one false negative, when applying the NHST
+framework, empirically verifies previously voiced concerns about
+insufficient attention for false negatives (Fiedler, Kutzner, and
+Krueger \protect\hyperlink{ref-doi:10.1177ux2f1745691612462587}{2012}).
+The Fisher test proved a powerful test to inspect for false negatives in
+our simulation study, where three nonsignificant results already results
+in high power to detect evidence of a false negative if sample size is
+at least 33 per result and the population effect is medium. Journals
 differed in the proportion of papers that showed evidence of false
 negatives, but this was largely due to differences in the number of
 nonsignificant results reported in these papers. More generally, we
@@ -3842,14 +3860,14 @@ eight major psychology
 journals}\label{application-2-evidence-of-false-negative-gender-effects-in-eight-major-psychology-journals}
 
 In order to illustrate the practical value of the Fisher test to test
-for evidential value of (non)significant \(p\)-values, we investigated
-gender related effects in a random subsample of our database. Gender
-effects are particularly interesting because gender is typically a
-control variable and not the primary focus of studies. Hence, we expect
-little \(p\)-hacking and substantial evidence of false negatives in
-reported gender effects in psychology. We apply the Fisher test to
-significant and nonsignificant gender results to test for evidential
-value (Van Assen, Van Aert, and Wicherts
+for evidential value of (non)significant \(p\)-values with the NHST
+framework, we investigated gender related effects in a random subsample
+of our database. Gender effects are particularly interesting because
+gender is typically a control variable and not the primary focus of
+studies. Hence, we expect little \(p\)-hacking and substantial evidence
+of false negatives in reported gender effects in psychology. We apply
+the Fisher test to significant and nonsignificant gender results to test
+for evidential value (Van Assen, Van Aert, and Wicherts
 \protect\hyperlink{ref-doi:10.1037ux2fmet0000025}{2015}; Simonsohn,
 Nelson, and Simmons
 \protect\hyperlink{ref-doi:10.1037ux2fa0033242}{2014}). More precisely,
@@ -3968,13 +3986,14 @@ frequently reported without stated expectations.
 
 We observed evidential value of gender effects both in the statistically
 significant (no expectation or \(H_1\) expected) and nonsignificant
-results (no expectation). The data from the 178 results we investigated
-indicated that in only 15 cases the expectation of the test result was
-clearly explicated. This indicates that based on test results alone, it
-is very difficult to differentiate between results that relate to a
-priori hypotheses and results that are of an exploratory nature. The
-importance of being able to differentiate between confirmatory and
-exploratory results has been previously demonstrated (Wagenmakers et al.
+results (no expectation) using the NHST framework. The data from the 178
+results we investigated indicated that in only 15 cases the expectation
+of the test result was clearly explicated. This indicates that based on
+test results alone, it is very difficult to differentiate between
+results that relate to a priori hypotheses and results that are of an
+exploratory nature. The importance of being able to differentiate
+between confirmatory and exploratory results has been previously
+demonstrated (Wagenmakers et al.
 \protect\hyperlink{ref-doi:10.1177ux2f1745691612463078}{2012}) and has
 been incorporated into the Transparency and Openness Promotion
 guidelines (TOP; Nosek et al.
@@ -4065,10 +4084,10 @@ effects actually being medium or even large.
 \subsection{Discussion}\label{discussion-3}
 
 The reanalysis of the nonsignificant RPP results using the Fisher method
-demonstrates that any conclusions on the validity of individual effects
-based on \enquote{failed} replications, as determined by statistical
-significance, is unwarranted. This was also noted by both the original
-RPP team (Open Science Collaboration
+and the NHST framework demonstrates that any conclusions on the validity
+of individual effects based on \enquote{failed} replications, as
+determined by statistical significance, is unwarranted. This was also
+noted by both the original RPP team (Open Science Collaboration
 \protect\hyperlink{ref-doi:10.1126ux2fscience.aac4716}{2015}; Anderson
 et al. \protect\hyperlink{ref-doi:10.1126ux2fscience.aad9163}{2016}) and
 in a critique of the RPP (Gilbert et al.
@@ -4140,12 +4159,12 @@ to distinguish zero from nonzero true findings.
 Much attention has been paid to false positive results in recent years.
 Our study demonstrates the importance of paying attention to false
 negatives alongside false positives. We examined evidence for false
-negatives in nonsignificant results in three different ways.
-Specifically, we adapted the Fisher method to detect the presence of at
-least one false negative in a set of statistically nonsignificant
-results. Simulations indicated the adapted Fisher test to be a powerful
-method for that purpose. The three applications indicated that (i)
-approximately two out of three psychology articles reporting
+negatives in nonsignificant results in three different ways, using the
+NHST framework. Specifically, we adapted the Fisher method to detect the
+presence of at least one false negative in a set of statistically
+nonsignificant results. Simulations indicated the adapted Fisher test to
+be a powerful method for that purpose. The three applications indicated
+that (i) approximately two out of three psychology articles reporting
 nonsignificant results contain evidence for at least one false negative,
 (ii) nonsignificant results on gender effects contain evidence of true
 nonzero effects, and (iii) the statistically nonsignificant replications
@@ -4268,8 +4287,10 @@ methods of meta-analysis that adjust for publication bias, such as
 \protect\hyperlink{ref-doi:10.1037ux2fa0033242}{2014}). Extensions of
 these methods to include nonsignificant as well as significant
 \(p\)-values and to estimate heterogeneity are still under construction.
-Other approaches may include inspecting effect sizes directly, instead
-of relying on the NHST framework.
+Other approaches to examine statistically nonsignificant results may
+include inspecting effect sizes directly, similar to our approach used
+to construct Figure \ref{fig:tgtbf-fig3}, instead of relying on the NHST
+framework.
 
 To conclude, our three applications indicate that false negatives remain
 a problem in the psychology literature, despite the decreased attention
@@ -9569,6 +9590,13 @@ Conduct.'' \url{http://www.apa.org/ethics/code/principles.pdf}.
 Association}. 6th ed. Washington, DC: American Psychological
 Association.
 
+\hypertarget{ref-doi:10.1080ux2f00031305.2018.1543137}{}
+Amrhein, Valentin, David Trafimow, and Sander Greenland. 2019.
+``Inferential Statistics as Descriptive Statistics: There Is No
+Replication Crisis If We Don't Expect Replication.'' \emph{The American
+Statistician} 73 (sup1). Informa UK Limited: 262--70.
+doi:\href{https://doi.org/10.1080/00031305.2018.1543137}{10.1080/00031305.2018.1543137}.
+
 \hypertarget{ref-doi:10.7287ux2fpeerj.preprints.2400v1}{}
 Anaya, Jordan. 2016. ``The Grimmer Test: A Method for Testing the
 Validity of Reported Measures of Variability.'' \emph{PeerJ Preprints} 4
@@ -9955,6 +9983,9 @@ doi:\href{https://doi.org/10.1038/493147a}{10.1038/493147a}.
 Cumming, Geoff. 2013. ``The New Statistics.'' \emph{Psychological
 Science} 25 (1). SAGE Publications: 7--29.
 doi:\href{https://doi.org/10.1177/0956797613504966}{10.1177/0956797613504966}.
+
+\hypertarget{ref-isbn:9780415879682}{}
+---------. 2020. \emph{Understanding the New Statistics}.
 
 \hypertarget{ref-doi:10.1038ux2f520600a}{}
 Cyranoski, David. 2015. ``Collateral Damage: How One Misconduct Case

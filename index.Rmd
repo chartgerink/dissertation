@@ -350,6 +350,7 @@ digital version of this dissertation is available under
 df <- read.csv('assets/tables/ch1-table.csv')
 df[,1] <- df[,1] - 1 
 names(df)[2] <- 'Data package'
+df <- df[c(-8,-11,-12),]
 
 if (!knitr::is_html_output()) {
      knitr::kable(df, format = 'latex',

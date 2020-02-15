@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.8.28)  7 FEB 2020 16:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.8.28)  15 FEB 2020 22:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1205,7 +1205,7 @@ table.0.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.542 \end{landscape}
+l.538 \end{landscape}
                      ] [14
 
 
@@ -1219,41 +1219,41 @@ Chapter 1.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.681 
+l.677 
       ] [19] [20] [21pdfTeX warning (ext4): destination with the same identifie
 r (name{table.1.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.861 
+l.857 
       ] [22] [23] [24] [25]
 <assets/figures/scienceopen-table3.png, id=631, 1487.5575pt x 429.605pt>
 File: assets/figures/scienceopen-table3.png Graphic file (type png)
 <use assets/figures/scienceopen-table3.png>
 Package pdftex.def Info: assets/figures/scienceopen-table3.png  used on input l
-ine 1122.
+ine 1118.
 (pdftex.def)             Requested size: 348.82703pt x 100.74086pt.
 [26pdfTeX warning (ext4): destination with the same identifier (name{figure.1.1
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1153 
+l.1149 
         <./assets/figures/scienceopen-table3.png>] [27] [28] [29] [30
 
 ]
 Chapter 2.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <24.88> on input line 1338.
+(Font)              <24.88> on input line 1334.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <20.74> on input line 1338.
+(Font)              <20.74> on input line 1334.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <17.28> on input line 1338.
+(Font)              <17.28> on input line 1334.
 [31] [32]
 <assets/figures/head-fig1.pdf, id=782, 542.025pt x 632.3625pt>
 File: assets/figures/head-fig1.pdf Graphic file (type pdf)
 <use assets/figures/head-fig1.pdf>
-Package pdftex.def Info: assets/figures/head-fig1.pdf  used on input line 1467.
+Package pdftex.def Info: assets/figures/head-fig1.pdf  used on input line 1463.
 
 (pdftex.def)             Requested size: 279.07568pt x 325.5883pt.
 [33] [34pdfTeX warning (ext4): destination with the same identifier (name{figur
@@ -1261,7 +1261,7 @@ e.2.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1529 \begin{equation}
+l.1525 \begin{equation}
                         <./assets/figures/head-fig1.pdf>] [35]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1271,7 +1271,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1717 
+l.1713 
        ]
 Underfull \vbox (badness 4378) has occurred while \output is active []
 
@@ -1280,29 +1280,29 @@ Underfull \vbox (badness 4378) has occurred while \output is active []
 ]
 Chapter 3.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 1792.
+(Font)              <8> on input line 1788.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 1792.
+(Font)              <6> on input line 1788.
 [41]
 <assets/figures/bump-fig1.pdf.svg.png, id=919, 2007.5pt x 669.50125pt>
 File: assets/figures/bump-fig1.pdf.svg.png Graphic file (type png)
 <use assets/figures/bump-fig1.pdf.svg.png>
 Package pdftex.def Info: assets/figures/bump-fig1.pdf.svg.png  used on input li
-ne 1818.
+ne 1814.
 (pdftex.def)             Requested size: 348.80594pt x 116.32678pt.
 [42pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1879 
+l.1875 
         <./assets/figures/bump-fig1.pdf.svg.png>] [43] [44] [45] [46] [47pdfTeX
  warning (ext4): destination with the same identifier (name{table.3.1}) has bee
 n already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2170 \end{landscape}
+l.2166 \end{landscape}
                       ] [48
 
 
@@ -1311,15 +1311,15 @@ as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2244 
+l.2240 
        ] [49]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 2319.
+(Font)              <12> on input line 2315.
 [50] [51]
 <assets/figures/bump-fig2.png, id=1102, 227.1687pt x 364.2408pt>
 File: assets/figures/bump-fig2.png Graphic file (type png)
 <use assets/figures/bump-fig2.png>
-Package pdftex.def Info: assets/figures/bump-fig2.png  used on input line 2447.
+Package pdftex.def Info: assets/figures/bump-fig2.png  used on input line 2443.
 
 (pdftex.def)             Requested size: 227.17853pt x 364.25658pt.
 
@@ -1330,19 +1330,19 @@ e.3.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2476 \begin{landscape}
+l.2472 \begin{landscape}
                         \begin{table}[t] <./assets/figures/bump-fig2.png>] [54p
 dfTeX warning (ext4): destination with the same identifier (name{table.3.3}) ha
 s been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2500 \end{landscape}
+l.2496 \end{landscape}
                       ]
 <assets/figures/bump-fig3.png, id=1126, 240.9pt x 240.9pt>
 File: assets/figures/bump-fig3.png Graphic file (type png)
 <use assets/figures/bump-fig3.png>
-Package pdftex.def Info: assets/figures/bump-fig3.png  used on input line 2555.
+Package pdftex.def Info: assets/figures/bump-fig3.png  used on input line 2551.
 
 (pdftex.def)             Requested size: 240.90674pt x 240.90674pt.
 
@@ -1355,7 +1355,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <assets/figures/bump-fig4.png, id=1141, 240.9pt x 361.35pt>
 File: assets/figures/bump-fig4.png Graphic file (type png)
 <use assets/figures/bump-fig4.png>
-Package pdftex.def Info: assets/figures/bump-fig4.png  used on input line 2595.
+Package pdftex.def Info: assets/figures/bump-fig4.png  used on input line 2591.
 
 (pdftex.def)             Requested size: 209.3056pt x 313.95844pt.
 
@@ -1366,27 +1366,27 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2627 
+l.2623 
         <./assets/figures/bump-fig3.png>] [57pdfTeX warning (ext4): destination
  with the same identifier (name{figure.3.4}) has been already used, duplicate i
 gnored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2628 \begin{landscape}
+l.2624 \begin{landscape}
                         \begin{table}[t] <./assets/figures/bump-fig4.png>] [58p
 dfTeX warning (ext4): destination with the same identifier (name{table.3.4}) ha
 s been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2652 \end{landscape}
+l.2648 \end{landscape}
                       ] [59pdfTeX warning (ext4): destination with the same ide
 ntifier (name{table.3.5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2678 \end{landscape}
+l.2674 \end{landscape}
                       ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1400,13 +1400,13 @@ as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2753 
+l.2749 
        ] [61] [62pdfTeX warning (ext4): destination with the same identifier (n
 ame{table.3.7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2789 \end{landscape}
+l.2785 \end{landscape}
                       ] [63
 
 
@@ -1414,7 +1414,7 @@ l.2789 \end{landscape}
 <assets/figures/bump-fig5.png, id=1203, 1405.25pt x 1405.25pt>
 File: assets/figures/bump-fig5.png Graphic file (type png)
 <use assets/figures/bump-fig5.png>
-Package pdftex.def Info: assets/figures/bump-fig5.png  used on input line 2910.
+Package pdftex.def Info: assets/figures/bump-fig5.png  used on input line 2906.
 
 (pdftex.def)             Requested size: 279.05089pt x 279.05089pt.
 
@@ -1428,26 +1428,26 @@ Underfull \vbox (badness 1400) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2941 
+l.2937 
         <./assets/figures/bump-fig5.png>] [66] [67] [68]
 Chapter 4.
 [69
 
 ]
 
-LaTeX Warning: Command \textquoteright invalid in math mode on input line 3154.
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 3150.
 
 
 
-LaTeX Warning: Command \textquoteright invalid in math mode on input line 3154.
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 3150.
 
 
 
-LaTeX Warning: Command \textquoteright invalid in math mode on input line 3154.
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 3150.
 
 
 
-LaTeX Warning: Command \textquoteright invalid in math mode on input line 3154.
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 3150.
 
 
 [70pdfTeX warning (ext4): destination with the same identifier (name{table.4.1}
@@ -1455,163 +1455,159 @@ LaTeX Warning: Command \textquoteright invalid in math mode on input line 3154.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.3236 
-       ] [71] [72]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[73] [74pdfTeX warning (ext4): destination with the same identifier (name{table
-.4.2}) has been already used, duplicate ignored
+l.3204 
+       ] [71] [72] [73] [74pdfTeX warning (ext4): destination with the same ide
+ntifier (name{table.4.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.3460 
-       ] [75] [76pdfTeX warning (ext4): destination with the same identifier (n
-ame{table.4.3}) has been already used, duplicate ignored
+       ] [75] [76] [77pdfTeX warning (ext4): destination with the same identifi
+er (name{table.4.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.3518 \end{landscape}
+l.3536 \end{landscape}
                       ]
-<assets/figures/tgtbf-fig1.pdf.svg.png, id=1379, 2007.5pt x 1277.77374pt>
+<assets/figures/tgtbf-fig1.pdf.svg.png, id=1387, 2007.5pt x 1277.77374pt>
 File: assets/figures/tgtbf-fig1.pdf.svg.png Graphic file (type png)
 <use assets/figures/tgtbf-fig1.pdf.svg.png>
 Package pdftex.def Info: assets/figures/tgtbf-fig1.pdf.svg.png  used on input l
-ine 3580.
+ine 3598.
 (pdftex.def)             Requested size: 348.80594pt x 222.01498pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[77
+[78
 
 
 ]
-<assets/figures/tgtbf-fig2.pdf.svg.png, id=1391, 2007.5pt x 1277.77374pt>
+<assets/figures/tgtbf-fig2.pdf.svg.png, id=1399, 2007.5pt x 1277.77374pt>
 File: assets/figures/tgtbf-fig2.pdf.svg.png Graphic file (type png)
 <use assets/figures/tgtbf-fig2.pdf.svg.png>
 Package pdftex.def Info: assets/figures/tgtbf-fig2.pdf.svg.png  used on input l
-ine 3596.
+ine 3614.
 (pdftex.def)             Requested size: 348.80594pt x 222.01498pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[78pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1
+[79pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.3625 
+l.3643 
         <./assets/figures/tgtbf-fig1.pdf.svg.png>]
-<assets/figures/tgtbf-fig3.pdf.svg.png, id=1403, 2007.5pt x 1277.77374pt>
+<assets/figures/tgtbf-fig3.pdf.svg.png, id=1412, 2007.5pt x 1277.77374pt>
 File: assets/figures/tgtbf-fig3.pdf.svg.png Graphic file (type png)
 <use assets/figures/tgtbf-fig3.pdf.svg.png>
 Package pdftex.def Info: assets/figures/tgtbf-fig3.pdf.svg.png  used on input l
-ine 3628.
+ine 3646.
 (pdftex.def)             Requested size: 348.80594pt x 222.01498pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[79pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2
+[80pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.3673 
+l.3691 
         <./assets/figures/tgtbf-fig2.pdf.svg.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[80pdfTeX warning (ext4): destination with the same identifier (name{figure.4.3
+[81pdfTeX warning (ext4): destination with the same identifier (name{figure.4.3
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.3719 
-        <./assets/figures/tgtbf-fig3.pdf.svg.png>] [81pdfTeX warning (ext4): de
+l.3737 
+        <./assets/figures/tgtbf-fig3.pdf.svg.png>] [82pdfTeX warning (ext4): de
 stination with the same identifier (name{table.4.4}) has been already used, dup
 licate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.3762 
+l.3780 
        ]
-<assets/figures/tgtbf-fig4.pdf.svg.png, id=1434, 2007.5pt x 1434.35875pt>
+<assets/figures/tgtbf-fig4.pdf.svg.png, id=1442, 2007.5pt x 1434.35875pt>
 File: assets/figures/tgtbf-fig4.pdf.svg.png Graphic file (type png)
 <use assets/figures/tgtbf-fig4.pdf.svg.png>
 Package pdftex.def Info: assets/figures/tgtbf-fig4.pdf.svg.png  used on input l
-ine 3765.
+ine 3783.
 (pdftex.def)             Requested size: 348.80594pt x 249.22185pt.
-<assets/figures/tgtbf-fig5.pdf.svg.png, id=1435, 2007.5pt x 1720.4275pt>
+<assets/figures/tgtbf-fig5.pdf.svg.png, id=1443, 2007.5pt x 1720.4275pt>
 File: assets/figures/tgtbf-fig5.pdf.svg.png Graphic file (type png)
 <use assets/figures/tgtbf-fig5.pdf.svg.png>
 Package pdftex.def Info: assets/figures/tgtbf-fig5.pdf.svg.png  used on input l
-ine 3774.
+ine 3792.
 (pdftex.def)             Requested size: 348.80594pt x 298.9267pt.
-[82pdfTeX warning (ext4): destination with the same identifier (name{figure.4.4
+[83pdfTeX warning (ext4): destination with the same identifier (name{figure.4.4
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.3779 \end{figure}
-                    <./assets/figures/tgtbf-fig4.pdf.svg.png>] [83pdfTeX warnin
+l.3797 \end{figure}
+                    <./assets/figures/tgtbf-fig4.pdf.svg.png>] [84pdfTeX warnin
 g (ext4): destination with the same identifier (name{figure.4.5}) has been alre
 ady used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.3814 
-        <./assets/figures/tgtbf-fig5.pdf.svg.png>] [84] [85]
-<assets/figures/tgtbf-fig6.pdf.svg.png, id=1490, 2007.5pt x 1434.35875pt>
+l.3832 
+        <./assets/figures/tgtbf-fig5.pdf.svg.png>] [85] [86]
+<assets/figures/tgtbf-fig6.pdf.svg.png, id=1498, 2007.5pt x 1434.35875pt>
 File: assets/figures/tgtbf-fig6.pdf.svg.png Graphic file (type png)
 <use assets/figures/tgtbf-fig6.pdf.svg.png>
 Package pdftex.def Info: assets/figures/tgtbf-fig6.pdf.svg.png  used on input l
-ine 3960.
+ine 3978.
 (pdftex.def)             Requested size: 348.80594pt x 249.22185pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[86pdfTeX warning (ext4): destination with the same identifier (name{table.4.5}
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[87pdfTeX warning (ext4): destination with the same identifier (name{table.4.5}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.3996 
-       ] [87pdfTeX warning (ext4): destination with the same identifier (name{f
+l.4015 
+       ] [88pdfTeX warning (ext4): destination with the same identifier (name{f
 igure.4.6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.4026 
-        <./assets/figures/tgtbf-fig6.pdf.svg.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+l.4027 
+        <./assets/figures/tgtbf-fig6.pdf.svg.png>] [89] [90] [91] [92] [93] [94
 
-[88] [89] [90] [91] [92]
+]
 Chapter 5.
-[93
-
-] [94pdfTeX warning (ext4): destination with the same identifier (name{table.5.
-1}) has been already used, duplicate ignored
+[95] [96pdfTeX warning (ext4): destination with the same identifier (name{table
+.5.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.4321 \end{landscape}
-                      ] [95
+l.4342 \end{landscape}
+                      ] [97
 
 
-] [96] [97pdfTeX warning (ext4): destination with the same identifier (name{tab
+] [98] [99pdfTeX warning (ext4): destination with the same identifier (name{tab
 le.5.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.4427 \end{landscape}
+l.4448 \end{landscape}
                       ]
-<assets/figures/statcheck-fig1.png, id=1619, 402.5439pt x 321.48105pt>
+<assets/figures/statcheck-fig1.png, id=1632, 402.5439pt x 321.48105pt>
 File: assets/figures/statcheck-fig1.png Graphic file (type png)
 <use assets/figures/statcheck-fig1.png>
 Package pdftex.def Info: assets/figures/statcheck-fig1.png  used on input line 
-4442.
+4463.
 (pdftex.def)             Requested size: 348.84062pt x 278.59235pt.
-[98
+[100
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1}) 
@@ -1619,271 +1615,271 @@ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.4461 J
+l.4482 J
         ournals from two of the six publishers had to be removed from the <./as
-sets/figures/statcheck-fig1.png>] [99] [100]
+sets/figures/statcheck-fig1.png>] [101] [102]
 Chapter 6.
-[101
+[103
 
-] [102] [103]
+] [104] [105]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[104] [105pdfTeX warning (ext4): destination with the same identifier (name{tab
+[106] [107pdfTeX warning (ext4): destination with the same identifier (name{tab
 le.6.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.4866 
-       ] [106] [107] [108]
+l.4887 
+       ] [108] [109] [110]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[109] [110pdfTeX warning (ext4): destination with the same identifier (name{tab
+[111] [112pdfTeX warning (ext4): destination with the same identifier (name{tab
 le.6.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.5182 
+l.5203 
        ]
-<_main_files/figure-latex/digit-dist-1.pdf, id=1865, 459.7175pt x 285.065pt>
+<_main_files/figure-latex/digit-dist-1.pdf, id=1878, 459.7175pt x 285.065pt>
 File: _main_files/figure-latex/digit-dist-1.pdf Graphic file (type pdf)
 <use _main_files/figure-latex/digit-dist-1.pdf>
 Package pdftex.def Info: _main_files/figure-latex/digit-dist-1.pdf  used on inp
-ut line 5185.
+ut line 5206.
 (pdftex.def)             Requested size: 348.84879pt x 216.31671pt.
-[111pdfTeX warning (ext4): destination with the same identifier (name{figure.6.
+[113pdfTeX warning (ext4): destination with the same identifier (name{figure.6.
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.5217 
+l.5238 
         <./_main_files/figure-latex/digit-dist-1.pdf>]
-<_main_files/figure-latex/multivariate-association-1.pdf, id=1883, 453.695pt x 
+<_main_files/figure-latex/multivariate-association-1.pdf, id=1896, 453.695pt x 
 316.18124pt>
 File: _main_files/figure-latex/multivariate-association-1.pdf Graphic file (typ
 e pdf)
 <use _main_files/figure-latex/multivariate-association-1.pdf>
 Package pdftex.def Info: _main_files/figure-latex/multivariate-association-1.pd
-f  used on input line 5236.
+f  used on input line 5257.
 (pdftex.def)             Requested size: 348.83394pt x 243.10329pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[112pdfTeX warning (ext4): destination with the same identifier (name{figure.6.
+[114pdfTeX warning (ext4): destination with the same identifier (name{figure.6.
 2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.5257 
-        <./_main_files/figure-latex/multivariate-association-1.pdf>] [113] [114
+l.5278 
+        <./_main_files/figure-latex/multivariate-association-1.pdf>] [115] [116
 ]
-<./assets/figures/spreadsheet.png, id=1930, 1498.59875pt x 417.56pt>
+<./assets/figures/spreadsheet.png, id=1945, 1498.59875pt x 417.56pt>
 File: ./assets/figures/spreadsheet.png Graphic file (type png)
 <use ./assets/figures/spreadsheet.png>
 Package pdftex.def Info: ./assets/figures/spreadsheet.png  used on input line 5
-402.
+423.
 (pdftex.def)             Requested size: 348.80934pt x 97.19pt.
-[115pdfTeX warning (ext4): destination with the same identifier (name{figure.6.
+[117pdfTeX warning (ext4): destination with the same identifier (name{figure.6.
 3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.5428 
-        <./assets/figures/spreadsheet.png>] [116] [117]
-<_main_files/figure-latex/ddfab-density1-1.pdf, id=1960, 462.72874pt x 314.1737
+l.5449 
+        <./assets/figures/spreadsheet.png>] [118] [119]
+<_main_files/figure-latex/ddfab-density1-1.pdf, id=1973, 462.72874pt x 314.1737
 5pt>
 File: _main_files/figure-latex/ddfab-density1-1.pdf Graphic file (type pdf)
 <use _main_files/figure-latex/ddfab-density1-1.pdf>
 Package pdftex.def Info: _main_files/figure-latex/ddfab-density1-1.pdf  used on
- input line 5546.
+ input line 5567.
 (pdftex.def)             Requested size: 348.83205pt x 236.84258pt.
-[118] [119pdfTeX warning (ext4): destination with the same identifier (name{fig
+[120] [121pdfTeX warning (ext4): destination with the same identifier (name{fig
 ure.6.4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.5591 
-        <./_main_files/figure-latex/ddfab-density1-1.pdf>] [120pdfTeX warning (
+l.5612 
+        <./_main_files/figure-latex/ddfab-density1-1.pdf>] [122pdfTeX warning (
 ext4): destination with the same identifier (name{table.6.3}) has been already 
 used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.5662 
-       ] [121]
-<_main_files/figure-latex/ddfab-es1-1.pdf, id=2014, 459.7175pt x 314.17375pt>
+l.5683 
+       ] [123]
+<_main_files/figure-latex/ddfab-es1-1.pdf, id=2027, 459.7175pt x 314.17375pt>
 File: _main_files/figure-latex/ddfab-es1-1.pdf Graphic file (type pdf)
 <use _main_files/figure-latex/ddfab-es1-1.pdf>
 Package pdftex.def Info: _main_files/figure-latex/ddfab-es1-1.pdf  used on inpu
-t line 5734.
+t line 5755.
 (pdftex.def)             Requested size: 348.84879pt x 238.4054pt.
-<_main_files/figure-latex/rng-density1-1.pdf, id=2017, 462.72874pt x 314.17375p
+<_main_files/figure-latex/rng-density1-1.pdf, id=2030, 462.72874pt x 314.17375p
 t>
 File: _main_files/figure-latex/rng-density1-1.pdf Graphic file (type pdf)
 <use _main_files/figure-latex/rng-density1-1.pdf>
 Package pdftex.def Info: _main_files/figure-latex/rng-density1-1.pdf  used on i
-nput line 5762.
+nput line 5783.
 (pdftex.def)             Requested size: 348.83205pt x 236.84258pt.
-[122] [123pdfTeX warning (ext4): destination with the same identifier (name{fig
+[124] [125pdfTeX warning (ext4): destination with the same identifier (name{fig
 ure.6.5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.5798 
-        <./_main_files/figure-latex/ddfab-es1-1.pdf>] [124pdfTeX warning (ext4)
+l.5819 
+        <./_main_files/figure-latex/ddfab-es1-1.pdf>] [126pdfTeX warning (ext4)
 : destination with the same identifier (name{figure.6.6}) has been already used
 , duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.5798 
-        <./_main_files/figure-latex/rng-density1-1.pdf>] [125pdfTeX warning (ex
+l.5819 
+        <./_main_files/figure-latex/rng-density1-1.pdf>] [127pdfTeX warning (ex
 t4): destination with the same identifier (name{table.6.4}) has been already us
 ed, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.5837 
-       ] [126] [127] [128] [129]
-<./assets/figures/spreadsheet2.png, id=2140, 626.34pt x 555.07375pt>
+l.5858 
+       ] [128] [129] [130] [131]
+<./assets/figures/spreadsheet2.png, id=2153, 626.34pt x 555.07375pt>
 File: ./assets/figures/spreadsheet2.png Graphic file (type png)
 <use ./assets/figures/spreadsheet2.png>
 Package pdftex.def Info: ./assets/figures/spreadsheet2.png  used on input line 
-6090.
+6111.
 (pdftex.def)             Requested size: 348.83656pt x 309.14522pt.
-[130] [131pdfTeX warning (ext4): destination with the same identifier (name{fig
+[132] [133pdfTeX warning (ext4): destination with the same identifier (name{fig
 ure.6.7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.6136 
-        <./assets/figures/spreadsheet2.png>] [132] [133]
-<_main_files/figure-latex/digit-nbl-1.pdf, id=2178, 459.7175pt x 315.1775pt>
+l.6157 
+        <./assets/figures/spreadsheet2.png>] [134] [135]
+<_main_files/figure-latex/digit-nbl-1.pdf, id=2191, 459.7175pt x 315.1775pt>
 File: _main_files/figure-latex/digit-nbl-1.pdf Graphic file (type pdf)
 <use _main_files/figure-latex/digit-nbl-1.pdf>
 Package pdftex.def Info: _main_files/figure-latex/digit-nbl-1.pdf  used on inpu
-t line 6253.
+t line 6274.
 (pdftex.def)             Requested size: 348.84879pt x 239.16707pt.
-[134pdfTeX warning (ext4): destination with the same identifier (name{figure.6.
+[136pdfTeX warning (ext4): destination with the same identifier (name{figure.6.
 8}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.6287 
+l.6308 
         <./_main_files/figure-latex/digit-nbl-1.pdf>]
-<_main_files/figure-latex/digit-term-1.pdf, id=2195, 459.7175pt x 315.1775pt>
+<_main_files/figure-latex/digit-term-1.pdf, id=2209, 459.7175pt x 315.1775pt>
 File: _main_files/figure-latex/digit-term-1.pdf Graphic file (type pdf)
 <use _main_files/figure-latex/digit-term-1.pdf>
 Package pdftex.def Info: _main_files/figure-latex/digit-term-1.pdf  used on inp
-ut line 6304.
+ut line 6325.
 (pdftex.def)             Requested size: 348.84879pt x 239.16707pt.
-[135] [136pdfTeX warning (ext4): destination with the same identifier (name{fig
+[137] [138pdfTeX warning (ext4): destination with the same identifier (name{fig
 ure.6.9}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.6335 
+l.6356 
         <./_main_files/figure-latex/digit-term-1.pdf>]
-<_main_files/figure-latex/sds-distribution-1.pdf, id=2216, 453.695pt x 313.17pt
+<_main_files/figure-latex/sds-distribution-1.pdf, id=2229, 453.695pt x 313.17pt
 >
 File: _main_files/figure-latex/sds-distribution-1.pdf Graphic file (type pdf)
 <use _main_files/figure-latex/sds-distribution-1.pdf>
 Package pdftex.def Info: _main_files/figure-latex/sds-distribution-1.pdf  used 
-on input line 6337.
+on input line 6358.
 (pdftex.def)             Requested size: 348.83394pt x 240.78801pt.
-[137pdfTeX warning (ext4): destination with the same identifier (name{figure.6.
+[139pdfTeX warning (ext4): destination with the same identifier (name{figure.6.
 10}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.6375 
+l.6396 
         <./_main_files/figure-latex/sds-distribution-1.pdf>]
-<_main_files/figure-latex/dens-mult-1.pdf, id=2235, 459.7175pt x 314.17375pt>
+<_main_files/figure-latex/dens-mult-1.pdf, id=2249, 459.7175pt x 314.17375pt>
 File: _main_files/figure-latex/dens-mult-1.pdf Graphic file (type pdf)
 <use _main_files/figure-latex/dens-mult-1.pdf>
 Package pdftex.def Info: _main_files/figure-latex/dens-mult-1.pdf  used on inpu
-t line 6378.
+t line 6399.
 (pdftex.def)             Requested size: 348.84879pt x 238.4054pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[138pdfTeX warning (ext4): destination with the same identifier (name{figure.6.
+[140pdfTeX warning (ext4): destination with the same identifier (name{figure.6.
 11}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.6402 
+l.6423 
         <./_main_files/figure-latex/dens-mult-1.pdf>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<_main_files/figure-latex/rng-mult2-1.pdf, id=2255, 459.7175pt x 314.17375pt>
+<_main_files/figure-latex/rng-mult2-1.pdf, id=2269, 459.7175pt x 314.17375pt>
 File: _main_files/figure-latex/rng-mult2-1.pdf Graphic file (type pdf)
 <use _main_files/figure-latex/rng-mult2-1.pdf>
 Package pdftex.def Info: _main_files/figure-latex/rng-mult2-1.pdf  used on inpu
-t line 6470.
+t line 6491.
 (pdftex.def)             Requested size: 348.84879pt x 238.4054pt.
-[139] [140pdfTeX warning (ext4): destination with the same identifier (name{fig
+[141] [142pdfTeX warning (ext4): destination with the same identifier (name{fig
 ure.6.12}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.6483 
-        <./_main_files/figure-latex/rng-mult2-1.pdf>] [141pdfTeX warning (ext4)
+l.6504 
+        <./_main_files/figure-latex/rng-mult2-1.pdf>] [143pdfTeX warning (ext4)
 : destination with the same identifier (name{table.6.5}) has been already used,
  duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.6513 
+l.6534 
        ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[142] [143] [144] [145] [146] [147] [148
+[144] [145] [146] [147] [148] [149] [150
 
-] [149] [150]
+] [151] [152]
 Chapter 7.
-[151
+[153
 
 ]
-<assets/figures/plot-components.png, id=2376, 474.77374pt x 599.23875pt>
+<assets/figures/plot-components.png, id=2389, 474.77374pt x 599.23875pt>
 File: assets/figures/plot-components.png Graphic file (type png)
 <use assets/figures/plot-components.png>
 Package pdftex.def Info: assets/figures/plot-components.png  used on input line
- 6900.
+ 6921.
 (pdftex.def)             Requested size: 139.52818pt x 176.10641pt.
 
-Package xcolor Warning: Incompatible color definition on input line 6915.
+Package xcolor Warning: Incompatible color definition on input line 6936.
 
 
-Package xcolor Warning: Incompatible color definition on input line 6921.
+Package xcolor Warning: Incompatible color definition on input line 6942.
 
 
-Package xcolor Warning: Incompatible color definition on input line 6921.
+Package xcolor Warning: Incompatible color definition on input line 6942.
 
-[152]
-<assets/figures/search-results.png, id=2386, 1034.86626pt x 323.2075pt>
+[154]
+<assets/figures/search-results.png, id=2399, 1034.86626pt x 323.2075pt>
 File: assets/figures/search-results.png Graphic file (type png)
 <use assets/figures/search-results.png>
 Package pdftex.def Info: assets/figures/search-results.png  used on input line 
-6956.
+6977.
 (pdftex.def)             Requested size: 348.83383pt x 108.94713pt.
-[153pdfTeX warning (ext4): destination with the same identifier (name{figure.7.
+[155pdfTeX warning (ext4): destination with the same identifier (name{figure.7.
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.6970 
+l.6991 
         <./assets/figures/plot-components.png>]
-<assets/figures/example-bitmap.png, id=2395, 1281.78876pt x 877.2775pt>
+<assets/figures/example-bitmap.png, id=2408, 1281.78876pt x 877.2775pt>
 File: assets/figures/example-bitmap.png Graphic file (type png)
 <use assets/figures/example-bitmap.png>
 Package pdftex.def Info: assets/figures/example-bitmap.png  used on input line 
-6972.
+6993.
 (pdftex.def)             Requested size: 348.82578pt x 238.74216pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 6972--6972
+Underfull \hbox (badness 10000) in paragraph at lines 6993--6993
 [][]
  []
 
@@ -1891,77 +1887,77 @@ Underfull \hbox (badness 10000) in paragraph at lines 6972--6972
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Package xcolor Warning: Incompatible color definition on input line 6982.
+Package xcolor Warning: Incompatible color definition on input line 7003.
 
-LaTeX Font Info:    Try loading font information for TS1+lmtt on input line 698
-6.
+LaTeX Font Info:    Try loading font information for TS1+lmtt on input line 700
+7.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/lm/ts1lmtt.fd
 File: ts1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 
-Package xcolor Warning: Incompatible color definition on input line 6991.
+Package xcolor Warning: Incompatible color definition on input line 7012.
 
 
-Package xcolor Warning: Incompatible color definition on input line 6991.
+Package xcolor Warning: Incompatible color definition on input line 7012.
 
-[154pdfTeX warning (ext4): destination with the same identifier (name{figure.7.
+[156pdfTeX warning (ext4): destination with the same identifier (name{figure.7.
 2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.7010 
+l.7031 
         <./assets/figures/search-results.png>]
 
-Package xcolor Warning: Incompatible color definition on input line 7011.
+Package xcolor Warning: Incompatible color definition on input line 7032.
 
 
-Package xcolor Warning: Incompatible color definition on input line 7018.
+Package xcolor Warning: Incompatible color definition on input line 7039.
 
 
-Package xcolor Warning: Incompatible color definition on input line 7018.
+Package xcolor Warning: Incompatible color definition on input line 7039.
 
 
-Package xcolor Warning: Incompatible color definition on input line 7028.
+Package xcolor Warning: Incompatible color definition on input line 7049.
 
-[155pdfTeX warning (ext4): destination with the same identifier (name{figure.7.
+[157pdfTeX warning (ext4): destination with the same identifier (name{figure.7.
 3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.7028 \begin{Shaded}
+l.7049 \begin{Shaded}
                       <./assets/figures/example-bitmap.png>]
 
-Package xcolor Warning: Incompatible color definition on input line 7039.
+Package xcolor Warning: Incompatible color definition on input line 7060.
 
 
-Package xcolor Warning: Incompatible color definition on input line 7039.
+Package xcolor Warning: Incompatible color definition on input line 7060.
 
 
-Package xcolor Warning: Incompatible color definition on input line 7046.
+Package xcolor Warning: Incompatible color definition on input line 7067.
 
 
-Package xcolor Warning: Incompatible color definition on input line 7052.
+Package xcolor Warning: Incompatible color definition on input line 7073.
 
 
-Package xcolor Warning: Incompatible color definition on input line 7052.
+Package xcolor Warning: Incompatible color definition on input line 7073.
 
 
-Package xcolor Warning: Incompatible color definition on input line 7068.
+Package xcolor Warning: Incompatible color definition on input line 7089.
 
 
-Package xcolor Warning: Incompatible color definition on input line 7079.
+Package xcolor Warning: Incompatible color definition on input line 7100.
 
 
-Package xcolor Warning: Incompatible color definition on input line 7079.
+Package xcolor Warning: Incompatible color definition on input line 7100.
 
-<assets/figures/boxed-funnel.png, id=2415, 1656.68938pt x 626.84187pt>
+<assets/figures/boxed-funnel.png, id=2429, 1656.68938pt x 626.84187pt>
 File: assets/figures/boxed-funnel.png Graphic file (type png)
 <use assets/figures/boxed-funnel.png>
-Package pdftex.def Info: assets/figures/boxed-funnel.png  used on input line 70
-90.
+Package pdftex.def Info: assets/figures/boxed-funnel.png  used on input line 71
+11.
 (pdftex.def)             Requested size: 348.82509pt x 131.985pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 7090--7090
+Underfull \hbox (badness 10000) in paragraph at lines 7111--7111
 [][]
  []
 
@@ -1969,499 +1965,499 @@ Underfull \hbox (badness 10000) in paragraph at lines 7090--7090
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Package xcolor Warning: Incompatible color definition on input line 7099.
+Package xcolor Warning: Incompatible color definition on input line 7120.
 
-[156]
+[158]
 
-Package xcolor Warning: Incompatible color definition on input line 7107.
+Package xcolor Warning: Incompatible color definition on input line 7128.
 
 
-Package xcolor Warning: Incompatible color definition on input line 7107.
+Package xcolor Warning: Incompatible color definition on input line 7128.
 
-[157pdfTeX warning (ext4): destination with the same identifier (name{figure.7.
+[159pdfTeX warning (ext4): destination with the same identifier (name{figure.7.
 4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.7132 \begin{landscape}
+l.7153 \begin{landscape}
                         \begin{table}[t] <./assets/figures/boxed-funnel.png (PN
-G copy)>] [158pdfTeX warning (ext4): destination with the same identifier (name
+G copy)>] [160pdfTeX warning (ext4): destination with the same identifier (name
 {table.7.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.7175 \end{landscape}
-                      ] [159
+l.7196 \end{landscape}
+                      ] [161
 
 
-] [160
+] [162
 
 ]
 Chapter 8.
-[161] [162]
-<assets/figures/Panel with DAGs.png, id=2488, 682.80093pt x 228.10219pt>
+[163] [164]
+<assets/figures/Panel with DAGs.png, id=2502, 682.80093pt x 228.10219pt>
 File: assets/figures/Panel with DAGs.png Graphic file (type png)
 <use assets/figures/Panel with DAGs.png>
 Package pdftex.def Info: assets/figures/Panel with DAGs.png  used on input line
- 7381.
+ 7402.
 (pdftex.def)             Requested size: 348.83856pt x 116.53592pt.
-[163] [164pdfTeX warning (ext4): destination with the same identifier (name{fig
+[165] [166pdfTeX warning (ext4): destination with the same identifier (name{fig
 ure.8.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.7433 
-        <./assets/figures/Panel with DAGs.png>] [165pdfTeX warning (ext4): dest
+l.7454 
+        <./assets/figures/Panel with DAGs.png>] [167pdfTeX warning (ext4): dest
 ination with the same identifier (name{table.8.1}) has been already used, dupli
 cate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.7495 
-       ] [166] [167] [168] [169] [170] [171] [172]
+l.7516 
+       ] [168] [169] [170] [171] [172] [173] [174]
 Chapter 9.
-[173
+[175
 
 ]
-<assets/figures/fig-octo.png, id=2600, 1585.925pt x 1031.855pt>
+<assets/figures/fig-octo.png, id=2615, 1585.925pt x 1031.855pt>
 File: assets/figures/fig-octo.png Graphic file (type png)
 <use assets/figures/fig-octo.png>
-Package pdftex.def Info: assets/figures/fig-octo.png  used on input line 7912.
+Package pdftex.def Info: assets/figures/fig-octo.png  used on input line 7933.
 (pdftex.def)             Requested size: 348.83199pt x 226.96156pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[174]
-<assets/figures/datcom-fig1.png, id=2620, 4195.675pt x 2855.66875pt>
+[176]
+<assets/figures/datcom-fig1.png, id=2634, 4195.675pt x 2855.66875pt>
 File: assets/figures/datcom-fig1.png Graphic file (type png)
 <use assets/figures/datcom-fig1.png>
-Package pdftex.def Info: assets/figures/datcom-fig1.png  used on input line 794
-9.
+Package pdftex.def Info: assets/figures/datcom-fig1.png  used on input line 797
+0.
 (pdftex.def)             Requested size: 279.00249pt x 189.89523pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[175pdfTeX warning (ext4): destination with the same identifier (name{figure.9.
+[177pdfTeX warning (ext4): destination with the same identifier (name{figure.9.
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.7992 
+l.8013 
         <./assets/figures/fig-octo.png>]
 
-Package xcolor Warning: Incompatible color definition on input line 7993.
+Package xcolor Warning: Incompatible color definition on input line 8014.
 
 
-Package xcolor Warning: Incompatible color definition on input line 8001.
+Package xcolor Warning: Incompatible color definition on input line 8022.
 
 
-Package xcolor Warning: Incompatible color definition on input line 8001.
+Package xcolor Warning: Incompatible color definition on input line 8022.
 
-[176pdfTeX warning (ext4): destination with the same identifier (name{figure.9.
+[178pdfTeX warning (ext4): destination with the same identifier (name{figure.9.
 2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.8018 
+l.8039 
         <./assets/figures/datcom-fig1.png>]
 
-Package xcolor Warning: Incompatible color definition on input line 8019.
+Package xcolor Warning: Incompatible color definition on input line 8040.
 
 
-Package xcolor Warning: Incompatible color definition on input line 8030.
+Package xcolor Warning: Incompatible color definition on input line 8051.
 
 
-Package xcolor Warning: Incompatible color definition on input line 8030.
+Package xcolor Warning: Incompatible color definition on input line 8051.
 
-<assets/figures/datcom-fig2.png, id=2642, 1606.0pt x 909.3975pt>
+<assets/figures/datcom-fig2.png, id=2655, 1606.0pt x 909.3975pt>
 File: assets/figures/datcom-fig2.png Graphic file (type png)
 <use assets/figures/datcom-fig2.png>
-Package pdftex.def Info: assets/figures/datcom-fig2.png  used on input line 804
-9.
+Package pdftex.def Info: assets/figures/datcom-fig2.png  used on input line 807
+0.
 (pdftex.def)             Requested size: 348.83658pt x 197.52872pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[177]
+[179]
 
-Package xcolor Warning: Incompatible color definition on input line 8108.
+Package xcolor Warning: Incompatible color definition on input line 8129.
 
-[178pdfTeX warning (ext4): destination with the same identifier (name{figure.9.
+[180pdfTeX warning (ext4): destination with the same identifier (name{figure.9.
 3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.8108 \begin{Shaded}
+l.8129 \begin{Shaded}
                       <./assets/figures/datcom-fig2.png>]
 
-Package xcolor Warning: Incompatible color definition on input line 8119.
+Package xcolor Warning: Incompatible color definition on input line 8140.
 
 
-Package xcolor Warning: Incompatible color definition on input line 8119.
+Package xcolor Warning: Incompatible color definition on input line 8140.
 
 
-Package xcolor Warning: Incompatible color definition on input line 8127.
+Package xcolor Warning: Incompatible color definition on input line 8148.
 
 
-Package xcolor Warning: Incompatible color definition on input line 8139.
+Package xcolor Warning: Incompatible color definition on input line 8160.
 
 
-Package xcolor Warning: Incompatible color definition on input line 8139.
+Package xcolor Warning: Incompatible color definition on input line 8160.
 
 
-Package xcolor Warning: Incompatible color definition on input line 8164.
+Package xcolor Warning: Incompatible color definition on input line 8185.
 
 
-Package xcolor Warning: Incompatible color definition on input line 8176.
+Package xcolor Warning: Incompatible color definition on input line 8197.
 
 
-Package xcolor Warning: Incompatible color definition on input line 8176.
+Package xcolor Warning: Incompatible color definition on input line 8197.
 
 
-Overfull \vbox (0.65228pt too high) detected at line 8176
+Overfull \vbox (0.65228pt too high) detected at line 8197
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 8176.
+Package xcolor Warning: Incompatible color definition on input line 8197.
 
-[179]
+[181]
 
-Package xcolor Warning: Incompatible color definition on input line 8176.
+Package xcolor Warning: Incompatible color definition on input line 8197.
 
 
-Package xcolor Warning: Incompatible color definition on input line 8176.
+Package xcolor Warning: Incompatible color definition on input line 8197.
 
-<assets/figures/datcom-fig3.png, id=2659, 1304.875pt x 707.64375pt>
+<assets/figures/datcom-fig3.png, id=2673, 1304.875pt x 707.64375pt>
 File: assets/figures/datcom-fig3.png Graphic file (type png)
 <use assets/figures/datcom-fig3.png>
-Package pdftex.def Info: assets/figures/datcom-fig3.png  used on input line 819
-4.
+Package pdftex.def Info: assets/figures/datcom-fig3.png  used on input line 821
+5.
 (pdftex.def)             Requested size: 244.1657pt x 132.41293pt.
-[180pdfTeX warning (ext4): destination with the same identifier (name{figure.9.
+[182pdfTeX warning (ext4): destination with the same identifier (name{figure.9.
 4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.8225 
-        <./assets/figures/datcom-fig3.png>] [181]
+l.8246 
+        <./assets/figures/datcom-fig3.png>] [183]
 
-Package xcolor Warning: Incompatible color definition on input line 8283.
-
-
-Package xcolor Warning: Incompatible color definition on input line 8292.
+Package xcolor Warning: Incompatible color definition on input line 8304.
 
 
-Package xcolor Warning: Incompatible color definition on input line 8292.
+Package xcolor Warning: Incompatible color definition on input line 8313.
 
 
-Package xcolor Warning: Incompatible color definition on input line 8298.
+Package xcolor Warning: Incompatible color definition on input line 8313.
 
 
-Package xcolor Warning: Incompatible color definition on input line 8312.
+Package xcolor Warning: Incompatible color definition on input line 8319.
 
 
-Package xcolor Warning: Incompatible color definition on input line 8312.
+Package xcolor Warning: Incompatible color definition on input line 8333.
 
-[182]
-<assets/figures/datcom-fig4.png, id=2685, 3187.91pt x 2481.27pt>
+
+Package xcolor Warning: Incompatible color definition on input line 8333.
+
+[184]
+<assets/figures/datcom-fig4.png, id=2698, 3187.91pt x 2481.27pt>
 File: assets/figures/datcom-fig4.png Graphic file (type png)
 <use assets/figures/datcom-fig4.png>
-Package pdftex.def Info: assets/figures/datcom-fig4.png  used on input line 836
-7.
+Package pdftex.def Info: assets/figures/datcom-fig4.png  used on input line 838
+8.
 (pdftex.def)             Requested size: 348.82274pt x 271.50182pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[183]
+[185]
 Underfull \vbox (badness 4726) has occurred while \output is active []
 
-[184pdfTeX warning (ext4): destination with the same identifier (name{figure.9.
+[186pdfTeX warning (ext4): destination with the same identifier (name{figure.9.
 5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.8417 
+l.8438 
         <./assets/figures/datcom-fig4.png>]
-<assets/figures/datcom-fig5.png, id=2702, 2569.6pt x 1445.4pt>
+<assets/figures/datcom-fig5.png, id=2715, 2569.6pt x 1445.4pt>
 File: assets/figures/datcom-fig5.png Graphic file (type png)
 <use assets/figures/datcom-fig5.png>
-Package pdftex.def Info: assets/figures/datcom-fig5.png  used on input line 843
-6.
+Package pdftex.def Info: assets/figures/datcom-fig5.png  used on input line 845
+7.
 (pdftex.def)             Requested size: 348.80228pt x 196.20128pt.
-[185pdfTeX warning (ext4): destination with the same identifier (name{figure.9.
+[187pdfTeX warning (ext4): destination with the same identifier (name{figure.9.
 6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.8455 
+l.8476 
         <./assets/figures/datcom-fig5.png>]
 
-Package xcolor Warning: Incompatible color definition on input line 8456.
+Package xcolor Warning: Incompatible color definition on input line 8477.
 
 
-Package xcolor Warning: Incompatible color definition on input line 8492.
+Package xcolor Warning: Incompatible color definition on input line 8513.
 
 
-Package xcolor Warning: Incompatible color definition on input line 8492.
+Package xcolor Warning: Incompatible color definition on input line 8513.
 
-[186]
-<assets/figures/datcom-mockup.png, id=2716, 2742.245pt x 2617.78pt>
+[188]
+<assets/figures/datcom-mockup.png, id=2730, 2742.245pt x 2617.78pt>
 File: assets/figures/datcom-mockup.png Graphic file (type png)
 <use assets/figures/datcom-mockup.png>
 Package pdftex.def Info: assets/figures/datcom-mockup.png  used on input line 8
-513.
+534.
 (pdftex.def)             Requested size: 348.8052pt x 332.97365pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 8513--8513
+Underfull \hbox (badness 10000) in paragraph at lines 8534--8534
 [][]
  []
 
-[187] [188pdfTeX warning (ext4): destination with the same identifier (name{fig
+[189] [190pdfTeX warning (ext4): destination with the same identifier (name{fig
 ure.9.7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.8604 
+l.8625 
         <./assets/figures/datcom-mockup.png>]
 Underfull \vbox (badness 6157) has occurred while \output is active []
 
-[189]
+[191]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[190] [191] [192] [193]
-Underfull \hbox (badness 2269) in paragraph at lines 8886--8889
+[192] [193] [194] [195]
+Underfull \hbox (badness 2269) in paragraph at lines 8907--8910
 \T1/lmr/m/n/10 (+20) S1 File. Overview of orig-i-nal Dat links cor-re-spond-ing
  to short-ened
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8886--8889
+Underfull \hbox (badness 10000) in paragraph at lines 8907--8910
 \T1/lmr/m/n/10 (+20) links: []$https : / / github . com / chartgerink / 2018dat
 -[]com / raw / master / assets /
  []
 
-[194] [195] [196
+[196] [197] [198
 
-] [197] [198] [199] [200] [201] [202
+] [199] [200] [201] [202] [203] [204
 
-] [203]
-Underfull \hbox (badness 10000) in paragraph at lines 9198--9198
+] [205]
+Underfull \hbox (badness 10000) in paragraph at lines 9219--9219
 [][]\T1/lmr/m/n/8 (+20) Governments have been doc-u-mented to seek uni-ver-sity
  in-terns to
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9198--9198
+Underfull \hbox (badness 10000) in paragraph at lines 9219--9219
 \T1/lmr/m/n/8 (+20) get ac-cess (see also []$https : / / therostrumblog . wordp
 ress . com / 2015 / 01 / 12 /
  []
 
-[204] [205] [206] [207] [208
+[206] [207] [208] [209] [210
 
 ]
 Appendix A.
-<assets/figures/tgtbf-appendix_a.png, id=2915, 505.89pt x 361.35pt>
+<assets/figures/tgtbf-appendix_a.png, id=2928, 505.89pt x 361.35pt>
 File: assets/figures/tgtbf-appendix_a.png Graphic file (type png)
 <use assets/figures/tgtbf-appendix_a.png>
 Package pdftex.def Info: assets/figures/tgtbf-appendix_a.png  used on input lin
-e 9421.
+e 9442.
 (pdftex.def)             Requested size: 348.83289pt x 249.16635pt.
-[209] [210pdfTeX warning (ext4): destination with the same identifier (name{fig
+[211] [212pdfTeX warning (ext4): destination with the same identifier (name{fig
 ure.A.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.9435 \chapter
+l.9456 \chapter
                {Effect computation}\label{effect-computation} <./assets/figures
 /tgtbf-appendix_a.png>]
 Appendix B.
-[211
+[213
 
-] [212
+] [214
 
 ]
 Appendix C.
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 9478.
-[213] [214
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 9499.
+[215] [216
 
-] [215] [216]
-Underfull \hbox (badness 1226) in paragraph at lines 9710--9713
+] [217] [218]
+Underfull \hbox (badness 1226) in paragraph at lines 9738--9741
 \T1/lmr/m/n/10 (+20) Amer-i-can As-so-ci-a-tion for the Ad-vance-ment of Sci-en
 ce (AAAS): 1331--1.
  []
 
-[217] [218]
-Underfull \hbox (badness 2486) in paragraph at lines 9903--9906
+[219] [220] [221]
+Underfull \hbox (badness 2486) in paragraph at lines 9931--9934
 []\T1/lmr/m/n/10 (+20) Chambers, Christo-pher D. 2013. ``Reg-is-tered Re-ports:
  A New
  []
 
-[219] [220] [221] [222]
-Underfull \hbox (badness 1533) in paragraph at lines 10191--10194
+[222] [223] [224]
+Underfull \hbox (badness 1533) in paragraph at lines 10222--10225
 \T1/lmr/m/n/10 (+20) con-cep-tions.'' \T1/lmr/m/it/10 (+20) Sem-i-nars in Hema-
 tol-ogy \T1/lmr/m/n/10 (+20) 45 (3). El-se-vier BV: 135--40.
  []
 
-[223]
-Underfull \hbox (badness 10000) in paragraph at lines 10238--10240
+[225]
+Underfull \hbox (badness 10000) in paragraph at lines 10269--10271
 \T1/lmr/m/n/10 (+13) wayback . archive . org / web / 20180814123817 / http : / 
 / onsnetwork . org / chartgerink /
  []
 
 
-Underfull \hbox (badness 1490) in paragraph at lines 10242--10244
+Underfull \hbox (badness 1490) in paragraph at lines 10273--10275
 []\T1/lmr/m/n/10 (+20) ---------. 2016a. ``Wi-ley Also Stopped Me Do-ing My Re-
 search.''
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10242--10244
+Underfull \hbox (badness 10000) in paragraph at lines 10273--10275
 []$\T1/lmr/m/n/10 (+20) https : / / wayback . archive . org / web / 20180814123
 807 / http : / / onsnetwork . org /
  []
 
 
-Underfull \hbox (badness 1571) in paragraph at lines 10263--10265
+Underfull \hbox (badness 1571) in paragraph at lines 10294--10296
 []\T1/lmr/m/n/10 (+20) ---------. 2018. ``Pub-lish-ers Need to Stop Us-ing In-s
 e-cure Http.''
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10263--10265
+Underfull \hbox (badness 10000) in paragraph at lines 10294--10296
 []$\T1/lmr/m/n/10 (+20) https : / / wayback . archive . org / web / 20180807191
 523 / https : / / opensource . com /
  []
 
 
-Overfull \hbox (0.47676pt too wide) in paragraph at lines 10267--10271
+Overfull \hbox (0.47676pt too wide) in paragraph at lines 10298--10302
 \T1/lmr/m/n/10 (-20) After-the-Fact: A Network Approach to Scholarly Communicat
 ion and Evaluation.''
  []
 
-[224] [225] [226]
-Underfull \hbox (badness 2582) in paragraph at lines 10479--10484
+[226] [227] [228]
+Underfull \hbox (badness 2582) in paragraph at lines 10510--10515
 \T1/lmr/m/n/10 (+20) in Seek-ing and Re-port-ing Ap-par-ent Re-search Mis-con-d
 uct.'' \T1/lmr/m/it/10 (+20) Anes-the-
  []
 
 
-Underfull \hbox (badness 1320) in paragraph at lines 10479--10484
+Underfull \hbox (badness 1320) in paragraph at lines 10510--10515
 \T1/lmr/m/it/10 (+20) si-ol-ogy \T1/lmr/m/n/10 (+20) 127 (5). Ovid Tech-nolo-gi
 es (Wolters Kluwer Health): 733--37.
  []
 
-[227]
-Underfull \hbox (badness 1824) in paragraph at lines 10610--10614
+[229] [230]
+Underfull \hbox (badness 1824) in paragraph at lines 10641--10645
 \T1/lmr/m/it/10 (+20) nal of Ex-per-i-men-tal Psy-chol-ogy \T1/lmr/m/n/10 (+20)
  68 (4). SAGE Pub-li-ca-tions: 829--32.
  []
 
-[228] [229] [230] [231]
-Overfull \hbox (274.33414pt too wide) in paragraph at lines 10931--10934
+[231] [232] [233] [234]
+Overfull \hbox (274.33414pt too wide) in paragraph at lines 10962--10965
 \T1/lmr/m/n/10 (-20) federalregister . gov / articles / 2000 / 12 / 06 / 00-[]3
 0852 / executive-[]o^^^ce-[]of-[]the-[]president-[]federal-[]policy-[]on-[]rese
 arch-[]misconduct-[]preamble-[]for-[]research #
  []
 
-[232]
-Underfull \hbox (badness 10000) in paragraph at lines 10946--10948
+
+Underfull \hbox (badness 10000) in paragraph at lines 10977--10979
 \T1/lmr/m/n/10 (+20) / / wayback . archive . org / web / 20170206163805 / http 
 : / / retractionwatch . com /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10969--10973
+Underfull \hbox (badness 10000) in paragraph at lines 11000--11004
 \T1/lmr/m/n/10 (+20) web / 20180709102400 / https : / / www . uva . nl / binari
 es / content / assets / uva / nl /
  []
 
 
-Underfull \hbox (badness 1194) in paragraph at lines 10981--10984
+Underfull \hbox (badness 1194) in paragraph at lines 11012--11015
 []\T1/lmr/m/n/10 (+20) Pfeifer, M P, and G L Snod-grass. 1990. ``The Con-tin-ue
 d Use
  []
 
 
-Underfull \hbox (badness 1490) in paragraph at lines 10981--10984
+Underfull \hbox (badness 1490) in paragraph at lines 11012--11015
 \T1/lmr/m/n/10 (+20) of Re-tracted, In-valid Sci-en-tific Lit-er-a-ture.'' \T1/
 lmr/m/it/10 (+20) JAMA \T1/lmr/m/n/10 (+20) 263 (10): 1420--3.
  []
 
 
-Overfull \hbox (42.81573pt too wide) in paragraph at lines 10986--10989
+Overfull \hbox (42.81573pt too wide) in paragraph at lines 11017--11020
 \T1/lmr/m/n/10 (-20) 2017 / aug / 19 / cambridge-[]university-[]press-[]accused
 -[]of-[]selling-[]its-[]soul-[]over-[]chinese-[]censorship$[]. 
  []
 
-[233]
-Underfull \hbox (badness 4779) in paragraph at lines 11054--11058
+[235]
+Underfull \hbox (badness 4779) in paragraph at lines 11085--11089
 []\T1/lmr/m/n/10 (+20) Rhoades, Lawrence J. 2004. ``ORI Closed In-ves-ti-ga-tio
 ns into
  []
 
 
-Underfull \hbox (badness 5417) in paragraph at lines 11054--11058
+Underfull \hbox (badness 5417) in paragraph at lines 11085--11089
 \T1/lmr/m/n/10 (+20) Mis-con-duct Al-le-ga-tions In-volv-ing Re-search Sup-port
 ed by the Pub-lic
  []
 
 
-Underfull \hbox (badness 1681) in paragraph at lines 11054--11058
+Underfull \hbox (badness 1681) in paragraph at lines 11085--11089
 \T1/lmr/m/n/10 (+20) Health Ser-vice: 1994-2003.'' Of-fice of Re-search In-tegr
 ity; ori.hhs.gov.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11054--11058
+Underfull \hbox (badness 10000) in paragraph at lines 11085--11089
 []$\T1/lmr/m/n/10 (+20) https : / / wayback . archive . org / web / 20180709101
 834 / https : / / ori . hhs . gov / sites /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11081--11084
+Underfull \hbox (badness 10000) in paragraph at lines 11112--11115
 \T1/lmr/m/n/10 (+20) play.'' []$http : / / web . archive . org / web / 20180223
 112609 / http : / / www . physik .
  []
 
-[234]
-Underfull \hbox (badness 1259) in paragraph at lines 11143--11148
+[236]
+Underfull \hbox (badness 1259) in paragraph at lines 11174--11179
 \T1/lmr/m/n/10 (+20) Peer-Reviewed Lit-er-a-ture.'' \T1/lmr/m/it/10 (+20) JAMA 
 In-ter-nal Medicine \T1/lmr/m/n/10 (+20) 175 (4): 567--77.
  []
 
-[235] [236]
-Overfull \hbox (0.50882pt too wide) in paragraph at lines 11287--11290
+[237] [238]
+Overfull \hbox (0.50882pt too wide) in paragraph at lines 11318--11321
 []\T1/lmr/m/n/10 (-20) Stewart, W W, and N Feder. 1987. ``The Integrity of the 
 Scientific Literature.''
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 11336--11338
+[239]
+Underfull \hbox (badness 10000) in paragraph at lines 11367--11369
 \T1/lmr/m/n/10 (+20) / / web . archive . org / web / 20150911132421 / http : / 
 / jcb . rupress . org / site / misc /
  []
 
-[237] [238] [239] [240]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 11577.
-[241]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 11577.
+[240] [241] [242]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 11608.
+[243]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 11608.
 (./_main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 11577.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 11608.
 
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 11577
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 11608
 .
 Package rerunfilecheck Info: File `_main.out' has not changed.
 (rerunfilecheck)             Checksum: CD47C486D4D5DCCA4C0F7500118E13F2;12150.
 Package logreq Info: Writing requests to '_main.run.xml'.
 \openout1 = `_main.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 11577.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 11608.
  ) 
 Here is how much of TeX's memory you used:
- 25659 strings out of 492609
- 417194 string characters out of 6129033
- 1199472 words of memory out of 5000000
+ 25663 strings out of 492609
+ 417272 string characters out of 6129033
+ 1198474 words of memory out of 5000000
  28121 multiletter control sequences out of 15000+600000
  107440 words of font info for 214 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2519,10 +2515,10 @@ onts/type1/public/lm/lmsy7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/
 public/lm/lmtk10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/
 lmtt10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmtt8.pfb>
 </usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmtti10.pfb>
-Output written on _main.pdf (241 pages, 3982092 bytes).
+Output written on _main.pdf (243 pages, 3985073 bytes).
 PDF statistics:
- 3689 PDF objects out of 4296 (max. 8388607)
- 3303 compressed objects within 34 object streams
- 813 named destinations out of 1000 (max. 500000)
+ 3704 PDF objects out of 4296 (max. 8388607)
+ 3316 compressed objects within 34 object streams
+ 817 named destinations out of 1000 (max. 500000)
  17028 words of extra memory for PDF output out of 17280 (max. 10000000)
 
