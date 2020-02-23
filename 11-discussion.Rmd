@@ -46,8 +46,7 @@ intertwined with the complex systemic issues of society. One societal
 issue that affects issues in science, for example, is austerity policy
 in government spending. Spending cuts affect the available national
 (research) budgets, which in turn intensifies competition among
-scientists, negatively affecting their mental health^[I am afraid this
-example is all too familiar to many.] and feeding a race to the bottom
+scientists, negatively affecting their mental health [@doi:10.1126/science.caredit.a1700028] and feeding a race to the bottom
 of validity of findings [@doi:10.1098/rsos.160384]. Vice versa, we
 cannot neglect the impact the scientific system has on societal
 issues. For example, we increasingly add to the ecological crises
@@ -58,7 +57,7 @@ researcher per year; @doi:10.1038/528479c].
 
 Many complex interactions between issues of science and society
 exist. These include restrictive access to publications, causing many
-people to resort to illegitimate means to gain access for legitimate
+people to resort to illegal means to gain access for legitimate
 purposes [@doi:10.1126/science.352.6285.508]^[Governments have been
 documented to seek university interns to get access (see also
 <https://therostrumblog.wordpress.com/2015/01/12/why-all-phd-students-should-do-a-policy-placement/>).].
@@ -69,7 +68,7 @@ are shifting to business models resembling the problematic and
 data-exploitative models of Facebook. But even for researchers, the
 costs to play in publishing Open Access is substantial and rising
 faster than inflation [@doi:10.7287/peerj.preprints.27809v1],
-reaffirming structural and global inequalities. This affirms existing
+reaffirming structural and global inequalities, creating a paywall at the beginning of the publication process. This affirms existing
 inequalities in participation, such as participation in scientific
 education that is increasingly difficult as collective financing
 programs are replaced with individualized debt [@isbn:9781781686195]. These complex issues
@@ -109,13 +108,13 @@ worthwhile? The following demands can serve as utopian expectations to
 strive towards and evaluate proposals.
 
 A worthwhile scientific system must be widely applicable. It must be
-usable on its own, but also in parallel with current structures people
-might already be embedded in (e.g., universities). This would allow
-simultaneous participation in both old and new systems for researchers
-in institutions. This would also not force (early career) academics
-into zero-sum publishing decisions, which would effectively exacerbate
-the institutionalized issues they are already facing (e.g., not being
-able to publish Open Access in the most career rewarding
+usable on its own, but also in parallel with current structures that
+people might already be embedded in (e.g., universities). This would
+allow simultaneous participation in both old and new systems for
+researchers in institutions. This would also not force (early career)
+academics into zero-sum publishing decisions, which would effectively
+exacerbate the institutionalized issues they are already facing (e.g.,
+not being able to publish Open Access in the most career rewarding
 journals). Nonetheless, the parallel system should be usable on its
 own for researchers outside of academic institutions, who should not
 be forced to conform to the norms of the institutions that they are
@@ -147,9 +146,9 @@ parsimonious answer to these functions, a parallel system may also
 prove more convincing for bottom-up change.
 
 Those designing parallel scientific systems must actively reconsider
-what ought to be valued in science. As a result, incrementalism,
+what ought to be valued in science. As a result, cooperation, incrementalism,
 validity, reliability, and replications must become preferred and
-rewarded over innovativeness, unreliability, and spontaneous isolated
+rewarded over competition, innovativeness, unreliability, and spontaneous isolated
 discovery. There is nothing objective about what we subjectively
 decide to value. Only deep and active value changes allow for
 incentive superstructures that substantially differ from the current
@@ -184,7 +183,7 @@ information structures. Transparency is often proposed as the key to
 reforming science, but without somewhat standardized structures to
 make sense of what is available, there is a risk of obfuscation. I
 have spent many hours trying to understand someone else's project
-structure with hundreds of files. This does not scale for sustainable
+structure with hundreds of files --- this does not scale for sustainable
 information consumption and production. Questions about the unit of
 communication and what is communicable seem timely when the lack of
 chronology causes some of the issues in science [e.g., HARKing;

@@ -89,7 +89,7 @@ Overall, an estimated 2% of all scholars admit to having falsified or fabricated
 The detection rate of data fabrication is likely to be even lower; for example, among several hundreds of thousands of researchers working in the United States and the Netherlands, only around a dozen cases become public each year. 
 At best, this suggests a detection rate below 1% among those 2% who admit to fabricating or falsifying data --- the tip of a seemingly much larger iceberg.
 
-The ability to detect fabricated data may help deter researchers from fabricating data in their work. Deterrence theory [e.g., @leviathan] states that improved detection of undesirable behaviors decreases the expected utility of said behaviors, ultimately leading to fewer people to engage in it. 
+The ability to detect fabricated data may help deter researchers from fabricating data in their work. Deterrence theory [e.g., @leviathan] states that improved detection and sanctioning of behaviors decreases the expected utility of said behaviors, ultimately leading to fewer people to engage in it. 
 Detection techniques have developed differently for fabrication, falsification, and plagiarism.
 Plagiarism scanners have been around the longest [e.g., @doi:10.1109/13.28038] and are widely implemented in practice, not only at journals but also in the evaluation of student theses (e.g., with commercial services such as Turnitin). 
 Various tools have been developed to detect image manipulation and some of these tools have been implemented at biomedical journals to screen for fabricated or falsified images. 
@@ -147,7 +147,7 @@ However, in the Fujii case, Carlisle observed many large $p$-values, which ultim
 The cause of such large $p$-values may be that the effect of randomness is underappreciated when fabricating statistically nonsignificant data due to (for example) widespread misunderstanding of what a $p$-value means [@doi:10.1007/s11336-015-9444-2;@doi:10.1053/j.seminhematol.2008.04.003], which results in groups of data that are too similar conditional on the null hypothesis of no differences between the groups.
 As an illustration, we simulated normal distributed measurements for studies and their $t$-test comparisons in Table \@ref(tab:ddfab-tab1), under statistically equivalent populations (Set 1). 
 We also fabricated independent data for equivalent groups, where we fixed the mean and standard deviation for all studies and subsequently added (too) little uniform noise to these parameters (Set 2). 
-The expected value of a uniform $p$-value distribution is .5, but the fabricated data from our illustration have a mean $p$-value of `r round(mean(ex2_1tp), 3)`.
+The expected value of a uniform $p$-value distribution is .5, but the fabricated data from our illustration have a mean $p$-value of `r round(mean(set2_df$ex2_1tp), 3)`.
 
 ```{r ddfab-tab1, echo = FALSE}
 if (!knitr::is_html_output()) {
@@ -180,7 +180,7 @@ where $t$ determines the range of $p$-values that are selected in the method. Fo
 ```{r, echo = FALSE}
 threshold <- .05
 genuine_p <- ex1_1tp[ex1_1tp > threshold]
-fab_p <- ex2_1tp[ex2_1tp > threshold]
+fab_p <- set2_df$ex2_1tp[set2_df$ex2_1tp > threshold]
 genuine_chi <- -2 * sum(log(1 - ((genuine_p - threshold) / (1 - threshold))))
 fab_chi <- -2 * sum(log(1 - ((fab_p - threshold) / (1 - threshold))))
 genuine_chi_p <- pchisq(q = genuine_chi, df = 2 * length(genuine_p), lower.tail = FALSE)
@@ -236,7 +236,7 @@ Similar to the Fisher method, this could be the result of the fabricator underap
 
 ```{r, echo = FALSE}
 sd1 <- c(ex1_1esd, ex1_1csd)
-sd2 <- c(x2_1esd, x2_2csd)
+sd2 <- c(set2_df$ex2_1esd, set2_df$ex2_1csd)
 
 iterate <- 100000
 res1 <- std_var(n = rep(100, length(sd1)), sds = sd1, iter = iterate, subgroups = rep(1, length(sd1)))
@@ -271,7 +271,7 @@ For example, effect sizes in psychology papers are often reported as a standardi
 A test statistic can be transformed into a measure of effect size. 
 A test result such as $t(
 `r df`)=`r tval`$ in a between-subjects design corresponds to $d=`r round(2*tval / sqrt(df), 3)`$ and $r=`r round(sqrt((tval^2 / df) / ((tval^2 / df) + 1)), 3)`$ [@doi:10.1525/collabra.71]. 
-These effect sizes can readily be recomputed based on data extracted with `statcheck` across thousands of results [@doi:10.3758/s13428-015-0664-2;@doi:10.3390/data1030014].
+These effect sizes can readily be recomputed based on data extracted with `statcheck` across thousands of results [see Appendix B or @doi:10.3758/s13428-015-0664-2;@doi:10.3390/data1030014].
 
 Observed effect sizes can subsequently be compared with the effect distribution of other studies investigating the same effect. 
 For example, if a study on the 'foot-in-the-door' technique [@doi:10.1146/annurev.psych.55.090902.142015] yields an effect size of $r=.8$, we can collect other studies that investigate the 'foot-in-the-door' effect and compare how extreme that $r=.8$ is in comparison to the other studies. 
@@ -353,7 +353,7 @@ load('./assets/data/study_02/p4')
 load('./assets/data/study_02/p5')
 ```
 
-Figure \@ref(fig:digit-dist) depicts simulated digit counts for the first- through fifth digit of a random, standard normally distributed variable (i.e., $N\sim(0,1)$). The first- and second digit distributions are clearly non-uniform, whereas the third digit distribution seems only slightly non-uniform. As such, the rightmost digit can be expected to be uniformly distributed if sufficient precision is provided [@doi:10.1080/08989629508573866]. What sufficient precision is, depends on the process generating the data. In our example with $N\sim(0,1)$, the distribution of the third and later digits seem well-approximated by the uniform distribution. <!-- we investigated by running a small simulation study, drawing 500 random values from a normal distribution ($N\sim(0,1)$) thousand times and conducting a terminal digit test for each of the first five digits. For the third-, fourth-, and fifth- digits, tests operated on nominal $\alpha$ levels (i.e., under $\alpha=.05$, false positives were $`r round(sum(p3 > .05) / 1000, 3)`$, $`r round(sum(p4 > .05) / 1000, 3)`$, $`r round(sum(p5 > .05) / 1000, 3)`$, respectively). Hence, sufficient precision for our purposes is determined as the terminal digit being conducted on at least the third leading digit (i.e., minimally 1.23 or 12.3 or 123). -->
+Figure \@ref(fig:digit-dist) depicts simulated digit counts for the first- through third digit of a random, standard normally distributed variable (i.e., $N\sim(0,1)$). The first- and second digit distributions are clearly non-uniform, whereas the third digit distribution seems only slightly non-uniform. As such, the rightmost digit can be expected to be uniformly distributed if sufficient precision is provided [@doi:10.1080/08989629508573866]. What sufficient precision is, depends on the process generating the data. In our example with $N\sim(0,1)$, the distribution of the third and later digits seem well-approximated by the uniform distribution. <!-- we investigated by running a small simulation study, drawing 500 random values from a normal distribution ($N\sim(0,1)$) thousand times and conducting a terminal digit test for each of the first five digits. For the third-, fourth-, and fifth- digits, tests operated on nominal $\alpha$ levels (i.e., under $\alpha=.05$, false positives were $`r round(sum(p3 > .05) / 1000, 3)`$, $`r round(sum(p4 > .05) / 1000, 3)`$, $`r round(sum(p5 > .05) / 1000, 3)`$, respectively). Hence, sufficient precision for our purposes is determined as the terminal digit being conducted on at least the third leading digit (i.e., minimally 1.23 or 12.3 or 123). -->
 
 ```{r digit-dist, echo = FALSE, fig.cap="Frequency distributions of the first-, second-, and third digits. We sampled 100,000 values from a standard normal distribution to create these digit distributions.",  fig.align = 'center', fig.asp=.625}
 set.seed(1234)
@@ -1145,7 +1145,7 @@ In other words, each participant could take the time they wanted or needed to fa
 Each participant received downloadable instructions (original: [https://osf.io/7qhy8/](https://osf.io/7qhy8/)) and the template spreadsheet via Qualtrics (see Figure \@ref(fig:spreadsheet-study2); [https://osf.io/2qrbs/](https://osf.io/2qrbs/)). 
 The interview was scheduled via Qualtrics with JGV, who blinded the rest of the research team from the identifying information of each participant and the date of the interview. 
 All interviews took place between January 31 and March 3, 2017. 
-To incentivize researchers to participate, they received 100 euros for participation; to incentivize them to fabricate (supposedly) hard to detect data they could win an additional 100 euros if they belonged to one out of three top fabricators (see Data Analysis section for exact method used). Participants were not informed about how we planned to detect data fabrication; we used the combined Fisher method (described next).
+To incentivize researchers to participate, they received 100 euros for participation; to incentivize them to fabricate (supposedly) hard to detect data they could win an additional 100 euros if they belonged to one out of three top fabricators. Participants were not informed about how we planned to detect data fabrication; we used the combined Fisher method (described next).
 JGV transcribed the contents of the interview and CHJH blind-reviewed these transcripts to remove any potentially personally identifiable information (these transcripts are freely available for anyone to use at [https://doi.org/10.5281/zenodo.832490](https://doi.org/10.5281/zenodo.832490)).
 
 #### Data analysis
@@ -1521,7 +1521,7 @@ As preregistered, we combined both variance analyses, the terminal digit analyse
 sel <- AUC[grepl(AUC$test, pattern = 'Effect'), ]
 ```
 
-Figure \@ref(fig:dens-mult) (final row) shows the density distributions of the fabricated and genuine Stroop effect sizes, which is an excellent classifier of fabricated/genuine data in this sample. More specifically, the classification performance for detecting fabricated data in this sample is $AUROC=`r round(sel$auc[1], 3)`$, 95% CI [$`r round(sel$ci_lb[1], 3)`$-$`r round(sel$ci_ub[1], 3)`$] (the 95% CI is truncated at 1), with fabricated effect sizes generally being larger than genuine effect sizes. Upon closer inspection of the effect sizes, we note that only three (of 28) fabricated effect sizes fall within the range of genuine effect sizes (results per respondent available at [osf.io/](https://osf.io/)). As such, this is a particularly good result within this sample (we did not preregister this analysis).
+Figure \@ref(fig:dens-mult) (final row) shows the density distributions of the fabricated and genuine Stroop effect sizes, which is an excellent classifier of fabricated/genuine data in this sample. More specifically, the classification performance for detecting fabricated data in this sample is $AUROC=`r round(sel$auc[1], 3)`$, 95% CI [$`r round(sel$ci_lb[1], 3)`$-$`r round(sel$ci_ub[1], 3)`$] (the 95% CI is truncated at 1), with fabricated effect sizes generally being larger than genuine effect sizes. Upon closer inspection of the effect sizes, we note that only three (of 28) fabricated effect sizes fall within the range of genuine effect sizes (results per respondent available at [osf.io/28zy4](https://osf.io/28zy4)). As such, this is a particularly good result within this sample (we did not preregister this analysis).
 
 ```{r echo = FALSE}
 count2rng <- plyr::ddply(dat_raw, .(id), function (x) {
